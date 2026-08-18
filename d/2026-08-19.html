@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>美诺MENOW彩妆情报资讯台V20</title>
+<style>
+:root {
+  --brand: #E85687;
+  --brand-light: #FFF0F5;
+  --brand-dark: #C93868;
+  --brand-accent: #F5A3BC;
+  --bg: #F5F3F4;
+  --card-bg: #FFFFFF;
+  --text: #2D2D2D;
+  --text2: #6B6560;
+  --border: #EDE7E9;
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  background: var(--bg); color: var(--text); line-height:1.6; font-size:14px;
+}
+a { color:var(--brand); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* ─── 顶部导航栏 ─── */
+.topbar {
+  position:sticky; top:0; z-index:100; background:#fff;
+  border-bottom:1px solid var(--border);
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
+  padding:0 24px; height:64px; display:flex; align-items:center; gap:20px;
+}
+.topbar-logo { display:flex; align-items:center; gap:10px; flex-shrink:0; }
+.topbar-logo img { height:36px; width:auto; object-fit:contain; }
+.topbar-title { font-size:18px; font-weight:700; color:var(--brand); white-space:nowrap; }
+.topbar-title span { color:var(--brand); }
+.ver-badge { font-style:normal; font-size:12px; font-weight:700; color:#fff; background:var(--brand); padding:2px 8px; border-radius:10px; margin-left:6px; vertical-align:middle; }
+.topbar-nav { display:flex; gap:4px; margin-left:20px; flex-wrap:wrap; }
+.topbar-nav a {
+  padding:6px 14px; border-radius:20px; font-size:13px; font-weight:500;
+  color:var(--text2); transition:all .2s; white-space:nowrap;
+}
+.topbar-nav a:hover { background:var(--brand-light); color:var(--brand); text-decoration:none; }
+.topbar-nav a.active { background:var(--brand); color:#fff; }
+.topbar-right { margin-left:auto; display:flex; align-items:center; gap:12px; }
+
+/* 日期选择器 — 日历弹窗 */
+.date-picker { position:relative; display:flex; align-items:center; gap:6px; }
+.date-picker label { font-size:13px; color:var(--text2); cursor:pointer; white-space:nowrap; user-select:none; }
+.date-picker .date-trigger {
+  padding:5px 14px; border:1px solid var(--border); border-radius:8px;
+  font-size:13px; font-weight:600; color:var(--text); background:#fff;
+  cursor:pointer; transition:all .2s; display:flex; align-items:center; gap:4px;
+}
+.date-picker .date-trigger:hover { border-color:var(--brand); color:var(--brand); }
+/* 日历弹窗 */
+.cal-popup {
+  display:none; position:absolute; top:100%; right:0; margin-top:8px;
+  z-index:9999; background:#fff; border:1px solid var(--border);
+  border-radius:14px; box-shadow:0 8px 32px rgba(0,0,0,.14); padding:16px;
+  min-width:300px; animation:cpFadeIn .18s ease;
+}
+.cal-popup.show { display:block; }
+@keyframes cpFadeIn{ from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+.cp-head {
+  display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;
+}
+.cp-nav { display:flex; align-items:center; gap:4px; }
+.cp-nav button {
+  width:28px; height:28px; border-radius:50%; border:1px solid var(--border);
+  background:#fff; font-size:14px; cursor:pointer; color:var(--text2);
+  display:flex; align-items:center; justify-content:center; line-height:1; transition:all .2s;
+}
+.cp-nav button:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.cp-nav button:disabled { opacity:.25; cursor:not-allowed; }
+.cp-title { font-size:15px; font-weight:700; color:var(--text); min-width:130px; text-align:center; }
+.cp-weekdays {
+  display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-bottom:4px;
+}
+.cp-wd {
+  text-align:center; font-size:11.5px; font-weight:700; color:var(--text2);
+  padding:4px 0;
+}
+.cp-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; }
+.cp-day {
+  aspect-ratio:1; display:flex; align-items:center; justify-content:center;
+  border-radius:8px; font-size:13px; cursor:pointer; transition:all .15s;
+  color:var(--text); border:1px solid transparent; position:relative;
+}
+.cp-day:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.cp-day.cp-other { color:#c4c4cc; }
+.cp-day.cp-today { background:var(--brand); color:#fff; font-weight:700; border-color:var(--brand); }
+.cp-day.cp-today:hover { background:var(--brand-dark); }
+.cp-day.cp-sel:not(.cp-today) { background:#1565C0; color:#fff; font-weight:600; }
+.cp-day.cp-has-data::after {
+  content:''; position:absolute; bottom:3px; width:5px; height:5px;
+  border-radius:50%; background:var(--brand);
+}
+.cp-day.cp-today.cp-has-data::after { background:#fff; }
+.cp-day.cp-sel.cp-has-data::after { background:#fff; }
+
+/* ─── 主容器 ─── */
+.main-wrap { max-width:1200px; margin:0 auto; padding:24px 20px 60px; }
+
+/* ─── 模块卡片 ─── */
+.module {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); margin-bottom:28px; overflow:hidden;
+  border:1px solid var(--border); transition:box-shadow .25s;
+}
+.module:hover { box-shadow:var(--shadow-hover); }
+.mod-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 24px 14px; border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg, var(--brand-light) 0%, #fff 100%);
+}
+.mod-header h2 {
+  font-size:18px; font-weight:700; color:var(--brand); display:flex; align-items:center; gap:8px;
+}
+.mod-header h2 .icon { font-size:22px; }
+.mod-badge {
+  display:inline-block; padding:3px 10px; border-radius:12px; font-size:11px;
+  font-weight:600; background:var(--brand); color:#fff;
+}
+.mod-body { padding:18px 24px 24px; }
+
+/* ─── 舆情监控入口卡 ─── */
+.nav-sentinel { background:linear-gradient(135deg,#7B1FA2,#9C27B0); color:#fff !important; border-radius:14px; padding:5px 14px !important; font-weight:700; }
+.nav-sentinel:hover { background:linear-gradient(135deg,#6A1B9A,#7B1FA2); color:#fff !important; text-decoration:none; }
+.sentiment-entry { display:flex; flex-direction:column; gap:14px; }
+.sentiment-entry-desc { margin:0; font-size:14px; line-height:1.7; color:var(--text2); }
+.sentiment-entry-desc b { color:var(--brand); }
+.sentiment-entry-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.sentiment-entry-tags span {
+  padding:4px 12px; border-radius:14px; font-size:12px; font-weight:600;
+  background:#F3E5F5; color:#7B1FA2; border:1px solid #E1BEE7;
+}
+.sentiment-entry-btn {
+  align-self:flex-start; padding:10px 22px; border-radius:24px; font-size:14px; font-weight:700;
+  background:linear-gradient(135deg,#7B1FA2,#9C27B0); color:#fff; text-decoration:none;
+  box-shadow:0 4px 12px rgba(123,31,162,.25); transition:all .2s;
+}
+.sentiment-entry-btn:hover { transform:translateY(-2px); box-shadow:0 6px 16px rgba(123,31,162,.35); color:#fff; text-decoration:none; }
+
+/* ─── 今日必看 ─── */
+.must-see-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
+.must-see-card {
+  padding:16px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s; position:relative; overflow:hidden;
+}
+.must-see-card::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:4px;
+  background:var(--brand); opacity:.7;
+}
+.must-see-card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(232,86,135,.1); }
+.must-see-card .ms-head { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.must-see-card .ms-icon { font-size:22px; flex-shrink:0; }
+.must-see-card .ms-tag {
+  display:inline-flex; align-items:center; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:600;
+}
+.tag-trend { background:#E8F5E9; color:#2E7D32; }
+.tag-urgent { background:#FFEBEE; color:#C62828; }
+.tag-signal { background:#E3F2FD; color:#1565C0; }
+.tag-risk { background:#FFF3E0; color:#EF6C00; }
+.tag-data { background:#F3E5F5; color:#7B1FA2; }
+.must-see-card p { font-size:13.5px; color:var(--text); line-height:1.65; }
+
+/* ─── 代言列表（V2风格） ─── */
+.end-list { display:flex; flex-direction:column; gap:10px; }
+.end-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.end-item:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.end-date {
+  flex-shrink:0; width:72px; text-align:center; padding-top:2px;
+}
+.end-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.end-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.end-info { flex:1; min-width:0; }
+.end-brand { font-weight:700; font-size:14px; color:var(--text); }
+.end-detail { font-size:13px; color:var(--text2); margin-top:3px; line-height:1.5; }
+/* V17.1：代言事件卡片增强 — 事件性质副标题 + 营销动作/市场反响区块 + 话题提示 */
+.end-note-sub { font-size:12px; color:var(--text2); margin-top:5px; line-height:1.5; }
+.end-block { display:flex; gap:8px; margin-top:7px; padding:7px 10px; border-radius:8px; border-left:3px solid; align-items:flex-start; }
+.end-block-action { background:#FFF6F0; border-left-color:#FF8A65; }
+.end-block-reaction { background:#EAF3FB; border-left-color:#42A5F5; }
+.end-block-label { flex-shrink:0; font-size:11px; font-weight:700; padding:1px 6px; border-radius:6px; white-space:nowrap; }
+.end-block-action .end-block-label { background:#FFE0CC; color:#E64A19; }
+.end-block-reaction .end-block-label { background:#CFE8FB; color:#1565C0; }
+.end-block-text { font-size:12.5px; color:var(--text); line-height:1.55; }
+.end-tip { font-size:10.5px; color:var(--text2); margin-left:6px; white-space:nowrap; }
+.end-heart-cap { font-size:9px; color:var(--brand); margin-left:2px; font-weight:600; }
+/* V13：宣传话题 hashtag — 粉色字体+浅粉底 */
+.end-hashtag {
+  font-size:11.5px; color:var(--brand); margin-top:4px; padding:3px 8px;
+  background:rgba(232,86,135,0.08); border-radius:10px; display:inline-block; font-weight:500;
+}
+.end-brand-link { color:var(--text); text-decoration:none; }
+.end-brand-link:hover { color:var(--brand); text-decoration:underline; }
+/* V14：话题超链接样式 — 粉色 */
+.end-hashtag-link {
+  color:var(--brand-dark); text-decoration:none; transition:opacity .2s;
+}
+.end-hashtag-link:hover { opacity:.7; text-decoration:underline; }
+/* end-action: 新签/续约 — 深蓝字+浅蓝底+字体同title；end-tag-level/star: 粉底白字 */
+.end-source {
+  margin-top:5px; font-size:12px;
+}
+/* 日期徽标（案例/热点/趋势 复用明星动态同款「月/日」大数字样式） */
+.case-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.case-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.case-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.topic-date, .trend-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.topic-date .d-month, .trend-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.topic-date .d-day, .trend-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.date-empty { font-size:12px; color:#b9b9c0; }
+.empty-note { padding:22px 16px; text-align:center; color:var(--text2); font-size:13px; background:var(--brand-light); border-radius:10px; }
+.end-source a {
+  display:inline-flex; align-items:center; gap:3px; color:var(--brand);
+  font-size:12px; padding:2px 6px; border-radius:4px; background:var(--brand-light);
+}
+.end-source a:hover { background:var(--brand); color:#fff; text-decoration:none; }
+.end-risk {
+  flex-shrink:0; padding:4px 10px; border-radius:8px; font-size:11px; font-weight:600;
+  text-align:center; min-width:48px;
+}
+.risk-low { background:#E8F5E9; color:#2E7D32; }
+.risk-mid { background:#FFF3E0; color:#EF6C00; }
+.risk-high { background:#FFEBEE; color:#C62828; }
+/* 代言风险：增加「舆情风险等级」标签 */
+.end-risk-wrap { flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:2px; min-width:74px; }
+.end-risk-label { font-size:10px; color:var(--text2); font-weight:600; letter-spacing:.3px; white-space:nowrap; }
+.end-risk-note { font-size:9px; color:var(--text2); text-align:center; line-height:1.2; max-width:74px; }
+/* V14：心动值展示 */
+.end-heart {
+  display:flex; align-items:center; gap:4px; padding:5px 10px;
+  background:linear-gradient(135deg, #FFF0F5 0%, #FFE8EE 100%);
+  border:1px solid var(--brand-accent); border-radius:10px;
+  margin-bottom:6px; justify-content:center;
+}
+.end-heart-icon { font-size:15px; color:#FF6B81; }
+.end-heart-val { font-size:14px; font-weight:700; color:var(--brand-dark); }
+
+/* ─── V12 新增：今日精选描述 / 持续关注 / 美诺启示 ─── */
+.sec-desc { padding:4px 24px 0; font-size:12.5px; color:var(--text2); line-height:1.6; }
+.tag-cross { background:#E0F7FA; color:#00838F; }
+
+/* 持续关注 */
+.watch-block { margin:6px 24px 22px; padding:14px 16px; border:1px dashed var(--brand-accent); border-radius:var(--radius-sm); background:var(--brand-light); }
+.watch-hd { font-weight:700; font-size:14px; color:var(--brand); margin-bottom:10px; }
+.watch-hd .watch-sub { font-size:11px; color:var(--text2); font-weight:400; }
+.watch-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:8px 14px; }
+.watch-item { display:flex; gap:8px; align-items:flex-start; font-size:12.5px; color:var(--text); line-height:1.55; }
+.watch-icon { flex-shrink:0; }
+.watch-text { flex:1; }
+
+/* 美诺启示 & 本周行动 */
+.module-insight { border-color:var(--brand-accent); }
+.module-insight .mod-header h2 { color:var(--brand); }
+.insp-block, .act-block { margin-bottom:18px; }
+.insp-title, .act-title { font-size:15px; font-weight:700; color:var(--text); margin:6px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+.insp-list { display:flex; flex-direction:column; gap:10px; }
+.insp-item { display:flex; gap:10px; align-items:flex-start; padding:12px 14px; background:#fff; border:1px solid var(--border); border-radius:var(--radius-sm); }
+.insp-num { flex-shrink:0; width:22px; height:22px; border-radius:50%; background:var(--brand); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+.insp-item p { margin:0; font-size:13.5px; color:var(--text); line-height:1.65; }
+.act-list { display:flex; flex-direction:column; gap:10px; }
+.act-item { display:flex; align-items:center; gap:12px; padding:12px 14px; background:#fff; border:1px solid var(--border); border-radius:var(--radius-sm); flex-wrap:wrap; }
+.act-text { flex:1; min-width:260px; font-size:13.5px; color:var(--text); line-height:1.6; }
+.act-owner { font-size:12px; color:var(--text2); white-space:nowrap; }
+.act-status { flex-shrink:0; padding:3px 10px; border-radius:8px; font-size:11px; font-weight:600; }
+.st-doing { background:#E3F2FD; color:#1565C0; }
+.st-done { background:#E8F5E9; color:#2E7D32; }
+.st-todo { background:#F5F5F5; color:#757575; }
+
+/* ─── 营销案例列表 ─── */
+.case-list { display:flex; flex-direction:column; gap:12px; }
+.case-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.case-item:hover { border-color:var(--brand-accent); box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.case-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:8px; }
+.case-title { font-weight:700; font-size:14.5px; color:var(--text); }
+.case-type {
+  flex-shrink:0; padding:3px 10px; border-radius:12px; font-size:11px; font-weight:600;
+  background:var(--brand-light); color:var(--brand-dark);
+}
+/* V16：成功案例精选 — 蓝色类型标签（置于标题前）+ 标题来源超链 */
+.case-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+.case-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.case-title-link { text-decoration:none; color:var(--text); }
+.case-title-link:hover { color:var(--brand); text-decoration:underline; }
+.case-src-line { font-size:12px; color:var(--text2); margin-top:8px; }
+.case-brand { font-size:12.5px; color:var(--brand); font-weight:600; margin-bottom:6px; }
+.case-summary { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:8px; }
+.case-meta { display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:var(--text2); }
+.case-meta span { display:inline-flex; align-items:center; gap:3px; }
+.case-signals {
+  margin-top:8px; padding:8px 12px; background:var(--brand-light); border-radius:8px;
+  font-size:12.5px; color:var(--brand-dark); line-height:1.55;
+}
+.case-src { margin-top:8px; }
+.case-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light); border:1px solid var(--border);
+}
+.case-src a:hover { background:var(--brand); color:#fff; text-decoration:none; border-color:var(--brand); }
+
+/* ─── V15 新增：营销动态灵感列表 ─── */
+.mn-list { display:flex; flex-direction:column; gap:10px; }
+.mn-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border); background:#fff; transition:all .2s;
+}
+.mn-item:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.mn-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.mn-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.mn-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.mn-main { flex:1; min-width:0; }
+.mn-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px; }
+.mn-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.mn-src-line { font-size:12px; color:var(--text2); margin-top:2px; }
+.mn-title { font-weight:700; font-size:14px; color:var(--text); text-decoration:none; }
+.mn-title:hover { color:var(--brand); text-decoration:underline; }
+.mn-brand { font-size:12.5px; color:var(--brand); font-weight:600; margin-bottom:5px; }
+.mn-sum { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:7px; }
+.mn-insight {
+  font-size:12.5px; color:var(--brand-dark); line-height:1.6; padding:8px 12px;
+  background:linear-gradient(135deg, #FFF0F5 0%, #FFE8EE 100%); border-left:3px solid var(--brand);
+  border-radius:0 8px 8px 0;
+}
+.case-block { margin:6px 24px 22px; padding:14px 16px; border:1px dashed var(--brand-accent); border-radius:var(--radius-sm); background:var(--brand-light); }
+
+/* ─── V15 新增：行业报告列表 ─── */
+.rep-list { display:flex; flex-direction:column; gap:12px; }
+.rep-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border); background:#fff; transition:all .2s;
+}
+.rep-item:hover { background:var(--brand-light); border-color:var(--brand-accent); box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.rep-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.rep-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.rep-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.rep-main { flex:1; min-width:0; }
+.rep-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px; }
+.rep-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.rep-key {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:700;
+  background:var(--brand); color:#fff;
+}
+.rep-title { font-weight:700; font-size:14.5px; color:var(--text); text-decoration:none; }
+.rep-title:hover { color:var(--brand); text-decoration:underline; }
+.rep-src { font-size:12px; color:var(--text2); margin-bottom:7px; }
+.rep-sum { font-size:13px; color:var(--text); line-height:1.7; margin-bottom:8px; }
+.rep-data {
+  font-size:12.5px; color:var(--brand-dark); line-height:1.6; padding:8px 12px;
+  background:var(--brand-light); border-radius:8px; border:1px solid var(--brand-accent);
+}
+
+/* ─── 竞品上新表格（V2风格） ─── */
+.prod-table { width:100%; border-collapse:collapse; font-size:13px; }
+.prod-table thead th {
+  background:linear-gradient(135deg,var(--brand),var(--brand-dark)); color:#fff;
+  padding:11px 14px; text-align:left; font-weight:600; font-size:12.5px;
+  white-space:nowrap; border:none;
+}
+.prod-table thead th:first-child { border-radius:8px 0 0 0; }
+.prod-table thead th:last-child { border-radius:0 8px 0 0; }
+.prod-table tbody tr { border-bottom:1px solid var(--border); transition:background .15s; }
+.prod-table tbody tr:hover { background:var(--brand-light); }
+.prod-table tbody td { padding:11px 14px; vertical-align:top; line-height:1.5; }
+.prod-table tbody tr:last-child td:first-child { border-radius:0 0 0 8px; }
+.prod-table tbody tr:last-child td:last-child { border-radius:0 0 8px 0; }
+.prod-brand-name { font-weight:700; color:var(--text); }
+.prod-pname { color:var(--text2); font-size:12.5px; }
+.prod-price { font-weight:700; color:var(--brand); white-space:nowrap; }
+.prod-sales { font-size:12px; color:var(--text2); }
+.prod-sales b { color:var(--brand-dark); }
+.prod-link a {
+  display:inline-flex; align-items:center; gap:3px; font-size:12px; color:#fff;
+  background:var(--brand); padding:4px 12px; border-radius:6px; font-weight:500;
+  transition:background .2s; white-space:nowrap;
+}
+.prod-link a:hover { background:var(--brand-dark); text-decoration:none; }
+.prod-src-name { font-size:11px; color:var(--text2); margin-top:2px; }
+
+/* ─── 日历模块 ─── */
+.cal-controls { display:flex; align-items:center; gap:16px; margin-bottom:16px; flex-wrap:wrap; }
+.cal-month-switch { display:flex; align-items:center; gap:8px; }
+.cal-month-btn {
+  padding:7px 16px; border:1px solid var(--border); border-radius:8px; background:#fff;
+  font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; color:var(--text);
+}
+.cal-month-btn:hover { border-color:var(--brand); color:var(--brand); }
+.cal-month-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+.cal-current-month { font-size:16px; font-weight:700; color:var(--text); min-width:140px; text-align:center; }
+
+/* 返回今天按钮 */
+.cal-today-btn {
+  padding:6px 14px; border-radius:16px; font-size:12px; font-weight:600;
+  background:var(--brand); color:#fff; border:none; cursor:pointer;
+  transition:all .2s; white-space:nowrap;
+}
+.cal-today-btn:hover { background:var(--brand-dark); }
+
+/* V19：节日类型筛选按钮（4色区分） */
+.cal-type-divider { color:var(--text3); font-size:12px; margin:0 4px; }
+.cal-type-btn {
+  padding:4px 12px; border-radius:14px; font-size:11px; font-weight:700;
+  border:1.5px solid var(--c); cursor:pointer; transition:all .2s; white-space:nowrap;
+  background:var(--b); color:var(--c);
+}
+.cal-type-btn:hover { transform:scale(1.05); box-shadow:0 2px 6px rgba(0,0,0,.1); }
+.cal-type-btn.active { background:var(--c); color:#fff; font-weight:800; box-shadow:0 2px 8px rgba(0,0,0,.2); }
+.cal-type-reset {
+  padding:4px 10px; border-radius:14px; font-size:11px; font-weight:600;
+  background:#f5f5f5; border:1px solid #ddd; cursor:pointer; transition:all .2s;
+  color:var(--text2); white-space:nowrap;
+}
+.cal-type-reset:hover { background:#e0e0e0; color:var(--text); }
+
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:3px; background:rgba(232,86,135,0.07); padding:3px; border-radius:12px; }
+.cal-head { text-align:center; font-size:12px; font-weight:700; color:var(--text2); padding:8px 0; }
+.cal-day {
+  aspect-ratio:1.45; display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  border-radius:10px; font-size:13px; cursor:pointer; transition:all .2s; position:relative;
+  border:1px solid transparent; background:#fff;
+  padding-top:6px;
+}
+.cal-day:hover { border-color:var(--brand-accent); background:var(--brand-light); }
+.cal-day.today { background:var(--brand); color:#fff; font-weight:700; border-color:var(--brand); }
+.cal-day.today:hover { background:var(--brand-dark); }
+.cal-day.has-node { font-weight:600; color:var(--brand-dark); }
+.cal-day.has-node.today { color:#fff; }
+.cal-node-dot {
+  position:absolute; bottom:4px; width:5px; height:5px; border-radius:50%;
+  background:var(--brand);
+}
+.cal-day.today .cal-node-dot { background:#fff; }
+.cal-empty { aspect-ratio:1.45; }
+
+/* ─── 热点话题 ─── */
+.topic-list { display:flex; flex-direction:column; gap:14px; }
+.topic-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.topic-item:hover { border-color:var(--brand-accent); }
+.topic-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
+.topic-platform {
+  display:inline-flex; align-items:center; gap:5px; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; background:#E3F2FD; color:#1565C0; flex-shrink:0;
+}
+.topic-title { font-weight:700; font-size:14.5px; color:var(--text); text-decoration:none; }
+.topic-title:hover { color:var(--brand); text-decoration:underline; }
+.topic-desc { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:10px; }
+.topic-data {
+  padding:8px 12px; background:linear-gradient(135deg,#FFF0F5,#FCE4EC); border-radius:8px;
+  font-size:12.5px; color:#C93868; font-weight:600; margin-bottom:10px;
+  display:flex; align-items:center; gap:6px;
+}
+.topic-data::before { content:'📊'; font-size:14px; }
+.topic-ideas { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:8px; }
+.topic-idea-card {
+  padding:10px 12px; border-radius:8px; background:var(--bg); border:1px solid var(--border);
+  font-size:12px; line-height:1.55;
+}
+.topic-idea-card strong { display:block; margin-bottom:4px; color:var(--brand-dark); font-size:12px; }
+.topic-src { margin-top:8px; }
+.topic-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light);
+}
+.topic-src-line { font-size:12px; color:var(--text2); margin-top:8px; }
+/* V17 新品标签：核心竞对（蓝）/ 本品（绿）/ 竞品（浅灰） */
+.prod-tag { display:inline-flex; align-items:center; padding:1px 7px; border-radius:8px; font-size:10.5px; font-weight:700; margin-left:6px; vertical-align:middle; }
+.prod-tag-core { background:#E3F2FD; color:#1565C0; }
+.prod-tag-self { background:#E8F5E9; color:#2E7D32; }
+.prod-tag-rival { background:#F0F0F0; color:#6B6560; }
+/* V17 本周行动高亮（未来重点节点预告） */
+.act-item.act-highlight { border-color:#FFB300; background:linear-gradient(135deg,#FFF8E1,#FFFBF0); box-shadow:0 0 0 2px rgba(255,179,0,.22); }
+.act-highlight .act-text { font-weight:700; color:#8a5a00; }
+/* V17 持续关注标签提示 */
+.watch-tag { display:inline-flex; align-items:center; padding:1px 7px; border-radius:8px; font-size:10.5px; font-weight:700; background:#FFF0F5; color:var(--brand-dark); margin-right:6px; }
+
+/* ─── 行业趋势 ─── */
+.trend-list { display:flex; flex-direction:column; gap:12px; }
+.trend-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s; border-left:4px solid var(--brand);
+}
+.trend-item:hover { box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.trend-head { display:flex; align-items:center; gap:8px; margin-bottom:6px; flex-wrap:wrap; }
+.trend-plat {
+  display:inline-flex; align-items:center; gap:4px; padding:3px 10px; border-radius:12px;
+  font-size:11.5px; font-weight:600; background:#E3F2FD; color:#1565C0; flex-shrink:0;
+}
+.trend-title { font-weight:700; font-size:14.5px; color:var(--text); }
+.trend-title:hover { color:var(--brand); }
+.trend-summary { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:8px; }
+.trend-data {
+  padding:8px 12px; background:var(--brand-light); border-radius:8px;
+  font-size:12.5px; color:var(--brand-dark); font-weight:600; margin-bottom:8px;
+}
+.trend-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light);
+}
+
+/* ─── 弹窗 ─── */
+.overlay {
+  display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,.45);
+  align-items:center; justify-content:center; padding:20px;
+}
+.overlay.show { display:flex; }
+.modal {
+  background:#fff; border-radius:var(--radius); max-width:640px; width:100%; max-height:85vh;
+  overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.2); animation:modalIn .25s ease;
+}
+@keyframes modalIn { from{opacity:0;transform:scale(.95) translateY(10px);} to{opacity:1;transform:scale(1) translateY(0);} }
+.modal-hd {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 22px; border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg,var(--brand-light),#fff);
+  border-radius:var(--radius) var(--radius) 0 0;
+}
+.modal-hd h3 { font-size:17px; font-weight:700; }
+.modal-close {
+  width:32px; height:32px; border-radius:50%; border:none; background:var(--bg);
+  font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  color:var(--text2); transition:all .2s;
+}
+.modal-close:hover { background:var(--brand); color:#fff; }
+.modal-bd { padding:20px 22px 24px; }
+.creative-split { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
+.creative-col {
+  padding:16px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:var(--bg);
+}
+.creative-col h4 { font-size:14px; margin-bottom:10px; color:var(--text); }
+.creative-col p { font-size:13px; color:var(--text2); line-height:1.7; white-space:pre-line; }
+.creative-list { margin:4px 0 0; padding-left:18px; }
+.creative-list li { font-size:13px; color:var(--text2); line-height:1.75; margin-bottom:7px; }
+.creative-list li:last-child { margin-bottom:0; }
+.creative-abandon { font-size:13px; color:var(--text2); background:#f6f6f8; border:1px dashed #ddd; border-radius:8px; padding:11px 13px; margin-top:4px; }
+.platform-events { margin-top:14px; padding:12px; background:#FFF8E1; border-radius:8px; }
+.platform-events h4 { font-size:13px; margin-bottom:8px; color:#F57F17; }
+.platform-events ul { padding-left:18px; font-size:12.5px; color:var(--text2); }
+.platform-events li { margin-bottom:4px; }
+
+/* ─── 分页/翻页导航（>5条时启用） ─── */
+.pager-nav { display:flex; align-items:center; justify-content:center; gap:16px; margin-top:16px; }
+.pager-btn {
+  padding:7px 18px; border:1px solid var(--border); border-radius:20px; background:#fff;
+  font-size:13px; font-weight:600; cursor:pointer; color:var(--text2); transition:all .2s;
+}
+.pager-btn:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.pager-btn:disabled { opacity:.4; cursor:not-allowed; }
+.pager-info { font-size:13px; color:var(--text2); font-weight:600; }
+
+/* ─── 代言：头衔标签化 + 来源右移 ─── */
+.end-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:5px; align-items:center; }
+/* V17：代言三标签完全统一尺寸（头衔/动作/品类） */
+.end-tag {
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+}
+.end-tag-level { background:var(--brand); color:#fff; }   /* 代言头衔 — 粉底白字 */
+.end-tag-star { background:var(--brand); color:#fff; }       /* 艺人身份 — 同上 */
+.end-action {                                                    /* 新签/续约 — 深蓝字+浅蓝底 */
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+  background:#E3F2FD; color:#1565C0;
+}
+.end-cat {                                                       /* 代言品类 — 浅绿底+绿字 */
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+  background:#E8F5E9; color:#2E7D32;
+}
+.end-right {
+  flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap:8px;
+  min-width:96px; padding-top:2px;
+}
+.end-right .end-source { margin-top:0; }
+.end-right .end-source a { white-space:nowrap; }
+
+/* ─── 营销案例：来源右移 ─── */
+.case-item { display:flex; gap:14px; align-items:stretch; }
+.case-main { flex:1; min-width:0; }
+.case-side {
+  flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap:10px;
+  min-width:120px;
+}
+.case-side .case-type { margin-bottom:0; }
+
+/* ─── 新品上新：品类筛选 ─── */
+.prod-filters { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:14px; }
+.prod-filters-label { font-size:13px; font-weight:600; color:var(--text2); white-space:nowrap; }
+.prod-cat-cb { display:none; }
+.prod-cat-chip {
+  padding:5px 14px; border-radius:16px; font-size:12.5px; font-weight:600; cursor:pointer;
+  background:#fff; border:1px solid var(--border); color:var(--text2); user-select:none;
+  transition:all .2s;
+}
+.prod-cat-chip:hover { border-color:var(--brand); color:var(--brand); }
+.prod-cat-chip.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+
+/* ─── 营销日历：左右切月 + 节日名标记 ─── */
+.cal-arrow {
+  width:34px; height:34px; border-radius:50%; border:1px solid var(--border); background:#fff;
+  font-size:18px; font-weight:700; cursor:pointer; color:var(--text2); transition:all .2s;
+  display:flex; align-items:center; justify-content:center; padding:0; line-height:1;
+}
+.cal-arrow:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.cal-arrow:disabled { opacity:.35; cursor:not-allowed; }
+.cal-current-month { font-size:16px; font-weight:700; color:var(--text); min-width:120px; text-align:center; }
+.cal-day { gap:2px; }
+.cal-num { font-size:13px; font-weight:700; line-height:1.2; }
+.cal-marks { display:flex; flex-direction:column; align-items:center; gap:2px; width:100%; margin-top:1px; }
+.cal-mark {
+  font-size:10.5px; line-height:1.3;
+  border-radius:6px; padding:1px 4px; max-width:94%; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; cursor:pointer; text-align:center;
+  color:#1565C0; background:#E3F2FD; transition:all .15s;
+}
+/* 按节点类型着色（与日历顶部按钮颜色一致） */
+.cal-mark[data-cat="节气"] { color:#1565C0; background:#E3F2FD; }
+.cal-mark[data-cat="公历"] { color:#C62828; background:#FFEBEE; }
+.cal-mark[data-cat="农历"] { color:#2E7D32; background:#E8F5E9; }
+.cal-mark[data-cat="国际节日"] { color:#7B1FA2; background:#F3E5F5; }
+.cal-mark:hover { filter:brightness(0.9); }
+.cal-day.today .cal-mark { background:rgba(255,255,255,.3); color:#fff; filter:none; }
+.cal-day.today .cal-mark:hover { background:#fff; color:#1565C0; }
+/* 星标节点：仅以 ⭐ 文字提示，背景色保留其原本所属节日类型色（见 data-cat 规则），不使用暖色 */
+.cal-more { font-size:9px; color:var(--text2); }
+.cal-day.today .cal-more { color:#fff; }
+.cal-day.no-node { font-weight:400; color:var(--text); cursor:default; }
+.cal-day.no-node:hover { border-color:transparent; background:#fff; }
+.node-switcher { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+.node-sw-btn {
+  padding:5px 12px; border-radius:14px; font-size:12px; font-weight:600; cursor:pointer;
+  background:var(--bg); border:1px solid var(--border); color:var(--text2); transition:all .2s;
+}
+.node-sw-btn:hover { border-color:var(--brand); color:var(--brand); }
+.node-sw-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+
+/* ─── 平台热点 / 行业趋势：来源右移 ─── */
+.topic-item { display:flex; gap:14px; align-items:stretch; }
+.topic-main { flex:1; min-width:0; }
+.topic-side { flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:flex-end; gap:8px; min-width:120px; }
+.topic-side .topic-src { margin-top:0; }
+.trend-item { display:flex; gap:14px; align-items:stretch; }
+.trend-main { flex:1; min-width:0; }
+.trend-side { flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:flex-end; gap:8px; min-width:120px; }
+.trend-side .trend-src { margin-top:0; }
+
+/* ─── 响应式 ─── */
+@media(max-width:768px){
+  .topbar { padding:0 12px; height:auto; flex-wrap:wrap; padding:10px 12px; }
+  .topbar-nav { display:none; } /* 移动端隐藏锚点导航 */
+  .main-wrap { padding:12px 10px 40px; }
+  .mod-body { padding:14px 16px 18px; }
+  .mod-header { padding:14px 16px 10px; }
+  .must-see-grid { grid-template-columns:1fr; }
+  .creative-split { grid-template-columns:1fr; }
+  .prod-table { font-size:12px; display:block; overflow-x:auto; }
+  .topic-ideas { grid-template-columns:1fr; }
+  .cal-controls { flex-direction:column; align-items:flex-start; }
+  .cal-month-switch { flex-wrap:wrap; }
+  .case-side, .topic-side, .trend-side, .end-right { min-width:auto; align-items:flex-end; width:100%; }
+  .case-item, .topic-item, .trend-item, .end-item, .mn-item, .rep-item { flex-direction:column; }
+  .prod-filters { gap:6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<div class="topbar">
+  <div class="topbar-logo">
+    <img src="../menow-logo.png" alt="MENOW 美诺">
+    <div class="topbar-title">美诺<span>MENOW</span>彩妆情报资讯台 <em class="ver-badge">V20</em></div>
+  </div>
+  <nav class="topbar-nav">
+    <a href="#sec-must" class="active" onclick="scrollToSec('sec-must',this);return false;">今日精选</a>
+    <a href="#sec-endorse" onclick="scrollToSec('sec-endorse',this);return false;">明星代言</a>
+    <a href="#sec-cases" onclick="scrollToSec('sec-cases',this);return false;">营销动态</a>
+    <a href="#sec-calendar" onclick="scrollToSec('sec-calendar',this);return false;">营销日历</a>
+    <a href="#sec-hot" onclick="scrollToSec('sec-hot',this);return false;">平台热点</a>
+    <a href="#sec-products" onclick="scrollToSec('sec-products',this);return false;">新品上新</a>
+    <a href="#sec-reports" onclick="scrollToSec('sec-reports',this);return false;">行业报告</a>
+    <a href="#sec-trends" onclick="scrollToSec('sec-trends',this);return false;">行业趋势</a>
+    <a href="#sec-insight" onclick="scrollToSec('sec-insight',this);return false;">美诺启示</a>
+    <a href="../sentiment.html" target="_blank" rel="noopener" class="nav-sentinel">🛡️ 舆情监控</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="date-picker">
+      <label onclick="toggleCalPopup(event)">📅</label>
+      <div class="date-trigger" onclick="toggleCalPopup(event)" id="dateTrigger">2026-08-19</div>
+      <div class="cal-popup" id="calPopup">
+        <div class="cp-head">
+          <div class="cp-nav">
+            <button id="cpYPrev" onclick="cpYear(-1)" title="上一年">&laquo;</button>
+            <button id="cpMPrev" onclick="cpMonth(-1)" title="上个月">&lsaquo;</button>
+          </div>
+          <div class="cp-title" id="cpTitle"></div>
+          <div class="cp-nav">
+            <button id="cpMNext" onclick="cpMonth(1)" title="下个月">&rsaquo;</button>
+            <button id="cpYNext" onclick="cpYear(1)" title="下一年">&raquo;</button>
+          </div>
+        </div>
+        <div class="cp-weekdays">
+          <div class="cp-wd">一</div><div class="cp-wd">二</div><div class="cp-wd">三</div>
+          <div class="cp-wd">四</div><div class="cp-wd">五</div><div class="cp-wd">六</div><div class="cp-wd">日</div>
+        </div>
+        <div class="cp-grid" id="cpGrid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-wrap">
+
+<!-- 1. 今日精选（V13 升级） -->
+<section class="module" id="sec-must">
+  <div class="mod-header">
+    <h2><span class="icon">👁️</span> 今日精选</h2>
+    <span class="mod-badge">6 条要点</span>
+  </div>
+  <p class="sec-desc">本板块仅展示当日（2026-08-19）新收录的精选资讯；下方「持续关注」为每日固定跟踪项（已加标签区分），不受去重约束，保证每天都有高价值情报供给。</p>
+  <div class="mod-body">
+    <div class="must-see-grid"><div class="must-see-card"><div class="ms-head"><div class="ms-icon">📅</div><div class="ms-tag tag-urgent">紧急节点</div></div><p>今天就是七夕（8/19）！前夜营销已打完第一波，今天该上美诺「平价心意礼」组合装（粉饼+定妆喷雾）卡位节日当天流量；注意今年舆论「去情爱化」——别讲爱情告白，讲「给自己一份体面」与「平价也有仪式感」。</p></div><div class="must-see-card"><div class="ms-head"><div class="ms-icon">🏆</div><div class="ms-tag tag-trend">平台官方</div></div><p>抖音商城七夕好礼季官方高光榜单出炉（8/18）：美妆个护是礼赠刚需，彩妆榜 YSL/兰蔻/雅诗兰黛居前，但 200 元以下价格带份额已升至 46.52%——美诺 49.9 元粉饼正处增量价格带，官方榜单与价差报道都是可引用的背书素材。</p></div><div class="must-see-card"><div class="ms-head"><div class="ms-icon">🤖</div><div class="ms-tag tag-trend">行业新形态</div></div><p>王祖贤 AI 代言《天下》18 周年（7/20）成行业标志性案例：国内首个明星正版授权全 AIGC 广告，授权 20-30 岁巅峰肖像、限定单项目、不真人宣传——「明星数字肖像授权」新广告形态已跑通闭环，美诺可关注 AI 素材/数字人主播的降本机会。</p></div><div class="must-see-card"><div class="ms-head"><div class="ms-icon">📊</div><div class="ms-tag tag-trend">战略信号</div></div><p>用户说《2026 底妆线上消费趋势洞察》：三大平台底妆盘 398.62 亿元、抖音占 58.22%（232 亿，+13.72%）；遮瑕 +24.35% 是增速最快的底妆细分；气垫 104 亿/粉底液 100.9 亿双百亿基本盘——「底妆细分场景化」正在加速，美诺的控油/持妆卖点叙事空间仍在扩大。</p></div><div class="must-see-card"><div class="ms-head"><div class="ms-icon">📣</div><div class="ms-tag tag-trend">平台官方</div></div><p>平台官方大会信号：2026 巨量引擎渠道合作伙伴生态大会（4/22 青岛，主题「智·启无境」）明确营销逻辑从「流量思维」转向「经营思维」，全链路嵌 AI、品星云 AI 能力升级、火山引擎发布代理商 AI 解决方案——平台侧已把 AI 当成增长底座，美诺的素材生产/投放策略应尽早 AI 化。</p></div><div class="must-see-card"><div class="ms-head"><div class="ms-icon">🌹</div><div class="ms-tag tag-trend">热点借势</div></div><p>微博#七夕#全网趋势：今年年轻人把七夕重新叫回「乞巧节/女儿节」，主流叙事是「松弛悦己」「爱自己才是终身浪漫」，「七夕我就这样安慰自己」成现象级话题——美诺的七夕内容应从「甜蜜告白」切到「悦己美妆日常」。</p></div></div>
+  </div>
+  <div class="watch-block">
+    <div class="watch-hd"><span class="icon">📌</span> 持续关注 <span class="watch-sub">（每日固定跟踪，不受去重约束）</span></div>
+    <div class="watch-list"><div class="watch-item"><span class="watch-icon">📅</span><span class="watch-text">七夕营销节点（8/19）竞品动作实时跟进——卡姿兰/方里/彩棠/M·A·C 礼盒打法与价格机制（含8/18前夜直播间节奏）</span></div><div class="watch-item"><span class="watch-icon">⚔️</span><span class="watch-text">竞品方里 / 卡姿兰 / 毛戈平 / 玉泽 底妆动作跟踪——新品、代言与渠道机制变化（全行业）</span></div><div class="watch-item"><span class="watch-icon">❄️</span><span class="watch-text">凉感底妆 / 养肤粉饼产品机会验证——跟进「凉感化妆品」赛道与「活人感」审美对配方的启示</span></div><div class="watch-item"><span class="watch-icon">🌟</span><span class="watch-text">明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏</span></div><div class="watch-item"><span class="watch-icon">💡</span><span class="watch-text">跨品类机会扫描——男士护理680亿赛道、个护/护肤端「微生态」「纯净美妆」声量与彩妆审美的承接点</span></div><div class="watch-item"><span class="watch-icon">🎤</span><span class="watch-text">平台官方大会档期跟踪——抖音电商生态大会、引擎大会（巨量引擎）、抖音创作者大会、小红书 WILL 商业大会、微博超级红人节等年度大会的时间/主题/发布口径（平台方一手信息优先）</span></div><div class="watch-item"><span class="watch-icon">🤖</span><span class="watch-text">AI 新广告形态跟踪——AI 创意/AIGC 素材（抖音即创/巨量创意）、AI 素材授权、明星 AI 授权（数字分身/AI 肖像代言）、智能投放等平台级新形态动态</span></div></div>
+  </div>
+</section>
+
+<!-- 2. 明星代言 -->
+<section class="module" id="sec-endorse">
+  <div class="mod-header">
+    <h2><span class="icon">⭐</span> 明星代言动态</h2>
+    <span class="mod-badge">34 条动态 · 近一周</span>
+  </div>
+  <p class="sec-desc">仅展示近一周（2026-08-12 ~ 2026-08-19）内官宣的明星代言动态，按官宣日期倒序排列；更早的官宣不再堆积展示。</p>
+  <div class="mod-body">
+    <div class="end-list" id="endList"><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="end-info"><div class="end-brand"><a href="https://www.163.com/dy/article/L4JU9PG4051191D6.html" target="_blank" rel="noopener" class="end-brand-link">起亚Kia × 蔡徐坤（待官宣确认）</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌代言人（悬念中）</span><span class="end-action">新签</span><span class="end-cat">汽车</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">起亚全新赛图斯已开启预售（1.5T+8AT、标配27英寸超薄宽屏、骁龙8295P芯片），海报宣传语『实力主角，如约而至』；8/20将正式揭晓代言人。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">因蔡徐坤粉丝基数庞大，悬念海报引发热议，评论区大量猜测与期待，起亚借悬念营销撬动年轻消费群体关注全新赛图斯。</span></div></div><div class="end-right"><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://socialbeta.com/campaign/28250" target="_blank" rel="noopener" class="end-brand-link">闻献DOCUMENTS × 朱一龙</a></div><div class="end-tags"><span class="end-tag end-tag-level">全球品牌代言人</span><span class="end-action">新签</span><span class="end-cat">香氛</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">官宣同步推出全球代言人限定礼盒套组（绸光细闪+金缕绳结龟背结纹，购盒得代言人专属香卡），产品将于品牌官方小程序、天猫旗舰店及全国线下空间陆续发售，并预告更多代言人限定产品与线下体验内容。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">朱一龙粉丝（朱家小影等）在星品影响力及超话积极应援圈粉，『有龙则灵』中式美学物料获好评，被视为国货香氛品牌顶流代言的代表性案例。星品影响力截图显示心动值 10,344。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%9C%B1%E4%B8%80%E9%BE%99%E9%97%BB%E7%8C%AE%E5%85%A8%E7%90%83%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%23" target="_blank" rel="noopener" class="end-hashtag-link">#朱一龙闻献全球品牌代言人#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">10,344</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://new.qq.com/rain/a/20260817A063YH00" target="_blank" rel="noopener" class="end-brand-link">岚图汽车 × 杨洋</a></div><div class="end-tags"><span class="end-tag end-tag-level">全球代言人</span><span class="end-action">活动亮相</span><span class="end-cat">汽车</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">追光S上市推出四激光后驱Max/Ultra/四驱Ultra+三版本，2000定金抵8000尾款；宣称全球首款量产车重现舒马赫360°隧道大回环、28米高空跌落A/B/C/D柱完整；杨洋抽取幸运用户送亲笔签名镜头。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">四川天之岚车友会点亮成都双塔、天府广场等多处地标为新车助威，杨洋亲临带动现场氛围，新车以安全硬核测试引发行业讨论。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%B2%9A%E5%9B%BE%E8%BF%BD%E5%85%89S%23" target="_blank" rel="noopener" class="end-hashtag-link">#岚图追光S#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">九牧王JOEONE × 李昀锐</a></div><div class="end-tags"><span class="end-tag end-tag-level">全球品牌代言人</span><span class="end-action">新签</span><span class="end-cat">服饰</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 官方同步发布全球品牌代言人 KV与官宣短片，主推九牧王商务正装与『年轻化』廓形系列，线上线下渠道全面换装。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">李昀锐粉丝在星品影响力截图显示心动值 26,755（为本日 8/17 截图榜单最高），正装上身与商务质感获粉丝好评。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%9D%8E%E6%98%80%E9%94%90%E4%B9%9D%E7%89%A7%E7%8E%8B%E5%85%A8%E7%90%83%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%23" target="_blank" rel="noopener" class="end-hashtag-link">#李昀锐九牧王全球品牌代言人#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">26,755</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">安敏优 × 吕思曈</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌心动大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 同步上线官宣 KV 与产品共创短视频。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">星品影响力心动值 15,674；粉丝围绕「安敏优品牌心动大使吕思曈」话题应援。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%AE%89%E6%95%8F%E4%BC%98%E5%93%81%E7%89%8C%E5%BF%83%E5%8A%A8%E5%A4%A7%E4%BD%BF%E5%90%95%E6%80%9D%E6%9B%88%23" target="_blank" rel="noopener" class="end-hashtag-link">#安敏优品牌心动大使吕思曈#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">15,674</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">安敏优 × 孙政</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌心动大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 同步上线官宣 KV 与产品共创短视频。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">星品影响力心动值 15,608；安敏优同日签约双大使组合（吕思曈+孙政），形成『双子星』营销阵容。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%AE%89%E6%95%8F%E4%BC%98%E5%93%81%E7%89%8C%E5%BF%83%E5%8A%A8%E5%A4%A7%E4%BD%BF%E5%AD%99%E6%94%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#安敏优品牌心动大使孙政#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">15,608</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">支付宝 × 陈都灵</a></div><div class="end-tags"><span class="end-tag end-tag-level">疯狂碰友日推广大使</span><span class="end-action">新签</span><span class="end-cat">金融科技</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 同步上线『疯狂碰友日』活动 KV，陈都灵以『青春派』形象出镜主推支付宝碰一碰支付场景。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">星品影响力心动值 13,568；粉丝围绕碰友日活动积极晒单应援。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E9%99%88%E9%83%BD%E7%81%B5%E6%94%AF%E4%BB%98%E5%AE%9D%E7%96%AF%E7%8B%82%E7%A2%B0%E5%8F%8B%E6%97%A5%E6%8E%A8%E5%B9%BF%E5%A4%A7%E4%BD%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#陈都灵支付宝疯狂碰友日推广大使#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">13,568</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">RemyMartin人头马 × 翟子路</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌挚友</span><span class="end-action">新签</span><span class="end-cat">酒类</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 同步上线品牌挚友 KV 与短视频。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">星品影响力心动值 180（榜单尾部），热度较低但完成品牌代言矩阵补位。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E7%BF%9F%E5%AD%90%E8%B7%AF%E4%BA%BA%E5%A4%B4%E9%A9%AC%E5%93%81%E7%89%8C%E6%8C%9A%E5%8F%8B%23" target="_blank" rel="noopener" class="end-hashtag-link">#翟子路人头马品牌挚友#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">180</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">17</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">梦幻西游电脑版 × 彭昱畅</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">游戏</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8/17 同步上线代言人 KV 与游戏内活动。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">星品影响力心动值 42（榜单尾部），游戏垂类代言，热度限于核心玩家圈。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%BD%AD%E6%98%B1%E7%95%85%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E7%94%B5%E8%84%91%E7%89%88%E4%BB%A3%E8%A8%80%E4%BA%BA%23" target="_blank" rel="noopener" class="end-hashtag-link">#彭昱畅梦幻西游电脑版代言人#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">42</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">16</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">薇诺娜 × 张翅</a></div><div class="end-tags"><span class="end-tag end-tag-level">特护大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月16日10:00薇诺娜品牌官宣（🫘/🧣/🍠同步）；10:00官方旗舰店上线代言专属周边；10:22🫘共创视频发布。8月17日16:00 id视频发布（🫘）；8月19日19:00薇诺娜🫘官方直播间直播宣传。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">张翅粉丝（翅煲）8月16日起在星品影响力及微博超话#演员张翅[超话]#积极应援圈粉，结合《夫人走的第三年》「裴迹之为夫人求取佛珠」剧情点，热度持续上扬。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E8%96%87%E8%AF%BA%E5%A8%9C%E7%89%B9%E6%8A%A4%E5%A4%A7%E4%BD%BF%E5%BC%A0%E7%BF%85%23" target="_blank" rel="noopener" class="end-hashtag-link">#薇诺娜特护大使张翅#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,697</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">16</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">康师傅方便面 × 卓沅</a></div><div class="end-tags"><span class="end-tag end-tag-level">美味推广大使</span><span class="end-action">新签</span><span class="end-cat">食品饮料</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月16日9:00发布官宣KV、10:16上线新品创意短视频，主推红烧牛肉面减卡高纤面；天猫官方旗舰店开售并赠撕拉片、冰箱贴周边，杭州杭钢公园同步开启限定快闪活动（13:00-21:00）及粉丝晒单抽奖。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝（禾伙人）围绕#卓沅康师傅方便面美味推广大使#话题积极互动、晒单应援，对新代言反响热烈。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%8D%93%E6%B2%85%E5%BA%B7%E5%B8%88%E5%82%85%E6%96%B9%E4%BE%BF%E9%9D%A2%E7%BE%8E%E5%91%B3%E6%8E%A8%E5%B9%BF%E5%A4%A7%E4%BD%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#卓沅康师傅方便面美味推广大使#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">1,231</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">16</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">蒂芙尼Tiffany × 言承旭</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌大使</span><span class="end-action">新签</span><span class="end-cat">珠宝奢侈品</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月16日正式官宣言承旭出任品牌大使，官宣物料全套演绎'石上鸟'高级珠宝系列（飞羽项链、翱翔鸟项链、彩宝镶钻石上鸟腕表等）。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">多家时尚与行业媒体跟进报道，品牌借其跨世代公众影响力强化在华人市场与高净值客群的情感连接，口碑正向。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E8%92%82%E8%8A%99%E5%B0%BC%E5%93%81%E7%89%8C%E5%A4%A7%E4%BD%BF%E8%A8%80%E6%89%BF%E6%97%AD%23" target="_blank" rel="noopener" class="end-hashtag-link">#蒂芙尼品牌大使言承旭#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">574</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">毛戈平 × 邓佳鑫</a></div><div class="end-tags"><span class="end-tag end-tag-level">礼遇心动大使</span><span class="end-action">新签</span><span class="end-cat">彩妆</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣邓佳鑫为品牌首位男性礼遇心动大使，推出七夕'爱如羽翼'限定系列礼盒（底妆礼盒与琉羽高定礼盒）及限定周边，并发布深圳北站、杭州东站等多地线下大屏打卡攻略。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝（多多佳鑫）积极应援，围绕限定礼盒与同款周边展开购买与打卡，话题讨论热度较高。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%AF%9B%E6%88%88%E5%B9%B3%E7%A4%BC%E9%81%87%E5%BF%83%E5%8A%A8%E5%A4%A7%E4%BD%BF%E9%82%93%E4%BD%B3%E9%91%AB%23" target="_blank" rel="noopener" class="end-hashtag-link">#毛戈平礼遇心动大使邓佳鑫#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">31,580</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">娇兰 × 夏之光</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌挚友</span><span class="end-action">新签</span><span class="end-cat">美妆</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣夏之光为法国娇兰品牌挚友，主打蓝调淡香精推广，官宣当晚空降娇兰京东自营官方旗舰店直播间，带来七夕'送恋人/送自己'香水推荐及福袋抽奖。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">微博话题#夏之光法国娇兰品牌挚友#引发粉丝庆祝与讨论，官宣获美妆营销媒体关注。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%A4%8F%E4%B9%8B%E5%85%89%E6%B3%95%E5%9B%BD%E5%A8%87%E5%85%B0%E5%93%81%E7%89%8C%E6%8C%9A%E5%8F%8B%23" target="_blank" rel="noopener" class="end-hashtag-link">#夏之光法国娇兰品牌挚友#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">11,941</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">阿尔卑斯 × 董思成</a></div><div class="end-tags"><span class="end-tag end-tag-level">良缘代言人</span><span class="end-action">新签</span><span class="end-cat">食品饮料</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日七夕官宣董思成任良缘代言人，推出专属七夕古偶主题短片，并上线'董思成同款'混合口味硬糖套组。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝围绕#阿尔卑斯良缘代言人董思成#开展星品影响力打卡应援，评价代言人与产品'100昏绝配'，反响积极。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E9%98%BF%E5%B0%94%E5%8D%91%E6%96%AF%E8%89%AF%E7%BC%98%E4%BB%A3%E8%A8%80%E4%BA%BA%E8%91%A3%E6%80%9D%E6%88%90%23" target="_blank" rel="noopener" class="end-hashtag-link">#阿尔卑斯良缘代言人董思成#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">7,843</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">夸迪 × 黄羿</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣黄羿为品牌大使，此前以悬念海报、倒计时video预热，官宣日释出KV与共创TVC，主推全新'注光瓶'（聚焦细胞线粒体注光抗老）。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝在星品影响力为其送心助力，品牌后续发起周边种草与UGC二创征集，粉丝互动活跃。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%A4%B8%E8%BF%AA%E5%93%81%E7%89%8C%E5%A4%A7%E4%BD%BF%E9%BB%84%E7%BE%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#夸迪品牌大使黄羿#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,692</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">夸迪 × 官鸿</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日与黄羿同期官宣官鸿为品牌大使，主打'注光瓶'细胞注光抗老，二人以'九五双帝/元治'CP概念捆绑营销。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝围绕黄羿×官鸿CP向内容展开大量二创与应援，星品影响力为其送心，话题热度较高。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%A4%B8%E8%BF%AA%E5%93%81%E7%89%8C%E5%A4%A7%E4%BD%BF%E5%AE%98%E9%B8%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#夸迪品牌大使官鸿#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,499</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">阿玛尼美妆 × 闫桉</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌挚友</span><span class="end-action">新签</span><span class="end-cat">彩妆</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣闫桉为阿玛尼美妆品牌挚友，主推七夕限定礼盒传奇红管（主推色号100满分粉棕），并预告8月17日亮相京东官方旗舰店直播间。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝以高度组织化的'应援式'营销和文案模板迎接合作，网络情绪以骄傲、期待与消费转化为主，反响热烈。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E9%97%AB%E6%A1%89%E9%98%BF%E7%8E%9B%E5%B0%BC%E7%BE%8E%E5%A6%86%E5%93%81%E7%89%8C%E6%8C%9A%E5%8F%8B%23" target="_blank" rel="noopener" class="end-hashtag-link">#闫桉阿玛尼美妆品牌挚友#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,356</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">参半 × 林子烨</a></div><div class="end-tags"><span class="end-tag end-tag-level">青少年系列代言人</span><span class="end-action">新签</span><span class="end-cat">口腔护理</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">官宣林子烨出任参半青少年系列代言人（其首个品牌代言），主打青少年清爽口腔定位，配合空瓶文案与星品影响力种草。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝庆祝其拿下首个品牌代言，围绕#参半青少年系列代言人林子烨#积极互动与打投，反响正面。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%8F%82%E5%8D%8A%E9%9D%92%E5%B0%91%E5%B9%B4%E7%B3%BB%E5%88%97%E4%BB%A3%E8%A8%80%E4%BA%BA%E6%9E%97%E5%AD%90%E7%83%A8%23" target="_blank" rel="noopener" class="end-hashtag-link">#参半青少年系列代言人林子烨#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,125</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">欧珀莱 × 姚琛</a></div><div class="end-tags"><span class="end-tag end-tag-level">闪白大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日10:00官宣姚琛为闪白大使，推出七夕闪白礼盒（臻源水+闪白瓶精华+臻源乳+替换芯+限定周边），天猫同步开售并启动'闪白挑战'（晒单破1000解锁长沙应援大屏）。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝（Cookies）积极参与闪白挑战与打投应援，围绕同款套组与周边礼展开购买与讨论。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%AC%A7%E7%8F%80%E8%8E%B1%E9%97%AA%E7%99%BD%E5%A4%A7%E4%BD%BF%E5%A7%9A%E7%90%9B%23" target="_blank" rel="noopener" class="end-hashtag-link">#欧珀莱闪白大使姚琛#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">1,459</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">美团 × 景甜</a></div><div class="end-tags"><span class="end-tag end-tag-level">潮玩变美大使</span><span class="end-action">新签</span><span class="end-cat">生活服务</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日18:00以'潮玩变美大使'身份在美团直播撒福利（88元无门槛券、免费美甲美发名额），并空降苏豪发廊美团直播间。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">直播间福利帖引发粉丝转发互动，'抄作业'式种草七夕变美服务，反响活跃。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%99%AF%E7%94%9C%E7%BE%8E%E5%9B%A2%E6%BD%AE%E7%8E%A9%E5%8F%98%E7%BE%8E%E5%A4%A7%E4%BD%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#景甜美团潮玩变美大使#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">613</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">领克汽车 × 阚清子</a></div><div class="end-tags"><span class="end-tag end-tag-level">车型挚友</span><span class="end-action">新签</span><span class="end-cat">汽车</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣阚清子为全新领克20车型挚友，以主打色'尤莱特紫'玩谐音梗海报（'一眼看清紫'），并亮相成都车展、携手《时尚芭莎》拍摄。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">行业营销号将其解读为'人设与品牌灵魂共振'的典型样本，公关稿与车展曝光带来正向讨论。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E9%A2%86%E5%85%8B20%E8%BD%A6%E5%9E%8B%E6%8C%9A%E5%8F%8B%E9%98%9A%E6%B8%85%E5%AD%90%23" target="_blank" rel="noopener" class="end-hashtag-link">#领克20车型挚友阚清子#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">496</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">14</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">脉动 × 欧豪</a></div><div class="end-tags"><span class="end-tag end-tag-level">职场状态续航大使</span><span class="end-action">新签</span><span class="end-cat">饮料</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月14日官宣欧豪为职场状态续航大使，主推全新3D源动力（3连电解质+3重维生素），结合综艺《大哥小助理》物料并设签名照抽奖。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝围绕#欧豪脉动职场状态续航大使#话题互动抽奖，结合综艺热度带动产品讨论，反响积极。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%AC%A7%E8%B1%AA%E8%84%89%E5%8A%A8%E8%81%8C%E5%9C%BA%E7%8A%B6%E6%80%81%E7%BB%AD%E8%88%AA%E5%A4%A7%E4%BD%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#欧豪脉动职场状态续航大使#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">399</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">13</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">红之HUNGCHI × 周翊然</a></div><div class="end-tags"><span class="end-tag end-tag-level">清爽代言人</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">红之8月13日官宣周翊然为清爽代言人，以『翊净到底，即刻怦然』为主题上线『翊见怦然』洗护/卸洁限定套组及多巴胺洗护发系列，随套组赠送小卡、撕拉吧唧、NFC四宫格等全套周边，并在天猫、京东同步开售并启动『星品影响力』推荐活动。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣当日周翊然工作室与品牌双微联动造势，粉丝涌入旗舰店抢购限定套组与周边，微博话题『红之清爽代言人周翊然』引发大量讨论与晒单。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E7%BA%A2%E4%B9%8B%E6%B8%85%E7%88%BD%E4%BB%A3%E8%A8%80%E4%BA%BA%E5%91%A8%E7%BF%8A%E7%84%B6%23" target="_blank" rel="noopener" class="end-hashtag-link">#红之清爽代言人周翊然#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">17,255</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">13</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">奕境汽车 × 郭富城</a></div><div class="end-tags"><span class="end-tag end-tag-level">全球代言人</span><span class="end-action">新签</span><span class="end-cat">汽车</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">奕境汽车8月13日官宣郭富城为奕境X9全球代言人并发布随车灯光影舞动的官宣视频，借其6月香港车展品鉴、武汉演唱会试驾的『天王严选』双重身份（赛车手兼三孩父亲）契合产品，新车8月18日开启预售、预售价38至52万元。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣视频引爆社交网络，被网友称为『天王座驾』『天王严选』，媒体从产品力与代言人契合度多维度解读，新车对标问界M9、理想L9引发行业讨论。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%A5%95%E5%A2%83X9%E5%85%A8%E7%90%83%E4%BB%A3%E8%A8%80%E4%BA%BA%E9%83%AD%E5%AF%8C%E5%9F%8E%23" target="_blank" rel="noopener" class="end-hashtag-link">#奕境X9全球代言人郭富城#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">181</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">王泽(Dr.Yu) × 杨紫</a></div><div class="end-tags"><span class="end-tag end-tag-level">护肤全球代言人</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">玉泽8月12日官宣杨紫为品牌创立23年来首位全球护肤代言人，推出『紫生屏障』系列礼盒（299/399元）及限定周边（NFC小卡、镜中画挂件等），并在全国9城100屏（含北京王府井、上海南京东路及上海地铁）大规模投放。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">作为杨紫白玉兰视后后首个护肤代言，官宣当日粉丝涌入天猫旗舰店抢购『紫生屏障礼盒』致销量暴涨、部分用户多单下单，9城大屏排面拉满，被业内评价为国货护肤代言规格突破。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%AE%88%E6%8A%A4%E7%A8%B3%E7%A8%B3%E7%9A%84YANGZI%23" target="_blank" rel="noopener" class="end-hashtag-link">#守护稳稳的YANGZI#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">20万</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">MLB × 林一</a></div><div class="end-tags"><span class="end-tag end-tag-level">青春代言人</span><span class="end-action">新签</span><span class="end-cat">运动服饰</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">MLB于8月12日官宣林一为潮流品牌青春代言人，以2026秋冬全新ROOKIE LINER翻盖学长鞋为灵感锚点打造官宣造型，林一演绎棒球帽搭配拼接T恤与薄底鞋的街头穿搭，该鞋款同步登陆线下门店及天猫旗舰店。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">时尚媒体（时尚先生、OK!潮周报等）集中报道，强调林一清新气质与品牌自在潮流主张契合；未见公开具体销量或话题数据，粉丝以穿搭种草为主。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23MLB%E6%BD%AE%E6%B5%81%E5%93%81%E7%89%8C%E9%9D%92%E6%98%A5%E4%BB%A3%E8%A8%80%E4%BA%BA%E6%9E%97%E4%B8%80%23" target="_blank" rel="noopener" class="end-hashtag-link">#MLB潮流品牌青春代言人林一#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">18,508</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">Jmoon极萌 × 伯远</a></div><div class="end-tags"><span class="end-tag end-tag-level">心动大使</span><span class="end-action">新签</span><span class="end-cat">美容仪</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">极萌（Jmoon极萌）8月12日官宣伯远为美容仪心动大使，主推极萌水光仪与黄金微雕仪，并预告8月14日19:00伯远空降京东直播间（极萌京东自营旗舰店）与粉丝互动。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣由品牌与伯远双账号联动，伯远超400万粉丝关注；京东直播间预告引发粉丝前往『get同款』，配合七夕『爱赴长远』主题营销。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E6%9E%81%E8%90%8C%E7%BE%8E%E5%AE%B9%E4%BB%AA%E5%BF%83%E5%8A%A8%E5%A4%A7%E4%BD%BF%E4%BC%AF%E8%BF%9C%23" target="_blank" rel="noopener" class="end-hashtag-link">#极萌美容仪心动大使伯远#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">3,266</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">欧诗漫 × 任敏</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌青春大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">欧诗漫8月12日官宣任敏为品牌青春大使并同步推出广告片（任敏与『珍珠爷爷』揭秘美白秘密），次日任敏出席欧诗漫珍珠护肤科技大会，现场见证并试用首个中国自研美白剂『珍白因』及第三代安心小白管新品。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">借『珍白因』获批（美白原料法规调整后首个国产自研美白剂）的行业里程碑引发广泛关注，任敏现场分享试用体验并获临床专家背书，被视为国货美白科研突破的营销样本。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E4%BB%BB%E6%95%8F%E6%AC%A7%E8%AF%97%E6%BC%AB%E5%93%81%E7%89%8C%E9%9D%92%E6%98%A5%E5%A4%A7%E4%BD%BF%23" target="_blank" rel="noopener" class="end-hashtag-link">#任敏欧诗漫品牌青春大使#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,013</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">百雀羚 × 李思潼</a></div><div class="end-tags"><span class="end-tag end-tag-level">灵思大使</span><span class="end-action">新签</span><span class="end-cat">护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">百雀羚8月12日官宣李思潼为灵思大使，发布以潮汕话开场、回归七夕『乞巧节』本源的短片《祝她的七夕特别好》，同步推出与非遗缂丝传承人陈文合作的『雀上心头』联名礼盒，并联动京东美妆『礼上加礼』送周边。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">营销跳出七夕爱情叙事、主打女性悦己引发好评，网友评论『第一次看到这样温暖舒服的广告』；李思潼凭《给阿嬷的情书》爆火自带口碑，被业内视为『素人黑马』合作典范。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E7%99%BE%E9%9B%80%E7%BE%9A%E7%81%B5%E6%80%9D%E5%A4%A7%E4%BD%BF%E6%9D%8E%E6%80%9D%E6%BD%BC%23" target="_blank" rel="noopener" class="end-hashtag-link">#百雀羚灵思大使李思潼#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">567</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">古井贡酒 × 古天乐</a></div><div class="end-tags"><span class="end-tag end-tag-level"></span><span class="end-action">新签</span><span class="end-cat">酒类</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">古井贡酒8月12日在合肥召开年份原浆品质升级发布大会，官宣古天乐出任品牌大使、口号『喝古井，天天乐』，并同步宣布年份原浆全系产品品质升级、坚持提质不提价。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">话题『古天乐喝古井天天乐』登上热搜，网友评价『名字适配度拉满』；其公益形象（累计捐建137所学校）与品牌社会责任理念契合，被业内视为白酒存量竞争中的品牌化打法。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%8F%A4%E5%A4%A9%E4%B9%90%E5%96%9D%E5%8F%A4%E4%BA%95%E5%A4%A9%E5%A4%A9%E4%B9%90%23" target="_blank" rel="noopener" class="end-hashtag-link">#古天乐喝古井天天乐#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">255</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">FlashFish闪鱼 × 肖央</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">户外装备</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">闪鱼（FLASHFISH）8月12日官宣肖央为品牌代言人，强调双方『稳』的长期主义内核契合，并同步释出专属官宣TVC短片（聚焦高铁出行、租房用网、移动导航等真实场景）。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣引爆娱乐与数码双圈层热议，业内分析认为随身WiFi行业头部品牌开启代言人战略预示行业进入品牌化竞争时代；暂未见公开具体销量数据。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E8%82%96%E5%A4%AE%E5%AE%98%E5%AE%A3%E9%97%AA%E9%B1%BC%E4%BB%A3%E8%A8%80%E4%BA%BA%23" target="_blank" rel="noopener" class="end-hashtag-link">#肖央官宣闪鱼代言人#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">224</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">八马茶业 × 姚安娜</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">茶叶</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">八马茶业官宣姚安娜为品牌代言人，与全球品牌代言人宋佳组成『双代言矩阵』，两位代言人同台共品三大名茶、共话茶叙，姚安娜以青春国际化视角解读春茶、打通年轻消费场景。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">发布会呈现『一守一创』双代言叙事，姚安娜的加入被指重构中国茶品牌年轻化格局；公司上半年营收净利双高增，业内评价其跳出传统茶叶『老派』刻板印象。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23%E5%85%AB%E9%A9%AC%E8%8C%B6%E4%B8%9A%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%E5%A7%9A%E5%AE%89%E5%A8%9C%23" target="_blank" rel="noopener" class="end-hashtag-link">#八马茶业品牌代言人姚安娜#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">199</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item"><div class="end-date"><div class="d-month">08月</div><div class="d-day">12</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">Swisse斯维诗 × 吉娜</a></div><div class="end-tags"><span class="end-tag end-tag-level">PLUS品牌大使</span><span class="end-action">新签</span><span class="end-cat">保健品</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">Swisse斯维诗8月12日官宣吉娜（吉娜爱丽丝Gina）为Swisse PLUS品牌大使，主打『细胞营养，焕启新生』理念，关联Swisse PLUS新生瓶Ultra等产品，并借天猫品牌超级会员日节点传播。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣由品牌与吉娜双账号联动，围绕『音乐与热爱』叙事展开；Swisse PLUS在618期间电商全渠道同比增长39%，但本次官宣具体销量数据未见公开披露。</span></div><div class="end-hashtag"> <a href="https://s.weibo.com/weibo?q=%23Swisse%20PLUS%E5%93%81%E7%89%8C%E5%A4%A7%E4%BD%BF%E5%90%89%E5%A8%9C%23" target="_blank" rel="noopener" class="end-hashtag-link">#Swisse PLUS品牌大使吉娜#</a> <span class="end-tip"> 点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">160</span><span class="end-heart-cap">心动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div></div>
+  </div>
+</section>
+
+<!-- 3. 营销动态 & 成功案例（V15：新增每日营销动态灵感） -->
+<section class="module" id="sec-cases">
+  <div class="mod-header">
+    <h2><span class="icon">🚀</span> 营销动态 & 成功案例</h2>
+    <span class="mod-badge">5 条</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-19）新检索到的营销动态与成功案例，历史资讯不累加；从中汲取灵感用于美诺品牌营销，下方「成功案例精选」沉淀可复用打法。</p>
+  <div class="mod-body">
+    <div class="mn-list" id="mnList"><div class="mn-item"><div class="mn-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="mn-main"><div class="mn-head"><span class="mn-cat">AI营销/标志案例</span><a class="mn-title" href="https://news.qq.com/rain/a/20260721A0A2F700" target="_blank" rel="noopener">王祖贤 AI 代言《天下》18 周年：国内首个明星正版授权全 AIGC 广告，数字肖像授权闭环跑通 ↗</a></div><div class="mn-brand">品牌：网易《天下》/王祖贤</div><div class="mn-sum">网易《天下》7/20 官宣王祖贤为 18 周年品牌代言人，授权其 20-30 岁巅峰肖像制作全 AI 广告《倩影》（网易 DM Monet + 火山引擎，无真人实拍，片尾署名「王祖贤(AI)」），并延伸为游戏数字 NPC/专属时装；授权模式=只开巅峰期肖像权、限定单一项目、不真人宣传——开创「明星数字肖像授权—AI 内容生成—品牌传播—数字资产运营」完整商业闭环；同期吴启华授权 20 岁脸拍 AI 电影、游本昌 93 岁授权青年济公拍短剧，退圈明星成 AI 肖像授权先行军；爱奇艺「AI 艺人库」因张若昀等辟谣引发在役明星 AI 戒备争议。</div><div class="mn-insight">💡 美诺可借鉴：AI 代言已是真实新广告形态而非概念：美诺虽不适用天价明星授权，但应跟进 AI 素材/AI 内容生产的降本路径，并关注消费者对 AI 代言的信任边界（在役明星戒备 vs 退圈明星躺赚的两极分化）。</div><div class="mn-src-line">来源：腾讯新闻　·　发布：2026-08-19</div></div></div><div class="mn-item"><div class="mn-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="mn-main"><div class="mn-head"><span class="mn-cat">AI营销/跨界</span><a class="mn-title" href="https://briefglance.com/articles/the-ai-ambassador-a-digital-star-is-born-for-the-world-cup" target="_blank" rel="noopener">可口可乐 × 百度：范志毅 AI 数字人 24/7 互动代言世界杯，「always-on 明星」新范式 ↗</a></div><div class="mn-brand">品牌：可口可乐中国/百度/范志毅</div><div class="mn-sum">可口可乐中国与百度合作，让国足名宿范志毅的 AI 数字人（百度文心数字人平台，口型同步精度 98.5%+）在世界杯期间 24/7 与球迷实时互动，突破明星档期/空间限制，从「静态代言人」升级为「always-on 品牌大使」；百度数字人直播已能降本 80%、提升转化率，此前罗永浩 AI 分身一场 6 小时直播带货超 5500 万。</div><div class="mn-insight">💡 美诺可借鉴：数字人从「带货工具」升级为「互动代言」：对平价品牌而言，数字人/虚拟主播是降低直播人力成本的可评估路径，可先小规模测试。</div><div class="mn-src-line">来源：BriefGlance　·　发布：2026-08-19</div></div></div><div class="mn-item"><div class="mn-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="mn-main"><div class="mn-head"><span class="mn-cat">平台活动/官方</span><a class="mn-title" href="https://www.toutiao.com/article/7674911904279642678" target="_blank" rel="noopener">抖音商城七夕好礼季启动（8/15-19）：消费券+直降+免息，现货履约成商家竞争力 ↗</a></div><div class="mn-brand">品牌：抖音电商</div><div class="mn-sum">抖音电商 8/15-19 开启「抖音商城七夕好礼季」，消费券/一件直降/立减折扣，聚焦礼赠+悦己+品质生活多元场景；配套「七夕搭建鹊桥」互动玩法、看后搜养词计划（搜索流量+商品转化）、商家免息费率优惠（3-24 期）；官方明确「七夕礼赠时效性强」，对现货商品加资源激励，建议商家 48h 内发货——即时送礼/即兴下单行为特征突出。</div><div class="mn-insight">💡 美诺可借鉴：平台官方把「现货+48h 发货」作为七夕竞争力标准：美诺参与节点大促须提前备足现货并保障履约时效，同时用好「看后搜养词计划」做搜索卡位。</div><div class="mn-src-line">来源：今日头条/华商网　·　发布：2026-08-19</div></div></div><div class="mn-item"><div class="mn-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="mn-main"><div class="mn-head"><span class="mn-cat">平台官方大会</span><a class="mn-title" href="https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html" target="_blank" rel="noopener">2026 巨量引擎渠道合作伙伴生态大会（4/22 青岛）：AI 渗透全链路，品星云能力升级 ↗</a></div><div class="mn-brand">品牌：巨量引擎/火山引擎</div><div class="mn-sum">「智·启无境」2026 巨量引擎渠道合作伙伴生态大会 4/22 在青岛举办：营销逻辑从流量思维转向经营思维；聚焦品牌广告/星图/千川/本地推全场景商业产品自动化升级；全面升级「品星云」AI 核心能力；火山引擎发布面向代理商的 AI 解决方案（豆包大模型+云原生基础设施）；颁发共擎奖表彰各赛道增长标杆代理商。</div><div class="mn-insight">💡 美诺可借鉴：平台官方把 AI 定为增长底座：美诺的素材生产（AI 创意）、投放（自动化+品星云）应纳入下半年的降本增效计划。</div><div class="mn-src-line">来源：中国日报网　·　发布：2026-08-19</div></div></div><div class="mn-item"><div class="mn-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="mn-main"><div class="mn-head"><span class="mn-cat">节日营销/平台观察</span><a class="mn-title" href="https://weibo.com/6422493315/5333413099998428" target="_blank" rel="noopener">2026 七夕营销观察：央视晚会+品牌直播的仪式感 vs 年轻人「乞巧节回归+松弛悦己」 ↗</a></div><div class="mn-brand">品牌：央视/微博平台</div><div class="mn-sum">微博#七夕#趋势梳理：央视七夕晚会《今夕颂》8/19 晚 20:00 CCTV-3 播出（魏晨/郁可唯/王琳凯等）；肖战素颜现身香港为 YSL 七夕活动预热、刘宇宁办线上音乐节；品牌与电商密集发力（京东美妆七夕专题）；但年轻人大规模解构传统浪漫：「七夕我就这样安慰自己」成现象级话题，「爱自己才是终身浪漫」成为主流情绪，大量讨论把七夕重新叫回「乞巧节/女儿节」。</div><div class="mn-insight">💡 美诺可借鉴：七夕营销的「仪式感供给」与「悦己情绪」并存：美诺应站「悦己」一侧——不做告白绑架，做「给自己一份体面」的平价美妆内容。</div><div class="mn-src-line">来源：微博热搜　·　发布：2026-08-19</div></div></div></div>
+  </div>
+  <div class="case-block">
+    <div class="watch-hd"><span class="icon">🏆</span> 成功案例精选 <span class="watch-sub">（可复用打法沉淀）</span></div>
+    <div class="case-list" id="caseList"><div class="empty-note">当日无新增营销案例精选</div></div>
+  </div>
+</section>
+
+<!-- 4.5 营销日历（移至营销动态板块后） -->
+<section class="module" id="sec-calendar">
+  <div class="mod-header">
+    <h2><span class="icon">📆</span> 营销日历</h2>
+    <span class="mod-badge">480 个营销节点 · 107 个可借势</span>
+  </div>
+  <p class="sec-desc">全年营销节点完整收录。<b>高热度&amp;高契合度</b>节点以 <b>⭐ 星标</b>提示（背景色对应节点类型）；与底妆品类契合度较低的节点保留在日历中、仅标注「未做借势营销建议」，不出创意参考。未来2月星标节点自动提取至「本周行动清单」高亮，便于提前规划借势。<b>点击任意节点可查看详情</b>。</p>
+  <div class="mod-body">
+        <div class="cal-controls">
+          <div class="cal-month-switch">
+            <button class="cal-arrow" id="calPrev" onclick="prevMonth()">‹</button>
+            <div class="cal-current-month" id="calCurrentMonth"></div>
+            <button class="cal-arrow" id="calNext" onclick="nextMonth()">›</button>
+            <button class="cal-today-btn" onclick="goToToday()">📅 返回今天</button>
+            <span class="cal-type-divider">|</span>
+            <button class="cal-type-btn" data-type="节气" style="--c:#1565C0;--b:#E3F2FD;" onclick="toggleTypeFilter('节气')">节气</button><button class="cal-type-btn" data-type="公历" style="--c:#C62828;--b:#FFEBEE;" onclick="toggleTypeFilter('公历')">公历</button><button class="cal-type-btn" data-type="农历" style="--c:#2E7D32;--b:#E8F5E9;" onclick="toggleTypeFilter('农历')">农历</button><button class="cal-type-btn" data-type="国际节日" style="--c:#7B1FA2;--b:#F3E5F5;" onclick="toggleTypeFilter('国际节日')">国际节日</button>
+            <button class="cal-type-reset" onclick="resetTypeFilter()" title="显示全部">↺ 全部</button>
+          </div>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+        </div>
+</section>
+
+<!-- 5. 平台热点（V17 改名，移至营销日历后） -->
+<section class="module" id="sec-hot">
+  <div class="mod-header">
+    <h2><span class="icon">🔥</span> 平台热点</h2>
+    <span class="mod-badge">4 个热点 · 当日新增</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-19）新增平台热点，历史不累加；热点＝当下正在平台发酵、可立即跟进的内容话题与爆点（短期流量），与「美妆行业趋势」边界已厘清，同一主题只归一处。</p>
+  <div class="mod-body">
+      <div class="topic-list" id="hotList"><div class="topic-item"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">抖音商城（平台官方榜单）</span><a href="https://news.bjd.com.cn/2026/08/18/11920669.shtml" target="_blank" rel="noopener" class="topic-title">抖音商城七夕好礼季高光行业榜单出炉：礼赠悦己双向爆发 ↗</a></div><div class="topic-desc">抖音官方发布 8/15-19 七夕好礼季各赛道高光榜单：美妆个护是礼赠刚需，护肤 TOP3=珀莱雅/海蓝之谜/韩束，彩妆 TOP3=YSL/兰蔻/雅诗兰黛；「即时送礼、即兴下单」行为突出，现货储备与 48h 发货成商家竞争力；悦己消费成为稳定增量。</div><div class="topic-data">抖音商城七夕好礼季 8/15-19 | 护肤TOP3=珀莱雅/海蓝之谜/韩束 | 彩妆TOP3=YSL/兰蔻/雅诗兰黛</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音</strong>借官方榜单「悦己消费成增量」信号，做美诺「平价悦己礼」内容，避开与国际大牌正面送礼战</div><div class="topic-idea-card"><strong>小红书</strong>「七夕给自己挑的平价好物」清单体，绑定 #悦己# #平价心意礼# 话题</div></div><div class="topic-src-line">🔗 来源：京报网/抖音商城　·　发布：2026-08-18</div></div></div><div class="topic-item"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">微博（官方热搜）</span><a href="https://weibo.com/6422493315/5333413099998428" target="_blank" rel="noopener" class="topic-title">#七夕#全网热度提前引爆：乞巧节回归 + 松弛悦己双叙事 ↗</a></div><div class="topic-desc">微博热搜#七夕#显示 2026 七夕两大趋势：一边是央视七夕晚会（8/19 晚 20:00 CCTV-3，魏晨/郁可唯等）、品牌活动、明星直播构成盛大仪式感；另一边年轻人集体解构传统浪漫，「七夕我就这样安慰自己」成现象级话题，大量讨论将七夕重新称呼为「乞巧节/女儿节」。</div><div class="topic-data">央视七夕晚会 8/19 20:00 CCTV-3 | 话题#七夕我就这样安慰自己# #爱自己才是终身浪漫#</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音</strong>七夕当天做「悦己版七夕」内容：不送别人，给自己化个漂亮的妆，绑定#悦己#</div><div class="topic-idea-card"><strong>小红书</strong>「乞巧节」文化科普+现代悦己妆教结合，差异化避开同质化送礼内容</div></div><div class="topic-src-line">🔗 来源：微博热搜　·　发布：2026-08-19</div></div></div><div class="topic-item"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">电商/全网</span><a href="https://www.163.com/dy/article/L4KUF8980523H9J0.html" target="_blank" rel="noopener" class="topic-title">七夕美妆礼物价差 199 元 vs 5660 元：消费分化下的平价增量 ↗</a></div><div class="topic-desc">同样是七夕美妆礼物，YSL 黑管唇釉 199 元、赫莲娜黑绷带面霜 5660 元（价差近 29 倍）；第三方监测线上美妆 200 元以下价格带份额从 44.28% 升至 46.52%，高端与平价同步扩容——市场不是升级或降级，而是明显分化，平价「大牌感但不为溢价买单」诉求强劲。</div><div class="topic-data">200元以下价格带份额 44.28%→46.52% | YSL黑管唇釉199元 vs 赫莲娜黑绷带5660元</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音</strong>「49.9 也有贵妇妆感」对比内容，承接平价增量价格带情绪</div><div class="topic-idea-card"><strong>小红书</strong>「七夕平价心意礼清单」种草，突出美诺粉饼 49.9 的礼物性价比</div></div><div class="topic-src-line">🔗 来源：网易/拍案　·　发布：2026-08-18</div></div></div><div class="topic-item"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">微博美妆超话</span><a href="https://weibo.com/3480038412/5332857758420970" target="_blank" rel="noopener" class="topic-title">七夕粉紫色甜妹妆容出圈：约会拍照出片妆教 ↗</a></div><div class="topic-desc">微博美妆超话热门：低饱和粉色系腮红+粉紫眼妆的「七夕甜妹妆」广泛传播，主打「约会拍照巨出片」；妆教内容强调「爱自己才是终身浪漫」，与七夕悦己叙事共振。</div><div class="topic-data">话题#七夕心动妆# #七夕情书# 美妆超话</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音</strong>蹭七夕妆容热度做「甜妹妆定妆教学」，结尾植入美诺粉饼控油持妆</div><div class="topic-idea-card"><strong>小红书</strong>「七夕妆教 + 平价定妆好物」组合笔记，粉紫妆容配粉饼定妆教程</div></div><div class="topic-src-line">🔗 来源：微博美妆超话　·　发布：2026-08-19</div></div></div></div>
+  </div>
+</section>
+
+<!-- 6. 新品上架 -->
+<section class="module" id="sec-products">
+  <div class="mod-header">
+    <h2><span class="icon">🆕</span> 新品上新</h2>
+    <span class="mod-badge">3 款新品 · 竞品近一周 / 本品近一月</span>
+  </div>
+  <p class="sec-desc">仅展示主要竞品近一周（竞品 2026-08-12~2026-08-19 / 本品 2026-07-20~2026-08-19）内上新的商品（不限类目），按上新时间倒序；花间颂 / 方里 / 芭贝拉 / 嘉利玛标「核心竞对」，美诺标「本品」（本品放宽至近一月，确保本品上新可见）。来源仅限天猫官方旗舰店。</p>
+  <div class="mod-body" style="overflow-x:auto;">
+    <div class="prod-filters">
+      <span class="prod-filters-label">品类筛选：</span>
+      <label class="prod-cat-chip active" data-cat="粉饼/蜜粉饼/散粉">粉饼/蜜粉饼/散粉</label><label class="prod-cat-chip active" data-cat="气垫">气垫</label><label class="prod-cat-chip active" data-cat="粉底液/膏">粉底液/膏</label><label class="prod-cat-chip active" data-cat="素颜霜/BB霜/CC霜">素颜霜/BB霜/CC霜</label><label class="prod-cat-chip active" data-cat="隔离霜/妆前乳">隔离霜/妆前乳</label><label class="prod-cat-chip active" data-cat="遮瑕">遮瑕</label><label class="prod-cat-chip active" data-cat="定妆喷雾">定妆喷雾</label><label class="prod-cat-chip active" data-cat="高光/修容">高光/修容</label>
+    </div>
+    <table class="prod-table" id="prodTable">
+      <thead>
+        <tr>
+          <th>品牌 / 产品</th><th>品类</th><th>价格</th><th>上市时间</th>
+          <th>销售数据</th><th>商品链接</th>
+        </tr>
+      </thead>
+      <tbody id="prodTbody"><tr data-cat="粉饼/蜜粉饼/散粉"><td><div class="prod-brand-name">美诺 MENOW<span class="prod-tag prod-tag-self">本品</span></div><div class="prod-pname">控油大白饼「乐乐熊」蜜粉饼 七夕限定（P15丝绒拿铁，2盒装9.6g，京东自营旗舰店在售）</div></td><td>粉饼/蜜粉饼/散粉</td><td class="prod-price">¥55.9</td><td>2026-08-18</td><td class="prod-sales"><b>京东</b><br>评论 <b>500</b><br>好评 <b>100%</b><br>常卖价55.9/历史最低49.9</td><td class="prod-link"><a href="https://jingfen.jd.com/detail/EE74LPFkwHhKPlIZlDMmKPochqNq5X_3YU2wBLyoIoPtMT95x.html" target="_blank" rel="noopener">查看商品 ↗</a><div class="prod-src-name">美诺京东自营旗舰店</div></td></tr><tr data-cat="粉饼/蜜粉饼/散粉"><td><div class="prod-brand-name">花西子<span class="prod-tag prod-tag-rival">竞品</span></div><div class="prod-pname">玉容凝脂匀肤持妆粉饼（非遗宋锦防晒定妆二合一·SPF50+ PA+++）</div></td><td>粉饼/蜜粉饼/散粉</td><td class="prod-price">¥209</td><td>2026-08-13</td><td class="prod-sales"><b>天猫</b></td><td class="prod-link"><a href="https://list.tmall.com/search_product.htm?q=%E8%8A%B1%E8%A5%BF%E5%AD%90" target="_blank" rel="noopener">查看商品 ↗</a><div class="prod-src-name">天猫花西子官方旗舰店</div></td></tr><tr data-cat="定妆喷雾"><td><div class="prod-brand-name">美诺 MENOW<span class="prod-tag prod-tag-self">本品</span></div><div class="prod-pname">果冻贴贴喷雾 双萃水油配方PDRN胶原</div></td><td>定妆喷雾</td><td class="prod-price">¥79.90</td><td>2026-08-08</td><td class="prod-sales"><b>天猫</b><br>评论 <b>新品上市</b><br>好评 <b>新品</b><br>¥79.90</td><td class="prod-link"><a href="http://t.cn/AXC7g7OQ" target="_blank" rel="noopener">查看商品 ↗</a><div class="prod-src-name">天猫美诺旗舰店</div></td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 4.5 行业报告（V15 新增） -->
+<section class="module" id="sec-reports">
+  <div class="mod-header">
+    <h2><span class="icon">📑</span> 行业报告</h2>
+    <span class="mod-badge">2 份 · 当日新增</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-19）新收录的行业报告，历史不累加；重点报告整理摘要、来源与链接，标「重点」的为必读核心报告。</p>
+  <div class="mod-body">
+    <div class="rep-list" id="repList"><div class="rep-item"><div class="rep-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="rep-main"><div class="rep-head"><span class="rep-cat">底妆</span><span class="rep-key">重点</span><a class="rep-title" href="https://caifuhao.eastmoney.com/news/20260709171837823082640" target="_blank" rel="noopener">光学滤镜·多肽养肤·冰感持妆：2026年【底妆】线上消费趋势洞察（用户说，77页） ↗</a></div><div class="rep-src">来源：用户说　·　发布：2026-08-19</div><div class="rep-sum">2026.04MAT 天猫/抖音/京东底妆总销售额 398.62 亿元，抖音 232.08 亿占 58.22%（+13.72%）为最大平台，天猫 127.89 亿占 32.08%、京东 38.65 亿占 9.7%；气垫 104.02 亿/粉底液 100.92 亿双百亿基本盘；遮瑕 18.73 亿同比 +24.35% 为最快增长细分（均价仅 58 元、量价大众化）；精华粉底液/功效型底妆/熬夜肌气垫/冰感定妆喷雾等新品密集，妆养合一成为主流；男士底妆仍处早期，男士蜜粉/粉底液出现增长。</div><div class="rep-data">📊 底妆盘398.62亿 | 抖音58.22%(+13.72%) | 气垫104亿/粉底液100.9亿 | 遮瑕+24.35%</div></div></div><div class="rep-item"><div class="rep-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="rep-main"><div class="rep-head"><span class="rep-cat">彩妆</span><a class="rep-title" href="https://www.sgpjbg.com.cn/info/5fe342650b7c5b3e8fc0d09f0f1a2191.html" target="_blank" rel="noopener">面部彩妆品类数据洞察报告（三个皮匠/全网渠道） ↗</a></div><div class="rep-src">来源：三个皮匠报告　·　发布：2026-08-19</div><div class="rep-sum">2024H1-2026H1 线上面部彩妆销售额 276.1→348.4 亿元（增速 9.5%→15.2%）；抖音销售额占比 55%→64%、销量占比 57%→75%，2026H1 抖音 223.5 亿（+22.4%）成增量引擎；淘系量跌价升（均价 98→122 元）；抖音细分亮点：彩妆套装 +52%、定妆喷雾 +42%、遮瑕 +61%、CC霜 +121%、定妆 +135%（尝鲜长尾）；100-300 元为绝对主力价格带。</div><div class="rep-data">📊 面妆大盘348.4亿 | 抖音占比64%(+22.4%) | 定妆喷雾+42%/遮瑕+61%</div></div></div></div>
+  </div>
+</section>
+
+
+<!-- 7. 各平台行业趋势（长期展示） -->
+<section class="module" id="sec-trends">
+  <div class="mod-header">
+    <h2><span class="icon">📈</span> 行业趋势</h2>
+    <span class="mod-badge">12 条趋势 · 近半年</span>
+  </div>
+  <p class="sec-desc">仅展示近半年（2026-02-20 ~ 2026-08-19）内发布的行业趋势，作为长期风向标（赛道级迁移、结构性审美变化），与「平台热点」互补不重叠。</p>
+    <div class="mod-body">
+      <div class="trend-list" id="trendList"><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 平台官方大会</span><a href="https://www.bhwang.cn/youjun/44815518536512.html" target="_blank" rel="noopener" class="trend-title">小红书 2026 WILL 商业大会：看见具体的人，从品类思维转向情境思维 ↗</a></div><div class="trend-summary">小红书 2025 年末举办 2026 WILL 商业大会，核心主张「要看见具体的人，而不是抽象的人」：做生意不应只盯 SKU 和转化率，而应把生意当「生长的土壤」；小红书营销实验室用 AI 解读海量笔记，理解 95 种情绪、1400 个细分场景，推动品牌从「品类思维」转向「情境思维」，发现未被满足的超级小需求；slogan 已从「你的生活指南」升级为「你的生活兴趣社区」。</div><div class="trend-data">📊 2026 WILL商业大会 | AI解读95种情绪/1400个细分场景 | slogan升级「你的生活兴趣社区」</div><div class="trend-src">🔗 来源：小红书官方/行业观察　·　发布：2026-08-19</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业新形态</span><a href="https://news.qq.com/rain/a/20260721A0A2F700" target="_blank" rel="noopener" class="trend-title">明星 AI 肖像授权跑通商业闭环：从王祖贤到范志毅，AI 代言成新广告形态 ↗</a></div><div class="trend-summary">2026 年明星 AI 授权密集落地：网易《天下》18 周年官宣王祖贤出任代言人，授权 20-30 岁巅峰肖像制作全 AIGC 广告《倩影》（DM Monet+火山引擎，无真人实拍，片尾署名「王祖贤(AI)」），并把数字形象延伸为游戏 NPC/专属时装——国内游戏行业首个明星正版授权全 AI 广告；可口可乐×百度让范志毅 AI 数字人 24/7 实时互动代言世界杯；吴启华授权 20 岁脸拍 AI 电影、游本昌 93 岁授权青年济公形象拍短剧；同期爱奇艺「AI艺人库」因张若昀等辟谣引发在役明星 AI 戒备争议；2026 Q1 全行业微短剧 AI 占比已超 95%。</div><div class="trend-data">📊 王祖贤AI代言《天下》18周年(7/20) | 范志毅AI数字人×可口可乐世界杯 | AI短剧占比超95%(2026Q1)</div><div class="trend-src">🔗 来源：腾讯新闻/新浪　·　发布：2026-08-19</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业报告</span><a href="https://caifuhao.eastmoney.com/news/20260709171837823082640" target="_blank" rel="noopener" class="trend-title">用户说 2026 底妆报告：398.62 亿底妆盘，抖音占 58%，遮瑕成最快增长细分 ↗</a></div><div class="trend-summary">用户说《光学滤镜·多肽养肤·冰感持妆：2026年【底妆】线上消费趋势洞察》（77 页）：2026.04MAT 天猫/抖音/京东底妆总销售额 398.62 亿元，抖音 232.08 亿占 58.22%（+13.72%）为最大平台；气垫 104 亿/粉底液 100.9 亿双百亿基本盘；遮瑕 18.73 亿但同比 +24.35% 为最快增长细分；「底妆+护肤」复合需求、熬夜肌/冰感定妆等新品密集；国货底妆在抖音持续放量（蒂洛薇连续 3 个月抖音彩妆榜 TOP1）。</div><div class="trend-data">📊 底妆盘398.62亿 | 抖音58.22%(232亿,+13.72%) | 遮瑕+24.35% | 气垫104亿/粉底液100.9亿</div><div class="trend-src">🔗 来源：用户说/东方财富财富号　·　发布：2026-08-19</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">19</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业事件</span><a href="https://36kr.com/p/3839947060955393" target="_blank" rel="noopener" class="trend-title">高端美妆杀回抖音：头部格局固化，国货靠自播守住半壁 ↗</a></div><div class="trend-summary">青眼/36氪观察：5 月抖音化妆品总榜 TOP1 易主赫莲娜，TOP5=赫莲娜/雅诗兰黛/珀莱雅/海蓝之谜/韩束，55% 上榜品牌为高端外资；高端品牌靠「达人矩阵+品牌自播」双路径（赫莲娜达人推广占 GMV 49%）；国货端蒂洛薇自播占 53.78%、连续 3 个月抖音彩妆榜 TOP1，珀莱雅/韩束自播占比 51-65%——白牌已彻底退出 TOP20，抖音从「白牌跑量场」转向「品牌经营场」。</div><div class="trend-data">📊 5月抖音化妆品总榜TOP1=赫莲娜 | 高端品牌占上榜55% | 蒂洛薇3连冠抖音彩妆TOP1 | 韩束自播占65%</div><div class="trend-src">🔗 来源：青眼/36氪　·　发布：2026-08-19</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业报告</span><a href="https://www.sgpjbg.com/labels/fendiyegaoxingyebaogao.html" target="_blank" rel="noopener" class="trend-title">底妆渠道权力转移：抖音以56%市占率取代天猫成为第一大渠道 ↗</a></div><div class="trend-summary">知行咨询《2026知行数据观察：粉底液&amp;膏品类》：中国底妆市场预计1216亿元（2022-2026复合增速15%+）；抖音线上市占率从30%跃升至56%反超天猫，销量占比达71%；防晒（+34%）、修颜（+29%）成高增长功效引擎，70%用户偏好自然裸妆、60%遭遇卡粉脱妆痛点。</div><div class="trend-data">📊 底妆市场1216亿元 | 抖音市占率56% | 防晒+34%/修颜+29% | 70%偏好自然裸妆</div><div class="trend-src">🔗 来源：知行咨询×尚普咨询　·　发布：2026-08-18</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业报告</span><a href="https://www.cbo.cn" target="_blank" rel="noopener" class="trend-title">男士护理赛道扩容至680亿：七夕「她买给他」场景集中释放 ↗</a></div><div class="trend-summary">男士护理市场规模突破680亿、行业增速25%超美妆大盘；七夕送礼场景从『他买给她』扩展到『她买给他』，碧欧泉、海洋至尊、自然堂男士等推基础套盒，曼秀雷敦×蜘蛛侠、谷雨×小熊虫以IP联名破圈，得物等平台男性礼赠需求集中释放。</div><div class="trend-data">📊 男士护理市场680亿+ | 行业增速25% | 海洋至尊得物单月GMV 150万+</div><div class="trend-src">🔗 来源：化妆品报 CBO　·　发布：2026-08-18</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">18</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 行业事件</span><a href="https://www.cbo.cn" target="_blank" rel="noopener" class="trend-title">2026七夕营销去「情爱化」：悦己、知己、文化共生三线并行 ↗</a></div><div class="trend-summary">百雀羚回归乞巧节本源（缂丝非遗『雀上心头』礼盒+短片《祝她的七夕特别好》）、花西子把普通人信物故事搬上全国10城大屏、CT×赵露思共创『芭蕾千金妆』只谈变美不谈爱情、OLAY×Vera Wang、SK-II×CRYBABY、科颜氏×MILK BAR甜品联名——品牌集体把七夕从『送礼告白』重构为悦己、女性情谊与文化共鸣的多元表达。</div><div class="trend-data">📊 百雀羚乞巧文化营销 | 花西子10城信物大屏 | OLAY×Vera Wang首次护肤联名 | CT×赵露思妆容共创</div><div class="trend-src">🔗 来源：化妆品报 CBO　·　发布：2026-08-18</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">15</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 小红书/抖音</span><a href="https://www.sohu.com/a/1059702970_122066679" target="_blank" rel="noopener" class="trend-title">「不完美自由」原生感浪潮：从滤镜精致到真实肌理 ↗</a></div><div class="trend-summary">2026年「原生感/真实肌理」审美逆势走红：小红书#卸妆后松一口气#播放破8.2亿，抖音「素颜自拍挑战」单日新增百万条视频。消费者厌倦模板化精致，转向「看起来没怎么化」的高级自然感。</div><div class="trend-data">📊 小红书#卸妆后松一口气# 8.2亿播放 | 抖音素颜自拍挑战单日+百万条 | 64.3%用户偏爱无滤镜内容</div><div class="trend-src">🔗 来源：搜狐时尚×社媒观测　·　发布：2026-08-15</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">05</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 抖音电商</span><a href="https://www.chanmama.com/yunyingquan/article/2035.html" target="_blank" rel="noopener" class="trend-title">头部品牌稳守 + 白牌达人突围双轨格局 ↗</a></div><div class="trend-summary">韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。</div><div class="trend-data">📊 韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据</div><div class="trend-src">🔗 来源：蝉妈妈×抖音电商　·　发布：2026-08-05</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">07月</div><div class="d-day">01</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 小红书</span><a href="https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026" target="_blank" rel="noopener" class="trend-title">彩妆审美回摆：从网感到活人感 ↗</a></div><div class="trend-summary">用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。</div><div class="trend-data">📊 #卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》</div><div class="trend-src">🔗 来源：小红书×界面新闻　·　发布：2026-07-01</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">05月</div><div class="d-day">31</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 微信指数</span><a href="https://index.weixin.qq.com/" target="_blank" rel="noopener" class="trend-title">凉感化妆品赛道爆发（护肤→底妆延伸） ↗</a></div><div class="trend-summary">1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。</div><div class="trend-data">📊 销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%</div><div class="trend-src">🔗 来源：微信指数×魔镜市场　·　发布：2026-05-31</div></div></div><div class="trend-item"><div class="trend-date"><div class="d-month">04月</div><div class="d-day">22</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 平台官方大会</span><a href="https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html" target="_blank" rel="noopener" class="trend-title">巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座 ↗</a></div><div class="trend-summary">4/22 青岛举办的 2026 巨量引擎渠道合作伙伴生态大会释放平台级信号：广告营销竞争核心从「流量思维」转向「经营思维」，品牌更关注预算的实际经营价值；巨量引擎全面升级「品星云」AI 核心能力，拆解 AI 内容生态逻辑（创意生产提效+内容产业链迭代），火山引擎面向代理商发布 AI 解决方案；品牌广告/星图/千川/本地推全场景商业产品自动化升级。</div><div class="trend-data">📊 「智·启无境」2026巨量引擎渠道合作伙伴生态大会（4/22 青岛） | 品星云AI能力升级 | 火山引擎代理商AI解决方案</div><div class="trend-src">🔗 来源：中国日报网/巨量引擎官方　·　发布：2026-04-22</div></div></div></div>
+    </div>
+</section>
+
+<!-- 8. 美诺启示 & 本周行动（V12 新增，V13 改名） -->
+<section class="module module-insight" id="sec-insight">
+  <div class="mod-header">
+    <h2><span class="icon">💡</span> 美诺启示 & 本周行动</h2>
+    <span class="mod-badge">基于今日情报</span>
+  </div>
+  <div class="mod-body">
+    <div class="insp-block">
+      <h3 class="insp-title">🔍 对美诺的启发</h3>
+      <div class="insp-list"><div class="insp-item"><span class="insp-num">1</span><p>抖音官方榜单 + 价差报道双重印证：200 元以下美妆价格带份额已升至 46.52%——美诺 49.9 元粉饼正处增量价格带，官方榜单与消费分化数据都是可引用的背书素材，应沉淀为「平价也体面」的内容资产。</p></div><div class="insp-item"><span class="insp-num">2</span><p>平台官方大会（巨量引擎/小红书 WILL）共同指向：AI 已从工具变为平台增长底座，内容生产与投放全链路 AI 化是确定性方向——美诺可小步试水 AI 素材/AI 数字人主播的降本增效，先做 1-2 个测试账号验证 ROI。</p></div><div class="insp-item"><span class="insp-num">3</span><p>王祖贤 AI 代言跑通「明星数字肖像授权」闭环、范志毅 AI 数字人 24/7 互动代言，说明 AI 代言/数字人已是真实新广告形态；美诺虽不适合天价明星授权，但可关注行业案例对消费者心智的塑造，避免在内容上落后于新形态叙事。</p></div><div class="insp-item"><span class="insp-num">4</span><p>2026 七夕「去情爱化」已成定局（乞巧节回归、松弛悦己、央视晚会的仪式感+年轻人解构的松弛感双叙事）——美诺七夕/七夕后内容别再讲「甜蜜告白」，改讲「给自己一份体面」与「平价也有仪式感」。</p></div><div class="insp-item"><span class="insp-num">5</span><p>用户说底妆报告：遮瑕 +24.35% 是增长最快的底妆细分——美诺渐变粉饼的「双色渐变分区调肤遮瑕」卖点（P15 丝绒拿铁遮瑕）恰好对应这个趋势，值得在内容里放大「局部修饰+遮瑕」场景。</p></div></div>
+    </div>
+    <div class="act-block">
+      <h3 class="act-title">✅ 本周行动清单</h3>
+      <div class="act-list"><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：10/01 国庆节（公历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：09/25 中秋节（农历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：09/17 世界骑行日（国际节日）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item"><div class="act-text">七夕当天（8/19）上线美诺「平价心意礼」主题短视频+组合装机制（粉饼+定妆喷雾），错位切入送礼场景，绑定 #平价心意礼# #悦己# 话题</div><div class="act-owner">👤 媒介</div><span class="act-status st-doing">进行中</span></div><div class="act-item"><div class="act-text">借「抖音官方榜单+200元以下价格带46.52%」数据做「49.9 也有贵妇妆感」内容，把消费分化数据沉淀为背书素材</div><div class="act-owner">👤 内容</div><span class="act-status st-todo">待启动</span></div><div class="act-item"><div class="act-text">跟进平台官方大会信号：评估 AI 素材/AI 数字人主播 1-2 个测试账号（对应巨量引擎 AI 底座与火山引擎 AI 解决方案方向），两周内出 ROI 预判</div><div class="act-owner">👤 电商/媒介</div><span class="act-status st-todo">规划中</span></div><div class="act-item"><div class="act-text">把「遮瑕+24.35%」趋势接入美诺渐变粉饼 P15 丝绒拿铁遮瑕卖点的内容表达，产出一期「分区调肤遮瑕」专项内容</div><div class="act-owner">👤 内容</div><span class="act-status st-todo">待启动</span></div><div class="act-item"><div class="act-text">男性护理/男士底妆赛道可行性预研：调研男士素颜霜/底妆细分需求与价格带，输出是否切入的评估 brief</div><div class="act-owner">👤 策略</div><span class="act-status st-todo">规划中</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="sec-sentiment">
+  <div class="mod-header">
+    <h2><span class="icon">🛡️</span> 舆情监控</h2>
+    <span class="mod-badge">WebSearch 为主 · 登录态补充</span>
+  </div>
+  <div class="mod-body">
+    <div class="sentiment-entry">
+      <p class="sentiment-entry-desc">实时监测 <b>美诺 MENOW</b> 及竞品（方里 / 芭贝拉 / 嘉利玛）在微博、小红书、抖音、快手、电商评价等平台的品牌口碑、负面预警、社媒热点话题与代言人舆情。</p>
+      <div class="sentiment-entry-tags">
+        <span>品牌口碑 / 声量</span><span>负面预警 / 危机</span><span>社媒热点话题</span><span>明星 / 代言人舆情</span>
+      </div>
+      <a class="sentiment-entry-btn" href="../sentiment.html" target="_blank" rel="noopener">进入舆情专题页 →</a>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.main-wrap -->
+
+<!-- 节点详情弹窗 -->
+<div class="overlay" id="nodeOverlay">
+  <div class="modal">
+    <div class="modal-hd">
+      <h3>📅 营销节点详情</h3>
+      <button class="modal-close" onclick="closeNodeModal()">✕</button>
+    </div>
+    <div class="modal-bd" id="nodeDetailContent"></div>
+  </div>
+</div>
+
+<script src="../nodes.js"></script>
+<script>
+// 嵌入数据（nodes 已外置为共享 /nodes.js，避免每页重复内联 317KB×2）
+const DATA = {"meta": {"version": "20.0", "date": "2026-08-19", "data_as_of": "2026-08-19T00:05:00+08:00", "brand": "美诺 MENOW", "track": "面部彩妆/粉饼赛道"}, "today_must_see": [{"icon": "📅", "text": "今天就是七夕（8/19）！前夜营销已打完第一波，今天该上美诺「平价心意礼」组合装（粉饼+定妆喷雾）卡位节日当天流量；注意今年舆论「去情爱化」——别讲爱情告白，讲「给自己一份体面」与「平价也有仪式感」。", "tag": "紧急节点"}, {"icon": "🏆", "text": "抖音商城七夕好礼季官方高光榜单出炉（8/18）：美妆个护是礼赠刚需，彩妆榜 YSL/兰蔻/雅诗兰黛居前，但 200 元以下价格带份额已升至 46.52%——美诺 49.9 元粉饼正处增量价格带，官方榜单与价差报道都是可引用的背书素材。", "tag": "平台官方"}, {"icon": "🤖", "text": "王祖贤 AI 代言《天下》18 周年（7/20）成行业标志性案例：国内首个明星正版授权全 AIGC 广告，授权 20-30 岁巅峰肖像、限定单项目、不真人宣传——「明星数字肖像授权」新广告形态已跑通闭环，美诺可关注 AI 素材/数字人主播的降本机会。", "tag": "行业新形态"}, {"icon": "📊", "text": "用户说《2026 底妆线上消费趋势洞察》：三大平台底妆盘 398.62 亿元、抖音占 58.22%（232 亿，+13.72%）；遮瑕 +24.35% 是增速最快的底妆细分；气垫 104 亿/粉底液 100.9 亿双百亿基本盘——「底妆细分场景化」正在加速，美诺的控油/持妆卖点叙事空间仍在扩大。", "tag": "战略信号"}, {"icon": "📣", "text": "平台官方大会信号：2026 巨量引擎渠道合作伙伴生态大会（4/22 青岛，主题「智·启无境」）明确营销逻辑从「流量思维」转向「经营思维」，全链路嵌 AI、品星云 AI 能力升级、火山引擎发布代理商 AI 解决方案——平台侧已把 AI 当成增长底座，美诺的素材生产/投放策略应尽早 AI 化。", "tag": "平台官方"}, {"icon": "🌹", "text": "微博#七夕#全网趋势：今年年轻人把七夕重新叫回「乞巧节/女儿节」，主流叙事是「松弛悦己」「爱自己才是终身浪漫」，「七夕我就这样安慰自己」成现象级话题——美诺的七夕内容应从「甜蜜告白」切到「悦己美妆日常」。", "tag": "热点借势"}], "endorsements": [{"brand": "起亚Kia", "star": "蔡徐坤（待官宣确认）", "level": "品牌代言人（悬念中）", "star_title": "", "action": "新签", "date": "2026-08-18", "risk": "低", "note": "起亚8/18发布悬念海报，宣布将于8/20揭晓全新赛图斯品牌代言人身份，据评论区等多方消息推测代言人或为蔡徐坤；官方尚未正式确认。", "source_type": "CNMO科技", "source_url": "https://www.163.com/dy/article/L4JU9PG4051191D6.html", "topic_hashtag": "", "heat_num": 0, "heat_text": "", "category": "汽车", "brand_actions": "起亚全新赛图斯已开启预售（1.5T+8AT、标配27英寸超薄宽屏、骁龙8295P芯片），海报宣传语『实力主角，如约而至』；8/20将正式揭晓代言人。", "reactions": "因蔡徐坤粉丝基数庞大，悬念海报引发热议，评论区大量猜测与期待，起亚借悬念营销撬动年轻消费群体关注全新赛图斯。"}, {"brand": "闻献DOCUMENTS", "star": "朱一龙", "level": "全球品牌代言人", "star_title": "全球品牌代言人", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "闻献DOCUMENTS及旗下熏香品牌龟宝香居官宣朱一龙为全球品牌代言人（品牌首位全球代言人），以《陋室铭》「水不在深，有龙则灵」为创意原点，官宣大片中朱一龙着黑衣立于荷塘，东方意境拉满。", "source_type": "微博/SocialBeta", "source_url": "https://socialbeta.com/campaign/28250", "topic_hashtag": "#朱一龙闻献全球品牌代言人#", "heat_num": 10344, "heat_text": "10,344", "category": "香氛", "brand_actions": "官宣同步推出全球代言人限定礼盒套组（绸光细闪+金缕绳结龟背结纹，购盒得代言人专属香卡），产品将于品牌官方小程序、天猫旗舰店及全国线下空间陆续发售，并预告更多代言人限定产品与线下体验内容。", "reactions": "朱一龙粉丝（朱家小影等）在星品影响力及超话积极应援圈粉，『有龙则灵』中式美学物料获好评，被视为国货香氛品牌顶流代言的代表性案例。星品影响力截图显示心动值 10,344。"}, {"brand": "岚图汽车", "star": "杨洋", "level": "全球代言人", "star_title": "全球代言人", "action": "活动亮相", "date": "2026-08-17", "risk": "低", "note": "2026岚图用户之夜上，岚图追光S全球代言人、001号车主杨洋亮相，分享追光精神理解并接受专属交付仪式（定制车钥匙盒），新车追光S正式上市（22.99-27.99万）。", "source_type": "腾讯新闻", "source_url": "https://new.qq.com/rain/a/20260817A063YH00", "topic_hashtag": "#岚图追光S#", "heat_num": 0, "heat_text": "", "category": "汽车", "brand_actions": "追光S上市推出四激光后驱Max/Ultra/四驱Ultra+三版本，2000定金抵8000尾款；宣称全球首款量产车重现舒马赫360°隧道大回环、28米高空跌落A/B/C/D柱完整；杨洋抽取幸运用户送亲笔签名镜头。", "reactions": "四川天之岚车友会点亮成都双塔、天府广场等多处地标为新车助威，杨洋亲临带动现场氛围，新车以安全硬核测试引发行业讨论。"}, {"brand": "九牧王JOEONE", "star": "李昀锐", "level": "全球品牌代言人", "star_title": "全球品牌代言人", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "演员李昀锐（星品影响力 8/17 官宣截图）出任九牧王 JOEONE 全球品牌代言人，是该品牌首位全球化年轻代言矩阵的动作。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#李昀锐九牧王全球品牌代言人#", "heat_num": 26755, "heat_text": "26,755", "category": "服饰", "brand_actions": "8/17 官方同步发布全球品牌代言人 KV与官宣短片，主推九牧王商务正装与『年轻化』廓形系列，线上线下渠道全面换装。", "reactions": "李昀锐粉丝在星品影响力截图显示心动值 26,755（为本日 8/17 截图榜单最高），正装上身与商务质感获粉丝好评。"}, {"brand": "安敏优", "star": "吕思曈", "level": "品牌心动大使", "star_title": "品牌心动大使", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "吕思曈出任安敏优品牌心动大使。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#安敏优品牌心动大使吕思曈#", "heat_num": 15674, "heat_text": "15,674", "category": "护肤", "brand_actions": "8/17 同步上线官宣 KV 与产品共创短视频。", "reactions": "星品影响力心动值 15,674；粉丝围绕「安敏优品牌心动大使吕思曈」话题应援。"}, {"brand": "安敏优", "star": "孙政", "level": "品牌心动大使", "star_title": "品牌心动大使", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "孙政出任安敏优品牌心动大使。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#安敏优品牌心动大使孙政#", "heat_num": 15608, "heat_text": "15,608", "category": "护肤", "brand_actions": "8/17 同步上线官宣 KV 与产品共创短视频。", "reactions": "星品影响力心动值 15,608；安敏优同日签约双大使组合（吕思曈+孙政），形成『双子星』营销阵容。"}, {"brand": "支付宝", "star": "陈都灵", "level": "疯狂碰友日推广大使", "star_title": "疯狂碰友日推广大使", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "陈都灵出任支付宝『疯狂碰友日』推广大使（活动节奏而非长期品牌大使）。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#陈都灵支付宝疯狂碰友日推广大使#", "heat_num": 13568, "heat_text": "13,568", "category": "金融科技", "brand_actions": "8/17 同步上线『疯狂碰友日』活动 KV，陈都灵以『青春派』形象出镜主推支付宝碰一碰支付场景。", "reactions": "星品影响力心动值 13,568；粉丝围绕碰友日活动积极晒单应援。"}, {"brand": "RemyMartin人头马", "star": "翟子路", "level": "品牌挚友", "star_title": "品牌挚友", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "翟子路出任 Remy Martin 人头马品牌挚友。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#翟子路人头马品牌挚友#", "heat_num": 180, "heat_text": "180", "category": "酒类", "brand_actions": "8/17 同步上线品牌挚友 KV 与短视频。", "reactions": "星品影响力心动值 180（榜单尾部），热度较低但完成品牌代言矩阵补位。"}, {"brand": "梦幻西游电脑版", "star": "彭昱畅", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-17", "risk": "低", "note": "彭昱畅出任《梦幻西游电脑版》代言人。", "source_type": "用户截图/星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#彭昱畅梦幻西游电脑版代言人#", "heat_num": 42, "heat_text": "42", "category": "游戏", "brand_actions": "8/17 同步上线代言人 KV 与游戏内活动。", "reactions": "星品影响力心动值 42（榜单尾部），游戏垂类代言，热度限于核心玩家圈。"}, {"brand": "薇诺娜", "star": "张翅", "level": "特护大使", "star_title": "特护大使", "action": "新签", "date": "2026-08-16", "risk": "低", "note": "演员张翅官宣薇诺娜特护大使，主演剧集《夫人走的第三年》正在热播，薇诺娜以『温和守护肌肤屏障』的护肤形象契合『长伴守护』的代言人身份。", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#薇诺娜特护大使张翅#", "heat_num": 2697, "heat_text": "2,697", "category": "护肤", "brand_actions": "8月16日10:00薇诺娜品牌官宣（🫘/🧣/🍠同步）；10:00官方旗舰店上线代言专属周边；10:22🫘共创视频发布。8月17日16:00 id视频发布（🫘）；8月19日19:00薇诺娜🫘官方直播间直播宣传。", "reactions": "张翅粉丝（翅煲）8月16日起在星品影响力及微博超话#演员张翅[超话]#积极应援圈粉，结合《夫人走的第三年》「裴迹之为夫人求取佛珠」剧情点，热度持续上扬。"}, {"brand": "康师傅方便面", "star": "卓沅", "level": "美味推广大使", "star_title": "美味推广大使", "action": "新签", "date": "2026-08-16", "risk": "低", "note": "卓沅官宣康师傅方便面美味推广大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#卓沅康师傅方便面美味推广大使#", "heat_num": 1231, "heat_text": "1,231", "category": "食品饮料", "brand_actions": "8月16日9:00发布官宣KV、10:16上线新品创意短视频，主推红烧牛肉面减卡高纤面；天猫官方旗舰店开售并赠撕拉片、冰箱贴周边，杭州杭钢公园同步开启限定快闪活动（13:00-21:00）及粉丝晒单抽奖。", "reactions": "粉丝（禾伙人）围绕#卓沅康师傅方便面美味推广大使#话题积极互动、晒单应援，对新代言反响热烈。"}, {"brand": "蒂芙尼Tiffany", "star": "言承旭", "level": "品牌大使", "star_title": "品牌大使", "action": "新签", "date": "2026-08-16", "risk": "低", "note": "言承旭官宣蒂芙尼品牌大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#蒂芙尼品牌大使言承旭#", "heat_num": 574, "heat_text": "574", "category": "珠宝奢侈品", "brand_actions": "8月16日正式官宣言承旭出任品牌大使，官宣物料全套演绎'石上鸟'高级珠宝系列（飞羽项链、翱翔鸟项链、彩宝镶钻石上鸟腕表等）。", "reactions": "多家时尚与行业媒体跟进报道，品牌借其跨世代公众影响力强化在华人市场与高净值客群的情感连接，口碑正向。"}, {"brand": "毛戈平", "star": "邓佳鑫", "level": "礼遇心动大使", "star_title": "礼遇心动大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "邓佳鑫官宣毛戈平礼遇心动大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#毛戈平礼遇心动大使邓佳鑫#", "heat_num": 31580, "heat_text": "31,580", "category": "彩妆", "brand_actions": "8月14日官宣邓佳鑫为品牌首位男性礼遇心动大使，推出七夕'爱如羽翼'限定系列礼盒（底妆礼盒与琉羽高定礼盒）及限定周边，并发布深圳北站、杭州东站等多地线下大屏打卡攻略。", "reactions": "粉丝（多多佳鑫）积极应援，围绕限定礼盒与同款周边展开购买与打卡，话题讨论热度较高。"}, {"brand": "娇兰", "star": "夏之光", "level": "品牌挚友", "star_title": "品牌挚友", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "夏之光官宣法国娇兰品牌挚友", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#夏之光法国娇兰品牌挚友#", "heat_num": 11941, "heat_text": "11,941", "category": "美妆", "brand_actions": "8月14日官宣夏之光为法国娇兰品牌挚友，主打蓝调淡香精推广，官宣当晚空降娇兰京东自营官方旗舰店直播间，带来七夕'送恋人/送自己'香水推荐及福袋抽奖。", "reactions": "微博话题#夏之光法国娇兰品牌挚友#引发粉丝庆祝与讨论，官宣获美妆营销媒体关注。"}, {"brand": "阿尔卑斯", "star": "董思成", "level": "良缘代言人", "star_title": "良缘代言人", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "董思成官宣阿尔卑斯良缘代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#阿尔卑斯良缘代言人董思成#", "heat_num": 7843, "heat_text": "7,843", "category": "食品饮料", "brand_actions": "8月14日七夕官宣董思成任良缘代言人，推出专属七夕古偶主题短片，并上线'董思成同款'混合口味硬糖套组。", "reactions": "粉丝围绕#阿尔卑斯良缘代言人董思成#开展星品影响力打卡应援，评价代言人与产品'100昏绝配'，反响积极。"}, {"brand": "夸迪", "star": "黄羿", "level": "品牌大使", "star_title": "品牌大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "黄羿官宣夸迪品牌大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#夸迪品牌大使黄羿#", "heat_num": 2692, "heat_text": "2,692", "category": "护肤", "brand_actions": "8月14日官宣黄羿为品牌大使，此前以悬念海报、倒计时video预热，官宣日释出KV与共创TVC，主推全新'注光瓶'（聚焦细胞线粒体注光抗老）。", "reactions": "粉丝在星品影响力为其送心助力，品牌后续发起周边种草与UGC二创征集，粉丝互动活跃。"}, {"brand": "夸迪", "star": "官鸿", "level": "品牌大使", "star_title": "品牌大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "官鸿官宣夸迪品牌大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#夸迪品牌大使官鸿#", "heat_num": 2499, "heat_text": "2,499", "category": "护肤", "brand_actions": "8月14日与黄羿同期官宣官鸿为品牌大使，主打'注光瓶'细胞注光抗老，二人以'九五双帝/元治'CP概念捆绑营销。", "reactions": "粉丝围绕黄羿×官鸿CP向内容展开大量二创与应援，星品影响力为其送心，话题热度较高。"}, {"brand": "阿玛尼美妆", "star": "闫桉", "level": "品牌挚友", "star_title": "品牌挚友", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "闫桉官宣阿玛尼美妆品牌挚友", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#闫桉阿玛尼美妆品牌挚友#", "heat_num": 2356, "heat_text": "2,356", "category": "彩妆", "brand_actions": "8月14日官宣闫桉为阿玛尼美妆品牌挚友，主推七夕限定礼盒传奇红管（主推色号100满分粉棕），并预告8月17日亮相京东官方旗舰店直播间。", "reactions": "粉丝以高度组织化的'应援式'营销和文案模板迎接合作，网络情绪以骄傲、期待与消费转化为主，反响热烈。"}, {"brand": "参半", "star": "林子烨", "level": "青少年系列代言人", "star_title": "青少年系列代言人", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "林子烨官宣参半青少年系列代言人（原图底部日期截断，据相邻条目推断为08.14）", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#参半青少年系列代言人林子烨#", "heat_num": 2125, "heat_text": "2,125", "category": "口腔护理", "brand_actions": "官宣林子烨出任参半青少年系列代言人（其首个品牌代言），主打青少年清爽口腔定位，配合空瓶文案与星品影响力种草。", "reactions": "粉丝庆祝其拿下首个品牌代言，围绕#参半青少年系列代言人林子烨#积极互动与打投，反响正面。"}, {"brand": "欧珀莱", "star": "姚琛", "level": "闪白大使", "star_title": "闪白大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "姚琛官宣欧珀莱闪白大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#欧珀莱闪白大使姚琛#", "heat_num": 1459, "heat_text": "1,459", "category": "护肤", "brand_actions": "8月14日10:00官宣姚琛为闪白大使，推出七夕闪白礼盒（臻源水+闪白瓶精华+臻源乳+替换芯+限定周边），天猫同步开售并启动'闪白挑战'（晒单破1000解锁长沙应援大屏）。", "reactions": "粉丝（Cookies）积极参与闪白挑战与打投应援，围绕同款套组与周边礼展开购买与讨论。"}, {"brand": "美团", "star": "景甜", "level": "潮玩变美大使", "star_title": "潮玩变美大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "景甜官宣美团潮玩变美大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#景甜美团潮玩变美大使#", "heat_num": 613, "heat_text": "613", "category": "生活服务", "brand_actions": "8月14日18:00以'潮玩变美大使'身份在美团直播撒福利（88元无门槛券、免费美甲美发名额），并空降苏豪发廊美团直播间。", "reactions": "直播间福利帖引发粉丝转发互动，'抄作业'式种草七夕变美服务，反响活跃。"}, {"brand": "领克汽车", "star": "阚清子", "level": "车型挚友", "star_title": "车型挚友", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "阚清子官宣领克20车型挚友", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#领克20车型挚友阚清子#", "heat_num": 496, "heat_text": "496", "category": "汽车", "brand_actions": "8月14日官宣阚清子为全新领克20车型挚友，以主打色'尤莱特紫'玩谐音梗海报（'一眼看清紫'），并亮相成都车展、携手《时尚芭莎》拍摄。", "reactions": "行业营销号将其解读为'人设与品牌灵魂共振'的典型样本，公关稿与车展曝光带来正向讨论。"}, {"brand": "脉动", "star": "欧豪", "level": "职场状态续航大使", "star_title": "职场状态续航大使", "action": "新签", "date": "2026-08-14", "risk": "低", "note": "欧豪官宣脉动职场状态续航大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#欧豪脉动职场状态续航大使#", "heat_num": 399, "heat_text": "399", "category": "饮料", "brand_actions": "8月14日官宣欧豪为职场状态续航大使，主推全新3D源动力（3连电解质+3重维生素），结合综艺《大哥小助理》物料并设签名照抽奖。", "reactions": "粉丝围绕#欧豪脉动职场状态续航大使#话题互动抽奖，结合综艺热度带动产品讨论，反响积极。"}, {"brand": "红之HUNGCHI", "star": "周翊然", "level": "清爽代言人", "star_title": "清爽代言人", "action": "新签", "date": "2026-08-13", "risk": "低", "note": "周翊然官宣红之清爽代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#红之清爽代言人周翊然#", "heat_num": 17255, "heat_text": "17,255", "category": "护肤", "brand_actions": "红之8月13日官宣周翊然为清爽代言人，以『翊净到底，即刻怦然』为主题上线『翊见怦然』洗护/卸洁限定套组及多巴胺洗护发系列，随套组赠送小卡、撕拉吧唧、NFC四宫格等全套周边，并在天猫、京东同步开售并启动『星品影响力』推荐活动。", "reactions": "官宣当日周翊然工作室与品牌双微联动造势，粉丝涌入旗舰店抢购限定套组与周边，微博话题『红之清爽代言人周翊然』引发大量讨论与晒单。"}, {"brand": "奕境汽车", "star": "郭富城", "level": "全球代言人", "star_title": "全球代言人", "action": "新签", "date": "2026-08-13", "risk": "低", "note": "郭富城官宣奕境X9全球代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#奕境X9全球代言人郭富城#", "heat_num": 181, "heat_text": "181", "category": "汽车", "brand_actions": "奕境汽车8月13日官宣郭富城为奕境X9全球代言人并发布随车灯光影舞动的官宣视频，借其6月香港车展品鉴、武汉演唱会试驾的『天王严选』双重身份（赛车手兼三孩父亲）契合产品，新车8月18日开启预售、预售价38至52万元。", "reactions": "官宣视频引爆社交网络，被网友称为『天王座驾』『天王严选』，媒体从产品力与代言人契合度多维度解读，新车对标问界M9、理想L9引发行业讨论。"}, {"brand": "王泽(Dr.Yu)", "star": "杨紫", "level": "护肤全球代言人", "star_title": "", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "杨紫官宣王泽(Dr.Yu)守护稳稳的YANGZI", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#守护稳稳的YANGZI#", "heat_num": 200000, "heat_text": "20万", "category": "护肤", "brand_actions": "玉泽8月12日官宣杨紫为品牌创立23年来首位全球护肤代言人，推出『紫生屏障』系列礼盒（299/399元）及限定周边（NFC小卡、镜中画挂件等），并在全国9城100屏（含北京王府井、上海南京东路及上海地铁）大规模投放。", "reactions": "作为杨紫白玉兰视后后首个护肤代言，官宣当日粉丝涌入天猫旗舰店抢购『紫生屏障礼盒』致销量暴涨、部分用户多单下单，9城大屏排面拉满，被业内评价为国货护肤代言规格突破。"}, {"brand": "MLB", "star": "林一", "level": "青春代言人", "star_title": "青春代言人", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "林一官宣MLB潮流品牌青春代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#MLB潮流品牌青春代言人林一#", "heat_num": 18508, "heat_text": "18,508", "category": "运动服饰", "brand_actions": "MLB于8月12日官宣林一为潮流品牌青春代言人，以2026秋冬全新ROOKIE LINER翻盖学长鞋为灵感锚点打造官宣造型，林一演绎棒球帽搭配拼接T恤与薄底鞋的街头穿搭，该鞋款同步登陆线下门店及天猫旗舰店。", "reactions": "时尚媒体（时尚先生、OK!潮周报等）集中报道，强调林一清新气质与品牌自在潮流主张契合；未见公开具体销量或话题数据，粉丝以穿搭种草为主。"}, {"brand": "Jmoon极萌", "star": "伯远", "level": "心动大使", "star_title": "心动大使", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "伯远官宣极萌美容仪心动大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#极萌美容仪心动大使伯远#", "heat_num": 3266, "heat_text": "3,266", "category": "美容仪", "brand_actions": "极萌（Jmoon极萌）8月12日官宣伯远为美容仪心动大使，主推极萌水光仪与黄金微雕仪，并预告8月14日19:00伯远空降京东直播间（极萌京东自营旗舰店）与粉丝互动。", "reactions": "官宣由品牌与伯远双账号联动，伯远超400万粉丝关注；京东直播间预告引发粉丝前往『get同款』，配合七夕『爱赴长远』主题营销。"}, {"brand": "欧诗漫", "star": "任敏", "level": "品牌青春大使", "star_title": "品牌青春大使", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "任敏官宣欧诗漫品牌青春大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#任敏欧诗漫品牌青春大使#", "heat_num": 2013, "heat_text": "2,013", "category": "护肤", "brand_actions": "欧诗漫8月12日官宣任敏为品牌青春大使并同步推出广告片（任敏与『珍珠爷爷』揭秘美白秘密），次日任敏出席欧诗漫珍珠护肤科技大会，现场见证并试用首个中国自研美白剂『珍白因』及第三代安心小白管新品。", "reactions": "借『珍白因』获批（美白原料法规调整后首个国产自研美白剂）的行业里程碑引发广泛关注，任敏现场分享试用体验并获临床专家背书，被视为国货美白科研突破的营销样本。"}, {"brand": "百雀羚", "star": "李思潼", "level": "灵思大使", "star_title": "灵思大使", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "李思潼官宣百雀羚灵思大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#百雀羚灵思大使李思潼#", "heat_num": 567, "heat_text": "567", "category": "护肤", "brand_actions": "百雀羚8月12日官宣李思潼为灵思大使，发布以潮汕话开场、回归七夕『乞巧节』本源的短片《祝她的七夕特别好》，同步推出与非遗缂丝传承人陈文合作的『雀上心头』联名礼盒，并联动京东美妆『礼上加礼』送周边。", "reactions": "营销跳出七夕爱情叙事、主打女性悦己引发好评，网友评论『第一次看到这样温暖舒服的广告』；李思潼凭《给阿嬷的情书》爆火自带口碑，被业内视为『素人黑马』合作典范。"}, {"brand": "古井贡酒", "star": "古天乐", "level": "", "star_title": "", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "古天乐官宣古井贡酒", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#古天乐喝古井天天乐#", "heat_num": 255, "heat_text": "255", "category": "酒类", "brand_actions": "古井贡酒8月12日在合肥召开年份原浆品质升级发布大会，官宣古天乐出任品牌大使、口号『喝古井，天天乐』，并同步宣布年份原浆全系产品品质升级、坚持提质不提价。", "reactions": "话题『古天乐喝古井天天乐』登上热搜，网友评价『名字适配度拉满』；其公益形象（累计捐建137所学校）与品牌社会责任理念契合，被业内视为白酒存量竞争中的品牌化打法。"}, {"brand": "FlashFish闪鱼", "star": "肖央", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "肖央官宣FlashFish闪鱼代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#肖央官宣闪鱼代言人#", "heat_num": 224, "heat_text": "224", "category": "户外装备", "brand_actions": "闪鱼（FLASHFISH）8月12日官宣肖央为品牌代言人，强调双方『稳』的长期主义内核契合，并同步释出专属官宣TVC短片（聚焦高铁出行、租房用网、移动导航等真实场景）。", "reactions": "官宣引爆娱乐与数码双圈层热议，业内分析认为随身WiFi行业头部品牌开启代言人战略预示行业进入品牌化竞争时代；暂未见公开具体销量数据。"}, {"brand": "八马茶业", "star": "姚安娜", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "姚安娜官宣八马茶业品牌代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#八马茶业品牌代言人姚安娜#", "heat_num": 199, "heat_text": "199", "category": "茶叶", "brand_actions": "八马茶业官宣姚安娜为品牌代言人，与全球品牌代言人宋佳组成『双代言矩阵』，两位代言人同台共品三大名茶、共话茶叙，姚安娜以青春国际化视角解读春茶、打通年轻消费场景。", "reactions": "发布会呈现『一守一创』双代言叙事，姚安娜的加入被指重构中国茶品牌年轻化格局；公司上半年营收净利双高增，业内评价其跳出传统茶叶『老派』刻板印象。"}, {"brand": "Swisse斯维诗", "star": "吉娜", "level": "PLUS品牌大使", "star_title": "PLUS品牌大使", "action": "新签", "date": "2026-08-12", "risk": "低", "note": "吉娜官宣Swisse PLUS品牌大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#Swisse PLUS品牌大使吉娜#", "heat_num": 160, "heat_text": "160", "category": "保健品", "brand_actions": "Swisse斯维诗8月12日官宣吉娜（吉娜爱丽丝Gina）为Swisse PLUS品牌大使，主打『细胞营养，焕启新生』理念，关联Swisse PLUS新生瓶Ultra等产品，并借天猫品牌超级会员日节点传播。", "reactions": "官宣由品牌与吉娜双账号联动，围绕『音乐与热爱』叙事展开；Swisse PLUS在618期间电商全渠道同比增长39%，但本次官宣具体销量数据未见公开披露。"}], "marketing_cases": [], "new_products": [{"brand": "美诺 MENOW", "category": "粉饼/蜜粉饼/散粉", "launch_date": "2026-08-18", "price": "¥55.9", "product": "控油大白饼「乐乐熊」蜜粉饼 七夕限定（P15丝绒拿铁，2盒装9.6g，京东自营旗舰店在售）", "sales_data": {"platform": "京东", "comments": "500", "rating": "100%", "price_range": "常卖价55.9/历史最低49.9"}, "source_name": "美诺京东自营旗舰店", "source_url": "https://jingfen.jd.com/detail/EE74LPFkwHhKPlIZlDMmKPochqNq5X_3YU2wBLyoIoPtMT95x.html"}, {"brand": "花西子", "category": "粉饼/蜜粉饼/散粉", "launch_date": "2026-08-13", "price": "¥209", "product": "玉容凝脂匀肤持妆粉饼（非遗宋锦防晒定妆二合一·SPF50+ PA+++）", "sales_data": {"platform": "天猫", "comments": "", "rating": "", "price_range": ""}, "source_name": "天猫花西子官方旗舰店", "source_url": "https://list.tmall.com/search_product.htm?q=%E8%8A%B1%E8%A5%BF%E5%AD%90"}, {"brand": "美诺 MENOW", "product": "果冻贴贴喷雾 双萃水油配方PDRN胶原", "category": "定妆喷雾", "price": "¥79.90", "launch_date": "2026-08-08", "source_url": "http://t.cn/AXC7g7OQ", "source_name": "天猫美诺旗舰店", "sales_data": {"platform": "天猫", "comments": "新品上市", "rating": "新品", "price_range": "¥79.90"}}], "hot_topics": [{"time": "2026-08-18", "platform": "抖音商城（平台官方榜单）", "topic": "抖音商城七夕好礼季高光行业榜单出炉：礼赠悦己双向爆发", "trend_direction": "抖音官方发布 8/15-19 七夕好礼季各赛道高光榜单：美妆个护是礼赠刚需，护肤 TOP3=珀莱雅/海蓝之谜/韩束，彩妆 TOP3=YSL/兰蔻/雅诗兰黛；「即时送礼、即兴下单」行为突出，现货储备与 48h 发货成商家竞争力；悦己消费成为稳定增量。", "data_support": "抖音商城七夕好礼季 8/15-19 | 护肤TOP3=珀莱雅/海蓝之谜/韩束 | 彩妆TOP3=YSL/兰蔻/雅诗兰黛", "content_ideas": {"抖音": "借官方榜单「悦己消费成增量」信号，做美诺「平价悦己礼」内容，避开与国际大牌正面送礼战", "小红书": "「七夕给自己挑的平价好物」清单体，绑定 #悦己# #平价心意礼# 话题"}, "source_name": "京报网/抖音商城", "source_url": "https://news.bjd.com.cn/2026/08/18/11920669.shtml"}, {"time": "2026-08-19", "platform": "微博（官方热搜）", "topic": "#七夕#全网热度提前引爆：乞巧节回归 + 松弛悦己双叙事", "trend_direction": "微博热搜#七夕#显示 2026 七夕两大趋势：一边是央视七夕晚会（8/19 晚 20:00 CCTV-3，魏晨/郁可唯等）、品牌活动、明星直播构成盛大仪式感；另一边年轻人集体解构传统浪漫，「七夕我就这样安慰自己」成现象级话题，大量讨论将七夕重新称呼为「乞巧节/女儿节」。", "data_support": "央视七夕晚会 8/19 20:00 CCTV-3 | 话题#七夕我就这样安慰自己# #爱自己才是终身浪漫#", "content_ideas": {"抖音": "七夕当天做「悦己版七夕」内容：不送别人，给自己化个漂亮的妆，绑定#悦己#", "小红书": "「乞巧节」文化科普+现代悦己妆教结合，差异化避开同质化送礼内容"}, "source_name": "微博热搜", "source_url": "https://weibo.com/6422493315/5333413099998428"}, {"time": "2026-08-18", "platform": "电商/全网", "topic": "七夕美妆礼物价差 199 元 vs 5660 元：消费分化下的平价增量", "trend_direction": "同样是七夕美妆礼物，YSL 黑管唇釉 199 元、赫莲娜黑绷带面霜 5660 元（价差近 29 倍）；第三方监测线上美妆 200 元以下价格带份额从 44.28% 升至 46.52%，高端与平价同步扩容——市场不是升级或降级，而是明显分化，平价「大牌感但不为溢价买单」诉求强劲。", "data_support": "200元以下价格带份额 44.28%→46.52% | YSL黑管唇釉199元 vs 赫莲娜黑绷带5660元", "content_ideas": {"抖音": "「49.9 也有贵妇妆感」对比内容，承接平价增量价格带情绪", "小红书": "「七夕平价心意礼清单」种草，突出美诺粉饼 49.9 的礼物性价比"}, "source_name": "网易/拍案", "source_url": "https://www.163.com/dy/article/L4KUF8980523H9J0.html"}, {"time": "2026-08-19", "platform": "微博美妆超话", "topic": "七夕粉紫色甜妹妆容出圈：约会拍照出片妆教", "trend_direction": "微博美妆超话热门：低饱和粉色系腮红+粉紫眼妆的「七夕甜妹妆」广泛传播，主打「约会拍照巨出片」；妆教内容强调「爱自己才是终身浪漫」，与七夕悦己叙事共振。", "data_support": "话题#七夕心动妆# #七夕情书# 美妆超话", "content_ideas": {"抖音": "蹭七夕妆容热度做「甜妹妆定妆教学」，结尾植入美诺粉饼控油持妆", "小红书": "「七夕妆教 + 平价定妆好物」组合笔记，粉紫妆容配粉饼定妆教程"}, "source_name": "微博美妆超话", "source_url": "https://weibo.com/3480038412/5332857758420970"}], "trends": [{"platform": "平台官方大会", "title": "小红书 2026 WILL 商业大会：看见具体的人，从品类思维转向情境思维", "summary": "小红书 2025 年末举办 2026 WILL 商业大会，核心主张「要看见具体的人，而不是抽象的人」：做生意不应只盯 SKU 和转化率，而应把生意当「生长的土壤」；小红书营销实验室用 AI 解读海量笔记，理解 95 种情绪、1400 个细分场景，推动品牌从「品类思维」转向「情境思维」，发现未被满足的超级小需求；slogan 已从「你的生活指南」升级为「你的生活兴趣社区」。", "data_support": "2026 WILL商业大会 | AI解读95种情绪/1400个细分场景 | slogan升级「你的生活兴趣社区」", "source_name": "小红书官方/行业观察", "source_url": "https://www.bhwang.cn/youjun/44815518536512.html", "time": "2026-08-19"}, {"platform": "行业新形态", "title": "明星 AI 肖像授权跑通商业闭环：从王祖贤到范志毅，AI 代言成新广告形态", "summary": "2026 年明星 AI 授权密集落地：网易《天下》18 周年官宣王祖贤出任代言人，授权 20-30 岁巅峰肖像制作全 AIGC 广告《倩影》（DM Monet+火山引擎，无真人实拍，片尾署名「王祖贤(AI)」），并把数字形象延伸为游戏 NPC/专属时装——国内游戏行业首个明星正版授权全 AI 广告；可口可乐×百度让范志毅 AI 数字人 24/7 实时互动代言世界杯；吴启华授权 20 岁脸拍 AI 电影、游本昌 93 岁授权青年济公形象拍短剧；同期爱奇艺「AI艺人库」因张若昀等辟谣引发在役明星 AI 戒备争议；2026 Q1 全行业微短剧 AI 占比已超 95%。", "data_support": "王祖贤AI代言《天下》18周年(7/20) | 范志毅AI数字人×可口可乐世界杯 | AI短剧占比超95%(2026Q1)", "source_name": "腾讯新闻/新浪", "source_url": "https://news.qq.com/rain/a/20260721A0A2F700", "time": "2026-08-19"}, {"platform": "行业报告", "title": "用户说 2026 底妆报告：398.62 亿底妆盘，抖音占 58%，遮瑕成最快增长细分", "summary": "用户说《光学滤镜·多肽养肤·冰感持妆：2026年【底妆】线上消费趋势洞察》（77 页）：2026.04MAT 天猫/抖音/京东底妆总销售额 398.62 亿元，抖音 232.08 亿占 58.22%（+13.72%）为最大平台；气垫 104 亿/粉底液 100.9 亿双百亿基本盘；遮瑕 18.73 亿但同比 +24.35% 为最快增长细分；「底妆+护肤」复合需求、熬夜肌/冰感定妆等新品密集；国货底妆在抖音持续放量（蒂洛薇连续 3 个月抖音彩妆榜 TOP1）。", "data_support": "底妆盘398.62亿 | 抖音58.22%(232亿,+13.72%) | 遮瑕+24.35% | 气垫104亿/粉底液100.9亿", "source_name": "用户说/东方财富财富号", "source_url": "https://caifuhao.eastmoney.com/news/20260709171837823082640", "time": "2026-08-19"}, {"platform": "行业事件", "title": "高端美妆杀回抖音：头部格局固化，国货靠自播守住半壁", "summary": "青眼/36氪观察：5 月抖音化妆品总榜 TOP1 易主赫莲娜，TOP5=赫莲娜/雅诗兰黛/珀莱雅/海蓝之谜/韩束，55% 上榜品牌为高端外资；高端品牌靠「达人矩阵+品牌自播」双路径（赫莲娜达人推广占 GMV 49%）；国货端蒂洛薇自播占 53.78%、连续 3 个月抖音彩妆榜 TOP1，珀莱雅/韩束自播占比 51-65%——白牌已彻底退出 TOP20，抖音从「白牌跑量场」转向「品牌经营场」。", "data_support": "5月抖音化妆品总榜TOP1=赫莲娜 | 高端品牌占上榜55% | 蒂洛薇3连冠抖音彩妆TOP1 | 韩束自播占65%", "source_name": "青眼/36氪", "source_url": "https://36kr.com/p/3839947060955393", "time": "2026-08-19"}, {"platform": "行业报告", "title": "底妆渠道权力转移：抖音以56%市占率取代天猫成为第一大渠道", "summary": "知行咨询《2026知行数据观察：粉底液&膏品类》：中国底妆市场预计1216亿元（2022-2026复合增速15%+）；抖音线上市占率从30%跃升至56%反超天猫，销量占比达71%；防晒（+34%）、修颜（+29%）成高增长功效引擎，70%用户偏好自然裸妆、60%遭遇卡粉脱妆痛点。", "data_support": "底妆市场1216亿元 | 抖音市占率56% | 防晒+34%/修颜+29% | 70%偏好自然裸妆", "source_name": "知行咨询×尚普咨询", "source_url": "https://www.sgpjbg.com/labels/fendiyegaoxingyebaogao.html", "time": "2026-08-18"}, {"platform": "行业报告", "title": "男士护理赛道扩容至680亿：七夕「她买给他」场景集中释放", "summary": "男士护理市场规模突破680亿、行业增速25%超美妆大盘；七夕送礼场景从『他买给她』扩展到『她买给他』，碧欧泉、海洋至尊、自然堂男士等推基础套盒，曼秀雷敦×蜘蛛侠、谷雨×小熊虫以IP联名破圈，得物等平台男性礼赠需求集中释放。", "data_support": "男士护理市场680亿+ | 行业增速25% | 海洋至尊得物单月GMV 150万+", "source_name": "化妆品报 CBO", "source_url": "https://www.cbo.cn", "time": "2026-08-18"}, {"platform": "行业事件", "title": "2026七夕营销去「情爱化」：悦己、知己、文化共生三线并行", "summary": "百雀羚回归乞巧节本源（缂丝非遗『雀上心头』礼盒+短片《祝她的七夕特别好》）、花西子把普通人信物故事搬上全国10城大屏、CT×赵露思共创『芭蕾千金妆』只谈变美不谈爱情、OLAY×Vera Wang、SK-II×CRYBABY、科颜氏×MILK BAR甜品联名——品牌集体把七夕从『送礼告白』重构为悦己、女性情谊与文化共鸣的多元表达。", "data_support": "百雀羚乞巧文化营销 | 花西子10城信物大屏 | OLAY×Vera Wang首次护肤联名 | CT×赵露思妆容共创", "source_name": "化妆品报 CBO", "source_url": "https://www.cbo.cn", "time": "2026-08-18"}, {"platform": "小红书/抖音", "title": "「不完美自由」原生感浪潮：从滤镜精致到真实肌理", "summary": "2026年「原生感/真实肌理」审美逆势走红：小红书#卸妆后松一口气#播放破8.2亿，抖音「素颜自拍挑战」单日新增百万条视频。消费者厌倦模板化精致，转向「看起来没怎么化」的高级自然感。", "data_support": "小红书#卸妆后松一口气# 8.2亿播放 | 抖音素颜自拍挑战单日+百万条 | 64.3%用户偏爱无滤镜内容", "source_name": "搜狐时尚×社媒观测", "source_url": "https://www.sohu.com/a/1059702970_122066679", "time": "2026-08-15"}, {"platform": "抖音电商", "title": "头部品牌稳守 + 白牌达人突围双轨格局", "summary": "韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。", "data_support": "韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据", "source_name": "蝉妈妈×抖音电商", "source_url": "https://www.chanmama.com/yunyingquan/article/2035.html", "time": "2026-08-05"}, {"platform": "小红书", "title": "彩妆审美回摆：从网感到活人感", "summary": "用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。", "data_support": "#卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》", "source_name": "小红书×界面新闻", "source_url": "https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026", "time": "2026-07-01"}, {"platform": "微信指数", "title": "凉感化妆品赛道爆发（护肤→底妆延伸）", "summary": "1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。", "data_support": "销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%", "source_name": "微信指数×魔镜市场", "source_url": "https://index.weixin.qq.com/", "time": "2026-05-31"}, {"platform": "平台官方大会", "title": "巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座", "summary": "4/22 青岛举办的 2026 巨量引擎渠道合作伙伴生态大会释放平台级信号：广告营销竞争核心从「流量思维」转向「经营思维」，品牌更关注预算的实际经营价值；巨量引擎全面升级「品星云」AI 核心能力，拆解 AI 内容生态逻辑（创意生产提效+内容产业链迭代），火山引擎面向代理商发布 AI 解决方案；品牌广告/星图/千川/本地推全场景商业产品自动化升级。", "data_support": "「智·启无境」2026巨量引擎渠道合作伙伴生态大会（4/22 青岛） | 品星云AI能力升级 | 火山引擎代理商AI解决方案", "source_name": "中国日报网/巨量引擎官方", "source_url": "https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html", "time": "2026-04-22"}], "industry_reports": [{"title": "光学滤镜·多肽养肤·冰感持妆：2026年【底妆】线上消费趋势洞察（用户说，77页）", "category": "底妆", "source": "用户说", "source_url": "https://caifuhao.eastmoney.com/news/20260709171837823082640", "date": "2026-08-19", "is_key": true, "summary": "2026.04MAT 天猫/抖音/京东底妆总销售额 398.62 亿元，抖音 232.08 亿占 58.22%（+13.72%）为最大平台，天猫 127.89 亿占 32.08%、京东 38.65 亿占 9.7%；气垫 104.02 亿/粉底液 100.92 亿双百亿基本盘；遮瑕 18.73 亿同比 +24.35% 为最快增长细分（均价仅 58 元、量价大众化）；精华粉底液/功效型底妆/熬夜肌气垫/冰感定妆喷雾等新品密集，妆养合一成为主流；男士底妆仍处早期，男士蜜粉/粉底液出现增长。", "key_data": "底妆盘398.62亿 | 抖音58.22%(+13.72%) | 气垫104亿/粉底液100.9亿 | 遮瑕+24.35%"}, {"title": "面部彩妆品类数据洞察报告（三个皮匠/全网渠道）", "category": "彩妆", "source": "三个皮匠报告", "source_url": "https://www.sgpjbg.com.cn/info/5fe342650b7c5b3e8fc0d09f0f1a2191.html", "date": "2026-08-19", "is_key": false, "summary": "2024H1-2026H1 线上面部彩妆销售额 276.1→348.4 亿元（增速 9.5%→15.2%）；抖音销售额占比 55%→64%、销量占比 57%→75%，2026H1 抖音 223.5 亿（+22.4%）成增量引擎；淘系量跌价升（均价 98→122 元）；抖音细分亮点：彩妆套装 +52%、定妆喷雾 +42%、遮瑕 +61%、CC霜 +121%、定妆 +135%（尝鲜长尾）；100-300 元为绝对主力价格带。", "key_data": "面妆大盘348.4亿 | 抖音占比64%(+22.4%) | 定妆喷雾+42%/遮瑕+61%"}], "marketing_news": [{"title": "王祖贤 AI 代言《天下》18 周年：国内首个明星正版授权全 AIGC 广告，数字肖像授权闭环跑通", "category": "AI营销/标志案例", "brand": "网易《天下》/王祖贤", "source": "腾讯新闻", "source_url": "https://news.qq.com/rain/a/20260721A0A2F700", "date": "2026-08-19", "summary": "网易《天下》7/20 官宣王祖贤为 18 周年品牌代言人，授权其 20-30 岁巅峰肖像制作全 AI 广告《倩影》（网易 DM Monet + 火山引擎，无真人实拍，片尾署名「王祖贤(AI)」），并延伸为游戏数字 NPC/专属时装；授权模式=只开巅峰期肖像权、限定单一项目、不真人宣传——开创「明星数字肖像授权—AI 内容生成—品牌传播—数字资产运营」完整商业闭环；同期吴启华授权 20 岁脸拍 AI 电影、游本昌 93 岁授权青年济公拍短剧，退圈明星成 AI 肖像授权先行军；爱奇艺「AI 艺人库」因张若昀等辟谣引发在役明星 AI 戒备争议。", "insight": "AI 代言已是真实新广告形态而非概念：美诺虽不适用天价明星授权，但应跟进 AI 素材/AI 内容生产的降本路径，并关注消费者对 AI 代言的信任边界（在役明星戒备 vs 退圈明星躺赚的两极分化）。"}, {"title": "可口可乐 × 百度：范志毅 AI 数字人 24/7 互动代言世界杯，「always-on 明星」新范式", "category": "AI营销/跨界", "brand": "可口可乐中国/百度/范志毅", "source": "BriefGlance", "source_url": "https://briefglance.com/articles/the-ai-ambassador-a-digital-star-is-born-for-the-world-cup", "date": "2026-08-19", "summary": "可口可乐中国与百度合作，让国足名宿范志毅的 AI 数字人（百度文心数字人平台，口型同步精度 98.5%+）在世界杯期间 24/7 与球迷实时互动，突破明星档期/空间限制，从「静态代言人」升级为「always-on 品牌大使」；百度数字人直播已能降本 80%、提升转化率，此前罗永浩 AI 分身一场 6 小时直播带货超 5500 万。", "insight": "数字人从「带货工具」升级为「互动代言」：对平价品牌而言，数字人/虚拟主播是降低直播人力成本的可评估路径，可先小规模测试。"}, {"title": "抖音商城七夕好礼季启动（8/15-19）：消费券+直降+免息，现货履约成商家竞争力", "category": "平台活动/官方", "brand": "抖音电商", "source": "今日头条/华商网", "source_url": "https://www.toutiao.com/article/7674911904279642678", "date": "2026-08-19", "summary": "抖音电商 8/15-19 开启「抖音商城七夕好礼季」，消费券/一件直降/立减折扣，聚焦礼赠+悦己+品质生活多元场景；配套「七夕搭建鹊桥」互动玩法、看后搜养词计划（搜索流量+商品转化）、商家免息费率优惠（3-24 期）；官方明确「七夕礼赠时效性强」，对现货商品加资源激励，建议商家 48h 内发货——即时送礼/即兴下单行为特征突出。", "insight": "平台官方把「现货+48h 发货」作为七夕竞争力标准：美诺参与节点大促须提前备足现货并保障履约时效，同时用好「看后搜养词计划」做搜索卡位。"}, {"title": "2026 巨量引擎渠道合作伙伴生态大会（4/22 青岛）：AI 渗透全链路，品星云能力升级", "category": "平台官方大会", "brand": "巨量引擎/火山引擎", "source": "中国日报网", "source_url": "https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html", "date": "2026-08-19", "summary": "「智·启无境」2026 巨量引擎渠道合作伙伴生态大会 4/22 在青岛举办：营销逻辑从流量思维转向经营思维；聚焦品牌广告/星图/千川/本地推全场景商业产品自动化升级；全面升级「品星云」AI 核心能力；火山引擎发布面向代理商的 AI 解决方案（豆包大模型+云原生基础设施）；颁发共擎奖表彰各赛道增长标杆代理商。", "insight": "平台官方把 AI 定为增长底座：美诺的素材生产（AI 创意）、投放（自动化+品星云）应纳入下半年的降本增效计划。"}, {"title": "2026 七夕营销观察：央视晚会+品牌直播的仪式感 vs 年轻人「乞巧节回归+松弛悦己」", "category": "节日营销/平台观察", "brand": "央视/微博平台", "source": "微博热搜", "source_url": "https://weibo.com/6422493315/5333413099998428", "date": "2026-08-19", "summary": "微博#七夕#趋势梳理：央视七夕晚会《今夕颂》8/19 晚 20:00 CCTV-3 播出（魏晨/郁可唯/王琳凯等）；肖战素颜现身香港为 YSL 七夕活动预热、刘宇宁办线上音乐节；品牌与电商密集发力（京东美妆七夕专题）；但年轻人大规模解构传统浪漫：「七夕我就这样安慰自己」成现象级话题，「爱自己才是终身浪漫」成为主流情绪，大量讨论把七夕重新叫回「乞巧节/女儿节」。", "insight": "七夕营销的「仪式感供给」与「悦己情绪」并存：美诺应站「悦己」一侧——不做告白绑架，做「给自己一份体面」的平价美妆内容。"}], "continuous_watch": [{"icon": "📅", "text": "七夕营销节点（8/19）竞品动作实时跟进——卡姿兰/方里/彩棠/M·A·C 礼盒打法与价格机制（含8/18前夜直播间节奏）"}, {"icon": "⚔️", "text": "竞品方里 / 卡姿兰 / 毛戈平 / 玉泽 底妆动作跟踪——新品、代言与渠道机制变化（全行业）"}, {"icon": "❄️", "text": "凉感底妆 / 养肤粉饼产品机会验证——跟进「凉感化妆品」赛道与「活人感」审美对配方的启示"}, {"icon": "🌟", "text": "明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏"}, {"icon": "💡", "text": "跨品类机会扫描——男士护理680亿赛道、个护/护肤端「微生态」「纯净美妆」声量与彩妆审美的承接点"}, {"icon": "🎤", "text": "平台官方大会档期跟踪——抖音电商生态大会、引擎大会（巨量引擎）、抖音创作者大会、小红书 WILL 商业大会、微博超级红人节等年度大会的时间/主题/发布口径（平台方一手信息优先）"}, {"icon": "🤖", "text": "AI 新广告形态跟踪——AI 创意/AIGC 素材（抖音即创/巨量创意）、AI 素材授权、明星 AI 授权（数字分身/AI 肖像代言）、智能投放等平台级新形态动态"}], "brand_inspiration": ["抖音官方榜单 + 价差报道双重印证：200 元以下美妆价格带份额已升至 46.52%——美诺 49.9 元粉饼正处增量价格带，官方榜单与消费分化数据都是可引用的背书素材，应沉淀为「平价也体面」的内容资产。", "平台官方大会（巨量引擎/小红书 WILL）共同指向：AI 已从工具变为平台增长底座，内容生产与投放全链路 AI 化是确定性方向——美诺可小步试水 AI 素材/AI 数字人主播的降本增效，先做 1-2 个测试账号验证 ROI。", "王祖贤 AI 代言跑通「明星数字肖像授权」闭环、范志毅 AI 数字人 24/7 互动代言，说明 AI 代言/数字人已是真实新广告形态；美诺虽不适合天价明星授权，但可关注行业案例对消费者心智的塑造，避免在内容上落后于新形态叙事。", "2026 七夕「去情爱化」已成定局（乞巧节回归、松弛悦己、央视晚会的仪式感+年轻人解构的松弛感双叙事）——美诺七夕/七夕后内容别再讲「甜蜜告白」，改讲「给自己一份体面」与「平价也有仪式感」。", "用户说底妆报告：遮瑕 +24.35% 是增长最快的底妆细分——美诺渐变粉饼的「双色渐变分区调肤遮瑕」卖点（P15 丝绒拿铁遮瑕）恰好对应这个趋势，值得在内容里放大「局部修饰+遮瑕」场景。"], "weekly_actions": [{"action": "⭐ 重点节点预告：10/01 国庆节（公历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：09/25 中秋节（农历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：09/17 世界骑行日（国际节日）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "七夕当天（8/19）上线美诺「平价心意礼」主题短视频+组合装机制（粉饼+定妆喷雾），错位切入送礼场景，绑定 #平价心意礼# #悦己# 话题", "owner": "媒介", "status": "进行中"}, {"action": "借「抖音官方榜单+200元以下价格带46.52%」数据做「49.9 也有贵妇妆感」内容，把消费分化数据沉淀为背书素材", "owner": "内容", "status": "待启动"}, {"action": "跟进平台官方大会信号：评估 AI 素材/AI 数字人主播 1-2 个测试账号（对应巨量引擎 AI 底座与火山引擎 AI 解决方案方向），两周内出 ROI 预判", "owner": "电商/媒介", "status": "规划中"}, {"action": "把「遮瑕+24.35%」趋势接入美诺渐变粉饼 P15 丝绒拿铁遮瑕卖点的内容表达，产出一期「分区调肤遮瑕」专项内容", "owner": "内容", "status": "待启动"}, {"action": "男性护理/男士底妆赛道可行性预研：调研男士素颜霜/底妆细分需求与价格带，输出是否切入的评估 brief", "owner": "策略", "status": "规划中"}], "_key_dates": ["2026-09-17", "2026-09-25", "2026-10-01"], "_today": "2026-08-19", "_endorse_range": "2026-08-12 ~ 2026-08-19", "_product_range": "竞品 2026-08-12~2026-08-19 / 本品 2026-07-20~2026-08-19", "_trend_range": "2026-02-20 ~ 2026-08-19"};
+const KEY_DATES = new Set(["2026-09-17", "2026-09-25", "2026-10-01"]);  // V17.1 重点节点日期（七夕/中秋/国庆/万圣/圣诞/元旦/春节）
+
+
+// ─── 数据：由生成器在 <script> 顶部注入（const DATA / const NODES_DATA），此处不再重复声明 ───
+// 营销日历完整收录全部节点；低契合度节点（drop_base=true）保留展示，仅不出创意建议
+const ACTIVE_NODES = (typeof NODES_DATA !== 'undefined') ? NODES_DATA.slice() : [];
+
+// ─── 导航滚动高亮 ───
+function scrollToSec(id, el) {
+  document.querySelectorAll('.topbar-nav a').forEach(a => a.classList.remove('active'));
+  if(el) el.classList.add('active');
+  const target = document.getElementById(id);
+  if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ─── 日期切换（日历弹窗） ───
+const AVAILABLE_DATES = ["2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];  // 由 Python 注入
+const LOCAL_DATES = ["2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
+const CDN_BASE = "https://cdn.jsdelivr.net/gh/robin0324/menow-intel-data@main";         // 由 Python 注入（历史快照 CDN 基址，空则仅本地窗口可用）
+let cpY, cpM; // 当前弹窗显示的年月
+
+function toggleCalPopup(e) {
+  e.stopPropagation();
+  const p = document.getElementById('calPopup');
+  if(p.classList.contains('show')) { p.classList.remove('show'); return; }
+  renderCalPopup();
+  p.classList.add('show');
+}
+function closeCalPopup(){ document.getElementById('calPopup').classList.remove('show'); }
+document.addEventListener('click', function(e){
+  const dp = document.querySelector('.date-picker');
+  if(dp && !dp.contains(e.target)) closeCalPopup();
+});
+
+function renderCalPopup(){
+  const now = new Date();
+  cpY = cpY || now.getFullYear();
+  cpM = cpM !== undefined ? cpM : now.getMonth(); // 0-based
+  document.getElementById('cpTitle').textContent = cpY + '年 ' + (cpM+1) + '月';
+  const grid = document.getElementById('cpGrid');
+  grid.innerHTML = '';
+  const firstDay = new Date(cpY, cpM, 1).getDay(); // 0=Sun
+  const offset = firstDay === 0 ? 6 : firstDay - 1; // Mon=0
+  const daysInMonth = new Date(cpY, cpM+1, 0).getDate();
+  const daysInPrev = new Date(cpY, cpM, 0).getDate();
+  const todayStr = DATA.meta ? DATA.meta.date : '';
+  const todayY = parseInt(todayStr.substring(0,4));
+  const todayM = parseInt(todayStr.substring(5,7))-1;
+  const todayD = parseInt(todayStr.substring(8,10));
+  const availSet = new Set(AVAILABLE_DATES);
+  // 上月尾部
+  for(let i=offset-1;i>=0;i--){
+    const d = daysInPrev - i;
+    const el = document.createElement('div');
+    el.className='cp-day cp-other'; el.textContent=d;
+    grid.appendChild(el);
+  }
+  // 当月
+  for(let d=1;d<=daysInMonth;d++){
+    const el = document.createElement('div');
+    el.className='cp-day';
+    el.textContent = d;
+    const ym = cpY + '-' + String(cpM+1).padStart(2,'0');
+    const ds = ym + '-' + String(d).padStart(2,'0');
+    const isToday = (cpY===todayY && cpM===todayM && d===todayD);
+    const hasData = availSet.has(ds);
+    if(isToday) el.classList.add('cp-today');
+    if(hasData) el.classList.add('cp-has-data');
+    if(hasData && !isToday) el.classList.add('cp-sel');
+    el.onclick = function(){ goToDate(ds); };
+    grid.appendChild(el);
+  }
+  // 下月头部
+  const totalCells = Math.ceil((offset+daysInMonth)/7)*7;
+  const nextCount = totalCells - offset - daysInMonth;
+  for(let d=1;d<=nextCount;d++){
+    const el = document.createElement('div');
+    el.className='cp-day cp-other'; el.textContent=d;
+    grid.appendChild(el);
+  }
+}
+function cpMonth(dir){ cpM += dir; if(cpM>11){cpM=0;cpY++}if(cpM<0){cpM=11;cpY--} renderCalPopup(); }
+function cpYear(dir){ cpY += dir; renderCalPopup(); }
+function goToDate(ds){
+  closeCalPopup();
+  const localSet = new Set(LOCAL_DATES);
+  if(localSet.has(ds)){
+    // 最近窗口内的日期：本地 d/ 子页已部署，直接同站跳转（稳定、不依赖 CDN）
+    window.location.href = '/d/' + ds + '.html';
+  } else if(CDN_BASE){
+    // 更早的历史：跳回主看板并通过 ?date= 参数在当前站点内加载历史快照，
+    // 避免直接 window.open jsDelivr 的 .html（jsDelivr 返回 text/plain，会显示源码）。
+    window.location.href = '/?date=' + ds;
+  } else {
+    alert('该日期的历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
+  }
+}
+
+// ─── 日历月份切换 ───
+let calMonths = [];
+let currentMonthIdx = 0;
+
+function initCalendar() {
+  // 收集所有可借势节点中的唯一年月
+  const monthSet = new Set();
+  ACTIVE_NODES.forEach(n => {
+    if(n.date) monthSet.add(n.date.substring(0,7));
+  });
+  calMonths = Array.from(monthSet).sort();
+  if(calMonths.length === 0) return;
+  // 默认定位到报告所属月份（meta.date），否则定位到最新月份
+  const todayYm = (DATA.meta && DATA.meta.date) ? DATA.meta.date.substring(0,7) : '';
+  let startIdx = calMonths.indexOf(todayYm);
+  if(startIdx === -1) startIdx = calMonths.length - 1;
+  currentMonthIdx = startIdx;
+  renderMonthCal(calMonths[startIdx]);
+  updateArrows();
+}
+
+// V19：节日类型4色按钮筛选（无需别名映射，type 1:1 对应）
+
+// 左右箭头切换月份（单月视图）
+function prevMonth() {
+  if(currentMonthIdx > 0) { currentMonthIdx--; renderMonthCal(calMonths[currentMonthIdx]); updateArrows(); }
+}
+function nextMonth() {
+  if(currentMonthIdx < calMonths.length - 1) { currentMonthIdx++; renderMonthCal(calMonths[currentMonthIdx]); updateArrows(); }
+}
+function goToToday() {
+  const todayYm = (DATA.meta && DATA.meta.date) ? DATA.meta.date.substring(0,7) : '';
+  if(todayYm) {
+    const idx = calMonths.indexOf(todayYm);
+    if(idx !== -1) { currentMonthIdx = idx; renderMonthCal(todayYm); updateArrows(); }
+  }
+}
+function updateArrows() {
+  const prev = document.getElementById('calPrev');
+  const next = document.getElementById('calNext');
+  if(prev) prev.disabled = (currentMonthIdx === 0);
+  if(next) next.disabled = (currentMonthIdx >= calMonths.length - 1);
+}
+
+function renderMonthCal(ym) {
+  const [year, month] = ym.split('-').map(Number);
+  const firstDay = new Date(year, month - 1, 1).getDay();
+  // 星期一为第一天：日(0)→6, 一(1)→0, 二(2)→1, ...
+  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const todayStr = DATA.meta ? DATA.meta.date : '';
+
+  let html = '<div class="cal-head">一</div><div class="cal-head">二</div><div class="cal-head">三</div>' +
+    '<div class="cal-head">四</div><div class="cal-head">五</div><div class="cal-head">六</div><div class="cal-head">日</div>';
+
+  // 空白填充（星期一起始）
+  for(let i = 0; i < startOffset; i++) html += '<div class="cal-empty"></div>';
+
+  // 日期格子（在有节点的日期上呈现节日名称）
+  for(let d = 1; d <= daysInMonth; d++) {
+    const dateStr = year + '-' + String(month).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+    const isToday = dateStr === todayStr;
+    const nodesOnDay = ACTIVE_NODES.filter(n => n.date === dateStr);
+    const hasNode = nodesOnDay.length > 0;
+    let marksHtml = '';
+    if(hasNode) {
+      const shown = nodesOnDay.slice(0, 4);
+      shown.forEach(function(n, i) {
+        const cat = (n.categories && n.categories[0]) ? n.categories[0] : (n.type || '');
+        const shortName = (n.name || '').split('（')[0].split('(')[0];
+        const isStar = (n.importance || '').indexOf('⭐') >= 0;
+        const starText = isStar ? '⭐' : '';
+        const titleText = (isStar ? '⭐ ' : '') + (n.name || '');
+        const displayText = starText + esc(shortName);
+        marksHtml += '<span class="cal-mark" data-cat="' + esc(cat) + '" title="' + esc(titleText) + '"' +
+          ' onclick="event.stopPropagation();showNodeDetailByDate(\'' + dateStr + '\',' + i + ')">' + displayText + '</span>';
+      });
+      if(nodesOnDay.length > 4) marksHtml += '<span class="cal-more">+' + (nodesOnDay.length - 4) + '</span>';
+    }
+    html += '<div class="cal-day' +
+      (isToday ? ' today' : '') +
+      (hasNode ? ' has-node' : '') +
+      '" data-date="' + dateStr + '"' +
+      (hasNode ? ' onclick="showNodeDetailByDate(\'' + dateStr + '\',0)"' : '') +
+      '>' +
+      '<span class="cal-num">' + d + '</span>' +
+      '<div class="cal-marks">' + marksHtml + '</div>' +
+      '</div>';
+  }
+
+  const grid = document.getElementById('calGrid');
+  if(grid) grid.innerHTML = html;
+
+  const label = document.getElementById('calCurrentMonth');
+  if(label) label.textContent = year + '年' + month + '月';
+
+  applyTypeFilter();
+}
+
+// ─── V19：节日类型按钮筛选（4色按钮，点击切换） ───
+let activeTypeFilters = new Set();  // 空集=显示全部
+
+function toggleTypeFilter(typeKey) {
+  const btn = document.querySelector('.cal-type-btn[data-type="' + typeKey + '"]');
+  if(activeTypeFilters.has(typeKey)) {
+    activeTypeFilters.delete(typeKey);
+    if(btn) btn.classList.remove('active');
+  } else {
+    activeTypeFilters.add(typeKey);
+    if(btn) btn.classList.add('active');
+  }
+  applyTypeFilter();
+}
+
+function resetTypeFilter() {
+  activeTypeFilters.clear();
+  document.querySelectorAll('.cal-type-btn').forEach(b => b.classList.remove('active'));
+  applyTypeFilter();
+}
+
+function applyTypeFilter() {
+  // 如果没有激活任何过滤器，显示全部
+  const showAll = activeTypeFilters.size === 0;
+  document.querySelectorAll('.cal-mark').forEach(m => {
+    const cat = m.dataset.cat;
+    m.style.display = (showAll || activeTypeFilters.has(cat)) ? '' : 'none';
+  });
+  document.querySelectorAll('.cal-day').forEach(d => {
+    const marks = d.querySelectorAll('.cal-mark');
+    let anyVisible = false;
+    marks.forEach(m => { if(m.style.display !== 'none') anyVisible = true; });
+    if(marks.length > 0) {
+      d.classList.toggle('has-node', anyVisible);
+      d.classList.toggle('no-node', !anyVisible);
+    }
+  });
+}
+
+// ─── 点击日期显示节点详情（支持同一天多个节点切换） ───
+function showNodeDetailByDate(dateStr, idx) {
+  const nodes = ACTIVE_NODES.filter(n => n.date === dateStr);
+  if(nodes.length === 0) return;
+  showNodeModal(nodes, idx || 0);
+}
+
+function showNodeModal(nodes, idx) {
+  if(!nodes || !nodes.length) return;
+  idx = idx || 0;
+  const node = nodes[idx];
+  const content = document.getElementById('nodeDetailContent');
+  if(!content) return;
+  window.__curNodes = nodes;  // 供节点间切换使用
+
+  let switcherHtml = '';
+  if(nodes.length > 1) {
+    switcherHtml = '<div class="node-switcher">' + nodes.map(function(n, i) {
+      return '<button class="node-sw-btn' + (i === idx ? ' active' : '') + '" onclick="switchNode(\'' + n.date + '\',' + i + ')">' + esc(n.name) + '</button>';
+    }).join('') + '</div>';
+  }
+
+  let creativeHtml = '';
+  if(node.drop_base === true) {
+    creativeHtml = '<h3 style="margin:16px 0 10px;font-size:15px;color:var(--brand-dark)">💡 参考创意</h3>' +
+      '<div class="creative-abandon">该营销节点与底妆品类契合度较低，未做借势营销建议！</div>';
+  } else {
+    var cb = node.creative_brand, ck = node.creative_kol;
+    var hasC = (cb && (Array.isArray(cb) ? cb.length : true)) || (ck && (Array.isArray(ck) ? ck.length : true));
+    if(hasC) {
+      function _ul(arr){ if(Array.isArray(arr)){ return '<ul class="creative-list">' + arr.map(function(x){return '<li>' + esc(x) + '</li>';}).join('') + '</ul>'; } return '<p>' + esc(arr || '暂无') + '</p>'; }
+      creativeHtml = '<h3 style="margin:16px 0 10px;font-size:15px;color:var(--brand-dark)">💡 参考创意（围绕美诺底妆品类）</h3><div class="creative-split">' +
+        '<div class="creative-col"><h4>🏢 品牌官方视角</h4>' + _ul(cb) + '</div>' +
+        '<div class="creative-col"><h4>🎬 达人/网红种草视角</h4>' + _ul(ck) + '</div></div>';
+    }
+  }
+
+  let platEventsHtml = '';
+  if(node.platform_events && node.platform_events.length > 0) {
+    platEventsHtml = '<div class="platform-events"><h4>🛒 平台活动</h4><ul>' +
+      node.platform_events.map(e => '<li>' + esc(e) + '</li>').join('') + '</ul></div>';
+  }
+
+  const titlePrefix = (node.importance || '').indexOf('⭐') >= 0 ? '⭐ ' : '';
+  content.innerHTML =
+    switcherHtml +
+    '<h2 style="margin-bottom:10px;">' + titlePrefix + esc(node.name || '') + '</h2>' +
+    '<p style="color:var(--text2);margin-bottom:10px;"><strong>日期：</strong>' + esc(node.date || '') +
+    ' | <strong>类型：</strong>' + esc(node.type || '') + '</p>' +
+    '<p style="line-height:1.75;margin-bottom:12px;">' + esc(node.desc || '') + '</p>' +
+    creativeHtml + platEventsHtml;
+
+  document.getElementById('nodeOverlay').classList.add('show');
+}
+
+function switchNode(dateStr, idx) {
+  const nodes = window.__curNodes || ACTIVE_NODES.filter(n => n.date === dateStr);
+  showNodeModal(nodes, idx);
+}
+
+function closeNodeModal() {
+  document.getElementById('nodeOverlay').classList.remove('show');
+}
+
+// ─── 历史日期加载：/?date=YYYY-MM-DD ───
+// jsDelivr 对 .html 返回 text/plain，直接 window.open 会显示源码。
+// 因此非本地日期统一回到主看板，通过 fetch 拉取历史 HTML 文本后用 document.write 渲染，
+// 既绕过 MIME 限制，又保持 URL 在主看板域名下。
+function maybeLoadHistoricalDate(){
+  const params = new URLSearchParams(window.location.search);
+  const ds = params.get('date');
+  if(!ds) return false;
+  const todayStr = (DATA && DATA.meta) ? DATA.meta.date : '';
+  if(ds === todayStr) return false; // 当前首页就是这个日期，无需额外加载
+  const availSet = new Set(AVAILABLE_DATES);
+  if(!availSet.has(ds)){
+    alert('暂无 ' + ds + ' 的历史快照数据。');
+    return false;
+  }
+  const localSet = new Set(LOCAL_DATES);
+  if(localSet.has(ds)){
+    // 本地窗口内的日期直接跳本地子页（更快、不依赖 CDN）
+    window.location.replace('/d/' + ds + '.html');
+    return true;
+  }
+  if(!CDN_BASE){
+    alert('该历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
+    return false;
+  }
+  // 显示加载提示
+  document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">📅</div><div style="font-size:18px;font-weight:600;color:#333;">正在加载 ' + ds + ' 历史快照...</div><div style="margin-top:8px;color:#999;">从 CDN 拉取数据中，请稍候</div></div>';
+  fetch(CDN_BASE + '/d/' + ds + '.html')
+    .then(r => {
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(html => {
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(err => {
+      document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">⚠️</div><div style="font-size:18px;font-weight:600;color:#C62828;">加载 ' + ds + ' 历史快照失败</div><div style="margin-top:8px;color:#999;max-width:400px;text-align:center;">' + esc(String(err)) + '</div><a href="/" style="margin-top:20px;color:#E85687;">返回首页</a></div>';
+    });
+  return true;
+}
+
+// 点击遮罩关闭
+document.addEventListener('DOMContentLoaded', function() {
+  if(maybeLoadHistoricalDate()) return; // 已触发历史加载，终止当前文档初始化
+  initCalendar();
+  // V19：类型按钮筛选无需初始化（默认显示全部）
+  // 代言 / 营销 翻页（>5条）
+  setupPager({containerId:'endList', itemSelector:'.end-item', perPage:5, insertAfterId:'endList'});
+  setupPager({containerId:'mnList', itemSelector:'.mn-item', perPage:5, insertAfterId:'mnList'});
+  setupPager({containerId:'caseList', itemSelector:'.case-item', perPage:5, insertAfterId:'caseList'});
+  setupPager({containerId:'repList', itemSelector:'.rep-item', perPage:5, insertAfterId:'repList'});
+  // 新品上新：品类筛选 + 翻页（自定义）
+  setupProductFilter();
+  // 平台热点 / 行业趋势 翻页（>5条）
+  setupPager({containerId:'hotList', itemSelector:'.topic-item', perPage:5, insertAfterId:'hotList'});
+  setupPager({containerId:'trendList', itemSelector:'.trend-item', perPage:5, insertAfterId:'trendList'});
+
+  const overlay = document.getElementById('nodeOverlay');
+  if(overlay) {
+    overlay.addEventListener('click', function(e) {
+      if(e.target === overlay) closeNodeModal();
+    });
+  }
+});
+
+// ─── 通用分页器：条数 > perPage 时显示「上一页 / 下一页」翻页条，每页 perPage 条 ───
+function setupPager(opts) {
+  const containerId = opts.containerId, itemSelector = opts.itemSelector,
+        perPage = opts.perPage, insertAfterId = opts.insertAfterId;
+  const container = document.getElementById(containerId);
+  if(!container) return;
+  const items = Array.prototype.slice.call(container.querySelectorAll(itemSelector));
+  const total = items.length;
+  if(total <= perPage) return; // 不超过阈值则不显示翻页
+  const pages = Math.ceil(total / perPage);
+  let cur = 0;
+  const nav = document.createElement('div');
+  nav.className = 'pager-nav';
+  nav.innerHTML = '<button class="pager-btn" data-dir="-1">‹ 上一页</button>' +
+    '<span class="pager-info"></span>' +
+    '<button class="pager-btn" data-dir="1">下一页 ›</button>';
+  const anchor = document.getElementById(insertAfterId) || container;
+  anchor.parentNode.insertBefore(nav, anchor.nextSibling);
+  function render() {
+    items.forEach(function(it, i) {
+      it.style.display = (i >= cur*perPage && i < (cur+1)*perPage) ? '' : 'none';
+    });
+    nav.querySelector('.pager-info').textContent = '第 ' + (cur+1) + ' / ' + pages + ' 页 · 共 ' + total + ' 条';
+    nav.querySelector('[data-dir="-1"]').disabled = (cur === 0);
+    nav.querySelector('[data-dir="1"]').disabled = (cur === pages-1);
+  }
+  nav.querySelector('[data-dir="-1"]').addEventListener('click', function(){ if(cur>0){cur--; render();} });
+  nav.querySelector('[data-dir="1"]').addEventListener('click', function(){ if(cur<pages-1){cur++; render();} });
+  render();
+}
+
+// ─── 新品上新：品类筛选 + 翻页（自定义，筛选与翻页联动） ───
+function setupProductFilter() {
+  const tbody = document.getElementById('prodTbody');
+  if(!tbody) return;
+  const allRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+  const chips = Array.prototype.slice.call(document.querySelectorAll('.prod-cat-chip'));
+  const perPage = 5;
+  let cur = 0;
+  let visible = allRows;
+  const nav = document.createElement('div');
+  nav.className = 'pager-nav';
+  nav.innerHTML = '<button class="pager-btn" data-dir="-1">‹ 上一页</button>' +
+    '<span class="pager-info"></span>' +
+    '<button class="pager-btn" data-dir="1">下一页 ›</button>';
+  const table = document.getElementById('prodTable');
+  if(table && table.parentNode) table.parentNode.insertBefore(nav, table.nextSibling);
+
+  function apply() {
+    const activeCats = chips.filter(c => c.classList.contains('active')).map(c => c.dataset.cat);
+    visible = activeCats.length ? allRows.filter(r => activeCats.indexOf(r.dataset.cat) > -1) : allRows;
+    const pages = Math.max(1, Math.ceil(visible.length / perPage));
+    if(cur >= pages) cur = pages - 1;
+    if(cur < 0) cur = 0;
+    allRows.forEach(function(r) { r.style.display = 'none'; });
+    visible.forEach(function(r, i) {
+      r.style.display = (i >= cur*perPage && i < (cur+1)*perPage) ? '' : 'none';
+    });
+    nav.querySelector('.pager-info').textContent = '第 ' + (cur+1) + ' / ' + pages + ' 页 · 共 ' + visible.length + ' 款';
+    nav.querySelector('[data-dir="-1"]').disabled = (cur === 0);
+    nav.querySelector('[data-dir="1"]').disabled = (cur >= pages-1);
+    nav.style.display = (visible.length > perPage) ? '' : 'none';
+  }
+  chips.forEach(function(c) {
+    c.addEventListener('click', function() {
+      c.classList.toggle('active');
+      cur = 0;
+      apply();
+    });
+  });
+  // ⚠️ 翻页按钮监听（此前缺失，导致"下一页/上一页"点击无反应）
+  nav.querySelector('[data-dir="-1"]').addEventListener('click', function(){ if(cur>0){cur--; apply();} });
+  nav.querySelector('[data-dir="1"]').addEventListener('click', function(){ if(cur < Math.ceil(visible.length/perPage)-1){cur++; apply();} });
+  apply();
+}
+
+function esc(str) {
+  if(!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+</script>
+
+</body>
+</html>
