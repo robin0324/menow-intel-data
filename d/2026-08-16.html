@@ -936,7 +936,7 @@ function scrollToSec(id, el) {
 
 // ─── 日期切换（日历弹窗） ───
 const AVAILABLE_DATES = ["2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];  // 由 Python 注入
-const LOCAL_DATES = [];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
+const LOCAL_DATES = ["2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
 const CDN_BASE = "https://cdn.jsdelivr.net/gh/robin0324/menow-intel-data@main";         // 由 Python 注入（历史快照 CDN 基址，空则仅本地窗口可用）
 let cpY, cpM; // 当前弹窗显示的年月
 
@@ -1009,8 +1009,9 @@ function goToDate(ds){
     // 最近窗口内的日期：本地 d/ 子页已部署，直接同站跳转（稳定、不依赖 CDN）
     window.location.href = '/d/' + ds + '.html';
   } else if(CDN_BASE){
-    // 更早的历史：从 jsDelivr 公开仓库按需拉取该日期完整快照页（无限历史）
-    window.open(CDN_BASE + '/d/' + ds + '.html', '_blank');
+    // 更早的历史：跳回主看板并通过 ?date= 参数在当前站点内加载历史快照，
+    // 避免直接 window.open jsDelivr 的 .html（jsDelivr 返回 text/plain，会显示源码）。
+    window.location.href = '/?date=' + ds;
   } else {
     alert('该日期的历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
   }
@@ -1214,8 +1215,52 @@ function closeNodeModal() {
   document.getElementById('nodeOverlay').classList.remove('show');
 }
 
+// ─── 历史日期加载：/?date=YYYY-MM-DD ───
+// jsDelivr 对 .html 返回 text/plain，直接 window.open 会显示源码。
+// 因此非本地日期统一回到主看板，通过 fetch 拉取历史 HTML 文本后用 document.write 渲染，
+// 既绕过 MIME 限制，又保持 URL 在主看板域名下。
+function maybeLoadHistoricalDate(){
+  const params = new URLSearchParams(window.location.search);
+  const ds = params.get('date');
+  if(!ds) return false;
+  const todayStr = (DATA && DATA.meta) ? DATA.meta.date : '';
+  if(ds === todayStr) return false; // 当前首页就是这个日期，无需额外加载
+  const availSet = new Set(AVAILABLE_DATES);
+  if(!availSet.has(ds)){
+    alert('暂无 ' + ds + ' 的历史快照数据。');
+    return false;
+  }
+  const localSet = new Set(LOCAL_DATES);
+  if(localSet.has(ds)){
+    // 本地窗口内的日期直接跳本地子页（更快、不依赖 CDN）
+    window.location.replace('/d/' + ds + '.html');
+    return true;
+  }
+  if(!CDN_BASE){
+    alert('该历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
+    return false;
+  }
+  // 显示加载提示
+  document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">📅</div><div style="font-size:18px;font-weight:600;color:#333;">正在加载 ' + ds + ' 历史快照...</div><div style="margin-top:8px;color:#999;">从 CDN 拉取数据中，请稍候</div></div>';
+  fetch(CDN_BASE + '/d/' + ds + '.html')
+    .then(r => {
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(html => {
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(err => {
+      document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">⚠️</div><div style="font-size:18px;font-weight:600;color:#C62828;">加载 ' + ds + ' 历史快照失败</div><div style="margin-top:8px;color:#999;max-width:400px;text-align:center;">' + esc(String(err)) + '</div><a href="/" style="margin-top:20px;color:#E85687;">返回首页</a></div>';
+    });
+  return true;
+}
+
 // 点击遮罩关闭
 document.addEventListener('DOMContentLoaded', function() {
+  if(maybeLoadHistoricalDate()) return; // 已触发历史加载，终止当前文档初始化
   initCalendar();
   // V19：类型按钮筛选无需初始化（默认显示全部）
   // 代言 / 营销 翻页（>5条）
