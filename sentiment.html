@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美诺 MENOW 舆情监控专题 · 美诺彩妆情报资讯台</title>
+<style>
+:root{
+  --brand:#1565C0; --brand-dark:#0D47A1; --brand-light:#E3F2FD;
+  --card-bg:#fff; --bg:#F4F6F9; --text:#1f2d3d; --text2:#5a6b7b;
+  --border:#e6ebf1; --radius:16px; --radius-sm:10px;
+  --shadow:0 4px 18px rgba(20,50,90,.07); --shadow-hover:0 8px 28px rgba(20,50,90,.12);
+  --pos:#2E7D32; --neu:#607D8B; --ln:#EF6C00; --hr:#C62828; --senti:#7B1FA2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:12px 24px;background:linear-gradient(135deg,#7B1FA2,#9C27B0);color:#fff;box-shadow:0 2px 12px rgba(123,31,162,.3)}
+.topbar .tb-title{font-size:18px;font-weight:700;display:flex;align-items:center;gap:8px}
+.topbar .tb-title span{opacity:.85;font-weight:400}
+.topbar .back{margin-left:auto;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,.18);color:#fff;font-weight:600;font-size:13px}
+.topbar .back:hover{background:rgba(255,255,255,.3);color:#fff}
+.cover-note{margin:14px 24px 0;padding:10px 16px;border-radius:10px;background:#F3E5F5;color:#6A1B9A;font-size:13px;border:1px solid #E1BEE7}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 24px 60px}
+.module{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:24px;overflow:hidden;border:1px solid var(--border)}
+.mod-header{display:flex;align-items:center;justify-content:space-between;padding:16px 22px 12px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--brand-light) 0%,#fff 100%)}
+.mod-header h2{font-size:17px;font-weight:700;color:var(--brand);display:flex;align-items:center;gap:8px}
+.mod-header h2 .icon{font-size:20px}
+.mod-badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:var(--senti);color:#fff}
+.mod-body{padding:18px 22px 22px}
+/* 总览卡 */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.ov-card{padding:14px 16px;border-radius:var(--radius-sm);border:1px solid var(--border);text-align:center}
+.ov-card .num{font-size:28px;font-weight:800;line-height:1.1}
+.ov-card .lab{font-size:12px;color:var(--text2);margin-top:4px}
+.ov-card.risk{background:#FFEBEE}.ov-card.risk .num{color:var(--hr)}
+.ov-card.pos{background:#E8F5E9}.ov-card.pos .num{color:var(--pos)}
+.ov-card.neu{background:#ECEFF1}.ov-card.neu .num{color:var(--neu)}
+.ov-card.ln{background:#FFF3E0}.ov-card.ln .num{color:var(--ln)}
+.ov-card.filt{background:#E3F2FD}.ov-card.filt .num{color:var(--brand)}
+/* 图表区 */
+.charts{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
+@media(max-width:860px){.charts{grid-template-columns:1fr}}
+.chart-box{border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px}
+.chart-box h4{font-size:13px;color:var(--text2);margin-bottom:8px;font-weight:600}
+.donut{width:130px;height:130px;border-radius:50%;margin:6px auto;position:relative}
+.donut::after{content:'';position:absolute;inset:32px;background:#fff;border-radius:50%}
+.donut-legend{font-size:12px;margin-top:8px}
+.donut-legend span{display:inline-flex;align-items:center;gap:4px;margin-right:10px}
+.donut-legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.pbar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:12px}
+.pbar .pname{width:64px;color:var(--text2)}
+.pbar .ptrack{flex:1;height:12px;background:#eef1f5;border-radius:6px;overflow:hidden}
+.pbar .pfill{height:100%;background:var(--senti);border-radius:6px}
+.pbar .pcnt{width:30px;text-align:right;color:var(--text2)}
+/* 风险清单 */
+.risk-item{border:1px solid var(--border);border-left:5px solid var(--hr);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.risk-item.light{border-left-color:var(--ln)}
+.risk-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px}
+.tag{font-size:11px;font-weight:700;padding:2px 9px;border-radius:10px;color:#fff}
+.tag.high_risk{background:var(--hr)}.tag.light_negative{background:var(--ln)}
+.tag.src{background:#607D8B}.tag.heat{background:#455A64}
+.risk-text{font-size:14px;margin:4px 0}
+.risk-disposal{font-size:13px;color:var(--text2);background:#F8F9FB;border-radius:8px;padding:8px 10px;margin-top:6px}
+.risk-disposal b{color:var(--brand)}
+.empty{color:var(--text2);font-size:13px;padding:10px 0;text-align:center}
+/* 分平台 tab */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tab{padding:6px 16px;border-radius:16px;font-size:13px;font-weight:600;background:#fff;border:1px solid var(--border);color:var(--text2);cursor:pointer}
+.tab.active{background:var(--senti);color:#fff;border-color:var(--senti)}
+.ptab-block{display:none}.ptab-block.active{display:block}
+.ptab-block h5{font-size:13px;margin:10px 0 4px;color:var(--brand)}
+.ptab-block ul{margin:0;padding-left:18px;font-size:13px;color:var(--text2)}
+/* 竞品卡 */
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.comp-card{border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px}
+.comp-card h3{font-size:15px;color:var(--senti);margin-bottom:8px}
+.comp-card .blk{font-size:12px;margin:6px 0}
+.comp-card .blk b{color:var(--brand)}
+.comp-card ul{margin:2px 0 0;padding-left:16px;font-size:12px;color:var(--text2)}
+/* 列表 */
+.list-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed var(--border);font-size:13px}
+.list-row:last-child{border-bottom:none}
+.list-row .lv{font-size:11px;font-weight:700;padding:2px 8px;border-radius:9px;color:#fff;white-space:nowrap}
+.list-row .meta{color:var(--text2);font-size:12px}
+.dw-tags{display:flex;flex-wrap:wrap;gap:8px}
+.dw{font-size:13px;font-weight:600;padding:5px 14px;border-radius:14px}
+.dw.neg{background:#FFEBEE;color:var(--hr);border:1px solid #FFCDD2}
+.dw.ok{background:#E8F5E9;color:var(--pos);border:1px solid #C8E6C9}
+.sugg li{margin:6px 0 6px 18px;font-size:14px}
+.foot{text-align:center;color:var(--text2);font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="tb-title">🛡️ 美诺 <span>MENOW 舆情监控专题</span></div>
+  <a class="back" href="index.html">← 返回主看板</a>
+</div>
+<div class="cover-note" id="coverNote"></div>
+<div class="wrap" id="app"></div>
+<div class="foot">美诺 MENOW 彩妆情报资讯台 · 舆情监控专题 · 数据基于 WebSearch 公开检索 + 登录态补充，缺失不杜撰</div>
+
+<script>
+const SENTIMENT_DATA = {"meta": {"window": "2026-07-18 ~ 2026-08-17（近30天检索复盘）", "generated_at": "2026-08-17 21:30", "strategy": "WebSearch 公开检索为主 + 登录态补充（本期以 WebSearch 为主）", "coverage_note": "本期数据基于 WebSearch 公开网页 / 电商评价 / 黑猫投诉 / 行业测评横评检索，时间窗近30天。小红书、抖音、快手原生评论区深度 UGC 因未启用登录态抓取，本期暂缺，以下按实际可抓取范围呈现，缺失不杜撰。趋势 / 平台分布为公开检索相对声量估算（非平台全量 API），仅供趋势参考。品牌消歧已过滤：美诺健康（体检预付卡，非彩妆）、Miele（德国家电）、雷美诺时 Luminox（手表）。"}, "overview": {"risk_level": "中", "high_risk": 1, "light_negative": 2, "neutral": 4, "positive": 6, "filtered_same_name": 3}, "trend": [{"date": "07-18", "count": 18}, {"date": "07-25", "count": 24}, {"date": "08-01", "count": 22}, {"date": "08-08", "count": 27}, {"date": "08-11", "count": 23}, {"date": "08-14", "count": 28}, {"date": "08-17", "count": 25}], "sentiment_dist": {"high_risk": 1, "light_negative": 2, "neutral": 4, "positive": 6}, "platform_dist": [{"platform": "电商评价", "count": 45}, {"platform": "小红书", "count": 25}, {"platform": "抖音", "count": 18}, {"platform": "微博", "count": 8}, {"platform": "快手", "count": 4}], "risks": [{"level": "high_risk", "source": "黑猫投诉", "account": "抖音美诺官方旗舰店", "heat": "中", "date": "2026-04-25", "text": "消费者在抖音美诺官方旗舰店购粉饼（订单 69235*********03236），指商家宣传「干皮可用、不拔干」，实际干皮使用严重卡粉斑驳，认为货不对板、虚假宣传；平台以超出售后期为由拒绝售后，诉求全额退货退款（涉诉 49.9 元，投诉进度「已回复」但未与消费者达成一致）。", "disposal": "建议品牌方核查抖音旗舰店「干皮可用/不拔干」等宣传话术是否过度承诺；前置敏感肌/干皮使用提示与妆前保湿建议；针对超期但确属描述不符的个案，探索「以换代退/补偿券」柔性处置，避免公开投诉升级；统一官方旗舰店售后口径。"}, {"level": "light_negative", "source": "公开检索", "account": "", "heat": "低", "date": "2026-08-17", "text": "山寨 / 仿冒风险持续存在：第三方出现「如何辨别美诺哑光粉饼真假」科普（包装印刷、防伪标识、粉质、香味、触感五步鉴别），且品牌历史上曾就幸运小角唇膏仿冒品发严正声明。说明市场存在仿冒干扰，需持续监控正品心智。", "disposal": "强化官方渠道防伪指引与正品验证入口；针对仿冒（尤其幸运小角唇膏等明星单品）持续发声；在电商详情页与官号置顶「官方购买渠道」清单。"}, {"level": "light_negative", "source": "行业测评", "account": "", "heat": "低", "date": "2026-08-17", "text": "多家 2026 粉饼横评提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。", "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。"}], "platform_summary": {"电商评价": {"praise": ["京东美诺柔焦薄纱定妆粉饼评论数 50000、好评率 96%，定妆控油持久、夏天出汗不易脱妆被反复验证", "粉质细腻柔雾、遮瑕力中等偏上，适合日常通勤快速补妆", "10g 大容量几十元，性价比超高，学生党和化妆新手友好", "13#自然色百搭不假白，三年回购用户稳定"], "consult": ["干皮用是否需要妆前保湿", "鼻翼处是否会微微起皮", "F02 / B01 / B13 等色号怎么选", "七夕 / 大促价位与囤货建议"], "light_negative": ["部分干皮反馈鼻翼轻微起皮（需做好妆前保湿）", "个别投诉称干皮卡粉斑驳（见风险清单）"]}, "小红书": {"praise": ["种草笔记大量正向：控油防水防汗一整天不花妆", "「干皮也能驾驭不卡粉的柔润触感」被反复安利，黄皮干皮闭眼入"], "consult": ["黄皮 / 干皮姐妹适不适合", "「保湿→按压→扫刷」三步上妆法怎么操作"], "light_negative": ["原生评论区本期未抓取，轻度负面缺采（启用登录态补充后可得）"]}, "抖音": {"praise": ["官方旗舰店直播带货声量高，粉饼为核心爆品", "防水防汗「暴汗也不怕脱妆」场景化内容传播强"], "consult": ["直播间色号推荐", "售后时效与退换政策"], "light_negative": ["抖音美诺官方旗舰店购粉饼干皮卡粉虚假宣传拒售后投诉（见风险清单）"]}, "微博": {"praise": ["品牌官宣与达人转评维持基础声量"], "consult": ["新品 / 活动信息"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}, "快手": {"praise": ["暂无（公开检索覆盖有限）"], "consult": ["暂无"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}}, "competitors": [{"name": "方里 Funny Elves", "pros": ["柔焦蜜粉饼累计销量超 3800 万盘，国货粉饼销量标杆，双平台粉饼品类市占率登顶", "0.97 微米 / 2500 目超细粉体 + 3D 柔焦 + 动态调光，16-18 小时锁妆", "专研亚洲肤色五色低饱和，以色修色去黄提亮；双实验室 + 自建供应链 + 多项发明专利", "产品线细分清晰（控油 / 防晒 / 裸妆养肤 / 匀肤修色），甚至推出男生专用款"], "pain": ["「全肤质通用」宣传被测评提醒：干皮需分区定妆，全脸易拔干", "价格虽平价但部分用户认为需搭配保湿妆前，使用门槛略高"], "play": ["测评横评霸榜（油皮本命粉饼合集、底妆暗沉自救等）", "分肤质 / 分场景内容矩阵 + 男生通勤种草", "以「研发专利 + 千万销量背书」建立信任"]}, {"name": "芭贝拉 BABREA", "pros": ["大粉饼 16g 唯品会好评率 99%、评论 57838、销量 1000+，天猫约 ¥50，性价比突出", "柔雾版 / 清透版口碑较好，油皮混油皮控油力强，哑光自然不假白", "红黑榜常驻，定位「油皮亲妈、定妆界黑马」"], "pain": ["紫盒款风评较差：多位用户吐槽粉质粗糙、上脸易氧化暗沉、补妆斑驳结块", "粉扑偏软取粉不便；有用户反映易碎；版本多易混淆"], "play": ["大容量 + 高性价比切入学生党 / 预算有限人群", "红黑榜背书 + 油皮场景种草", "柔雾 / 清透 / 防晒多版本覆盖"]}, {"name": "嘉利玛 GALIMARD", "pros": ["金币粉饼京东 15.5g ¥159、好评率 96%、评论 100000；天猫遮瑕版约 ¥56-65", "遮瑕 + 控油 + 定妆三合一，微米级研磨，中高遮瑕粉感弱", "防晒版 SPF40/+++，不含酒精香精，添加养肤成分，敏感肌可用"], "pain": ["价格跨度大（¥56-159），版本多（遮瑕 / 防晒 / 清透 / mini）消费者易混淆", "部分渠道好评率显示异常（天猫精选好评率 0%，数据采集待核）"], "play": ["「遮瑕控油二合一 + 养肤」差异化定位混油皮", "防晒版切入户外 / 通勤场景", "mini 版 + 超值囤货装促复购"]}], "hot_topics": [{"platform": "小红书", "topic": "2026 粉饼选购指南：干皮油皮定妆怎么选（多家横评含美诺 / 方里 / 嘉利玛）", "volume": 85}, {"platform": "抖音", "topic": "油皮本命粉饼合集·夏日焊住底妆（方里登顶，美诺入榜）", "volume": 78}, {"platform": "小红书", "topic": "底妆暗沉自救·四款持妆粉饼实测（方里第一，美诺在列）", "volume": 62}, {"platform": "抖音", "topic": "芭贝拉大粉饼油皮亲妈·红黑榜常驻", "volume": 55}, {"platform": "微博", "topic": "男生通勤定妆·方里柔焦蜜粉男生款", "volume": 48}, {"platform": "微博", "topic": "美诺假货山寨鉴别科普（防伪需求凸显）", "volume": 30}], "endorsement": [], "dropdown_words": [{"word": "美诺粉饼卡粉", "negative": true}, {"word": "美诺 假货 山寨", "negative": true}, {"word": "美诺粉饼好评", "negative": false}, {"word": "美诺定妆控油", "negative": false}, {"word": "美诺性价比", "negative": false}], "suggestions": ["核查抖音官方旗舰店「干皮可用 / 不拔干」等宣传话术，避免过度承诺引发虚假宣传定性；前置敏感肌 / 干皮使用提示与妆前保湿建议。", "建立「货不对板」个案柔性处置机制（如超期但确属描述不符，探索以换代退 / 补偿券），降低公开投诉升级与舆情扩散风险。", "强化官方渠道防伪指引与正品验证入口，针对山寨 / 仿冒（尤其幸运小角唇膏历史仿冒）持续发声，保护品牌资产。", "补齐小红书 / 抖音原生评论区监测（登录态抓取）；当前 WebSearch 视角下轻度负面缺采，建议下一周期启用补充抓取。", "借势「2026 粉饼选购指南」等横评热点，以「控油定妆 + 性价比 + 干皮友好」核心卖点主动投放真实测评 / 种草，巩固平价国货口碑心智。", "关注竞品方里（3800 万盘销量标杆）与嘉利玛（金币粉饼防晒版）在遮瑕 / 养肤 / 防晒功能的迭代，适时强化美诺差异化（保湿妆前配合、学生党性价比）。"]};
+const LEVEL_LABEL={high_risk:'高危紧急负面',light_negative:'轻度负面',neutral:'中性',positive:'正面'};
+const LEVEL_COLOR={high_risk:'#C62828',light_negative:'#EF6C00',neutral:'#607D8B',positive:'#2E7D32'};
+const esc=s=>((s==null)?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function el(html){const d=document.createElement('div');d.innerHTML=html;return d.firstElementChild;}
+
+function render(){
+  const D=SENTIMENT_DATA;
+  const meta=D.meta||{};
+  document.getElementById('coverNote').innerHTML=
+    '数据窗口：'+(meta.window||'—')+' ｜ 生成时间：'+(meta.generated_at||'—')+
+    ' ｜ 策略：'+(meta.strategy||'')+'<br>'+(meta.coverage_note||'');
+
+  const app=document.getElementById('app');
+  app.innerHTML='';
+
+  // ① 总览
+  const ov=D.overview||{};
+  const ovHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">📊</span> 当日舆情总览</h2><span class="mod-badge">整体风险：${esc(ov.risk_level||'待评估')}</span></div>
+   <div class="mod-body"><div class="ov-grid">
+     <div class="ov-card risk"><div class="num">${ov.high_risk||0}</div><div class="lab">高危紧急负面</div></div>
+     <div class="ov-card pos"><div class="num">${ov.positive||0}</div><div class="lab">正面</div></div>
+     <div class="ov-card neu"><div class="num">${ov.neutral||0}</div><div class="lab">中性</div></div>
+     <div class="ov-card ln"><div class="num">${ov.light_negative||0}</div><div class="lab">轻度负面</div></div>
+     <div class="ov-card filt"><div class="num">${ov.filtered_same_name||0}</div><div class="lab">已过滤同名</div></div>
+   </div></div></section>`;
+  app.appendChild(el(ovHtml));
+
+  // ② 声量趋势与分布
+  app.appendChild(el(buildCharts(D)));
+
+  // ③ 风险清单
+  app.appendChild(el(buildRisks(D.risks||[])));
+
+  // ④ 分平台口碑
+  app.appendChild(el(buildPlatforms(D.platform_summary||{})));
+
+  // ⑤ 竞品
+  app.appendChild(el(buildCompetitors(D.competitors||[])));
+
+  // ⑥ 热点话题
+  app.appendChild(el(buildList('🔥 社媒热点话题声量','hot_topics',D.hot_topics||[],'topic','volume')));
+
+  // ⑦ 代言人舆情
+  app.appendChild(el(buildEndorse(D.endorsement||[])));
+
+  // ⑧ 下拉词
+  app.appendChild(el(buildDropdown(D.dropdown_words||[])));
+
+  // ⑨ 防控建议
+  const sugg=(D.suggestions||[]);
+  const suggHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">✅</span> 下一周期防控建议</h2></div>
+    <div class="mod-body">${sugg.length?('<ul class="sugg">'+sugg.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ul>'):'<div class="empty">暂无建议</div>'}</div></section>`;
+  app.appendChild(el(suggHtml));
+
+  bindTabs();
+}
+
+function buildCharts(D){
+  const trend=D.trend||[];
+  const dist=D.sentiment_dist||{};
+  const pdist=D.platform_dist||[];
+  // trend svg
+  let trendSvg='<div class="empty">近 7 日采样不足</div>';
+  if(trend.length>=2){
+    const W=560,H=120,pad=20;const max=Math.max(...trend.map(t=>t.count),1);
+    const pts=trend.map((t,i)=>{const x=pad+i*(W-2*pad)/(trend.length-1);const y=H-pad-(t.count/max)*(H-2*pad);return x.toFixed(1)+','+y.toFixed(1);});
+    trendSvg=`<svg viewBox="0 0 ${W} ${H}" width="100%" height="120"><polyline fill="none" stroke="#7B1FA2" stroke-width="2.5" points="${pts.join(' ')}"/>`+
+      trend.map((t,i)=>{const x=pad+i*(W-2*pad)/(trend.length-1);const y=H-pad-(t.count/max)*(H-2*pad);return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="#7B1FA2"/><text x="${x.toFixed(1)}" y="${H-4}" font-size="9" fill="#607D8B" text-anchor="middle">${esc(t.date)}</text><text x="${x.toFixed(1)}" y="${(y-6).toFixed(1)}" font-size="9" fill="#7B1FA2" text-anchor="middle">${t.count}</text>`;}).join('')+
+      `</svg>`;
+  }
+  // donut
+  const tot=Object.values(dist).reduce((a,b)=>a+(b||0),0)||1;
+  let acc=0;const segs=[];
+  [['high_risk','#C62828'],['light_negative','#EF6C00'],['neutral','#607D8B'],['positive','#2E7D32']].forEach(([k,c])=>{
+    const v=dist[k]||0;const start=acc/tot*360;acc+=v;const end=acc/tot*360;
+    segs.push(`${c} ${start.toFixed(1)}deg ${end.toFixed(1)}deg`);
+  });
+  const donut=`<div class="donut" style="background:conic-gradient(${segs.join(',')})"></div>`;
+  const legend=`<div class="donut-legend">`+[['high_risk','高危'],['light_negative','轻负'],['neutral','中性'],['positive','正面']].map(([k,t])=>`<span><i style="background:${LEVEL_COLOR[k]}"></i>${t} ${dist[k]||0}</span>`).join('')+`</div>`;
+  // bars
+  const pmax=Math.max(...pdist.map(p=>p.count),1);
+  const bars=pdist.map(p=>`<div class="pbar"><span class="pname">${esc(p.platform)}</span><span class="ptrack"><span class="pfill" style="width:${(p.count/pmax*100).toFixed(0)}%"></span></span><span class="pcnt">${p.count}</span></div>`).join('')||'<div class="empty">暂无</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">📈</span> 声量趋势与分布</h2></div>
+   <div class="mod-body"><div class="charts">
+     <div class="chart-box"><h4>近 7 日声量趋势</h4>${trendSvg}</div>
+     <div class="chart-box"><h4>情感分布</h4>${donut}${legend}</div>
+     <div class="chart-box"><h4>平台分布</h4>${bars}</div>
+   </div></div></section>`;
+}
+
+function buildRisks(risks){
+  const sorted=[...risks].sort((a,b)=>((a.level==='high_risk')?-1:1)-((b.level==='high_risk')?-1:1));
+  const items=sorted.map(r=>{
+    const lvl=r.level||'light_negative';
+    const cls=lvl==='high_risk'?'risk-item':'risk-item light';
+    return `<div class="${cls}">
+      <div class="risk-meta">
+        <span class="tag ${lvl}">${LEVEL_LABEL[lvl]||lvl}</span>
+        ${r.source?`<span class="tag src">${esc(r.source)}</span>`:''}
+        ${r.account?`<span class="meta">@${esc(r.account)}</span>`:''}
+        ${r.heat?`<span class="tag heat">热度 ${esc(r.heat)}</span>`:''}
+      </div>
+      <div class="risk-text">${esc(r.text)}</div>
+      ${r.disposal?`<div class="risk-disposal"><b>处置方案：</b>${esc(r.disposal)}</div>`:''}
+    </div>`;
+  }).join('')||'<div class="empty">近 7 日未检出风险舆情 🎉</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">⚠️</span> 风险舆情清单</h2><span class="mod-badge">高危置顶</span></div>
+   <div class="mod-body">${items}</div></section>`;
+}
+
+function buildPlatforms(ps){
+  const plats=Object.keys(ps);
+  if(!plats.length) return `<section class="module"><div class="mod-header"><h2><span class="icon">🗣️</span> 分平台口碑汇总</h2></div><div class="mod-body"><div class="empty">暂无分平台数据</div></div></section>`;
+  const tabs=plats.map((p,i)=>`<div class="tab ${i===0?'active':''}" data-p="${esc(p)}">${esc(p)}</div>`).join('');
+  const blocks=plats.map((p,i)=>{
+    const d=ps[p]||{};
+    const ul=(arr,empty)=>((arr&&arr.length)?'<ul>'+arr.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'<div class="empty">'+empty+'</div>');
+    return `<div class="ptab-block ${i===0?'active':''}" data-p="${esc(p)}">
+      <h5>👍 核心夸赞卖点</h5>${ul(d.praise,'暂无')}
+      <h5>💬 高频用户咨询</h5>${ul(d.consult,'暂无')}
+      <h5>🟠 轻度负面</h5>${ul(d.light_negative,'暂无')}
+    </div>`;
+  }).join('');
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">🗣️</span> 分平台口碑汇总</h2></div>
+   <div class="mod-body"><div class="tabs">${tabs}</div>${blocks}</div></section>`;
+}
+
+function buildCompetitors(comps){
+  const cards=comps.map(c=>`<div class="comp-card"><h3>${esc(c.name)}</h3>
+    <div class="blk"><b>👍 优点</b><ul>${(c.pros||[]).map(x=>'<li>'+esc(x)+'</li>').join('')||'<li>暂无</li>'}</ul></div>
+    <div class="blk"><b>🟠 用户痛点</b><ul>${(c.pain||[]).map(x=>'<li>'+esc(x)+'</li>').join('')||'<li>暂无</li>'}</ul></div>
+    <div class="blk"><b>🎯 营销玩法</b><ul>${(c.play||[]).map(x=>'<li>'+esc(x)+'</li>').join('')||'<li>暂无</li>'}</ul></div>
+  </div>`).join('')||'<div class="empty">暂无竞品数据</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">⚔️</span> 竞品口碑动态</h2><span class="mod-badge">方里 / 芭贝拉 / 嘉利玛</span></div>
+   <div class="mod-body"><div class="comp-grid">${cards}</div></div></section>`;
+}
+
+function buildList(title,key,arr,main,sub){
+  const rows=arr.map(r=>`<div class="list-row"><span class="lv" style="background:#7B1FA2">${esc(r.platform||'—')}</span><span>${esc(r[main])}</span><span class="meta">声量 ${esc(r[sub]||'—')}</span></div>`).join('')||'<div class="empty">暂无热点话题</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">🔥</span> ${title}</h2></div><div class="mod-body">${rows}</div></section>`;
+}
+
+function buildEndorse(arr){
+  const rows=arr.length?arr.map(r=>`<div class="list-row"><span class="lv" style="background:${LEVEL_COLOR[r.sentiment]||'#607D8B'}">${LEVEL_LABEL[r.sentiment]||esc(r.sentiment||'')}</span><span><b>${esc(r.name)}</b> ｜ ${esc(r.note||'')}</span></div>`).join(''):'<div class="empty">暂无代言人舆情监测</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">🌟</span> 明星 / 代言人舆情</h2></div><div class="mod-body">${rows}</div></section>`;
+}
+
+function buildDropdown(arr){
+  const tags=arr.length?arr.map(w=>`<span class="dw ${w.negative?'neg':'ok'}">${esc(w.word)}</span>`).join(''):'<div class="empty">未检出负面联想词</div>';
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">🔎</span> 搜索下拉词负面联想排查</h2></div><div class="mod-body"><div class="dw-tags">${tags}</div></div></section>`;
+}
+
+function bindTabs(){
+  document.querySelectorAll('.tabs .tab').forEach(t=>{
+    t.addEventListener('click',()=>{
+      const p=t.dataset.p;
+      document.querySelectorAll('.tabs .tab').forEach(x=>x.classList.toggle('active',x===t));
+      document.querySelectorAll('.ptab-block').forEach(b=>b.classList.toggle('active',b.dataset.p===p));
+    });
+  });
+}
+render();
+</script>
+</body>
+</html>

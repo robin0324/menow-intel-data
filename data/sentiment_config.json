@@ -1,0 +1,16 @@
+{
+  "monitor_brands": ["美诺", "MENOW"],
+  "brand_full": "美诺 MENOW 国货彩妆",
+  "competitor_brands": ["方里", "芭贝拉", "嘉利玛"],
+  "monitor_products": ["渐变粉饼", "果冻贴贴喷雾", "有色面霜", "气垫", "素颜霜", "妆前乳", "眼影", "腮红"],
+  "platforms": ["微博", "小红书", "抖音", "快手", "电商评价"],
+  "key_opinion_leaders": [],
+  "sensitive_words": ["卡粉", "浮粉", "闷痘", "结块", "假货", "过敏", "品控", "脱妆"],
+  "exclude_brands": [
+    {"name": "Miele", "note": "德国美诺家电/厨电"},
+    {"name": "雷美诺时", "note": "Luminox 手表腕表"}
+  ],
+  "data_strategy": "WebSearch 为主 + 登录态补充；每日 9:00 自动化用 WebSearch 抓取+分析，有空闲时 browser skill 登录态补抓小红书/抖音评论区（抓不到优雅跳过）",
+  "coverage_note": "当前以 WebSearch 为主的公开网页 / 微博 / 新闻视角；小红书、抖音、快手原生评论区深度内容可能缺失，以下数据按实际可抓取范围呈现，缺失不杜撰。",
+  "window_days": 7
+}
