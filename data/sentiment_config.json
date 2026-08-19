@@ -1,25 +1,96 @@
 {
-  "monitor_brands": ["美诺", "MENOW", "美诺彩妆", "美诺粉饼"],
-  "brand_full": "美诺 MENOW 国货彩妆",
-  "competitor_brands": ["方里", "芭贝拉", "嘉利玛", "花间颂", "Flowerlure", "Flower Lure"],
-  "competitor_aliases": {
-    "方里": ["Funny Elves", "funnyelves"],
-    "芭贝拉": ["BABEI", "芭贝拉大粉饼"],
-    "嘉利玛": ["JIALIMA"],
-    "花间颂": ["Flowerlure", "Flower Lure", "华冠花间颂", "花间颂粉饼"]
-  },
-  "monitor_products": ["渐变粉饼", "果冻贴贴喷雾", "有色面霜", "气垫", "素颜霜", "妆前乳", "眼影", "腮红"],
-  "platforms": ["微博", "小红书", "抖音", "快手", "电商评价"],
-  "dropdown_platforms": ["百度搜索", "微博热搜联想", "抖音搜索下拉", "小红书搜索联想", "电商搜索下拉"],
-  "key_opinion_leaders": [],
-  "sensitive_words": ["卡粉", "浮粉", "闷痘", "结块", "假货", "过敏", "品控", "脱妆"],
-  "exclude_brands": [
-    {"name": "Miele", "note": "德国美诺家电/厨电"},
-    {"name": "雷美诺时", "note": "Luminox 手表腕表"},
-    {"name": "美诺健康", "note": "体检预付卡，非彩妆"}
+ "monitor_brands": [
+  "美诺",
+  "MENOW",
+  "美诺彩妆",
+  "美诺粉饼"
+ ],
+ "brand_full": "美诺 MENOW 国货彩妆",
+ "competitor_brands": [
+  "方里",
+  "芭贝拉",
+  "嘉利玛",
+  "花间颂",
+  "Flowerlure",
+  "Flower Lure"
+ ],
+ "competitor_aliases": {
+  "方里": [
+   "Funny Elves",
+   "funnyelves"
   ],
-  "voice_scope": "声量口径：仅统计美诺 MENOW 品牌（含 美诺/美诺粉饼/MENOW 关键词，过滤 Miele 家电/雷美诺时手表/美诺健康 同名干扰）的公开可检索舆情条目数；竞品声量不计入，仅在「竞品口碑动态」板块单独呈现。",
-  "data_strategy": "WebSearch 为主 + 登录态补充；每日 9:00 自动化用 WebSearch 抓取+分析，有空闲时 browser skill 登录态补抓小红书/抖音评论区（抓不到优雅跳过）",
-  "coverage_note": "数据基于 WebSearch 公开检索（微博/新闻/公开网页），相对声量估算、非全量 API；小红书/抖音/快手原生评论区深度内容可能缺失；声量=美诺品牌命中条目数，按实际可抓取范围呈现，缺失不杜撰。",
-  "window_days": 7
+  "芭贝拉": [
+   "BABEI",
+   "芭贝拉大粉饼"
+  ],
+  "嘉利玛": [
+   "JIALIMA"
+  ],
+  "花间颂": [
+   "Flowerlure",
+   "Flower Lure",
+   "华冠花间颂",
+   "花间颂粉饼"
+  ]
+ },
+ "monitor_products": [
+  "渐变粉饼",
+  "果冻贴贴喷雾",
+  "有色面霜",
+  "气垫",
+  "素颜霜",
+  "妆前乳",
+  "眼影",
+  "腮红"
+ ],
+ "platforms": [
+  "微博",
+  "小红书",
+  "抖音",
+  "快手",
+  "电商评价"
+ ],
+ "dropdown_platforms": [
+  "百度搜索",
+  "微博热搜联想",
+  "抖音搜索下拉",
+  "小红书搜索联想",
+  "电商搜索下拉"
+ ],
+ "key_opinion_leaders": [],
+ "sensitive_words": [
+  "卡粉",
+  "浮粉",
+  "闷痘",
+  "结块",
+  "假货",
+  "过敏",
+  "品控",
+  "脱妆"
+ ],
+ "exclude_brands": [
+  {
+   "name": "Miele",
+   "note": "德国美诺家电/厨电"
+  },
+  {
+   "name": "雷美诺时",
+   "note": "Luminox 手表腕表"
+  },
+  {
+   "name": "美诺健康",
+   "note": "体检预付卡，非彩妆"
+  }
+ ],
+ "voice_scope": "声量口径：仅统计美诺 MENOW 品牌（含 美诺/美诺粉饼/MENOW 关键词，过滤 Miele 家电/雷美诺时手表/美诺健康 同名干扰）的公开可检索舆情条目数；竞品声量不计入，仅在「竞品口碑动态」板块单独呈现。",
+ "data_strategy": "WebSearch 为主 + 登录态补充；每日 9:00 自动化用 WebSearch 抓取+分析，有空闲时 browser skill 登录态补抓小红书/抖音评论区（抓不到优雅跳过）",
+ "coverage_note": "数据基于 WebSearch 公开检索（微博/新闻/公开网页），相对声量估算、非全量 API；小红书/抖音/快手原生评论区深度内容可能缺失；声量=美诺品牌命中条目数，按实际可抓取范围呈现，缺失不杜撰。",
+ "window_days": 7,
+ "competitor_brands_cn": [
+  "方里",
+  "芭贝拉",
+  "嘉利玛",
+  "花间颂"
+ ],
+ "event_window_note": "数据窗口：仅展示「监测日前 1 天」实际发生的舆情条目（event_date=监测日-1），每日看板=昨日新增，历史复盘不重复展示。"
 }

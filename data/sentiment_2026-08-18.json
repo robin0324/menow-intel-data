@@ -2,8 +2,8 @@
  "meta": {
   "version": "20.1",
   "date": "2026-08-18",
-  "model": "incremental",
-  "note": "仅存当日新增条目；trend/platform_dist/platform_summary/competitors/suggestions 为当日快照，渲染取最新"
+  "model": "event_date_incremental",
+  "note": "每条含 event_date（实际发生日）；渲染只显示「监测日前1天发生」的条目；快照类字段取最新"
  },
  "risks": [
   {
@@ -15,7 +15,8 @@
    "text": "山寨 / 仿冒风险持续存在：第三方「如何辨别美诺哑光粉饼真假」科普持续传播（包装印刷、防伪标识、粉质、香味、触感五步鉴别），且品牌历史上曾就幸运小角唇膏仿冒品发严正声明。本期检索未见新增仿冒事件，但监控需保持。",
    "disposal": "强化官方渠道防伪指引与正品验证入口；针对仿冒（尤其幸运小角唇膏等明星单品）持续发声；在电商详情页与官号置顶「官方购买渠道」清单。",
    "brand": "美诺",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   },
   {
    "level": "light_negative",
@@ -26,7 +27,8 @@
    "text": "2026 粉饼横评与选购指南普遍提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。",
    "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。",
    "brand": "美诺",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   }
  ],
  "hot_topics": [
@@ -36,7 +38,8 @@
    "volume": 96,
    "brand": "行业",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   },
   {
    "platform": "搜狐/全网",
@@ -44,7 +47,8 @@
    "volume": 72,
    "brand": "美诺",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   },
   {
    "platform": "小红书",
@@ -52,7 +56,8 @@
    "volume": 80,
    "brand": "美诺",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   },
   {
    "platform": "微博",
@@ -60,7 +65,8 @@
    "volume": 40,
    "brand": "嘉利玛",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-18"
   }
  ],
  "dropdown_words": [
@@ -71,7 +77,8 @@
     "全网搜索"
    ],
    "source_url": "",
-   "date": "2026-08-18"
+   "date": "2026-08-18",
+   "event_date": "2026-08-18"
   }
  ],
  "trend": [
@@ -197,7 +204,7 @@
  },
  "competitors": [
   {
-   "name": "方里 Funny Elves",
+   "name": "方里",
    "pros": [
     "柔焦蜜粉饼累计销量超 3800 万盘，国货粉饼销量标杆，双平台粉饼品类市占率登顶",
     "0.97 微米 / 2500 目超细粉体 + 3D 柔焦 + 动态调光，16-18 小时锁妆",
@@ -215,7 +222,7 @@
    ]
   },
   {
-   "name": "芭贝拉 BABREA",
+   "name": "芭贝拉",
    "pros": [
     "大粉饼 16g 唯品会好评率 99%、评论 57838、销量 1000+，天猫约 ¥50，性价比突出",
     "柔雾版 / 清透版口碑较好，油皮混油皮控油力强，哑光自然不假白",
@@ -232,7 +239,7 @@
    ]
   },
   {
-   "name": "嘉利玛 GALIMARD",
+   "name": "嘉利玛",
    "pros": [
     "金币粉饼京东 15.5g ¥159、好评率 96%、评论 100000；天猫遮瑕版约 ¥56-65",
     "遮瑕 + 控油 + 定妆三合一，微米级研磨，中高遮瑕粉感弱",

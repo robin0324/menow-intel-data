@@ -2,8 +2,8 @@
  "meta": {
   "version": "20.1",
   "date": "2026-08-19",
-  "model": "incremental",
-  "note": "仅存当日新增条目；trend/platform_dist/platform_summary/competitors/suggestions 为当日快照，渲染取最新"
+  "model": "event_date_incremental",
+  "note": "每条含 event_date（实际发生日）；渲染只显示「监测日前1天发生」的条目；快照类字段取最新"
  },
  "risks": [
   {
@@ -15,7 +15,8 @@
    "text": "2026 蜜粉饼/粉饼横评与选购指南普遍提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。本期横评中美诺萌兰限定款表现亮眼（8.3μm粒径/皮脂吸附4.2mg/cm²·h），但干皮保湿提示仍被多篇测评提及。",
    "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。",
    "brand": "美诺",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-19"
   }
  ],
  "hot_topics": [
@@ -25,7 +26,8 @@
    "volume": 82,
    "brand": "美诺",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-19"
   },
   {
    "platform": "微博",
@@ -33,7 +35,8 @@
    "volume": 98,
    "brand": "行业",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-19"
   },
   {
    "platform": "微博",
@@ -41,7 +44,8 @@
    "volume": 52,
    "brand": "嘉利玛",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-19"
   },
   {
    "platform": "微博",
@@ -49,7 +53,8 @@
    "volume": 45,
    "brand": "嘉利玛",
    "sentiment_level": "neutral",
-   "source_url": ""
+   "source_url": "",
+   "event_date": "2026-08-19"
   }
  ],
  "dropdown_words": [
@@ -60,7 +65,8 @@
     "全网搜索"
    ],
    "source_url": "",
-   "date": "2026-08-19"
+   "date": "2026-08-19",
+   "event_date": "2026-08-19"
   }
  ],
  "trend": [
@@ -192,7 +198,7 @@
  },
  "competitors": [
   {
-   "name": "方里 Funny Elves",
+   "name": "方里",
    "pros": [
     "柔焦蜜粉饼累计销量超 3800 万盘，国货粉饼销量标杆，双平台粉饼品类市占率登顶",
     "0.97 微米 / 2500 目超细粉体 + 3D 柔焦 + 动态调光，16-18 小时锁妆",
@@ -212,7 +218,7 @@
    "high_risk": []
   },
   {
-   "name": "芭贝拉 BABREA",
+   "name": "芭贝拉",
    "pros": [
     "大粉饼 16g 唯品会好评率 99%、评论 57838、销量 1000+，天猫约 ¥50，性价比突出",
     "柔雾版 / 清透版口碑较好，油皮混油皮控油力强，哑光自然不假白",
@@ -230,7 +236,7 @@
    "high_risk": []
   },
   {
-   "name": "嘉利玛 GALIMARD",
+   "name": "嘉利玛",
    "pros": [
     "金币粉饼京东 15.5g ¥159、好评率 96%、评论 100000；天猫遮瑕版约 ¥56-65",
     "8/6 官宣「宝相螺钿限定粉饼」全新上市，携手品牌挚友陈瑶以东方美学叙事，并联动潮宏基珠宝七夕联合送礼",
@@ -261,7 +267,7 @@
    ]
   },
   {
-   "name": "花间颂 Flowerlure",
+   "name": "花间颂",
    "pros": [
     "以平价定位切入底妆赛道，粉饼品类在小红书/抖音获较高种草声量（2025-2026 快速起量）",
     "主打柔焦定妆卖点，主打学生党/平价党人群，与美诺客群高度重叠"
