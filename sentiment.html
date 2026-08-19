@@ -21,6 +21,32 @@ a{color:var(--brand);text-decoration:none}
 .topbar .back{margin-left:auto;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,.18);color:#fff;font-weight:600;font-size:13px}
 .topbar .back:hover{background:rgba(255,255,255,.3);color:#fff}
 .cover-note{margin:14px 24px 0;padding:10px 16px;border-radius:10px;background:#F3E5F5;color:#6A1B9A;font-size:13px;border:1px solid #E1BEE7}
+/* 日期选择器 */
+.date-bar{margin:14px 24px 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 16px;box-shadow:var(--shadow)}
+.date-bar .db-label{font-size:13px;font-weight:600;color:var(--senti)}
+.date-bar .db-date{font-size:15px;font-weight:800;color:var(--text)}
+.date-bar .db-hint{font-size:12px;color:var(--text2)}
+.date-bar button{border:1px solid var(--senti);background:#fff;color:var(--senti);border-radius:14px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer}
+.date-bar button:hover{background:var(--senti);color:#fff}
+.date-bar button.primary{background:var(--senti);color:#fff}
+.date-bar .db-dates{display:flex;gap:6px;flex-wrap:wrap}
+.date-bar .db-dates span{cursor:pointer;font-size:12px;padding:3px 10px;border-radius:12px;border:1px solid var(--border);color:var(--text2)}
+.date-bar .db-dates span.cur{background:var(--senti);color:#fff;border-color:var(--senti);font-weight:600}
+.date-bar .db-dates span:hover{border-color:var(--senti);color:var(--senti)}
+.cal-popup{position:absolute;z-index:80;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow-hover);padding:14px;width:300px;display:none}
+.cal-popup.show{display:block}
+.cal-popup .cp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cal-popup .cp-title{font-size:14px;font-weight:700;color:var(--text)}
+.cal-popup .cp-nav button{border:1px solid var(--border);background:#fff;border-radius:8px;width:26px;height:26px;cursor:pointer;color:var(--text2)}
+.cal-popup .cp-weekdays{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;color:var(--text2);margin-bottom:4px}
+.cal-popup .cp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.cal-popup .cp-day{height:30px;display:flex;align-items:center;justify-content:center;font-size:12px;border-radius:8px;cursor:pointer;color:var(--text)}
+.cal-popup .cp-day:hover{background:var(--brand-light)}
+.cal-popup .cp-day.cp-other{color:#c5cdd6}
+.cal-popup .cp-day.cp-today{font-weight:800;color:var(--brand)}
+.cal-popup .cp-day.cp-has{background:#F3E5F5;color:var(--senti);font-weight:700}
+.cal-popup .cp-day.cp-cur{background:var(--senti);color:#fff}
+.cal-popup .cp-foot{margin-top:8px;font-size:11px;color:var(--text2);text-align:center}
 .wrap{max-width:1180px;margin:0 auto;padding:18px 24px 60px}
 .module{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:24px;overflow:hidden;border:1px solid var(--border)}
 .mod-header{display:flex;align-items:center;justify-content:space-between;padding:16px 22px 12px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--brand-light) 0%,#fff 100%)}
@@ -122,6 +148,28 @@ a{color:var(--brand);text-decoration:none}
   <a class="back" href="index.html">← 返回主看板</a>
 </div>
 <div class="cover-note" id="coverNote"></div>
+
+<!-- 日期选择器 -->
+<div class="date-bar">
+  <span class="db-label">📅 查看日期</span>
+  <span class="db-date" id="dbDate">—</span>
+  <button onclick="prevDay()">‹ 前一天</button>
+  <button onclick="nextDay()">后一天 ›</button>
+  <button class="primary" onclick="toggleCal(event)">日历选择</button>
+  <button onclick="gotoDefault()">回到最新</button>
+  <span class="db-hint" id="dbHint"></span>
+  <div class="cal-popup" id="calPopup">
+    <div class="cp-head">
+      <div class="cp-nav"><button onclick="cpMonth(-1)">‹</button></div>
+      <div class="cp-title" id="cpTitle"></div>
+      <div class="cp-nav"><button onclick="cpMonth(1)">›</button></div>
+    </div>
+    <div class="cp-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+    <div class="cp-grid" id="cpGrid"></div>
+    <div class="cp-foot">紫色数字 = 该日有舆情数据</div>
+  </div>
+</div>
+
 <div class="wrap" id="app"></div>
 <div class="foot">
   美诺 MENOW 彩妆情报资讯台 · 舆情监控专题<br>
@@ -136,13 +184,12 @@ a{color:var(--brand);text-decoration:none}
 </div>
 
 <script>
-const SENTIMENT_DATA = {"risks": [{"level": "light_negative", "source": "公开检索", "account": "", "heat": "低", "date": "2026-08-18", "text": "山寨 / 仿冒风险持续存在：第三方「如何辨别美诺哑光粉饼真假」科普持续传播（包装印刷、防伪标识、粉质、香味、触感五步鉴别），且品牌历史上曾就幸运小角唇膏仿冒品发严正声明。本期检索未见新增仿冒事件，但监控需保持。", "disposal": "强化官方渠道防伪指引与正品验证入口；针对仿冒（尤其幸运小角唇膏等明星单品）持续发声；在电商详情页与官号置顶「官方购买渠道」清单。", "brand": "美诺", "source_url": "", "event_date": "2026-08-18"}, {"level": "light_negative", "source": "行业测评", "account": "", "heat": "低", "date": "2026-08-18", "text": "2026 粉饼横评与选购指南普遍提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。", "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。", "brand": "美诺", "source_url": "", "event_date": "2026-08-18"}], "hot_topics": [{"platform": "微博", "topic": "刘亦菲「高定是工作，防晒衣是生活」热搜：平价不廉价心智走红（利好平价底妆语境）", "volume": 96, "brand": "行业", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "搜狐/全网", "topic": "2026五大定妆粉饼横评：美诺大白饼 12h 持妆 / 控油 86.1% / SGS 0 级刺激，实验室数据亮眼", "volume": 72, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "小红书", "topic": "2026 粉饼选购指南：干皮油皮定妆怎么选（美诺 vs 毛戈平成高频对比）", "volume": 80, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "微博", "topic": "嘉利玛宝相螺钿限定粉饼 + 陈瑶品牌挚友：东方美学礼赠叙事", "volume": 40, "brand": "嘉利玛", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}], "dropdown_words": [{"word": "美诺粉饼测评", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-18", "event_date": "2026-08-18"}], "trend": [{"date": "07-20", "count": 19}, {"date": "07-27", "count": 24}, {"date": "08-03", "count": 23}, {"date": "08-10", "count": 27}, {"date": "08-13", "count": 26}, {"date": "08-16", "count": 29}, {"date": "08-19", "count": 32}], "platform_dist": [{"platform": "电商评价", "count": 52}, {"platform": "小红书", "count": 28}, {"platform": "抖音", "count": 21}, {"platform": "微博", "count": 11}, {"platform": "快手", "count": 4}], "platform_summary": {"电商评价": {"praise": ["京东美诺萌兰粉饼（P01透明白 21g）评论数 200000、好评率 97%，控油持久遮瑕被反复验证（七夕礼物款在售）", "京东美诺萌兰粉饼 P07冰肌粉蓝 同样 20万评论 97% 好评，常卖价49.9/历史最低42.9", "京东美诺柔焦薄纱定妆粉饼评论数 50000、好评率 96%，定妆控油持久、夏天出汗不易脱妆被反复验证", "美诺控油大白饼「乐乐熊」七夕限定（P15丝绒拿铁）京东自营 500 评 100% 好评，历史最低价 49.9 元性价比突出", "2026五大定妆粉饼横评：美诺经典粉饼 12 小时无明显氧化、T 区控油维持率 86.1%、30 秒吸油率 92.4%、SGS 皮肤刺激 0 级反应，不含滑石粉/酒精/香精"], "consult": ["干皮用是否需要妆前保湿", "鼻翼处是否会微微起皮", "P01透明白 / P07冰肌粉蓝 / F02 / B01 / B13 / P15 等色号怎么选", "七夕 / 大促价位与囤货建议"], "light_negative": ["部分干皮反馈鼻翼轻微起皮（需做好妆前保湿）", "个别投诉称干皮卡粉斑驳（见风险清单，本期无新增）"]}, "小红书": {"praise": ["种草笔记大量正向：控油防水防汗一整天不花妆", "「干皮也能驾驭不卡粉的柔润触感」被反复安利，黄皮干皮闭眼入", "美诺萌兰限定款获横评背书：8.3μm 粉径细腻、唯一零滑石粉/零酒精/零香精配方"], "consult": ["黄皮 / 干皮姐妹适不适合", "「保湿→按压→扫刷」三步上妆法怎么操作", "七夕限定与经典款怎么选"], "light_negative": ["原生评论区本期未抓取，轻度负面缺采（启用登录态补充后可得）"]}, "抖音": {"praise": ["官方旗舰店直播带货声量高，粉饼为核心爆品", "防水防汗「暴汗也不怕脱妆」场景化内容传播强", "七夕「平价心意礼」话题持续：49.9 元粉饼被列入平价礼物清单"], "consult": ["直播间色号推荐", "售后时效与退换政策"], "light_negative": ["抖音美诺官方旗舰店购粉饼干皮卡粉虚假宣传拒售后投诉（见风险清单，本期无新增）"]}, "微博": {"praise": ["品牌官宣与达人转评维持基础声量", "「肖战YSL七夕香港全城投放」等热点带动「平价不廉价」消费心智讨论，利好美诺平价定位语境", "美诺萌兰粉饼 P07 新色（冰肌粉蓝）随七夕在售获得曝光"], "consult": ["新品 / 活动信息", "七夕礼盒组合推荐"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}, "快手": {"praise": ["暂无（公开检索覆盖有限）"], "consult": ["暂无"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}}, "competitors": [{"name": "方里", "pros": ["柔焦蜜粉饼累计销量超 3800 万盘，国货粉饼销量标杆，双平台粉饼品类市占率登顶", "0.97 微米 / 2500 目超细粉体 + 3D 柔焦 + 动态调光，16-18 小时锁妆", "专研亚洲肤色五色低饱和，以色修色去黄提亮；双实验室 + 自建供应链 + 多项发明专利", "京东平台数十万用户好评，被列为「高性价比日常高频补妆」首选（PCOnline 2026 补妆粉饼推荐）"], "pain": ["「全肤质通用」宣传被测评提醒：干皮需分区定妆，全脸易拔干", "价格虽平价但部分用户认为需搭配保湿妆前，使用门槛略高", "方形包装边缘取粉稍显不便（用户反馈）"], "play": ["测评横评霸榜（油皮本命粉饼合集、底妆暗沉自救等）", "分肤质 / 分场景内容矩阵 + 男生通勤种草", "以「研发专利 + 千万销量背书」建立信任"], "high_risk": []}, {"name": "芭贝拉", "pros": ["大粉饼 16g 唯品会好评率 99%、评论 57838、销量 1000+，天猫约 ¥50，性价比突出", "柔雾版 / 清透版口碑较好，油皮混油皮控油力强，哑光自然不假白", "红黑榜常驻，定位「油皮亲妈、定妆界黑马」"], "pain": ["紫盒款风评较差：多位用户吐槽粉质粗糙、上脸易氧化暗沉、补妆斑驳结块", "粉扑偏软取粉不便；有用户反映易碎；版本多易混淆"], "play": ["大容量 + 高性价比切入学生党 / 预算有限人群", "红黑榜背书 + 油皮场景种草", "柔雾 / 清透 / 防晒多版本覆盖"], "high_risk": []}, {"name": "嘉利玛", "pros": ["金币粉饼京东 15.5g ¥159、好评率 96%、评论 100000；天猫遮瑕版约 ¥56-65", "8/6 官宣「宝相螺钿限定粉饼」全新上市，携手品牌挚友陈瑶以东方美学叙事，并联动潮宏基珠宝七夕联合送礼", "8月联合青眼情报发布《2026亚洲底妆技术趋势与消费洞察报告》：宣告底妆精准控油 4.0 时代，4.0 超夯瓶落地「分油控油」技术（专利 G-Oil 控油粉体，只吸坏油不吸好油）", "防晒版 SPF40/+++，不含酒精香精，添加养肤成分，敏感肌可用"], "pain": ["价格跨度大（¥56-159），版本多（遮瑕 / 防晒 / 清透 / mini / 宝相螺钿限定）消费者易混淆", "黑猫投诉新增 1 例（8/13）：官方旗舰店少发货拒不退款，涉诉116元处理中，售后履约口碑受损", "部分渠道好评率显示异常（天猫精选好评率 0%，数据采集待核）"], "play": ["「遮瑕控油二合一 + 养肤」差异化定位混油皮", "自建行业报告抢跑「控油认知教育」，用品类话语权做技术背书", "宝相螺钿限定以「东方美学 + 明星挚友 + 珠宝跨界」做礼赠与品牌溢价"], "high_risk": [{"level": "light_negative", "source": "黑猫投诉", "account": "嘉利玛官方旗舰店（抖音电商）", "heat": "低", "date": "2026-08-13", "text": "竞品舆情（供对标）：消费者8/13在黑猫投诉「嘉利玛官方旗舰店少发货品，还拒不退款」（投诉编号 17400783925）：7/29下单粉饼（应为2个），收货仅1个，退回后商家称少寄1个拒不退款，平台处理中，涉诉116元。说明竞品在售后履约上存在被投诉空间，美诺售后体验可反向对标。", "disposal": "美诺无需直接动作，但可对照自查：确保官方旗舰店发货/退换流程可追溯（发货称重留证、拆箱视频引导），避免同类「少发/拒退」纠纷，把竞品痛点转化为自身售后服务的差异化宣传点。", "brand": "嘉利玛"}]}, {"name": "花间颂", "pros": ["以平价定位切入底妆赛道，粉饼品类在小红书/抖音获较高种草声量（2025-2026 快速起量）", "主打柔焦定妆卖点，主打学生党/平价党人群，与美诺客群高度重叠"], "pain": ["深度信息待补充（本次以公开检索泛化收录，后续逐日补充卖点/口碑细节）"], "play": ["小红书/抖音种草矩阵为主，达人铺量打法", "平价粉饼测评与红黑榜常驻"], "high_risk": []}], "suggestions": ["核查抖音官方旗舰店「干皮可用 / 不拔干」等宣传话术，避免过度承诺引发虚假宣传定性；前置敏感肌 / 干皮使用提示与妆前保湿建议（本期无新增高危投诉，维持监控）。", "新增竞品对标动作：嘉利玛官方旗舰店「少发货拒不退款」投诉（8/13，116元处理中）说明售后履约是竞品软肋——美诺可自查发货称重留证 / 拆箱视频引导等流程，把「售后确定性」做成差异化卖点。", "借 2026蜜粉饼横评（美诺萌兰 vs 纪梵希/CPB/NARS）正面结果持续放大：8.3μm 粉径 / 皮脂吸附 4.2mg/cm²·h / 零滑石粉零酒精零香精三大结论做成科普内容，强化「实验室级平价定妆」心智。", "嘉利玛发布亚洲底妆报告抢跑「控油认知教育」——美诺建议沉淀自有数据资产（横评 12h 持妆 / 控油 86.1% / SGS 0 级刺激），必要时联合第三方发布品类报告争夺话语权。", "继续监控 P01/P07 等萌兰系列新品评论区（20万评论量级），关注「色号选择」「干皮保湿」「七夕礼盒」三类高频咨询，反向优化商品详情与种草内容。"], "overview": {"risk_level": "中", "high_risk": 0, "light_negative": 2, "neutral": 4, "positive": 0, "filtered_same_name": 3, "window_days": 1}, "meta": {"monitored_date": "2026-08-19", "target_date": "2026-08-18", "window": "2026-08-18", "window_days": 1, "generated_at": "2026-08-19 11:16", "strategy": "WebSearch 为主 + 登录态补充；每日 9:00 自动化用 WebSearch 抓取+分析，有空闲时 browser skill 登录态补抓小红书/抖音评论区（抓不到优雅跳过）", "voice_scope": "声量口径：仅统计美诺 MENOW 品牌（含 美诺/美诺粉饼/MENOW 关键词，过滤 Miele 家电/雷美诺时手表/美诺健康 同名干扰）的公开可检索舆情条目数；竞品声量不计入，仅在「竞品口碑动态」板块单独呈现。", "coverage_note": "数据基于 WebSearch 公开检索（微博/新闻/公开网页），相对声量估算、非全量 API；小红书/抖音/快手原生评论区深度内容可能缺失；声量=美诺品牌命中条目数，按实际可抓取范围呈现，缺失不杜撰。", "event_window_note": "数据窗口：仅展示「监测日前 1 天」实际发生的舆情条目（event_date=监测日-1），每日看板=昨日新增，历史复盘不重复展示。", "competitor_brands_cn": ["方里", "芭贝拉", "嘉利玛", "花间颂"], "competitor_brands": ["方里", "芭贝拉", "嘉利玛", "花间颂", "Flowerlure", "Flower Lure"], "dropdown_platforms": ["百度搜索", "微博热搜联想", "抖音搜索下拉", "小红书搜索联想", "电商搜索下拉"]}};
+const SENTIMENT_DATA = {"risks": [{"level": "high_risk", "source": "黑猫投诉", "account": "抖音美诺官方旗舰店", "heat": "中", "date": "2026-04-25", "text": "消费者在抖音美诺官方旗舰店购粉饼（订单 69235*********03236），指商家宣传「干皮可用、不拔干」，实际干皮使用严重卡粉斑驳，认为货不对板、虚假宣传；平台以超出售后期为由拒绝售后，诉求全额退货退款（涉诉 49.9 元，投诉进度「已回复」但未与消费者达成一致）。", "disposal": "建议品牌方核查抖音旗舰店「干皮可用/不拔干」等宣传话术是否过度承诺；前置敏感肌/干皮使用提示与妆前保湿建议；针对超期但确属描述不符的个案，探索「以换代退/补偿券」柔性处置，避免公开投诉升级；统一官方旗舰店售后口径。", "brand": "美诺", "source_url": "", "event_date": "2026-04-25"}, {"level": "light_negative", "source": "公开检索", "account": "", "heat": "低", "date": "2026-08-17", "text": "山寨 / 仿冒风险持续存在：第三方出现「如何辨别美诺哑光粉饼真假」科普（包装印刷、防伪标识、粉质、香味、触感五步鉴别），且品牌历史上曾就幸运小角唇膏仿冒品发严正声明。说明市场存在仿冒干扰，需持续监控正品心智。", "disposal": "强化官方渠道防伪指引与正品验证入口；针对仿冒（尤其幸运小角唇膏等明星单品）持续发声；在电商详情页与官号置顶「官方购买渠道」清单。", "brand": "美诺", "source_url": "", "event_date": "2026-08-17"}, {"level": "light_negative", "source": "行业测评", "account": "", "heat": "低", "date": "2026-08-17", "text": "多家 2026 粉饼横评提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。", "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。", "brand": "美诺", "source_url": "", "event_date": "2026-08-17"}, {"level": "light_negative", "source": "公开检索", "account": "", "heat": "低", "date": "2026-08-18", "text": "山寨 / 仿冒风险持续存在：第三方「如何辨别美诺哑光粉饼真假」科普持续传播（包装印刷、防伪标识、粉质、香味、触感五步鉴别），且品牌历史上曾就幸运小角唇膏仿冒品发严正声明。本期检索未见新增仿冒事件，但监控需保持。", "disposal": "强化官方渠道防伪指引与正品验证入口；针对仿冒（尤其幸运小角唇膏等明星单品）持续发声；在电商详情页与官号置顶「官方购买渠道」清单。", "brand": "美诺", "source_url": "", "event_date": "2026-08-18"}, {"level": "light_negative", "source": "行业测评", "account": "", "heat": "低", "date": "2026-08-18", "text": "2026 粉饼横评与选购指南普遍提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。", "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。", "brand": "美诺", "source_url": "", "event_date": "2026-08-18"}, {"level": "light_negative", "source": "行业测评", "account": "", "heat": "低", "date": "2026-08-19", "text": "2026 蜜粉饼/粉饼横评与选购指南普遍提醒：美诺经典粉饼干皮使用需做好妆前保湿，否则鼻翼处会微微起皮；属「产品使用注意」类轻度负面，非质量缺陷，但易被断章取义放大。本期横评中美诺萌兰限定款表现亮眼（8.3μm粒径/皮脂吸附4.2mg/cm²·h），但干皮保湿提示仍被多篇测评提及。", "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。", "brand": "美诺", "source_url": "", "event_date": "2026-08-19"}], "hot_topics": [{"platform": "小红书", "topic": "2026 粉饼选购指南：干皮油皮定妆怎么选（多家横评含美诺 / 方里 / 嘉利玛）", "volume": 85, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "抖音", "topic": "油皮本命粉饼合集·夏日焊住底妆（方里登顶，美诺入榜）", "volume": 78, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "小红书", "topic": "底妆暗沉自救·四款持妆粉饼实测（方里第一，美诺在列）", "volume": 62, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "抖音", "topic": "芭贝拉大粉饼油皮亲妈·红黑榜常驻", "volume": 55, "brand": "芭贝拉", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "微博", "topic": "男生通勤定妆·方里柔焦蜜粉男生款", "volume": 48, "brand": "方里", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "微博", "topic": "美诺假货山寨鉴别科普（防伪需求凸显）", "volume": 30, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-17"}, {"platform": "微博", "topic": "刘亦菲「高定是工作，防晒衣是生活」热搜：平价不廉价心智走红（利好平价底妆语境）", "volume": 96, "brand": "行业", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "搜狐/全网", "topic": "2026五大定妆粉饼横评：美诺大白饼 12h 持妆 / 控油 86.1% / SGS 0 级刺激，实验室数据亮眼", "volume": 72, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "小红书", "topic": "2026 粉饼选购指南：干皮油皮定妆怎么选（美诺 vs 毛戈平成高频对比）", "volume": 80, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "微博", "topic": "嘉利玛宝相螺钿限定粉饼 + 陈瑶品牌挚友：东方美学礼赠叙事", "volume": 40, "brand": "嘉利玛", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-18"}, {"platform": "搜狐/全网", "topic": "2026蜜粉饼横评：美诺萌兰限定款与纪梵希/CPB/NARS/Laura Mercier/MUFE同场PK，8.3μm粉径+皮脂吸附4.2mg/cm²·h领先", "volume": 82, "brand": "美诺", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-19"}, {"platform": "微博", "topic": "肖战「口述式偶遇」+YSL七夕香港全城投放「肖战痛城」：顶流+平价心智（利好平价美妆语境）", "volume": 98, "brand": "行业", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-19"}, {"platform": "微博", "topic": "嘉利玛联合青眼发布亚洲底妆报告+4.0超夯瓶「分油控油」：竞品技术卡位事件", "volume": 52, "brand": "嘉利玛", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-19"}, {"platform": "微博", "topic": "嘉利玛宝相螺钿限定粉饼 + 陈瑶品牌挚友 + 潮宏基七夕联合送礼：东方美学礼赠叙事", "volume": 45, "brand": "嘉利玛", "sentiment_level": "neutral", "source_url": "", "event_date": "2026-08-19"}], "dropdown_words": [{"word": "美诺粉饼卡粉", "negative": true, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-17", "event_date": "2026-08-17"}, {"word": "美诺 假货 山寨", "negative": true, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-17", "event_date": "2026-08-17"}, {"word": "美诺粉饼好评", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-17", "event_date": "2026-08-17"}, {"word": "美诺定妆控油", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-17", "event_date": "2026-08-17"}, {"word": "美诺性价比", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-17", "event_date": "2026-08-17"}, {"word": "美诺粉饼测评", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-18", "event_date": "2026-08-18"}, {"word": "美诺萌兰粉饼", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-19", "event_date": "2026-08-19"}], "available_dates": ["2026-04-25", "2026-08-17", "2026-08-18", "2026-08-19"], "trend": [{"date": "07-20", "count": 19}, {"date": "07-27", "count": 24}, {"date": "08-03", "count": 23}, {"date": "08-10", "count": 27}, {"date": "08-13", "count": 26}, {"date": "08-16", "count": 29}, {"date": "08-19", "count": 32}], "platform_dist": [{"platform": "电商评价", "count": 52}, {"platform": "小红书", "count": 28}, {"platform": "抖音", "count": 21}, {"platform": "微博", "count": 11}, {"platform": "快手", "count": 4}], "platform_summary": {"电商评价": {"praise": ["京东美诺萌兰粉饼（P01透明白 21g）评论数 200000、好评率 97%，控油持久遮瑕被反复验证（七夕礼物款在售）", "京东美诺萌兰粉饼 P07冰肌粉蓝 同样 20万评论 97% 好评，常卖价49.9/历史最低42.9", "京东美诺柔焦薄纱定妆粉饼评论数 50000、好评率 96%，定妆控油持久、夏天出汗不易脱妆被反复验证", "美诺控油大白饼「乐乐熊」七夕限定（P15丝绒拿铁）京东自营 500 评 100% 好评，历史最低价 49.9 元性价比突出", "2026五大定妆粉饼横评：美诺经典粉饼 12 小时无明显氧化、T 区控油维持率 86.1%、30 秒吸油率 92.4%、SGS 皮肤刺激 0 级反应，不含滑石粉/酒精/香精"], "consult": ["干皮用是否需要妆前保湿", "鼻翼处是否会微微起皮", "P01透明白 / P07冰肌粉蓝 / F02 / B01 / B13 / P15 等色号怎么选", "七夕 / 大促价位与囤货建议"], "light_negative": ["部分干皮反馈鼻翼轻微起皮（需做好妆前保湿）", "个别投诉称干皮卡粉斑驳（见风险清单，本期无新增）"]}, "小红书": {"praise": ["种草笔记大量正向：控油防水防汗一整天不花妆", "「干皮也能驾驭不卡粉的柔润触感」被反复安利，黄皮干皮闭眼入", "美诺萌兰限定款获横评背书：8.3μm 粉径细腻、唯一零滑石粉/零酒精/零香精配方"], "consult": ["黄皮 / 干皮姐妹适不适合", "「保湿→按压→扫刷」三步上妆法怎么操作", "七夕限定与经典款怎么选"], "light_negative": ["原生评论区本期未抓取，轻度负面缺采（启用登录态补充后可得）"]}, "抖音": {"praise": ["官方旗舰店直播带货声量高，粉饼为核心爆品", "防水防汗「暴汗也不怕脱妆」场景化内容传播强", "七夕「平价心意礼」话题持续：49.9 元粉饼被列入平价礼物清单"], "consult": ["直播间色号推荐", "售后时效与退换政策"], "light_negative": ["抖音美诺官方旗舰店购粉饼干皮卡粉虚假宣传拒售后投诉（见风险清单，本期无新增）"]}, "微博": {"praise": ["品牌官宣与达人转评维持基础声量", "「肖战YSL七夕香港全城投放」等热点带动「平价不廉价」消费心智讨论，利好美诺平价定位语境", "美诺萌兰粉饼 P07 新色（冰肌粉蓝）随七夕在售获得曝光"], "consult": ["新品 / 活动信息", "七夕礼盒组合推荐"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}, "快手": {"praise": ["暂无（公开检索覆盖有限）"], "consult": ["暂无"], "light_negative": ["公开检索覆盖有限，未检出集中负面"]}}, "competitors": [{"name": "方里", "pros": ["柔焦蜜粉饼累计销量超 3800 万盘，国货粉饼销量标杆，双平台粉饼品类市占率登顶", "0.97 微米 / 2500 目超细粉体 + 3D 柔焦 + 动态调光，16-18 小时锁妆", "专研亚洲肤色五色低饱和，以色修色去黄提亮；双实验室 + 自建供应链 + 多项发明专利", "京东平台数十万用户好评，被列为「高性价比日常高频补妆」首选（PCOnline 2026 补妆粉饼推荐）"], "pain": ["「全肤质通用」宣传被测评提醒：干皮需分区定妆，全脸易拔干", "价格虽平价但部分用户认为需搭配保湿妆前，使用门槛略高", "方形包装边缘取粉稍显不便（用户反馈）"], "play": ["测评横评霸榜（油皮本命粉饼合集、底妆暗沉自救等）", "分肤质 / 分场景内容矩阵 + 男生通勤种草", "以「研发专利 + 千万销量背书」建立信任"], "high_risk": []}, {"name": "芭贝拉", "pros": ["大粉饼 16g 唯品会好评率 99%、评论 57838、销量 1000+，天猫约 ¥50，性价比突出", "柔雾版 / 清透版口碑较好，油皮混油皮控油力强，哑光自然不假白", "红黑榜常驻，定位「油皮亲妈、定妆界黑马」"], "pain": ["紫盒款风评较差：多位用户吐槽粉质粗糙、上脸易氧化暗沉、补妆斑驳结块", "粉扑偏软取粉不便；有用户反映易碎；版本多易混淆"], "play": ["大容量 + 高性价比切入学生党 / 预算有限人群", "红黑榜背书 + 油皮场景种草", "柔雾 / 清透 / 防晒多版本覆盖"], "high_risk": []}, {"name": "嘉利玛", "pros": ["金币粉饼京东 15.5g ¥159、好评率 96%、评论 100000；天猫遮瑕版约 ¥56-65", "8/6 官宣「宝相螺钿限定粉饼」全新上市，携手品牌挚友陈瑶以东方美学叙事，并联动潮宏基珠宝七夕联合送礼", "8月联合青眼情报发布《2026亚洲底妆技术趋势与消费洞察报告》：宣告底妆精准控油 4.0 时代，4.0 超夯瓶落地「分油控油」技术（专利 G-Oil 控油粉体，只吸坏油不吸好油）", "防晒版 SPF40/+++，不含酒精香精，添加养肤成分，敏感肌可用"], "pain": ["价格跨度大（¥56-159），版本多（遮瑕 / 防晒 / 清透 / mini / 宝相螺钿限定）消费者易混淆", "黑猫投诉新增 1 例（8/13）：官方旗舰店少发货拒不退款，涉诉116元处理中，售后履约口碑受损", "部分渠道好评率显示异常（天猫精选好评率 0%，数据采集待核）"], "play": ["「遮瑕控油二合一 + 养肤」差异化定位混油皮", "自建行业报告抢跑「控油认知教育」，用品类话语权做技术背书", "宝相螺钿限定以「东方美学 + 明星挚友 + 珠宝跨界」做礼赠与品牌溢价"], "high_risk": [{"level": "light_negative", "source": "黑猫投诉", "account": "嘉利玛官方旗舰店（抖音电商）", "heat": "低", "date": "2026-08-13", "text": "竞品舆情（供对标）：消费者8/13在黑猫投诉「嘉利玛官方旗舰店少发货品，还拒不退款」（投诉编号 17400783925）：7/29下单粉饼（应为2个），收货仅1个，退回后商家称少寄1个拒不退款，平台处理中，涉诉116元。说明竞品在售后履约上存在被投诉空间，美诺售后体验可反向对标。", "disposal": "美诺无需直接动作，但可对照自查：确保官方旗舰店发货/退换流程可追溯（发货称重留证、拆箱视频引导），避免同类「少发/拒退」纠纷，把竞品痛点转化为自身售后服务的差异化宣传点。", "brand": "嘉利玛"}]}, {"name": "花间颂", "pros": ["以平价定位切入底妆赛道，粉饼品类在小红书/抖音获较高种草声量（2025-2026 快速起量）", "主打柔焦定妆卖点，主打学生党/平价党人群，与美诺客群高度重叠"], "pain": ["深度信息待补充（本次以公开检索泛化收录，后续逐日补充卖点/口碑细节）"], "play": ["小红书/抖音种草矩阵为主，达人铺量打法", "平价粉饼测评与红黑榜常驻"], "high_risk": []}], "suggestions": ["核查抖音官方旗舰店「干皮可用 / 不拔干」等宣传话术，避免过度承诺引发虚假宣传定性；前置敏感肌 / 干皮使用提示与妆前保湿建议（本期无新增高危投诉，维持监控）。", "新增竞品对标动作：嘉利玛官方旗舰店「少发货拒不退款」投诉（8/13，116元处理中）说明售后履约是竞品软肋——美诺可自查发货称重留证 / 拆箱视频引导等流程，把「售后确定性」做成差异化卖点。", "借 2026蜜粉饼横评（美诺萌兰 vs 纪梵希/CPB/NARS）正面结果持续放大：8.3μm 粉径 / 皮脂吸附 4.2mg/cm²·h / 零滑石粉零酒精零香精三大结论做成科普内容，强化「实验室级平价定妆」心智。", "嘉利玛发布亚洲底妆报告抢跑「控油认知教育」——美诺建议沉淀自有数据资产（横评 12h 持妆 / 控油 86.1% / SGS 0 级刺激），必要时联合第三方发布品类报告争夺话语权。", "继续监控 P01/P07 等萌兰系列新品评论区（20万评论量级），关注「色号选择」「干皮保湿」「七夕礼盒」三类高频咨询，反向优化商品详情与种草内容。"], "overview": {"risk_level": "中", "high_risk": 0, "light_negative": 2, "neutral": 4, "positive": 0, "filtered_same_name": 3, "window_days": 1}, "overview_default_date": "2026-08-18", "meta": {"monitored_date": "2026-08-19", "target_date": "2026-08-18", "available_dates": ["2026-04-25", "2026-08-17", "2026-08-18", "2026-08-19"], "generated_at": "2026-08-19 12:36", "strategy": "WebSearch 为主 + 登录态补充；每日 9:00 自动化用 WebSearch 抓取+分析，有空闲时 browser skill 登录态补抓小红书/抖音评论区（抓不到优雅跳过）", "voice_scope": "声量口径：仅统计美诺 MENOW 品牌（含 美诺/美诺粉饼/MENOW 关键词，过滤 Miele 家电/雷美诺时手表/美诺健康 同名干扰）的公开可检索舆情条目数；竞品声量不计入，仅在「竞品口碑动态」板块单独呈现。", "coverage_note": "数据基于 WebSearch 公开检索（微博/新闻/公开网页），相对声量估算、非全量 API；小红书/抖音/快手原生评论区深度内容可能缺失；声量=美诺品牌命中条目数，按实际可抓取范围呈现，缺失不杜撰。", "event_window_note": "数据窗口：仅展示「监测日前 1 天」实际发生的舆情条目（event_date=监测日-1），每日看板=昨日新增，历史复盘不重复展示。", "competitor_brands_cn": ["方里", "芭贝拉", "嘉利玛", "花间颂"], "competitor_brands": ["方里", "芭贝拉", "嘉利玛", "花间颂", "Flowerlure", "Flower Lure"], "dropdown_platforms": ["百度搜索", "微博热搜联想", "抖音搜索下拉", "小红书搜索联想", "电商搜索下拉"]}};
 const LEVEL_LABEL={high_risk:'高危紧急负面',light_negative:'轻度负面',neutral:'中性',positive:'正面'};
 const LEVEL_COLOR={high_risk:'#C62828',light_negative:'#EF6C00',neutral:'#607D8B',positive:'#2E7D32'};
 const esc=s=>((s==null)?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 function el(html){const d=document.createElement('div');d.innerHTML=html;return d.firstElementChild;}
-/* ③ 来源链接按平台分流：黑猫→黑猫投诉搜索 / 微博→微博搜索 / 小红书→小红书搜索 /
-   抖音→抖音搜索 / 京东→京东搜索 / 天猫淘宝→天猫搜索 / 快手→快手搜索 / 其他→百度 */
+/* 来源链接按平台分流 */
 function platformSearchUrl(source, kw){
   kw=String(kw||'').slice(0,20);
   const s=source||'';
@@ -166,69 +213,152 @@ function sourceLink(r){
   return '<span class="risk-link"><a href="'+esc(u)+'" target="_blank">🔗 查看详情/来源</a></span>';
 }
 
+/* ---------- 日期状态 ---------- */
+let CUR_DATE = '';
+const META=SENTIMENT_DATA.meta||{};
+const AVAIL=(META.available_dates||[]);
+const DEFAULT_DATE=(SENTIMENT_DATA.overview_default_date||'');
+function curDateFromUrl(){
+  const m=location.search.match(/[?&]date=(\d{4}-\d{2}-\d{2})/);
+  if(m && AVAIL.indexOf(m[1])>=0) return m[1];
+  if(m && m[1]) return m[1];               // 允许查看无数据日期（显示空态引导）
+  return DEFAULT_DATE || (AVAIL.length?AVAIL[AVAIL.length-1]:'');
+}
+function addDays(ds,n){
+  const d=new Date(ds+'T00:00:00'); d.setDate(d.getDate()+n);
+  const mm=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0');
+  return d.getFullYear()+'-'+mm+'-'+dd;
+}
+function prevDay(){ setDate(addDays(CUR_DATE,-1)); }
+function nextDay(){ setDate(addDays(CUR_DATE,1)); }
+function gotoDefault(){ setDate(DEFAULT_DATE); }
+function setDate(ds){
+  CUR_DATE=ds;
+  document.getElementById('dbDate').textContent=ds;
+  const has=AVAIL.indexOf(ds)>=0;
+  document.getElementById('dbHint').textContent = has ? ('该日有舆情数据 '+AVAIL.indexOf(ds)+1+'/'+AVAIL.length)
+    : '该日无舆情数据（舆情监测自 2026-08-17 起）';
+  renderAll();
+}
+
+/* ---------- 日历弹窗 ---------- */
+let cpY, cpM;
+function toggleCal(e){
+  e.stopPropagation();
+  const p=document.getElementById('calPopup');
+  if(p.classList.contains('show')){ p.classList.remove('show'); return; }
+  const now=CUR_DATE?new Date(CUR_DATE+'T00:00:00'):new Date();
+  cpY=now.getFullYear(); cpM=now.getMonth();
+  renderCal(); p.classList.add('show');
+}
+document.addEventListener('click',function(e){
+  const b=document.querySelector('.date-bar');
+  if(b && !b.contains(e.target)) document.getElementById('calPopup').classList.remove('show');
+});
+function renderCal(){
+  document.getElementById('cpTitle').textContent=cpY+'年'+(cpM+1)+'月';
+  const grid=document.getElementById('cpGrid'); grid.innerHTML='';
+  const first=new Date(cpY,cpM,1).getDay();
+  const offset=first===0?6:first-1;
+  const dim=new Date(cpY,cpM+1,0).getDate();
+  const dip=new Date(cpY,cpM,0).getDate();
+  for(let i=offset-1;i>=0;i--){
+    const c=document.createElement('div'); c.className='cp-day cp-other'; c.textContent=dip-i; grid.appendChild(c);
+  }
+  const avSet=new Set(AVAIL);
+  for(let d=1;d<=dim;d++){
+    const c=document.createElement('div'); c.className='cp-day';
+    const ds=cpY+'-'+String(cpM+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+    c.textContent=d;
+    if(avSet.has(ds)) c.classList.add('cp-has');
+    if(ds===CUR_DATE) c.classList.add('cp-cur');
+    c.onclick=function(){ document.getElementById('calPopup').classList.remove('show'); setDate(ds); };
+    grid.appendChild(c);
+  }
+  const total=Math.ceil((offset+dim)/7)*7;
+  for(let i=0;i<total-offset-dim;i++){
+    const c=document.createElement('div'); c.className='cp-day cp-other'; c.textContent=i+1; grid.appendChild(c);
+  }
+}
+function cpMonth(dir){ cpM+=dir; if(cpM>11){cpM=0;cpY++;} if(cpM<0){cpM=11;cpY--;} renderCal(); }
+
 /* ---------- 各模块 ---------- */
 function modNote(t){ return '<div class="mod-note">'+t+'</div>'; }
+function pick(arr, ev){ return (arr||[]).filter(x=>(x.event_date===ev)); }
 
-function render(){
+function renderAll(){
   const D=SENTIMENT_DATA;
-  const meta=D.meta||{};
+  const ev=CUR_DATE;
+  const risks=pick(D.risks, ev);
+  const topics=pick(D.hot_topics, ev);
+  const words=pick(D.dropdown_words, ev);
+  const hasAny = risks.length+topics.length+words.length>0;
+
   document.getElementById('coverNote').innerHTML=
-    '<b>数据窗口：</b>'+(meta.monitored_date||'—')+' 监测 → 展示 <b>'+(meta.target_date||'—')+' 当日新增</b>（仅昨日发生的舆情，历史复盘不重复展示）'+
-    ' ｜ <b>生成：</b>'+(meta.generated_at||'—')+
-    '<br><b>声量口径：</b>'+(meta.voice_scope||'')+
-    '<br><b>检索策略：</b>'+(meta.strategy||'')+
-    '<br><b>覆盖说明：</b>'+(meta.coverage_note||'');
+    '<b>数据窗口：</b>展示 <b>'+ev+' 当日新增</b>（仅该日发生的舆情）'+
+    ' ｜ <b>最新监测：</b>'+(META.monitored_date||'—')+'（默认显示监测日前 1 天）'+
+    ' ｜ <b>生成：</b>'+(META.generated_at||'—')+
+    '<br><b>声量口径：</b>'+(META.voice_scope||'')+
+    '<br><b>检索策略：</b>'+(META.strategy||'')+
+    '<br><b>覆盖说明：</b>'+(META.coverage_note||'');
 
   const app=document.getElementById('app');
   app.innerHTML='';
 
-  // ① 总览（可点击）
-  const ov=D.overview||{};
-  const drawerPool = {high_risk:[], light_negative:[], neutral:[], positive:[]};
-  (D.risks||[]).forEach(r=>{ if(drawerPool[r.level]) drawerPool[r.level].push({type:'risk', text:r.text, source:r.source, account:r.account, date:r.date, url:r.source_url, disposal:r.disposal}); });
-  (D.hot_topics||[]).forEach(t=>{ const lv=t.sentiment_level||'neutral'; if(drawerPool[lv]) drawerPool[lv].push({type:'topic', text:t.topic||t.title||t.text, platform:t.platform, volume:t.volume, date:t.time, url:t.source_url, direction:t.trend_direction||t.summary||''}); });
-  (D.dropdown_words||[]).forEach(w=>{ if(w.negative) drawerPool.light_negative.push({type:'word', text:'搜索联想词：'+w.word, platform:(w.platform||[]).join('/'), url:w.source_url}); });
-  window.__pool=drawerPool;
+  // 空态引导（该日期无舆情数据）
+  if(!hasAny){
+    const emptyHtml='<section class="module"><div class="mod-header"><h2><span class="icon">🗓️</span> '+ev+' 舆情</h2></div><div class="mod-body">'+
+      '<div class="empty">📭 <b>'+ev+'</b> 当日无舆情数据<br><span style="font-size:12px">舆情监测自 2026-08-17 启动，该日期暂无采集记录；请通过上方日期栏切换其他日期，或等待每日 9:00 自动化累积。</span></div></div></section>';
+    app.appendChild(el(emptyHtml));
+    // 快照类仍展示最新口径
+    app.appendChild(el(buildCharts(D)));
+    app.appendChild(el(buildCompetitors(D.competitors||[])));
+    app.appendChild(el(buildDropdown(words)));
+    return;
+  }
 
+  // ① 总览
+  const drawerPool={high_risk:[],light_negative:[],neutral:[],positive:[]};
+  risks.forEach(r=>{ if(drawerPool[r.level]) drawerPool[r.level].push({type:'risk',text:r.text,source:r.source,account:r.account,date:r.date,url:r.source_url,disposal:r.disposal}); });
+  topics.forEach(t=>{ const lv=t.sentiment_level||'neutral'; if(drawerPool[lv]) drawerPool[lv].push({type:'topic',text:t.topic||t.title||t.text,platform:t.platform,volume:t.volume,date:t.time,url:t.source_url,direction:t.trend_direction||t.summary||''}); });
+  words.forEach(w=>{ if(w.negative) drawerPool.light_negative.push({type:'word',text:'搜索联想词：'+w.word,platform:(w.platform||[]).join('/'),url:w.source_url}); });
+  window.__pool=drawerPool;
+  const cntLv=(lv)=>drawerPool[lv].length;
   const ovCards=[
-    {lv:'high_risk', cls:'risk', label:'高危紧急负面'},
-    {lv:'light_negative', cls:'ln', label:'轻度负面'},
-    {lv:'neutral', cls:'neu', label:'中性'},
-    {lv:'positive', cls:'pos', label:'正面'},
-  ].map(c=>`<div class="ov-card ${c.cls}" onclick="openDrawer('${c.lv}')" title="点击查看明细">
-      <div class="num">${ov[c.lv]||0}</div><div class="lab">${c.label}</div><div class="hint">点击查看明细 ▸</div></div>`).join('');
-  const ovHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">📊</span> 舆情总览（${meta.target_date||''} 新增）</h2><span class="mod-badge">整体风险：${esc(ov.risk_level||'待评估')}</span></div>
-   <div class="mod-body">${modNote('统计依据：仅统计 <b>'+esc(meta.target_date||'—')+'（监测日前 1 天）</b>发生的舆情条目，按情绪分级统计（高危/轻度负面取自风险清单+热点话题，中性/正面取自热点话题；点击数字查看对应条目明细）。')}
-   <div class="ov-grid">
-     ${ovCards}
-     <div class="ov-card filt"><div class="num">${ov.filtered_same_name||0}</div><div class="lab">已过滤同名</div><div class="hint">Miele/雷美诺时/美诺健康</div></div>
-   </div></div></section>`;
+    {lv:'high_risk',cls:'risk',label:'高危紧急负面'},
+    {lv:'light_negative',cls:'ln',label:'轻度负面'},
+    {lv:'neutral',cls:'neu',label:'中性'},
+    {lv:'positive',cls:'pos',label:'正面'},
+  ].map(c=>`<div class="ov-card ${c.cls}" onclick="openDrawer('${c.lv}')" title="点击查看明细"><div class="num">${cntLv(c.lv)}</div><div class="lab">${c.label}</div><div class="hint">点击查看明细 ▸</div></div>`).join('');
+  const ovHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">📊</span> 舆情总览（${ev} 新增）</h2><span class="mod-badge">整体风险：待评估</span></div>
+   <div class="mod-body">${modNote('统计依据：仅统计 <b>'+ev+'</b> 当日发生的舆情条目，按情绪分级统计（高危/轻度负面取自风险清单+热点话题，中性/正面取自热点话题；点击数字查看对应条目明细）。')}
+   <div class="ov-grid">${ovCards}</div></div></section>`;
   app.appendChild(el(ovHtml));
 
-  // ② 声量趋势与分布（平台分布为服务端预渲染）
+  // ② 声量趋势与分布
   app.appendChild(el(buildCharts(D)));
 
   // ③ 风险清单（仅美诺）
-  app.appendChild(el(buildRisks((D.risks||[]).filter(r=>(r.brand||'美诺')==='美诺'))));
+  app.appendChild(el(buildRisks(risks.filter(r=>(r.brand||'美诺')==='美诺'), ev)));
 
-  // ④ 分平台口碑（仅美诺）
+  // ④ 分平台口碑（仅美诺，快照为最新口径）
   app.appendChild(el(buildPlatforms(D.platform_summary||{})));
 
-  // ⑤ 竞品口碑动态（含花间颂 + 竞品高危）
+  // ⑤ 竞品口碑动态
   app.appendChild(el(buildCompetitors(D.competitors||[])));
 
   // ⑥ 热点话题
-  app.appendChild(el(buildList('🔥 社媒热点话题声量','hot_topics',D.hot_topics||[],'topic','volume')));
+  app.appendChild(el(buildList('🔥 社媒热点话题声量','hot_topics',topics,'topic','volume')));
 
   // ⑦ 代言人舆情
   app.appendChild(el(buildEndorse(D.endorsement||[])));
 
   // ⑧ 下拉词
-  app.appendChild(el(buildDropdown(D.dropdown_words||[])));
+  app.appendChild(el(buildDropdown(words)));
 
   // ⑨ 防控建议
   const sugg=(D.suggestions||[]);
-  const suggHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">✅</span> 下一周期防控建议</h2><span class="mod-badge">每日生成</span></div>
+  const suggHtml=`<section class="module"><div class="mod-header"><h2><span class="icon">✅</span> 下一周期防控建议</h2><span class="mod-badge">快照为最新口径</span></div>
     <div class="mod-body">${sugg.length?('<ul class="sugg">'+sugg.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ul>'):'<div class="empty">暂无建议</div>'}</div></section>`;
   app.appendChild(el(suggHtml));
 
@@ -254,8 +384,8 @@ function buildCharts(D){
   });
   const donut=`<div class="donut" style="background:conic-gradient(${segs.join(',')})"></div>`;
   const legend=`<div class="donut-legend">`+[['high_risk','高危'],['light_negative','轻负'],['neutral','中性'],['positive','正面']].map(([k,t])=>`<span><i style="background:${LEVEL_COLOR[k]}"></i>${t} ${dist[k]||0}</span>`).join('')+`</div>`;
-  return `<section class="module"><div class="mod-header"><h2><span class="icon">📈</span> 声量趋势与分布</h2><span class="mod-badge">仅美诺品牌</span></div>
-   <div class="mod-body">${modNote('统计口径：'+esc((D.meta||{}).voice_scope||'仅美诺品牌公开检索条目数')+'；条形按各平台数量占最大平台比例填充（颜色越满=数量越高），数据为公开检索相对估算。')}
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">📈</span> 声量趋势与分布</h2><span class="mod-badge">仅美诺品牌 · 快照最新口径</span></div>
+   <div class="mod-body">${modNote('统计口径：'+esc((D.meta||{}).voice_scope||'仅美诺品牌公开检索条目数')+'；条形按各平台数量占最大平台比例填充（颜色越满=数量越高），数据为公开检索相对估算；趋势/分布为最新监测日快照。')}
    <div class="charts">
      <div class="chart-box"><h4>近 7 日声量趋势</h4>${trendSvg}</div>
      <div class="chart-box"><h4>情感分布</h4>${donut}${legend}</div>
@@ -263,7 +393,7 @@ function buildCharts(D){
    </div></div></section>`;
 }
 
-function buildRisks(risks){
+function buildRisks(risks, ev){
   const sorted=[...risks].sort((a,b)=>((a.level==='high_risk')?-1:1)-((b.level==='high_risk')?-1:1));
   const items=sorted.map(r=>{
     const lvl=r.level||'light_negative';
@@ -280,9 +410,9 @@ function buildRisks(risks){
       ${sourceLink(r)}
       ${r.disposal?`<div class="risk-disposal"><b>处置方案：</b>${esc(r.disposal)}</div>`:''}
     </div>`;
-  }).join('')||'<div class="empty">'+((SENTIMENT_DATA.meta||{}).target_date||'昨日')+'未检出美诺风险舆情 🎉</div>';
+  }).join('')||'<div class="empty">'+ev+' 未检出美诺风险舆情 🎉</div>';
   return `<section class="module"><div class="mod-header"><h2><span class="icon">⚠️</span> 风险舆情清单</h2><span class="mod-badge">仅美诺 · 高危置顶</span></div>
-   <div class="mod-body">${modNote('范围：仅展示 <b>'+esc((SENTIMENT_DATA.meta||{}).target_date||'昨日')+'（监测日前 1 天）</b>发生的、美诺 MENOW 品牌相关风险（竞品风险见「竞品口碑动态」）；每条提供来源链接，点击可直达详情页处理。')}
+   <div class="mod-body">${modNote('范围：仅展示 <b>'+ev+'</b> 发生的、美诺 MENOW 品牌相关风险（竞品风险见「竞品口碑动态」）；每条提供来源链接，点击可直达详情页处理。')}
    ${items}</div></section>`;
 }
 
@@ -299,8 +429,8 @@ function buildPlatforms(ps){
       <h5>🟠 轻度负面</h5>${ul(d.light_negative,'暂无')}
     </div>`;
   }).join('');
-  return `<section class="module"><div class="mod-header"><h2><span class="icon">🗣️</span> 分平台口碑汇总</h2><span class="mod-badge">仅美诺品牌</span></div>
-   <div class="mod-body">${modNote('范围：仅美诺 MENOW 品牌各平台口碑概览（竞品口碑见「竞品口碑动态」）；内容为公开检索归纳，原生评论区深度内容可能缺失。')}
+  return `<section class="module"><div class="mod-header"><h2><span class="icon">🗣️</span> 分平台口碑汇总</h2><span class="mod-badge">仅美诺品牌 · 快照最新口径</span></div>
+   <div class="mod-body">${modNote('范围：仅美诺 MENOW 品牌各平台口碑概览（竞品口碑见「竞品口碑动态」）；内容为公开检索归纳，原生评论区深度内容可能缺失；快照为最新监测日口径。')}
    <div class="tabs">${tabs}</div>${blocks}</div></section>`;
 }
 
@@ -318,13 +448,12 @@ function buildCompetitors(comps){
   const cn=(SENTIMENT_DATA.meta&&SENTIMENT_DATA.meta.competitor_brands_cn)||[];
   const badge=cn.join(' / ')||'方里 / 芭贝拉 / 嘉利玛 / 花间颂';
   return `<section class="module"><div class="mod-header"><h2><span class="icon">⚔️</span> 竞品口碑动态</h2><span class="mod-badge">${esc(badge)}</span></div>
-   <div class="mod-body">${modNote('范围：竞品（'+esc(badge)+'）口碑与风险，供美诺对标；竞品风险单列「竞品风险（供对标）」块，不进入美诺风险清单。')}
+   <div class="mod-body">${modNote('范围：竞品（'+esc(badge)+'）口碑与风险，供美诺对标；竞品风险单列「竞品风险（供对标）」块，不进入美诺风险清单；快照为最新监测日口径。')}
    <div class="comp-grid">${cards}</div></div></section>`;
 }
 
 function buildList(title,key,arr,main,sub){
   const rows=arr.map(r=>{
-    /* ⑤ 情感标签中文化 */
     const lv=LEVEL_LABEL[r.sentiment_level]||'中性';
     const lvc=LEVEL_COLOR[r.sentiment_level]||'#7B1FA2';
     return `<div class="list-row"><span class="lv" style="background:${lvc}">${lv}</span><span>${esc(r[main])}</span><span class="meta">平台 ${esc(r.platform||'—')} ｜ 声量 ${esc(r[sub]||'—')}</span>${r.source_url?'<a href="'+esc(r.source_url)+'" target="_blank">🔗</a>':''}</div>`;
@@ -379,7 +508,7 @@ function bindTabs(){
     });
   });
 }
-render();
+setDate(curDateFromUrl());
 </script>
 </body>
 </html>
