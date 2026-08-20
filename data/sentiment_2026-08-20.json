@@ -4,7 +4,8 @@
     "monitor_date": "2026-08-20",
     "event_date": "2026-08-19",
     "brand": "美诺 MENOW 国货彩妆",
-    "data_as_of": "2026-08-20T09:10:00+08:00"
+    "data_as_of": "2026-08-20T09:10:00+08:00",
+    "date": "2026-08-20"
   },
   "risks": [
     {
@@ -83,13 +84,95 @@
       "sentiment_level": "positive",
       "source_url": "https://www.163.com/dy/article/L4N6L4MD05502ZGU.html",
       "event_date": "2026-08-19"
+    },
+    {
+      "topic": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
+      "title": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
+      "text": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
+      "platform": "小红书",
+      "volume": "",
+      "time": "2026-08-19",
+      "source_url": "https://www.xiaohongshu.com/explore/6a82d64e00000000280004fc",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "奶味小鱼饼 1天前",
+      "event_date": "2026-08-19",
+      "comments_sample": [],
+      "from": "login_crawl"
+    },
+    {
+      "topic": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
+      "title": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
+      "text": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
+      "platform": "微博",
+      "volume": "30",
+      "time": "2026-08-19",
+      "source_url": "https://weibo.com/2156835693/5014015281726190",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "郭纪军",
+      "event_date": "2026-08-19",
+      "comments_sample": [],
+      "from": "login_crawl"
+    },
+    {
+      "topic": "#微博美妆大赛##我的冠军妆备##美美过夏天挑战# 简单唠几个小东西橘朵染眉膏/滋色定妆膏/酵色修容笔/橘朵妆前霜/瑷尔博士身体精华乳/美诺粉饼",
+      "title": "#微博美妆大赛##我的冠军妆备##美美过夏天挑战# 简单唠几个小东西橘朵染眉膏/滋色定妆膏/酵色修容笔/橘朵妆前霜/瑷尔博士身体精华乳/美诺粉饼",
+      "text": "#微博美妆大赛##我的冠军妆备##美美过夏天挑战# 简单唠几个小东西橘朵染眉膏/滋色定妆膏/酵色修容笔/橘朵妆前霜/瑷尔博士身体精华乳/美诺粉饼",
+      "platform": "微博",
+      "volume": "2595",
+      "time": "2026-08-19",
+      "source_url": "https://weibo.com/3556644317/5070250215213819",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "3胖儿er",
+      "event_date": "2026-08-19",
+      "comments_sample": [],
+      "from": "login_crawl"
+    },
+    {
+      "topic": "小幸子超话 第一次中到小幸宝宝的福袋 太开心了 超级喜欢 颜值超高的美诺礼盒 爱了爱了小幸子超话 @小幸子·",
+      "title": "小幸子超话 第一次中到小幸宝宝的福袋 太开心了 超级喜欢 颜值超高的美诺礼盒 爱了爱了小幸子超话 @小幸子·",
+      "text": "小幸子超话 第一次中到小幸宝宝的福袋 太开心了 超级喜欢 颜值超高的美诺礼盒 爱了爱了小幸子超话 @小幸子·",
+      "platform": "微博",
+      "volume": "27",
+      "time": "2026-08-19",
+      "source_url": "https://weibo.com/6058312289/5327083146052347",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "阿璐璐璐璐璐",
+      "event_date": "2026-08-19",
+      "comments_sample": [],
+      "from": "login_crawl"
+    },
+    {
+      "topic": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan",
+      "title": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan",
+      "text": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan —— 四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满",
+      "platform": "微博",
+      "volume": "3",
+      "time": "2026-08-19",
+      "source_url": "https://weibo.com/2539793890/5332537587007553",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "春风不解沨情",
+      "event_date": "2026-08-19",
+      "comments_sample": [],
+      "from": "login_crawl"
     }
   ],
   "dropdown_words": [
     {
       "word": "美诺萌兰粉饼",
       "negative": false,
-      "platform": ["全网搜索"],
+      "platform": [
+        "全网搜索"
+      ],
       "source_url": "",
       "date": "2026-08-19",
       "event_date": "2026-08-19"
@@ -97,7 +180,10 @@
     {
       "word": "美诺粉饼 干皮",
       "negative": true,
-      "platform": ["小红书搜索联想", "百度搜索"],
+      "platform": [
+        "小红书搜索联想",
+        "百度搜索"
+      ],
       "source_url": "",
       "date": "2026-08-19",
       "event_date": "2026-08-19"
@@ -105,7 +191,10 @@
     {
       "word": "美诺嘟嘟鸭粉饼",
       "negative": false,
-      "platform": ["微博搜索", "小红书搜索"],
+      "platform": [
+        "微博搜索",
+        "小红书搜索"
+      ],
       "source_url": "",
       "date": "2026-08-19",
       "event_date": "2026-08-19"
@@ -113,7 +202,9 @@
     {
       "word": "美诺 七夕 平价心意礼",
       "negative": false,
-      "platform": ["抖音搜索下拉"],
+      "platform": [
+        "抖音搜索下拉"
+      ],
       "source_url": "",
       "date": "2026-08-19",
       "event_date": "2026-08-19"
@@ -121,27 +212,66 @@
     {
       "word": "美诺 乐乐熊 七夕",
       "negative": false,
-      "platform": ["京东搜索下拉", "小红书搜索"],
+      "platform": [
+        "京东搜索下拉",
+        "小红书搜索"
+      ],
       "source_url": "",
       "date": "2026-08-19",
       "event_date": "2026-08-19"
     }
   ],
   "trend": [
-    {"date": "07-20", "count": 19},
-    {"date": "07-25", "count": 21},
-    {"date": "07-30", "count": 18},
-    {"date": "08-05", "count": 26},
-    {"date": "08-10", "count": 33},
-    {"date": "08-15", "count": 47},
-    {"date": "08-19", "count": 82}
+    {
+      "date": "07-20",
+      "count": 19
+    },
+    {
+      "date": "07-25",
+      "count": 21
+    },
+    {
+      "date": "07-30",
+      "count": 18
+    },
+    {
+      "date": "08-05",
+      "count": 26
+    },
+    {
+      "date": "08-10",
+      "count": 33
+    },
+    {
+      "date": "08-15",
+      "count": 47
+    },
+    {
+      "date": "08-19",
+      "count": 82
+    }
   ],
   "platform_dist": [
-    {"platform": "电商评价", "count": 55},
-    {"platform": "小红书", "count": 32},
-    {"platform": "抖音", "count": 24},
-    {"platform": "微博", "count": 13},
-    {"platform": "快手", "count": 5}
+    {
+      "platform": "电商评价",
+      "count": 55
+    },
+    {
+      "platform": "小红书",
+      "count": 32
+    },
+    {
+      "platform": "抖音",
+      "count": 24
+    },
+    {
+      "platform": "微博",
+      "count": 13
+    },
+    {
+      "platform": "快手",
+      "count": 5
+    }
   ],
   "platform_summary": {
     "电商评价": {
