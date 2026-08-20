@@ -1528,6 +1528,9 @@ function maybeLoadHistoricalDate(){
       return r.text();
     })
     .then(html => {
+      // 防止写入的 d/ 历史页再次触发 maybeLoadHistoricalDate 造成无限循环（旧页内同样含该调用）；
+      // 去掉该调用后，旧页仅保留 applySearchHitFromHash，可正常按 #hit 定位高亮。
+      html = html.split('if(maybeLoadHistoricalDate()) return;').join('/* cdn-view: 历史快照已加载，跳过再次加载 */');
       document.open();
       document.write(html);
       document.close();
@@ -1793,8 +1796,21 @@ function gotoSearchHit(sec, title, date){
   closeSearch();
   const curDate = (typeof DATA !== 'undefined' && DATA.meta && DATA.meta.date) ? DATA.meta.date : '';
   if(date && date !== curDate){
-    // 跳到该日期的快照页，并通过 #hit= 让目标页自动定位（滚动+翻页+高亮）
-    window.location.href = '/d/' + date + '.html#hit=' + encodeURIComponent(sec + '|' + title);
+    const localSet = new Set(LOCAL_DATES);
+    const availSet = new Set(AVAILABLE_DATES);
+    const hit = '#hit=' + encodeURIComponent(sec + '|' + title);
+    if(localSet.has(date)){
+      // 该日期有本地快照页（CloudStudio 与 GitHub Pages 均已部署，不会 404）
+      window.location.href = '/d/' + date + '.html' + hit;
+    } else if(availSet.has(date) && CDN_BASE){
+      // 有快照页但本地未保留：经主看板 ?date= 在本站内用 CDN 拉取渲染
+      window.location.href = '/?date=' + date + hit;
+    } else {
+      // 索引里的日期只是条目自身的事件日期、并无独立快照页（此类条目已合并展示在最新主页），
+      // 直接在当前页定位，避免跳到不存在的 /d/ 旧页（GitHub Pages 纯静态会 404）
+      locateHit(sec, title);
+      return;
+    }
     return;
   }
   locateHit(sec, title);
