@@ -1,10 +1,11 @@
 {
   "meta": {
-    "version": "20.0",
+    "version": "22.0",
     "date": "2026-08-20",
     "data_as_of": "2026-08-20T09:05:00+08:00",
     "brand": "美诺 MENOW",
-    "track": "面部彩妆/粉饼赛道"
+    "track": "面部彩妆/粉饼赛道",
+    "label": "V22 侧边栏布局 + 7项优化"
   },
   "today_must_see": [
     {
@@ -573,6 +574,74 @@
       "action": "跟进国货出海+反向引进双轨趋势：评估美诺是否有机会通过 TikTok Shop 东南亚（马来西亚/印尼）+ Lazada 中东（沙特/阿联酋）做 50 元价格带的初步试水",
       "owner": "品牌/战略",
       "status": "规划中"
+    }
+  ],
+  "ai_marketing": [
+    {
+      "date": "2026-08-19",
+      "category": "平台AI布局",
+      "title": "支付宝 8/19 上线智能体商业底座：智能客服+订单复盘+用户分层全链路自动化",
+      "summary": "面向全品类电商商家开放，可实现智能客服应答、订单数据复盘、用户精准分层、营销活动自动匹配等全链路自动化运营，大幅降低中小商家人力与运营成本。",
+      "data_support": "全品类电商开放｜智能客服/复盘/分层/活动匹配",
+      "insight": "美诺若在支付宝生态开店（如小程序商城），可优先接入该底座做客服/会员分层自动化，降低 50 元价格带品牌的人力成本压力。",
+      "source_name": "网易科技",
+      "source_url": "https://www.163.com/dy/article/L4NDIU1R0511BE1V.html",
+      "from": "v22_init"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "明星AI授权",
+      "title": "明星 AI 肖像授权跑通商业闭环：王祖贤 AIGC 广告《倩影》上线网易《天下》18 周年",
+      "summary": "授权 20-30 岁巅峰肖像制作全 AIGC 广告，无真人实拍，片尾署名「王祖贤(AI)」，并把数字形象延伸为游戏 NPC/专属时装——国内游戏行业首个明星正版授权全 AI 广告。",
+      "data_support": "全AIGC无实拍｜数字形象延伸NPC/时装",
+      "insight": "AI 肖像授权已从概念走向商业闭环，明星 IP 的数字分身营销是 2026 确定方向；美诺若联名/代言考虑 AI 数字人形态，需先解决肖像授权合规。",
+      "source_name": "腾讯新闻",
+      "source_url": "https://news.qq.com/rain/a/20260721A0A2F700",
+      "from": "v22_init"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "平台AI布局",
+      "title": "可口可乐×百度：范志毅 AI 数字人 24/7 实时互动代言世界杯",
+      "summary": "数字人可全天候实时互动代言，突破真人档期限制，成为 always-on 的「AI 明星」营销形态。",
+      "data_support": "24/7实时互动｜always-on代言",
+      "insight": "品牌代言从「一次官宣」转向「7×24 在线陪伴」；美诺可评估 AI 数字人作为品牌吉祥物/虚拟柜员的低成本长期在场形态。",
+      "source_name": "TechWeb/网易",
+      "source_url": "https://www.163.com/dy/article/L041J6FO05119MAU.html",
+      "from": "v22_init"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "AIGC",
+      "title": "巨量引擎全域推广 8 月升级：AI 素材工厂量产 6 倍",
+      "summary": "平台级 AI 工具已进入可量产阶段，AI 素材批量生产大幅降低内容产能门槛。",
+      "data_support": "AI素材工厂量产6倍",
+      "insight": "美诺本周可启动 3-5 条实拍→50 变体 AI 素材灰度测试（巨量引擎/即创），用 ROI 决定后续预算。",
+      "source_name": "人人都是自媒体",
+      "source_url": "http://woshizmt.cn/dsp/jrtt/3283.html",
+      "from": "v22_init"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "AI短剧",
+      "title": "2026 Q1 全行业微短剧 AI 占比已超 95%，爱奇艺「AI艺人库」引在役明星 AI 戒备争议",
+      "summary": "AI 在微短剧制作中占比极高；同时爱奇艺「AI艺人库」因张若昀等辟谣，引发在役明星 AI 授权边界讨论。",
+      "data_support": "AI短剧占比超95%(2026Q1)",
+      "insight": "AI 短剧是低成本剧情化营销洼地，但使用真实明星/AI 分身须严格走授权；美诺可先用品牌 IP 形象（萌兰/小熊）而非真人做 AI 短剧试水。",
+      "source_name": "新浪财经",
+      "source_url": "https://finance.sina.com.cn/wm/2026-05-09/doc-inhxfxrt3713376.shtml",
+      "from": "v22_init"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "平台AI布局",
+      "title": "AI 星图广告植入与数字人直播成新广告形态：平台级 AI 工具进入可量产阶段",
+      "summary": "从 AI 素材工厂、智能体商业底座到数字人直播，平台侧 AI 营销基础设施 8 月密集升级，广告主可低门槛调用。",
+      "data_support": "平台级AI工具可量产",
+      "insight": "美诺下周可将 AI 素材测试与星图达人合作并行：先以 AI 生成 50 变体测素材效率，再决定是否用 AI 数字人试播。",
+      "source_name": "京报网",
+      "source_url": "https://news.bjd.com.cn/2026/08/05/11901566.shtml",
+      "from": "v22_init"
     }
   ]
 }
