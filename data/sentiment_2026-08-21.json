@@ -57,30 +57,132 @@
       "sentiment_level": "light_negative",
       "source_url": "https://www.workercn.cn/papers/grrb/2026/08/20/5/news-2.html",
       "event_date": "2026-08-20"
+    },
+    {
+      "topic": "#市事关心# 【“美诺车业”等生产的#6批次童车不合格#】近日，河南省市场监管局通告6批次抽检不合格童车，涉及标称山东浩硕儿童用品有限公司生产的儿童推车、邯郸市美诺车业有限公司生产的婴儿学步车、邯郸市美乐童玩具有限公司生产的婴儿学步车等。不合格项目涉及动态耐久性测试、燃烧性能、危险夹缝",
+      "title": "#市事关心# 【“美诺车业”等生产的#6批次童车不合格#】近日，河南省市场监管局通告6批次抽检不合格童车，涉及标称山东浩硕儿童用品有限公司生产的儿童推车、邯郸市美诺车业有限公司生产的婴儿学步车、邯郸市美乐童玩具有限公司生产的婴儿学步车等。不合格项目涉及动态耐久性测试、燃烧性能、危险夹缝",
+      "text": "#市事关心# 【“美诺车业”等生产的#6批次童车不合格#】近日，河南省市场监管局通告6批次抽检不合格童车，涉及标称山东浩硕儿童用品有限公司生产的儿童推车、邯郸市美诺车业有限公司生产的婴儿学步车、邯郸市美乐童玩具有限公司生产的婴儿学步车等。不合格项目涉及动态耐久性测试、燃烧性能、危险夹缝",
+      "platform": "微博",
+      "volume": "1",
+      "time": "2026-08-20",
+      "source_url": "https://weibo.com/2646683177/5333714297167716",
+      "sentiment_level": "neutral",
+      "trend_direction": "",
+      "brand": "美诺",
+      "account": "武汉市场监管",
+      "event_date": "2026-08-20",
+      "comments_sample": [],
+      "source": "微博",
+      "from": "login_crawl"
     }
   ],
   "dropdown_words": [
-    {"word": "美诺萌兰粉饼", "negative": false, "platform": ["全网搜索"], "source_url": "", "date": "2026-08-20", "event_date": "2026-08-20"},
-    {"word": "美诺粉饼 干皮", "negative": true, "platform": ["小红书搜索联想", "百度搜索"], "source_url": "", "date": "2026-08-20", "event_date": "2026-08-20"},
-    {"word": "美诺嘟嘟鸭粉饼", "negative": false, "platform": ["微博搜索", "小红书搜索"], "source_url": "", "date": "2026-08-20", "event_date": "2026-08-20"},
-    {"word": "美诺 乐乐熊 七夕", "negative": false, "platform": ["京东搜索下拉", "小红书搜索"], "source_url": "", "date": "2026-08-20", "event_date": "2026-08-20"},
-    {"word": "花间颂 粉饼 结块", "negative": true, "platform": ["小红书搜索", "黑猫投诉"], "source_url": "", "date": "2026-08-20", "event_date": "2026-08-20"}
+    {
+      "word": "美诺萌兰粉饼",
+      "negative": false,
+      "platform": [
+        "全网搜索"
+      ],
+      "source_url": "",
+      "date": "2026-08-20",
+      "event_date": "2026-08-20"
+    },
+    {
+      "word": "美诺粉饼 干皮",
+      "negative": true,
+      "platform": [
+        "小红书搜索联想",
+        "百度搜索"
+      ],
+      "source_url": "",
+      "date": "2026-08-20",
+      "event_date": "2026-08-20"
+    },
+    {
+      "word": "美诺嘟嘟鸭粉饼",
+      "negative": false,
+      "platform": [
+        "微博搜索",
+        "小红书搜索"
+      ],
+      "source_url": "",
+      "date": "2026-08-20",
+      "event_date": "2026-08-20"
+    },
+    {
+      "word": "美诺 乐乐熊 七夕",
+      "negative": false,
+      "platform": [
+        "京东搜索下拉",
+        "小红书搜索"
+      ],
+      "source_url": "",
+      "date": "2026-08-20",
+      "event_date": "2026-08-20"
+    },
+    {
+      "word": "花间颂 粉饼 结块",
+      "negative": true,
+      "platform": [
+        "小红书搜索",
+        "黑猫投诉"
+      ],
+      "source_url": "",
+      "date": "2026-08-20",
+      "event_date": "2026-08-20"
+    }
   ],
   "trend": [
-    {"date": "2026-08-15", "count": 4},
-    {"date": "2026-08-16", "count": 5},
-    {"date": "2026-08-17", "count": 5},
-    {"date": "2026-08-18", "count": 6},
-    {"date": "2026-08-19", "count": 7},
-    {"date": "2026-08-20", "count": 4},
-    {"date": "2026-08-21", "count": 4}
+    {
+      "date": "2026-08-15",
+      "count": 4
+    },
+    {
+      "date": "2026-08-16",
+      "count": 5
+    },
+    {
+      "date": "2026-08-17",
+      "count": 5
+    },
+    {
+      "date": "2026-08-18",
+      "count": 6
+    },
+    {
+      "date": "2026-08-19",
+      "count": 7
+    },
+    {
+      "date": "2026-08-20",
+      "count": 4
+    },
+    {
+      "date": "2026-08-21",
+      "count": 4
+    }
   ],
   "platform_dist": [
-    {"platform": "电商评价", "count": 1},
-    {"platform": "小红书", "count": 1},
-    {"platform": "抖音", "count": 1},
-    {"platform": "微博", "count": 1},
-    {"platform": "行业媒体/黑猫投诉", "count": 1}
+    {
+      "platform": "电商评价",
+      "count": 1
+    },
+    {
+      "platform": "小红书",
+      "count": 1
+    },
+    {
+      "platform": "抖音",
+      "count": 1
+    },
+    {
+      "platform": "微博",
+      "count": 1
+    },
+    {
+      "platform": "行业媒体/黑猫投诉",
+      "count": 1
+    }
   ],
   "platform_summary": {
     "电商评价": "美诺经典粉饼 5 万+ 评论 96% 好评、乐乐熊 P15 100% 好评；竞品商品页数据平稳（嘉利玛小千金粉底霜 10 万评 97% 好评）。",
