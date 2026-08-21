@@ -26,12 +26,13 @@
       "account": "美诺MENOW 5天前",
       "date": "2026-08-20",
       "source_url": "https://www.xiaohongshu.com/explore/6a803515000000002c0055de",
-      "level": "light_negative",
+      "level": "positive",
       "brand": "美诺",
       "event_date": "2026-08-20",
       "platform": "小红书",
       "comments_sample": [],
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "sentiment_level": "positive"
     },
     {
       "text": "垃圾到嗨的粉饼",
@@ -92,14 +93,15 @@
       "volume": "",
       "time": "2026-08-20",
       "source_url": "https://www.xiaohongshu.com/explore/6a803515000000002c0055de",
-      "sentiment_level": "light_negative",
+      "sentiment_level": "positive",
       "trend_direction": "",
       "brand": "美诺",
       "account": "美诺MENOW 5天前",
       "event_date": "2026-08-20",
       "comments_sample": [],
       "source": "小红书",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "level": null
     },
     {
       "topic": "垃圾到嗨的粉饼",
@@ -167,23 +169,6 @@
       "event_date": "2026-08-20",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "c     财经龍头 自主创作 今天10:51 来自 微博网页版 上午这盘，没什么意思，。低开之后银行保险硬顶指数，这不是进攻，是维稳。药线那边哈药G份、哈三L联、万邦D德、美诺H华集体负反馈，情绪杀得干脆，资金被迫切向科技，去捞昨天破位的寒武J纪和海外易中天。但拉的时候缩量，回落的时候放量，典型的反抽不是反转。老龍觉得，这个位置资金明显犹豫，往上",
-      "title": "c     财经龍头 自主创作 今天10:51 来自 微博网页版 上午这盘，没什么意思，。低开之后银行保险硬顶指数，这不是进攻，是维稳。药线那边哈药G份、哈三L联、万邦D德、美诺H华集体负反馈，情绪杀得干脆，资金被迫切向科技，去捞昨天破位的寒武J纪和海外易中天。但拉的时候缩量，回落的时候放量，典型的反抽不是反转。老龍觉得，这个位置资金明显犹豫，往上",
-      "text": "c     财经龍头 自主创作 今天10:51 来自 微博网页版 上午这盘，没什么意思，。低开之后银行保险硬顶指数，这不是进攻，是维稳。药线那边哈药G份、哈三L联、万邦D德、美诺H华集体负反馈，情绪杀得干脆，资金被迫切向科技，去捞昨天破位的寒武J纪和海外易中天。但拉的时候缩量，回落的时候放量，典型的反抽不是反转。老龍觉得，这个位置资金明显犹豫，往上",
-      "platform": "微博",
-      "volume": "",
-      "time": "2026-08-20",
-      "source_url": "https://weibo.com/2189976062/5334304093374102",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "财经龍头",
-      "event_date": "2026-08-20",
-      "comments_sample": [],
-      "source": "微博",
       "from": "login_crawl"
     }
   ],
