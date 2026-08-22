@@ -52,7 +52,9 @@
         "detail_blocked": 0,
         "fetched_at": "2026-08-22 23:58"
       }
-    }
+    },
+    "rescore_topic_fixes": 3,
+    "rescore_at": "2026-08-22T23:00"
   },
   "risks": [
     {
@@ -67,66 +69,6 @@
       "source_url": "https://post.m.smzdm.com/p/axklw8w4",
       "event_date": "2026-08-21",
       "publish_date": "2026-08-21"
-    },
-    {
-      "text": "水光肌细糠！所有会斑驳起皮的都给我进来！",
-      "source": "小红书",
-      "account": "宁安 2天前",
-      "date": "2026-08-22",
-      "source_url": "https://www.xiaohongshu.com/explore/6a85166f0000000026036ad5?xsec_token=ABFCLN1tzUaxpGI5ba_BfrLoumg-NSSFeiyNUy5bAEhJQ=&xsec_source=pc_search",
-      "level": "high_risk",
-      "brand": "美诺",
-      "event_date": "2026-08-22",
-      "platform": "小红书",
-      "likes": "",
-      "comment_count": "",
-      "shares": "",
-      "comments_sample": [],
-      "from": "login_crawl",
-      "ai_sentiment": "positive",
-      "ai_reason": "小红书用户分享美诺相关妆容内容，正向种草",
-      "used_hy3": true,
-      "ai_relevant": "related"
-    },
-    {
-      "text": "偶买噶 跟着化妆师买化妆品的第一篇之定妆粉 冷皮本命粉饼｜美诺P07冰肌粉蓝也太会了 谁懂夏天底妆一到下午就发黄暗沉😭 挖到这块粉蓝渐变蜜粉饼直接解救我的暗沉底妆 💙蓝色中和面部黄气，压掉灰调暗沉 💗粉色自带淡淡的粉嫩气血感 混合上脸不是假白！是通透冷调柔光感，像自带面中补光灯✨ 粉质细到像烟雾，3微米粉体，反复补妆也不卡纹不斑驳 只吸油不吸妆，出油之后越夜越美丽，不会把底妆蹭掉。 21g超大容量，性价比直接拉满，用到天荒地老！ 不含滑石粉，上脸温和不闷痘，混油/油皮狂喜#好物推荐🔥 #测评测评 ✅用法小tips： ▪️全脸定妆：蓝粉混合，一键定妆+提气色 ▪️局部提亮：蓝色拍面中、嘴角、泪沟，改善暗沉 ▪️补妆：出油直接按压，妆面立马恢复干净雾面 冷白皮、冷调中性皮闭眼冲这块冰肌粉蓝！ 几十块拥有清透伪素颜，通勤早八人爱惨了😭",
-      "source": "抖音",
-      "account": "是露露啊",
-      "date": "2026-08-22",
-      "source_url": "https://www.douyin.com/video/7676340245763746915",
-      "level": "high_risk",
-      "brand": "美诺",
-      "event_date": "2026-08-22",
-      "platform": "抖音",
-      "likes": "0",
-      "comment_count": "",
-      "shares": "",
-      "comments_sample": [],
-      "from": "login_crawl",
-      "ai_sentiment": "positive",
-      "ai_reason": "抖音达人为美诺冰肌粉蓝蜜粉饼种草，详细夸赞定妆/提亮效果，明显正向",
-      "used_hy3": true,
-      "ai_relevant": "related"
-    },
-    {
-      "text": "几十块名创彩妆值不值得？#彩妆##种草##大帅的上工日记##微博视频号续航计划##大师出妆# L袁大帅ONTIME的微博视频 —— 几十块名创彩妆值不值得？#彩妆##种草##大帅的上工日记##微博视频号续航计划##大师出妆# 袁大帅ONTIME的微博视频 正在加载 视频播放器。",
-      "source": "微博",
-      "account": "袁大帅ONTIME",
-      "date": "2026-08-22",
-      "source_url": "https://weibo.com/1927872751/5313393550426521",
-      "level": "light_negative",
-      "brand": "美诺",
-      "event_date": "2026-08-22",
-      "platform": "微博",
-      "likes": "1106",
-      "comment_count": "",
-      "shares": "",
-      "comments_sample": [],
-      "from": "login_crawl",
-      "ai_sentiment": "neutral",
-      "ai_reason": "微博讨论几十块名创彩妆值不值得，泛彩妆话题，含美诺价位语境，中性",
-      "used_hy3": true,
-      "ai_relevant": "related"
     }
   ],
   "hot_topics": [
@@ -168,7 +110,7 @@
       "volume": "",
       "time": "2026-08-22",
       "source_url": "https://www.xiaohongshu.com/explore/6a85166f0000000026036ad5?xsec_token=ABFCLN1tzUaxpGI5ba_BfrLoumg-NSSFeiyNUy5bAEhJQ=&xsec_source=pc_search",
-      "sentiment_level": "high_risk",
+      "sentiment_level": "positive",
       "trend_direction": "",
       "brand": "美诺",
       "account": "宁安 2天前",
@@ -179,7 +121,8 @@
       "ai_sentiment": "positive",
       "ai_reason": "小红书分享美诺定妆粉饼使用，水光肌细糠主题，正向种草",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "ai_demoted": true
     },
     {
       "topic": "偶买噶 跟着化妆师买化妆品的第一篇之定妆粉 冷皮本命粉饼｜美诺P07冰肌粉蓝也太会了 谁懂夏天底妆一到下午就发黄暗沉😭 挖到这块粉蓝渐变蜜粉饼直接解救我的暗沉底妆 💙蓝色中和面部黄气，压掉灰调暗沉 💗粉色自带淡淡的粉嫩气血感 混合上脸不是假白！是通透冷调柔光感，像自带面中补光灯✨ 粉质细到像烟雾，3微米粉体，反复补妆也不卡纹不斑驳 只吸油不吸妆，出油之后越夜越美丽，不会把底妆蹭掉。 21g超大容量，性价比直接拉满，用到天荒地老！ 不含滑石粉，上脸温和不闷痘，混油/油皮狂喜#好物推荐🔥 #测评测评 ✅用法小tips： ▪️全脸定妆：蓝粉混合，一键定妆+提气色 ▪️局部提亮：蓝色拍面中、嘴角、泪沟，改善暗沉 ▪️补妆：出油直接按压，妆面立马恢复干净雾面 冷白皮、冷调中性皮闭眼冲这块冰肌粉蓝！ 几十块拥有清透伪素颜，通勤早八人爱惨了😭",
@@ -189,7 +132,7 @@
       "volume": "0",
       "time": "2026-08-22",
       "source_url": "https://www.douyin.com/video/7676340245763746915",
-      "sentiment_level": "high_risk",
+      "sentiment_level": "positive",
       "trend_direction": "",
       "brand": "美诺",
       "account": "是露露啊",
@@ -200,7 +143,8 @@
       "ai_sentiment": "positive",
       "ai_reason": "抖音达人长文种草美诺P07冰肌粉蓝蜜粉饼，夸粉质/定妆/性价比，强正向",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "ai_demoted": true
     },
     {
       "topic": "带孩子出门旅游 拍兰哈顿 #记录真实生活 #美食 #美诺粉饼#提亮粉饼#旅游",
@@ -315,7 +259,7 @@
       "volume": "1106",
       "time": "2026-08-22",
       "source_url": "https://weibo.com/1927872751/5313393550426521",
-      "sentiment_level": "light_negative",
+      "sentiment_level": "neutral",
       "trend_direction": "",
       "brand": "美诺",
       "account": "袁大帅ONTIME",
@@ -326,7 +270,8 @@
       "ai_sentiment": "neutral",
       "ai_reason": "微博泛彩妆测评视频，中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "ai_demoted": true
     },
     {
       "topic": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满彩妆超话美妆生活超话化妆品超话#空瓶记##空瓶记录#美妆超话plog超话@hitpan",
