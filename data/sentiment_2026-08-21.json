@@ -58,7 +58,8 @@
         "detail_blocked": 0,
         "fetched_at": "2026-08-22 00:40"
       }
-    }
+    },
+    "rescore_at": "2026-08-22T23:00"
   },
   "risks": [
     {
@@ -71,85 +72,11 @@
       "disposal": "建议美诺借舆论窗口强化「成分透明+备案可查」信任营销：整理粉饼备案编号（如粤G妆网备字）与检测报告做公开可核验传播；同步排查自身详情页功效文案合规性，避免「即刻美白/七天淡斑」类绝对化用语。",
       "brand": "行业",
       "source_url": "https://www.workercn.cn/papers/grrb/2026/08/20/5/news-2.html",
-      "event_date": "2026-08-20"
-    },
-    {
-      "text": "水光肌细糠！所有会斑驳起皮的都给我进来！",
-      "source": "小红书",
-      "account": "宁安 1天前",
-      "date": "2026-08-21",
-      "source_url": "https://www.xiaohongshu.com/explore/6a85166f0000000026036ad5?xsec_token=ABFCLN1tzUaxpGI5ba_BfrLoumg-NSSFeiyNUy5bAEhJQ=&xsec_source=pc_search",
-      "level": "high_risk",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "小红书",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "text": "上妆容易卡粉起皮的姐妹一定要去用这个美诺果冻喷雾#服帖底妆 #补水保湿 #妆前喷雾 #妆前 #学生党好物推荐",
-      "source": "抖音",
-      "account": "伤心奶酪🧀",
-      "date": "2026-08-21",
-      "source_url": "https://www.douyin.com/video/7676069466312765883",
-      "level": "high_risk",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "抖音",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "text": "偶买噶 跟着化妆师买化妆品的第一篇之定妆粉 冷皮本命粉饼｜美诺P07冰肌粉蓝也太会了 谁懂夏天底妆一到下午就发黄暗沉😭 挖到这块粉蓝渐变蜜粉饼直接解救我的暗沉底妆 💙蓝色中和面部黄气，压掉灰调暗沉 💗粉色自带淡淡的粉嫩气血感 混合上脸不是假白！是通透冷调柔光感，像自带面中补光灯✨ 粉质细到像烟雾，3微米粉体，反复补妆也不卡纹不斑驳 只吸油不吸妆，出油之后越夜越美丽，不会把底妆蹭掉。 21g超大容量，性价比直接拉满，用到天荒地老！ 不含滑石粉，上脸温和不闷痘，混油/油皮狂喜#好物推荐🔥 #测评测评 ✅用法小tips： ▪️全脸定妆：蓝粉混合，一键定妆+提气色 ▪️局部提亮：蓝色拍面中、嘴角、泪沟，改善暗沉 ▪️补妆：出油直接按压，妆面立马恢复干净雾面 冷白皮、冷调中性皮闭眼冲这块冰肌粉蓝！ 几十块拥有清透伪素颜，通勤早八人爱惨了😭",
-      "source": "抖音",
-      "account": "是露露啊",
-      "date": "2026-08-21",
-      "source_url": "https://www.douyin.com/video/7676340245763746915",
-      "level": "high_risk",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "抖音",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "text": "平价实力派美诺粉饼，补妆不卡粉，油光一键直接隐形 #轻薄底妆#长效持妆#通勤美妆#久妆不闷#日常带妆",
-      "source": "抖音",
-      "account": "董先生（美诺粉饼专场）慕之尧",
-      "date": "2026-08-21",
-      "source_url": "https://www.douyin.com/video/7675693654958148899",
-      "level": "light_negative",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "抖音",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "text": "化妆容易出油脱妆的姐妹，都去试试这个#美诺粉饼！随便拍拍，一整天都是柔焦雾面感～#防水防汗不脱妆 #美诺大粉饼 #女生必备好物",
-      "source": "抖音",
-      "account": "草莓啵啵奶",
-      "date": "2026-08-21",
-      "source_url": "https://www.douyin.com/video/7675876851327416741",
-      "level": "light_negative",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "抖音",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "text": "几十块名创彩妆值不值得？#彩妆##种草##大帅的上工日记##微博视频号续航计划##大师出妆# L袁大帅ONTIME的微博视频 —— 几十块名创彩妆值不值得？#彩妆##种草##大帅的上工日记##微博视频号续航计划##大师出妆# 袁大帅ONTIME的微博视频 正在加载 视频播放器。",
-      "source": "微博",
-      "account": "袁大帅ONTIME",
-      "date": "2026-08-21",
-      "source_url": "https://weibo.com/1927872751/5313393550426521",
-      "level": "light_negative",
-      "brand": "美诺",
-      "event_date": "2026-08-21",
-      "platform": "微博",
-      "comments_sample": [],
-      "from": "login_crawl"
+      "event_date": "2026-08-20",
+      "ai_sentiment": "negative",
+      "ai_reason": "行业级合规风险：央视+工人日报报道网红美白淡斑面霜违规添加激素致激素戒断，虽非美诺直接负面，但关联“国货底妆安全”信任议题，对以安全配方为卖点的品牌构成风险预警，建议保留为轻危监测",
+      "used_hy3": true,
+      "hy3_backfill": true
     }
   ],
   "hot_topics": [
