@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24 10:19",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "一天内（筛选面板勾选）",
+      "list_total": 30,
+      "candidates": 4,
+      "excluded": 1,
+      "excluded_by_reason": {
+        "竞品关联推荐:诗佩妮": 1
+      },
+      "need_detail": 15,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": 0,
+      "dedup_dup": 0,
+      "collected": 4,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 4,
+      "fetched_at": "2026-08-24 10:13"
+    },
+    {
+      "platform": "抖音",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内",
+      "list_total": 16,
+      "candidates": 2,
+      "excluded": 14,
+      "excluded_by_reason": {
+        "官方账号": 14
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "fetched_at": "2026-08-24 10:15"
+    },
+    {
+      "platform": "微博",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "本周（≈一周内）+ 热门排序",
+      "list_total": 25,
+      "candidates": 5,
+      "excluded": 15,
+      "excluded_by_reason": {
+        "官方账号": 2,
+        "洗碗机": 1,
+        "冰箱": 3,
+        "Miele": 1,
+        "竞品关联推荐:pl": 1,
+        "喜美诺": 4,
+        "美诺华": 1,
+        "洗衣机": 1,
+        "家电": 1
+      },
+      "need_detail": 2,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 3,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 3,
+      "fetched_at": "2026-08-24 10:15"
+    }
+  ]
+}
