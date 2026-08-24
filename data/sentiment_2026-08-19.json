@@ -16,20 +16,11 @@
       "disposal": "在种草内容 / 商品详情中补充「干皮妆前保湿」使用提示，降低误用导致的负面反馈，把使用注意转化为专业服务感。",
       "brand": "美诺",
       "source_url": "",
-      "event_date": "2026-08-19"
-    },
-    {
-      "text": "黄气暗沉难遮盖？夏日定妆新思路",
-      "source": "小红书",
-      "account": "此人绝非咸鱼 2天前",
-      "date": "2026-08-18",
-      "source_url": "https://www.xiaohongshu.com/explore/6a82a6c100000000260378fa",
-      "level": "light_negative",
-      "brand": "美诺",
-      "event_date": "2026-08-18",
-      "platform": "小红书",
-      "comments_sample": [],
-      "from": "login_crawl"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "light_negative",
+      "ai_reason": "横评提示干皮注意+萌兰款表现亮眼，使用注意类轻负，非质量缺陷。",
+      "ai_relevant": "related"
     }
   ],
   "hot_topics": [
@@ -40,82 +31,11 @@
       "brand": "美诺",
       "sentiment_level": "neutral",
       "source_url": "",
-      "event_date": "2026-08-19"
-    },
-    {
-      "platform": "微博",
-      "topic": "肖战「口述式偶遇」+YSL七夕香港全城投放「肖战痛城」：顶流+平价心智（利好平价美妆语境）",
-      "volume": 98,
-      "brand": "行业",
-      "sentiment_level": "neutral",
-      "source_url": "",
-      "event_date": "2026-08-19"
-    },
-    {
-      "platform": "微博",
-      "topic": "嘉利玛联合青眼发布亚洲底妆报告+4.0超夯瓶「分油控油」：竞品技术卡位事件",
-      "volume": 52,
-      "brand": "嘉利玛",
-      "sentiment_level": "neutral",
-      "source_url": "",
-      "event_date": "2026-08-19"
-    },
-    {
-      "platform": "微博",
-      "topic": "嘉利玛宝相螺钿限定粉饼 + 陈瑶品牌挚友 + 潮宏基七夕联合送礼：东方美学礼赠叙事",
-      "volume": 45,
-      "brand": "嘉利玛",
-      "sentiment_level": "neutral",
-      "source_url": "",
-      "event_date": "2026-08-19"
-    },
-    {
-      "topic": "黄气暗沉难遮盖？夏日定妆新思路",
-      "title": "黄气暗沉难遮盖？夏日定妆新思路",
-      "text": "黄气暗沉难遮盖？夏日定妆新思路",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-18",
-      "source_url": "https://www.xiaohongshu.com/explore/6a82a6c100000000260378fa",
-      "sentiment_level": "light_negative",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "此人绝非咸鱼 2天前",
-      "event_date": "2026-08-18",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "topic": "已封神的人生喷雾！",
-      "title": "已封神的人生喷雾！",
-      "text": "已封神的人生喷雾！",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-18",
-      "source_url": "https://www.xiaohongshu.com/explore/6a85166f0000000026036ad5",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "宁安 12小时前",
-      "event_date": "2026-08-18",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "topic": "跟着韩女选粉饼的权威我终于悟了..",
-      "title": "跟着韩女选粉饼的权威我终于悟了..",
-      "text": "跟着韩女选粉饼的权威我终于悟了..",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-18",
-      "source_url": "https://www.xiaohongshu.com/explore/6a84892b000000002c000bf4",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "豆芽菜公主 7小时前",
-      "event_date": "2026-08-18",
-      "comments_sample": [],
-      "from": "login_crawl"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "萌兰款与高端品牌同场PK数据领先，中性偏正面行业内容。",
+      "ai_relevant": "related"
     }
   ],
   "dropdown_words": [

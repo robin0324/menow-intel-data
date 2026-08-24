@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23 14:25",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "默认综合（未强制时间筛选）",
+      "list_total": 43,
+      "candidates": 6,
+      "excluded": 30,
+      "excluded_by_reason": {
+        "官方账号": 1,
+        "竞品关联推荐:诗佩妮": 1,
+        "关联推荐-无美诺正文": 28
+      },
+      "need_detail": 35,
+      "detail_ok": 7,
+      "detail_blocked": 0,
+      "detail_excluded": 28,
+      "dedup_dup": 1,
+      "collected": 12,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 12,
+      "fetched_at": "2026-08-23 14:20"
+    },
+    {
+      "platform": "抖音",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内",
+      "list_total": 16,
+      "candidates": 11,
+      "excluded": 5,
+      "excluded_by_reason": {
+        "官方账号": 4,
+        "美诺车业": 1
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": null,
+      "dedup_dup": 9,
+      "collected": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "fetched_at": "2026-08-23 14:21"
+    },
+    {
+      "platform": "微博",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "本周（≈一周内）+ 热门排序",
+      "list_total": 25,
+      "candidates": 3,
+      "excluded": 17,
+      "excluded_by_reason": {
+        "官方账号": 3,
+        "洗碗机": 1,
+        "冰箱": 2,
+        "Miele": 1,
+        "竞品关联推荐:pl": 1,
+        "美诺华": 1,
+        "喜美诺": 5,
+        "洗衣机": 1,
+        "咖啡机": 1,
+        "证券": 1
+      },
+      "need_detail": 1,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": null,
+      "dedup_dup": 2,
+      "collected": 0,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0,
+      "fetched_at": "2026-08-23 14:22"
+    }
+  ]
+}

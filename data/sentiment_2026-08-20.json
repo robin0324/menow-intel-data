@@ -18,7 +18,11 @@
       "disposal": "在商品详情页 / 种草内容中前置「分肤质上妆建议」与「干皮妆前保湿提示」，把使用注意转化为专业服务感；同时推出「干皮伴侣」组合装（粉饼+保湿妆前/定妆喷雾）做内容种草。",
       "brand": "美诺",
       "source_url": "https://www.uulucky.com/show-3035154.html",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "light_negative",
+      "ai_reason": "横评提示干皮粉扑直上可能泛白起皮，使用场景注意类轻负，非质量缺陷，KOL已给分肤质用法建议。",
+      "ai_relevant": "related"
     }
   ],
   "hot_topics": [
@@ -29,7 +33,11 @@
       "brand": "美诺",
       "sentiment_level": "neutral",
       "source_url": "",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "萌兰款横评数据领先，中性偏正面。",
+      "ai_relevant": "related"
     },
     {
       "platform": "微博/什么值得买",
@@ -38,7 +46,11 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://weibo.com/5329511253/L6BO7x6FL",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "嘟嘟鸭联名+分肤质攻略，正向种草。",
+      "ai_relevant": "related"
     },
     {
       "platform": "京东自营/什么值得买",
@@ -47,7 +59,11 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://wiki.smzdm.com/p/w8mwm1v/",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "大白饼100%好评在售，正向。",
+      "ai_relevant": "related"
     },
     {
       "platform": "蝉妈妈/大数跨境",
@@ -56,7 +72,11 @@
       "brand": "美诺",
       "sentiment_level": "neutral",
       "source_url": "https://applet.10100.com/article/5598475",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "抖音榜单美诺未上榜作对标，中性。",
+      "ai_relevant": "related"
     },
     {
       "platform": "淘宝闪购/抖音生活服务",
@@ -65,16 +85,11 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_9136a85721342452",
-      "event_date": "2026-08-19"
-    },
-    {
-      "platform": "天猫",
-      "topic": "8/19 天猫七夕战报：护肤精华+407%、瑜伽服+287%、智能手表+10 倍——「养肤+礼赠」是 2026 H2 高增长叙事",
-      "volume": 22,
-      "brand": "美诺",
-      "sentiment_level": "positive",
-      "source_url": "https://www.xfrb.com.cn/article/zx/13231353682370.html",
-      "event_date": "2026-08-19"
+      "event_date": "2026-08-19",
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "七夕悦己消费美诺双向承接，正向。",
+      "ai_relevant": "related"
     },
     {
       "platform": "现代广告/首席营销官",
@@ -83,39 +98,11 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://www.163.com/dy/article/L4N6L4MD05502ZGU.html",
-      "event_date": "2026-08-19"
-    },
-    {
-      "topic": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
-      "title": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
-      "text": "一瓶四合一！小韩水嫩清透底妆轻松拿捏！",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://www.xiaohongshu.com/explore/6a82d64e00000000280004fc",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "奶味小鱼饼 1天前",
       "event_date": "2026-08-19",
-      "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "topic": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
-      "title": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
-      "text": "#混油皮粉饼总结#学生党平价定妆粉饼合集，无废话评价定妆散粉粉饼测评盘点！自用無广 #恰到好处的妆感##美丽觉醒计划#",
-      "platform": "微博",
-      "volume": "30",
-      "time": "2026-08-19",
-      "source_url": "https://weibo.com/2156835693/5014015281726190",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "郭纪军",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "from": "login_crawl"
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "七夕营销趋势可借鉴，正向行业洞察。",
+      "ai_relevant": "related"
     },
     {
       "topic": "#微博美妆大赛##我的冠军妆备##美美过夏天挑战# 简单唠几个小东西橘朵染眉膏/滋色定妆膏/酵色修容笔/橘朵妆前霜/瑷尔博士身体精华乳/美诺粉饼",
@@ -131,7 +118,11 @@
       "account": "3胖儿er",
       "event_date": "2026-08-19",
       "comments_sample": [],
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "美妆大赛含美诺粉饼列举，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "小幸子超话 第一次中到小幸宝宝的福袋 太开心了 超级喜欢 颜值超高的美诺礼盒 爱了爱了小幸子超话 @小幸子·",
@@ -147,23 +138,11 @@
       "account": "阿璐璐璐璐璐",
       "event_date": "2026-08-19",
       "comments_sample": [],
-      "from": "login_crawl"
-    },
-    {
-      "topic": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan",
-      "title": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan",
-      "text": "四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满 #空瓶记##空瓶记录# @hitpan —— 四月至今的hitpan和空瓶记，因为不太化妆，依旧攒不下有什么彩妆空瓶，但用光了一盘粉饼依旧成就感满满",
-      "platform": "微博",
-      "volume": "3",
-      "time": "2026-08-19",
-      "source_url": "https://weibo.com/2539793890/5332537587007553",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "春风不解沨情",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "微博中奖美诺礼盒好评，正向。",
+      "ai_relevant": "related"
     },
     {
       "topic": "04:43 2661 沉浸式第一视角给女朋友拍照全过程之第二期#vlog #拍照 #美诺粉饼 @oo · 6小时前",
@@ -180,7 +159,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "抖音vlog含美诺粉饼，中性曝光。",
+      "ai_relevant": "related"
     },
     {
       "topic": "00:14 6.4万 无效化妆or有效化妆 #张元英仿妆 #张元英 #仿妆不仿人#美诺粉饼#美诺 仅仿妆 不像本人致歉 @Fiena^^ · 7月11日",
@@ -197,7 +180,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "张元英仿妆含美诺，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "#哈尔滨旅游#姐姐和妹妹#日常生活#美诺粉饼 @小小羊 · 1天前",
@@ -214,7 +201,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "日常vlog含美诺，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "00:20 3.1万 就这么水灵灵爆改#萌妹子 #美诺粉饼 #爆改 #变装 #反差 @心鸡 · 8月9日",
@@ -231,7 +222,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "爆改变装含美诺，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "#美诺果冻贴贴喷雾 #唠嗑 @AAA蛹姐（思思版） · 7月28日",
@@ -248,7 +243,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "美诺果冻喷雾话题，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "#方圆脸 #新手化妆教程 #妆教 #美诺粉饼 #青年创作者成长计划 @奇迹悦悦🫶🏻 · 6月29日",
@@ -265,7 +264,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "新手妆教含美诺，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "#去黄提亮 #全网最火 #美诺粉饼 #补妆粉饼 #超市打卡 @奶吖奶黄包 · 1天前",
@@ -282,41 +285,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "抖音",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "夏天分区定妆🆕思路✨",
-      "title": "夏天分区定妆🆕思路✨",
-      "text": "夏天分区定妆🆕思路✨",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://www.xiaohongshu.com/explore/6a7ed648000000002403fb7c",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "爱美的自然卷 11小时前",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "source": "小红书",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "此粉饼的提亮力竟然恐怖如斯。。。",
-      "title": "此粉饼的提亮力竟然恐怖如斯。。。",
-      "text": "此粉饼的提亮力竟然恐怖如斯。。。",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://www.xiaohongshu.com/explore/6a842c1d0000000035015db5",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "巴黎在逃圣母 1天前",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "source": "小红书",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "去黄提亮含美诺，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "美诺迎来了它坠严厉的判官！",
@@ -333,41 +306,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "小红书",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "冰肌粉蓝巨无霸！！双拼定妆简直是作弊邪修！！",
-      "title": "冰肌粉蓝巨无霸！！双拼定妆简直是作弊邪修！！",
-      "text": "冰肌粉蓝巨无霸！！双拼定妆简直是作弊邪修！！",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://www.xiaohongshu.com/explore/6a83d459000000002402c1c6",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "小宋总是吃不饱 2天前",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "source": "小红书",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "夏日降温粉饼🧊已送达…请严肃品鉴！",
-      "title": "夏日降温粉饼🧊已送达…请严肃品鉴！",
-      "text": "夏日降温粉饼🧊已送达…请严肃品鉴！",
-      "platform": "小红书",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://www.xiaohongshu.com/explore/6a8547bf000000003300f48b",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "hallo椰椰 1天前",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "source": "小红书",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "「美诺迎来了它坠严厉的判官」为测评向措辞标题，无负面事实证据，保持中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "c     顾汐311 08月02日 18:11 来自 小幸子超话 小幸子超话 @小幸子· 收到咯美诺大粉饼，真的超级大一个还自带粉扑呢，还有眼影盘非常的日常，还有眉笔跟唇泥真的超级实用，而且巨便宜，这机制太好了",
@@ -384,7 +327,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "微博",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "positive",
+      "ai_reason": "微博好评美诺大粉饼+眼影盘机制好，正向。",
+      "ai_relevant": "related"
     },
     {
       "topic": "【tg】三盘眼影和美诺遮瑕 使用次数不超过5次 20💼",
@@ -401,7 +348,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "微博",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "二手转卖眼影+美诺遮瑕，中性。",
+      "ai_relevant": "related"
     },
     {
       "topic": "c     世与木 11分钟前 来自 黄明昊超话 黄明昊超话 hmh #黄明昊美诺品牌全球代言人#hmh#黄明昊路理# 世界不论好与坏，你每天都是限定版 𝒯𝒽𝓮 𝓌𝓸𝓇𝓁𝒹 𝒾𝓈 𝓰𝓸𝓸𝒹 𝓸𝓇 𝒷𝒶𝒹, 𝓎𝓸𝓊 𝒶𝓇𝓮 𝓁𝒾𝓂𝒾𝓉𝓮𝒹@jjjustin0219",
@@ -418,24 +369,11 @@
       "event_date": "2026-08-19",
       "comments_sample": [],
       "source": "微博",
-      "from": "login_crawl"
-    },
-    {
-      "topic": "c     耶耶鲨鱼_X 今天21:57 来自 黄明昊周边中转站超话 黄明昊周边中转站超话 fus星光卡美诺小卡杂志vr无卡全套精彩ok杂志",
-      "title": "c     耶耶鲨鱼_X 今天21:57 来自 黄明昊周边中转站超话 黄明昊周边中转站超话 fus星光卡美诺小卡杂志vr无卡全套精彩ok杂志",
-      "text": "c     耶耶鲨鱼_X 今天21:57 来自 黄明昊周边中转站超话 黄明昊周边中转站超话 fus星光卡美诺小卡杂志vr无卡全套精彩ok杂志",
-      "platform": "微博",
-      "volume": "",
-      "time": "2026-08-19",
-      "source_url": "https://weibo.com/7563713644/5334109527215564",
-      "sentiment_level": "neutral",
-      "trend_direction": "",
-      "brand": "美诺",
-      "account": "耶耶鲨鱼_X",
-      "event_date": "2026-08-19",
-      "comments_sample": [],
-      "source": "微博",
-      "from": "login_crawl"
+      "from": "login_crawl",
+      "used_hy3": true,
+      "ai_sentiment": "neutral",
+      "ai_reason": "黄明昊代言超话，中性代言运维。",
+      "ai_relevant": "related"
     }
   ],
   "dropdown_words": [

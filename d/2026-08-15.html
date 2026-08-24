@@ -152,16 +152,22 @@ a:hover { text-decoration:underline; }
 .search-empty { padding:22px 16px; text-align:center; color:var(--text2); font-size:13px; }
 .search-loading { padding:18px 16px; text-align:center; color:var(--brand); font-size:13px; font-weight:600; }
 
-/* ─── V22.1 日历快捷按钮（前一天/今天/后一天） ─── */
+/* ─── V22.1 日历快捷按钮（前一天/今天/后一天）·V23 粉色主视觉 ─── */
 .cal-quick { display:flex; align-items:center; gap:6px; }
 .cal-quick button {
-  height:28px; padding:0 10px; border-radius:14px; border:1px solid var(--border);
-  background:#fff; font-size:12px; font-weight:600; color:var(--text2); cursor:pointer;
+  height:28px; padding:0 12px; border-radius:14px; border:1px solid var(--brand);
+  background:var(--brand-light); font-size:12px; font-weight:600; color:var(--brand-dark); cursor:pointer;
   transition:all .18s; white-space:nowrap;
 }
-.cal-quick button:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); background:var(--brand-light); }
-.cal-quick button:disabled { opacity:.35; cursor:not-allowed; }
-.cal-quick button.cq-today { background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-color:transparent; }
+.cal-quick button:hover:not(:disabled) {
+  border-color:var(--brand-2); color:#fff; background:var(--brand-2);
+  box-shadow:0 2px 8px rgba(224,123,166,.35);
+}
+.cal-quick button:disabled { opacity:.4; cursor:not-allowed; }
+.cal-quick button.cq-today {
+  background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-color:transparent;
+  box-shadow:0 2px 8px rgba(224,123,166,.4);
+}
 .cal-quick button.cq-today:hover:not(:disabled) { background:var(--brand-dark); color:#fff; }
 .date-picker { margin-left:2px; }
 
@@ -245,24 +251,6 @@ a:hover { text-decoration:underline; }
   font-weight:600; background:var(--brand); color:#fff;
 }
 .mod-body { padding:18px 24px 24px; }
-
-/* ─── 舆情监控入口卡 ─── */
-.nav-sentinel { background:linear-gradient(135deg,#7B1FA2,#9C27B0); color:#fff !important; border-radius:14px; padding:5px 14px !important; font-weight:700; }
-.nav-sentinel:hover { background:linear-gradient(135deg,#6A1B9A,#7B1FA2); color:#fff !important; text-decoration:none; }
-.sentiment-entry { display:flex; flex-direction:column; gap:14px; }
-.sentiment-entry-desc { margin:0; font-size:14px; line-height:1.7; color:var(--text2); }
-.sentiment-entry-desc b { color:var(--brand); }
-.sentiment-entry-tags { display:flex; flex-wrap:wrap; gap:8px; }
-.sentiment-entry-tags span {
-  padding:4px 12px; border-radius:14px; font-size:12px; font-weight:600;
-  background:#F3E5F5; color:#7B1FA2; border:1px solid #E1BEE7;
-}
-.sentiment-entry-btn {
-  align-self:flex-start; padding:10px 22px; border-radius:24px; font-size:14px; font-weight:700;
-  background:linear-gradient(135deg,#7B1FA2,#9C27B0); color:#fff; text-decoration:none;
-  box-shadow:0 4px 12px rgba(123,31,162,.25); transition:all .2s;
-}
-.sentiment-entry-btn:hover { transform:translateY(-2px); box-shadow:0 6px 16px rgba(123,31,162,.35); color:#fff; text-decoration:none; }
 
 /* ─── 今日必看 ─── */
 .must-see-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
@@ -658,7 +646,7 @@ a:hover { text-decoration:underline; }
   display:flex; align-items:center; gap:6px;
 }
 .topic-data::before { content:'📊'; font-size:14px; }
-.topic-ideas { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:8px; }
+.topic-ideas { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; }
 .topic-idea-card {
   padding:10px 12px; border-radius:8px; background:var(--bg); border:1px solid var(--border);
   font-size:12px; line-height:1.55;
@@ -916,9 +904,9 @@ a:hover { text-decoration:underline; }
   <div class="topbar-right">
     <div class="date-picker">
       <div class="cal-quick">
-        <button onclick="quickDate(-1)" id="btnPrevDay" title="前一天">← 前一天</button>
+        <button onclick="quickDate(-1)" id="btnPrevDay" title="前一天">‹ 前一天</button>
         <button onclick="quickDate(0)" id="btnToday" title="回到今天">今天</button>
-        <button onclick="quickDate(1)" id="btnNextDay" title="后一天">后一天 →</button>
+        <button onclick="quickDate(1)" id="btnNextDay" title="后一天">后一天 ›</button>
       </div>
       <label onclick="toggleCalPopup(event)">📅</label>
       <div class="date-trigger" onclick="toggleCalPopup(event)" id="dateTrigger">2026-08-15</div>
@@ -945,6 +933,23 @@ a:hover { text-decoration:underline; }
 </div>
 
 <div class="main-wrap">
+
+<style>
+.overview-bar{margin:14px 0 4px;padding:14px 16px;background:linear-gradient(135deg,#fff,#f5f8ff);border:1px solid #e6ecf7;border-radius:14px;box-shadow:0 2px 10px rgba(120,140,200,.08);}
+.ov-title{font-size:13px;font-weight:700;color:#5b6b8c;letter-spacing:.5px;margin-bottom:10px;}
+.ov-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;}
+.ov-card{display:flex;flex-direction:column;gap:4px;padding:12px 10px;background:#fff;border:1px solid #eaeef6;border-radius:11px;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s;}
+.ov-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(255,120,150,.18);border-color:#ffc2d1;}
+.ov-label{font-size:12px;color:#7a89a8;white-space:nowrap;}
+.ov-num{font-size:26px;font-weight:800;color:var(--brand);line-height:1;font-variant-numeric:tabular-nums;}
+.ov-unit{font-size:12px;font-weight:600;color:#b0bcd4;margin-left:3px;}
+@media(max-width:1100px){.ov-grid{grid-template-columns:repeat(4,1fr);}}
+@media(max-width:560px){.ov-grid{grid-template-columns:repeat(2,1fr);}.ov-num{font-size:22px;}}
+</style>
+<div class="overview-bar">
+  <div class="ov-title">📊 今日数据总览 · 2026-08-15（仅当日新收录）</div>
+  <div class="ov-grid"><a class="ov-card" href="#sec-must" onclick="document.getElementById('sec-must').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">今日精选</div><div class="ov-num">6<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-endorse" onclick="document.getElementById('sec-endorse').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">明星代言</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-cases" onclick="document.getElementById('sec-cases').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">营销动态</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-hot" onclick="document.getElementById('sec-hot').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">平台热点</div><div class="ov-num">6<span class="ov-unit">个</span></div></a><a class="ov-card" href="#sec-products" onclick="document.getElementById('sec-products').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">新品上新</div><div class="ov-num">24<span class="ov-unit">款</span></div></a><a class="ov-card" href="#sec-ai" onclick="document.getElementById('sec-ai').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">AI营销前沿</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-reports" onclick="document.getElementById('sec-reports').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">行业报告</div><div class="ov-num">0<span class="ov-unit">篇</span></div></a><a class="ov-card" href="#sec-trends" onclick="document.getElementById('sec-trends').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">行业趋势</div><div class="ov-num">3<span class="ov-unit">条</span></div></a></div>
+</div>
 
 <!-- 1. 今日精选（V13 升级） -->
 <section class="module" id="sec-must">
@@ -1125,22 +1130,6 @@ a:hover { text-decoration:underline; }
   </div>
 </section>
 
-<section class="module" id="sec-sentiment">
-  <div class="mod-header">
-    <h2><span class="icon">🛡️</span> 舆情监控</h2>
-    <span class="mod-badge">WebSearch 为主 · 登录态补充</span>
-  </div>
-  <div class="mod-body">
-    <div class="sentiment-entry">
-      <p class="sentiment-entry-desc">实时监测 <b>美诺 MENOW</b> 及竞品（方里 / 芭贝拉 / 嘉利玛 / 花间颂）在微博、小红书、抖音、快手、电商评价等平台的品牌口碑、负面预警、社媒热点话题与代言人舆情。</p>
-      <div class="sentiment-entry-tags">
-        <span>品牌口碑 / 声量</span><span>负面预警 / 危机</span><span>社媒热点话题</span><span>明星 / 代言人舆情</span>
-      </div>
-      <a class="sentiment-entry-btn" href="../sentiment.html?date=2026-08-15" target="_blank" rel="noopener">进入舆情专题页 →</a>
-    </div>
-  </div>
-</section>
-
 </div><!-- /.main-wrap -->
 
 <!-- 节点详情弹窗 -->
@@ -1211,8 +1200,8 @@ function quickDate(offset){
 }
 
 // ─── 日期切换（日历弹窗） ───
-const AVAILABLE_DATES = ["2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];  // 由 Python 注入
-const LOCAL_DATES = ["2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
+const AVAILABLE_DATES = ["2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];  // 由 Python 注入
+const LOCAL_DATES = ["2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
 const CDN_BASE = "https://cdn.jsdelivr.net/gh/robin0324/menow-intel-data@main";         // 由 Python 注入（历史快照 CDN 基址，空则仅本地窗口可用）
 let cpY, cpM; // 当前弹窗显示的年月
 
