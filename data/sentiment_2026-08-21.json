@@ -71,11 +71,15 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://jingfen.jd.com/detail/hd4KVSDhQeSCSsIlMjXFCSsIlMjXF4_3xcjr5rtZJCpr08xkD.html",
-      "event_date": "2026-08-20",
+      "event_date": "2026-08-21",
       "used_hy3": true,
       "ai_sentiment": "positive",
       "ai_reason": "美诺经典粉饼高好评在售，正向品牌口碑。",
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-21",
+      "time_missing": true,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "爆汗实测！美诺粉饼抗汗持妆大考验！！",
@@ -95,7 +99,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-21",
+      "time_missing": true,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "上妆容易卡粉起皮的姐妹一定要去用这个美诺果冻喷雾#服帖底妆 #补水保湿 #妆前喷雾 #妆前 #学生党好物推荐",
@@ -115,7 +123,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "「卡粉起皮」是痛点钩子，核心动作「一定要去用」为强安利推荐，整体为种草短视频",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "偶买噶 跟着化妆师买化妆品的第一篇之定妆粉 冷皮本命粉饼｜美诺P07冰肌粉蓝也太会了 谁懂夏天底妆一到下午就发黄暗沉😭 挖到这块粉蓝渐变蜜粉饼直接解救我的暗沉底妆 💙蓝色中和面部黄气，压掉灰调暗沉 💗粉色自带淡淡的粉嫩气血感 混合上脸不是假白！是通透冷调柔光感，像自带面中补光灯✨ 粉质细到像烟雾，3微米粉体，反复补妆也不卡纹不斑驳 只吸油不吸妆，出油之后越夜越美丽，不会把底妆蹭掉。 21g超大容量，性价比直接拉满，用到天荒地老！ 不含滑石粉，上脸温和不闷痘，混油/油皮狂喜#好物推荐🔥 #测评测评 ✅用法小tips： ▪️全脸定妆：蓝粉混合，一键定妆+提气色 ▪️局部提亮：蓝色拍面中、嘴角、泪沟，改善暗沉 ▪️补妆：出油直接按压，妆面立马恢复干净雾面 冷白皮、冷调中性皮闭眼冲这块冰肌粉蓝！ 几十块拥有清透伪素颜，通勤早八人爱惨了😭",
@@ -129,13 +141,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "是露露啊",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "全文为「冷皮本命」「解救暗沉」「粉质细到像烟雾」「21g超大容量性价比拉满」等强正向种草，明显不是负面",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-21",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "平价实力派美诺粉饼，补妆不卡粉，油光一键直接隐形 #轻薄底妆#长效持妆#通勤美妆#久妆不闷#日常带妆",
@@ -155,7 +171,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "「平价实力派」「补妆不卡粉」「油光一键隐形」均为强正向营销话术，非负面",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "化妆容易出油脱妆的姐妹，都去试试这个#美诺粉饼！随便拍拍，一整天都是柔焦雾面感～#防水防汗不脱妆 #美诺大粉饼 #女生必备好物",
@@ -175,7 +195,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "「出油脱妆」为痛点引入，「都去试试」「柔焦雾面」「防水防汗不脱妆」是强安利，整体种草",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "带孩子出门旅游 拍兰哈顿 #记录真实生活 #美食 #美诺粉饼#提亮粉饼#旅游",
@@ -189,13 +213,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "周兴兰（日常版）",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "还在涂厚厚的粉底闷脸吗？早八赶时间、懒得化妆的姐妹，快来试试这支美诺有色面霜！#爱用好物分享 #美诺有色面霜",
@@ -209,13 +237,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "是潘潘潘",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：爱用（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "把小小羊今天更美打在公屏上！ #哈尔滨旅游#姐姐和妹妹#日常生活#美诺粉饼",
@@ -235,7 +267,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-18",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "底妆邪修被我发现了！ #美诺果冻贴贴喷雾 #美妆#妆前",
@@ -255,7 +291,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "美诺粉饼，便宜又大碗，49.9到手4件套！#龙浩天妹妹 #美诺粉饼 #粉饼推荐 #Ai瑶瑶",
@@ -275,7 +315,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "龙浩天直播间疯抢的美诺粉饼，是真的很好用，一秒变哑光 龙队把价格打下来了，两种色号，现在下单49.9还赠送眼影，唇泥，眉笔，闭眼入姐妹们#粉饼推荐 #化妆好物推荐 #龙浩天 #龙浩天团队 #龙浩天瑶瑶",
@@ -295,7 +339,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：闭眼入,好用（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "才几十…21g大容量真的能用很久！ #美诺粉饼#平价彩妆好物推荐 #粉饼推荐 #上妆轻松拿捏 #妆容提升好物",
@@ -315,7 +363,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "#美诺粉饼 美诺真的是粉饼界卷王！粉质细腻，贴合皮肤，自从了用了之后，真的被美诺粉饼惊艳到了！ #瓶价粉饼 #控油粉饼 #学生党粉饼 #定妆粉饼推荐",
@@ -329,13 +381,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "旺仔牛奶咕噜咕噜",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：惊艳（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "美诺粉饼高倍控油，出汗不花妆，油皮上妆安全感拉满 #轻薄底妆#长效持妆#通勤美妆#久妆不闷#日常带妆",
@@ -349,13 +405,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "董先生（美诺粉饼专场）慕之尧",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "否定式正向：「出汗不花妆」被否定前缀抵消，实为夸产品妆效",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "想悍在脸上的粉饼 平价又大碗#粉饼控油定妆补妆 #美诺粉饼 #超大粉饼#平价粉饼#粉饼推荐",
@@ -375,7 +435,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "一直回购的美诺粉饼！柔雾妆感自带磨皮，轻松锁住底妆，有效控油，油痘肌放心冲，现在入手还有超多赠品#粉饼推荐 #精致底妆必备 #美诺粉饼",
@@ -395,7 +459,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：回购,磨皮（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "韩女水光肌的权威我现在才知道#美诺果冻贴贴喷雾#妆前喷雾#妆前乳#贴贴霜#底妆服帖秘诀",
@@ -415,7 +483,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：服帖（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-19",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "龙悦携手哥哥姐姐终于把姐妹们心心念念的美诺定妆控油粉饼带到了直播间，并以福利价格上了车，还能正装试用你敢信？#龙悦 #龙浩天 #AI瑶瑶#美诺粉饼 #定妆粉饼",
@@ -429,13 +501,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "龙悦🐰(生活号)",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "美诺这块真的夯爆了 容量大还巨好用！！ #上妆易如反掌 #化妆好物推荐 #粉饼推荐 #粉饼种草 #定妆",
@@ -455,7 +531,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：种草,好用（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "美诺粉底液清货！这价到手3瓶！库存特别少！刷到链接还有赶紧薅！#美诺 #粉底液 #平价彩妆 #超便宜超划算",
@@ -475,7 +555,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-19",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "水雾很细腻，上妆水光感直接拉满#美诺果冻喷雾 #妆前喷雾 #干皮底妆 #平价美妆 #妆前救星",
@@ -489,13 +573,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "吨吨吨",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "就这个#美诺有色面霜 你就用吧！一用一个不吱声！#伪素颜 #美诺 #有色面霜 #早八",
@@ -515,7 +603,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "美诺定妆粉饼，21g大容量平价款，强效吸附油脂，柔焦毛孔，打造雾面哑光妆效，又好用又实惠，闭眼冲！#Ai瑶瑶 #龙浩天 #定妆粉饼 #粉饼 #平价好物",
@@ -535,7 +627,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：好用（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "谁懂这块美诺粉饼啊#化妆好物推荐 #粉饼推荐 #美诺粉饼 #妆容提升好物",
@@ -555,7 +651,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "美诺你认真的！#美诺 #美诺粉饼 #粉饼 #控油 #定妆",
@@ -569,13 +669,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "羊羊.",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-22",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-22",
+      "date": "2026-08-22"
     },
     {
       "topic": "纯自用底妆好物推荐🧚🫧 #美诺有色面霜 #素颜霜 #底妆 #有色面霜 #美妆",
@@ -595,7 +699,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "救命！底妆太服帖了！#美诺果冻贴贴喷雾 #妆前喷雾 #极简护肤 #精华喷雾 #薅羊毛的快乐",
@@ -615,7 +723,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正负强信号并存（正：服帖 / 负：救命），需人工核验",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-19",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "细腻粉质轻薄服帖，美诺粉饼，打造雾面柔焦原生感 #轻薄底妆#长效持妆#通勤美妆#久妆不闷#日常带妆",
@@ -635,7 +747,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：服帖（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "美诺粉饼平价中的战斗机，一秒雾面#美诺粉饼 #龙浩天瑶瑶 #主播选品 超高性价比无限回购#持妆不暗沉 #粉饼推荐",
@@ -655,7 +771,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "否定式正向：「持妆不暗沉」被否定前缀抵消，实为夸产品妆效",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "彻底被美诺圈粉！ 别家只做基础定妆，美诺调色更自然、粉质更细腻、持妆更能打，出门暴汗、淋雨都不怕脱妆，清透雾面高级感拉满，性价比太高了！ #美诺 #美诺粉饼 #粉饼 #粉饼推荐 #大容量粉饼",
@@ -675,7 +795,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "否定式正向：「都不怕脱妆」被否定前缀抵消，实为夸产品妆效",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "混油本命美诺粉饼，定妆补妆两用，持久锁住精致妆容 #轻薄底妆#长效持妆#通勤美妆#久妆不闷#日常带妆",
@@ -695,7 +819,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：本命,持久（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "一整个花小钱办大事！#美诺果冻贴贴喷雾 #妆前喷雾 #底妆 #水光肌 #护肤好物分享",
@@ -715,7 +843,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "想要底妆服帖不卡粉，妆前你就用它喷一喷#美诺果冻贴贴喷雾 #妆前喷雾 #妆前乳 #贴贴霜 #水光肌",
@@ -735,7 +867,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "否定式正向：「服帖不卡粉」被否定前缀抵消，实为夸产品妆效",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "我的天呐‼️美诺你不仅粉饼做得好，连妆前果冻贴贴喷雾都出来了！化妆前喷一喷 都不带卡的#美诺果冻贴贴喷雾 #妆前补水喷雾 #化妆好物推荐 #保湿喷雾推荐 #每个爱化妆的女生必备品",
@@ -755,7 +891,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "#美诺 请问呢 你做底妆能不能给同行留点活路！柔焦雾面的同时还透着微光感，谁能不爱#粉饼#持妆不假面 #粉饼推荐#化妆品推荐",
@@ -775,7 +915,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "否定式正向：「持妆不假面」被否定前缀抵消，实为夸产品妆效",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "有些东西失去不会重来 保持美好的心态迎接新的到来 爱你的人一直都会为你考虑 希望你一切安好",
@@ -795,7 +939,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-21",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "谁懂这块粉饼的含金量真的爱惨了，学生党早八根本离不开#美诺粉饼 #美妆 #强烈推荐#上热门 #学生党",
@@ -815,7 +963,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "不知道选什么粉饼都去试试这个#美诺粉饼 #平价彩妆推荐 #性价比超高 #粉饼推荐",
@@ -835,7 +987,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "早上来不及化妆的就用这支素颜霜！随便用用整个人都好看很多#美诺有色面霜 #美诺 #素颜霜推荐 #美诺素颜霜 #强烈推荐",
@@ -855,7 +1011,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "19.9到手美诺散粉！这要不是清仓，这个价格想都不要想！刷到链接还在三盒五盒的囤！#美诺 #散粉 #薅羊毛美妆 #学生党好物推荐 #超便宜超划算",
@@ -875,7 +1035,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-20",
+      "time_missing": false,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "黄明昊周边中转站超话 有人出美诺吗",
@@ -895,7 +1059,11 @@
       "from": "login_crawl",
       "ai_sentiment": "存疑",
       "ai_reason": "正文未呈现明确褒贬态度，按中性处理",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-21",
+      "time_missing": true,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     },
     {
       "topic": "c     1iei 08月21日 22:40 来自 iPhone客户端 美诺你真是又便宜又好用！",
@@ -915,7 +1083,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "命中强正向信号：好用（回购/安利/种草等）",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-21",
+      "time_missing": true,
+      "monitor_date": "2026-08-21",
+      "date": "2026-08-21"
     }
   ],
   "dropdown_words": [
@@ -957,17 +1129,6 @@
       "platform": [
         "京东搜索下拉",
         "小红书搜索"
-      ],
-      "source_url": "",
-      "date": "2026-08-20",
-      "event_date": "2026-08-20"
-    },
-    {
-      "word": "花间颂 粉饼 结块",
-      "negative": true,
-      "platform": [
-        "小红书搜索",
-        "黑猫投诉"
       ],
       "source_url": "",
       "date": "2026-08-20",
@@ -1026,52 +1187,10 @@
       "count": 1
     }
   ],
-  "platform_summary": {
-    "电商评价": "美诺经典粉饼 5 万+ 评论 96% 好评、乐乐熊 P15 100% 好评；竞品商品页数据平稳（嘉利玛小千金粉底霜 10 万评 97% 好评）。",
-    "小红书": "竞品方里/芭贝拉防晒蜜粉饼测评种草为主；花间颂「用几次就结块」讨论持续为品牌负面搜索联想（carryover）。",
-    "抖音": "8/19 抖音美妆 8 月榜国货登顶话题延续（卡姿兰/毛戈平），美诺未上榜但平价反精致叙事可承接；行业 AI 素材/数字人直播工具热度上升。",
-    "微博": "#美妆行业热点# 上美蓄力、#迪丽热巴蝴蝶结马尾# 等话题高热；品牌代言官宣频出（起亚×蔡徐坤、贝德玛×雪允、巴黎欧莱雅×Kristen Bell）。",
-    "快手": "本窗口无美诺/核心竞品显著新舆情，维持中性观望。"
-  },
-  "competitors": [
-    {
-      "name": "方里",
-      "pros": "防晒蜜粉饼 SPF38 三合一叙事获测评口碑，「3D 柔焦锁妆」16 小时持妆被验证；渠道全覆盖天猫/京东/抖音。",
-      "pain": "部分测评提示超级大油田下午需补妆；「防晒值日常够用但暴晒需搭配防晒霜」的边界认知待教育。",
-      "play": "防晒+定妆+养肤三合一功能叙事 + KOL 实测种草，主打通勤/懒人场景。",
-      "high_risk": []
-    },
-    {
-      "name": "芭贝拉",
-      "pros": "大粉饼 24H 控油、干湿两用获油皮好评，性价比定位清晰；三色遮瑕盘等连带品类在售。",
-      "pain": "「控油强但干皮需打底」的肤质局限；遮瑕盘等非核心品认知度分散。",
-      "play": "「油皮本命」场景化测评 + 干湿两用功能卖点，绑定平价高性价比心智。",
-      "high_risk": []
-    },
-    {
-      "name": "嘉利玛",
-      "pros": "4.0 超夯瓶（G-Oil 分油控油）+ 小千金粉底霜 10 万评 97% 好评，精准控油 4.0 技术叙事稳固；与青眼情报联合发布底妆报告强化行业话语权。",
-      "pain": "「干粉工艺含硬脂酸锌（致痘）」在成分党测评中被点名；多产品线价格带略高于美诺。",
-      "play": "技术背书（专利控油/报告发布）+ 品牌福利官「金币粉饼」大促机制。",
-      "high_risk": []
-    },
-    {
-      "name": "花间颂",
-      "pros": "烤粉工艺形成产品壁垒；气垫已售 30 万+ 件；与莹特丽/科丝美诗合作提升品控。",
-      "pain": "「粉饼用几次就结块」社交平台群诉持续（烤粉工艺导油结构短板）；8/17 黑猫投诉「漏发货拒绝退款」新增；PUCO（66.8 元/22g）低价抢量形成直接威胁。",
-      "play": "低价+短期代言（周翊然）+直播打法组合，向散粉/气垫延伸品类。",
-      "high_risk": [
-        "8/17 黑猫投诉：拼多多花间颂美妆专卖店漏发货（盒内仅粉扑无粉饼）拒不退款，涉诉 29.4 元（http://hebei.tousu.sina.com.cn/complaint/view/17400900263）",
-        "烤粉工艺结块群诉持续发酵（创业最前线 7/11 深度报道+小红书用户反馈），官方「保持粉扑干爽」回应被指要求消费者适应产品短板"
-      ]
-    }
-  ],
+  "platform_summary": {},
   "suggestions": [
     "借「网红面霜激素翻车」行业窗口做信任营销：美诺公开粉饼备案编号（粤G妆网备字）+检测报告可核验路径，主打「安全配方+平价」，在小红书/抖音做「成分透明」系列内容。",
-    "对标竞品三合一趋势：美诺防晒蜜粉饼/果冻喷雾强化「多效合一」叙事（防晒+定妆+养肤），与方里 SPF38 形成直接对比内容，抢占「通勤懒人」场景心智。",
-    "花间颂结块投诉持续：美诺内容团队可做「烤粉 vs 压粉工艺」科普向内容（不点名），把「美诺经典压粉工艺/不易结块」做成差异化记忆点，承接其流失客群。",
-    "京东乐乐熊 100% 好评+萌兰 IP 热度：把「萌兰/小熊 IP 谐音梗素材库」节点化复用（开学季/教师节/中秋），用礼赠+悦己双叙事承接七夕后流量。",
-    "行业测评声量上，美诺宜增加「第三方横评露出」：参考 8/19 蜜粉饼横评成功经验，主动参与 9 月开学季横评/好物清单类合作，维持正面舆情密度。"
+    "京东乐乐熊 100% 好评+萌兰 IP 热度：把「萌兰/小熊 IP 谐音梗素材库」节点化复用（开学季/教师节/中秋），用礼赠+悦己双叙事承接七夕后流量。"
   ],
   "overview": {
     "monitor_date": "2026-08-21",
@@ -1079,10 +1198,8 @@
     "美诺_praise": 1,
     "美诺_light_negative": 0,
     "美诺_neutral": 0,
-    "competitor_high_risk_new": 0,
-    "competitor_high_risk_carryover": 1,
     "data_strategy": "WebSearch 为主 + 登录态补充；本次以公开检索 + 黑猫投诉平台 + 主流媒体公开内容覆盖；声量=品牌命中条目数，按实际可抓取范围呈现",
-    "windows_note": "数据窗口：仅展示「监测日前 1 天」实际发生的舆情条目（event_date=2026-08-20）；8/20 当日美诺/竞品显著新舆情较少，以行业测评与商品页数据为主",
-    "next_focus": "8/21-8/23 重点关注：① 开学季内容切换与搜索卡位落地 ② 网红面霜激素事件对行业信任格局的影响 ③ 花间颂结块投诉是否继续发酵（黑猫新增） ④ 抖音 8 月全月榜单美诺是否进入 TOP50 ⑤ 中秋（9/25）预热启动"
+    "windows_note": "数据窗口：仅展示「监测日前 1 天」实际发生的舆情条目（event_date=2026-08-20）；8/20 当日美诺显著新舆情较少，以行业测评与商品页数据为主",
+    "next_focus": "8/21-8/23 重点关注：① 开学季内容切换与搜索卡位落地 ② 网红面霜激素事件对行业信任格局的影响 ③ 抖音 8 月全月榜单美诺是否进入 TOP50 ④ 中秋（9/25）预热启动"
   }
 }

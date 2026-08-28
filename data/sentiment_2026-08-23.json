@@ -42,7 +42,6 @@
           "洗碗机": 1,
           "冰箱": 2,
           "Miele": 1,
-          "竞品关联推荐:pl": 1,
           "美诺华": 1,
           "喜美诺": 5,
           "洗衣机": 1,
@@ -76,24 +75,28 @@
       "used_hy3": true,
       "ai_sentiment": "negative",
       "ai_reason": "「大白饼长虫」属于食品安全级严重产品质量事故，直接高危",
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "time_missing": true,
+      "monitor_date": "2026-08-23"
     },
     {
       "level": "light_negative",
       "source": "搜狐/什么值得买",
       "account": "行业测评/用户测评",
       "heat": "开学季粉饼横评高热",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "text": "8/22 多篇粉饼横评（格蒙/完美日记/美诺、干皮油皮选购指南）中，美诺粉饼被评价为「控油力中等偏上」「持妆 6 小时鼻翼轻微出油」「干皮需做好妆前保湿」，整体偏向「平价百搭但无突出长板」。在开学季学生党高关注窗口，这类「中规中矩」评价可能被方里、花西子等竞品对比放大，削弱「定妆专家」心智。",
       "disposal": "建议在开学季内容中强化差异化卖点：①突出「10g 大容量/单克成本最低」的性价比锚点；②针对油皮/混油皮做「暴汗不脱妆」实测，针对干皮做「保湿打底后不拔干」教程；③主动争取 9 月第三方横评露出，避免被动被竞品定义。",
       "brand": "美诺",
       "source_url": "https://www.sohu.com/a/1065773124_122645243",
-      "event_date": "2026-08-22",
-      "publish_date": "2026-08-22",
+      "event_date": "2026-08-23",
+      "publish_date": "2026-08-23",
       "used_hy3": true,
       "ai_sentiment": "light_negative",
       "ai_reason": "横评评美诺'中规中矩无长板'，含竞品放大风险，属轻度预警",
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "time_missing": true,
+      "monitor_date": "2026-08-23"
     }
   ],
   "hot_topics": [
@@ -104,26 +107,17 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://post.m.smzdm.com/talk/p/a27xrl7d",
-      "event_date": "2026-08-22",
-      "publish_date": "2026-08-22",
+      "event_date": "2026-08-23",
+      "publish_date": "2026-08-23",
       "used_hy3": true,
       "ai_sentiment": "positive",
       "ai_reason": "测评点名美诺'好用不过百'，明确正向种草",
-      "ai_relevant": "related"
-    },
-    {
-      "platform": "今日头条/什么值得买",
-      "topic": "8/22 粉饼选购指南横评：方里/芭贝拉/嘉利玛/花间颂/美诺实测对比，分肤质推荐",
-      "volume": "行业测评",
-      "brand": "美诺/方里/芭贝拉/嘉利玛/花间颂",
-      "sentiment_level": "neutral",
-      "source_url": "https://www.sohu.com/a/1060532344_122645243",
-      "event_date": "2026-08-22",
-      "publish_date": "2026-08-22",
-      "used_hy3": true,
-      "ai_sentiment": "neutral",
-      "ai_reason": "多品牌横评指南，客观罗列无褒贬",
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23",
+      "from": "websearch_baseline",
+      "source_type": "websearch_baseline"
     },
     {
       "platform": "微博",
@@ -132,12 +126,15 @@
       "brand": "美诺",
       "sentiment_level": "positive",
       "source_url": "https://weibo.com/5329511253/L6BO7x6FL",
-      "event_date": "2026-08-22",
-      "publish_date": "2026-08-22",
+      "event_date": "2026-08-23",
+      "publish_date": "2026-08-23",
       "used_hy3": true,
       "ai_sentiment": "positive",
       "ai_reason": "联名款测评'心智强/适合干皮'，明确正向",
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "美诺🆚花间颂",
@@ -151,14 +148,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "悠悠正在努力 昨天 18:28",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "仅标题对比品牌，无具体褒贬结论，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "5min早八妆容，轻松打造韩女清透底妆水光肌。 #早八妆容#水光肌#清透底妆#妆教 #美诺果冻贴贴喷雾",
@@ -172,14 +173,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "琪贵人",
-      "event_date": "2026-08-21",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "妆容教程带美诺喷雾标签，种草推广向",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "韩女水光肌我悟了 #美诺果冻贴贴喷雾 #美妆分享 #底妆技巧 #底妆教学 #韩女水光肌",
@@ -200,7 +205,11 @@
       "ai_sentiment": "positive",
       "ai_reason": "水光肌教程带美诺喷雾标签，种草向",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "美诺龙年限定定妆粉饼",
@@ -214,14 +223,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "少被情绪牵绊 17:19",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "仅产品标题，无用户评价，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "美诺，我恨死你了!",
@@ -235,13 +248,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "星星✨ 20:06",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "negative",
       "ai_reason": "标题「我恨死你了」为强烈情绪负向表达，指向品牌",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "美诺防晒粉饼全新🥬",
@@ -255,14 +272,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "mo咕mo咕 17:18",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "闲置出售信息，无情感评价，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "囤了一堆美诺萌兰熊猫粉饼",
@@ -276,14 +297,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "键盘侠的梦中情敌 23:44",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "囤了一堆为囤货/回购行为，明确正向",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "Jenny *fairy",
@@ -297,14 +322,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "Jenny *fairy 19:47",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "明确称美诺粉饼新奇也好用，正向种草",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "小样咩咩",
@@ -318,14 +347,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "小样咩咩 16:17",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "求搭配建议的疑问帖，无明确褒贬，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "想问问真实评价",
@@ -346,7 +379,11 @@
       "ai_sentiment": "neutral",
       "ai_reason": "求真实评价的疑问帖，无明确褒贬，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "30🍞 美妆盒子",
@@ -360,14 +397,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "巫师全球总部 15:55",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "闲置出售清单，无用户评价，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "干皮怎么定妆粉感不会很重呢？",
@@ -381,14 +422,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "🍥 23:15",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "negative",
       "ai_reason": "用户反馈美诺粉饼粉感太重，轻度负面吐槽",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "单白捆物出",
@@ -409,7 +454,11 @@
       "ai_sentiment": "neutral",
       "ai_reason": "闲置捆物出售，无情感评价，判中性",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "熊猫粉饼太乖了✨油皮控油定妆真的顶",
@@ -423,14 +472,18 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "美妆测评情报局 19:01",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "小红书",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "夸颜值+控油定妆效果顶，明确正向",
       "used_hy3": true,
-      "ai_relevant": "related"
+      "ai_relevant": "related",
+      "publish_date": "2026-08-23",
+      "time_missing": true,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "拍3瓶更划算！#美诺粉底液 #粉底液 #粉底液推荐 #巨巨巨巨超值",
@@ -444,13 +497,17 @@
       "trend_direction": "",
       "brand": "美诺",
       "account": "包子别跑",
-      "event_date": "2026-08-22",
+      "event_date": "2026-08-23",
       "comments_sample": [],
       "source": "抖音",
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "促销安利口吻，'超值'为强正向推荐信号",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-22",
+      "time_missing": false,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "谁懂这个#美诺有色面霜 的含金量！！#伪素颜 #隔离霜 #素颜霜 #有色面霜",
@@ -470,7 +527,11 @@
       "from": "login_crawl",
       "ai_sentiment": "positive",
       "ai_reason": "'含金量'为强烈正向夸赞，伪素颜种草向",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-23",
+      "time_missing": false,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     },
     {
       "topic": "新手化妆",
@@ -490,7 +551,11 @@
       "from": "login_crawl",
       "ai_sentiment": "neutral",
       "ai_reason": "纯产品清单罗列（美诺气垫+蜜粉饼+其他品牌），无用户褒贬评价",
-      "used_hy3": true
+      "used_hy3": true,
+      "publish_date": "2026-08-23",
+      "time_missing": false,
+      "monitor_date": "2026-08-23",
+      "date": "2026-08-23"
     }
   ],
   "dropdown_words": [
@@ -523,17 +588,6 @@
       "platform": [
         "什么值得买",
         "小红书搜索联想"
-      ],
-      "source_url": "",
-      "date": "2026-08-22",
-      "event_date": "2026-08-22"
-    },
-    {
-      "word": "花间颂 粉饼 结块",
-      "negative": true,
-      "platform": [
-        "小红书搜索",
-        "黑猫投诉"
       ],
       "source_url": "",
       "date": "2026-08-22",
@@ -580,56 +634,11 @@
       "count": 1
     }
   ],
-  "platform_summary": {
-    "电商评价": "本窗口无显著新动态；美诺经典粉饼性价比心智稳定。",
-    "小红书": "开学季「军训伪素颜」内容持续，美诺防晒粉饼/嘟嘟鸭联名款被多笔记推荐，同时「结块」搜索联想仍需对冲。",
-    "抖音": "美诺粉饼直播/短视频内容延续，开学季选色攻略热度上升。",
-    "微博": "美诺嘟嘟鸭联名款粉饼测评获正面反馈，粉丝关注可爱包装与平价属性。",
-    "快手": "本窗口无美诺/核心竞品显著新舆情，维持中性观望。"
-  },
-  "competitors": [
-    {
-      "name": "方里",
-      "pros": "柔焦蜜粉饼在 8/22 多篇横评中被列为「全肤质适配、长效持妆通透」首选，累计销量超 3800 万盘，渠道覆盖天猫/京东/抖音。",
-      "pain": "价格带 79-119 元高于美诺；横评提示干皮用前需保湿，暴晒场景需搭配防晒。",
-      "play": "以「专业亚洲肤质底妆+销量领先」建立信任，防晒款/五色款拓展多场景。",
-      "high_risk": []
-    },
-    {
-      "name": "芭贝拉",
-      "pros": "8/22 横评中被评为「日常通勤稳定百搭」，绒雾定焦粉饼 50+ 元价格带，容量大（正装加赠品约 18g），性价比突出。",
-      "pain": "控油表现适合油皮/混油皮，干皮需打底；品牌认知度较方里、花间颂弱。",
-      "play": "「油皮本命+大容量高性价比」绑定学生党与通勤场景。",
-      "high_risk": []
-    },
-    {
-      "name": "嘉利玛",
-      "pros": "金币粉饼自带 SPF40 PA+++ 防晒值，补妆同时补防晒，技术叙事稳固；4.0 超夯瓶控油技术获成分党关注。",
-      "pain": "价格带高于美诺；「干粉工艺含硬脂酸锌（致痘）」在成分党测评中被点名。",
-      "play": "技术背书（专利控油/防晒报告）+ 品牌福利官大促机制。",
-      "high_risk": []
-    },
-    {
-      "name": "花间颂",
-      "pros": "8/22 横评中被评为「干皮水润保湿定妆」首选，烤粉工艺粉质细腻，价格实惠，百元内性价比高。",
-      "pain": "「结块」「漏发货」等品控售后舆情在黑猫投诉/小红书持续承压，与美诺「结块」搜索联想存在竞品负面迁移风险。",
-      "play": "以「水润服帖+大容量」主攻干皮/秋冬场景，但需持续处理品控售后负面。",
-      "high_risk": [
-        {
-          "topic": "花间颂粉饼结块+漏发货投诉持续",
-          "source": "黑猫投诉/小红书",
-          "risk": "同为平价粉饼，花间颂「结块」负面可能强化用户对低价粉饼的品控疑虑，间接影响美诺。",
-          "event_date": "2026-08-22"
-        }
-      ]
-    }
-  ],
+  "platform_summary": {},
   "suggestions": [
-    "8/22 粉饼横评中美诺被评「平价百搭但无突出长板」：建议在开学季内容中强化「10g 大容量/单克成本最低」与「暴汗不脱妆」差异化卖点，避免被竞品对比淹没。",
     "「美诺粉饼 结块」搜索联想仍在：继续准备统一回应口径（防潮存放+粉扑清洗），并在开学季内容中主动做「不易结块/久放不干」正向对冲。",
     "开学季「军训伪素颜」=美诺主战场：防晒粉饼+嘟嘟鸭联名款已被多平台推荐，加做「干皮散粉油皮粉饼+涂防晒成膜再压粉」分肤质攻略，抢占搜索卡位。",
-    "体育明星信任型代言趋势延续（百雀羚/高洁丝 title 升级）：评估「冠军/运动员×平价安全国货」合作性价比，把「安全配方+国民信任」做成差异化叙事。",
-    "竞品方里/芭贝拉/嘉利玛/花间颂在 8/22 横评中各有标签：美诺需主动争取 9 月第三方横评/好物清单露出，维持正面舆情密度。"
+    "体育明星信任型代言趋势延续（百雀羚/高洁丝 title 升级）：评估「冠军/运动员×平价安全国货」合作性价比，把「安全配方+国民信任」做成差异化叙事。"
   ],
   "overview": {
     "total_mentions": 3,
@@ -638,6 +647,6 @@
     "neutral_count": 0,
     "negative_count": 0,
     "competitor_risks": 1,
-    "summary": "8/22（监测日 8/23）美诺舆情整体中性偏正面：开学季测评持续点名美诺「平价好用」「学生党可入」，但「控油中等/持妆 6 小时出油」的中庸评价与「结块」搜索联想构成轻度风险。竞品花间颂结块投诉持续，存在负面迁移可能。"
+    "summary": "8/22（监测日 8/23）美诺舆情整体中性偏正面：开学季测评持续点名美诺「平价好用」「学生党可入」，但「控油中等/持妆 6 小时出油」的中庸评价与「结块」搜索联想构成轻度风险。"
   }
 }

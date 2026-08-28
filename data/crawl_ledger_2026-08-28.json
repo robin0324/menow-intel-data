@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28 10:51",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "一天内（搜索页服务端筛选 + 本地近24h硬过滤，零详情页跳转）",
+      "list_total": 67,
+      "candidates": 16,
+      "excluded": 51,
+      "excluded_by_reason": {
+        "无美诺品牌信号(标题+正文)": 31,
+        "账号黑名单:美诺Meno": 2,
+        "竞品关联推荐:卡姿兰": 1,
+        "竞品关联推荐:诗佩妮": 5,
+        "竞品关联推荐:完美日记": 1,
+        "竞品关联推荐:薇诺娜": 1,
+        "竞品关联推荐:嘉利玛": 2,
+        "居家": 1,
+        "竞品关联推荐:hfp": 1,
+        "竞品关联推荐:尔木萄": 1,
+        "竞品关联推荐:柏瑞美": 2,
+        "仪器": 1,
+        "睫毛": 1,
+        "竞品关联推荐:蜜丝婷": 1
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": 0,
+      "dedup_dup": 0,
+      "collected": 16,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 16,
+      "fetched_at": "2026-08-28 10:36"
+    },
+    {
+      "platform": "抖音",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内（视频 tab）",
+      "list_total": 116,
+      "candidates": 73,
+      "excluded": null,
+      "excluded_by_reason": {
+        "无品牌信号": 1,
+        "官方账号": 19,
+        "美诺SPA": 18,
+        "洗烘": 1,
+        "Miele": 3,
+        "洗衣机": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 6,
+      "collected": 67,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 67,
+      "fetched_at": null
+    },
+    {
+      "platform": "微博",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内",
+      "list_total": 372,
+      "candidates": 32,
+      "excluded": null,
+      "excluded_by_reason": {
+        "官方账号": 7,
+        "喜美诺": 207,
+        "黄明昊": 76,
+        "雷美诺时": 13,
+        "美诺华": 25,
+        "无品牌信号": 4,
+        "盘面": 1,
+        "冰箱": 2,
+        "睫毛": 1,
+        "家电": 1,
+        "洗烘": 2,
+        "财经": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 32,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 32,
+      "fetched_at": null
+    }
+  ]
+}

@@ -11,32 +11,44 @@
     {
       "icon": "🌟",
       "text": "8/23 Spes诗裴丝官宣金允植为蓬松大使，以「专业肽度」绑定多肽养头皮心智，同步推出限定周边与洗护套组。这印证了洗护/美妆品牌把「技术概念+明星同款+粉丝周边」打包的运营思路：美诺可借鉴将「大容量/防晒/萌兰IP」等技术或IP资产，用限定周边和达人礼盒放大粉丝与存量用户的购买动力。",
-      "tag": "代言风向"
+      "tag": "代言风向",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🔬",
       "text": "人民网8/23报道欧诗漫发布自研珍珠美白剂「珍白因」，历经十余年研发并完成全链路研究，标志着国货美妆正从渠道营销驱动转向技术原料创新驱动。美诺在50元价格带可强化「成分透明+工艺可靠」的底层叙事，把平价与「有技术」做绑定，避免只打性价比。",
-      "tag": "技术趋势"
+      "tag": "技术趋势",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🤖",
       "text": "巨量引擎8月升级「全域推广」能力：信息流、搜索、商城、直播等流量入口由系统按经营目标智能调度，并同步上线AI素材工厂与全域人群资产。这意味着美诺的抖音投放要从「单条计划调出价」升级为「素材底座+AI裂变+人群资产经营」，把核心卖点拆成50+变体快速测试。",
-      "tag": "AI营销"
+      "tag": "AI营销",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "📊",
       "text": "抖音美妆8月榜单出炉：彩妆TOP20中国货占17席，卡姿兰登顶、毛戈平升至第二；七夕大促带动美妆团购订单销售额同比增长324%。节点大促对彩妆拉动显著，美诺需提前2-3周锁定中秋、双11达人档期与礼盒机制。",
-      "tag": "平台数据"
+      "tag": "平台数据",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🎒",
       "text": "开学季「军训伪素颜」场景持续高热，美诺防晒粉饼、嘟嘟鸭联名款在多个平台被点名「学生党老牌」「平价好用不过百」。建议美诺在9/1前集中投放「暴汗不脱妆+分肤质选色」妆教矩阵，并主动对冲「结块」搜索联想。",
-      "tag": "平台热点"
+      "tag": "平台热点",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🧸",
       "text": "8/24 JOTOYS官宣王俊凯为首位品牌全球代言人，限定闪光礼包、全国200块大屏与上海荟聚快闪同步上线。潮玩/美妆的边界正在模糊：美诺可观察「偶像经济+限定盲盒/周边」如何拉动客单价与复购，为IP联名与礼盒机制提供参考。",
-      "tag": "代言跨界"
+      "tag": "代言跨界",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     }
   ],
   "endorsements": [
@@ -56,7 +68,9 @@
       "heat_text": "心动 4,875",
       "category": "个护家清",
       "brand_actions": "官宣当日释放完整物料与限定周边，将明星同款与洗护套组（多肽蓬蓬瓶、干发喷雾等）绑定销售，并在天猫、京东、抖音多渠道同步上线。",
-      "reactions": "粉丝关注金允植与国民洗护品牌的契合度，「蓬松大使」头衔与品牌「多肽养头皮」心智高度匹配，限定周边引发饭圈传播。"
+      "reactions": "粉丝关注金允植与国民洗护品牌的契合度，「蓬松大使」头衔与品牌「多肽养头皮」心智高度匹配，限定周边引发饭圈传播。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "织梦森林",
@@ -74,7 +88,9 @@
       "heat_text": "心动 2,673",
       "category": "其他",
       "brand_actions": "游戏端内上线代言人专属剧情、全服应援、兑换码福利、红包雨与盖楼活动；站外通过微博、小红书、抖音、TapTap、公众号、视频号矩阵宣发。",
-      "reactions": "粉丝与玩家关注关晓彤与游戏治愈田园调性的契合度，「种花得真花」等玩法将虚拟代言与实体权益结合，提升UGC与拉新动力。"
+      "reactions": "粉丝与玩家关注关晓彤与游戏治愈田园调性的契合度，「种花得真花」等玩法将虚拟代言与实体权益结合，提升UGC与拉新动力。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "FLOWERLURE花间颂",
@@ -92,7 +108,9 @@
       "heat_text": "心动 1,370",
       "category": "美妆护肤",
       "brand_actions": "提前5天预热物料，官宣日推出限定底妆套组与亲签/小卡周边，在微博、抖音、小红书、快手全域分发种草视频与开箱内容。",
-      "reactions": "粉丝积极做数据并参与抽奖，限定套组与周边机制被视为花间颂延续「男艺人+限定礼盒」流量运营模式的又一案例。"
+      "reactions": "粉丝积极做数据并参与抽奖，限定套组与周边机制被视为花间颂延续「男艺人+限定礼盒」流量运营模式的又一案例。",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源"
     },
     {
       "brand": "天美意",
@@ -110,7 +128,9 @@
       "heat_text": "心动 1,013",
       "category": "服饰箱包",
       "brand_actions": "以「不设限的青春」为概念倒计时预热，官宣后配合天猫品牌超级会员日直播，推广星耀老爹鞋等秋日鞋款。",
-      "reactions": "黄灿灿浪姐后商务价值提升，粉丝关注其与天美意年轻鞋履风格的契合；品牌此前已有侯明昊联名系列，青春大使矩阵持续扩容。"
+      "reactions": "黄灿灿浪姐后商务价值提升，粉丝关注其与天美意年轻鞋履风格的契合；品牌此前已有侯明昊联名系列，青春大使矩阵持续扩容。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "施洛华眼镜",
@@ -128,7 +148,9 @@
       "heat_text": "心动 699",
       "category": "珠宝腕表",
       "brand_actions": "借剧集CP热度，以「植为宇见」为主题推出双人联名款眼镜、粉丝礼盒与明信片，并在七夕节点前后分步释放预热海报、TVC与花絮。",
-      "reactions": "剧粉与CP粉期待联名镜框与氛围感大片，但早期预热妆造也曾引发部分粉丝对品牌审美的讨论；整体被视为国产眼镜品牌切入圈层流量的一次尝试。"
+      "reactions": "剧粉与CP粉期待联名镜框与氛围感大片，但早期预热妆造也曾引发部分粉丝对品牌审美的讨论；整体被视为国产眼镜品牌切入圈层流量的一次尝试。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "JOTOYS",
@@ -146,7 +168,9 @@
       "heat_text": "心动 124",
       "category": "其他",
       "brand_actions": "以「致我们闪光的小热爱」为主题，推出限定闪光礼包、亲签掉落、全国大屏、上海荟聚痛楼与灵感空间快闪，打通线上线下粉丝消费场景。",
-      "reactions": "粉丝对限定礼包与小卡周边热情高，「9:21」发售时间呼应王俊凯生日，快闪与大屏打卡活动进一步强化粉丝参与感与UGC传播。"
+      "reactions": "粉丝对限定礼包与小卡周边热情高，「9:21」发售时间呼应王俊凯生日，快闪与大屏打卡活动进一步强化粉丝参与感与UGC传播。",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源"
     }
   ],
   "marketing_cases": [
@@ -164,7 +188,9 @@
       "source_url": "https://ipacbiz.com/e-l-f-and-bubble-unveil-exciting-limited-edition-skincare-and-makeup-collaboration",
       "category": "美妆护肤",
       "platform": "海外市场/社交媒体",
-      "meino_takeaway": "美诺可在定妆/底妆产品线探索「护肤+彩妆」融合概念，如保湿定妆粉饼、防晒粉饼，用「一物多效」提升50元价格带的产品价值感。"
+      "meino_takeaway": "美诺可在定妆/底妆产品线探索「护肤+彩妆」融合概念，如保湿定妆粉饼、防晒粉饼，用「一物多效」提升50元价格带的产品价值感。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "date": "2026-08-23",
@@ -180,7 +206,9 @@
       "source_url": "https://new.qq.com/rain/a/20260823A0651O00",
       "category": "美妆护肤",
       "platform": "新闻/社交媒体",
-      "meino_takeaway": "美诺可强化成分/工艺透明化叙事，把「大容量烤粉工艺」「防晒特证」「萌兰IP联名」等资产用技术语言包装，提升平价产品的信任感。"
+      "meino_takeaway": "美诺可强化成分/工艺透明化叙事，把「大容量烤粉工艺」「防晒特证」「萌兰IP联名」等资产用技术语言包装，提升平价产品的信任感。",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     }
   ],
   "marketing_news": [
@@ -190,15 +218,9 @@
       "summary": "人民网8/23报道，欧诗漫历经十余年研发推出自研珍珠美白剂「珍白因」，完成全链路研究；品牌年营收约40亿元并推进上市与东南亚出海，被视为国货美妆从渠道营销转向技术原料创新的标志。",
       "impact": "高",
       "source_name": "人民网/国货品牌日报",
-      "source_url": "https://new.qq.com/rain/a/20260823A0651O00"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "雅诗兰黛集团2026财年净销售额突破150亿美元，中国大陆市场份额连续六季度增长",
-      "summary": "雅诗兰黛集团发布2026财年业绩，净销售额超过150亿美元，第四季度有机销售增长5%；中国大陆业务市场份额连续第六个季度提升，线上渠道占比已超50%，约30%新产品源于并服务中国市场。",
-      "impact": "高",
-      "source_name": "Shio/雅诗兰黛财报",
-      "source_url": "https://touch.shio.gov.cn/jsp/jjxw_detail.jsp?id=20260823182924221"
+      "source_url": "https://new.qq.com/rain/a/20260823A0651O00",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "date": "2026-08-23",
@@ -206,7 +228,9 @@
       "summary": "珀莱雅宣布与美国最大专业美妆零售商ULTA Beauty达成合作，2026年11月核心产品将进入约400家美国门店及线上平台，成为首个同时进驻ULTA线上和实体渠道的中国美妆品牌。",
       "impact": "高",
       "source_name": "国货品牌日报",
-      "source_url": "https://new.qq.com/rain/a/20260823A0651O00"
+      "source_url": "https://new.qq.com/rain/a/20260823A0651O00",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     }
   ],
   "industry_reports": [
@@ -222,71 +246,34 @@
         "AI贯穿消费者分析、虚拟试妆、配方筛选与供应链"
       ],
       "source_name": "Research and Markets",
-      "source_url": "https://www.researchandmarkets.com/reports/4989774/cosmetic-products-market-global-forecast-2026"
+      "source_url": "https://www.researchandmarkets.com/reports/4989774/cosmetic-products-market-global-forecast-2026",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
-  "hot_topics": [
-    {
-      "date": "2026-08-23",
-      "time": "2026-08-23",
-      "platform": "抖音电商",
-      "topic": "抖音美妆8月榜单：国货占彩妆TOP20中17席，卡姿兰登顶、毛戈平升至第二",
-      "trend_direction": "持续",
-      "data_support": "七夕大促带动美妆团购订单销售额同比+324%；彩妆破亿品牌从7月5个增至9个；护肤破亿品牌从10个增至23个。",
-      "content_ideas": {
-        "小红书/抖音": "美诺可借势「国货主导+节点大促」叙事，提前2-3周布局中秋/双11达人分销与礼盒机制，强化「学生党第一块粉饼」心智。"
-      },
-      "source_name": "大数跨境/抖音电商",
-      "source_url": "https://applet.10100.com/article/5598475"
-    },
-    {
-      "date": "2026-08-23",
-      "time": "2026-08-23",
-      "platform": "小红书/平台大会",
-      "topic": "2026小红书WILL商业大会：种草进入效果化时代，理解「具体的人」成为生意增长关键",
-      "trend_direction": "上升",
-      "data_support": "小红书日人均打开16次，细分兴趣标签2500个，日均笔记发布900万+，月求购用户2亿+；平台提出「种草效果化」与「人群×场景×情绪」三维洞察。",
-      "content_ideas": {
-        "小红书": "美诺应把产品卖点翻译为具体场景与情绪：「军训暴汗不脱妆=安全感」「10g大容量=学生党省钱底气」，用素人真实体验笔记做口碑沉淀。"
-      },
-      "source_name": "小红书/巨宣网络",
-      "source_url": "https://www.xiao-ad.com/zx/2580.html"
-    },
-    {
-      "date": "2026-08-23",
-      "time": "2026-08-23",
-      "platform": "全网/开学季",
-      "topic": "开学季倒计时：军训伪素颜场景热度不减，美诺防晒粉饼、嘟嘟鸭联名款成学生党推荐常客",
-      "trend_direction": "持续",
-      "data_support": "多平台测评/清单继续点名美诺13#自然色/01透明色；「平价好用不过百」「学生党老牌」心智强。",
-      "content_ideas": {
-        "小红书/抖音": "加做「军训暴汗不脱妆」「分肤质选色攻略」「干皮散粉油皮粉饼」系列妆教10条以上，抢占搜索卡位，并主动对冲「结块」负面联想。"
-      },
-      "source_name": "微博/什么值得买/小红书",
-      "source_url": "https://pinpai.smzdm.com/119568/koubei/p11/"
-    }
-  ],
+  "hot_topics": [],
   "trends": [
     {
       "date": "2026-08-23",
       "title": "趋势：国货美妆从渠道营销驱动转向技术原料创新驱动",
       "summary": "欧诗漫「珍白因」十余年自研、珀莱雅出海ULTA等案例显示，头部国货正通过原料研发、专利壁垒与全球化渠道建立长期竞争力，而非单纯依赖流量投放。",
       "source_name": "人民网/国货品牌日报",
-      "source_url": "https://new.qq.com/rain/a/20260823A0651O00"
+      "source_url": "https://new.qq.com/rain/a/20260823A0651O00",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "time": "2026-08-24",
+      "need_date_check": true
     },
     {
       "date": "2026-08-23",
       "title": "趋势：护肤彩妆融合成为产品创新方向，「一物多效」提升平价品价值感",
       "summary": "e.l.f.×Bubble、防晒粉饼、保湿定妆等融合形态受关注，消费者希望在简化步骤的同时获得护肤功效；对50元价格带而言，「多效合一」是提升 perceived value 的有效路径。",
       "source_name": "IPacBiz/Research and Markets",
-      "source_url": "https://ipacbiz.com/e-l-f-and-bubble-unveil-exciting-limited-edition-skincare-and-makeup-collaboration"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "趋势：平台广告投放从「流量采买」进化为「全域经营」，素材与人群资产成为核心壁垒",
-      "summary": "巨量引擎8月全域推广升级、小红书种草效果化均指向同一方向：广告主需把优质素材底座、AI裂变能力、人群资产分层与直播间协同作为长期竞争力，而非只调出价。",
-      "source_name": "人人都是自媒体/小红书",
-      "source_url": "http://woshizmt.cn/dsp/jrtt/3283.html"
+      "source_url": "https://ipacbiz.com/e-l-f-and-bubble-unveil-exciting-limited-edition-skincare-and-makeup-collaboration",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "time": "2026-08-24",
+      "need_date_check": true
     }
   ],
   "new_products": [
@@ -303,7 +290,9 @@
         "新品",
         "国风",
         "定妆补妆"
-      ]
+      ],
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "date": "2026-08-23",
@@ -318,7 +307,9 @@
         "联名",
         "粉扑",
         "平价"
-      ]
+      ],
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "date": "2026-08-23",
@@ -333,7 +324,9 @@
         "新品",
         "控油",
         "平价"
-      ]
+      ],
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
   "continuous_watch": [
@@ -401,28 +394,5 @@
       "status": "本月推进"
     }
   ],
-  "ai_marketing": [
-    {
-      "date": "2026-08-23",
-      "category": "平台能力更新",
-      "title": "巨量引擎2026年8月「全域推广」全面升级：从单点投放到全域协同经营",
-      "summary": "巨量引擎8月正式发布全域推广能力全面升级，核心理念是以「经营目标」为投放单元，系统自动调度信息流、搜索、商城、直播、图文等全部流量入口；同时上线AI素材工厂、全域人群资产与全域数据驾驶舱，内测广告主获客成本平均下降37%、GMV提升156%。",
-      "data_support": "内测广告主平均获客成本下降37%，整体GMV提升156%；AI素材工厂周均素材消耗量从30条提升至180条。",
-      "insight": "美诺的抖音投放要从「单条计划调出价」升级为「素材底座+AI裂变+人群资产经营」，把「防晒粉饼」「嘟嘟鸭联名」「开学季」核心卖点拆成50+变体，配合直播间全域协同快速测试跑量方向。",
-      "source_name": "人人都是自媒体",
-      "source_url": "http://woshizmt.cn/dsp/jrtt/3283.html",
-      "from": "WebSearch"
-    },
-    {
-      "date": "2026-08-23",
-      "category": "平台大会",
-      "title": "2026小红书WILL商业大会：种草进入效果化时代，读懂「具体的人」决定生意厚度",
-      "summary": "小红书在WILL商业大会提出「种草效果化」与「人群×场景×情绪」三维洞察，强调从「大共识」走向「小共识」；平台日人均打开16次，细分兴趣标签2500个，月求购用户2亿+，IP Solution用原生感搭建品牌与用户的最短信任路径。",
-      "data_support": "日人均打开16次；2500个细分兴趣标签；日均笔记发布900万+；月求购用户2亿+。",
-      "insight": "美诺在小红书应把产品卖点翻译为具体场景与情绪：「军训暴汗不脱妆=安全感」「10g大容量=学生党省钱底气」，用真实用户笔记和素人测评沉淀口碑资产，而非只投硬广。",
-      "source_name": "小红书/巨宣网络",
-      "source_url": "https://www.xiao-ad.com/zx/2580.html",
-      "from": "WebSearch"
-    }
-  ]
+  "ai_marketing": []
 }

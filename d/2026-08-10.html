@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>美诺MENOW彩妆情报资讯台V23</title>
+<style>
+:root {
+  /* V23 VI：粉蓝白自然过渡渐变（浅粉 → 白 → 浅蓝），低饱和、平滑过渡 */
+  --brand: #E07BA6;          /* 柔和粉（主色，按钮/链接） */
+  --brand-2: #C26BA8;        /* 渐变辅粉（hover 深一档） */
+  --brand-light: #FDE8F2;    /* 极浅粉（hover/标签底） */
+  --brand-dark: #C25E8E;     /* 深粉（强调文字/标题） */
+  --brand-accent: #F4A6C7;   /* 浅粉点缀 */
+  --blue-soft: #A9C6F0;      /* 柔和蓝（次要标签/AI） */
+  --blue-light: #E8F1FE;     /* 极浅蓝（AI 标签底） */
+  --blue-deep: #5B7FC7;      /* 深蓝（AI 强调文字） */
+  --gold: #C9A063;           /* 香槟金（点缀/星标，保留） */
+  --gold-light: #F5EBD8;     /* 浅金底 */
+  --bg: #FDF8FB;             /* 近白底（渐变后的底色） */
+  --bg-grad: linear-gradient(150deg, #FCE7F3 0%, #FDF2F9 26%, #FFFFFF 52%, #EAF3FD 78%, #E3EEFC 100%);
+  --card-bg: rgba(255,255,255,.78);   /* 半透明白（磨砂玻璃感，渐变背景透出） */
+  --text: #3D3440;           /* 暖调深紫灰（正文） */
+  --text2: #8A7CA8;          /* 灰紫（次要文字） */
+  --border: #EFE3F2;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 1px 3px rgba(192,110,160,.06), 0 6px 24px rgba(120,140,220,.08);
+  --shadow-hover: 0 4px 10px rgba(192,110,160,.10), 0 14px 34px rgba(120,140,220,.14);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  background: var(--bg-grad); color: var(--text); line-height:1.6; font-size:14px;
+  background-attachment:fixed;
+}
+/* V23：背景稀疏小星星装饰（柔白光点，克制不花哨） */
+body::before {
+  content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background-image:
+    radial-gradient(2px 2px at 8% 12%, rgba(224,123,166,.28) 50%, transparent 51%),
+    radial-gradient(2px 2px at 22% 68%, rgba(169,198,240,.32) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 38% 28%, rgba(224,123,166,.22) 50%, transparent 51%),
+    radial-gradient(2px 2px at 52% 82%, rgba(169,198,240,.28) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 64% 38%, rgba(224,123,166,.24) 50%, transparent 51%),
+    radial-gradient(2px 2px at 78% 58%, rgba(169,198,240,.30) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 88% 16%, rgba(224,123,166,.22) 50%, transparent 51%),
+    radial-gradient(2px 2px at 94% 88%, rgba(169,198,240,.26) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 14% 92%, rgba(255,255,255,.5) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 46% 52%, rgba(255,255,255,.45) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 72% 90%, rgba(255,255,255,.42) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 30% 42%, rgba(255,255,255,.38) 50%, transparent 51%);
+  background-size: 100% 100%;
+}
+a { color:var(--brand); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* ─── V23 左侧侧边栏（半透明磨砂 + 粉蓝渐变感；顶部栏下方开始） ─── */
+.sidebar {
+  position:fixed; left:0; top:56px; bottom:0; width:180px; z-index:120;
+  background:linear-gradient(180deg, rgba(255,255,255,.88) 0%, rgba(252,240,249,.82) 100%);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column; padding:12px 10px; overflow-y:auto;
+  transition:transform .22s ease;
+}
+.side-logo { display:flex; align-items:center; justify-content:center; height:56px; padding:0 8px; border-bottom:1px solid var(--border); margin-bottom:10px; flex-shrink:0; }
+.side-logo img { height:30px; width:auto; object-fit:contain; }
+.side-title { font-size:15px; font-weight:800; color:var(--brand); line-height:1.3; white-space:nowrap; letter-spacing:.2px; }
+.side-title span { display:block; font-size:10px; color:var(--text2); font-weight:500; letter-spacing:.8px; margin-top:2px; }
+.side-group {
+  font-size:12px; color:var(--text2); padding:14px 10px 6px; font-weight:800;
+  letter-spacing:1.5px; border-bottom:1px solid var(--border); margin-bottom:4px;
+}
+.sidebar-nav { display:flex; flex-direction:column; gap:2px; margin-bottom:6px; }
+.sidebar-nav a {
+  display:flex; align-items:center; gap:7px; padding:7px 10px; border-radius:9px;
+  font-size:13px; font-weight:500; color:var(--text2); transition:all .18s; white-space:nowrap;
+}
+.sidebar-nav a .nav-emoji { font-size:14px; width:18px; text-align:center; flex-shrink:0; }
+.sidebar-nav a:hover { background:var(--brand-light); color:var(--brand); text-decoration:none; }
+.sidebar-nav a.active { background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; font-weight:700; box-shadow:0 3px 10px rgba(224,123,166,.28); }
+.sidebar-nav a.active .nav-emoji { color:#fff; }
+
+/* ─── V23 顶部工具条（全宽横跨页面最左→最右；logo+标题在左，搜索+日期在右） ─── */
+.topbar {
+  position:sticky; top:0; z-index:100; background:rgba(255,255,255,.82);
+  backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--border);
+  padding:0 20px; height:56px; display:flex; align-items:center; gap:12px;
+  justify-content:flex-end;
+}
+/* V23 方案B：logo + 标题 + 徽章 合并为一个品牌标识组件（一行、垂直居中） */
+.topbar-brand {
+  margin-right:auto; display:flex; align-items:center; gap:10px; min-width:0; flex-shrink:0;
+}
+.topbar-brand img { height:32px; width:auto; object-fit:contain; }
+.topbar-title {
+  font-size:17px; font-weight:800; color:var(--brand-dark);
+  white-space:nowrap; letter-spacing:.3px; display:flex; align-items:center; gap:8px;
+}
+.topbar-title .ver-badge {
+  font-style:normal; font-size:11px; font-weight:700; color:#fff;
+  background:linear-gradient(135deg,var(--brand),var(--blue-soft)); padding:2px 9px; border-radius:10px;
+  box-shadow:0 2px 6px rgba(224,123,166,.28);
+}
+.hamburger {
+  display:none; width:38px; height:38px; border-radius:10px; border:1px solid var(--border);
+  background:#fff; font-size:17px; cursor:pointer; color:var(--text); align-items:center; justify-content:center;
+}
+.hamburger:hover { border-color:var(--brand); color:var(--brand); }
+.side-mask { display:none; }
+
+/* ─── V22.1/V23 全局搜索（顶部工具条，靠右位于日期快捷前） ─── */
+/* V23：固定搜索容器宽度，避免输入框 focus 变化导致结果弹窗左右抖动 */
+.global-search { position:relative; display:flex; align-items:center; width:260px; flex-shrink:0; }
+.gs-icon { position:absolute; left:12px; font-size:13px; color:var(--text2); pointer-events:none; }
+.global-search input {
+  width:100%; height:34px; border-radius:18px; border:1px solid var(--border);
+  background:#FFFDFE; padding:0 14px 0 34px; font-size:13px; color:var(--text);
+  outline:none; transition:border-color .25s, box-shadow .25s; box-shadow:inset 0 1px 3px rgba(194,24,91,.04);
+}
+.global-search input::placeholder { color:#BFAAB2; }
+.global-search input:focus { border-color:var(--brand-accent); box-shadow:0 0 0 3px rgba(194,24,91,.08); }
+.search-pop {
+  display:none; position:absolute; top:calc(100% + 8px); left:0; z-index:999;
+  width:560px; max-width:80vw; max-height:66vh; overflow-y:auto; overflow-x:hidden;
+  background:#fff; border:1px solid var(--border); border-radius:14px;
+  box-shadow:0 14px 44px rgba(80,30,50,.18); padding:10px 0; animation:cpFadeIn .18s ease;
+  box-sizing:border-box;
+}
+.search-pop.show { display:block; }
+.search-scope { padding:6px 16px 8px; border-bottom:1px solid var(--border); font-size:12.5px; color:var(--text2); }
+.search-scope label { display:flex; align-items:center; gap:6px; cursor:pointer; }
+.search-scope input[type="checkbox"] { width:14px; height:14px; margin:0; flex-shrink:0; accent-color:var(--brand); }
+.search-group { padding:8px 0 4px; }
+.search-group-title {
+  font-size:11.5px; font-weight:800; color:var(--brand); padding:0 16px 4px;
+  letter-spacing:1px; display:flex; align-items:center; gap:6px;
+}
+.search-group-title .sg-count { color:var(--text2); font-weight:600; letter-spacing:0; }
+.search-hit {
+  display:flex; align-items:flex-start; gap:8px; padding:6px 16px; cursor:pointer;
+  transition:background .15s; font-size:13px; line-height:1.5;
+}
+.search-hit:hover { background:var(--brand-light); }
+.search-hit .sh-tag {
+  flex-shrink:0; font-size:10.5px; font-weight:700; color:var(--brand); background:var(--brand-light);
+  border-radius:6px; padding:1px 7px; margin-top:2px; white-space:nowrap;
+}
+.search-hit .sh-title { color:var(--text); }
+.search-empty { padding:22px 16px; text-align:center; color:var(--text2); font-size:13px; }
+.search-loading { padding:18px 16px; text-align:center; color:var(--brand); font-size:13px; font-weight:600; }
+
+/* ─── V22.1 日历快捷按钮（前一天/今天/后一天）·V23 粉色主视觉 ─── */
+.cal-quick { display:flex; align-items:center; gap:6px; }
+.cal-quick button {
+  height:28px; padding:0 12px; border-radius:14px; border:1px solid var(--brand);
+  background:var(--brand-light); font-size:12px; font-weight:600; color:var(--brand-dark); cursor:pointer;
+  transition:all .18s; white-space:nowrap;
+}
+.cal-quick button:hover:not(:disabled) {
+  border-color:var(--brand-2); color:#fff; background:var(--brand-2);
+  box-shadow:0 2px 8px rgba(224,123,166,.35);
+}
+.cal-quick button:disabled { opacity:.4; cursor:not-allowed; }
+.cal-quick button.cq-today {
+  background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-color:transparent;
+  box-shadow:0 2px 8px rgba(224,123,166,.4);
+}
+.cal-quick button.cq-today:hover:not(:disabled) { background:var(--brand-dark); color:#fff; }
+.date-picker { margin-left:2px; }
+
+/* 日期选择器 — 日历弹窗 */
+.date-picker { position:relative; display:flex; align-items:center; gap:6px; }
+.date-picker label { font-size:13px; color:var(--text2); cursor:pointer; white-space:nowrap; user-select:none; }
+.date-picker .date-trigger {
+  padding:5px 14px; border:1px solid var(--border); border-radius:8px;
+  font-size:13px; font-weight:600; color:var(--text); background:#fff;
+  cursor:pointer; transition:all .2s; display:flex; align-items:center; gap:4px;
+}
+.date-picker .date-trigger:hover { border-color:var(--brand); color:var(--brand); }
+/* 日历弹窗 */
+.cal-popup {
+  display:none; position:absolute; top:100%; right:0; margin-top:8px;
+  z-index:9999; background:#fff; border:1px solid var(--border);
+  border-radius:14px; box-shadow:0 8px 32px rgba(0,0,0,.14); padding:16px;
+  min-width:300px; animation:cpFadeIn .18s ease;
+}
+.cal-popup.show { display:block; }
+@keyframes cpFadeIn{ from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+.cp-head {
+  display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;
+}
+.cp-nav { display:flex; align-items:center; gap:4px; }
+.cp-nav button {
+  width:28px; height:28px; border-radius:50%; border:1px solid var(--border);
+  background:#fff; font-size:14px; cursor:pointer; color:var(--text2);
+  display:flex; align-items:center; justify-content:center; line-height:1; transition:all .2s;
+}
+.cp-nav button:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.cp-nav button:disabled { opacity:.25; cursor:not-allowed; }
+.cp-title { font-size:15px; font-weight:700; color:var(--text); min-width:130px; text-align:center; }
+.cp-weekdays {
+  display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-bottom:4px;
+}
+.cp-wd {
+  text-align:center; font-size:11.5px; font-weight:700; color:var(--text2);
+  padding:4px 0;
+}
+.cp-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; }
+.cp-day {
+  aspect-ratio:1; display:flex; align-items:center; justify-content:center;
+  border-radius:8px; font-size:13px; cursor:pointer; transition:all .15s;
+  color:var(--text); border:1px solid transparent; position:relative;
+}
+.cp-day:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.cp-day.cp-other { color:#c4c4cc; }
+.cp-day.cp-today { background:var(--brand); color:#fff; font-weight:700; border-color:var(--brand); }
+.cp-day.cp-today:hover { background:var(--brand-dark); }
+.cp-day.cp-sel:not(.cp-today) { background:#1565C0; color:#fff; font-weight:600; }
+.cp-day.cp-has-data::after {
+  content:''; position:absolute; bottom:3px; width:5px; height:5px;
+  border-radius:50%; background:var(--brand);
+}
+.cp-day.cp-today.cp-has-data::after { background:#fff; }
+.cp-day.cp-sel.cp-has-data::after { background:#fff; }
+
+/* ─── 主容器（V22 侧边栏让位） ─── */
+.main-wrap { max-width:1180px; margin:0 auto 0 180px; padding:24px 26px 60px; }
+
+/* ─── V22.1 模块卡片（质感升级：柔影+微圆角+细腻边框） ─── */
+.module {
+  background:var(--card-bg); border-radius:var(--radius);
+  box-shadow:var(--shadow); margin-bottom:28px; overflow:hidden;
+  border:1px solid var(--border); transition:box-shadow .25s, transform .25s;
+  scroll-margin-top:76px;  /* V22.1b：侧边栏锚点跳转时留出顶部工具条高度，板块标题不被遮挡 */
+}
+.module:hover { box-shadow:var(--shadow-hover); transform:translateY(-1px); }
+.mod-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 24px 14px; border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg, rgba(253,232,242,.65) 0%, rgba(255,255,255,.55) 70%);
+}
+.mod-header h2 {
+  font-size:18px; font-weight:700; color:var(--brand); display:flex; align-items:center; gap:8px;
+}
+.mod-header h2 .icon { font-size:22px; }
+.mod-badge {
+  display:inline-block; padding:3px 10px; border-radius:12px; font-size:11px;
+  font-weight:600; background:var(--brand); color:#fff;
+}
+.mod-body { padding:18px 24px 24px; }
+
+/* ─── 今日必看 ─── */
+.must-see-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
+.must-see-card {
+  padding:16px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s; position:relative; overflow:hidden;
+}
+.must-see-card::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:4px;
+  background:var(--brand); opacity:.7;
+}
+.must-see-card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(232,86,135,.1); }
+.must-see-card .ms-head { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.must-see-card .ms-icon { font-size:22px; flex-shrink:0; }
+.must-see-card .ms-tag {
+  display:inline-flex; align-items:center; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:600;
+}
+.tag-trend { background:#E8F5E9; color:#2E7D32; }
+.tag-urgent { background:#FFEBEE; color:#C62828; }
+.tag-signal { background:#E3F2FD; color:#1565C0; }
+.tag-risk { background:#FFF3E0; color:#EF6C00; }
+.tag-data { background:#F3E5F5; color:#7B1FA2; }
+.must-see-card p { font-size:13.5px; color:var(--text); line-height:1.65; }
+
+/* ─── 代言列表（V2风格） ─── */
+.end-list { display:flex; flex-direction:column; gap:10px; }
+.end-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.end-item:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.end-date {
+  flex-shrink:0; width:72px; text-align:center; padding-top:2px;
+  display:flex; flex-direction:column; align-items:center;
+}
+.end-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.end-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.end-info { flex:1; min-width:0; }
+.end-thumb-wrap { position:relative; margin-top:8px; }
+.end-thumb { display:block; width:72px; height:72px; object-fit:cover; border-radius:10px; border:1px solid var(--border); background:var(--brand-light); cursor:pointer; transition:transform .2s; }
+.end-thumb:hover { transform:scale(1.04); box-shadow:0 2px 8px rgba(0,0,0,.12); }
+.end-thumb-lg { position:absolute; top:50%; left:calc(100% + 10px); right:auto; transform:translateY(-50%); width:300px; height:auto; max-height:400px; max-width:calc(100vw - 120px); object-fit:cover; border-radius:10px; border:1px solid var(--border); background:#fff; box-shadow:0 6px 24px rgba(0,0,0,.18); display:none; z-index:100; }
+.end-thumb-wrap:hover .end-thumb-lg { display:block; }
+.end-brand { font-weight:700; font-size:14px; color:var(--text); }
+.end-detail { font-size:13px; color:var(--text2); margin-top:3px; line-height:1.5; }
+/* V17.1：代言事件卡片增强 — 事件性质副标题 + 营销动作/市场反响区块 + 话题提示 */
+.end-note-sub { font-size:12px; color:var(--text2); margin-top:5px; line-height:1.5; }
+.end-block { display:flex; gap:8px; margin-top:7px; padding:7px 10px; border-radius:8px; border-left:3px solid; align-items:flex-start; }
+.end-block-action { background:#FFF6F0; border-left-color:#FF8A65; }
+.end-block-reaction { background:#EAF3FB; border-left-color:#42A5F5; }
+.end-block-label { flex-shrink:0; font-size:11px; font-weight:700; padding:1px 6px; border-radius:6px; white-space:nowrap; }
+.end-block-action .end-block-label { background:#FFE0CC; color:#E64A19; }
+.end-block-reaction .end-block-label { background:#CFE8FB; color:#1565C0; }
+.end-block-text { font-size:12.5px; color:var(--text); line-height:1.55; }
+.end-tip { font-size:10.5px; color:var(--text2); margin-left:6px; white-space:nowrap; }
+.end-heart-cap { font-size:9px; color:var(--brand); margin-left:2px; font-weight:600; }
+/* V13：宣传话题 hashtag — 粉色字体+浅粉底（V21：支持多个话题各自独立超链接） */
+.end-hashtag {
+  font-size:11.5px; color:var(--brand); margin-top:4px; padding:3px 8px;
+  background:rgba(232,86,135,0.08); border-radius:10px; display:flex; flex-wrap:wrap;
+  align-items:center; gap:3px 6px; font-weight:500; max-width:100%;
+}
+.end-brand-link { color:var(--text); text-decoration:none; }
+.end-brand-link:hover { color:var(--brand); text-decoration:underline; }
+/* V14：话题超链接样式 — 粉色（V21：每个话题独立 chip 链接） */
+.end-hashtag-link {
+  color:var(--brand-dark); text-decoration:none; transition:opacity .2s;
+  padding:1px 5px; border-radius:8px; background:rgba(232,86,135,.12); display:inline-block;
+}
+.end-hashtag-link:hover { opacity:.7; text-decoration:underline; }
+/* end-action: 新签/续约 — 深蓝字+浅蓝底+字体同title；end-tag-level/star: 粉底白字 */
+.end-source {
+  margin-top:5px; font-size:12px;
+}
+/* 日期徽标（案例/热点/趋势 复用明星动态同款「月/日」大数字样式） */
+.case-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.case-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.case-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.topic-date, .trend-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.topic-date .d-month, .trend-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.topic-date .d-day, .trend-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.date-empty { font-size:12px; color:#b9b9c0; }
+.empty-note { padding:22px 16px; text-align:center; color:var(--text2); font-size:13px; background:var(--brand-light); border-radius:10px; }
+.end-source a {
+  display:inline-flex; align-items:center; gap:3px; color:var(--brand);
+  font-size:12px; padding:2px 6px; border-radius:4px; background:var(--brand-light);
+}
+.end-source a:hover { background:var(--brand); color:#fff; text-decoration:none; }
+.end-risk {
+  flex-shrink:0; padding:4px 10px; border-radius:8px; font-size:11px; font-weight:600;
+  text-align:center; min-width:48px;
+}
+.risk-low { background:#E8F5E9; color:#2E7D32; }
+.risk-mid { background:#FFF3E0; color:#EF6C00; }
+.risk-high { background:#FFEBEE; color:#C62828; }
+/* 代言风险：增加「舆情风险等级」标签 */
+.end-risk-wrap { flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:2px; min-width:74px; }
+.end-risk-label { font-size:10px; color:var(--text2); font-weight:600; letter-spacing:.3px; white-space:nowrap; }
+.end-risk-note { font-size:9px; color:var(--text2); text-align:center; line-height:1.2; max-width:74px; }
+/* V14：心动值展示 */
+.end-heart {
+  display:flex; align-items:center; gap:4px; padding:5px 10px;
+  background:linear-gradient(135deg, #FFF0F5 0%, #FFE8EE 100%);
+  border:1px solid var(--brand-accent); border-radius:10px;
+  margin-bottom:6px; justify-content:center;
+}
+.end-heart-icon { font-size:15px; color:#FF6B81; }
+.end-heart-val { font-size:14px; font-weight:700; color:var(--brand-dark); }
+
+/* ─── V12 新增：今日精选描述 / 持续关注 / 美诺启示 ─── */
+.sec-desc { padding:4px 24px 0; font-size:12.5px; color:var(--text2); line-height:1.6; }
+.tag-cross { background:#E0F7FA; color:#00838F; }
+
+/* 持续关注 */
+.watch-block { margin:6px 24px 22px; padding:14px 16px; border:1px dashed var(--brand-accent); border-radius:var(--radius-sm); background:var(--brand-light); }
+.watch-hd { font-weight:700; font-size:14px; color:var(--brand); margin-bottom:10px; }
+.watch-hd .watch-sub { font-size:11px; color:var(--text2); font-weight:400; }
+.watch-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:8px 14px; }
+.watch-item { display:flex; gap:8px; align-items:flex-start; font-size:12.5px; color:var(--text); line-height:1.55; }
+.watch-icon { flex-shrink:0; }
+.watch-text { flex:1; }
+
+/* 美诺启示 & 本周行动 */
+.module-insight { border-color:var(--brand-accent); }
+.module-insight .mod-header h2 { color:var(--brand); }
+.insp-block, .act-block { margin-bottom:18px; }
+.insp-title, .act-title { font-size:15px; font-weight:700; color:var(--text); margin:6px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+.insp-list { display:flex; flex-direction:column; gap:10px; }
+.insp-item { display:flex; gap:10px; align-items:flex-start; padding:12px 14px; background:#fff; border:1px solid var(--border); border-radius:var(--radius-sm); }
+.insp-num { flex-shrink:0; width:22px; height:22px; border-radius:50%; background:var(--brand); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+.insp-item p { margin:0; font-size:13.5px; color:var(--text); line-height:1.65; }
+/* V21：启发文案高亮 — 加粗 + 下方高亮横线（对美诺可借鉴/可复用建议） */
+.insight-hl {
+  font-weight:700;
+  text-decoration:underline;
+  text-decoration-color:var(--brand-accent);
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+  background:linear-gradient(transparent 62%, rgba(194,24,91,.07) 62%);
+  padding:0 1px;
+  border-radius:2px;
+}
+/* V21→V23：AI 营销专属标签（V23 改蓝系，与粉系内容标签区分） */
+.ai-tag {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:700;
+  background:linear-gradient(135deg,var(--blue-deep),var(--blue-soft)); color:#fff; letter-spacing:.5px;
+  box-shadow:0 1px 4px rgba(91,127,199,.32);
+}
+/* V22/V23：AI 营销前沿列表 */
+.ai-list { display:flex; flex-direction:column; gap:12px; }
+.ai-no-src { font-size:11px; color:#C9962E; background:var(--gold-light); padding:1px 8px; border-radius:8px; margin-left:8px; white-space:nowrap; }
+/* V23：AI 标签与标题同一行 */
+.ai-title-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.ai-title-link, .ai-title-text {
+  font-size:14.5px; font-weight:700; color:var(--text); line-height:1.5;
+}
+.ai-title-link:hover { color:var(--brand); text-decoration:underline; }
+/* V21：新品更新频率标记 */
+.freq-tag {
+  display:inline-flex; align-items:center; gap:4px; margin-left:10px;
+  padding:3px 12px; border-radius:12px; font-size:11.5px; font-weight:700;
+  background:#FFF8E1; color:#B26A00; border:1px solid #FFE082;
+}
+/* V21：成功案例 takeaway（可复用打法） */
+.case-takeaway {
+  margin-top:8px; padding:8px 12px; background:#FFF8E1; border-left:3px solid #FF9F1C;
+  border-radius:6px; font-size:12.5px; color:#6D4C00; line-height:1.55;
+}
+/* V21：明星代言动态筛选按钮（仿新品品牌筛选） */
+.end-filters { display:flex; flex-direction:column; gap:10px; margin-bottom:12px; }
+.end-filter-row { display:flex; align-items:flex-start; gap:8px; flex-wrap:wrap; }
+.end-filter-btns { display:flex; flex-wrap:wrap; gap:6px; flex:1; min-width:0; align-items:center; }
+.end-filters-label { font-size:12.5px; color:var(--text2); font-weight:600; flex-shrink:0; padding-top:4px; }
+.end-filter-btn {
+  padding:4px 16px; border-radius:14px; border:1px solid var(--border); cursor:pointer;
+  font-size:12.5px; font-weight:600; color:var(--text); background:#fff; transition:all .2s;
+}
+.end-filter-btn:hover { transform:scale(1.04); box-shadow:0 2px 6px rgba(0,0,0,.1); }
+.end-filter-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); font-weight:800; box-shadow:0 2px 8px rgba(232,86,135,.25); }
+.end-filter-empty { display:none; padding:18px 16px; text-align:center; color:var(--text2); font-size:13px; background:var(--brand-light); border-radius:10px; }
+.act-list { display:flex; flex-direction:column; gap:10px; }
+.act-item { display:flex; align-items:center; gap:12px; padding:12px 14px; background:#fff; border:1px solid var(--border); border-radius:var(--radius-sm); flex-wrap:wrap; }
+.act-text { flex:1; min-width:260px; font-size:13.5px; color:var(--text); line-height:1.6; }
+.act-owner { font-size:12px; color:var(--text2); white-space:nowrap; }
+.act-status { flex-shrink:0; padding:3px 10px; border-radius:8px; font-size:11px; font-weight:600; }
+.st-doing { background:#E3F2FD; color:#1565C0; }
+.st-done { background:#E8F5E9; color:#2E7D32; }
+.st-todo { background:#F5F5F5; color:#757575; }
+
+/* ─── 营销案例列表 ─── */
+.case-list { display:flex; flex-direction:column; gap:12px; }
+.case-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.case-item:hover { border-color:var(--brand-accent); box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.case-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:8px; }
+.case-title { font-weight:700; font-size:14.5px; color:var(--text); }
+.case-type {
+  flex-shrink:0; padding:3px 10px; border-radius:12px; font-size:11px; font-weight:600;
+  background:var(--brand-light); color:var(--brand-dark);
+}
+/* V16：成功案例精选 — 蓝色类型标签（置于标题前）+ 标题来源超链 */
+.case-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+.case-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.case-title-link { text-decoration:none; color:var(--text); }
+.case-title-link:hover { color:var(--brand); text-decoration:underline; }
+.case-src-line { font-size:12px; color:var(--text2); margin-top:8px; }
+.case-brand { font-size:12.5px; color:var(--brand); font-weight:600; margin-bottom:6px; }
+.case-summary { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:8px; }
+.case-meta { display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:var(--text2); }
+.case-meta span { display:inline-flex; align-items:center; gap:3px; }
+.case-signals {
+  margin-top:8px; padding:8px 12px; background:var(--brand-light); border-radius:8px;
+  font-size:12.5px; color:var(--brand-dark); line-height:1.55;
+}
+.case-src { margin-top:8px; }
+.case-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light); border:1px solid var(--border);
+}
+.case-src a:hover { background:var(--brand); color:#fff; text-decoration:none; border-color:var(--brand); }
+
+/* ─── V15 新增：营销动态灵感列表 ─── */
+.mn-list { display:flex; flex-direction:column; gap:10px; }
+.mn-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border); background:#fff; transition:all .2s;
+}
+.mn-item:hover { background:var(--brand-light); border-color:var(--brand-accent); }
+.mn-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.mn-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.mn-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.mn-main { flex:1; min-width:0; }
+.mn-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px; }
+.mn-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.mn-src-line { font-size:12px; color:var(--text2); margin-top:2px; }
+.mn-title { font-weight:700; font-size:14px; color:var(--text); text-decoration:none; }
+.mn-title:hover { color:var(--brand); text-decoration:underline; }
+.mn-brand { font-size:12.5px; color:var(--brand); font-weight:600; margin-bottom:5px; }
+.mn-sum { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:7px; }
+.mn-insight {
+  font-size:12.5px; color:var(--brand-dark); line-height:1.6; padding:8px 12px;
+  background:linear-gradient(135deg, #FFF0F5 0%, #FFE8EE 100%); border-left:3px solid var(--brand);
+  border-radius:0 8px 8px 0; font-weight:700;
+  border-bottom:3px solid var(--brand-accent);  /* V22：启发文案下方高亮横线 */
+}
+.case-block { margin:6px 24px 22px; padding:14px 16px; border:1px dashed var(--brand-accent); border-radius:var(--radius-sm); background:var(--brand-light); }
+
+/* ─── V15 新增：行业报告列表 ─── */
+.rep-list { display:flex; flex-direction:column; gap:12px; }
+.rep-item {
+  display:flex; align-items:stretch; gap:14px; padding:14px 16px;
+  border-radius:var(--radius-sm); border:1px solid var(--border); background:#fff; transition:all .2s;
+}
+.rep-item:hover { background:var(--brand-light); border-color:var(--brand-accent); box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.rep-date { flex-shrink:0; width:72px; text-align:center; padding-top:2px; }
+.rep-date .d-month { font-size:11px; color:var(--text2); text-transform:uppercase; }
+.rep-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
+.rep-main { flex:1; min-width:0; }
+.rep-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px; }
+.rep-cat {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600;
+  background:#E3F2FD; color:#1565C0;
+}
+.rep-key {
+  flex-shrink:0; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:700;
+  background:var(--brand); color:#fff;
+}
+.rep-title { font-weight:700; font-size:14.5px; color:var(--text); text-decoration:none; }
+.rep-title:hover { color:var(--brand); text-decoration:underline; }
+.rep-src { font-size:12px; color:var(--text2); margin-bottom:7px; }
+.rep-sum { font-size:13px; color:var(--text); line-height:1.7; margin-bottom:8px; }
+.rep-data {
+  font-size:12.5px; color:var(--brand-dark); line-height:1.6; padding:8px 12px;
+  background:var(--brand-light); border-radius:8px; border:1px solid var(--brand-accent);
+}
+
+/* ─── 竞品上新表格（V2风格） ─── */
+.prod-table { width:100%; border-collapse:collapse; font-size:13px; }
+.prod-table thead th {
+  background:linear-gradient(135deg,var(--brand),var(--brand-dark)); color:#fff;
+  padding:11px 14px; text-align:left; font-weight:600; font-size:12.5px;
+  white-space:nowrap; border:none;
+}
+.prod-table thead th:first-child { border-radius:8px 0 0 0; }
+.prod-table thead th:last-child { border-radius:0 8px 0 0; }
+.prod-table tbody tr { border-bottom:1px solid var(--border); transition:background .15s; }
+.prod-table tbody tr:hover { background:var(--brand-light); }
+.prod-table tbody td { padding:11px 14px; vertical-align:top; line-height:1.5; }
+.prod-table tbody tr:last-child td:first-child { border-radius:0 0 0 8px; }
+.prod-table tbody tr:last-child td:last-child { border-radius:0 0 8px 0; }
+.prod-brand-name { font-weight:700; color:var(--text); }
+.prod-pname { color:var(--text2); font-size:12.5px; }
+.prod-price { font-weight:700; color:var(--brand); white-space:nowrap; }
+.prod-sales { font-size:12px; color:var(--text2); }
+.prod-sales b { color:var(--brand-dark); }
+.prod-link a {
+  display:inline-flex; align-items:center; gap:3px; font-size:12px; color:#fff;
+  background:var(--brand); padding:4px 12px; border-radius:6px; font-weight:500;
+  transition:background .2s; white-space:nowrap;
+}
+.prod-link a:hover { background:var(--brand-dark); text-decoration:none; }
+.prod-src-name { font-size:11px; color:var(--text2); margin-top:2px; }
+
+/* ─── 日历模块 ─── */
+.cal-controls { display:flex; align-items:center; gap:16px; margin-bottom:16px; flex-wrap:wrap; }
+.cal-month-switch { display:flex; align-items:center; gap:8px; }
+.cal-month-btn {
+  padding:7px 16px; border:1px solid var(--border); border-radius:8px; background:#fff;
+  font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; color:var(--text);
+}
+.cal-month-btn:hover { border-color:var(--brand); color:var(--brand); }
+.cal-month-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+.cal-current-month { font-size:16px; font-weight:700; color:var(--text); min-width:140px; text-align:center; }
+
+/* 返回今天按钮 */
+.cal-today-btn {
+  padding:6px 14px; border-radius:16px; font-size:12px; font-weight:600;
+  background:var(--brand); color:#fff; border:none; cursor:pointer;
+  transition:all .2s; white-space:nowrap;
+}
+.cal-today-btn:hover { background:var(--brand-dark); }
+
+/* V19：节日类型筛选按钮（4色区分） */
+.cal-type-divider { color:var(--text3); font-size:12px; margin:0 4px; }
+.cal-type-btn {
+  padding:4px 12px; border-radius:14px; font-size:11px; font-weight:700;
+  border:1.5px solid var(--c); cursor:pointer; transition:all .2s; white-space:nowrap;
+  background:var(--b); color:var(--c);
+}
+.cal-type-btn:hover { transform:scale(1.05); box-shadow:0 2px 6px rgba(0,0,0,.1); }
+.cal-type-btn.active { background:var(--c); color:#fff; font-weight:800; box-shadow:0 2px 8px rgba(0,0,0,.2); }
+
+/* ─── V23 新品上新：品牌筛选按钮（与明星代言筛选按钮样式完全一致） ─── */
+.prod-brand-filters { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:12px; }
+.prod-brand-filters-label { font-size:12.5px; color:var(--text2); font-weight:600; }
+.prod-brand-btn {
+  padding:4px 16px; border-radius:14px; border:1px solid var(--border); cursor:pointer;
+  font-size:12.5px; font-weight:600; color:var(--text); background:#fff; transition:all .2s;
+}
+.prod-brand-btn:hover { transform:scale(1.04); box-shadow:0 2px 6px rgba(0,0,0,.1); }
+.prod-brand-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); font-weight:800; box-shadow:0 2px 8px rgba(232,86,135,.25); }
+/* 规格列单元格 */
+.prod-spec { font-weight:700; color:var(--brand-dark); }
+/* 卖点功效列单元格 */
+.prod-selling { font-size:12px; line-height:1.5; color:var(--text); }
+.prod-selling .sp-tag { display:inline-block; padding:1px 7px; margin:1px 3px 1px 0; border-radius:8px; background:#FFF0F5; color:var(--brand-dark); font-size:11px; font-weight:600; }
+.cal-type-reset {
+  padding:4px 10px; border-radius:14px; font-size:11px; font-weight:600;
+  background:#f5f5f5; border:1px solid #ddd; cursor:pointer; transition:all .2s;
+  color:var(--text2); white-space:nowrap;
+}
+.cal-type-reset:hover { background:#e0e0e0; color:var(--text); }
+
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:3px; background:rgba(232,86,135,0.07); padding:3px; border-radius:12px; }
+.cal-head { text-align:center; font-size:12px; font-weight:700; color:var(--text2); padding:8px 0; }
+.cal-day {
+  aspect-ratio:1.45; display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  border-radius:10px; font-size:13px; cursor:pointer; transition:all .2s; position:relative;
+  border:1px solid transparent; background:#fff;
+  padding-top:6px;
+}
+.cal-day:hover { border-color:var(--brand-accent); background:var(--brand-light); }
+.cal-day.today { background:var(--brand); color:#fff; font-weight:700; border-color:var(--brand); }
+.cal-day.today:hover { background:var(--brand-dark); }
+.cal-day.has-node { font-weight:600; color:var(--brand-dark); }
+.cal-day.has-node.today { color:#fff; }
+.cal-node-dot {
+  position:absolute; bottom:4px; width:5px; height:5px; border-radius:50%;
+  background:var(--brand);
+}
+.cal-day.today .cal-node-dot { background:#fff; }
+.cal-empty { aspect-ratio:1.45; }
+
+/* ─── 热点话题 ─── */
+.topic-list { display:flex; flex-direction:column; gap:14px; }
+.topic-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s;
+}
+.topic-item:hover { border-color:var(--brand-accent); }
+.topic-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
+.topic-platform {
+  display:inline-flex; align-items:center; gap:5px; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; background:#E3F2FD; color:#1565C0; flex-shrink:0;
+}
+.topic-title { font-weight:700; font-size:14.5px; color:var(--text); text-decoration:none; }
+.topic-title:hover { color:var(--brand); text-decoration:underline; }
+.topic-desc { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:10px; }
+.topic-data {
+  padding:8px 12px; background:linear-gradient(135deg,#FFF0F5,#FCE4EC); border-radius:8px;
+  font-size:12.5px; color:#C93868; font-weight:600; margin-bottom:10px;
+  display:flex; align-items:center; gap:6px;
+}
+.topic-data::before { content:'📊'; font-size:14px; }
+.topic-ideas { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; }
+.topic-idea-card {
+  padding:10px 12px; border-radius:8px; background:var(--bg); border:1px solid var(--border);
+  font-size:12px; line-height:1.55;
+}
+.topic-idea-card strong { display:block; margin-bottom:4px; color:var(--brand-dark); font-size:12px; }
+.topic-src { margin-top:8px; }
+.topic-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light);
+}
+.topic-src-line { font-size:12px; color:var(--text2); margin-top:8px; }
+/* V17 新品标签：核心竞对（蓝）/ 本品（绿）/ 竞品（浅灰） */
+.prod-tag { display:inline-flex; align-items:center; padding:1px 7px; border-radius:8px; font-size:10.5px; font-weight:700; margin-left:6px; vertical-align:middle; }
+.prod-tag-core { background:#E3F2FD; color:#1565C0; }
+.prod-tag-self { background:#E8F5E9; color:#2E7D32; }
+.prod-tag-rival { background:#F0F0F0; color:#6B6560; }
+/* V17 本周行动高亮（未来重点节点预告） */
+.act-item.act-highlight { border-color:#FFB300; background:linear-gradient(135deg,#FFF8E1,#FFFBF0); box-shadow:0 0 0 2px rgba(255,179,0,.22); }
+.act-highlight .act-text { font-weight:700; color:#8a5a00; }
+/* V17 持续关注标签提示 */
+.watch-tag { display:inline-flex; align-items:center; padding:1px 7px; border-radius:8px; font-size:10.5px; font-weight:700; background:#FFF0F5; color:var(--brand-dark); margin-right:6px; }
+
+/* ─── 行业趋势 ─── */
+.trend-list { display:flex; flex-direction:column; gap:12px; }
+.trend-item {
+  padding:16px 18px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:#fff; transition:all .2s; border-left:4px solid var(--brand);
+}
+.trend-item:hover { box-shadow:0 2px 8px rgba(232,86,135,.08); }
+.trend-head { display:flex; align-items:center; gap:8px; margin-bottom:6px; flex-wrap:wrap; }
+.trend-plat {
+  display:inline-flex; align-items:center; gap:4px; padding:3px 10px; border-radius:12px;
+  font-size:11.5px; font-weight:600; background:#E3F2FD; color:#1565C0; flex-shrink:0;
+}
+.trend-title { font-weight:700; font-size:14.5px; color:var(--text); }
+.trend-title:hover { color:var(--brand); }
+.trend-summary { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:8px; }
+.trend-data {
+  padding:8px 12px; background:var(--brand-light); border-radius:8px;
+  font-size:12.5px; color:var(--brand-dark); font-weight:600; margin-bottom:8px;
+}
+.trend-src a {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--brand);
+  padding:3px 10px; border-radius:6px; background:var(--brand-light);
+}
+
+/* ─── 弹窗 ─── */
+.overlay {
+  display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,.45);
+  align-items:center; justify-content:center; padding:20px;
+}
+.overlay.show { display:flex; }
+.modal {
+  background:#fff; border-radius:var(--radius); max-width:640px; width:100%; max-height:85vh;
+  overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.2); animation:modalIn .25s ease;
+}
+@keyframes modalIn { from{opacity:0;transform:scale(.95) translateY(10px);} to{opacity:1;transform:scale(1) translateY(0);} }
+.modal-hd {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 22px; border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg,var(--brand-light),#fff);
+  border-radius:var(--radius) var(--radius) 0 0;
+}
+.modal-hd h3 { font-size:17px; font-weight:700; }
+.modal-close {
+  width:32px; height:32px; border-radius:50%; border:none; background:var(--bg);
+  font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  color:var(--text2); transition:all .2s;
+}
+.modal-close:hover { background:var(--brand); color:#fff; }
+.modal-bd { padding:20px 22px 24px; }
+.creative-split { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
+.creative-col {
+  padding:16px; border-radius:var(--radius-sm); border:1px solid var(--border);
+  background:var(--bg);
+}
+.creative-col h4 { font-size:14px; margin-bottom:10px; color:var(--text); }
+.creative-col p { font-size:13px; color:var(--text2); line-height:1.7; white-space:pre-line; }
+.creative-list { margin:4px 0 0; padding-left:18px; }
+.creative-list li { font-size:13px; color:var(--text2); line-height:1.75; margin-bottom:7px; }
+.creative-list li:last-child { margin-bottom:0; }
+.creative-abandon { font-size:13px; color:var(--text2); background:#f6f6f8; border:1px dashed #ddd; border-radius:8px; padding:11px 13px; margin-top:4px; }
+.platform-events { margin-top:14px; padding:12px; background:#FFF8E1; border-radius:8px; }
+.platform-events h4 { font-size:13px; margin-bottom:8px; color:#F57F17; }
+.platform-events ul { padding-left:18px; font-size:12.5px; color:var(--text2); }
+.platform-events li { margin-bottom:4px; }
+
+/* ─── 分页/翻页导航（>5条时启用） ─── */
+.pager-nav { display:flex; align-items:center; justify-content:center; gap:16px; margin-top:16px; }
+.pager-btn {
+  padding:7px 18px; border:1px solid var(--border); border-radius:20px; background:#fff;
+  font-size:13px; font-weight:600; cursor:pointer; color:var(--text2); transition:all .2s;
+}
+.pager-btn:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.pager-btn:disabled { opacity:.4; cursor:not-allowed; }
+.pager-info { font-size:13px; color:var(--text2); font-weight:600; }
+/* V23.2：翻页跳转输入框 */
+.pager-jump { display:inline-flex; align-items:center; gap:6px; font-size:13px; color:var(--text2); font-weight:600; }
+.pager-input {
+  width:52px; padding:6px 8px; border:1px solid var(--border); border-radius:20px;
+  text-align:center; font-size:13px; font-weight:700; color:var(--text); background:#fff;
+  -moz-appearance:textfield;
+}
+.pager-input::-webkit-outer-spin-button, .pager-input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
+.pager-input:focus { outline:none; border-color:var(--brand); }
+.pager-go { padding:6px 14px; }
+
+/* ─── 代言：头衔标签化 + 来源右移 ─── */
+.end-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:5px; align-items:center; }
+/* V17：代言三标签完全统一尺寸（头衔/动作/品类） */
+.end-tag {
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+}
+.end-tag-level { background:var(--brand); color:#fff; }   /* 代言头衔 — 粉底白字 */
+.end-tag-star { background:var(--brand); color:#fff; }       /* 艺人身份 — 同上 */
+.end-action {                                                    /* 新签/续约 — 深蓝字+浅蓝底 */
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+  background:#E3F2FD; color:#1565C0;
+}
+.end-cat {                                                       /* 代言品类 — 浅绿底+绿字 */
+  display:inline-flex; align-items:center; justify-content:center; padding:2px 9px; border-radius:10px;
+  font-size:11px; font-weight:700; line-height:1.6; white-space:nowrap;
+  background:#E8F5E9; color:#2E7D32;
+}
+.end-right {
+  flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap:8px;
+  min-width:96px; padding-top:2px;
+}
+.end-right .end-source { margin-top:0; }
+.end-right .end-source a { white-space:nowrap; }
+
+/* ─── 营销案例：来源右移 ─── */
+.case-item { display:flex; gap:14px; align-items:stretch; }
+.case-main { flex:1; min-width:0; }
+.case-side {
+  flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap:10px;
+  min-width:120px;
+}
+.case-side .case-type { margin-bottom:0; }
+
+/* ─── 营销日历：左右切月 + 节日名标记 ─── */
+.cal-arrow {
+  width:34px; height:34px; border-radius:50%; border:1px solid var(--border); background:#fff;
+  font-size:18px; font-weight:700; cursor:pointer; color:var(--text2); transition:all .2s;
+  display:flex; align-items:center; justify-content:center; padding:0; line-height:1;
+}
+.cal-arrow:hover:not(:disabled) { border-color:var(--brand); color:var(--brand); }
+.cal-arrow:disabled { opacity:.35; cursor:not-allowed; }
+.cal-current-month { font-size:16px; font-weight:700; color:var(--text); min-width:120px; text-align:center; }
+.cal-day { gap:2px; }
+.cal-num { font-size:13px; font-weight:700; line-height:1.2; }
+.cal-marks { display:flex; flex-direction:column; align-items:center; gap:2px; width:100%; margin-top:1px; }
+.cal-mark {
+  font-size:10.5px; line-height:1.3;
+  border-radius:6px; padding:1px 4px; max-width:94%; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; cursor:pointer; text-align:center;
+  color:#1565C0; background:#E3F2FD; transition:all .15s;
+}
+/* 按节点类型着色（与日历顶部按钮颜色一致） */
+.cal-mark[data-cat="节气"] { color:#1565C0; background:#E3F2FD; }
+.cal-mark[data-cat="公历"] { color:#C62828; background:#FFEBEE; }
+.cal-mark[data-cat="农历"] { color:#2E7D32; background:#E8F5E9; }
+.cal-mark[data-cat="国际节日"] { color:#7B1FA2; background:#F3E5F5; }
+.cal-mark:hover { filter:brightness(0.9); }
+.cal-day.today .cal-mark { background:rgba(255,255,255,.3); color:#fff; filter:none; }
+.cal-day.today .cal-mark:hover { background:#fff; color:#1565C0; }
+/* 星标节点：仅以 ⭐ 文字提示，背景色保留其原本所属节日类型色（见 data-cat 规则），不使用暖色 */
+.cal-more { font-size:9px; color:var(--text2); }
+.cal-day.today .cal-more { color:#fff; }
+.cal-day.no-node { font-weight:400; color:var(--text); cursor:default; }
+.cal-day.no-node:hover { border-color:transparent; background:#fff; }
+.node-switcher { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+.node-sw-btn {
+  padding:5px 12px; border-radius:14px; font-size:12px; font-weight:600; cursor:pointer;
+  background:var(--bg); border:1px solid var(--border); color:var(--text2); transition:all .2s;
+}
+.node-sw-btn:hover { border-color:var(--brand); color:var(--brand); }
+.node-sw-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+
+/* ─── 平台热点 / 行业趋势：来源右移 ─── */
+.topic-item { display:flex; gap:14px; align-items:stretch; }
+.topic-main { flex:1; min-width:0; }
+.topic-side { flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:flex-end; gap:8px; min-width:120px; }
+.topic-side .topic-src { margin-top:0; }
+.trend-item { display:flex; gap:14px; align-items:stretch; }
+.trend-main { flex:1; min-width:0; }
+.trend-side { flex-shrink:0; display:flex; flex-direction:column; align-items:flex-end; justify-content:flex-end; gap:8px; min-width:120px; }
+.trend-side .trend-src { margin-top:0; }
+
+/* ─── V22.1 响应式（移动端侧边栏折叠为汉堡） ─── */
+@media(max-width:900px){
+  .sidebar { top:52px; transform:translateX(-100%); box-shadow:0 8px 32px rgba(0,0,0,.18); }
+  .sidebar.open { transform:translateX(0); }
+  .side-mask { display:block; position:fixed; inset:0; z-index:110; background:rgba(60,30,40,.35); opacity:0; pointer-events:none; transition:opacity .2s; }
+  .side-mask.show { opacity:1; pointer-events:auto; }
+  .topbar { padding:0 12px; height:52px; }
+  .hamburger { display:flex; }
+  .topbar-title { font-size:14px; letter-spacing:0; gap:5px; }
+  .topbar-brand img { height:22px; }
+  .topbar-brand { gap:6px; }
+  .topbar-title .ver-badge { display:none; }
+  .main-wrap { margin-left:0; padding:12px 10px 40px; }
+  .global-search { width:160px; }
+  .search-pop { width:420px; max-width:92vw; right:-60px; }
+  .mod-body { padding:14px 16px 18px; }
+  .mod-header { padding:14px 16px 10px; }
+  .must-see-grid { grid-template-columns:1fr; }
+  .creative-split { grid-template-columns:1fr; }
+  .prod-table { font-size:12px; display:block; overflow-x:auto; }
+  .topic-ideas { grid-template-columns:1fr; }
+  .cal-controls { flex-direction:column; align-items:flex-start; }
+  .cal-month-switch { flex-wrap:wrap; }
+  .case-side, .topic-side, .trend-side, .end-right { min-width:auto; align-items:flex-end; width:100%; }
+  .case-item, .topic-item, .trend-item, .end-item, .mn-item, .rep-item { flex-direction:column; }
+}
+
+/* ─── V23 移动端精修（仅窄屏生效，PC 端布局与样式完全不变） ─── */
+@media(max-width:560px){
+  .topbar { height:48px; padding:0 10px; gap:8px; }
+  .hamburger { width:34px; height:34px; }
+  .topbar-brand { gap:6px; }
+  .topbar-brand img { height:24px; }
+  .topbar-title { display:none; }
+  .global-search { width:auto; flex:1; min-width:0; }
+  .global-search input { height:34px; font-size:13px; }
+  .search-pop { left:0; right:0; width:auto; max-width:none; }
+  .cal-quick { display:none; }
+  .date-picker label { font-size:14px; }
+  .date-trigger { padding:5px 10px; font-size:13px; }
+  .ov-num { font-size:22px; }
+  .mod-header { padding:13px 14px 9px; }
+  .mod-header h2 { font-size:16px; }
+  .mod-header h2 .icon { font-size:20px; }
+  .mod-body { padding:13px 14px 18px; }
+  .main-wrap { padding:10px 8px 40px; }
+  .case-item, .topic-item, .trend-item, .end-item, .mn-item, .rep-item { padding:13px 14px; }
+  .end-risk-note { font-size:10px; }
+  .overlay { padding:12px; }
+  .modal { max-height:90vh; }
+  .prod-table { font-size:12px; }
+  .prod-table thead th, .prod-table tbody td { padding:9px 10px; }
+  img { max-width:100%; height:auto; }
+  /* 持续关注：修复长文本溢出 */
+  .watch-block { margin:6px 12px 18px; padding:12px 14px; }
+  .watch-list { grid-template-columns:1fr; gap:10px; }
+  .watch-item { min-width:0; }
+  .watch-text { flex:1; min-width:0; overflow-wrap:break-word; word-break:break-word; }
+  /* 明星代言：卡片式紧凑布局（日期/心动值/风险并排在左上+右上） */
+  .end-item { display:grid; grid-template-areas:"date right" "info info"; grid-template-columns:1fr auto; gap:8px 10px; padding:14px; align-items:start; }
+  .end-date { grid-area:date; width:auto; display:flex; align-items:baseline; gap:3px; padding:0; text-align:left; }
+  .end-date .d-day { font-size:16px; }
+  .end-date .d-month { font-size:10px; }
+  .end-right { grid-area:right; flex-direction:row; align-items:center; gap:8px; min-width:auto; width:auto; }
+  .end-heart { margin:0; padding:4px 8px; }
+  .end-heart-val { font-size:13px; }
+  .end-heart-cap { font-size:9px; }
+  .end-risk-wrap { min-width:auto; align-items:center; gap:2px; }
+  .end-risk { padding:3px 8px; font-size:11px; min-width:auto; }
+  .end-risk-label { display:none; }
+  .end-info { grid-area:info; min-width:0; }
+  .end-thumb-wrap { display:none; }
+  .end-brand { overflow-wrap:break-word; word-break:break-word; }
+  .end-tags { margin-bottom:4px; }
+  .end-block { flex-direction:column; gap:4px; padding:8px 10px; }
+  .end-block-label { align-self:flex-start; }
+  .end-hashtag { max-width:100%; }
+  .end-hashtag-link { overflow-wrap:break-word; word-break:break-word; }
+  .end-tip { white-space:normal; font-size:10px; }
+  /* 明星代言筛选：label 与按钮组对齐 */
+  .end-filter-row { gap:6px; }
+  .end-filters-label { width:60px; font-size:12px; padding-top:4px; }
+  .end-filter-btns { gap:6px; }
+  .end-filter-btn { font-size:12px; padding:4px 10px; }
+  /* 营销日历：横向滚动并保持行列整齐 */
+  #sec-calendar .mod-body { overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:8px; }
+  .cal-grid { min-width:630px; }
+  .cal-day, .cal-empty { aspect-ratio:1.2; }
+  .cal-head { padding:6px 0; font-size:11px; }
+  .cal-num { font-size:12px; }
+  .cal-mark { font-size:9px; padding:1px 3px; }
+  .cal-controls { gap:8px; padding-bottom:8px; }
+  .cal-month-switch { gap:6px; }
+  .cal-current-month { font-size:14px; min-width:auto; }
+  .cal-arrow, .cal-today-btn, .cal-type-reset { padding:4px 8px; font-size:11px; }
+}
+@media(max-width:380px){
+  .topbar { gap:6px; padding:0 8px; }
+  .date-picker label { display:none; }
+  .date-trigger { padding:5px 8px; font-size:12px; }
+  .global-search input { padding:0 12px 0 30px; }
+  .gs-icon { left:10px; }
+  .mod-header h2 { font-size:15px; }
+  .main-wrap { padding:8px 6px 36px; }
+  .mod-body { padding:12px 10px 16px; }
+  .mod-header { padding:12px 10px 8px; }
+  .ov-label { font-size:11px; }
+  .ov-num { font-size:20px; }
+  .end-item { gap:6px 8px; padding:12px; }
+  .end-date .d-day { font-size:15px; }
+  .end-heart { padding:3px 6px; }
+  .cal-grid { min-width:490px; }
+  .cal-day, .cal-empty { aspect-ratio:1.1; }
+  .cal-mark { font-size:8.5px; padding:1px 2px; }
+}
+</style>
+</head>
+<body>
+
+<!-- V23 左侧侧边栏（分组导航 + emoji 图标；顶部不放 logo，从「情报区」开始） -->
+<aside class="sidebar" id="sidebar">
+  <div class="side-group" style="margin-top:2px;">情报区</div>
+  <nav class="sidebar-nav">
+    <a href="#sec-must" class="active" onclick="scrollToSec('sec-must',this);return false;"><span class="nav-emoji">✨</span>今日精选</a>
+    <a href="#sec-endorse" onclick="scrollToSec('sec-endorse',this);return false;"><span class="nav-emoji">⭐</span>明星代言</a>
+    <a href="#sec-cases" onclick="scrollToSec('sec-cases',this);return false;"><span class="nav-emoji">📰</span>营销动态</a>
+    <a href="#sec-calendar" onclick="scrollToSec('sec-calendar',this);return false;"><span class="nav-emoji">📅</span>营销日历</a>
+    <a href="#sec-hot" onclick="scrollToSec('sec-hot',this);return false;"><span class="nav-emoji">🔥</span>平台热点</a>
+    <a href="#sec-products" onclick="scrollToSec('sec-products',this);return false;"><span class="nav-emoji">🆕</span>新品上新</a>
+  </nav>
+  <div class="side-group">专题区</div>
+  <nav class="sidebar-nav">
+    <a href="#sec-ai" onclick="scrollToSec('sec-ai',this);return false;"><span class="nav-emoji">🤖</span>AI 营销前沿</a>
+    <a href="../sentiment.html?date=2026-08-10" target="_blank" rel="noopener"><span class="nav-emoji">🛡️</span>舆情监控</a>
+  </nav>
+  <div class="side-group">资料区</div>
+  <nav class="sidebar-nav">
+    <a href="#sec-reports" onclick="scrollToSec('sec-reports',this);return false;"><span class="nav-emoji">📊</span>行业报告</a>
+    <a href="#sec-trends" onclick="scrollToSec('sec-trends',this);return false;"><span class="nav-emoji">📈</span>行业趋势</a>
+    <a href="#sec-insight" onclick="scrollToSec('sec-insight',this);return false;"><span class="nav-emoji">💡</span>美诺启示</a>
+  </nav>
+</aside>
+<div class="side-mask" id="sideMask" onclick="toggleSidebar(false)"></div>
+
+<!-- V23 顶部工具条（logo+标题整体组件在左；搜索+日期快捷在右） -->
+<div class="topbar">
+  <button class="hamburger" onclick="toggleSidebar(true)" aria-label="菜单">☰</button>
+  <div class="topbar-brand">
+    <img src="../menow-logo.png" alt="MENOW 美诺">
+    <div class="topbar-title">美诺 MENOW 彩妆情报资讯台 <em class="ver-badge">V23</em></div>
+  </div>
+  <div class="global-search">
+    <span class="gs-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="全局搜索全部历史（如：七夕 / AI / 李昀锐）" autocomplete="off" oninput="globalSearch(this.value)">
+    <div class="search-pop" id="searchPop">
+      <div class="search-scope">
+        <label><input type="checkbox" id="searchFull" checked onchange="globalSearch(document.getElementById('searchInput').value)"> 包含全部历史（30天/CDN）</label>
+        <span id="searchScopeNote" style="margin-left:8px;font-size:11px;color:#BFAAB2;"></span>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="date-picker">
+      <div class="cal-quick">
+        <button onclick="quickDate(-1)" id="btnPrevDay" title="前一天">‹ 前一天</button>
+        <button onclick="quickDate(0)" id="btnToday" title="回到今天">今天</button>
+        <button onclick="quickDate(1)" id="btnNextDay" title="后一天">后一天 ›</button>
+      </div>
+      <label onclick="toggleCalPopup(event)">📅</label>
+      <div class="date-trigger" onclick="toggleCalPopup(event)" id="dateTrigger">2026-08-10</div>
+      <div class="cal-popup" id="calPopup">
+        <div class="cp-head">
+          <div class="cp-nav">
+            <button id="cpYPrev" onclick="cpYear(-1)" title="上一年">&laquo;</button>
+            <button id="cpMPrev" onclick="cpMonth(-1)" title="上个月">&lsaquo;</button>
+          </div>
+          <div class="cp-title" id="cpTitle"></div>
+          <div class="cp-nav">
+            <button id="cpMNext" onclick="cpMonth(1)" title="下个月">&rsaquo;</button>
+            <button id="cpYNext" onclick="cpYear(1)" title="下一年">&raquo;</button>
+          </div>
+        </div>
+        <div class="cp-weekdays">
+          <div class="cp-wd">一</div><div class="cp-wd">二</div><div class="cp-wd">三</div>
+          <div class="cp-wd">四</div><div class="cp-wd">五</div><div class="cp-wd">六</div><div class="cp-wd">日</div>
+        </div>
+        <div class="cp-grid" id="cpGrid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-wrap">
+
+<style>
+.overview-bar{margin:14px 0 4px;padding:14px 16px;background:linear-gradient(135deg,#fff,#f5f8ff);border:1px solid #e6ecf7;border-radius:14px;box-shadow:0 2px 10px rgba(120,140,200,.08);}
+.ov-title{font-size:13px;font-weight:700;color:#5b6b8c;letter-spacing:.5px;margin-bottom:10px;}
+.ov-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;}
+.ov-card{display:flex;flex-direction:column;gap:4px;padding:12px 10px;background:#fff;border:1px solid #eaeef6;border-radius:11px;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s;}
+.ov-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(255,120,150,.18);border-color:#ffc2d1;}
+.ov-label{font-size:12px;color:#7a89a8;white-space:nowrap;}
+.ov-num{font-size:26px;font-weight:800;color:var(--brand);line-height:1;font-variant-numeric:tabular-nums;}
+.ov-unit{font-size:12px;font-weight:600;color:#b0bcd4;margin-left:3px;}
+@media(max-width:1100px){.ov-grid{grid-template-columns:repeat(4,1fr);}}
+@media(max-width:560px){.ov-grid{grid-template-columns:repeat(2,1fr);}.ov-num{font-size:22px;}}
+</style>
+<div class="overview-bar">
+  <div class="ov-title">📊 今日数据总览 · 2026-08-10（仅当日新收录）</div>
+  <div class="ov-grid"><a class="ov-card" href="#sec-must" onclick="document.getElementById('sec-must').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">今日精选</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-endorse" onclick="document.getElementById('sec-endorse').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">明星代言</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-cases" onclick="document.getElementById('sec-cases').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">营销动态</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-hot" onclick="document.getElementById('sec-hot').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">平台热点</div><div class="ov-num">1<span class="ov-unit">个</span></div></a><a class="ov-card" href="#sec-products" onclick="document.getElementById('sec-products').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">新品上新</div><div class="ov-num">0<span class="ov-unit">款</span></div></a><a class="ov-card" href="#sec-ai" onclick="document.getElementById('sec-ai').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">AI营销前沿</div><div class="ov-num">0<span class="ov-unit">条</span></div></a><a class="ov-card" href="#sec-reports" onclick="document.getElementById('sec-reports').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">行业报告</div><div class="ov-num">0<span class="ov-unit">篇</span></div></a><a class="ov-card" href="#sec-trends" onclick="document.getElementById('sec-trends').scrollIntoView({behavior:'smooth'});return false;"><div class="ov-label">行业趋势</div><div class="ov-num">0<span class="ov-unit">条</span></div></a></div>
+</div>
+
+<!-- 1. 今日精选（V13 升级） -->
+<section class="module" id="sec-must">
+  <div class="mod-header">
+    <h2><span class="icon">👁️</span> 今日精选</h2>
+    <span class="mod-badge">0 条要点</span>
+  </div>
+  <p class="sec-desc">本板块仅展示当日（2026-08-10）新收录的精选资讯；下方「持续关注」为每日固定跟踪项（已加标签区分），不受去重约束，保证每天都有高价值情报供给。</p>
+  <div class="mod-body">
+    <div class="must-see-grid"></div>
+  </div>
+  <div class="watch-block">
+    <div class="watch-hd"><span class="icon">📌</span> 持续关注 <span class="watch-sub">（每日固定跟踪，V21：已过时效的节点关注项自动剔除）</span></div>
+    <div class="watch-list"></div>
+  </div>
+</section>
+
+<!-- 2. 明星代言 -->
+<section class="module" id="sec-endorse">
+  <div class="mod-header">
+    <h2><span class="icon">⭐</span> 明星代言动态</h2>
+    <span class="mod-badge">12 条动态 · 近一周</span>
+  </div>
+  <p class="sec-desc">仅展示近一周（2026-08-04 ~ 2026-08-10）内官宣的明星代言动态，按官宣日期倒序排列；更早的官宣不再堆积展示。</p>
+  <div class="mod-body">
+    <div class="end-filters">
+      <div class="end-filter-row">
+        <span class="end-filters-label">代言类型：</span>
+        <div class="end-filter-btns">
+          <button class="end-filter-btn active" data-end-action="" onclick="toggleEndorseFilter('')">全部</button>
+          <button class="end-filter-btn" data-end-action="新签" onclick="toggleEndorseFilter('新签')">新签</button>
+          <button class="end-filter-btn" data-end-action="升级" onclick="toggleEndorseFilter('升级')">升级</button>
+          <button class="end-filter-btn" data-end-action="活动亮相" onclick="toggleEndorseFilter('活动亮相')">活动亮相</button>
+        </div>
+      </div>
+      <div class="end-filter-row">
+        <span class="end-filters-label">代言行业：</span>
+        <div class="end-filter-btns">
+          <button class="end-filter-btn active" data-cat2="" onclick="toggleCat2Filter('')">全部</button>
+          <button class="end-filter-btn" data-cat2="美妆护肤" onclick="toggleCat2Filter('美妆护肤')">美妆护肤</button>
+          <button class="end-filter-btn" data-cat2="日用个护" onclick="toggleCat2Filter('日用个护')">日用个护</button>
+          <button class="end-filter-btn" data-cat2="营养健康" onclick="toggleCat2Filter('营养健康')">营养健康</button>
+          <button class="end-filter-btn" data-cat2="食品饮料" onclick="toggleCat2Filter('食品饮料')">食品饮料</button>
+          <button class="end-filter-btn" data-cat2="餐饮服务" onclick="toggleCat2Filter('餐饮服务')">餐饮服务</button>
+          <button class="end-filter-btn" data-cat2="服饰箱包" onclick="toggleCat2Filter('服饰箱包')">服饰箱包</button>
+          <button class="end-filter-btn" data-cat2="珠宝首饰" onclick="toggleCat2Filter('珠宝首饰')">珠宝首饰</button>
+          <button class="end-filter-btn" data-cat2="3C数码" onclick="toggleCat2Filter('3C数码')">3C数码</button>
+          <button class="end-filter-btn" data-cat2="家居生活" onclick="toggleCat2Filter('家居生活')">家居生活</button>
+          <button class="end-filter-btn" data-cat2="汽车出行" onclick="toggleCat2Filter('汽车出行')">汽车出行</button>
+          <button class="end-filter-btn" data-cat2="其他" onclick="toggleCat2Filter('其他')">其他</button>
+        </div>
+      </div>
+    </div>
+    <div class="end-list" id="endList"><div class="end-item" data-title="王老吉 李昀锐" data-end-action="新签" data-cat2="食品饮料"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">王老吉 × 李昀锐</a></div><div class="end-tags"><span class="end-tag end-tag-level">全球品牌代言人</span><span class="end-action">新签</span><span class="end-cat">食品饮料</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日广州新品发布盛典上官宣李昀锐为「王者英雄」全球品牌代言人，同步推出战略新品「王者英雄」天然能量电解质饮料与「乐苜力」果蔬汁，并焕新瓶装包装；李昀锐作《上场，就是王者英雄》主题演讲。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">发布会获三湘都市报、21世纪经济报道等主流媒体报道，行业关注其从凉茶向天然植物饮料全品类生态扩张的战略；张凌赫、李昀锐现场助阵引发年轻消费群体讨论。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E7%8E%8B%E8%80%81%E5%90%89%E5%85%A8%E7%90%83%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%E6%9D%8E%E6%98%80%E9%94%90%23" target="_blank" rel="noopener" class="end-hashtag-link">#王老吉全球品牌代言人李昀锐#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">17.2万</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="SENKA珊珂 陈哲远" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">SENKA珊珂 × 陈哲远</a></div><div class="end-tags"><span class="end-tag end-tag-level">亚太区品牌代言人</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣陈哲远为亚太区品牌代言人，以「温和净『哲』学 洗出『远』气透亮肌」为创意，同步焕新升级珊珂绵密泡沫洁面膏PW系列（微米美容泡），主打温和洁面。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">品牌官博与全网话题#珊珂亚太区品牌代言人陈哲远#上线，粉丝对其学生时代即为珊珂蓝洁面真实爱用者的缘分故事产生共鸣。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E7%8F%8A%E7%8F%82%E4%BA%9A%E5%A4%AA%E5%8C%BA%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%E9%99%88%E5%93%B2%E8%BF%9C%23" target="_blank" rel="noopener" class="end-hashtag-link">#珊珂亚太区品牌代言人陈哲远#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">14.6万</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="我的花园世界 张新成" data-end-action="新签" data-cat2="其他"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">我的花园世界 × 张新成</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">其他</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣张新成为《我的花园世界》品牌大使，以「以笃定之心，种治愈之花」为口号，推出专属兑换码福利并开展8.10-8.17抽奖送京东卡/鲜花贺卡活动，联动8月11日九城大屏展示。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">官宣迅速登上微博热搜，玩家讨论热烈，围绕游戏入口（小程序/APP）与后续定制花卉活动展开期待，周年庆百城LED与线下快闪此前已铺垫热度。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%96%B0%E6%88%90%E4%BB%A3%E8%A8%80%E6%88%91%E7%9A%84%E8%8A%B1%E5%9B%AD%E4%B8%96%E7%95%8C%23" target="_blank" rel="noopener" class="end-hashtag-link">#张新成代言我的花园世界#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">67,851</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="ddg 徐振轩" data-end-action="新签" data-cat2="其他"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">ddg × 徐振轩</a></div><div class="end-tags"><span class="end-tag end-tag-level">守护代言人</span><span class="end-action">新签</span><span class="end-cat">其他</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣徐振轩为ddg品牌守护代言人，主推ddg超修水乳/精华，推出「振守新肌」限定套组（¥219）赠六件周边，并点亮上海、北京等7城10屏户外大屏（8.13-8.19）打卡活动。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝「小蜗牛」积极参与线下大屏同框打卡及官号留言抽奖，亲签照与限量周边抽奖带动评论区互动。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23ddg%E5%AE%88%E6%8A%A4%E4%BB%A3%E8%A8%80%E4%BA%BA%E5%BE%90%E6%8C%AF%E8%BD%A9%23" target="_blank" rel="noopener" class="end-hashtag-link">#ddg守护代言人徐振轩#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">27,504</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="X_CrossOver 金允植" data-end-action="新签" data-cat2="服饰箱包"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">X_CrossOver × 金允植</a></div><div class="end-tags"><span class="end-tag end-tag-level">首位全球品牌代言人</span><span class="end-action">新签</span><span class="end-cat">服饰箱包</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣金允植为X_CrossOver首位全球品牌代言人，推出「Azure by Side」系列珠宝（8月13日13:14上线），并以代言人名义通过首都爱护动物协会捐助流浪动物粮食物资及疗愈犬项目。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝超话#金允植XCO首位全球品牌代言人#热烈讨论，并参与「星品影响力」活动助推其新宣冲榜。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E9%87%91%E5%85%81%E6%A4%8DXCO%E9%A6%96%E4%BD%8D%E5%85%A8%E7%90%83%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%23" target="_blank" rel="noopener" class="end-hashtag-link">#金允植XCO首位全球品牌代言人#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">20,991</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="LEECN莉肯 贺嘉述" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">LEECN莉肯 × 贺嘉述</a></div><div class="end-tags"><span class="end-tag end-tag-level">新序美学大使</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日与法宣阁共同官宣为LEECN莉肯新序美学大使，推出「宣述拾光」限定套组（京东渠道），并在京东APP上线「法嘉」限定皮肤主题，主打丝绒唇釉与精油养护。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">该双人合作被商务号称为其「第三个双人商务」，粉丝对法宣阁、贺嘉述同框的清透白色系造型与默契感评价良好，并参与星品圈粉活动。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23LEECN%E8%8E%89%E8%82%AF%E6%96%B0%E5%BA%8F%E7%BE%8E%E5%AD%A6%E5%A4%A7%E4%BD%BF%E8%B4%BA%E5%98%89%E8%BF%B0%23" target="_blank" rel="noopener" class="end-hashtag-link">#LEECN莉肯新序美学大使贺嘉述#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">14,219</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="LEECN莉肯 法宣阁" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">LEECN莉肯 × 法宣阁</a></div><div class="end-tags"><span class="end-tag end-tag-level">新序美学大使</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日与贺嘉述共同官宣为LEECN莉肯新序美学大使，推出「宣述拾光」限定套组（京东渠道），并在京东APP上线「法嘉」限定皮肤主题，主打丝绒唇釉与精油养护。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">该双人合作被商务号称为其「第三个双人商务」，粉丝对法宣阁、贺嘉述同框的清透白色系造型与默契感评价良好，并参与星品圈粉活动。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23LEECN%E8%8E%89%E8%82%AF%E6%96%B0%E5%BA%8F%E7%BE%8E%E5%AD%A6%E5%A4%A7%E4%BD%BF%E6%B3%95%E5%AE%A3%E9%98%81%23" target="_blank" rel="noopener" class="end-hashtag-link">#LEECN莉肯新序美学大使法宣阁#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">14,213</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="3CE 冯建宇" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">3CE × 冯建宇</a></div><div class="end-tags"><span class="end-tag end-tag-level">星动挚友</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣冯建宇为3CE星动挚友，8月11日20:00空降3CE京东自营旗舰店直播间（入手「心动视线」眼颊礼盒解锁限定周边及亲签），并在东莞、天津、南京三城大屏点亮打卡（至8.12）。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">粉丝参与线下大屏同框打卡攻略，话题#3CE星动挚友冯建宇#下亲签小卡抽奖带动互动，对其「少年气质碰撞彩妆色彩」的物料期待较高。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%233CE%E6%98%9F%E5%8A%A8%E6%8C%9A%E5%8F%8B%E5%86%AF%E5%BB%BA%E5%AE%87%23" target="_blank" rel="noopener" class="end-hashtag-link">#3CE星动挚友冯建宇#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">12,343</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="资生堂 王玉雯" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">资生堂 × 王玉雯</a></div><div class="end-tags"><span class="end-tag end-tag-level">品牌护肤大使</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣王玉雯为资生堂品牌护肤大使，主推#资生堂悦薇胶原炮面霜#，联动8月13-19日天猫超级品牌日，王玉雯出镜诠释「胶原自生，轮廓自立」的年轻新生肌理念。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">品牌官博持续释出王玉雯相关物料（如「揭秘女明星的顶美思路」），粉丝对其清爽灵动气质契合资生堂年轻化方向反响正面。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E8%B5%84%E7%94%9F%E5%A0%82%E5%93%81%E7%89%8C%E6%8A%A4%E8%82%A4%E5%A4%A7%E4%BD%BF%E7%8E%8B%E7%8E%89%E9%9B%AF%23" target="_blank" rel="noopener" class="end-hashtag-link">#资生堂品牌护肤大使王玉雯#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,961</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="灵妖劫手游 宋轶" data-end-action="新签" data-cat2="3C数码"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">灵妖劫手游 × 宋轶</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">3C数码</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣宋轶为《灵妖劫》品牌代言人，释出TVC预告及全新版本（8月13日上线），游戏内推出代言人限定外显、登录豪礼与亲签海报，输入SY666/SY777/SY888可领福利礼包。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">玩家参与社区福利活动（评论抽奖送亲签海报），宋轶的东方仙韵气质与游戏国风山海世界观形成呼应，引发玩家讨论与二次传播。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E7%81%B5%E5%A6%96%E5%8A%AB%E4%BB%A3%E8%A8%80%E4%BA%BA%E5%AE%8B%E8%BD%B6%23" target="_blank" rel="noopener" class="end-hashtag-link">#灵妖劫代言人宋轶#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">2,730</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="益美滋 李雪琴" data-end-action="新签" data-cat2="营养健康"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">益美滋 × 李雪琴</a></div><div class="end-tags"><span class="end-tag end-tag-level">代言人</span><span class="end-action">新签</span><span class="end-cat">营养健康</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣李雪琴为I'MINT益美滋品牌代言人，以「声声润岁月，温柔伴成长」为主题，推出教师节限定润喉糖礼盒（书本造型含手工花/贺卡），9月9日前送李雪琴限量周边并抽亲签照，同步拍摄TVC。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">品牌官博持续释出李雪琴「代课老师」创意物料，粉丝对其松弛幽默的国民风格反响正面，教师节礼盒话题引发讨论。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E7%9B%8A%E7%BE%8E%E6%BB%8B%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA%E6%9D%8E%E9%9B%AA%E7%90%B4%23" target="_blank" rel="noopener" class="end-hashtag-link">#益美滋品牌代言人李雪琴#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">1,038</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-item" data-title="逐本 张馨予" data-end-action="新签" data-cat2="美妆护肤"><div class="end-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="end-info"><div class="end-brand"><a href="https://m.weibo.cn/u/7946268781" target="_blank" rel="noopener" class="end-brand-link">逐本 × 张馨予</a></div><div class="end-tags"><span class="end-tag end-tag-level">轮廓油代言人</span><span class="end-action">新签</span><span class="end-cat">美妆护肤</span></div><div class="end-block end-block-action"><span class="end-block-label">品牌营销动作</span><span class="end-block-text">8月10日官宣张馨予为逐本轮廓油代言人，主推「逐本不染山参轮廓油」，以「向上而升，馨光已至」为创意，全国7城大屏（8.12-8.19）展示，并设评论区互动抽正装活动。</span></div><div class="end-block end-block-reaction"><span class="end-block-label">市场反响</span><span class="end-block-text">品牌官博官宣博文互动量较高，粉丝对其「向下扎根、向上生长」的叙事产生共鸣，大屏打卡与「向上」话题带动用户UGC。</span></div><div class="end-hashtag"><a href="https://s.weibo.com/weibo?q=%23%E9%80%90%E6%9C%AC%E8%BD%AE%E5%BB%8A%E6%B2%B9%E4%BB%A3%E8%A8%80%E4%BA%BA%E5%BC%A0%E9%A6%A8%E4%BA%88%23" target="_blank" rel="noopener" class="end-hashtag-link">#逐本轮廊油代言人张馨予#</a><span class="end-tip">点击查看详情</span></div></div><div class="end-right"><div class="end-heart"><span class="end-heart-icon">&#9825;</span><span class="end-heart-val">567</span><span class="end-heart-cap">互动值</span></div><div class="end-risk-wrap"><div class="end-risk-label">舆情风险等级</div><div class="end-risk risk-low">低</div></div></div></div><div class="end-filter-empty" id="endFilterEmpty">该筛选条件下暂无代言动态</div></div>
+  </div>
+</section>
+
+<!-- 3. 营销动态 & 成功案例（V15：新增每日营销动态灵感） -->
+<section class="module" id="sec-cases">
+  <div class="mod-header">
+    <h2><span class="icon">🚀</span> 营销动态 & 成功案例</h2>
+    <span class="mod-badge">0 条</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-10）新检索到的营销动态与成功案例，历史资讯不累加；从中汲取灵感用于美诺品牌营销，下方「成功案例精选」沉淀可复用打法。</p>
+  <div class="mod-body">
+    <div class="mn-list" id="mnList"><div class="empty-note">当日暂无营销动态收录</div></div>
+  </div>
+  <div class="case-block">
+    <div class="watch-hd"><span class="icon">🏆</span> 成功案例精选 <span class="watch-sub">（可复用打法沉淀）</span></div>
+    <div class="case-list" id="caseList"><div class="empty-note">当日无新增营销案例精选</div></div>
+  </div>
+</section>
+
+<!-- 4.5 营销日历（移至营销动态板块后） -->
+<section class="module" id="sec-calendar">
+  <div class="mod-header">
+    <h2><span class="icon">📆</span> 营销日历</h2>
+    <span class="mod-badge">480 个营销节点 · 107 个可借势</span>
+  </div>
+  <p class="sec-desc">高热度&amp;高契合度节点以 ⭐ 星标提示；与品牌契合度较低的节点未做借势营销建议。未来2月星标节点自动提取至「本周行动清单」高亮，便于提前规划借势。点击任意节点可查看详情。</p>
+  <div class="mod-body">
+        <div class="cal-controls">
+          <div class="cal-month-switch">
+            <button class="cal-arrow" id="calPrev" onclick="prevMonth()">‹</button>
+            <div class="cal-current-month" id="calCurrentMonth"></div>
+            <button class="cal-arrow" id="calNext" onclick="nextMonth()">›</button>
+            <button class="cal-today-btn" onclick="goToToday()">📅 返回今天</button>
+            <span class="cal-type-divider">|</span>
+            <button class="cal-type-btn" data-type="节气" style="--c:#1565C0;--b:#E3F2FD;" onclick="toggleTypeFilter('节气')">节气</button><button class="cal-type-btn" data-type="公历" style="--c:#C62828;--b:#FFEBEE;" onclick="toggleTypeFilter('公历')">公历</button><button class="cal-type-btn" data-type="农历" style="--c:#2E7D32;--b:#E8F5E9;" onclick="toggleTypeFilter('农历')">农历</button><button class="cal-type-btn" data-type="国际节日" style="--c:#7B1FA2;--b:#F3E5F5;" onclick="toggleTypeFilter('国际节日')">国际节日</button>
+            <button class="cal-type-reset" onclick="resetTypeFilter()" title="显示全部">↺ 全部</button>
+          </div>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+        </div>
+</section>
+
+<!-- 5. 平台热点（V17 改名，移至营销日历后） -->
+<section class="module" id="sec-hot">
+  <div class="mod-header">
+    <h2><span class="icon">🔥</span> 平台热点</h2>
+    <span class="mod-badge">1 个热点 · 当日新增</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-10）新增平台热点，历史不累加；本板块聚焦各主流平台（小红书 / 抖音 / 微信 / 微博 / 快手 / B站）官方口径的热点——含平台热搜榜、热门话题榜、热门资讯，以及平台自身的重大更新、迭代与新业务动作；已筛选美妆护肤、女性为主市场的强相关信号，供品牌借势参考。</p>
+  <div class="mod-body">
+      <div class="topic-list" id="hotList"><div class="topic-item" data-title="微信视频号8月10日起《短视频带货场景AI应用规范》生效：带货视频含AI须强制标注，否则限流"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">10</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">微信</span><span class="ai-tag">🤖 AI</span><a href="https://www.100ec.cn/detail--6662371.html" target="_blank" rel="noopener" class="topic-title">微信视频号8月10日起《短视频带货场景AI应用规范》生效：带货视频含AI须强制标注，否则限流 ↗</a></div><div class="topic-desc">规则升级</div><div class="topic-data">8月3日微信视频号发布新规，自8月10日起，发布含AI生成内容的带货短视频（AI数字人/口播、AI商品展示画面与效果、AI海报等）须主动添加AI标注，确保AI内容与实际商品一致，否则限制分发；普通非带货视频仅倡导标注。该规范对接《人工智能生成合成内容标识办法》，与抖音、快手、B站同期收紧数字人审核形成行业统一治理。</div><div class="topic-ideas"><div class="topic-idea-card"><strong>视频号/小红书</strong><span class="insight-hl">美诺在视频号/小红书的带货短视频若使用AI生成场景或数字人，须显式标注『AI生成』且内容与实际商品一致；底妆种草优先走真人实测+真实上脸对比，以『持妆/控油/贴肤』可验证描述建立信任，规避限流与虚假宣传红线。</span></div></div><div class="topic-src-line">🔗 来源：网经社　·　发布：2026-08-10</div></div></div></div>
+  </div>
+</section>
+
+<!-- 6. 新品上架 -->
+<section class="module" id="sec-products">
+  <div class="mod-header">
+    <h2><span class="icon">🆕</span> 新品上新</h2>
+    <span class="mod-badge">0 款新品 · 竞品近一周 / 本品近一月</span>
+  </div>
+  <p class="sec-desc">抖音电商（蝉妈妈选品库，近7日新上架，每3天更新1次），按上新时间倒序排列；花间颂 / 方里 / 芭贝拉 / 嘉利玛标「核心竞对」，美诺标「本品」。</p>
+  <div class="mod-body" style="overflow-x:auto;">
+    <div class="prod-brand-filters">
+      <span class="prod-brand-filters-label">品牌筛选：</span>
+      <button class="prod-brand-btn active" data-brand="" onclick="toggleProdBrand('')">全部</button>
+      <button class="prod-brand-btn" data-brand="美诺" onclick="toggleProdBrand('美诺')">美诺</button><button class="prod-brand-btn" data-brand="方里" onclick="toggleProdBrand('方里')">方里</button><button class="prod-brand-btn" data-brand="芭贝拉" onclick="toggleProdBrand('芭贝拉')">芭贝拉</button><button class="prod-brand-btn" data-brand="嘉利玛" onclick="toggleProdBrand('嘉利玛')">嘉利玛</button><button class="prod-brand-btn" data-brand="花间颂" onclick="toggleProdBrand('花间颂')">花间颂</button>
+    </div>
+    <table class="prod-table" id="prodTable">
+      <thead>
+        <tr>
+          <th>品牌 / 产品</th><th>品类</th><th>规格</th><th>上市时间</th>
+          <th>销售数据</th><th>卖点功效</th><th>商品链接</th>
+        </tr>
+      </thead>
+      <tbody id="prodTbody"><tr><td colspan="7" class="empty-note">近一周内无主要竞品新品上架</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 4.5 行业报告（V15 新增） -->
+<section class="module" id="sec-reports">
+  <div class="mod-header">
+    <h2><span class="icon">📑</span> 行业报告</h2>
+    <span class="mod-badge">0 份 · 当日新增</span>
+  </div>
+  <p class="sec-desc">仅展示当日（2026-08-10）新收录的行业报告，历史不累加；重点报告整理摘要、来源与链接，标「重点」的为必读核心报告。</p>
+  <div class="mod-body">
+    <div class="rep-list" id="repList"><div class="empty-note">近半年暂无重点行业报告收录</div></div>
+  </div>
+</section>
+
+
+<!-- 7. 各平台行业趋势（长期展示） -->
+<section class="module" id="sec-trends">
+  <div class="mod-header">
+    <h2><span class="icon">📈</span> 行业趋势</h2>
+    <span class="mod-badge">5 条趋势 · 近半年</span>
+  </div>
+  <p class="sec-desc">仅展示近半年（2026-02-11 ~ 2026-08-10）内发布的行业趋势，作为长期风向标（赛道级迁移、结构性审美变化）。</p>
+    <div class="mod-body">
+      <div class="trend-list" id="trendList"><div class="trend-item" data-title="头部品牌稳守 + 白牌达人突围双轨格局"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">05</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 抖音电商</span><a href="https://www.chanmama.com/yunyingquan/article/2035.html" target="_blank" rel="noopener" class="trend-title">头部品牌稳守 + 白牌达人突围双轨格局 ↗</a></div><div class="trend-summary">韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。</div><div class="trend-data">📊 韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据</div><div class="trend-src">🔗 来源：蝉妈妈×抖音电商　·　发布：2026-08-05</div></div></div><div class="trend-item" data-title="气垫/粉饼夏季爆发 + 妆造一体化"><div class="trend-date"><div class="d-month">08月</div><div class="d-day">04</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 抖音</span><a href="https://www.chanmama.com/yunyingquan/article/2034.html" target="_blank" rel="noopener" class="trend-title">气垫/粉饼夏季爆发 + 妆造一体化 ↗</a></div><div class="trend-summary">玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）</div><div class="trend-src">🔗 来源：蝉妈妈×抖音电商　·　发布：2026-08-04</div></div></div><div class="trend-item" data-title="彩妆审美回摆：从网感到活人感"><div class="trend-date"><div class="d-month">07月</div><div class="d-day">01</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 小红书</span><a href="https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026" target="_blank" rel="noopener" class="trend-title">彩妆审美回摆：从网感到活人感 ↗</a></div><div class="trend-summary">用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。</div><div class="trend-data">📊 #卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》</div><div class="trend-src">🔗 来源：小红书×界面新闻　·　发布：2026-07-01</div></div></div><div class="trend-item" data-title="凉感化妆品赛道爆发（护肤→底妆延伸）"><div class="trend-date"><div class="d-month">05月</div><div class="d-day">31</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 微信指数</span><a href="https://index.weixin.qq.com/" target="_blank" rel="noopener" class="trend-title">凉感化妆品赛道爆发（护肤→底妆延伸） ↗</a></div><div class="trend-summary">1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。</div><div class="trend-data">📊 销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%</div><div class="trend-src">🔗 来源：微信指数×魔镜市场　·　发布：2026-05-31</div></div></div><div class="trend-item" data-title="巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座"><div class="trend-date"><div class="d-month">04月</div><div class="d-day">22</div></div><div class="trend-main"><div class="trend-head"><span class="trend-plat">📈 平台官方大会</span><span class="ai-tag">🤖 AI</span><a href="https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html" target="_blank" rel="noopener" class="trend-title">巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座 ↗</a></div><div class="trend-summary">4/22 青岛举办的 2026 巨量引擎渠道合作伙伴生态大会释放平台级信号：广告营销竞争核心从「流量思维」转向「经营思维」，品牌更关注预算的实际经营价值；巨量引擎全面升级「品星云」AI 核心能力，拆解 AI 内容生态逻辑（创意生产提效+内容产业链迭代），火山引擎面向代理商发布 AI 解决方案；品牌广告/星图/千川/本地推全场景商业产品自动化升级。</div><div class="trend-data">📊 「智·启无境」2026巨量引擎渠道合作伙伴生态大会（4/22 青岛） | 品星云AI能力升级 | 火山引擎代理商AI解决方案</div><div class="trend-src">🔗 来源：中国日报网/巨量引擎官方　·　发布：2026-04-22</div></div></div></div>
+    </div>
+</section>
+
+<!-- 7.5 V22：AI 营销前沿专题（平台AI布局/明星AI授权/AIGC/AI漫剧短剧/星图植入） -->
+<section class="module" id="sec-ai">
+  <div class="mod-header">
+    <h2><span class="icon">🤖</span> AI 营销前沿</h2>
+    <span class="mod-badge">0 条动态 · 当日</span>
+  </div>
+  <p class="sec-desc">重点关注各平台对 AI 的积极布局与投入、明星 AI 授权（数字分身/AI 肖像）、AIGC 素材、AI 漫剧/短剧、AI 星图广告植入等新广告形态。</p>
+  <div class="mod-body">
+    <div class="ai-list" id="aiList"><div class="empty-note">当日无新增 AI 营销动态</div></div>
+  </div>
+</section>
+
+<!-- 8. 美诺启示 & 本周行动（V12 新增，V13 改名） -->
+<section class="module module-insight" id="sec-insight">
+  <div class="mod-header">
+    <h2><span class="icon">💡</span> 美诺启示 & 本周行动</h2>
+    <span class="mod-badge">基于今日情报</span>
+  </div>
+  <div class="mod-body">
+    <div class="insp-block">
+      <h3 class="insp-title">🔍 对美诺的启发</h3>
+      <div class="insp-list"></div>
+    </div>
+    <div class="act-block">
+      <h3 class="act-title">✅ 本周行动清单</h3>
+      <div class="act-list"><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：10/01 国庆节（公历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：09/25 中秋节（农历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：09/17 世界骑行日（国际节日）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：08/19 七夕（农历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div><div class="act-item act-highlight"><div class="act-text">⭐ 重点节点预告：08/14 绿色情人节（公历）— 建议提前规划借势内容与排期</div><div class="act-owner">👤 日历</div><span class="act-status st-todo">待规划</span></div></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.main-wrap -->
+
+<!-- 节点详情弹窗 -->
+<div class="overlay" id="nodeOverlay">
+  <div class="modal">
+    <div class="modal-hd">
+      <h3>📅 营销节点详情</h3>
+      <button class="modal-close" onclick="closeNodeModal()">✕</button>
+    </div>
+    <div class="modal-bd" id="nodeDetailContent"></div>
+  </div>
+</div>
+
+<script src="../nodes.js"></script>
+<script>
+// 嵌入数据（nodes 已外置为共享 /nodes.js，避免每页重复内联 317KB×2）
+const DATA = {"meta": {"date": "2026-08-10", "version": "23.0"}, "today_must_see": [], "endorsements": [{"brand": "王老吉", "star": "李昀锐", "level": "全球品牌代言人", "star_title": "全球品牌代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "李昀锐官宣王老吉全球品牌代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#王老吉全球品牌代言人李昀锐#", "heat_num": 172000, "heat_text": "17.2万", "category": "食品饮料", "brand_actions": "8月10日广州新品发布盛典上官宣李昀锐为「王者英雄」全球品牌代言人，同步推出战略新品「王者英雄」天然能量电解质饮料与「乐苜力」果蔬汁，并焕新瓶装包装；李昀锐作《上场，就是王者英雄》主题演讲。", "reactions": "发布会获三湘都市报、21世纪经济报道等主流媒体报道，行业关注其从凉茶向天然植物饮料全品类生态扩张的战略；张凌赫、李昀锐现场助阵引发年轻消费群体讨论。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "SENKA珊珂", "star": "陈哲远", "level": "亚太区品牌代言人", "star_title": "亚太区品牌代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "陈哲远官宣珊珂亚太区品牌代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#珊珂亚太区品牌代言人陈哲远#", "heat_num": 146000, "heat_text": "14.6万", "category": "护肤", "brand_actions": "8月10日官宣陈哲远为亚太区品牌代言人，以「温和净『哲』学 洗出『远』气透亮肌」为创意，同步焕新升级珊珂绵密泡沫洁面膏PW系列（微米美容泡），主打温和洁面。", "reactions": "品牌官博与全网话题#珊珂亚太区品牌代言人陈哲远#上线，粉丝对其学生时代即为珊珂蓝洁面真实爱用者的缘分故事产生共鸣。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "我的花园世界", "star": "张新成", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "张新成官宣我的花园世界代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#张新成代言我的花园世界#", "heat_num": 67851, "heat_text": "67,851", "category": "香氛", "brand_actions": "8月10日官宣张新成为《我的花园世界》品牌大使，以「以笃定之心，种治愈之花」为口号，推出专属兑换码福利并开展8.10-8.17抽奖送京东卡/鲜花贺卡活动，联动8月11日九城大屏展示。", "reactions": "官宣迅速登上微博热搜，玩家讨论热烈，围绕游戏入口（小程序/APP）与后续定制花卉活动展开期待，周年庆百城LED与线下快闪此前已铺垫热度。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "ddg", "star": "徐振轩", "level": "守护代言人", "star_title": "守护代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "徐振轩官宣ddg守护代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#ddg守护代言人徐振轩#", "heat_num": 27504, "heat_text": "27,504", "category": "美容仪", "brand_actions": "8月10日官宣徐振轩为ddg品牌守护代言人，主推ddg超修水乳/精华，推出「振守新肌」限定套组（¥219）赠六件周边，并点亮上海、北京等7城10屏户外大屏（8.13-8.19）打卡活动。", "reactions": "粉丝「小蜗牛」积极参与线下大屏同框打卡及官号留言抽奖，亲签照与限量周边抽奖带动评论区互动。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "X_CrossOver", "star": "金允植", "level": "首位全球品牌代言人", "star_title": "首位全球品牌代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "金允植官宣X_CrossOver首位全球品牌代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#金允植XCO首位全球品牌代言人#", "heat_num": 20991, "heat_text": "20,991", "category": "服饰", "brand_actions": "8月10日官宣金允植为X_CrossOver首位全球品牌代言人，推出「Azure by Side」系列珠宝（8月13日13:14上线），并以代言人名义通过首都爱护动物协会捐助流浪动物粮食物资及疗愈犬项目。", "reactions": "粉丝超话#金允植XCO首位全球品牌代言人#热烈讨论，并参与「星品影响力」活动助推其新宣冲榜。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "LEECN莉肯", "star": "贺嘉述", "level": "新序美学大使", "star_title": "新序美学大使", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "贺嘉述官宣LEECN莉肯新序美学大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#LEECN莉肯新序美学大使贺嘉述#", "heat_num": 14219, "heat_text": "14,219", "category": "彩妆", "brand_actions": "8月10日与法宣阁共同官宣为LEECN莉肯新序美学大使，推出「宣述拾光」限定套组（京东渠道），并在京东APP上线「法嘉」限定皮肤主题，主打丝绒唇釉与精油养护。", "reactions": "该双人合作被商务号称为其「第三个双人商务」，粉丝对法宣阁、贺嘉述同框的清透白色系造型与默契感评价良好，并参与星品圈粉活动。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "LEECN莉肯", "star": "法宣阁", "level": "新序美学大使", "star_title": "新序美学大使", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "法宣阁官宣LEECN莉肯新序美学大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#LEECN莉肯新序美学大使法宣阁#", "heat_num": 14213, "heat_text": "14,213", "category": "彩妆", "brand_actions": "8月10日与贺嘉述共同官宣为LEECN莉肯新序美学大使，推出「宣述拾光」限定套组（京东渠道），并在京东APP上线「法嘉」限定皮肤主题，主打丝绒唇釉与精油养护。", "reactions": "该双人合作被商务号称为其「第三个双人商务」，粉丝对法宣阁、贺嘉述同框的清透白色系造型与默契感评价良好，并参与星品圈粉活动。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "3CE", "star": "冯建宇", "level": "星动挚友", "star_title": "星动挚友", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "冯建宇官宣3CE星动挚友", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#3CE星动挚友冯建宇#", "heat_num": 12343, "heat_text": "12,343", "category": "彩妆", "brand_actions": "8月10日官宣冯建宇为3CE星动挚友，8月11日20:00空降3CE京东自营旗舰店直播间（入手「心动视线」眼颊礼盒解锁限定周边及亲签），并在东莞、天津、南京三城大屏点亮打卡（至8.12）。", "reactions": "粉丝参与线下大屏同框打卡攻略，话题#3CE星动挚友冯建宇#下亲签小卡抽奖带动互动，对其「少年气质碰撞彩妆色彩」的物料期待较高。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "资生堂", "star": "王玉雯", "level": "品牌护肤大使", "star_title": "品牌护肤大使", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "王玉雯官宣资生堂品牌护肤大使", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#资生堂品牌护肤大使王玉雯#", "heat_num": 2961, "heat_text": "2,961", "category": "护肤", "brand_actions": "8月10日官宣王玉雯为资生堂品牌护肤大使，主推#资生堂悦薇胶原炮面霜#，联动8月13-19日天猫超级品牌日，王玉雯出镜诠释「胶原自生，轮廓自立」的年轻新生肌理念。", "reactions": "品牌官博持续释出王玉雯相关物料（如「揭秘女明星的顶美思路」），粉丝对其清爽灵动气质契合资生堂年轻化方向反响正面。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "灵妖劫手游", "star": "宋轶", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "宋轶官宣灵妖劫手游代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#灵妖劫代言人宋轶#", "heat_num": 2730, "heat_text": "2,730", "category": "游戏", "brand_actions": "8月10日官宣宋轶为《灵妖劫》品牌代言人，释出TVC预告及全新版本（8月13日上线），游戏内推出代言人限定外显、登录豪礼与亲签海报，输入SY666/SY777/SY888可领福利礼包。", "reactions": "玩家参与社区福利活动（评论抽奖送亲签海报），宋轶的东方仙韵气质与游戏国风山海世界观形成呼应，引发玩家讨论与二次传播。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "益美滋", "star": "李雪琴", "level": "代言人", "star_title": "代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "李雪琴官宣益美滋品牌代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#益美滋品牌代言人李雪琴#", "heat_num": 1038, "heat_text": "1,038", "category": "营养保健", "brand_actions": "8月10日官宣李雪琴为I'MINT益美滋品牌代言人，以「声声润岁月，温柔伴成长」为主题，推出教师节限定润喉糖礼盒（书本造型含手工花/贺卡），9月9日前送李雪琴限量周边并抽亲签照，同步拍摄TVC。", "reactions": "品牌官博持续释出李雪琴「代课老师」创意物料，粉丝对其松弛幽默的国民风格反响正面，教师节礼盒话题引发讨论。", "source_tier": "platform", "source_classify_note": "可信一手来源"}, {"brand": "逐本", "star": "张馨予", "level": "轮廓油代言人", "star_title": "轮廓油代言人", "action": "新签", "date": "2026-08-10", "risk": "低", "note": "张馨予官宣逐本轮廓油代言人", "source_type": "微博@星品影响力", "source_url": "https://m.weibo.cn/u/7946268781", "topic_hashtag": "#逐本轮廊油代言人张馨予#", "heat_num": 567, "heat_text": "567", "category": "护肤", "brand_actions": "8月10日官宣张馨予为逐本轮廓油代言人，主推「逐本不染山参轮廓油」，以「向上而升，馨光已至」为创意，全国7城大屏（8.12-8.19）展示，并设评论区互动抽正装活动。", "reactions": "品牌官博官宣博文互动量较高，粉丝对其「向下扎根、向上生长」的叙事产生共鸣，大屏打卡与「向上」话题带动用户UGC。", "source_tier": "platform", "source_classify_note": "可信一手来源"}], "marketing_cases": [], "new_products": [], "hot_topics": [{"date": "2026-08-10", "time": "2026-08-10", "platform": "微信", "topic": "微信视频号8月10日起《短视频带货场景AI应用规范》生效：带货视频含AI须强制标注，否则限流", "trend_direction": "规则升级", "data_support": "8月3日微信视频号发布新规，自8月10日起，发布含AI生成内容的带货短视频（AI数字人/口播、AI商品展示画面与效果、AI海报等）须主动添加AI标注，确保AI内容与实际商品一致，否则限制分发；普通非带货视频仅倡导标注。该规范对接《人工智能生成合成内容标识办法》，与抖音、快手、B站同期收紧数字人审核形成行业统一治理。", "content_ideas": {"视频号/小红书": "美诺在视频号/小红书的带货短视频若使用AI生成场景或数字人，须显式标注『AI生成』且内容与实际商品一致；底妆种草优先走真人实测+真实上脸对比，以『持妆/控油/贴肤』可验证描述建立信任，规避限流与虚假宣传红线。"}, "source_name": "网经社", "source_url": "https://www.100ec.cn/detail--6662371.html", "source_tier": "aggregator", "source_classify_note": "微信视频号官方规范（网经社报道）", "read_full": true, "source_excerpt": "8月3日,微信视频号发布新规,自2026年8月10日起,创作者在发布含AI生成内容的带货短视频时,须主动添加AI标注,否则平台将对违规视频限制分发……带货短视频:要求必须主动添加AI标注。", "read_method": "websearch"}], "trends": [{"platform": "抖音电商", "title": "头部品牌稳守 + 白牌达人突围双轨格局", "summary": "韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。", "data_support": "韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据", "source_name": "蝉妈妈×抖音电商", "source_url": "https://www.chanmama.com/yunyingquan/article/2035.html", "time": "2026-08-05", "source_tier": "original", "source_classify_note": "可信一手来源", "_http_status": 200}, {"date": "2026-08-04", "time": "2026-08-04", "title": "气垫/粉饼夏季爆发 + 妆造一体化", "summary": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）", "platform": "抖音", "source_name": "蝉妈妈×抖音电商", "source_tier": "original", "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html", "source_classify_note": "可信一手来源", "read_full": false, "source_excerpt": "", "need_date_check": false}, {"platform": "小红书", "title": "彩妆审美回摆：从网感到活人感", "summary": "用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。", "data_support": "#卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》", "source_name": "小红书×界面新闻", "source_url": "https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026", "time": "2026-07-01", "source_tier": "platform", "source_classify_note": "可信一手来源", "_http_status": 200}, {"platform": "微信指数", "title": "凉感化妆品赛道爆发（护肤→底妆延伸）", "summary": "1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。", "data_support": "销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%", "source_name": "微信指数×魔镜市场", "source_url": "https://index.weixin.qq.com/", "time": "2026-05-31", "source_tier": "original", "source_classify_note": "可信一手来源", "_http_status": "<urlopen error [Errno 11001] getaddrinfo", "need_link_check": true}, {"platform": "平台官方大会", "title": "巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座", "summary": "4/22 青岛举办的 2026 巨量引擎渠道合作伙伴生态大会释放平台级信号：广告营销竞争核心从「流量思维」转向「经营思维」，品牌更关注预算的实际经营价值；巨量引擎全面升级「品星云」AI 核心能力，拆解 AI 内容生态逻辑（创意生产提效+内容产业链迭代），火山引擎面向代理商发布 AI 解决方案；品牌广告/星图/千川/本地推全场景商业产品自动化升级。", "data_support": "「智·启无境」2026巨量引擎渠道合作伙伴生态大会（4/22 青岛） | 品星云AI能力升级 | 火山引擎代理商AI解决方案", "source_name": "中国日报网/巨量引擎官方", "source_url": "https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html", "time": "2026-04-22", "source_tier": "unknown", "source_classify_note": "未识别域名，须人工判定"}], "industry_reports": [], "marketing_news": [], "ai_marketing": [], "continuous_watch": [], "brand_inspiration": [], "weekly_actions": [{"action": "⭐ 重点节点预告：10/01 国庆节（公历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：09/25 中秋节（农历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：09/17 世界骑行日（国际节日）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：08/19 七夕（农历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}, {"action": "⭐ 重点节点预告：08/14 绿色情人节（公历）— 建议提前规划借势内容与排期", "owner": "日历", "status": "待规划", "highlight": true}], "_key_dates": ["2026-08-14", "2026-08-19", "2026-09-17", "2026-09-25", "2026-10-01"], "_today": "2026-08-10", "_endorse_range": "2026-08-04 ~ 2026-08-10", "_product_range": "竞品 2026-08-04~2026-08-10 / 本品 2026-07-11~2026-08-10", "_trend_range": "2026-02-11 ~ 2026-08-10"};
+const KEY_DATES = new Set(["2026-08-14", "2026-08-19", "2026-09-17", "2026-09-25", "2026-10-01"]);  // V17.1 重点节点日期（七夕/中秋/国庆/万圣/圣诞/元旦/春节）
+
+
+// ─── 数据：由生成器在 <script> 顶部注入（const DATA / const NODES_DATA），此处不再重复声明 ───
+// 营销日历完整收录全部节点；低契合度节点（drop_base=true）保留展示，仅不出创意建议
+const ACTIVE_NODES = (typeof NODES_DATA !== 'undefined') ? NODES_DATA.slice() : [];
+
+// ─── V22.1 侧边栏导航（滚动高亮 + 汉堡折叠） ───
+function scrollToSec(id, el) {
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+  if(el) el.classList.add('active');
+  const target = document.getElementById(id);
+  if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+  // 移动端点击后收起侧边栏
+  if(window.innerWidth <= 900) toggleSidebar(false);
+}
+function toggleSidebar(open){
+  const sb = document.getElementById('sidebar');
+  const mask = document.getElementById('sideMask');
+  if(open){ sb.classList.add('open'); mask.classList.add('show'); }
+  else { sb.classList.remove('open'); mask.classList.remove('show'); }
+}
+// 滚动时高亮当前板块（scrollspy）
+const SEC_IDS = ['sec-must','sec-endorse','sec-cases','sec-calendar','sec-hot','sec-products','sec-ai','sec-reports','sec-trends','sec-insight'];
+window.addEventListener('scroll', function(){
+  if(window.innerWidth <= 900) return; // 移动端不做 scrollspy
+  const y = window.scrollY + 120;
+  let cur = SEC_IDS[0];
+  for(const id of SEC_IDS){
+    const el = document.getElementById(id);
+    if(el && el.offsetTop <= y) cur = id;
+  }
+  const links = document.querySelectorAll('.sidebar-nav a');
+  let changed = false;
+  links.forEach(a => {
+    const on = a.getAttribute('href') === '#' + cur;
+    if(on !== a.classList.contains('active')) changed = true;
+    a.classList.toggle('active', on);
+  });
+});
+
+// ─── V22.1 日历快捷切换（前一天 / 今天 / 后一天） ───
+function quickDate(offset){
+  const cur = (typeof DATA !== 'undefined' && DATA.meta && DATA.meta.date) ? DATA.meta.date : '';
+  if(!cur) return;
+  const t = new Date(cur + 'T00:00:00');
+  if(offset === 0){ window.location.href = '/'; return; }
+  t.setDate(t.getDate() + offset);
+  const ds = t.getFullYear() + '-' + String(t.getMonth()+1).padStart(2,'0') + '-' + String(t.getDate()).padStart(2,'0');
+  goToDate(ds);
+}
+
+// ─── 日期切换（日历弹窗） ───
+const AVAILABLE_DATES = ["2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15", "2026-08-11", "2026-08-10", "2026-08-04"];  // 由 Python 注入
+const LOCAL_DATES = ["2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
+const CDN_BASE = "https://cdn.jsdelivr.net/gh/robin0324/menow-intel-data@main";         // 由 Python 注入（历史快照 CDN 基址，空则仅本地窗口可用）
+let cpY, cpM; // 当前弹窗显示的年月
+
+function toggleCalPopup(e) {
+  e.stopPropagation();
+  const p = document.getElementById('calPopup');
+  if(p.classList.contains('show')) { p.classList.remove('show'); return; }
+  renderCalPopup();
+  p.classList.add('show');
+}
+function closeCalPopup(){ document.getElementById('calPopup').classList.remove('show'); }
+document.addEventListener('click', function(e){
+  const dp = document.querySelector('.date-picker');
+  if(dp && !dp.contains(e.target)) closeCalPopup();
+});
+
+function renderCalPopup(){
+  const now = new Date();
+  cpY = cpY || now.getFullYear();
+  cpM = cpM !== undefined ? cpM : now.getMonth(); // 0-based
+  document.getElementById('cpTitle').textContent = cpY + '年 ' + (cpM+1) + '月';
+  const grid = document.getElementById('cpGrid');
+  grid.innerHTML = '';
+  const firstDay = new Date(cpY, cpM, 1).getDay(); // 0=Sun
+  const offset = firstDay === 0 ? 6 : firstDay - 1; // Mon=0
+  const daysInMonth = new Date(cpY, cpM+1, 0).getDate();
+  const daysInPrev = new Date(cpY, cpM, 0).getDate();
+  const todayStr = DATA.meta ? DATA.meta.date : '';
+  const todayY = parseInt(todayStr.substring(0,4));
+  const todayM = parseInt(todayStr.substring(5,7))-1;
+  const todayD = parseInt(todayStr.substring(8,10));
+  const availSet = new Set(AVAILABLE_DATES);
+  // 上月尾部
+  for(let i=offset-1;i>=0;i--){
+    const d = daysInPrev - i;
+    const el = document.createElement('div');
+    el.className='cp-day cp-other'; el.textContent=d;
+    grid.appendChild(el);
+  }
+  // 当月
+  for(let d=1;d<=daysInMonth;d++){
+    const el = document.createElement('div');
+    el.className='cp-day';
+    el.textContent = d;
+    const ym = cpY + '-' + String(cpM+1).padStart(2,'0');
+    const ds = ym + '-' + String(d).padStart(2,'0');
+    const isToday = (cpY===todayY && cpM===todayM && d===todayD);
+    const hasData = availSet.has(ds);
+    if(isToday) el.classList.add('cp-today');
+    if(hasData) el.classList.add('cp-has-data');
+    if(hasData && !isToday) el.classList.add('cp-sel');
+    el.onclick = function(){ goToDate(ds); };
+    grid.appendChild(el);
+  }
+  // 下月头部
+  const totalCells = Math.ceil((offset+daysInMonth)/7)*7;
+  const nextCount = totalCells - offset - daysInMonth;
+  for(let d=1;d<=nextCount;d++){
+    const el = document.createElement('div');
+    el.className='cp-day cp-other'; el.textContent=d;
+    grid.appendChild(el);
+  }
+}
+function cpMonth(dir){ cpM += dir; if(cpM>11){cpM=0;cpY++}if(cpM<0){cpM=11;cpY--} renderCalPopup(); }
+function cpYear(dir){ cpY += dir; renderCalPopup(); }
+function goToDate(ds){
+  closeCalPopup();
+  const localSet = new Set(LOCAL_DATES);
+  if(localSet.has(ds)){
+    // 最近窗口内的日期：本地 d/ 子页已部署，直接同站跳转（稳定、不依赖 CDN）
+    window.location.href = '/d/' + ds + '.html';
+  } else if(CDN_BASE){
+    // 更早的历史：跳回主看板并通过 ?date= 参数在当前站点内加载历史快照，
+    // 避免直接 window.open jsDelivr 的 .html（jsDelivr 返回 text/plain，会显示源码）。
+    window.location.href = '/?date=' + ds;
+  } else {
+    alert('该日期的历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
+  }
+}
+
+// ─── 日历月份切换 ───
+let calMonths = [];
+let currentMonthIdx = 0;
+
+function initCalendar() {
+  // 收集所有可借势节点中的唯一年月
+  const monthSet = new Set();
+  ACTIVE_NODES.forEach(n => {
+    if(n.date) monthSet.add(n.date.substring(0,7));
+  });
+  calMonths = Array.from(monthSet).sort();
+  if(calMonths.length === 0) return;
+  // 默认定位到报告所属月份（meta.date），否则定位到最新月份
+  const todayYm = (DATA.meta && DATA.meta.date) ? DATA.meta.date.substring(0,7) : '';
+  let startIdx = calMonths.indexOf(todayYm);
+  if(startIdx === -1) startIdx = calMonths.length - 1;
+  currentMonthIdx = startIdx;
+  renderMonthCal(calMonths[startIdx]);
+  updateArrows();
+}
+
+// V19：节日类型4色按钮筛选（无需别名映射，type 1:1 对应）
+
+// 左右箭头切换月份（单月视图）
+function prevMonth() {
+  if(currentMonthIdx > 0) { currentMonthIdx--; renderMonthCal(calMonths[currentMonthIdx]); updateArrows(); }
+}
+function nextMonth() {
+  if(currentMonthIdx < calMonths.length - 1) { currentMonthIdx++; renderMonthCal(calMonths[currentMonthIdx]); updateArrows(); }
+}
+function goToToday() {
+  const todayYm = (DATA.meta && DATA.meta.date) ? DATA.meta.date.substring(0,7) : '';
+  if(todayYm) {
+    const idx = calMonths.indexOf(todayYm);
+    if(idx !== -1) { currentMonthIdx = idx; renderMonthCal(todayYm); updateArrows(); }
+  }
+}
+function updateArrows() {
+  const prev = document.getElementById('calPrev');
+  const next = document.getElementById('calNext');
+  if(prev) prev.disabled = (currentMonthIdx === 0);
+  if(next) next.disabled = (currentMonthIdx >= calMonths.length - 1);
+}
+
+function renderMonthCal(ym) {
+  const [year, month] = ym.split('-').map(Number);
+  const firstDay = new Date(year, month - 1, 1).getDay();
+  // 星期一为第一天：日(0)→6, 一(1)→0, 二(2)→1, ...
+  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const todayStr = DATA.meta ? DATA.meta.date : '';
+
+  let html = '<div class="cal-head">一</div><div class="cal-head">二</div><div class="cal-head">三</div>' +
+    '<div class="cal-head">四</div><div class="cal-head">五</div><div class="cal-head">六</div><div class="cal-head">日</div>';
+
+  // 空白填充（星期一起始）
+  for(let i = 0; i < startOffset; i++) html += '<div class="cal-empty"></div>';
+
+  // 日期格子（在有节点的日期上呈现节日名称）
+  for(let d = 1; d <= daysInMonth; d++) {
+    const dateStr = year + '-' + String(month).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+    const isToday = dateStr === todayStr;
+    const nodesOnDay = ACTIVE_NODES.filter(n => n.date === dateStr);
+    const hasNode = nodesOnDay.length > 0;
+    let marksHtml = '';
+    if(hasNode) {
+      const shown = nodesOnDay.slice(0, 4);
+      shown.forEach(function(n, i) {
+        const cat = (n.categories && n.categories[0]) ? n.categories[0] : (n.type || '');
+        const shortName = (n.name || '').split('（')[0].split('(')[0];
+        const isStar = (n.importance || '').indexOf('⭐') >= 0;
+        const starText = isStar ? '⭐' : '';
+        const titleText = (isStar ? '⭐ ' : '') + (n.name || '');
+        const displayText = starText + esc(shortName);
+        marksHtml += '<span class="cal-mark" data-cat="' + esc(cat) + '" title="' + esc(titleText) + '"' +
+          ' onclick="event.stopPropagation();showNodeDetailByDate(\'' + dateStr + '\',' + i + ')">' + displayText + '</span>';
+      });
+      if(nodesOnDay.length > 4) marksHtml += '<span class="cal-more">+' + (nodesOnDay.length - 4) + '</span>';
+    }
+    html += '<div class="cal-day' +
+      (isToday ? ' today' : '') +
+      (hasNode ? ' has-node' : '') +
+      '" data-date="' + dateStr + '"' +
+      (hasNode ? ' onclick="showNodeDetailByDate(\'' + dateStr + '\',0)"' : '') +
+      '>' +
+      '<span class="cal-num">' + d + '</span>' +
+      '<div class="cal-marks">' + marksHtml + '</div>' +
+      '</div>';
+  }
+
+  const grid = document.getElementById('calGrid');
+  if(grid) grid.innerHTML = html;
+
+  const label = document.getElementById('calCurrentMonth');
+  if(label) label.textContent = year + '年' + month + '月';
+
+  applyTypeFilter();
+}
+
+// ─── V19：节日类型按钮筛选（4色按钮，点击切换） ───
+let activeTypeFilters = new Set();  // 空集=显示全部
+
+function toggleTypeFilter(typeKey) {
+  const btn = document.querySelector('.cal-type-btn[data-type="' + typeKey + '"]');
+  if(activeTypeFilters.has(typeKey)) {
+    activeTypeFilters.delete(typeKey);
+    if(btn) btn.classList.remove('active');
+  } else {
+    activeTypeFilters.add(typeKey);
+    if(btn) btn.classList.add('active');
+  }
+  applyTypeFilter();
+}
+
+function resetTypeFilter() {
+  activeTypeFilters.clear();
+  document.querySelectorAll('.cal-type-btn').forEach(b => b.classList.remove('active'));
+  applyTypeFilter();
+}
+
+function applyTypeFilter() {
+  // 如果没有激活任何过滤器，显示全部
+  const showAll = activeTypeFilters.size === 0;
+  document.querySelectorAll('.cal-mark').forEach(m => {
+    const cat = m.dataset.cat;
+    m.style.display = (showAll || activeTypeFilters.has(cat)) ? '' : 'none';
+  });
+  document.querySelectorAll('.cal-day').forEach(d => {
+    const marks = d.querySelectorAll('.cal-mark');
+    let anyVisible = false;
+    marks.forEach(m => { if(m.style.display !== 'none') anyVisible = true; });
+    if(marks.length > 0) {
+      d.classList.toggle('has-node', anyVisible);
+      d.classList.toggle('no-node', !anyVisible);
+    }
+  });
+}
+
+// ─── 点击日期显示节点详情（支持同一天多个节点切换） ───
+function showNodeDetailByDate(dateStr, idx) {
+  const nodes = ACTIVE_NODES.filter(n => n.date === dateStr);
+  if(nodes.length === 0) return;
+  showNodeModal(nodes, idx || 0);
+}
+
+function showNodeModal(nodes, idx) {
+  if(!nodes || !nodes.length) return;
+  idx = idx || 0;
+  const node = nodes[idx];
+  const content = document.getElementById('nodeDetailContent');
+  if(!content) return;
+  window.__curNodes = nodes;  // 供节点间切换使用
+
+  let switcherHtml = '';
+  if(nodes.length > 1) {
+    switcherHtml = '<div class="node-switcher">' + nodes.map(function(n, i) {
+      return '<button class="node-sw-btn' + (i === idx ? ' active' : '') + '" onclick="switchNode(\'' + n.date + '\',' + i + ')">' + esc(n.name) + '</button>';
+    }).join('') + '</div>';
+  }
+
+  let creativeHtml = '';
+  if(node.drop_base === true) {
+    creativeHtml = '<h3 style="margin:16px 0 10px;font-size:15px;color:var(--brand-dark)">💡 参考创意</h3>' +
+      '<div class="creative-abandon">该营销节点与底妆品类契合度较低，未做借势营销建议！</div>';
+  } else {
+    var cb = node.creative_brand, ck = node.creative_kol;
+    var hasC = (cb && (Array.isArray(cb) ? cb.length : true)) || (ck && (Array.isArray(ck) ? ck.length : true));
+    if(hasC) {
+      function _ul(arr){ if(Array.isArray(arr)){ return '<ul class="creative-list">' + arr.map(function(x){return '<li>' + esc(x) + '</li>';}).join('') + '</ul>'; } return '<p>' + esc(arr || '暂无') + '</p>'; }
+      creativeHtml = '<h3 style="margin:16px 0 10px;font-size:15px;color:var(--brand-dark)">💡 参考创意（围绕美诺底妆品类）</h3><div class="creative-split">' +
+        '<div class="creative-col"><h4>🏢 品牌官方视角</h4>' + _ul(cb) + '</div>' +
+        '<div class="creative-col"><h4>🎬 达人/网红种草视角</h4>' + _ul(ck) + '</div></div>';
+    }
+  }
+
+  let platEventsHtml = '';
+  if(node.platform_events && node.platform_events.length > 0) {
+    platEventsHtml = '<div class="platform-events"><h4>🛒 平台活动</h4><ul>' +
+      node.platform_events.map(e => '<li>' + esc(e) + '</li>').join('') + '</ul></div>';
+  }
+
+  const titlePrefix = (node.importance || '').indexOf('⭐') >= 0 ? '⭐ ' : '';
+  content.innerHTML =
+    switcherHtml +
+    '<h2 style="margin-bottom:10px;">' + titlePrefix + esc(node.name || '') + '</h2>' +
+    '<p style="color:var(--text2);margin-bottom:10px;"><strong>日期：</strong>' + esc(node.date || '') +
+    ' | <strong>类型：</strong>' + esc(node.type || '') + '</p>' +
+    '<p style="line-height:1.75;margin-bottom:12px;">' + esc(node.desc || '') + '</p>' +
+    creativeHtml + platEventsHtml;
+
+  document.getElementById('nodeOverlay').classList.add('show');
+}
+
+function switchNode(dateStr, idx) {
+  const nodes = window.__curNodes || ACTIVE_NODES.filter(n => n.date === dateStr);
+  showNodeModal(nodes, idx);
+}
+
+function closeNodeModal() {
+  document.getElementById('nodeOverlay').classList.remove('show');
+}
+
+// ─── 历史日期加载：/?date=YYYY-MM-DD ───
+// jsDelivr 对 .html 返回 text/plain，直接 window.open 会显示源码。
+// 因此非本地日期统一回到主看板，通过 fetch 拉取历史 HTML 文本后用 document.write 渲染，
+// 既绕过 MIME 限制，又保持 URL 在主看板域名下。
+function maybeLoadHistoricalDate(){
+  const params = new URLSearchParams(window.location.search);
+  const ds = params.get('date');
+  if(!ds) return false;
+  const todayStr = (DATA && DATA.meta) ? DATA.meta.date : '';
+  if(ds === todayStr) return false; // 当前首页就是这个日期，无需额外加载
+  const availSet = new Set(AVAILABLE_DATES);
+  if(!availSet.has(ds)){
+    alert('暂无 ' + ds + ' 的历史快照数据。');
+    return false;
+  }
+  const localSet = new Set(LOCAL_DATES);
+  if(localSet.has(ds)){
+    // 本地窗口内的日期直接跳本地子页（更快、不依赖 CDN）
+    window.location.replace('/d/' + ds + '.html');
+    return true;
+  }
+  if(!CDN_BASE){
+    alert('该历史快照尚未配置 CDN 仓库，仅本地保留最近 ' + (LOCAL_DATES.length||'若干') + ' 天可查看。');
+    return false;
+  }
+  // 显示加载提示
+  document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">📅</div><div style="font-size:18px;font-weight:600;color:#333;">正在加载 ' + ds + ' 历史快照...</div><div style="margin-top:8px;color:#999;">从 CDN 拉取数据中，请稍候</div></div>';
+    fetch(CDN_BASE + '/d/' + ds + '.html')
+    .then(r => {
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(html => {
+      // V23.3 修复：历史快照（>12天）经 CDN 拉取后，原方案用 document.write 写入整页，
+      // 但 document.write 在文档已加载后不会再次触发 DOMContentLoaded，手动派发也因浏览器实现差异而不稳定，
+      // 导致翻页/筛选失效。现改为：用 DOMParser 解析快照，把「已渲染好的正文」直接注入当前页面 body，
+      // 再调用当前页面自身、已在最新日期验证可用的 initDashboard() 完成翻页/筛选/搜索定位绑定。
+      // 当前页 <head> 脚本（initDashboard/setupPager/setupProductFilter/initCalendar…）始终保留，作用域确定，
+      // 体验与最新日期完全一致；且不依赖重新推送 CDN 快照（旧快照同样可正常初始化）。
+      try {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        document.body.innerHTML = doc.body.innerHTML;
+        window.__dashInited = false;   // 复位守卫，确保历史视图也能完整初始化
+        initDashboard();               // 复用当前页（最新日期同款）初始化逻辑
+        if(location.hash.indexOf('hit=') >= 0) setTimeout(applySearchHitFromHash, 600);
+      } catch(err) {
+        document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;">' +
+          '<div style="font-size:48px;margin-bottom:16px;">⚠️</div>' +
+          '<div style="font-size:18px;font-weight:600;color:#C62828;">历史快照解析失败</div>' +
+          '<div style="margin-top:8px;color:#999;">' + esc(String(err)) + '</div></div>';
+      }
+    })
+    .catch(err => {
+      document.body.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#666;"><div style="font-size:48px;margin-bottom:16px;">⚠️</div><div style="font-size:18px;font-weight:600;color:#C62828;">加载 ' + ds + ' 历史快照失败</div><div style="margin-top:8px;color:#999;max-width:400px;text-align:center;">' + esc(String(err)) + '</div><a href="/" style="margin-top:20px;color:#E85687;">返回首页</a></div>';
+    });
+  return true;
+}
+
+// V23.3：兼容旧快照（>12 天前的 CDN 快照）的「明星代言」筛选按钮结构。
+// 旧结构把 label 和 button 直接平铺在 .end-filters 下；新版改成每行一个 .end-filter-row，
+// 内包 label + .end-filter-btns。若直接注入旧 body，新版 CSS 会让按钮纵向独占一行。
+// 此函数在 initDashboard 前执行，把旧结构升级为新版结构（幂等）。
+function upgradeLegacyEndorseFilters(){
+  document.querySelectorAll('.end-filters').forEach(function(root){
+    if(root.querySelector('.end-filter-row')) return; // 已是新结构，跳过
+    const children = Array.prototype.slice.call(root.childNodes);
+    const rows = [];
+    let currentLabel = null;
+    let currentBtns = [];
+    function flushRow(){
+      if(!currentLabel && currentBtns.length === 0) return;
+      const row = document.createElement('div');
+      row.className = 'end-filter-row';
+      if(currentLabel) row.appendChild(currentLabel);
+      if(currentBtns.length){
+        const wrap = document.createElement('div');
+        wrap.className = 'end-filter-btns';
+        currentBtns.forEach(function(b){ wrap.appendChild(b); });
+        row.appendChild(wrap);
+      }
+      rows.push(row);
+      currentLabel = null;
+      currentBtns = [];
+    }
+    children.forEach(function(node){
+      if(node.nodeType === 1 && node.classList && node.classList.contains('end-filters-label')){
+        if(currentLabel || currentBtns.length) flushRow();
+        currentLabel = node;
+      } else if(node.nodeType === 1 && node.classList && node.classList.contains('end-filter-btn')){
+        currentBtns.push(node);
+      } else if(node.nodeType === 3 && (node.textContent || '').trim() === ''){
+        // 忽略空白文本节点
+      } else {
+        // 其它节点（不应出现）放到当前 row 末尾兜底
+        if(currentBtns.length) currentBtns.push(node);
+        else if(currentLabel){
+          flushRow();
+          rows.push(node);
+        } else {
+          rows.push(node);
+        }
+      }
+    });
+    flushRow();
+    root.innerHTML = '';
+    rows.forEach(function(r){ root.appendChild(r); });
+  });
+}
+
+// V23.3：历史快照（CDN document.write）不会再次触发 DOMContentLoaded，
+// 故将初始化抽成 initDashboard()，既供 DOMContentLoaded 调用，也供 CDN 写入后手动调用，
+// 使选择 12 天以上历史日期时与最新日期体验完全一致。
+function initDashboard(){
+  if(window.__dashInited) return;   // 防重复初始化（极端浏览器在 document.write 后仍可能触发一次）
+  window.__dashInited = true;
+  // 先升级旧快照结构，再用最新 CSS/JS 初始化
+  upgradeLegacyEndorseFilters();
+  initCalendar();
+  // V19：类型按钮筛选无需初始化（默认显示全部）
+  // 代言 / 营销 翻页（>5条）
+  setupPager({containerId:'endList', itemSelector:'.end-item', perPage:5, insertAfterId:'endList',
+    filterFn: function(it){
+      const okA = !END_ACTION_FILTER || (it.dataset.endAction || '') === END_ACTION_FILTER;
+      const okC = !END_CAT2_FILTER || (it.dataset.cat2 || '') === END_CAT2_FILTER;
+      return okA && okC;
+    }});
+  setupPager({containerId:'mnList', itemSelector:'.mn-item', perPage:5, insertAfterId:'mnList'});
+  setupPager({containerId:'caseList', itemSelector:'.case-item', perPage:5, insertAfterId:'caseList'});
+  setupPager({containerId:'repList', itemSelector:'.rep-item', perPage:5, insertAfterId:'repList'});
+  // 新品上新：翻页（自定义，保留分页展示）
+  setupProductFilter();
+  // 平台热点 / 行业趋势 翻页（>5条）
+  setupPager({containerId:'hotList', itemSelector:'.topic-item', perPage:5, insertAfterId:'hotList'});
+  setupPager({containerId:'trendList', itemSelector:'.trend-item', perPage:5, insertAfterId:'trendList'});
+
+  const overlay = document.getElementById('nodeOverlay');
+  if(overlay) {
+    overlay.addEventListener('click', function(e) {
+      if(e.target === overlay) closeNodeModal();
+    });
+  }
+}
+
+// 点击遮罩关闭
+document.addEventListener('DOMContentLoaded', function() {
+  if(maybeLoadHistoricalDate()) return; // 已触发历史加载，终止当前文档初始化
+  initDashboard();
+});
+
+// ─── 通用分页器：条数 > perPage 时显示「上一页 / 下一页」翻页条，每页 perPage 条 ───
+function setupPager(opts) {
+  const containerId = opts.containerId, itemSelector = opts.itemSelector,
+        perPage = opts.perPage, insertAfterId = opts.insertAfterId;
+  const filterFn = opts.filterFn || null;   // V22.1：外部过滤回调（筛选按钮联动分页）
+  const container = document.getElementById(containerId);
+  if(!container) return;
+  const items = Array.prototype.slice.call(container.querySelectorAll(itemSelector));
+  if(items.length <= perPage) return; // 不超过阈值则不显示翻页
+  let cur = 0;
+  let vPages = 1;
+  const nav = document.createElement('div');
+  nav.className = 'pager-nav';
+  nav.innerHTML = '<button class="pager-btn" data-dir="-1">‹ 上一页</button>' +
+    '<span class="pager-info"></span>' +
+    '<span class="pager-jump">跳至 <input class="pager-input" type="number" min="1" value="1" /> 页</span>' +
+    '<button class="pager-btn pager-go">跳转</button>' +
+    '<button class="pager-btn" data-dir="1">下一页 ›</button>';
+  const anchor = document.getElementById(insertAfterId) || container;
+  anchor.parentNode.insertBefore(nav, anchor.nextSibling);
+  function render() {
+    const vis = filterFn ? items.filter(filterFn) : items.slice();
+    const vTotal = vis.length;
+    vPages = Math.max(1, Math.ceil(vTotal / perPage));
+    if(cur >= vPages) cur = vPages - 1;
+    items.forEach(function(it){ it.style.display = 'none'; });
+    vis.slice(cur*perPage, (cur+1)*perPage).forEach(function(it){ it.style.display = ''; });
+    nav.querySelector('.pager-info').textContent = '第 ' + (cur+1) + ' / ' + vPages + ' 页 · 共 ' + vTotal + ' 条';
+    nav.querySelector('[data-dir="-1"]').disabled = (cur === 0);
+    nav.querySelector('[data-dir="1"]').disabled = (cur >= vPages-1);
+    // V23.2：同步跳转输入框（值=当前页，max=总页数，随筛选实时更新）
+    const inp = nav.querySelector('.pager-input');
+    if(inp){ inp.max = vPages; inp.value = cur + 1; }
+  }
+  nav.querySelector('[data-dir="-1"]').addEventListener('click', function(){ if(cur>0){cur--; render();} });
+  nav.querySelector('[data-dir="1"]').addEventListener('click', function(){ if(cur<vPages-1){cur++; render();} });
+  // V23.2：跳转至指定页（点击「跳转」或输入框回车）
+  function doJump() {
+    const inp = nav.querySelector('.pager-input');
+    let v = parseInt(inp.value, 10);
+    if(isNaN(v)) v = 1;
+    v = Math.min(Math.max(v, 1), vPages);
+    cur = v - 1;
+    render();
+  }
+  nav.querySelector('.pager-go').addEventListener('click', doJump);
+  nav.querySelector('.pager-input').addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doJump(); } });
+  // V22.1b：暴露 showItem —— 翻到包含指定条目的页（全局搜索跨日期定位用）
+  function showItem(el){
+    const vis = filterFn ? items.filter(filterFn) : items.slice();
+    const idx = vis.indexOf(el);
+    if(idx < 0) return false;
+    cur = Math.floor(idx / perPage);
+    render();
+    return true;
+  }
+  window._PAGERS = window._PAGERS || {};
+  window._PAGERS[containerId] = { render, showItem };
+  render();
+}
+
+// ─── 新品上新：翻页（分页展示，去掉品类筛选） ───
+function setupProductFilter() {
+  const tbody = document.getElementById('prodTbody');
+  if(!tbody) return;
+  const allRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+  const perPage = 5;
+  let cur = 0;
+  // 当前生效的品牌筛选键（''=全部）
+  window._prodBrandKey = window._prodBrandKey || '';
+  const nav = document.createElement('div');
+  nav.className = 'pager-nav';
+  nav.innerHTML = '<button class="pager-btn" data-dir="-1">‹ 上一页</button>' +
+    '<span class="pager-info"></span>' +
+    '<span class="pager-jump">跳至 <input class="pager-input" type="number" min="1" value="1" /> 页</span>' +
+    '<button class="pager-btn pager-go">跳转</button>' +
+    '<button class="pager-btn" data-dir="1">下一页 ›</button>';
+  const table = document.getElementById('prodTable');
+  if(table && table.parentNode) table.parentNode.insertBefore(nav, table.nextSibling);
+
+  function apply() {
+    const bk = window._prodBrandKey || '';
+    // 按品牌筛选
+    const filtered = bk ? allRows.filter(r => (r.dataset.brand||'') === bk) : allRows;
+    const pages = Math.max(1, Math.ceil(filtered.length / perPage));
+    if(cur >= pages) cur = pages - 1;
+    if(cur < 0) cur = 0;
+    allRows.forEach(function(r) { r.style.display = 'none'; });
+    filtered.forEach(function(r, i) {
+      r.style.display = (i >= cur*perPage && i < (cur+1)*perPage) ? '' : 'none';
+    });
+    nav.querySelector('.pager-info').textContent = '第 ' + (cur+1) + ' / ' + pages + ' 页 · 共 ' + filtered.length + ' 款';
+    nav.querySelector('[data-dir="-1"]').disabled = (cur === 0);
+    nav.querySelector('[data-dir="1"]').disabled = (cur >= pages-1);
+    nav.style.display = (filtered.length > perPage) ? '' : 'none';
+    // V23.2：同步跳转输入框
+    const inp = nav.querySelector('.pager-input');
+    if(inp){ inp.max = pages; inp.value = cur + 1; }
+  }
+  // ⚠️ 翻页按钮监听
+  nav.querySelector('[data-dir="-1"]').addEventListener('click', function(){ if(cur>0){cur--; apply();} });
+  nav.querySelector('[data-dir="1"]').addEventListener('click', function(){ if(cur < Math.ceil((window._prodBrandKey ? allRows.filter(r => (r.dataset.brand||'')===window._prodBrandKey) : allRows).length/perPage)-1){cur++; apply();} });
+  // V23.2：跳转至指定页
+  function doJump() {
+    const inp = nav.querySelector('.pager-input');
+    let v = parseInt(inp.value, 10);
+    if(isNaN(v)) v = 1;
+    const bk = window._prodBrandKey || '';
+    const total = (bk ? allRows.filter(r => (r.dataset.brand||'')===bk) : allRows).length;
+    const pages = Math.max(1, Math.ceil(total / perPage));
+    v = Math.min(Math.max(v, 1), pages);
+    cur = v - 1;
+    apply();
+  }
+  nav.querySelector('.pager-go').addEventListener('click', doJump);
+  nav.querySelector('.pager-input').addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doJump(); } });
+  apply();
+}
+
+// ─── 新品上新：品牌筛选 ───
+function toggleProdBrand(brand) {
+  window._prodBrandKey = brand;
+  document.querySelectorAll('.prod-brand-btn').forEach(b => {
+    b.classList.toggle('active', (b.dataset.brand||'') === brand);
+  });
+  // 重新执行翻页过滤（重置到第 1 页）
+  const tbody = document.getElementById('prodTbody');
+  if(!tbody) return;
+  // 触发一次翻页刷新：直接调用已有的翻页 apply 不可访问，重新 setupProductFilter
+  // 简化做法：手动重算当前筛选状态
+  const allRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+  const perPage = 5;
+  const filtered = brand ? allRows.filter(r => (r.dataset.brand||'') === brand) : allRows;
+  const pages = Math.max(1, Math.ceil(filtered.length / perPage));
+  // 找翻页器
+  const nav = document.querySelector('#prodTable + .pager-nav') || (() => {
+    const t = document.getElementById('prodTable');
+    if(!t || !t.parentNode) return null;
+    let n = t.nextSibling;
+    while(n && !(n.classList && n.classList.contains('pager-nav'))) n = n.nextSibling;
+    return n;
+  })();
+  if(!nav) return;
+  let cur = 0;
+  allRows.forEach(r => { r.style.display = 'none'; });
+  filtered.forEach(function(r, i) {
+    r.style.display = (i >= cur*perPage && i < (cur+1)*perPage) ? '' : 'none';
+  });
+  nav.querySelector('.pager-info').textContent = '第 ' + (cur+1) + ' / ' + pages + ' 页 · 共 ' + filtered.length + ' 款';
+  const prev = nav.querySelector('[data-dir="-1"]');
+  const next = nav.querySelector('[data-dir="1"]');
+  if(prev) prev.disabled = (cur === 0);
+  if(next) next.disabled = (cur >= pages-1);
+  nav.style.display = (filtered.length > perPage) ? '' : 'none';
+  // V23.2：品牌切换重置到第 1 页，同步跳转输入框
+  const jinp = nav.querySelector('.pager-input');
+  if(jinp){ jinp.max = pages; jinp.value = 1; }
+}
+
+// ─── V21：明星代言动态：形态筛选（全部 / 新签 / 升级 / 活动亮相） ───
+let END_ACTION_FILTER = '';
+let END_CAT2_FILTER = '';
+function toggleEndorseFilter(action) {
+  END_ACTION_FILTER = action;
+  document.querySelectorAll('.end-filter-btn[data-end-action]').forEach(b => {
+    b.classList.toggle('active', (b.dataset.endAction || '') === action);
+  });
+  applyEndorseFilters();
+}
+function toggleCat2Filter(cat) {
+  END_CAT2_FILTER = cat;
+  document.querySelectorAll('.end-filter-btn[data-cat2]').forEach(b => {
+    b.classList.toggle('active', (b.dataset.cat2 || '') === cat);
+  });
+  applyEndorseFilters();
+}
+function applyEndorseFilters() {
+  // 统计可见条数（与分页过滤逻辑一致），驱动空态提示
+  let shown = 0;
+  document.querySelectorAll('.end-item').forEach(it => {
+    const okA = !END_ACTION_FILTER || (it.dataset.endAction || '') === END_ACTION_FILTER;
+    const okC = !END_CAT2_FILTER || (it.dataset.cat2 || '') === END_CAT2_FILTER;
+    if (okA && okC) shown++;
+  });
+  // 刷新分页（V22.1：筛选与每页5条翻页联动，页码/总数在筛选结果上重算）
+  if (window._PAGERS && window._PAGERS['endList']) window._PAGERS['endList'].render();
+  const empty = document.getElementById('endFilterEmpty');
+  if (empty) empty.style.display = shown ? 'none' : 'block';
+}
+
+// ─── V22.1 全局搜索（跨板块分组 + 可选全量历史） ───
+const SEARCH_SECTIONS = [{"sec": "明星代言", "t": "王老吉", "blob": "王老吉 李昀锐 新签 全球品牌代言人 #王老吉全球品牌代言人李昀锐#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "SENKA珊珂", "blob": "SENKA珊珂 陈哲远 新签 亚太区品牌代言人 #珊珂亚太区品牌代言人陈哲远#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "我的花园世界", "blob": "我的花园世界 张新成 新签 代言人 #张新成代言我的花园世界#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "ddg", "blob": "ddg 徐振轩 新签 守护代言人 #ddg守护代言人徐振轩#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "X_CrossOver", "blob": "X_CrossOver 金允植 新签 首位全球品牌代言人 #金允植XCO首位全球品牌代言人#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "LEECN莉肯", "blob": "LEECN莉肯 贺嘉述 新签 新序美学大使 #LEECN莉肯新序美学大使贺嘉述#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "3CE", "blob": "3CE 冯建宇 新签 星动挚友 #3CE星动挚友冯建宇#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "资生堂", "blob": "资生堂 王玉雯 新签 品牌护肤大使 #资生堂品牌护肤大使王玉雯#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "灵妖劫手游", "blob": "灵妖劫手游 宋轶 新签 代言人 #灵妖劫代言人宋轶#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "益美滋", "blob": "益美滋 李雪琴 新签 代言人 #益美滋品牌代言人李雪琴#", "date": "2026-08-10"}, {"sec": "明星代言", "t": "逐本", "blob": "逐本 张馨予 新签 轮廓油代言人 #逐本轮廊油代言人张馨予#", "date": "2026-08-10"}, {"sec": "行业趋势", "t": "头部品牌稳守 + 白牌达人突围双轨格局", "blob": "头部品牌稳守 + 白牌达人突围双轨格局 韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。 韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据", "date": "2026-08-10"}, {"sec": "行业趋势", "t": "气垫/粉饼夏季爆发 + 妆造一体化", "blob": "气垫/粉饼夏季爆发 + 妆造一体化 玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商） ", "date": "2026-08-10"}, {"sec": "行业趋势", "t": "彩妆审美回摆：从网感到活人感", "blob": "彩妆审美回摆：从网感到活人感 用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。 #卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》", "date": "2026-08-10"}, {"sec": "行业趋势", "t": "凉感化妆品赛道爆发（护肤→底妆延伸）", "blob": "凉感化妆品赛道爆发（护肤→底妆延伸） 1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。 销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%", "date": "2026-08-10"}, {"sec": "行业趋势", "t": "巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座", "blob": "巨量引擎「智·启无境」2026 生态大会：营销逻辑从流量思维转向经营思维，AI 成为增长底座 4/22 青岛举办的 2026 巨量引擎渠道合作伙伴生态大会释放平台级信号：广告营销竞争核心从「流量思维」转向「经营思维」，品牌更关注预算的实际经营价值；巨量引擎全面升级「品星云」AI 核心能力，拆解 AI 内容生态逻辑（创意生产提效+内容产业链迭代），火山引擎面向代理商发布 AI 解决方案；品牌广告/星", "date": "2026-08-10"}];   // Python 注入：当前快照 [{sec,t,blob,date}]
+const SEC_MAP = {'今日精选':'sec-must','明星代言':'sec-endorse','营销动态':'sec-cases','营销日历':'sec-calendar','平台热点':'sec-hot','新品上新':'sec-products','行业报告':'sec-reports','行业趋势':'sec-trends','美诺启示':'sec-insight','AI营销前沿':'sec-ai','持续关注':'sec-cases','本周行动':'sec-insight','成功案例':'sec-cases'};
+let SEARCH_HIST = null;
+let SEARCH_HIST_LOADING = false;
+
+function globalSearch(kw){
+  const pop = document.getElementById('searchPop');
+  kw = (kw || '').trim();
+  if(!kw){ if(pop) pop.classList.remove('show'); return; }
+  if(pop) pop.classList.add('show');
+  const box = document.getElementById('searchResults');
+  const full = document.getElementById('searchFull') ? document.getElementById('searchFull').checked : false;
+  if(full && !SEARCH_HIST && !SEARCH_HIST_LOADING){
+    SEARCH_HIST_LOADING = true;
+    box.innerHTML = '<div class="search-loading">⏳ 正在拉取全量历史索引（30天/CDN）…</div>';
+    loadHistIndex(function(){ doSearch(kw, box); });
+  } else {
+    doSearch(kw, box);
+  }
+}
+function loadHistIndex(cb){
+  const fail = function(){
+    SEARCH_HIST_LOADING = false;
+    const box = document.getElementById('searchResults');
+    box.innerHTML = '<div class="search-empty">历史索引暂不可用：未找到 search_index.json（本地与 CDN 均无）</div>';
+  };
+  // V23.2：统一走站点根目录的 search_index.json，避免 /d/ 快照页相对路径解析到不存在的 /d/search_index.json 后落入 CDN 缓存旧版。
+  fetch('/search_index.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(idx){ SEARCH_HIST = (idx && idx.items) || []; SEARCH_HIST_LOADING = false; cb(); })
+    .catch(function(){
+      if(CDN_BASE){
+        fetch(CDN_BASE + '/search_index.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+          .then(function(idx){ SEARCH_HIST = (idx && idx.items) || []; SEARCH_HIST_LOADING = false; cb(); })
+          .catch(fail);
+      } else fail();
+    });
+}
+function doSearch(kw, box){
+  const full = document.getElementById('searchFull') ? document.getElementById('searchFull').checked : false;
+  const scopeNote = document.getElementById('searchScopeNote');
+  const kws = kw.toLowerCase().split(/\s+/).filter(Boolean);
+  const pool = (full && SEARCH_HIST) ? SEARCH_HIST : SEARCH_SECTIONS;
+  if(scopeNote){
+    scopeNote.textContent = full ? (SEARCH_HIST ? '（全量 ' + SEARCH_HIST.length + ' 条）' : '（历史索引加载中…）') : '';
+  }
+  const groups = {};
+  let total = 0;
+  pool.forEach(function(x){
+    const blob = ((x.t || '') + ' ' + (x.blob || '')).toLowerCase();
+    if(kws.every(function(k){ return blob.indexOf(k) >= 0; })){
+      (groups[x.sec] = groups[x.sec] || []).push(x);
+      total++;
+    }
+  });
+  if(!total){ box.innerHTML = '<div class="search-empty">未找到与「' + kw + '」相关的内容</div>'; return; }
+  let html = '<div style="padding:6px 16px 8px;font-size:12px;color:var(--text2);">共 ' + total + ' 条结果' + (full && SEARCH_HIST ? '（含全量历史）' : '') + '</div>';
+  Object.keys(groups).forEach(function(sec){
+    const list = groups[sec];
+    html += '<div class="search-group"><div class="search-group-title">' + sec + '<span class="sg-count">' + list.length + ' 条</span></div>';
+    list.slice(0,20).forEach(function(x){
+      const tSafe = esc(x.t).replace(/'/g,"\'");
+      const dSafe = esc(x.date || '').replace(/'/g,"\'");
+      html += '<div class="search-hit" onclick="gotoSearchHit(\'' + sec + '\',\'' + tSafe + '\',\'' + dSafe + '\')"><span class="sh-tag">' + sec + '</span><span class="sh-title">' + esc(x.t) + (x.date ? ' <span style="color:#BFAAB2;font-size:11px;">' + esc(x.date) + '</span>' : '') + '</span></div>';
+    });
+    if(list.length > 20) html += '<div class="search-empty" style="padding:4px 16px;">…还有 ' + (list.length-20) + ' 条</div>';
+    html += '</div>';
+  });
+  box.innerHTML = html;
+}
+// V23.3：搜索结果点击 —— 跨日期则跳转对应快照页定位；同日则在当前页定位
+function gotoSearchHit(sec, title, date){
+  // 先记录目标，跳转/加载失败时可在目标页兜底恢复
+  try { sessionStorage.setItem('__menow_search_hit', JSON.stringify({sec: sec, title: title, date: date})); } catch(e){}
+  closeSearch();
+  // V23.3 修复：CDN 注入历史快照后 DATA 仍是首页（最新日期）数据，
+  // 因此当前视图日期必须优先从 URL ?date= 读取，否则跨日期搜索会被误判为同日。
+  const urlDate = new URLSearchParams(window.location.search).get('date') || '';
+  const curDate = urlDate || ((typeof DATA !== 'undefined' && DATA.meta && DATA.meta.date) ? DATA.meta.date : '');
+  if(date && date !== curDate){
+    const localSet = new Set(LOCAL_DATES);
+    const availSet = new Set(AVAILABLE_DATES);
+    const hit = '#hit=' + encodeURIComponent(sec + '|' + title);
+    if(localSet.has(date)){
+      // 该日期有本地快照页（CloudStudio 与 GitHub Pages 均已部署，不会 404）
+      window.location.href = '/d/' + date + '.html' + hit;
+    } else if(availSet.has(date) && CDN_BASE){
+      // 有快照页但本地未保留：经主看板 ?date= 在本站内用 CDN 拉取渲染
+      window.location.href = '/?date=' + date + hit;
+    } else {
+      // 目标日期既无本地快照也不在可用列表 → 在当前页尝试定位；找不到则提示
+      if(!locateHit(sec, title)){
+        alert('该条目所在日期 ' + (date||'') + ' 暂无历史快照，当前页面未找到对应内容。');
+      }
+    }
+    return;
+  }
+  if(!locateHit(sec, title)){
+    alert('当前页面未找到「' + title + '」，可能已被归档到更早的历史快照。');
+  }
+}
+// V23.3：在指定容器内按 data-title 优先、文本子串兜底匹配目标条目
+function _matchInContainer(container, title){
+  if(!container || !title) return null;
+  const SEL = '.end-item,.case-item,.mn-item,.topic-item,.rep-item,.trend-item,.ai-item,.must-see-card,.insp-item,.watch-item,.act-item,tr';
+  const candidates = Array.prototype.slice.call(container.querySelectorAll(SEL));
+  let found = null;
+  // 第一优先：data-title 包含目标（索引 title 可能截断，data-title 为完整标题，故双向包含均可）
+  candidates.forEach(function(el){
+    if(found) return;
+    const dt = el.getAttribute('data-title');
+    if(dt && (dt.indexOf(title) >= 0 || title.indexOf(dt) >= 0)){ found = el; }
+  });
+  // 兜底：文本前 20 字符子串匹配（更长 needle 减少误中）
+  if(!found){
+    const needle = title.substring(0, 20);
+    candidates.forEach(function(el){
+      if(found) return;
+      if(el.textContent.indexOf(needle) >= 0) found = el;
+    });
+  }
+  return found;
+}
+// V23.3：公共定位：滚动到板块 + 翻页到目标条目 + 高亮；返回是否成功
+function locateHit(sec, title){
+  const id = SEC_MAP[sec] || 'sec-cases';
+  const link = document.querySelector('.sidebar-nav a[href="#' + id + '"]');
+  const secEl = document.getElementById(id);
+  if(!secEl) return false;
+  // 候选容器（含新品表格行 tr，新品上新是 table 渲染而非卡片）
+  const SEL = '.end-item,.case-item,.mn-item,.topic-item,.rep-item,.trend-item,.ai-item,.must-see-card,.insp-item,.watch-item,.act-item,tr';
+  // 优先在目标 section 内匹配
+  let found = _matchInContainer(secEl, title);
+  // V23.3 修复：同一条资讯可能被多板块复用（如成功案例同时进今日精选 must-see-card），
+  // 索引 sec 与真实渲染 section 未必一致 → 目标 section 找不到时降级全文档再搜一次
+  if(!found){
+    found = _matchInContainer(document.body, title);
+  }
+  if(!found) return false;
+  // 若目标条目所在容器有分页且当前被隐藏 → 翻页到包含它的页
+  const pagerContainer = found.closest('#endList,#mnList,#caseList,#repList,#hotList,#trendList,#aiList');
+  if(pagerContainer){
+    const cid = pagerContainer.id;
+    const pager = window._PAGERS && window._PAGERS[cid];
+    if(pager && typeof pager === 'object' && pager.showItem){
+      pager.showItem(found);
+    }
+  }
+  scrollToSec(id, link);
+  setTimeout(function(){
+    found.scrollIntoView({behavior:'smooth', block:'center'});
+    found.style.transition = 'box-shadow .3s';
+    found.style.boxShadow = '0 0 0 3px var(--brand-accent)';
+    setTimeout(function(){ found.style.boxShadow = ''; }, 2600);
+  }, 250);
+  return true;
+}
+// V23.3：快照页加载时解析 #hit=sec|title 自动定位；结合 sessionStorage 兜底
+function applySearchHitFromHash(){
+  let sec='', title='';
+  const m = location.hash.match(/hit=([^&]+)/);
+  if(m){
+    const pair = decodeURIComponent(m[1]).split('|');
+    if(pair.length >= 2){ sec = pair[0]; title = pair[1]; }
+  }
+  // 若 hash 没有，尝试 sessionStorage 兜底
+  if(!title){
+    try {
+      const raw = sessionStorage.getItem('__menow_search_hit');
+      if(raw){ const obj = JSON.parse(raw); if(obj && obj.title){ sec = obj.sec; title = obj.title; } }
+    } catch(e){}
+  }
+  if(!title) return;
+  // 数据/分页就绪后执行定位，最多重试 5 次
+  let tries = 0;
+  function tryLocate(){
+    if(locateHit(sec, title)){
+      try { sessionStorage.removeItem('__menow_search_hit'); } catch(e){}
+      return;
+    }
+    tries++;
+    if(tries < 5) setTimeout(tryLocate, 400);
+    else {
+      // 兜底：只滚动到对应板块
+      const id = SEC_MAP[sec] || 'sec-cases';
+      const link = document.querySelector('.sidebar-nav a[href="#' + id + '"]');
+      const secEl = document.getElementById(id);
+      if(secEl) scrollToSec(id, link);
+    }
+  }
+  setTimeout(tryLocate, 300);
+}
+document.addEventListener('DOMContentLoaded', applySearchHitFromHash);
+function closeSearch(){
+  const pop = document.getElementById('searchPop');
+  if(pop) pop.classList.remove('show');
+}
+document.addEventListener('click', function(e){
+  const gs = document.querySelector('.global-search');
+  if(gs && !gs.contains(e.target)){
+    const pop = document.getElementById('searchPop');
+    if(pop) pop.classList.remove('show');
+  }
+});
+
+function esc(str) {
+  if(!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+</script>
+
+</body>
+</html>

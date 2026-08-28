@@ -11,32 +11,44 @@
     {
       "icon": "🔥",
       "text": "「凉感化妆品」成年度新赛道：1-5月销售额近2.6亿（同比+45%），36+品牌入局，从护肤延伸到底妆——美诺可抢「冰感粉饼」先发心智",
-      "tag": "趋势机会"
+      "tag": "趋势机会",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "📊",
       "text": "抖音2026H1化妆品GMV达1503.4亿（+14.5%），彩妆香水品类+39.2%增速领跑——内容电商仍是最大增量渠道",
-      "tag": "数据洞察"
+      "tag": "数据洞察",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "📅",
       "text": "七夕（8/19）倒计时！竞品全线发力：卡姿兰雾吻口红、方里七夕限定、彩棠珠玉琢光、M·A·C×SKULLPANDA 均已上线——美诺需用「平价心意礼」错位切入",
-      "tag": "紧急节点"
+      "tag": "紧急节点",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "⭐",
       "text": "全行业代言爆发周：丸美×蔡徐坤(4193万指数)、玉泽×杨紫(5328万🔥)、毛戈平×邓佳鑫、红之×周翊然、韩束×田栩宁(连续多日霸榜)——星品影响力+智库星途双源确认",
-      "tag": "行业信号"
+      "tag": "行业信号",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "⚠️",
       "text": "假睫毛胶水致癌物超标事件（8/5）登上微博热搜阅读破亿，美妆安全舆情风险上升——建议排查供应链并公开质检资质",
-      "tag": "舆情预警"
+      "tag": "舆情预警",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "💡",
       "text": "个护/护肤端「微生态」「纯净美妆」声量走高，与彩妆「活人感/原生妆」审美同频——美诺可借底妆「成分友好+自然提气色」承接跨品类流量",
-      "tag": "跨品类机会"
+      "tag": "跨品类机会",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     }
   ],
   "endorsements": [],
@@ -52,7 +64,12 @@
       "success_signals": "小红书话题#CT爱意底妆# 浏览量1200万+ | 赵露思单条微博互动80万+ | 期间天猫旗舰店GMV环比+35%",
       "source_name": "SocialBeta 案例库",
       "source_url": "https://socialbeta.com/campaign/28208",
-      "case_time": "2026-08-12"
+      "case_time": "2026-08-12",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "3CE × MIKSHIMAI 艺术家联名",
@@ -65,7 +82,12 @@
       "success_signals": "天猫限量3000套秒罄 | 小红书开箱笔记5000+篇 | 微博话题阅读8000万+",
       "source_name": "ELLE 台湾",
       "source_url": "https://www.elle.com/tw/beauty/news/g71662690/2026-beauty-collaboration/",
-      "case_time": "2026-07-10"
+      "case_time": "2026-07-10",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "克兰诗 × POP MART 潮玩联名礼盒",
@@ -78,7 +100,12 @@
       "success_signals": "天猫预售额破2000万 | 微信社群转化率18% | 社媒声量同比+280%",
       "source_name": "ELLE 台湾",
       "source_url": "https://www.elle.com/tw/beauty/news/a71689047/clarins-pop-mart-molly/",
-      "case_time": "2026-06-18"
+      "case_time": "2026-06-18",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "INTEGRATE × 崩坏：星穹铁道 游戏IP联动",
@@ -91,7 +118,13 @@
       "success_signals": "B站联动视频播放破千万 | 天猫限定款首周销量TOP3 | 游戏内彩妆收集参与玩家超500万",
       "source_name": "@cosme 台湾",
       "source_url": "https://www.cosme.net.tw/beautynews/30699",
-      "case_time": "2026-07-20"
+      "case_time": "2026-07-20",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 403,
+      "need_link_check": true
     },
     {
       "title": "安耐晒 × 玩具总动员 电影IP联名",
@@ -104,7 +137,12 @@
       "success_signals": "天猫防晒类目月销TOP5 | 屈臣氏联名专区动销率65% | 微博话题#安耐晒玩具总动员# 阅读5000万+",
       "source_name": "資生堂台灣官網",
       "source_url": "https://www.shiseido.com.tw/zh-TW/news/detail/00000",
-      "case_time": "2026-07-15"
+      "case_time": "2026-07-15",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "毛戈平 × 成都熊猫文创 国风联名",
@@ -117,20 +155,12 @@
       "success_signals": "小红书话题浏览3000万+ | 快闪店日均客流2000+ | 限定款天猫首周售罄",
       "source_name": "毛戈平官方",
       "source_url": "https://www.maogepingbeauty.com/world/news/60.html",
-      "case_time": "2026-08-08"
-    },
-    {
-      "title": "卡姿兰 豹红限定系列 七夕营销",
-      "type": "节日限定",
-      "brand": "CARSLAN 卡姿兰",
-      "summary": "卡姿兰推出豹红限定系列（黑磁粉饼3.0嘭嘭紫等），以大胆的紫色系包装切入七夕送礼市场，配合抖音头部达人直播带货。",
-      "creative": "大胆配色限定款+节日送礼场景+头部达人直播矩阵",
-      "channel": "抖音直播 + 天猫 + 小红书",
-      "rhythm": "提前2周预热→七夕前3天爆发→节后返场",
-      "success_signals": "京东自营评论20万+好评97% | 抖音直播间单场GMV破百万 | 小红书种草笔记8000+篇",
-      "source_name": "卡姿兰七夕礼盒专题（时尚媒体）",
-      "source_url": "http://www.xfwang.cn/fashion/558.html",
-      "case_time": "2026-08-15"
+      "case_time": "2026-08-08",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "INTO YOU 出海东南亚 TikTok营销",
@@ -143,7 +173,12 @@
       "success_signals": "TikTok话题播放破5亿 | 泰国Shopee彩妆类目TOP3 | 单月GMV 500万美元+",
       "source_name": "REBOUND 出海访谈（腾讯新闻）",
       "source_url": "https://new.qq.com/rain/a/20260710A09JG200",
-      "case_time": "2026-07-05"
+      "case_time": "2026-07-05",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "韩束 马年抽象营销 破圈案例",
@@ -156,7 +191,12 @@
       "success_signals": "B站广告片合集播放800万+ | 微博话题#韩束太懂了# 阅读1.2亿 | 品牌搜索指数环比+150%",
       "source_name": "SocialBeta 案例库",
       "source_url": "https://socialbeta.com/campaign/26835",
-      "case_time": "2026-02-10"
+      "case_time": "2026-02-10",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "ZFC 多维营销矩阵",
@@ -169,7 +209,12 @@
       "success_signals": "抖音教学视频累计播放破亿 | 专业化妆师推荐率85% | 天猫专业彩妆类目TOP1",
       "source_name": "美业盛典报道（深圳创投）",
       "source_url": "https://m.shenchuang.com/show/1689361.shtml",
-      "case_time": "2026-06-15"
+      "case_time": "2026-06-15",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "巨量引擎 × 抖音电商 粉彩妆趋势IP",
@@ -182,7 +227,12 @@
       "success_signals": "全网曝光55亿+ | 参与品牌GMV平均增长120% | 粉色调彩妆搜索指数环比+380%",
       "source_name": "Cosmopolitan 中国",
       "source_url": "https://www.cosmopolitancn.com/cosmo/detail/48706",
-      "case_time": "2026-01-15"
+      "case_time": "2026-01-15",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     },
     {
       "title": "彩棠 × 戚薇 空降品牌官方直播间 七夕专场",
@@ -195,7 +245,12 @@
       "success_signals": "直播间观看峰值120万+ | 当晚GMV环比+180% | 限定系列售罄率92% | 新增粉丝8万+",
       "source_name": "天猫美妆直播榜单",
       "source_url": "https://item.jd.com/10055233818207.html",
-      "case_time": "2026-08-16"
+      "case_time": "2026-08-16",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "date": "2026-08-15",
+      "need_date_check": true,
+      "_http_status": 200
     }
   ],
   "new_products": [
@@ -212,7 +267,10 @@
         "comments": "40万+",
         "rating": "4.9",
         "price_range": "¥95.04"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "KATO",
@@ -227,7 +285,10 @@
         "comments": "40万+",
         "rating": "4.8",
         "price_range": "¥39.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "芭贝拉",
@@ -242,7 +303,10 @@
         "comments": "10万+",
         "rating": "4.85",
         "price_range": "¥75.05"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "PRAMY/柏瑞美",
@@ -257,7 +321,10 @@
         "comments": "8万+",
         "rating": "4.82",
         "price_range": "¥59.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "DPDP",
@@ -272,7 +339,10 @@
         "comments": "10万+",
         "rating": "4.86",
         "price_range": "¥99.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "花西子",
@@ -287,7 +357,10 @@
         "comments": "10万+",
         "rating": "4.92",
         "price_range": "¥199.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "卡姿兰",
@@ -302,7 +375,10 @@
         "comments": "7万+",
         "rating": "4.88",
         "price_range": "¥149.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "卡姿兰",
@@ -317,7 +393,10 @@
         "comments": "30万+",
         "rating": "4.89",
         "price_range": "¥89.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "蒂洛薇 DIROVO",
@@ -332,7 +411,10 @@
         "comments": "20万+",
         "rating": "4.91",
         "price_range": "¥159.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "UODO/优沃朵",
@@ -347,7 +429,10 @@
         "comments": "20万+",
         "rating": "4.84",
         "price_range": "¥74.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "卡姿兰",
@@ -362,7 +447,10 @@
         "comments": "10万+",
         "rating": "4.87",
         "price_range": "¥87.11"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "朱莉欧",
@@ -377,7 +465,10 @@
         "comments": "10万+",
         "rating": "4.83",
         "price_range": "¥69.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "韩熙贞",
@@ -392,7 +483,10 @@
         "comments": "4万+",
         "rating": "4.78",
         "price_range": "¥19.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "方里 FUNNY ELVES",
@@ -407,7 +501,10 @@
         "comments": "5万+",
         "rating": "4.93",
         "price_range": "¥199.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "CPB",
@@ -422,7 +519,10 @@
         "comments": "3万+",
         "rating": "4.96",
         "price_range": "¥680.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "尔木萄",
@@ -437,7 +537,10 @@
         "comments": "8万+",
         "rating": "4.81",
         "price_range": "¥39.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "KATO",
@@ -452,7 +555,10 @@
         "comments": "10万+",
         "rating": "4.85",
         "price_range": "¥39.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "芭贝拉",
@@ -467,7 +573,10 @@
         "comments": "4万+",
         "rating": "4.83",
         "price_range": "¥37.91"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "毛戈平",
@@ -482,7 +591,10 @@
         "comments": "7万+",
         "rating": "4.94",
         "price_range": "¥290.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "美诺 MENOW",
@@ -497,7 +609,10 @@
         "comments": "新品上市",
         "rating": "新品",
         "price_range": "¥79.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "PRAMY/柏瑞美",
@@ -512,7 +627,10 @@
         "comments": "5万+",
         "rating": "4.86",
         "price_range": "¥69.90"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "毛戈平",
@@ -527,7 +645,10 @@
         "comments": "4万+",
         "rating": "4.95",
         "price_range": "¥329.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "Fenty Beauty",
@@ -542,7 +663,10 @@
         "comments": "2万+",
         "rating": "4.92",
         "price_range": "¥368.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     },
     {
       "brand": "花西子",
@@ -557,7 +681,10 @@
         "comments": "6万+",
         "rating": "4.91",
         "price_range": "¥159.00"
-      }
+      },
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定",
+      "_http_status": 200
     }
   ],
   "hot_topics": [
@@ -573,35 +700,10 @@
       "data_support": "话题浏览量7亿+ | 都市GenZ占比12.82%为核心人群 | 成分相关内容互动增长64%（小红书官方数据）",
       "source_name": "小红书灵感趋势报告",
       "source_url": "https://www.xiaohongshu.com/explore/trend",
-      "time": "2026-08-01"
-    },
-    {
-      "platform": "小红书+抖音",
-      "topic": "粉彩妆趋势（粉色系彩妆全面爆发）",
-      "trend_direction": "巨量引擎2026年度趋势IP，粉色系眼影/腮红/唇釉/粉饼全线爆发。全网曝光55亿+，成为年度最强势彩妆趋势。美诺可开发粉色限定款或粉色系内容。",
-      "content_ideas": {
-        "小红书": "「粉色系妆容」完整教程——粉色腮红+豆沙唇+粉饼定妆 | #粉彩妆# 话题首发 | 粉色系好物合集（含粉色包装粉饼）",
-        "抖音": "「谁说粉色显黑？」反转向内容 | 粉色妆容变装挑战 | 粉色系彩妆开箱ASMR",
-        "微博": "话题：#2026粉彩妆年# | 粉色系妆容明星同款解析 | 粉色穿搭+粉色妆容全套LOOK"
-      },
-      "data_support": "巨量引擎全网曝光55亿+ | 参与品牌GMV平均增长120% | 粉色调彩妆搜索指数环比+380%（巨量算数官方数据）",
-      "source_name": "巨量引擎×抖音电商",
-      "source_url": "https://oceanengine.com/trend/report/2026-pink-makeup",
-      "time": "2026-01-15"
-    },
-    {
-      "platform": "抖音",
-      "topic": "气垫/粉饼夏季爆发 + 妆造一体化",
-      "trend_direction": "8月抖音美妆榜气垫/粉饼类目凭借'防汗持久'占据Top10三席。玛丽黛佳种籽气垫GMV突破100w+。春夏主打地母系智性气韵，陶土色系+丝绒红棕色塑造雅奢知性氛围。",
-      "content_ideas": {
-        "小红书": "「夏日持妆王者」粉饼横评（含美诺）| 出油实测对比 | \"我的粉饼能扛住38度高温吗\"",
-        "抖音": "「暴汗不脱妆挑战」——运动/高温环境下粉饼实测 | 油皮vs干皮vs混油皮三种肤质夏日底妆方案",
-        "微博": "夏日底妆科普：为什么粉饼比散粉更适合夏天？| 持妆黑科技成分解读"
-      },
-      "data_support": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）",
-      "source_name": "蝉妈妈×抖音电商",
-      "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html",
-      "time": "2026-08-04"
+      "time": "2026-08-01",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源",
+      "_http_status": 200
     },
     {
       "platform": "小红书",
@@ -615,35 +717,11 @@
       "data_support": "单篇最高赞11.95万 | 收藏13.47万 | 练妆日记话题总浏览量破50亿（小红书热榜数据）",
       "source_name": "小红书热榜",
       "source_url": "https://www.xiaohongshu.com/explore?keyword=练妆日记",
-      "time": "2026-08-01"
-    },
-    {
-      "platform": "抖音",
-      "topic": "Y2K / 千禧辣妹风回潮 + 短袖变装",
-      "trend_direction": "Y2K美学持续霸榜抖音，'短袖变装'单条视频GMV可达520万。彩妆方向：粗眼线+哑光底妆+彩色眼影。美诺粉饼的哑光妆效天然适配Y2K风格。",
-      "content_ideas": {
-        "小红书": "「Y2K千禧辣妹妆」教程——哑光底妆（粉饼）+粗眼线+彩色眼影 | Y2K妆容现代改良版",
-        "抖音": "Y2K短袖变装挑战（加入美诺粉饼打底环节）| 千禧辣妹妆容POV | '90年代VS2026年'妆容对比",
-        "微博": "Y2K复古回潮话题 | 千禧年彩妆单品盘点（哑光粉饼C位）| 明星Y2K造型解析"
-      },
-      "data_support": "单条短袖变装视频GMV 520万+ | Y2K话题抖音累计播放破百亿 | 哑光底妆相关内容搜索月增45%（巨量算数）",
-      "source_name": "抖音热榜×巨量算数",
-      "source_url": "https://oceanengine.com/trend/y2k-2026",
-      "time": "2026-07-01"
-    },
-    {
-      "platform": "微博",
-      "topic": "美妆安全舆情：假睫毛胶水致癌物超标",
-      "trend_direction": "8/5登上微博热搜阅读量破亿，消费者对美妆安全关注度骤升。美诺应主动展示供应链安全资质（备案号/检测报告），建立信任护城河。",
-      "content_ideas": {
-        "小红书": "「安全底妆怎么选」科普——如何查备案/看成分/识检测报告 | 美诺粉饼安全资质透明化展示",
-        "抖音": "实验室探访vlog（美诺工厂/质检流程）| 成分党深度解读粉饼配方安全性",
-        "微博": "主动回应安全关切：美诺粉饼质检报告公开 | 行业安全标准科普 | #放心用的粉饼# 话题"
-      },
-      "data_support": "微博热搜阅读量破亿 | 讨论量20万+ | 美妆安全搜索指数当日+580%（微博热搜榜）",
-      "source_name": "微博热搜",
-      "source_url": "https://s.weibo.com/top/summary?cate=realtimehot",
-      "time": "2026-08-05"
+      "time": "2026-08-01",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源",
+      "_http_status": "'ascii' codec can't encode characters in",
+      "need_link_check": true
     }
   ],
   "trends": [
@@ -654,7 +732,11 @@
       "data_support": "销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%",
       "source_name": "微信指数×魔镜市场",
       "source_url": "https://index.weixin.qq.com/",
-      "time": "2026-05-31"
+      "time": "2026-05-31",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "_http_status": "<urlopen error [Errno 11001] getaddrinfo",
+      "need_link_check": true
     },
     {
       "platform": "小红书",
@@ -663,7 +745,10 @@
       "data_support": "#卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》",
       "source_name": "小红书×界面新闻",
       "source_url": "https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026",
-      "time": "2026-07-01"
+      "time": "2026-07-01",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源",
+      "_http_status": 200
     },
     {
       "platform": "抖音电商",
@@ -672,7 +757,24 @@
       "data_support": "韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据",
       "source_name": "蝉妈妈×抖音电商",
       "source_url": "https://www.chanmama.com/yunyingquan/article/2035.html",
-      "time": "2026-08-05"
+      "time": "2026-08-05",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源",
+      "_http_status": 200
+    },
+    {
+      "date": "2026-08-04",
+      "time": "2026-08-04",
+      "title": "气垫/粉饼夏季爆发 + 妆造一体化",
+      "summary": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）",
+      "platform": "抖音",
+      "source_name": "蝉妈妈×抖音电商",
+      "source_tier": "original",
+      "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html",
+      "source_classify_note": "可信一手来源",
+      "read_full": false,
+      "source_excerpt": "",
+      "need_date_check": false
     }
   ],
   "continuous_watch": [
@@ -730,5 +832,6 @@
       "owner": "媒介/情报",
       "status": "进行中"
     }
-  ]
+  ],
+  "marketing_news": []
 }

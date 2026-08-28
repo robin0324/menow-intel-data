@@ -11,32 +11,37 @@
     {
       "icon": "📅",
       "text": "今天是七夕（8/19）正日子！肖战YSL香港K11活动17:00开场、央视七夕晚会20:00播出、品牌直播间密集——美诺今天必须上「平价心意礼」组合装（粉饼+定妆喷雾）卡位节日流量，内容避开「甜蜜告白」，讲「给自己一份体面」与「平价也有仪式感」。",
-      "tag": "紧急节点"
+      "tag": "紧急节点",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🏆",
       "text": "2026蜜粉饼横评（8/19搜狐）：美诺萌兰限定款与纪梵希/CPB/NARS/Laura Mercier/MUFE同场PK，8.3μm粉径（行业12.7μm）、皮脂吸附4.2mg/cm²·h、唯一零滑石粉/零酒精/零香精——「平价+实验室级数据」口碑资产可以继续放大。",
-      "tag": "口碑红利"
+      "tag": "口碑红利",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "🤖",
       "text": "平台官方AI新形态密集落地：小红书NEXT AI商业方案（创意采纳率72%）、巨量引擎8月全域推广升级（AI素材工厂量产6倍、23%AI素材跑量优于人工）——美诺可小步试水AI素材批量生产+AI数字人主播，1-2个测试账号两周内出ROI预判。",
-      "tag": "行业新形态"
+      "tag": "行业新形态",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "⚔️",
       "text": "竞品嘉利玛放大招：联合青眼情报发布《2026亚洲底妆技术趋势报告》并推4.0超夯瓶「分油控油」（只吸坏油不吸好油）——竞品在「控油认知教育」上抢跑，美诺的控油/持妆叙事需差异化（如实测数据+性价比），避免被带节奏。",
-      "tag": "竞品动态"
-    },
-    {
-      "icon": "🏢",
-      "text": "资生堂1.995亿全资控股欧珀莱、35年合资模式终结——合资老牌大众品牌集体进入调整期，其大众市场正释放；国货平价品牌（含美诺50元价格带）承接逻辑进一步强化，「平价但不廉价」心智价值上升。",
-      "tag": "战略信号"
+      "tag": "竞品动态",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "icon": "📊",
       "text": "底妆进入「带妆效的护肤品」时代：精华入妆60%-87%、持妆卷向36H、PDRN搜索暴涨695%——美诺粉饼的「养肤+持妆」卖点叙事空间扩大，可在内容里放大「妆养合一」表达，跟进成分叙事但不硬蹭。",
-      "tag": "趋势信号"
+      "tag": "趋势信号",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     }
   ],
   "endorsements": [
@@ -56,7 +61,9 @@
       "heat_text": "380万+（热搜话题）",
       "category": "美妆/护肤",
       "brand_actions": "YSL以「偏心不想放手」为核心传播语，港铁站台/扶梯/墙灯箱/K11中庭巨型展台/尖沙咀168㎡LED大屏密集投放，叠加「CARE CRUSH STATION偏心站」线下互动装置，把活动预热做成城市级事件。",
-      "reactions": "肖战偶遇词条一天三上热搜，路人盘极高（港人普遍认识并准确说出其代表作），「素颜陪父母逛街」的松弛人设与品牌七夕「偏心」主题形成强关联传播。"
+      "reactions": "肖战偶遇词条一天三上热搜，路人盘极高（港人普遍认识并准确说出其代表作），「素颜陪父母逛街」的松弛人设与品牌七夕「偏心」主题形成强关联传播。",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "brand": "毛戈平",
@@ -74,7 +81,9 @@
       "heat_text": "",
       "category": "彩妆/护肤",
       "brand_actions": "官宣同步上线七夕限定「爱如轻羽」系列并配手写心意小卡周边，将代言人流量转化为粉丝向礼盒溢价。",
-      "reactions": "被《快消品》2026七夕营销盘点列为「代言人周边为核心抓手、精准切入粉丝经济」的代表案例。"
+      "reactions": "被《快消品》2026七夕营销盘点列为「代言人周边为核心抓手、精准切入粉丝经济」的代表案例。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "野兽派",
@@ -92,7 +101,9 @@
       "heat_text": "",
       "category": "香氛",
       "brand_actions": "品牌账号3天交由代言人运营，配合七夕限定香水「无字情书」与花镜香水系列，沉淀内容资产长尾传播。",
-      "reactions": "被行业盘点评价为「流量成本走高下，代言人账号接管、长线产出内容」的新范式。"
+      "reactions": "被行业盘点评价为「流量成本走高下，代言人账号接管、长线产出内容」的新范式。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "薇诺娜",
@@ -110,7 +121,9 @@
       "heat_text": "",
       "category": "护肤",
       "brand_actions": "以「安心礼」为核心推出三款功效对应礼盒（修白/银核/特护水乳），把专业皮肤学力转化为「送礼安心」的情感价值，与「爱赢万难」企划内核呼应。",
-      "reactions": "行业解读认为其完成功效护肤品牌从「产品价值」向「关系价值」的延伸，区别于表面体面的节日礼盒叙事。"
+      "reactions": "行业解读认为其完成功效护肤品牌从「产品价值」向「关系价值」的延伸，区别于表面体面的节日礼盒叙事。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "brand": "娇兰",
@@ -128,7 +141,9 @@
       "heat_text": "",
       "category": "香氛",
       "brand_actions": "娇兰选择中国作为蓝调淡香精全球首发地，官方快闪限时开放，借明星矩阵与全球总裁发布会放大「蓝调时刻」概念。",
-      "reactions": "发布会明星阵容（杨洋/王鹤棣/章若楠+巩俐惊喜嘉宾）获时尚媒体集中报道，香氛新品话题度提升。"
+      "reactions": "发布会明星阵容（杨洋/王鹤棣/章若楠+巩俐惊喜嘉宾）获时尚媒体集中报道，香氛新品话题度提升。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
   "marketing_cases": [
@@ -140,7 +155,9 @@
       "source": "时装LOFFICIEL/网易",
       "source_url": "https://www.163.com/dy/article/L4L4FMUS0518D7K9.html",
       "summary": "围绕「送礼送安心」内核推出彼此高光/时光偏爱/特别呵护三款礼盒（分别对应修白/银核/特护水乳），借李永钦与粉丝十年陪伴诠释长期主义，避开「体面礼盒」内卷，将专业能力转化为「闭眼送礼不出错」的情绪价值。",
-      "takeaway": "功效型品牌在节日可主打「确定性」而非噱头：把成分、肤质适配、临床验证包装成送礼安心感，与大众平价礼盒形成区隔。"
+      "takeaway": "功效型品牌在节日可主打「确定性」而非噱头：把成分、肤质适配、临床验证包装成送礼安心感，与大众平价礼盒形成区隔。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "title": "珀莱雅×Pingu「互动情书」七夕礼盒：光栅卡动态互动+开箱小机关，把预算集中在礼盒可玩性",
@@ -150,7 +167,9 @@
       "source": "快消品中心",
       "source_url": "https://xueqiu.com/8014256486/405490519",
       "summary": "礼盒封面光栅卡让Pingu与女友Pinggi实现动态互动，打开后有「互动情书」小机关，附赠限定贴纸、玩偶周边——用包装结构制造开箱晒单动机，礼盒本身就是传播媒介。",
-      "takeaway": "平价品牌做节日礼盒可借鉴「可玩可晒」设计：不拼包装成本，拼开箱体验与自发UGC。"
+      "takeaway": "平价品牌做节日礼盒可借鉴「可玩可晒」设计：不拼包装成本，拼开箱体验与自发UGC。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "花西子×苏州丝绸博物馆非遗宋锦联名粉饼：SPF50+防晒定妆二合一，获2026虎啸奖IP营销铜奖",
@@ -160,7 +179,9 @@
       "source": "什么值得买",
       "source_url": "https://post.m.smzdm.com/p/az8x8q80",
       "summary": "与国家级非遗宋锦传承人王晨合作18个月，首次把宋锦用于美妆产品，「喜相逢」纹样+莲花浮雕+锁扣仪式感；产品层面烟感粉质+SPF50+ PA+++物化结合防晒定妆二合一，12.5小时全波段防御，实现「非遗文化资产+防晒定妆硬功能」双背书。",
-      "takeaway": "IP联名不止换包装：非遗工艺做产品质感、防晒+定妆做实用价值，文化与功能双向加码是国货粉饼的可复制路径。"
+      "takeaway": "IP联名不止换包装：非遗工艺做产品质感、防晒+定妆做实用价值，文化与功能双向加码是国货粉饼的可复制路径。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "M·A·C×SKULLPANDA七夕联名系列西岸梦中心快闪首发：「万物生花，爱是永恒」",
@@ -170,7 +191,9 @@
       "source": "澎湃新闻",
       "source_url": "https://www.thepaper.cn/newsDetail_forward_33798756?commTag=true",
       "summary": "联名覆盖「轻」尤雾弹唇膏（花卉主题唇膏盖）+「24H」卷王气垫（花匠限定壳），礼盒融合SKULLPANDA「花的四幕戏」艺术设计；在上海全球新品首发地示范区西岸梦中心举办快闪首发，文商旅融合引流打卡。",
-      "takeaway": "IP联名以「限定系列+线下快闪」组合放大仪式感；快闪选址借力城市首发地政策与商圈客流。"
+      "takeaway": "IP联名以「限定系列+线下快闪」组合放大仪式感；快闪选址借力城市首发地政策与商圈客流。",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "title": "野兽派×文淇品牌账号限时企划：连续3天账号交由代言人运营，长线沉淀原生内容资产",
@@ -180,7 +203,9 @@
       "source": "快消品中心",
       "source_url": "https://xueqiu.com/8014256486/405490519",
       "summary": "官宣文淇为品牌青春代言人后，把官方账号连续3天交由文淇运营并上线「无字情书」七夕限定香水，以原生内容替代一次性TVC投放，追求长尾传播与人格化品牌塑造。",
-      "takeaway": "代言人合作从「拍一支广告」转向「账号接管+内容共创」，适合预算有限但想沉淀内容资产的品牌。"
+      "takeaway": "代言人合作从「拍一支广告」转向「账号接管+内容共创」，适合预算有限但想沉淀内容资产的品牌。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
   "new_products": [
@@ -197,7 +222,9 @@
         "price_range": "常卖价49.9/历史最低42.9/30天最低47.9"
       },
       "source_name": "美诺京东自营旗舰店",
-      "source_url": "https://jingfen.jd.com/detail/417mP4Jj3TK9LwuzU8JRABHMlT1mT_sweEZ0b5w0bKIeocfk.html"
+      "source_url": "https://jingfen.jd.com/detail/417mP4Jj3TK9LwuzU8JRABHMlT1mT_sweEZ0b5w0bKIeocfk.html",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "嘉利玛 Galimard",
@@ -212,7 +239,9 @@
         "price_range": "控油持妆定位，具体价格以旗舰店为准"
       },
       "source_name": "嘉利玛官方旗舰店",
-      "source_url": "https://list.tmall.com/search_product.htm?q=嘉利玛+超夯瓶"
+      "source_url": "https://list.tmall.com/search_product.htm?q=嘉利玛+超夯瓶",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "RED CHAMBER 朱栈",
@@ -227,7 +256,9 @@
         "price_range": "纯净彩妆中高端定位"
       },
       "source_name": "RED CHAMBER官方旗舰店",
-      "source_url": "https://list.tmall.com/search_product.htm?q=RED+CHAMBER+意定粉饼"
+      "source_url": "https://list.tmall.com/search_product.htm?q=RED+CHAMBER+意定粉饼",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "完美日记 PERFECT DIARY",
@@ -242,7 +273,9 @@
         "price_range": "防晒蜜粉饼常规售价带"
       },
       "source_name": "完美日记官方旗舰店",
-      "source_url": "https://list.tmall.com/search_product.htm?q=完美日记+防晒蜜粉饼"
+      "source_url": "https://list.tmall.com/search_product.htm?q=完美日记+防晒蜜粉饼",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "美诺",
@@ -261,7 +294,9 @@
       "selling_points": "提气色 / 细腻粉饼",
       "effects": "控油 / 定妆 / 遮瑕",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836721133659488369&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836721133659488369&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "美诺",
@@ -280,7 +315,9 @@
       "selling_points": "伪素颜 / 美修全绿",
       "effects": "控油 / 持妆 / 遮瑕",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837041033477226846&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837041033477226846&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "美诺",
@@ -299,7 +336,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3832428103184023821&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3832428103184023821&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "美诺",
@@ -318,7 +357,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836144772712628236&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836144772712628236&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "美诺",
@@ -337,7 +378,9 @@
       "selling_points": "18H控油持妆 / 美修全绿",
       "effects": "控油 / 持妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836675486721900728&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836675486721900728&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -356,7 +399,9 @@
       "selling_points": "柔焦2.0",
       "effects": "控油 / 提亮 / 定妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836715971150741946&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836715971150741946&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -375,7 +420,9 @@
       "selling_points": "哑光",
       "effects": "提亮 / 定妆 / 持妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836720832911114629&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836720832911114629&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -394,7 +441,9 @@
       "selling_points": "20上新 / 清透版 / 铁粉限定2.0",
       "effects": "控油",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836387917153042764&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836387917153042764&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -413,7 +462,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836524709822989221&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836524709822989221&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -432,7 +483,9 @@
       "selling_points": "铁粉限定",
       "effects": "控油",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837330518718939454&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837330518718939454&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "方里",
@@ -451,7 +504,9 @@
       "selling_points": "不易脱妆 / 持久 / 磨皮",
       "effects": "控油 / 柔焦",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836525364662894944&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836525364662894944&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "嘉利玛",
@@ -470,7 +525,9 @@
       "selling_points": "哑光",
       "effects": "控油",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836697637957009518&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836697637957009518&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "嘉利玛",
@@ -489,7 +546,9 @@
       "selling_points": "",
       "effects": "保湿",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836899838566465698&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836899838566465698&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "嘉利玛",
@@ -508,7 +567,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837621579886493822&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837621579886493822&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -527,7 +588,9 @@
       "selling_points": "贴贴妆前乳 / 黄油水光",
       "effects": "修饰肤色",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836309725243375954&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836309725243375954&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -546,7 +609,9 @@
       "selling_points": "黄金底妆",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836468752657023375&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836468752657023375&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -565,7 +630,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837430020134011161&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837430020134011161&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -584,7 +651,9 @@
       "selling_points": "柔雾 / 花间颂 / 限定组合",
       "effects": "定妆 / 遮瑕 / 防水",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836478154298491124&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836478154298491124&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -603,7 +672,9 @@
       "selling_points": "奶油肌 / 细腻裸肌 / 黄金底妆CP",
       "effects": "修饰肤色",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835388057482297806&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835388057482297806&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -622,7 +693,9 @@
       "selling_points": "花间颂联名",
       "effects": "定妆 / 补妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835409167070396417&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835409167070396417&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -641,7 +714,9 @@
       "selling_points": "花间颂限定",
       "effects": "控油 / 定妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836540152377901454&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836540152377901454&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -660,7 +735,9 @@
       "selling_points": "花间颂联名限定",
       "effects": "控油 / 定妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835408389630984451&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835408389630984451&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -679,7 +756,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837097149347266562&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837097149347266562&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -698,7 +777,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836478214579028139&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836478214579028139&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -717,7 +798,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835183797293416904&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835183797293416904&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -736,7 +819,9 @@
       "selling_points": "",
       "effects": "",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837425256956559792&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837425256956559792&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "brand": "花间颂",
@@ -755,13 +840,15 @@
       "selling_points": "大容量 / 细腻柔焦 / 轻盈雾面",
       "effects": "控油 / 持妆",
       "source_name": "蝉妈妈(抖音)",
-      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835410870050095110&origin_type=604"
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835410870050095110&origin_type=604",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
   "hot_topics": [
     {
       "time": "2026-08-19",
-      "platform": "微博（官方热搜）",
+      "platform": "微博",
       "topic": "#七夕#全网热度提前引爆：乞巧节回归 + 松弛悦己双叙事",
       "trend_direction": "微博热搜#七夕#显示 2026 七夕两大趋势：一边是央视七夕晚会（8/19 晚 20:00 CCTV-3，魏晨/郁可唯等）、品牌活动、明星直播构成盛大仪式感；另一边年轻人集体解构传统浪漫，「七夕我就这样安慰自己」成现象级话题，大量讨论将七夕重新称呼为「乞巧节/女儿节」。",
       "data_support": "央视七夕晚会 8/19 20:00 CCTV-3 | 话题#七夕我就这样安慰自己# #爱自己才是终身浪漫#",
@@ -770,11 +857,13 @@
         "小红书": "「乞巧节」文化科普+现代悦己妆教结合，差异化避开同质化送礼内容"
       },
       "source_name": "微博热搜",
-      "source_url": "https://weibo.com/6422493315/5333413099998428"
+      "source_url": "https://weibo.com/6422493315/5333413099998428",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源"
     },
     {
       "time": "2026-08-19",
-      "platform": "微博美妆超话",
+      "platform": "微博",
       "topic": "七夕粉紫色甜妹妆容出圈：约会拍照出片妆教",
       "trend_direction": "微博美妆超话热门：低饱和粉色系腮红+粉紫眼妆的「七夕甜妹妆」广泛传播，主打「约会拍照巨出片」；妆教内容强调「爱自己才是终身浪漫」，与七夕悦己叙事共振。",
       "data_support": "话题#七夕心动妆# #七夕情书# 美妆超话",
@@ -783,33 +872,13 @@
         "小红书": "「七夕妆教 + 平价定妆好物」组合笔记，粉紫妆容配粉饼定妆教程"
       },
       "source_name": "微博美妆超话",
-      "source_url": "https://weibo.com/3480038412/5332857758420970"
-    },
-    {
-      "time": "2026-08-19",
-      "platform": "微博（官方热搜）",
-      "topic": "肖战香港「口述式偶遇」刷屏+YSL七夕活动预热：全城广告变身「肖战痛城」",
-      "trend_direction": "8/17肖战被多位路人在香港中环「口述式偶遇」（无照片流出仅文字描述）直接冲上热搜，8/18一天三上热搜；其以YSL护肤全球品牌代言人身份于8/19七夕在尖沙咀K11 MUSEA办免费公开活动，香港港铁铜锣湾站/尖东站墙灯箱、K11中庭巨型展台、尖沙咀168㎡ LED大屏等全城投放「偏心不想放手」护手霜广告，被网友称为「肖战痛城」；路人盘极强（港人普遍能说出代表作）。",
-      "data_support": "热搜#肖战香港偶遇# | 8/19 K11 MUSEA免费活动 | 尖沙咀168.35㎡LED屏8/18-19点亮",
-      "content_ideas": {
-        "抖音": "借「顶流+平价心智」反差叙事：肖战穿Tods包配素颜松弛逛街被夸，可做「大牌感≠端着」美诺粉饼平价内容",
-        "小红书": "「七夕全城为一个人打call」热点盘点+「给自己也来一份体面礼物」清单体，绑定#悦己#"
-      }
-    },
-    {
-      "time": "2026-08-19",
-      "platform": "行业测评",
-      "topic": "2026蜜粉饼横评：美诺萌兰限定款与纪梵希/CPB/NARS/Laura Mercier/MUFE同场PK，控油吸附速率领先",
-      "trend_direction": "搜狐测评6款定妆蜜粉饼72小时实测：美诺萌兰限定蜜粉饼粉体平均粒径8.3μm（行业均值12.7μm）、T区皮脂吸附速率4.2mg/cm²·h（对照组2.9）、8小时底妆完整度86.4%、单克成本0.83元，为六款中唯一「零滑石粉、零酒精、零合成香精」配方，OECD体外刺激指数0.17无刺激；91%受试者反馈上脸3分钟内泛油减少。",
-      "data_support": "美诺萌兰限定蜜粉饼 | 8.3μm粒径 vs 行业12.7μm | 皮脂吸附4.2 vs 2.9mg/cm²·h | 单克0.83元",
-      "content_ideas": {
-        "抖音": "把横评结论做成「国货蜜粉饼正面硬刚国际大牌」对比视频，绑定#平价定妆天花板# #实验室级大白饼#",
-        "小红书": "「和纪梵希CPB同场PK的美诺」测评转译种草，突出零滑石粉/零酒精/零香精配方安全项"
-      }
+      "source_url": "https://weibo.com/3480038412/5332857758420970",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源"
     },
     {
       "time": "2026-08-18",
-      "platform": "抖音商城（平台官方榜单）",
+      "platform": "抖音",
       "topic": "抖音商城七夕好礼季高光行业榜单出炉：礼赠悦己双向爆发",
       "trend_direction": "抖音官方发布 8/15-19 七夕好礼季各赛道高光榜单：美妆个护是礼赠刚需，护肤 TOP3=珀莱雅/海蓝之谜/韩束，彩妆 TOP3=YSL/兰蔻/雅诗兰黛；「即时送礼、即兴下单」行为突出，现货储备与 48h 发货成商家竞争力；悦己消费成为稳定增量。",
       "data_support": "抖音商城七夕好礼季 8/15-19 | 护肤TOP3=珀莱雅/海蓝之谜/韩束 | 彩妆TOP3=YSL/兰蔻/雅诗兰黛",
@@ -818,20 +887,9 @@
         "小红书": "「七夕给自己挑的平价好物」清单体，绑定 #悦己# #平价心意礼# 话题"
       },
       "source_name": "京报网/抖音商城",
-      "source_url": "https://news.bjd.com.cn/2026/08/18/11920669.shtml"
-    },
-    {
-      "time": "2026-08-18",
-      "platform": "电商/全网",
-      "topic": "七夕美妆礼物价差 199 元 vs 5660 元：消费分化下的平价增量",
-      "trend_direction": "同样是七夕美妆礼物，YSL 黑管唇釉 199 元、赫莲娜黑绷带面霜 5660 元（价差近 29 倍）；第三方监测线上美妆 200 元以下价格带份额从 44.28% 升至 46.52%，高端与平价同步扩容——市场不是升级或降级，而是明显分化，平价「大牌感但不为溢价买单」诉求强劲。",
-      "data_support": "200元以下价格带份额 44.28%→46.52% | YSL黑管唇釉199元 vs 赫莲娜黑绷带5660元",
-      "content_ideas": {
-        "抖音": "「49.9 也有贵妇妆感」对比内容，承接平价增量价格带情绪",
-        "小红书": "「七夕平价心意礼清单」种草，突出美诺粉饼 49.9 的礼物性价比"
-      },
-      "source_name": "网易/拍案",
-      "source_url": "https://www.163.com/dy/article/L4KUF8980523H9J0.html"
+      "source_url": "https://news.bjd.com.cn/2026/08/18/11920669.shtml",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     }
   ],
   "trends": [
@@ -842,7 +900,9 @@
       "data_support": "2026 WILL商业大会 | AI解读95种情绪/1400个细分场景 | slogan升级「你的生活兴趣社区」",
       "source_name": "小红书官方/行业观察",
       "source_url": "https://www.bhwang.cn/youjun/44815518536512.html",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "platform": "行业新形态",
@@ -851,7 +911,9 @@
       "data_support": "王祖贤AI代言《天下》18周年(7/20) | 范志毅AI数字人×可口可乐世界杯 | AI短剧占比超95%(2026Q1)",
       "source_name": "腾讯新闻/新浪",
       "source_url": "https://news.qq.com/rain/a/20260721A0A2F700",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "platform": "行业报告",
@@ -860,7 +922,9 @@
       "data_support": "底妆盘398.62亿 | 抖音58.22%(232亿,+13.72%) | 遮瑕+24.35% | 气垫104亿/粉底液100.9亿",
       "source_name": "用户说/东方财富财富号",
       "source_url": "https://caifuhao.eastmoney.com/news/20260709171837823082640",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "platform": "行业事件",
@@ -869,7 +933,9 @@
       "data_support": "5月抖音化妆品总榜TOP1=赫莲娜 | 高端品牌占上榜55% | 蒂洛薇3连冠抖音彩妆TOP1 | 韩束自播占65%",
       "source_name": "青眼/36氪",
       "source_url": "https://36kr.com/p/3839947060955393",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "platform": "行业趋势",
@@ -878,7 +944,9 @@
       "data_support": "精华入妆60%-87% | 持妆24H→36H | FIRST COVER¥199/欧莱雅黑胖子¥229/娇兰金钻气垫¥695",
       "source_name": "美妆行业洞察",
       "source_url": "",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "platform": "行业趋势",
@@ -887,7 +955,9 @@
       "data_support": "PDRN搜索+695% | 全球12.1亿美元 | 中国电商4年270倍 | 修丽可/兰蔻双路线",
       "source_name": "美妆行业洞察/Olive Young",
       "source_url": "",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "platform": "行业趋势",
@@ -896,7 +966,9 @@
       "data_support": "底妆交易额1-5月+16% | TOP20中国货13席 | DPDP销售同比+100%以上",
       "source_name": "FBeauty未来迹",
       "source_url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260713133916b65de329",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "platform": "行业趋势",
@@ -905,7 +977,9 @@
       "data_support": "即时零售2026破万亿 | 美妆个护渗透率15% | 节日应急送礼52.7%",
       "source_name": "美妆行业洞察",
       "source_url": "",
-      "time": "2026-08-19"
+      "time": "2026-08-19",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "platform": "平台官方大会",
@@ -914,7 +988,23 @@
       "data_support": "「智·启无境」2026巨量引擎渠道合作伙伴生态大会（4/22 青岛） | 品星云AI能力升级 | 火山引擎代理商AI解决方案",
       "source_name": "中国日报网/巨量引擎官方",
       "source_url": "https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html",
-      "time": "2026-04-22"
+      "time": "2026-04-22",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "2026-08-18",
+      "title": "七夕美妆礼物价差 199 元 vs 5660 元：消费分化下的平价增量",
+      "summary": "200元以下价格带份额 44.28%→46.52% | YSL黑管唇釉199元 vs 赫莲娜黑绷带5660元",
+      "platform": "多平台",
+      "source_name": "网易/拍案",
+      "source_tier": "aggregator",
+      "source_url": "https://www.163.com/dy/article/L4KUF8980523H9J0.html",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注",
+      "read_full": false,
+      "source_excerpt": "",
+      "need_date_check": false
     }
   ],
   "continuous_watch": [
@@ -990,7 +1080,9 @@
       "date": "2026-08-19",
       "is_key": true,
       "summary": "2026.04MAT 天猫/抖音/京东底妆总销售额 398.62 亿元，抖音 232.08 亿占 58.22%（+13.72%）为最大平台，天猫 127.89 亿占 32.08%、京东 38.65 亿占 9.7%；气垫 104.02 亿/粉底液 100.92 亿双百亿基本盘；遮瑕 18.73 亿同比 +24.35% 为最快增长细分（均价仅 58 元、量价大众化）；精华粉底液/功效型底妆/熬夜肌气垫/冰感定妆喷雾等新品密集，妆养合一成为主流；男士底妆仍处早期，男士蜜粉/粉底液出现增长。",
-      "key_data": "底妆盘398.62亿 | 抖音58.22%(+13.72%) | 气垫104亿/粉底液100.9亿 | 遮瑕+24.35%"
+      "key_data": "底妆盘398.62亿 | 抖音58.22%(+13.72%) | 气垫104亿/粉底液100.9亿 | 遮瑕+24.35%",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "面部彩妆品类数据洞察报告（三个皮匠/全网渠道）",
@@ -1000,7 +1092,9 @@
       "date": "2026-08-19",
       "is_key": false,
       "summary": "2024H1-2026H1 线上面部彩妆销售额 276.1→348.4 亿元（增速 9.5%→15.2%）；抖音销售额占比 55%→64%、销量占比 57%→75%，2026H1 抖音 223.5 亿（+22.4%）成增量引擎；淘系量跌价升（均价 98→122 元）；抖音细分亮点：彩妆套装 +52%、定妆喷雾 +42%、遮瑕 +61%、CC霜 +121%、定妆 +135%（尝鲜长尾）；100-300 元为绝对主力价格带。",
-      "key_data": "面妆大盘348.4亿 | 抖音占比64%(+22.4%) | 定妆喷雾+42%/遮瑕+61%"
+      "key_data": "面妆大盘348.4亿 | 抖音占比64%(+22.4%) | 定妆喷雾+42%/遮瑕+61%",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "嘉利玛×青眼情报《2026亚洲底妆技术趋势与消费洞察报告》：亚洲贡献全球底妆增量73.5%，精准控油4.0时代到来",
@@ -1009,7 +1103,9 @@
       "source_url": "https://i.ifeng.com/c/8vfJiaJqqwa",
       "date": "2026-08-19",
       "is_key": true,
-      "summary": "报告覆盖亚洲底妆市场现状、中国底妆消费者需求、全球底妆技术演进与嘉利玛解决方案：2026年亚洲预计贡献全球底妆增量73.5%；79.4%油皮/混油皮认同「越控油越拔干、越持妆越暗沉」；控油技术从1.0物理吸附/2.0封闭成膜/3.0油脂包裹迭代到4.0「分油控油」（识别游离脂肪酸等坏油定向絮凝、只吸坏油不吸好油）。"
+      "summary": "报告覆盖亚洲底妆市场现状、中国底妆消费者需求、全球底妆技术演进与嘉利玛解决方案：2026年亚洲预计贡献全球底妆增量73.5%；79.4%油皮/混油皮认同「越控油越拔干、越持妆越暗沉」；控油技术从1.0物理吸附/2.0封闭成膜/3.0油脂包裹迭代到4.0「分油控油」（识别游离脂肪酸等坏油定向絮凝、只吸坏油不吸好油）。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "title": "蝉妈妈《2026年Q1抖音彩妆行业白皮书》：近6成粉底液无法平衡保湿与持妆",
@@ -1018,7 +1114,9 @@
       "source_url": "",
       "date": "2026-08-19",
       "is_key": false,
-      "summary": "据蝉妈妈白皮书数据：市面近6成粉底液无法平衡保湿与持妆属性，仅不到3成产品做到成膜后不拔干、抗汗不流白汤；近期干皮粉底液夏天持妆款搜索量环比上涨67%，用户更看重兼顾养肤和抗汗的实用配方。"
+      "summary": "据蝉妈妈白皮书数据：市面近6成粉底液无法平衡保湿与持妆属性，仅不到3成产品做到成膜后不拔干、抗汗不流白汤；近期干皮粉底液夏天持妆款搜索量环比上涨67%，用户更看重兼顾养肤和抗汗的实用配方。",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "title": "艾瑞咨询《2026中国底妆消费趋势报告》：73.6%女性将快速提亮+长效控油+养肤兼容列为素颜霜核心诉求",
@@ -1027,7 +1125,9 @@
       "source_url": "",
       "date": "2026-08-19",
       "is_key": false,
-      "summary": "艾瑞报告显示73.6%的18-35岁女性将「快速提亮+长效控油+养肤兼容」列为素颜霜核心诉求；七夕临近，「小支装+礼盒感+即时效果」产品迎来全年销售峰值，伪素颜成为都市女性晨间刚需。"
+      "summary": "艾瑞报告显示73.6%的18-35岁女性将「快速提亮+长效控油+养肤兼容」列为素颜霜核心诉求；七夕临近，「小支装+礼盒感+即时效果」产品迎来全年销售峰值，伪素颜成为都市女性晨间刚需。",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     }
   ],
   "marketing_news": [
@@ -1039,7 +1139,9 @@
       "source_url": "https://news.qq.com/rain/a/20260721A0A2F700",
       "date": "2026-08-19",
       "summary": "网易《天下》7/20 官宣王祖贤为 18 周年品牌代言人，授权其 20-30 岁巅峰肖像制作全 AI 广告《倩影》（网易 DM Monet + 火山引擎，无真人实拍，片尾署名「王祖贤(AI)」），并延伸为游戏数字 NPC/专属时装；授权模式=只开巅峰期肖像权、限定单一项目、不真人宣传——开创「明星数字肖像授权—AI 内容生成—品牌传播—数字资产运营」完整商业闭环；同期吴启华授权 20 岁脸拍 AI 电影、游本昌 93 岁授权青年济公拍短剧，退圈明星成 AI 肖像授权先行军；爱奇艺「AI 艺人库」因张若昀等辟谣引发在役明星 AI 戒备争议。",
-      "insight": "AI 代言已是真实新广告形态而非概念：美诺虽不适用天价明星授权，但应跟进 AI 素材/AI 内容生产的降本路径，并关注消费者对 AI 代言的信任边界（在役明星戒备 vs 退圈明星躺赚的两极分化）。"
+      "insight": "AI 代言已是真实新广告形态而非概念：美诺虽不适用天价明星授权，但应跟进 AI 素材/AI 内容生产的降本路径，并关注消费者对 AI 代言的信任边界（在役明星戒备 vs 退圈明星躺赚的两极分化）。",
+      "source_tier": "original",
+      "source_classify_note": "可信一手来源"
     },
     {
       "title": "可口可乐 × 百度：范志毅 AI 数字人 24/7 互动代言世界杯，「always-on 明星」新范式",
@@ -1049,7 +1151,9 @@
       "source_url": "https://briefglance.com/articles/the-ai-ambassador-a-digital-star-is-born-for-the-world-cup",
       "date": "2026-08-19",
       "summary": "可口可乐中国与百度合作，让国足名宿范志毅的 AI 数字人（百度文心数字人平台，口型同步精度 98.5%+）在世界杯期间 24/7 与球迷实时互动，突破明星档期/空间限制，从「静态代言人」升级为「always-on 品牌大使」；百度数字人直播已能降本 80%、提升转化率，此前罗永浩 AI 分身一场 6 小时直播带货超 5500 万。",
-      "insight": "数字人从「带货工具」升级为「互动代言」：对平价品牌而言，数字人/虚拟主播是降低直播人力成本的可评估路径，可先小规模测试。"
+      "insight": "数字人从「带货工具」升级为「互动代言」：对平价品牌而言，数字人/虚拟主播是降低直播人力成本的可评估路径，可先小规模测试。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "抖音商城七夕好礼季启动（8/15-19）：消费券+直降+免息，现货履约成商家竞争力",
@@ -1059,7 +1163,9 @@
       "source_url": "https://www.toutiao.com/article/7674911904279642678",
       "date": "2026-08-19",
       "summary": "抖音电商 8/15-19 开启「抖音商城七夕好礼季」，消费券/一件直降/立减折扣，聚焦礼赠+悦己+品质生活多元场景；配套「七夕搭建鹊桥」互动玩法、看后搜养词计划（搜索流量+商品转化）、商家免息费率优惠（3-24 期）；官方明确「七夕礼赠时效性强」，对现货商品加资源激励，建议商家 48h 内发货——即时送礼/即兴下单行为特征突出。",
-      "insight": "平台官方把「现货+48h 发货」作为七夕竞争力标准：美诺参与节点大促须提前备足现货并保障履约时效，同时用好「看后搜养词计划」做搜索卡位。"
+      "insight": "平台官方把「现货+48h 发货」作为七夕竞争力标准：美诺参与节点大促须提前备足现货并保障履约时效，同时用好「看后搜养词计划」做搜索卡位。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "title": "2026 巨量引擎渠道合作伙伴生态大会（4/22 青岛）：AI 渗透全链路，品星云能力升级",
@@ -1069,7 +1175,9 @@
       "source_url": "https://caijing.chinadaily.com.cn/a/202604/21/WS69e73b56a310942cc49a8b13.html",
       "date": "2026-08-19",
       "summary": "「智·启无境」2026 巨量引擎渠道合作伙伴生态大会 4/22 在青岛举办：营销逻辑从流量思维转向经营思维；聚焦品牌广告/星图/千川/本地推全场景商业产品自动化升级；全面升级「品星云」AI 核心能力；火山引擎发布面向代理商的 AI 解决方案（豆包大模型+云原生基础设施）；颁发共擎奖表彰各赛道增长标杆代理商。",
-      "insight": "平台官方把 AI 定为增长底座：美诺的素材生产（AI 创意）、投放（自动化+品星云）应纳入下半年的降本增效计划。"
+      "insight": "平台官方把 AI 定为增长底座：美诺的素材生产（AI 创意）、投放（自动化+品星云）应纳入下半年的降本增效计划。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "2026 七夕营销观察：央视晚会+品牌直播的仪式感 vs 年轻人「乞巧节回归+松弛悦己」",
@@ -1079,16 +1187,9 @@
       "source_url": "https://weibo.com/6422493315/5333413099998428",
       "date": "2026-08-19",
       "summary": "微博#七夕#趋势梳理：央视七夕晚会《今夕颂》8/19 晚 20:00 CCTV-3 播出（魏晨/郁可唯/王琳凯等）；肖战素颜现身香港为 YSL 七夕活动预热、刘宇宁办线上音乐节；品牌与电商密集发力（京东美妆七夕专题）；但年轻人大规模解构传统浪漫：「七夕我就这样安慰自己」成现象级话题，「爱自己才是终身浪漫」成为主流情绪，大量讨论把七夕重新叫回「乞巧节/女儿节」。",
-      "insight": "七夕营销的「仪式感供给」与「悦己情绪」并存：美诺应站「悦己」一侧——不做告白绑架，做「给自己一份体面」的平价美妆内容。"
-    },
-    {
-      "title": "资生堂1.995亿元全资控股欧珀莱，35年中日合资模式终结，品牌进入调整期",
-      "category": "行业动态/渠道",
-      "brand": "资生堂/欧珀莱",
-      "source": "中国经济网",
-      "source_url": "https://www.ce.cn/cysc/newmain/yc/jsxw/202608/t20260819_3156150.shtml",
-      "date": "2026-08-19",
-      "summary": "资生堂以1.995亿元受让北京丽源持有的35%股权，完成对欧珀莱运营主体100%全资控股，企业性质变更为外商独资；资生堂丽源2026年1-5月营收2.34亿元、亏损5341.52万元已超2025全年，行业研判欧珀莱大概率「先稳住、观察两三年」。（启示：合资老牌进入深度调整期，国货平价品牌承接其大众市场空间。）"
+      "insight": "七夕营销的「仪式感供给」与「悦己情绪」并存：美诺应站「悦己」一侧——不做告白绑架，做「给自己一份体面」的平价美妆内容。",
+      "source_tier": "platform",
+      "source_classify_note": "可信一手来源"
     },
     {
       "title": "嘉利玛联合青眼情报发布《2026亚洲底妆技术趋势与消费洞察报告》：亚洲贡献全球底妆增量73.5%，宣告精准控油4.0时代",
@@ -1097,7 +1198,9 @@
       "source": "凤凰网",
       "source_url": "https://i.ifeng.com/c/8vfJiaJqqwa",
       "date": "2026-08-19",
-      "summary": "嘉利玛联合青眼情报发布亚洲底妆趋势报告：2026年亚洲预计贡献全球底妆增量73.5%；79.4%油皮/混油皮认同「越控油越拔干、越持妆越暗沉」，行业沿用物理吸附/封闭成膜/油脂包裹存在「一刀切对抗皮脂」缺陷；嘉利玛以专利G-Oil控油粉体落地「分油控油」4.0技术推出4.0超夯瓶。"
+      "summary": "嘉利玛联合青眼情报发布亚洲底妆趋势报告：2026年亚洲预计贡献全球底妆增量73.5%；79.4%油皮/混油皮认同「越控油越拔干、越持妆越暗沉」，行业沿用物理吸附/封闭成膜/油脂包裹存在「一刀切对抗皮脂」缺陷；嘉利玛以专利G-Oil控油粉体落地「分油控油」4.0技术推出4.0超夯瓶。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "title": "丸美小红笔眼霜4.0发布：S肽渗透量达普通胜肽12倍，蔡徐坤代言，2小时登顶天猫",
@@ -1106,7 +1209,9 @@
       "source": "美妆行业洞察",
       "source_url": "",
       "date": "2026-08-19",
-      "summary": "8/11丸美「红出圈」发布会推出小红笔眼霜4.0与首款胜肽眼油CP组合，官宣蔡徐坤代言；S肽渗透量达普通胜肽12倍（日内瓦国际发明奖），「以油入霜」淡纹提效54.9%、焕亮提效62.2%，2小时登顶天猫美妆护肤总榜。"
+      "summary": "8/11丸美「红出圈」发布会推出小红笔眼霜4.0与首款胜肽眼油CP组合，官宣蔡徐坤代言；S肽渗透量达普通胜肽12倍（日内瓦国际发明奖），「以油入霜」淡纹提效54.9%、焕亮提效62.2%，2小时登顶天猫美妆护肤总榜。",
+      "source_tier": "unknown",
+      "source_classify_note": "无来源信息"
     },
     {
       "title": "小红书种草大赏发布NEXT AI商业产品方案：种草向经营链路延伸，AI参与研发与投放决策",
@@ -1115,16 +1220,9 @@
       "source": "网经社/亿邦动力",
       "source_url": "https://www.100ec.cn/index.php/detail--6662572.html",
       "date": "2026-08-19",
-      "summary": "8/7小红书种草大赏：490个参赛案例、399个品牌、106个行业；发布NEXT AI商业方案，将经营拆为「看清人-影响人-赢得人」三阶段，AI洞察能力嵌入趋势洞察/新品开发/口碑分析，创意平台生成内容整体采纳率72%、投放率57%、广告审核通过率98%，组合投放新客GMV占比46%。"
-    },
-    {
-      "title": "巨量引擎2026年8月「全域推广」全面升级：全域智能调度+AI素材工厂，素材量产6倍",
-      "category": "平台官方/AI新形态",
-      "brand": "巨量引擎",
-      "source": "自媒体/巨量官方",
-      "source_url": "http://woshizmt.cn/dsp/jrtt/3283.html",
-      "date": "2026-08-19",
-      "summary": "巨量引擎全域推广升级：①全域智能调度——一个经营目标自动在信息流/搜索/商城/直播/图文分配预算，动态预算分配使整体投放效率提升200%+；②AI素材工厂——上传3-5条基础素材自动生成50+变体，周均素材消耗30条→180条（6倍），23% AI素材跑量优于人工；③全域人群资产从「流量买手」转向「人群经营」。"
+      "summary": "8/7小红书种草大赏：490个参赛案例、399个品牌、106个行业；发布NEXT AI商业方案，将经营拆为「看清人-影响人-赢得人」三阶段，AI洞察能力嵌入趋势洞察/新品开发/口碑分析，创意平台生成内容整体采纳率72%、投放率57%、广告审核通过率98%，组合投放新客GMV占比46%。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
     },
     {
       "title": "卡姿兰亮相2026 CBE中国美容博览会：黑磁/光磁/白磁「磁力家族」构建全链路底妆矩阵",
@@ -1133,7 +1231,9 @@
       "source": "网易新闻",
       "source_url": "https://c.m.163.com/news/a/L47FBEH50556DUVK.html",
       "date": "2026-08-19",
-      "summary": "卡姿兰携「磁力家族」亮相2026 CBE：黑磁主打定向吸油持妆（第三代定向吸油黑科技+液态烘焙烤粉工艺，粉体平均粒径8.5微米）、光磁首创MODE-LIGHT光建模科技解决反光痛点、白磁打破高倍防晒+轻薄肤感+长效持妆三角难题；同步展出升级版大眼睛睫毛膏。"
+      "summary": "卡姿兰携「磁力家族」亮相2026 CBE：黑磁主打定向吸油持妆（第三代定向吸油黑科技+液态烘焙烤粉工艺，粉体平均粒径8.5微米）、光磁首创MODE-LIGHT光建模科技解决反光痛点、白磁打破高倍防晒+轻薄肤感+长效持妆三角难题；同步展出升级版大眼睛睫毛膏。",
+      "source_tier": "aggregator",
+      "source_classify_note": "聚合/索引站，须溯源或降级标注"
     },
     {
       "title": "2026七夕快消品牌营销方案盘点（快消品独家）：IP联名深度化、线下体验回潮",
@@ -1142,7 +1242,37 @@
       "source": "东方快消品中心",
       "source_url": "https://xueqiu.com/8014256486/405490519",
       "date": "2026-08-18",
-      "summary": "《快消品》盘点2026七夕快消营销：SK-II×CRYBABY连心爱情桥、M·A·C×SKULLPANDA联名系列、珀莱雅×Pingu互动情书礼盒、自然堂京东秒送最快9分钟达+龚俊得物宠粉礼包、毛戈平×王楚然「爱如轻羽」、谷雨×袁弘张歆艺夫妻档TVC、野兽派×文淇账号限时企划、Dior粉色限定包装、HBN×汪苏泷8款周边矩阵等，呈现IP联名深度化+线下体验回潮两大变化。"
+      "summary": "《快消品》盘点2026七夕快消营销：SK-II×CRYBABY连心爱情桥、M·A·C×SKULLPANDA联名系列、珀莱雅×Pingu互动情书礼盒、自然堂京东秒送最快9分钟达+龚俊得物宠粉礼包、毛戈平×王楚然「爱如轻羽」、谷雨×袁弘张歆艺夫妻档TVC、野兽派×文淇账号限时企划、Dior粉色限定包装、HBN×汪苏泷8款周边矩阵等，呈现IP联名深度化+线下体验回潮两大变化。",
+      "source_tier": "unknown",
+      "source_classify_note": "未识别域名，须人工判定"
+    },
+    {
+      "date": "2026-08-19",
+      "time": "2026-08-19",
+      "title": "肖战香港「口述式偶遇」刷屏+YSL七夕活动预热：全城广告变身「肖战痛城」",
+      "summary": "热搜#肖战香港偶遇# | 8/19 K11 MUSEA免费活动 | 尖沙咀168.35㎡LED屏8/18-19点亮",
+      "impact": "中",
+      "platform": "微博",
+      "source_name": "",
+      "source_tier": "unknown",
+      "source_url": "",
+      "source_classify_note": "无来源信息",
+      "read_full": false,
+      "source_excerpt": ""
+    },
+    {
+      "date": "2026-08-19",
+      "time": "2026-08-19",
+      "title": "2026蜜粉饼横评：美诺萌兰限定款与纪梵希/CPB/NARS/Laura Mercier/MUFE同场PK，控油吸附速率领先",
+      "summary": "美诺萌兰限定蜜粉饼 | 8.3μm粒径 vs 行业12.7μm | 皮脂吸附4.2 vs 2.9mg/cm²·h | 单克0.83元",
+      "impact": "中",
+      "platform": "多平台",
+      "source_name": "",
+      "source_tier": "unknown",
+      "source_url": "",
+      "source_classify_note": "无来源信息",
+      "read_full": false,
+      "source_excerpt": ""
     }
   ]
 }
