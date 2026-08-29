@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29 10:22",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "一天内（搜索页服务端筛选 + 本地近24h硬过滤，零详情页跳转）",
+      "list_total": 50,
+      "candidates": 15,
+      "excluded": 35,
+      "excluded_by_reason": {
+        "睫毛": 5,
+        "无美诺品牌信号(标题+正文)": 17,
+        "竞品关联推荐:诗佩妮": 4,
+        "竞品关联推荐:嘉利玛": 1,
+        "竞品关联推荐:毛戈平": 1,
+        "竞品关联推荐:花西子": 1,
+        "竞品关联推荐:尔木萄": 2,
+        "竞品关联推荐:柏瑞美": 4
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": 0,
+      "dedup_dup": 0,
+      "collected": 15,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 15,
+      "fetched_at": "2026-08-29 10:13"
+    },
+    {
+      "platform": "抖音",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内（视频 tab）",
+      "list_total": 0,
+      "candidates": 0,
+      "excluded": null,
+      "excluded_by_reason": {},
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 0,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0,
+      "fetched_at": null
+    },
+    {
+      "platform": "微博",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺冰肌粉蓝",
+        "美诺定妆"
+      ],
+      "time_window": "近1天",
+      "list_total": 3,
+      "candidates": 2,
+      "excluded": null,
+      "excluded_by_reason": {
+        "官方账号": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "fetched_at": null
+    }
+  ]
+}
