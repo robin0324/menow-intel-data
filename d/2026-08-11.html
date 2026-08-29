@@ -335,6 +335,10 @@ a:hover { text-decoration:underline; }
 .topic-date .d-day, .trend-date .d-day { font-size:22px; font-weight:700; color:var(--brand); line-height:1.1; }
 .date-empty { font-size:12px; color:#b9b9c0; }
 .empty-note { padding:22px 16px; text-align:center; color:var(--text2); font-size:13px; background:var(--brand-light); border-radius:10px; }
+/* 平台热点空态：带定位说明，避免被误判为采集故障 */
+.empty-note.hot-empty { padding:20px 18px; line-height:1.75; }
+.hot-empty-title { font-size:14px; font-weight:600; color:var(--text); margin-bottom:7px; }
+.hot-empty-desc { font-size:12px; color:var(--text2); max-width:660px; margin:0 auto; }
 .end-source a {
   display:inline-flex; align-items:center; gap:3px; color:var(--brand);
   font-size:12px; padding:2px 6px; border-radius:4px; background:var(--brand-light);
@@ -1159,7 +1163,7 @@ a:hover { text-decoration:underline; }
     <h2><span class="icon">🔥</span> 平台热点</h2>
     <span class="mod-badge">2 个热点 · 当日新增</span>
   </div>
-  <p class="sec-desc">仅展示当日（2026-08-11）新增平台热点，历史不累加；本板块聚焦各主流平台（小红书 / 抖音 / 微信 / 微博 / 快手 / B站）官方口径的热点——含平台热搜榜、热门话题榜、热门资讯，以及平台自身的重大更新、迭代与新业务动作；已筛选美妆护肤、女性为主市场的强相关信号，供品牌借势参考。</p>
+  <p class="sec-desc">本板块聚焦小红书 / 抖音 / 微信 / 微博 / 快手 / B站等主流平台的每日热点资讯</p>
   <div class="mod-body">
       <div class="topic-list" id="hotList"><div class="topic-item" data-title="抖音818新潮好物节8月11日20点启动：打通家电3C以旧换新，美妆/服饰/食品多类目流量倾斜"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">11</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">抖音</span><a href="http://www.sina.cn/news/detail/5330638166296411.html" target="_blank" rel="noopener" class="topic-title">抖音818新潮好物节8月11日20点启动：打通家电3C以旧换新，美妆/服饰/食品多类目流量倾斜 ↗</a></div><div class="topic-desc">大促启动</div><div class="topic-data">8月11日20点，抖音电商『818新潮好物节』正式启动，覆盖家电3C、服饰、美妆、食品等多个类目；家电3C品类打通以旧换新补贴通道，平台流量倾斜明显。各大直播电商平台同步开启秋季家装节预热，全屋家居家电流量扶持上调35%。</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音/小红书</strong><span class="insight-hl">美诺可借818『换季底妆』场景做内容：开学季+秋装上新叠加『焕新』心智，主推冰肌粉蓝定妆，绑定『换季不卡粉、带妆一整天』痛点；走真实测评/种草，规避同日生效的虚假功效红线。</span></div></div><div class="topic-src-line">🔗 来源：新浪电商日报　·　发布：2026-08-11</div></div></div><div class="topic-item" data-title="抖音电商8月11日起虚假功效短视频最高扣全额保证金，AI批量套图纳入精准打击"><div class="topic-date"><div class="d-month">08月</div><div class="d-day">11</div></div><div class="topic-main"><div class="topic-head"><span class="topic-platform">抖音</span><span class="ai-tag">🤖 AI</span><a href="https://www.toutiao.com/article/7672709335054549550" target="_blank" rel="noopener" class="topic-title">抖音电商8月11日起虚假功效短视频最高扣全额保证金，AI批量套图纳入精准打击 ↗</a></div><div class="topic-desc">规则升级</div><div class="topic-data">8月11日起，抖音电商短视频虚假宣传处罚细则生效：夸大功效类带货视频（如『三天美白』『七天瘦身』）最高扣全额保证金；AI批量套图（伪造before/after对比图、批量换脸换场景种草图文）与夸大宣传一并纳入精准打击，与8月10日截止的好评返现封杀形成组合拳，卡在818大促启动前。</div><div class="topic-ideas"><div class="topic-idea-card"><strong>抖音/小红书</strong><span class="insight-hl">抖音对美妆『功效宣称』零容忍：美诺所有带货短视频须删除『美白/祛斑/根治』等绝对化功效话术，底妆聚焦『持妆/控油/贴肤』等可验证描述；AI生成素材须片头3秒+封面标注『AI生成』并勾选标签，避免保证金风险。</span></div></div><div class="topic-src-line">🔗 来源：今日头条　·　发布：2026-08-11</div></div></div></div>
   </div>
@@ -1315,8 +1319,8 @@ function quickDate(offset){
 }
 
 // ─── 日期切换（日历弹窗） ───
-const AVAILABLE_DATES = ["2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15", "2026-08-11", "2026-08-10", "2026-08-04"];  // 由 Python 注入
-const LOCAL_DATES = ["2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
+const AVAILABLE_DATES = ["2026-08-29", "2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15", "2026-08-11", "2026-08-10", "2026-08-04"];  // 由 Python 注入
+const LOCAL_DATES = ["2026-08-29", "2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18"];      // 由 Python 注入（最近 KEEP_DAYS_LOCAL 天，本地 d/ 已部署）
 const CDN_BASE = "https://cdn.jsdelivr.net/gh/robin0324/menow-intel-data@main";         // 由 Python 注入（历史快照 CDN 基址，空则仅本地窗口可用）
 let cpY, cpM; // 当前弹窗显示的年月
 

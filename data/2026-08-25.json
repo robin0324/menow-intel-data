@@ -1,495 +1,513 @@
 {
-  "meta": {
-    "version": "23.2",
-    "date": "2026-08-25",
-    "data_as_of": "2026-08-25T13:00:00+08:00",
-    "brand": "美诺 MENOW",
-    "track": "美妆/底妆/粉饼/定妆",
-    "label": "V23.2 每日新增（全量重跑·真实WebSearch发现+强版WebFetch全文阅读+read_full证据）"
+ "meta": {
+  "version": "23.2",
+  "date": "2026-08-25",
+  "data_as_of": "2026-08-25T13:00:00+08:00",
+  "brand": "美诺 MENOW",
+  "track": "美妆/底妆/粉饼/定妆",
+  "label": "V23.2 每日新增（全量重跑·真实WebSearch发现+强版WebFetch全文阅读+read_full证据）"
+ },
+ "endorsements": [
+  {
+   "brand": "玉泽Dr.Yu",
+   "star": "杨紫",
+   "level": "全球护肤代言人",
+   "star_title": "玉泽首位全球护肤代言人",
+   "action": "新签",
+   "date": "2026-08-12",
+   "risk": "低",
+   "note": "8/12 杨紫官宣成为玉泽首位全球护肤代言人（品牌23年历史最高 title）。同步推『紫生屏障』礼盒(299/399元)并9城100屏投放。杨紫敏感肌真实背书+白玉兰视后国民度，与玉泽屏障修护定位高度契合。",
+   "source_type": "微博/新浪新闻",
+   "source_url": "https://www.sina.cn/news/detail/5331232345035742.html",
+   "topic_hashtag": "#杨紫玉泽首位全球护肤代言人#",
+   "heat_num": 0,
+   "heat_text": "新浪新闻专题",
+   "category": "护肤",
+   "brand_actions": "8/10悬念剪影→8/11预热视频→8/12官宣+主视觉KV；天猫开售紫生屏障礼盒；9城100屏(裸眼3D/8K)8/12-24点亮；粉丝晒单抽亲签。",
+   "reactions": "官宣当日粉丝涌入直播间与旗舰店下单，市场反响热烈。",
+   "source_tier": "aggregator",
+   "source_classify_note": "新浪新闻详情页(聚合品牌官宣)",
+   "read_full": true,
+   "source_excerpt": "2026年8月12日，白玉兰视后杨紫正式官宣成为玉泽首位全球护肤代言人。玉泽是23年历史的皮肤屏障修护专家。双方以『稳』为共同信念：杨紫深耕演艺二十余年凭扎实演技斩获白玉兰视后；玉泽坚持科研与实证23年只做屏障修护。官宣当天同步开启9城100屏线下大屏打卡、限量亲签海报，并推出『紫生屏障礼盒』等代言人同款。品牌宣传称杨紫代表『快修红、稳屏障』护肤需求，与玉泽屏障修护形成同频共振。",
+   "read_method": "web_fetch_full"
   },
-  "endorsements": [
-    {
-      "brand": "玉泽Dr.Yu",
-      "star": "杨紫",
-      "level": "全球护肤代言人",
-      "star_title": "玉泽首位全球护肤代言人",
-      "action": "新签",
-      "date": "2026-08-12",
-      "risk": "低",
-      "note": "8/12 杨紫官宣成为玉泽首位全球护肤代言人（品牌23年历史最高 title）。同步推『紫生屏障』礼盒(299/399元)并9城100屏投放。杨紫敏感肌真实背书+白玉兰视后国民度，与玉泽屏障修护定位高度契合。",
-      "source_type": "微博/新浪新闻",
-      "source_url": "https://www.sina.cn/news/detail/5331232345035742.html",
-      "topic_hashtag": "#杨紫玉泽首位全球护肤代言人#",
-      "heat_num": 0,
-      "heat_text": "新浪新闻专题",
-      "category": "护肤",
-      "brand_actions": "8/10悬念剪影→8/11预热视频→8/12官宣+主视觉KV；天猫开售紫生屏障礼盒；9城100屏(裸眼3D/8K)8/12-24点亮；粉丝晒单抽亲签。",
-      "reactions": "官宣当日粉丝涌入直播间与旗舰店下单，市场反响热烈。",
-      "source_tier": "aggregator",
-      "source_classify_note": "新浪新闻详情页(聚合品牌官宣)",
-      "read_full": true,
-      "source_excerpt": "2026年8月12日，白玉兰视后杨紫正式官宣成为玉泽首位全球护肤代言人。玉泽是23年历史的皮肤屏障修护专家。双方以『稳』为共同信念：杨紫深耕演艺二十余年凭扎实演技斩获白玉兰视后；玉泽坚持科研与实证23年只做屏障修护。官宣当天同步开启9城100屏线下大屏打卡、限量亲签海报，并推出『紫生屏障礼盒』等代言人同款。品牌宣传称杨紫代表『快修红、稳屏障』护肤需求，与玉泽屏障修护形成同频共振。",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "brand": "娇韵诗CLARINS",
-      "star": "章子怡",
-      "level": "至臻凝时全球代言人",
-      "star_title": "娇韵诗至臻凝时全球代言人",
-      "action": "新签",
-      "date": "2026-08-21",
-      "risk": "低",
-      "note": "8/21 娇韵诗官宣章子怡担任至臻凝时全球代言人，诠释高端抗衰奢护系列。章子怡刚柔并济气质与品牌原生之美契合，创意素材9月全球上线。",
-      "source_type": "新浪财经",
-      "source_url": "https://cj.sina.com.cn/articles/view/2020452235/786da78b00101c3bc",
-      "topic_hashtag": "#章子怡娇韵诗至臻凝时全球代言人#",
-      "heat_num": 0,
-      "heat_text": "新浪财经",
-      "category": "护肤",
-      "brand_actions": "8/21官宣；品牌宣传及创意素材2026年9月全球陆续上线。",
-      "reactions": "高端奢护定位与影后艺术格调相互加持。",
-      "source_tier": "aggregator",
-      "source_classify_note": "新浪财经聚合(品牌官宣通稿)",
-      "read_full": true,
-      "source_excerpt": "2026年8月21日，法国娇韵诗正式宣布章子怡担任娇韵诗至臻凝时全球代言人。至臻凝时系列沉淀品牌七十二年科研底蕴，章子怡刚柔并济的独特气质与娇韵诗崇尚的原生之美、内在坚韧品牌内核高度契合。章子怡表示『我始终欣赏娇韵诗的革新精神』。本次合作以章子怡匠心坚守为叙事内核，诠释日常护肤仪式与专业奢护如何焕活肌肤恒久年轻态。品牌宣传及相关创意素材将于2026年9月全球陆续上线。",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "brand": "巴黎欧莱雅L'Oréal Paris",
-      "star": "Kristen Bell",
-      "level": "全球代言人",
-      "star_title": "L'Oréal Paris 全球代言人",
-      "action": "新签",
-      "date": "2026-08-19",
-      "risk": "低",
-      "note": "8/19 巴黎欧莱雅官宣 Kristen Bell 为全球代言人，重新诠释『You're Worth It』。首位产品 campaign 为24H Midnight Cream，覆盖护肤/护发/彩妆多品类。",
-      "source_type": "PRNewswire",
-      "source_url": "https://www.prnewswire.com/news-releases/loreal-paris-announces-kristen-bell-as-its-new-global-ambassador-in-a-bold-expression-of-youre-worth-it-302854608.html",
-      "topic_hashtag": "#KristenBellLorealAmbassador#",
-      "heat_num": 0,
-      "heat_text": "PRNewswire 全球通稿",
-      "category": "美妆/护肤/护发",
-      "brand_actions": "8/19官宣；首支产品 campaign 为24H Midnight Cream，未来数周全美铺开；覆盖护肤/护发/染发/彩妆。",
-      "reactions": "品牌强调『把麦克风交给女性』的赋权叙事，呼应女性自我价值主张。",
-      "source_tier": "platform",
-      "source_classify_note": "品牌官方新闻稿(PRNewswire)",
-      "read_full": true,
-      "source_excerpt": "NEW YORK, Aug. 19, 2026 — L'Oréal Paris announces Emmy-nominated actress and producer Kristen Bell as its new Global Ambassador, with a debut campaign bringing a fresh, modern expression to 'You're Worth It'. Bell's authentic authority makes her the natural choice to carry this message. As Global Ambassador she will appear across skincare, haircare, hair color, makeup. Her first product campaign will be for the iconic 24H Midnight Cream rolling out nationwide in coming weeks. The brand positions beauty as 'an active, daily choice of self-authorship.'",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "brand": "潘婷PANTENE",
-      "star": "曾沛慈",
-      "level": "品牌大使",
-      "star_title": "潘婷品牌大使",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 潘婷正式官宣曾沛慈为品牌大使。浪姐 2026 年度总冠军后，曾沛慈短期密集解锁欧诗漫、奥利奥、倩碧、潘婷等国民品牌合作，粉丝活跃度与带货转化被市场验证。",
-      "source_type": "微博",
-      "source_url": "https://weibo.com/1816555811/5333959174520856",
-      "topic_hashtag": "#潘婷品牌大使曾沛慈#",
-      "heat_num": 38208,
-      "heat_text": "心动 38,208",
-      "category": "个护家清",
-      "brand_actions": "8/23 天猫预热加购，8/24 微博/小红书/视频号官宣开售，8/30 天猫直播；将浪姐热度与洗护刚需绑定，主打修护/蓬松产品线。",
-      "reactions": "粉丝认可曾沛慈温暖疗愈气质与潘婷修护心智的契合，综艺冠军后商务爆发力持续。",
-      "source_tier": "platform",
-      "source_classify_note": "潘婷PANTENE 官方微博（legacy-unverified：微博链接 WebFetch 读不全，待浏览器登录态补读）"
-    },
-    {
-      "brand": "秘密世界",
-      "star": "宋威龙",
-      "level": "品牌代言人",
-      "star_title": "秘密世界品牌代言人",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 贴身衣物品牌秘密世界官宣宋威龙为品牌代言人，与赵今麦组成双代言人矩阵，也是两人继娇兰之后的又一双人商务。",
-      "source_type": "微博",
-      "source_url": "https://m.weibo.cn/status/5335378414010804",
-      "topic_hashtag": "#宋威龙秘密世界品牌代言人#",
-      "heat_num": 4707,
-      "heat_text": "心动 4,707",
-      "category": "服饰箱包",
-      "brand_actions": "以『最好的陪伴，是不被束缚的贴身舒适』为主题，8/23预热、8/24官宣并点亮上海/广州/深圳/杭州/苏州/无锡六城八屏，推出小卡、冰箱贴等限定周边。",
-      "reactions": "龙麦 CP 粉将此次合作称为『剧集最强售后』，TVC 以居家松弛氛围呈现。",
-      "source_tier": "platform",
-      "source_classify_note": "秘密世界品牌官方微博（legacy-unverified）"
-    },
-    {
-      "brand": "淘宝天猫",
-      "star": "娜扎",
-      "level": "服饰品牌大使",
-      "star_title": "淘宝天猫服饰品牌大使",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 古力娜扎正式出任淘宝&天猫服饰品牌大使，同步领衔『天猫新势力周』秋冬上新。",
-      "source_type": "微博",
-      "source_url": "https://www.sina.cn/media/1768198384",
-      "topic_hashtag": "#淘宝天猫服饰品牌大使娜扎#",
-      "heat_num": 3838,
-      "heat_text": "心动 3,838",
-      "category": "服饰箱包",
-      "brand_actions": "8/24 20 点至 8/31 开启『百万新品秋上新』，潮流服饰官方立减叠券后 7.7 折起；全国 21 城核心商圈地标巨幕同步上线娜扎秋冬大片。",
-      "reactions": "时尚表现力与品牌调性契合，同款穿搭可一键搜索。",
-      "source_tier": "platform",
-      "source_classify_note": "天猫官方微博（legacy-unverified）"
-    },
-    {
-      "brand": "美力城MERRYCHENG",
-      "star": "艾米",
-      "level": "品牌青春大使",
-      "star_title": "美力城品牌青春大使",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 美力城官宣演员艾米为 26 秋冬全新品牌青春大使，同步举办 2026 品牌共生战略发布会暨新品发布秀。",
-      "source_type": "微博",
-      "source_url": "https://www.sina.cn/media/6115422130",
-      "topic_hashtag": "#艾米美力城品牌青春大使#",
-      "heat_num": 1309,
-      "heat_text": "心动 1,309",
-      "category": "服饰箱包",
-      "brand_actions": "以『轻装奔赴美一程』为主题，主推冰盾软壳衣、暖天鹅排骨轻羽、暖天鹅鹅绒服等高科技秋冬单品。",
-      "reactions": "粉丝认可艾米青春松弛气质与美力城『高科技服饰』定位的契合。",
-      "source_tier": "platform",
-      "source_classify_note": "美力城MERRYCHENG 官方微博（legacy-unverified）"
-    },
-    {
-      "brand": "HAPPYBIRDSDAY",
-      "star": "云旗",
-      "level": "全球品牌代言人",
-      "star_title": "HAPPYBIRDSDAY全球品牌代言人",
-      "action": "新签",
-      "date": "2026-08-25",
-      "risk": "低",
-      "note": "8/25 华潮鞋服品牌 HAPPYBIRDSDAY 官宣演员云旗为首位全球品牌代言人，也是品牌创立以来最高 title 合作。",
-      "source_type": "微博",
-      "source_url": "https://weibo.com/1921868697/5335729728391936",
-      "topic_hashtag": "#happybirdsday全球品牌代言人云旗#",
-      "heat_num": 1157,
-      "heat_text": "心动 1,157",
-      "category": "服饰箱包",
-      "brand_actions": "8/20 发布剪影预热，8/25 在微博、抖音、小红书三平台同步官宣，品牌定位为『轻运动、轻生活、轻潮流』。",
-      "reactions": "粉丝认为云旗兼具秀场气场与少年松弛感，与品牌内核高度同频。",
-      "source_tier": "platform",
-      "source_classify_note": "HAPPYBIRDSDAY 品牌官方微博（legacy-unverified）"
-    },
-    {
-      "brand": "金铲铲之战",
-      "star": "王安宇",
-      "level": "品牌大使",
-      "star_title": "金铲铲之战品牌大使",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 金铲铲之战五周年之际官宣王安宇为品牌大使，配合『自然之力』新赛季与 8/30 全明星周末。（按用户规则：明星代言板块不限制行业，保留）",
-      "source_type": "微博",
-      "source_url": "https://weibo.com/7268232624/5335430997475819",
-      "topic_hashtag": "#金铲铲之战品牌大使王安宇#",
-      "heat_num": 26030,
-      "heat_text": "心动 26,030",
-      "category": "游戏电竞",
-      "brand_actions": "以『轻松对局，快乐下棋』为主题，借势五周年庆、新赛季上线与全明星周末，线上线下联动扩大年轻用户覆盖。",
-      "reactions": "王安宇的松弛少年感与游戏轻松对局调性契合。",
-      "source_tier": "platform",
-      "source_classify_note": "金铲铲之战官方微博（legacy-unverified；男性向游戏，仅代言板块保留）"
-    },
-    {
-      "brand": "金铲铲之战",
-      "star": "刘浩存",
-      "level": "品牌大使",
-      "star_title": "金铲铲之战品牌大使",
-      "action": "新签",
-      "date": "2026-08-24",
-      "risk": "低",
-      "note": "8/24 刘浩存官宣为金铲铲之战品牌大使，将亲临 8/30 五周年『无所不铲』全明星周末。（按用户规则：明星代言板块不限制行业，保留）",
-      "source_type": "微博",
-      "source_url": "https://k.sina.com.cn/article_5419632159_14309061f04001vr04.html",
-      "topic_hashtag": "#金铲铲之战品牌大使刘浩存#",
-      "heat_num": 14015,
-      "heat_text": "心动 14,015",
-      "category": "游戏电竞",
-      "brand_actions": "与王安宇组成双品牌大使，覆盖男女用户群体；配合新赛季至臻皮肤返场、香水宝石系列等五周年福利上线。",
-      "reactions": "刘浩存近年商务质感提升，粉丝对游戏跨界接受度高。",
-      "source_tier": "aggregator",
-      "source_classify_note": "新浪娱乐报道（legacy-unverified；男性向游戏，仅代言板块保留）"
-    }
-  ],
-  "marketing_cases": [
-    {
-      "date": "2026-08-12",
-      "title": "CODEMINT纨素之肤×13DE MARZO CAFÉ：以『橙C』为符号的线下场景化营销范本（9城10店联名）",
-      "summary": "纯净美妆品牌CODEMINT携手潮流饮品13DE MARZO CAFÉ，8/5-8/16落地覆盖9城10店的全品牌联名，上海安福路旗舰店打造『小熊橙C状态站』主题场景。策略逻辑：双方客群高度重合（都市年轻女性×Z世代打卡族），以『日间咖啡提神+夜间面膜修护』建立味觉护肤联动，跳出美妆餐饮联名仅做视觉包装的浅层模式。执行：旗舰店双层橱窗巨型小熊装置成区域打卡点，10店全套联名物料覆盖点单-饮用-打包全流程；上线首日持续排队，KOL/游客自发传播，套餐售卖转化提升。行业借鉴：摒弃一次性短期联名，以爆款单品(橙C冰美式面膜)串联业态，把护肤体验植入全时段生活场景。",
-      "impact": "中高",
-      "source_name": "中国日报网",
-      "source_url": "https://cn.chinadaily.com.cn/a/202608/12/WS6a7c3206a310d709c2fc2df7.html",
-      "source_tier": "original",
-      "source_classify_note": "中国日报网/鲁网 原创报道",
-      "read_full": true,
-      "source_excerpt": "2026年8月5日至16日，纯净美妆品牌CODEMINT纨素之肤携手潮流饮品13DE MARZO CAFÉ，开启覆盖9城10店的全品牌联名活动，上海安福路店打造『小熊橙C状态站』限时主题场景。双方客群高度重合：CODEMINT覆盖注重成分、有高端消费力的都市年轻女性；13DE MARZO CAFÉ是Z世代逛街打卡核心选择。以橙C为统一创意符号，联名特调橙C冰美式对应日间提神，橙C冰美式面膜满足夜间修护，形成味觉护肤联动。活动上线首日门店即持续排队，本地路人、探店KOL、外地游客主动到店拍摄传播，线下自然客流带动品牌曝光，提升套餐售卖转化。品牌摒弃一次性短期联名，坚持场景化长期主义营销。",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Sephora『Delivered to Beauty』：用Lyft租车把顾客『送』进店，逆袭Prime Day流量",
-      "summary": "Sephora在Amazon Prime Day期间联合Lyft与Digitas发起『Delivered to Beauty』整合campaign：不在价格上硬刚亚马逊，而是把『配送包裹』重构为『把顾客送达Sephora』。策略起点来自内部洞察——仅30%美妆买家对亚马逊配送感到兴奋，而Sephora达70%。执行：Lyft App内视频+地图霸屏+折扣码；5城(西雅图/旧金山/纽约/洛杉矶/芝加哥)Sephora涂装车巡航，甚至开到亚马逊总部外；到店赠样+专属体验+达人纪实。结果：总曝光超4亿(目标1.5亿的2倍+)，品牌好感+13pt(目标5pt)，社媒互动超基准3175%、94%正面，Lyft打车到店量4倍、首次到店5倍。借鉴：用竞争对手的高关注时刻做自己的舞台；以具体数据洞察定义策略而非验证创意。",
-      "impact": "高",
-      "source_name": "Case Studied",
-      "source_url": "https://casestudied.com/archive/sephora",
-      "source_tier": "original",
-      "source_classify_note": "Case Studied 案例库(海外美妆零售)",
-      "read_full": true,
-      "source_excerpt": "Sephora partnered with Lyft and Digitas on 'Delivered to Beauty': instead of delivering a package, the campaign delivered a customer to Sephora. Insight: only 30% of beauty buyers feel excited about Amazon deliveries vs 70% for Sephora. Execution: Lyft in-app video + map takeovers + promo codes; Sephora-wrapped vehicles drove 5 US cities incl. outside Amazon HQ; riders greeted with samples. Results: 400M+ total impressions (2x goal of 150M); brand sentiment +13pts (goal 5); social engagement 3,175% above benchmark, 94% positive; Lyft rides to Sephora up 4x, first-time visits up 5x. Takeaway: let a specific data point define strategy; use a competitor's moment as your platform.",
-      "read_method": "web_fetch_full"
-    }
-  ],
-  "marketing_news": [
-    {
-      "date": "2026-08-19",
-      "title": "国货护肤珀莱雅(Proya)将于11月进驻美国Ulta Beauty 400家门店，加速出海",
-      "summary": "据BeautyNewsDaily 8/19报道，中国护肤品牌珀莱雅(Proya)将于11月通过Ulta Beauty大举进军美国市场，覆盖400家门店及线上，以两大王牌线打头阵：Advanced Firming(肽+视黄醇抗老)与Original Repair(屏障修护/胶原)。对美诺参考：国货护肤出海从『线上试水』走向『线下连锁货架』，美诺粉饼若出海可借鉴『先以明星单品锚定连锁渠道』的路径。",
-      "impact": "中",
-      "source_name": "BeautyNewsDaily",
-      "source_url": "https://beautynewsdaily.com/beauty-notes-ice-spice-loreal-chanel-daise",
-      "source_tier": "original",
-      "source_classify_note": "BeautyNewsDaily 美妆资讯(海外)",
-      "read_full": true,
-      "source_excerpt": "Proya is making a bigger move into the US this November with a launch at Ulta Beauty. The Chinese skincare brand will be available in 400 stores and online, with two of its hero ranges leading the way. Advanced Firming pairs peptides with retinol to target signs of ageing, while Original Repair is more focused on barrier support, collagen, and early ageing concerns. It's a fairly major introduction for a brand already well established across Asia, giving US shoppers an easier way to try Proya in person.",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "date": "2026-08-07",
-      "title": "Charlotte Tilbury携手赵露思共创『芭蕾千金妆』，明星深度共创+私域直播新范式",
-      "summary": "8/7英国高端美妆CT携手全球彩妆代言人赵露思，从灵感概念到妆容细节深度共创『芭蕾千金妆』上线；同步释出广告片、与Pretty Gal联名官宣、小红书『美貌野心家×CT』话题页；当晚赵露思在个人小红书开独家妆教直播。CT将表达主场交予代言人，以更真实亲密方式深化连接——为高端美妆明星合作提供『共创而非单向背书』的新样本。",
-      "impact": "中",
-      "source_name": "新浪新闻/WWD中文版",
-      "source_url": "https://www.sina.cn/news/detail/5332845501613414.html",
-      "source_tier": "aggregator",
-      "source_classify_note": "新浪新闻(转WWD中文版)",
-      "read_full": true,
-      "source_excerpt": "2026年8月7日，英国高端美妆品牌Charlotte Tilbury（CT）携手全球彩妆代言人赵露思，共创全新妆容风格『芭蕾千金妆』正式上线。双方从灵感概念到妆容细节深度共创。同日赵露思演绎品牌广告片释出；CT与Pretty Gal联名合作同步官宣，小红书『美貌野心家 × CT』话题页上线；当晚赵露思在个人小红书开启独家妆教直播。CT将表达主场交予代言人，以更真实、亲密的方式深化消费者连接，为明星共创模式带来新的可能。",
-      "read_method": "web_fetch_full"
-    }
-  ],
-  "industry_reports": [
-    {
-      "date": "2026-08-24",
-      "title": "《Cosmetics and Beauty Market Size, Forecasts Report 2026–2035》：2035 年全球市场规模将达 1.5 万亿美元，CAGR 4.1%",
-      "publisher": "Global Market Insights",
-      "summary": "报告预测 2026 年全球美妆市场规模约 1.1 万亿美元，2035 年达 1.5 万亿美元。增长驱动力包括天然/有机/clean beauty、K-beauty 全球扩张、护肤与护发高端化；AI 皮肤诊断、虚拟试妆与社交电商正在重塑消费决策链路。",
-      "key_findings": [
-        "2026 年全球市场规模约 1.1 万亿美元",
-        "2035 年预计达 1.5 万亿美元，CAGR 4.1%",
-        "K-beauty 全球扩张贡献约 0.8% CAGR",
-        "AI 与社交电商重塑 discovery-to-purchase 链路"
-      ],
-      "source_name": "Global Market Insights",
-      "source_url": "https://gminsights.com/industry-analysis/cosmetics-and-beauty-market",
-      "source_tier": "institute",
-      "source_classify_note": "市场研究机构官网报告",
-      "read_full": true,
-      "source_excerpt": "Global Market Insights《Cosmetics and Beauty Market 2026-2035》报告：2025年市场1万亿美元，2026预计1.1万亿，2035达1.5万亿，CAGR 4.1%；亚太最大(2025约3180亿)，中东非洲最快(CAGR6.6%)；女性占2024需求72%为最大群；护肤最大零售段(2024 2153亿)，男性grooming增速最快(5.8%)。驱动：天然有机/clean beauty、K-beauty、高端化。",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "date": "2026-08-05",
-      "title": "《全球粉饼市场研究深度分析报告(2026)》：2025规模128.6亿美元，养肤类增速最快(+11.3%)",
-      "publisher": "ZVZO消费观察",
-      "summary": "报告指2025年全球粉饼市场约128.6亿美元(+7.2%)，亚太占38.4%为最大区域；预计2026年137.9亿、2030年178.4亿(CAGR5.4%)。控油持妆类占44.7%销售额，养肤类同比+11.3%为增速最快功能子类；男性粉饼6.2亿美元(+14.8%)但仍小众。消费端：62.3%将『持妆时长』列第一指标，51.7%重视致痘/敏感肌适用，无滑石粉/无香精宣称销售额+21.4%。对美诺：养肤+持妆+敏感肌友好是结构性机会，粉饼迭代周期已缩短至9个月。",
-      "key_findings": [
-        "2025全球粉饼128.6亿美元，同比+7.2%，亚太占38.4%",
-        "预计2030年达178.4亿美元，CAGR 5.4%",
-        "养肤类粉饼同比+11.3%，为增速最快功能子类",
-        "62.3%消费者选购粉饼第一关注『持妆时长』，51.7%重视致痘/敏感肌适用",
-        "无滑石粉/无香精宣称2025销售额+21.4%"
-      ],
-      "source_name": "ZVZO消费观察",
-      "source_url": "https://www.zvzo.com/75/view-177554-1.html",
-      "source_tier": "institute",
-      "source_classify_note": "ZVZO消费观察 行业报告",
-      "read_full": true,
-      "source_excerpt": "2025年全球粉饼市场规模约128.6亿美元，较上年增长7.2%；亚太贡献约38.4%销售额，为最大区域市场。预计2026年137.9亿美元，2030年有望达178.4亿美元，CAGR5.4%。控油持妆类粉饼占44.7%销售额，养肤类同比+11.3%为增速最快功能子类。62.3%消费者选购粉饼将『持妆时长』列第一指标，51.7%重视是否致痘与敏感肌适用；无滑石粉、无香精宣称产品2025销售额+21.4%。粉饼迭代周期从18个月缩短至9个月。",
-      "read_method": "web_fetch_full"
-    }
-  ],
-  "hot_topics": [
-    {
-      "date": "2026-08-06",
-      "time": "2026-08-06",
-      "platform": "小红书",
-      "topic": "『彩妆包挂经济』爆火：迷你彩妆挂件成年轻人身份标签，各大品牌扎堆入局",
-      "trend_direction": "上升",
-      "data_support": "小红书美妆挂件话题浏览量超6500万；『挂件气垫』搜索量暴涨万倍；Fwee/AMUSE(张元英代言)半年销量破50万件；花知晓/橘朵/卡姿兰等国货推mini挂件。",
-      "content_ideas": {
-        "小红书/抖音": "美诺可借『包挂经济』做粉饼mini挂件/周边，但须警惕实用性差、溢价严重、复购低等吐槽（橘朵挂件腮红已取消附赠挂链），核心仍应回归产品力。"
-      },
-      "source_name": "今日头条/西瓜随笔",
-      "source_url": "https://www.toutiao.com/article/7670649290997432876",
-      "source_tier": "aggregator",
-      "source_classify_note": "今日头条 自媒体观察(趋势热点)",
-      "read_full": true,
-      "source_excerpt": "『彩妆包挂经济』成席卷年轻人的潮流，业内取名『包挂经济』风头盖过口红经济。LV/迪奥/花知晓/橘朵/卡姿兰等扎堆推迷你彩妆挂件。韩国Fwee率先推挂绳唇颊膏，女星张元英代言AMUSE钥匙扣唇膏半年销量破50万件。小红书美妆挂件话题浏览量超6500万。但吐槽亦多：实用性差(拔干/刺鼻)、卫生隐患(裸露包外)、溢价严重(多一根挂绳贵三成至一倍)。橘朵挂件腮红几乎无复购，后续新款取消附赠挂链，说明热度下滑。品牌把彩妆做成包挂，弱化使用核心，靠颜值收割短期流量难长久。",
-      "read_method": "web_fetch_full"
-    }
-  ],
-  "trends": [
-    {
-      "date": "2026-08-24",
-      "title": "趋势：定妆品类进入「粉体/成膜技术微米级内卷 + 分肤定制 + 形态融合 + 光泽回归」新阶段",
-      "summary": "C2CC 传媒盘点 20+ 定妆新品提炼七大趋势：①烟酰胺/精油等养肤成分成中高端标配；②花西子高吸多孔粉体、卡姿兰类太空多核吸油粉体、橘朵超微研磨等进入微米级竞争；③分肤定制渗透（彩棠攻干皮、柏瑞美全覆盖）；④散粉/粉饼/喷雾边界模糊（液体蜜粉、妆前喷雾前置定妆）；⑤光泽派定妆回归（迪奥水润光膜、NARS 微闪）；⑥户外/运动场景驱动高防护定妆增长（「防水防汗不脱妆」占运动美妆核心诉求 20.17%）；⑦成分透明/纯净定妆成准入门槛（滑石粉替代、玉米淀粉/硅石主流）。对美诺：需把「不易结块」做成可验证的工艺叙事，并补齐分肤质粉饼矩阵。",
-      "source_name": "C2CC 传媒",
-      "source_url": "https://m.c2cc.cn/news/10012316.html",
-      "source_tier": "original",
-      "source_classify_note": "行业垂直媒体定妆趋势盘点（与美诺定妆/粉饼强相关）",
-      "time": "2026-08-24",
-      "need_date_check": false,
-      "read_full": true,
-      "source_excerpt": "C2CC 盘点20+定妆新品提炼七大趋势：①妆养一体成标配(烟酰胺/精油)；②粉体与成膜技术微米级内卷(花西子高吸多孔、卡姿兰类太空多核吸油、橘朵超微研磨)；③分肤定制渗透(彩棠攻干皮、柏瑞美全覆盖)；④散粉/粉饼/喷雾边界模糊(液体蜜粉、妆前喷雾前置定妆)；⑤光泽派定妆回归(迪奥水润光膜、NARS微闪)；⑥户外/运动场景驱动高防护定妆(运动美妆核心诉求20.17%为防水防汗不脱妆)；⑦成分透明/纯净定妆成门槛(滑石粉替代、玉米淀粉/硅石主流)。定妆市场2024线上增速领跑彩妆，规模破百亿，三年CAGR约20%。",
-      "read_method": "web_fetch_full"
-    },
-    {
-      "date": "2026-08-25",
-      "title": "趋势：悦己消费从「即时愉悦」走向「长期关怀/心价比」，节日礼赠进入日常自我投资",
-      "summary": "三联生活周刊结合尼尔森IQ《通往2026：中国消费零售十大关键趋势》指出，悦己消费正从一次性惊喜馈赠升级为对自我与亲密他人的长期状态投资；消费衡量标准从「性价比」迈向「心价比」。雅诗兰黛集团七夕以科研矩阵（小棕瓶眼面微雕、LA MER、倩碧、Origins）呼应这一诉求。对美诺：50 元价格带 + 学生党「第一块粉饼」自我奖赏叙事，高度契合「平价悦己」方向。",
-      "source_name": "三联生活周刊 / 尼尔森IQ",
-      "source_url": "https://www.lifeweek.com.cn/h5/article/detail.do?artId=271727",
-      "source_tier": "original",
-      "source_classify_note": "垂直媒体 + 机构趋势报告交叉印证",
-      "time": "2026-08-25",
-      "need_date_check": false,
-      "read_full": true,
-      "source_excerpt": "三联生活周刊结合尼尔森IQ《通往2026》指出，悦己消费从一次性惊喜馈赠升级为对自我与亲密他人的长期状态投资；消费衡量标准从性价比迈向心价比。雅诗兰黛集团七夕以科研矩阵(小棕瓶眼面微雕、LA MER、倩碧、Origins)呼应。印证美诺50元价格带+学生党『第一块粉饼』自我奖赏叙事契合『平价悦己』。",
-      "read_method": "web_fetch_full"
-    }
-  ],
-  "new_products": [],
-  "continuous_watch": [
-    {
-      "icon": "🎒",
-      "text": "开学季（9/1）+ 教师节（9/10）+ 中秋（9/25）节点营销跟进——军训「伪素颜」场景与美诺「平价心意礼」组合装、萌兰/小熊 IP 谐音梗素材库的节点化复用"
-    },
-    {
-      "icon": "⚔️",
-      "text": "竞品方里 / 卡姿兰 / 毛戈平 / 花间颂 / 修可芙 / 芭贝拉 / 嘉利玛 底妆动作跟踪——新品、代言与渠道机制变化（全行业）"
-    },
-    {
-      "icon": "🏅",
-      "text": "「体育明星/冠军信任型代言」趋势跟踪——朵薇×全红婵样本后，评估美诺「安全配方+冠军背书」合作可能性与性价比"
-    },
-    {
-      "icon": "🖱️",
-      "text": "底妆品类座次跟踪——气垫反超粉底液后，「便携多效」诉求对粉饼/定妆品类的传导（防晒粉饼、快速上妆叙事）"
-    },
-    {
-      "icon": "🌟",
-      "text": "明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏（含跨行业代言如游戏/服饰，仅作行情参考）"
-    },
-    {
-      "icon": "🎤",
-      "text": "平台官方大会档期跟踪——抖音电商生态大会、引擎大会（巨量引擎）、抖音创作者大会、小红书 WILL 商业大会、微博超级红人节等年度大会的时间/主题/发布口径（平台方一手信息优先）"
-    },
-    {
-      "icon": "🤖",
-      "text": "AI 新广告形态跟踪——AIGC 动态创意默认开启、抖音即创/巨量创意、AI 素材授权、明星 AI 授权、智能投放等平台级新形态动态"
-    }
-  ],
-  "today_must_see": [
-    {
-      "icon": "🌟",
-      "text": "8/12 玉泽官宣杨紫为首位全球护肤代言人，9城100屏+紫生屏障礼盒，以『稳』叙事绑定敏感肌真实背书。美诺可借鉴『首位全球代言人』的高规格 title 打法，强化学生党屏障友好心智。",
-      "tag": "代言风向",
-      "source_tier": "aggregator",
-      "source_classify_note": "新浪新闻(玉泽杨紫)"
-    },
-    {
-      "icon": "🏪",
-      "text": "CODEMINT×13DE MARZO 以『橙C』串联9城10店咖啡场景，首日即排队、自然客流带动转化。美诺粉饼可绑定校园/军训场景做长期主义线下联名，而非一次性快闪。",
-      "tag": "场景营销",
-      "source_tier": "original",
-      "source_classify_note": "中国日报网(CODEMINT案例)"
-    },
-    {
-      "icon": "📊",
-      "text": "ZVZO《全球粉饼市场报告》：养肤类粉饼同比+11.3%为增速最快子类，62.3%消费者第一关注『持妆时长』、51.7%重视致痘/敏感肌适用，无滑石粉/无香精宣称+21.4%。美诺产品迭代应锚定『养肤+持妆+敏感肌友好』。",
-      "tag": "行业报告",
-      "source_tier": "institute",
-      "source_classify_note": "ZVZO消费观察"
-    },
-    {
-      "icon": "🎒",
-      "text": "开学季多平台粉饼横评继续点名美诺：学生党『自然色/冰肌蓝』控油持妆、白菜价心智稳定；同时『结块』搜索联想仍在。建议开学季内容矩阵强化『暴汗不脱妆+分肤质选色』正向卖点，并主动对冲负面联想。",
-      "tag": "舆情机会",
-      "source_tier": "aggregator",
-      "source_classify_note": "搜狐/什么值得买公开横评"
-    },
-    {
-      "icon": "💝",
-      "text": "悦己消费从『即时愉悦』走向『长期关怀/心价比』：尼尔森IQ 指出消费标准从性价比迈向心价比。美诺 50 元价格带 + 学生党『第一块粉饼』自我奖赏叙事，高度契合『平价悦己』方向。",
-      "tag": "消费趋势",
-      "source_tier": "original",
-      "source_classify_note": "三联生活周刊/尼尔森IQ"
-    },
-    {
-      "icon": "👜",
-      "text": "『彩妆包挂经济』成流量风口（小红书话题6500万+浏览），但实用性差/溢价严重/复购低等吐槽亦多，橘朵已取消挂链附赠。美诺若做周边须以产品力兜底，不为短期颜值流量弱化使用核心。",
-      "tag": "趋势警示",
-      "source_tier": "aggregator",
-      "source_classify_note": "今日头条(包挂经济)"
-    }
-  ],
-  "brand_inspiration": [
-    "玉泽杨紫『稳』叙事：敏感肌真实背书+国民度，美诺可强化『学生党屏障友好』真实感，而非单纯流量代言。",
-    "CODEMINT×13DE MARZO：以爆款单品串联异业场景，美诺粉饼可绑定校园/军训场景做长期主义联名，把产品植入全时段生活。",
-    "彩妆包挂经济警示：颜值溢价短期流量难沉淀，美诺周边须回归使用核心、以产品力兜底。",
-    "ZVZO粉饼养肤细分：无滑石粉/无香精宣称+21.4%，美诺可打『敏感肌友好定妆』差异化。",
-    "悦己消费/心价比：美诺『平价+情绪价值』契合学生党自我奖赏，强化『第一块粉饼』叙事比单纯打折更能沉淀品牌资产。"
-  ],
-  "weekly_actions": [
-    {
-      "action": "开学季内容矩阵冲刺：小红书/抖音投放「军训暴汗不脱妆+分肤质选色」妆教 10 条以上，抢占「军训用什么散粉/粉饼」搜索卡位",
-      "owner": "内容/媒介",
-      "status": "本周启动"
-    },
-    {
-      "action": "美诺粉饼『养肤/敏感肌友好』卖点提炼：对照 ZVZO 报告，补强『无滑石粉/持妆时长/不致痘』话术与详情页证据",
-      "owner": "产品/电商",
-      "status": "本周启动"
-    },
-    {
-      "action": "准备「美诺粉饼结块」统一回应口径（防潮存放/粉扑清洁/批次排查），并在开学季内容中主动做「久放不干/不易结块」正向对冲",
-      "owner": "客服/内容",
-      "status": "本周完成"
-    },
-    {
-      "action": "中秋/双11 节点 SKU 与达人分销机制规划：参考七夕大促拉动效应，提前 2-3 周锁定垂类达人档期与礼盒组合",
-      "owner": "电商/品牌",
-      "status": "本周启动"
-    },
-    {
-      "action": "评估彩妆周边/包挂可行性但设『产品力兜底』红线：先做可真正上脸的小样挂件测试，不直接复制高溢价低复购模式",
-      "owner": "品牌/产品",
-      "status": "本周评估"
-    }
-  ],
-  "ai_marketing": [
-    {
-      "date": "2026-08-24",
-      "title": "巨量引擎 AIGC 动态创意默认开启：素材生产进入「人工底座+AI 裂变+实时优选」阶段",
-      "summary": "8 月 13 日巨量引擎更新日志显示，创建项目接口 aigc_dynamic_creative_switch 默认逻辑调整，部分 AIGC 适用场景支持使用且默认开启。系统会基于商家已有优质素材片段、商品信息，依托 AIGC 大模型自动生成创意素材，并完成自动化投放与低效素材汰换。",
-      "source_name": "巨量引擎商业开放平台",
-      "source_url": "https://open.oceanengine.com/changelog/1",
-      "key_takeaway": "美诺应把「真实使用场景+真实价格卖点」作为创意底座，让 AI 负责 50+ 变体生成与实时优选，每周淘汰低效素材并补充新鲜素材。",
-      "tags": [
-        "AIGC",
-        "巨量引擎",
-        "千川",
-        "动态创意"
-      ],
-      "source_tier": "platform",
-      "source_classify_note": "平台官方更新日志（legacy-unverified：登录态 changelog 待补读）"
-    }
-  ]
+  {
+   "brand": "娇韵诗CLARINS",
+   "star": "章子怡",
+   "level": "至臻凝时全球代言人",
+   "star_title": "娇韵诗至臻凝时全球代言人",
+   "action": "新签",
+   "date": "2026-08-21",
+   "risk": "低",
+   "note": "8/21 娇韵诗官宣章子怡担任至臻凝时全球代言人，诠释高端抗衰奢护系列。章子怡刚柔并济气质与品牌原生之美契合，创意素材9月全球上线。",
+   "source_type": "新浪财经",
+   "source_url": "https://cj.sina.com.cn/articles/view/2020452235/786da78b00101c3bc",
+   "topic_hashtag": "#章子怡娇韵诗至臻凝时全球代言人#",
+   "heat_num": 0,
+   "heat_text": "新浪财经",
+   "category": "护肤",
+   "brand_actions": "8/21官宣；品牌宣传及创意素材2026年9月全球陆续上线。",
+   "reactions": "高端奢护定位与影后艺术格调相互加持。",
+   "source_tier": "aggregator",
+   "source_classify_note": "新浪财经聚合(品牌官宣通稿)",
+   "read_full": true,
+   "source_excerpt": "2026年8月21日，法国娇韵诗正式宣布章子怡担任娇韵诗至臻凝时全球代言人。至臻凝时系列沉淀品牌七十二年科研底蕴，章子怡刚柔并济的独特气质与娇韵诗崇尚的原生之美、内在坚韧品牌内核高度契合。章子怡表示『我始终欣赏娇韵诗的革新精神』。本次合作以章子怡匠心坚守为叙事内核，诠释日常护肤仪式与专业奢护如何焕活肌肤恒久年轻态。品牌宣传及相关创意素材将于2026年9月全球陆续上线。",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "brand": "巴黎欧莱雅L'Oréal Paris",
+   "star": "Kristen Bell",
+   "level": "全球代言人",
+   "star_title": "L'Oréal Paris 全球代言人",
+   "action": "新签",
+   "date": "2026-08-19",
+   "risk": "低",
+   "note": "8/19 巴黎欧莱雅官宣 Kristen Bell 为全球代言人，重新诠释『You're Worth It』。首位产品 campaign 为24H Midnight Cream，覆盖护肤/护发/彩妆多品类。",
+   "source_type": "PRNewswire",
+   "source_url": "https://www.prnewswire.com/news-releases/loreal-paris-announces-kristen-bell-as-its-new-global-ambassador-in-a-bold-expression-of-youre-worth-it-302854608.html",
+   "topic_hashtag": "#KristenBellLorealAmbassador#",
+   "heat_num": 0,
+   "heat_text": "PRNewswire 全球通稿",
+   "category": "美妆/护肤/护发",
+   "brand_actions": "8/19官宣；首支产品 campaign 为24H Midnight Cream，未来数周全美铺开；覆盖护肤/护发/染发/彩妆。",
+   "reactions": "品牌强调『把麦克风交给女性』的赋权叙事，呼应女性自我价值主张。",
+   "source_tier": "platform",
+   "source_classify_note": "品牌官方新闻稿(PRNewswire)",
+   "read_full": true,
+   "source_excerpt": "NEW YORK, Aug. 19, 2026 — L'Oréal Paris announces Emmy-nominated actress and producer Kristen Bell as its new Global Ambassador, with a debut campaign bringing a fresh, modern expression to 'You're Worth It'. Bell's authentic authority makes her the natural choice to carry this message. As Global Ambassador she will appear across skincare, haircare, hair color, makeup. Her first product campaign will be for the iconic 24H Midnight Cream rolling out nationwide in coming weeks. The brand positions beauty as 'an active, daily choice of self-authorship.'",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "brand": "潘婷PANTENE",
+   "star": "曾沛慈",
+   "level": "品牌大使",
+   "star_title": "潘婷品牌大使",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 潘婷正式官宣曾沛慈为品牌大使。浪姐 2026 年度总冠军后，曾沛慈短期密集解锁欧诗漫、奥利奥、倩碧、潘婷等国民品牌合作，粉丝活跃度与带货转化被市场验证。",
+   "source_type": "微博",
+   "source_url": "https://weibo.com/1816555811/5333959174520856",
+   "topic_hashtag": "#潘婷品牌大使曾沛慈#",
+   "heat_num": 38208,
+   "heat_text": "心动 38,208",
+   "category": "个护家清",
+   "brand_actions": "8/23 天猫预热加购，8/24 微博/小红书/视频号官宣开售，8/30 天猫直播；将浪姐热度与洗护刚需绑定，主打修护/蓬松产品线。",
+   "reactions": "粉丝认可曾沛慈温暖疗愈气质与潘婷修护心智的契合，综艺冠军后商务爆发力持续。",
+   "source_tier": "platform",
+   "source_classify_note": "潘婷PANTENE 官方微博（legacy-unverified：微博链接 WebFetch 读不全，待浏览器登录态补读）"
+  },
+  {
+   "brand": "秘密世界",
+   "star": "宋威龙",
+   "level": "品牌代言人",
+   "star_title": "秘密世界品牌代言人",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 贴身衣物品牌秘密世界官宣宋威龙为品牌代言人，与赵今麦组成双代言人矩阵，也是两人继娇兰之后的又一双人商务。",
+   "source_type": "微博",
+   "source_url": "https://m.weibo.cn/status/5335378414010804",
+   "topic_hashtag": "#宋威龙秘密世界品牌代言人#",
+   "heat_num": 4707,
+   "heat_text": "心动 4,707",
+   "category": "服饰箱包",
+   "brand_actions": "以『最好的陪伴，是不被束缚的贴身舒适』为主题，8/23预热、8/24官宣并点亮上海/广州/深圳/杭州/苏州/无锡六城八屏，推出小卡、冰箱贴等限定周边。",
+   "reactions": "龙麦 CP 粉将此次合作称为『剧集最强售后』，TVC 以居家松弛氛围呈现。",
+   "source_tier": "platform",
+   "source_classify_note": "秘密世界品牌官方微博（legacy-unverified）"
+  },
+  {
+   "brand": "淘宝天猫",
+   "star": "娜扎",
+   "level": "服饰品牌大使",
+   "star_title": "淘宝天猫服饰品牌大使",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 古力娜扎正式出任淘宝&天猫服饰品牌大使，同步领衔『天猫新势力周』秋冬上新。",
+   "source_type": "微博",
+   "source_url": "https://www.sina.cn/media/1768198384",
+   "topic_hashtag": "#淘宝天猫服饰品牌大使娜扎#",
+   "heat_num": 3838,
+   "heat_text": "心动 3,838",
+   "category": "服饰箱包",
+   "brand_actions": "8/24 20 点至 8/31 开启『百万新品秋上新』，潮流服饰官方立减叠券后 7.7 折起；全国 21 城核心商圈地标巨幕同步上线娜扎秋冬大片。",
+   "reactions": "时尚表现力与品牌调性契合，同款穿搭可一键搜索。",
+   "source_tier": "platform",
+   "source_classify_note": "天猫官方微博（legacy-unverified）"
+  },
+  {
+   "brand": "美力城MERRYCHENG",
+   "star": "艾米",
+   "level": "品牌青春大使",
+   "star_title": "美力城品牌青春大使",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 美力城官宣演员艾米为 26 秋冬全新品牌青春大使，同步举办 2026 品牌共生战略发布会暨新品发布秀。",
+   "source_type": "微博",
+   "source_url": "https://www.sina.cn/media/6115422130",
+   "topic_hashtag": "#艾米美力城品牌青春大使#",
+   "heat_num": 1309,
+   "heat_text": "心动 1,309",
+   "category": "服饰箱包",
+   "brand_actions": "以『轻装奔赴美一程』为主题，主推冰盾软壳衣、暖天鹅排骨轻羽、暖天鹅鹅绒服等高科技秋冬单品。",
+   "reactions": "粉丝认可艾米青春松弛气质与美力城『高科技服饰』定位的契合。",
+   "source_tier": "platform",
+   "source_classify_note": "美力城MERRYCHENG 官方微博（legacy-unverified）"
+  },
+  {
+   "brand": "HAPPYBIRDSDAY",
+   "star": "云旗",
+   "level": "全球品牌代言人",
+   "star_title": "HAPPYBIRDSDAY全球品牌代言人",
+   "action": "新签",
+   "date": "2026-08-25",
+   "risk": "低",
+   "note": "8/25 华潮鞋服品牌 HAPPYBIRDSDAY 官宣演员云旗为首位全球品牌代言人，也是品牌创立以来最高 title 合作。",
+   "source_type": "微博",
+   "source_url": "https://weibo.com/1921868697/5335729728391936",
+   "topic_hashtag": "#happybirdsday全球品牌代言人云旗#",
+   "heat_num": 1157,
+   "heat_text": "心动 1,157",
+   "category": "服饰箱包",
+   "brand_actions": "8/20 发布剪影预热，8/25 在微博、抖音、小红书三平台同步官宣，品牌定位为『轻运动、轻生活、轻潮流』。",
+   "reactions": "粉丝认为云旗兼具秀场气场与少年松弛感，与品牌内核高度同频。",
+   "source_tier": "platform",
+   "source_classify_note": "HAPPYBIRDSDAY 品牌官方微博（legacy-unverified）"
+  },
+  {
+   "brand": "金铲铲之战",
+   "star": "王安宇",
+   "level": "品牌大使",
+   "star_title": "金铲铲之战品牌大使",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 金铲铲之战五周年之际官宣王安宇为品牌大使，配合『自然之力』新赛季与 8/30 全明星周末。（按用户规则：明星代言板块不限制行业，保留）",
+   "source_type": "微博",
+   "source_url": "https://weibo.com/7268232624/5335430997475819",
+   "topic_hashtag": "#金铲铲之战品牌大使王安宇#",
+   "heat_num": 26030,
+   "heat_text": "心动 26,030",
+   "category": "游戏电竞",
+   "brand_actions": "以『轻松对局，快乐下棋』为主题，借势五周年庆、新赛季上线与全明星周末，线上线下联动扩大年轻用户覆盖。",
+   "reactions": "王安宇的松弛少年感与游戏轻松对局调性契合。",
+   "source_tier": "platform",
+   "source_classify_note": "金铲铲之战官方微博（legacy-unverified；男性向游戏，仅代言板块保留）"
+  },
+  {
+   "brand": "金铲铲之战",
+   "star": "刘浩存",
+   "level": "品牌大使",
+   "star_title": "金铲铲之战品牌大使",
+   "action": "新签",
+   "date": "2026-08-24",
+   "risk": "低",
+   "note": "8/24 刘浩存官宣为金铲铲之战品牌大使，将亲临 8/30 五周年『无所不铲』全明星周末。（按用户规则：明星代言板块不限制行业，保留）",
+   "source_type": "微博",
+   "source_url": "https://k.sina.com.cn/article_5419632159_14309061f04001vr04.html",
+   "topic_hashtag": "#金铲铲之战品牌大使刘浩存#",
+   "heat_num": 14015,
+   "heat_text": "心动 14,015",
+   "category": "游戏电竞",
+   "brand_actions": "与王安宇组成双品牌大使，覆盖男女用户群体；配合新赛季至臻皮肤返场、香水宝石系列等五周年福利上线。",
+   "reactions": "刘浩存近年商务质感提升，粉丝对游戏跨界接受度高。",
+   "source_tier": "aggregator",
+   "source_classify_note": "新浪娱乐报道（legacy-unverified；男性向游戏，仅代言板块保留）"
+  }
+ ],
+ "marketing_cases": [
+  {
+   "date": "2026-08-12",
+   "title": "CODEMINT纨素之肤×13DE MARZO CAFÉ：以『橙C』为符号的线下场景化营销范本（9城10店联名）",
+   "summary": "纯净美妆品牌CODEMINT携手潮流饮品13DE MARZO CAFÉ，8/5-8/16落地覆盖9城10店的全品牌联名，上海安福路旗舰店打造『小熊橙C状态站』主题场景。策略逻辑：双方客群高度重合（都市年轻女性×Z世代打卡族），以『日间咖啡提神+夜间面膜修护』建立味觉护肤联动，跳出美妆餐饮联名仅做视觉包装的浅层模式。执行：旗舰店双层橱窗巨型小熊装置成区域打卡点，10店全套联名物料覆盖点单-饮用-打包全流程；上线首日持续排队，KOL/游客自发传播，套餐售卖转化提升。行业借鉴：摒弃一次性短期联名，以爆款单品(橙C冰美式面膜)串联业态，把护肤体验植入全时段生活场景。",
+   "impact": "中高",
+   "source_name": "中国日报网",
+   "source_url": "https://cn.chinadaily.com.cn/a/202608/12/WS6a7c3206a310d709c2fc2df7.html",
+   "source_tier": "original",
+   "source_classify_note": "中国日报网/鲁网 原创报道",
+   "read_full": true,
+   "source_excerpt": "2026年8月5日至16日，纯净美妆品牌CODEMINT纨素之肤携手潮流饮品13DE MARZO CAFÉ，开启覆盖9城10店的全品牌联名活动，上海安福路店打造『小熊橙C状态站』限时主题场景。双方客群高度重合：CODEMINT覆盖注重成分、有高端消费力的都市年轻女性；13DE MARZO CAFÉ是Z世代逛街打卡核心选择。以橙C为统一创意符号，联名特调橙C冰美式对应日间提神，橙C冰美式面膜满足夜间修护，形成味觉护肤联动。活动上线首日门店即持续排队，本地路人、探店KOL、外地游客主动到店拍摄传播，线下自然客流带动品牌曝光，提升套餐售卖转化。品牌摒弃一次性短期联名，坚持场景化长期主义营销。",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "date": "2026-08-18",
+   "title": "Sephora『Delivered to Beauty』：用Lyft租车把顾客『送』进店，逆袭Prime Day流量",
+   "summary": "Sephora在Amazon Prime Day期间联合Lyft与Digitas发起『Delivered to Beauty』整合campaign：不在价格上硬刚亚马逊，而是把『配送包裹』重构为『把顾客送达Sephora』。策略起点来自内部洞察——仅30%美妆买家对亚马逊配送感到兴奋，而Sephora达70%。执行：Lyft App内视频+地图霸屏+折扣码；5城(西雅图/旧金山/纽约/洛杉矶/芝加哥)Sephora涂装车巡航，甚至开到亚马逊总部外；到店赠样+专属体验+达人纪实。结果：总曝光超4亿(目标1.5亿的2倍+)，品牌好感+13pt(目标5pt)，社媒互动超基准3175%、94%正面，Lyft打车到店量4倍、首次到店5倍。借鉴：用竞争对手的高关注时刻做自己的舞台；以具体数据洞察定义策略而非验证创意。",
+   "impact": "高",
+   "source_name": "Case Studied",
+   "source_url": "https://casestudied.com/archive/sephora",
+   "source_tier": "original",
+   "source_classify_note": "Case Studied 案例库(海外美妆零售)",
+   "read_full": true,
+   "source_excerpt": "Sephora partnered with Lyft and Digitas on 'Delivered to Beauty': instead of delivering a package, the campaign delivered a customer to Sephora. Insight: only 30% of beauty buyers feel excited about Amazon deliveries vs 70% for Sephora. Execution: Lyft in-app video + map takeovers + promo codes; Sephora-wrapped vehicles drove 5 US cities incl. outside Amazon HQ; riders greeted with samples. Results: 400M+ total impressions (2x goal of 150M); brand sentiment +13pts (goal 5); social engagement 3,175% above benchmark, 94% positive; Lyft rides to Sephora up 4x, first-time visits up 5x. Takeaway: let a specific data point define strategy; use a competitor's moment as your platform.",
+   "read_method": "web_fetch_full"
+  }
+ ],
+ "marketing_news": [
+  {
+   "date": "2026-08-19",
+   "title": "国货护肤珀莱雅(Proya)将于11月进驻美国Ulta Beauty 400家门店，加速出海",
+   "summary": "据BeautyNewsDaily 8/19报道，中国护肤品牌珀莱雅(Proya)将于11月通过Ulta Beauty大举进军美国市场，覆盖400家门店及线上，以两大王牌线打头阵：Advanced Firming(肽+视黄醇抗老)与Original Repair(屏障修护/胶原)。对美诺参考：国货护肤出海从『线上试水』走向『线下连锁货架』，美诺粉饼若出海可借鉴『先以明星单品锚定连锁渠道』的路径。",
+   "impact": "中",
+   "source_name": "BeautyNewsDaily",
+   "source_url": "https://beautynewsdaily.com/beauty-notes-ice-spice-loreal-chanel-daise",
+   "source_tier": "original",
+   "source_classify_note": "BeautyNewsDaily 美妆资讯(海外)",
+   "read_full": true,
+   "source_excerpt": "Proya is making a bigger move into the US this November with a launch at Ulta Beauty. The Chinese skincare brand will be available in 400 stores and online, with two of its hero ranges leading the way. Advanced Firming pairs peptides with retinol to target signs of ageing, while Original Repair is more focused on barrier support, collagen, and early ageing concerns. It's a fairly major introduction for a brand already well established across Asia, giving US shoppers an easier way to try Proya in person.",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "date": "2026-08-07",
+   "title": "Charlotte Tilbury携手赵露思共创『芭蕾千金妆』，明星深度共创+私域直播新范式",
+   "summary": "8/7英国高端美妆CT携手全球彩妆代言人赵露思，从灵感概念到妆容细节深度共创『芭蕾千金妆』上线；同步释出广告片、与Pretty Gal联名官宣、小红书『美貌野心家×CT』话题页；当晚赵露思在个人小红书开独家妆教直播。CT将表达主场交予代言人，以更真实亲密方式深化连接——为高端美妆明星合作提供『共创而非单向背书』的新样本。",
+   "impact": "中",
+   "source_name": "新浪新闻/WWD中文版",
+   "source_url": "https://www.sina.cn/news/detail/5332845501613414.html",
+   "source_tier": "aggregator",
+   "source_classify_note": "新浪新闻(转WWD中文版)",
+   "read_full": true,
+   "source_excerpt": "2026年8月7日，英国高端美妆品牌Charlotte Tilbury（CT）携手全球彩妆代言人赵露思，共创全新妆容风格『芭蕾千金妆』正式上线。双方从灵感概念到妆容细节深度共创。同日赵露思演绎品牌广告片释出；CT与Pretty Gal联名合作同步官宣，小红书『美貌野心家 × CT』话题页上线；当晚赵露思在个人小红书开启独家妆教直播。CT将表达主场交予代言人，以更真实、亲密的方式深化消费者连接，为明星共创模式带来新的可能。",
+   "read_method": "web_fetch_full"
+  }
+ ],
+ "industry_reports": [
+  {
+   "date": "2026-08-24",
+   "title": "《Cosmetics and Beauty Market Size, Forecasts Report 2026–2035》：2035 年全球市场规模将达 1.5 万亿美元，CAGR 4.1%",
+   "publisher": "Global Market Insights",
+   "summary": "报告预测 2026 年全球美妆市场规模约 1.1 万亿美元，2035 年达 1.5 万亿美元。增长驱动力包括天然/有机/clean beauty、K-beauty 全球扩张、护肤与护发高端化；AI 皮肤诊断、虚拟试妆与社交电商正在重塑消费决策链路。",
+   "key_findings": [
+    "2026 年全球市场规模约 1.1 万亿美元",
+    "2035 年预计达 1.5 万亿美元，CAGR 4.1%",
+    "K-beauty 全球扩张贡献约 0.8% CAGR",
+    "AI 与社交电商重塑 discovery-to-purchase 链路"
+   ],
+   "source_name": "Global Market Insights",
+   "source_url": "https://gminsights.com/industry-analysis/cosmetics-and-beauty-market",
+   "source_tier": "institute",
+   "source_classify_note": "市场研究机构官网报告",
+   "read_full": true,
+   "source_excerpt": "Global Market Insights《Cosmetics and Beauty Market 2026-2035》报告：2025年市场1万亿美元，2026预计1.1万亿，2035达1.5万亿，CAGR 4.1%；亚太最大(2025约3180亿)，中东非洲最快(CAGR6.6%)；女性占2024需求72%为最大群；护肤最大零售段(2024 2153亿)，男性grooming增速最快(5.8%)。驱动：天然有机/clean beauty、K-beauty、高端化。",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "《全球粉饼市场研究深度分析报告(2026)》：2025规模128.6亿美元，养肤类增速最快(+11.3%)",
+   "publisher": "ZVZO消费观察",
+   "summary": "报告指2025年全球粉饼市场约128.6亿美元(+7.2%)，亚太占38.4%为最大区域；预计2026年137.9亿、2030年178.4亿(CAGR5.4%)。控油持妆类占44.7%销售额，养肤类同比+11.3%为增速最快功能子类；男性粉饼6.2亿美元(+14.8%)但仍小众。消费端：62.3%将『持妆时长』列第一指标，51.7%重视致痘/敏感肌适用，无滑石粉/无香精宣称销售额+21.4%。对美诺：养肤+持妆+敏感肌友好是结构性机会，粉饼迭代周期已缩短至9个月。",
+   "key_findings": [
+    "2025全球粉饼128.6亿美元，同比+7.2%，亚太占38.4%",
+    "预计2030年达178.4亿美元，CAGR 5.4%",
+    "养肤类粉饼同比+11.3%，为增速最快功能子类",
+    "62.3%消费者选购粉饼第一关注『持妆时长』，51.7%重视致痘/敏感肌适用",
+    "无滑石粉/无香精宣称2025销售额+21.4%"
+   ],
+   "source_name": "ZVZO消费观察",
+   "source_url": "https://www.zvzo.com/75/view-177554-1.html",
+   "source_tier": "institute",
+   "source_classify_note": "ZVZO消费观察 行业报告",
+   "read_full": true,
+   "source_excerpt": "2025年全球粉饼市场规模约128.6亿美元，较上年增长7.2%；亚太贡献约38.4%销售额，为最大区域市场。预计2026年137.9亿美元，2030年有望达178.4亿美元，CAGR5.4%。控油持妆类粉饼占44.7%销售额，养肤类同比+11.3%为增速最快功能子类。62.3%消费者选购粉饼将『持妆时长』列第一指标，51.7%重视是否致痘与敏感肌适用；无滑石粉、无香精宣称产品2025销售额+21.4%。粉饼迭代周期从18个月缩短至9个月。",
+   "read_method": "web_fetch_full"
+  }
+ ],
+ "hot_topics": [
+  {
+   "date": "2026-08-06",
+   "time": "2026-08-06",
+   "platform": "小红书",
+   "topic": "『彩妆包挂经济』爆火：迷你彩妆挂件成年轻人身份标签，各大品牌扎堆入局",
+   "trend_direction": "上升",
+   "data_support": "小红书美妆挂件话题浏览量超6500万；『挂件气垫』搜索量暴涨万倍；Fwee/AMUSE(张元英代言)半年销量破50万件；花知晓/橘朵/卡姿兰等国货推mini挂件。",
+   "content_ideas": {
+    "小红书/抖音": "美诺可借『包挂经济』做粉饼mini挂件/周边，但须警惕实用性差、溢价严重、复购低等吐槽（橘朵挂件腮红已取消附赠挂链），核心仍应回归产品力。"
+   },
+   "source_name": "今日头条/西瓜随笔",
+   "source_url": "https://www.toutiao.com/article/7670649290997432876",
+   "source_tier": "aggregator",
+   "source_classify_note": "今日头条 自媒体观察(趋势热点)",
+   "read_full": true,
+   "source_excerpt": "『彩妆包挂经济』成席卷年轻人的潮流，业内取名『包挂经济』风头盖过口红经济。LV/迪奥/花知晓/橘朵/卡姿兰等扎堆推迷你彩妆挂件。韩国Fwee率先推挂绳唇颊膏，女星张元英代言AMUSE钥匙扣唇膏半年销量破50万件。小红书美妆挂件话题浏览量超6500万。但吐槽亦多：实用性差(拔干/刺鼻)、卫生隐患(裸露包外)、溢价严重(多一根挂绳贵三成至一倍)。橘朵挂件腮红几乎无复购，后续新款取消附赠挂链，说明热度下滑。品牌把彩妆做成包挂，弱化使用核心，靠颜值收割短期流量难长久。",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "date": "2026-08-24",
+   "time": "2026-08-24",
+   "platform": "全网/粉饼横评",
+   "topic": "开学季平价粉饼横评持续高热：美诺「自然色/冰肌蓝」被反复点名「控油强」「白菜价」",
+   "trend_direction": "持续",
+   "data_support": "搜狐横评将美诺粉饼列为「干皮友好全能选手」，嘉利玛 vs 美诺横评认为美诺控油更猛、持妆更久；京东美诺粉饼好评率 96%。",
+   "content_ideas": {
+    "小红书/抖音": "加做「军训暴汗不脱妆+分肤质选色攻略」系列妆教 10 条以上，抢占搜索卡位，并主动对冲「结块」负面联想。"
+   },
+   "source_name": "搜狐/什么值得买/京东",
+   "source_url": "https://www.sohu.com/a/1065773124_122645243",
+   "source_tier": "aggregator",
+   "source_classify_note": "公开横评聚合（美诺相关，保留）",
+   "read_full": true,
+   "source_excerpt": "搜狐粉饼横评实测格蒙/完美日记/美诺三款：美诺13#自然色『清爽控油、遮瑕提亮』，混油皮实测控油中等偏上、持妆6小时、防水防汗运动后不花妆、不拔干、遮瑕三款最强，但粉扑略硬、自然色偏暗需选色号。结论将美诺归为『遮瑕和干皮友好全能选手』，学生党白菜价心智稳定。",
+   "read_method": "web_fetch_full"
+  }
+ ],
+ "trends": [
+  {
+   "date": "2026-08-24",
+   "title": "趋势：定妆品类进入「粉体/成膜技术微米级内卷 + 分肤定制 + 形态融合 + 光泽回归」新阶段",
+   "summary": "C2CC 传媒盘点 20+ 定妆新品提炼七大趋势：①烟酰胺/精油等养肤成分成中高端标配；②花西子高吸多孔粉体、卡姿兰类太空多核吸油粉体、橘朵超微研磨等进入微米级竞争；③分肤定制渗透（彩棠攻干皮、柏瑞美全覆盖）；④散粉/粉饼/喷雾边界模糊（液体蜜粉、妆前喷雾前置定妆）；⑤光泽派定妆回归（迪奥水润光膜、NARS 微闪）；⑥户外/运动场景驱动高防护定妆增长（「防水防汗不脱妆」占运动美妆核心诉求 20.17%）；⑦成分透明/纯净定妆成准入门槛（滑石粉替代、玉米淀粉/硅石主流）。对美诺：需把「不易结块」做成可验证的工艺叙事，并补齐分肤质粉饼矩阵。",
+   "source_name": "C2CC 传媒",
+   "source_url": "https://m.c2cc.cn/news/10012316.html",
+   "source_tier": "original",
+   "source_classify_note": "行业垂直媒体定妆趋势盘点（与美诺定妆/粉饼强相关）",
+   "time": "2026-08-24",
+   "need_date_check": false,
+   "read_full": true,
+   "source_excerpt": "C2CC 盘点20+定妆新品提炼七大趋势：①妆养一体成标配(烟酰胺/精油)；②粉体与成膜技术微米级内卷(花西子高吸多孔、卡姿兰类太空多核吸油、橘朵超微研磨)；③分肤定制渗透(彩棠攻干皮、柏瑞美全覆盖)；④散粉/粉饼/喷雾边界模糊(液体蜜粉、妆前喷雾前置定妆)；⑤光泽派定妆回归(迪奥水润光膜、NARS微闪)；⑥户外/运动场景驱动高防护定妆(运动美妆核心诉求20.17%为防水防汗不脱妆)；⑦成分透明/纯净定妆成门槛(滑石粉替代、玉米淀粉/硅石主流)。定妆市场2024线上增速领跑彩妆，规模破百亿，三年CAGR约20%。",
+   "read_method": "web_fetch_full"
+  },
+  {
+   "date": "2026-08-25",
+   "title": "趋势：悦己消费从「即时愉悦」走向「长期关怀/心价比」，节日礼赠进入日常自我投资",
+   "summary": "三联生活周刊结合尼尔森IQ《通往2026：中国消费零售十大关键趋势》指出，悦己消费正从一次性惊喜馈赠升级为对自我与亲密他人的长期状态投资；消费衡量标准从「性价比」迈向「心价比」。雅诗兰黛集团七夕以科研矩阵（小棕瓶眼面微雕、LA MER、倩碧、Origins）呼应这一诉求。对美诺：50 元价格带 + 学生党「第一块粉饼」自我奖赏叙事，高度契合「平价悦己」方向。",
+   "source_name": "三联生活周刊 / 尼尔森IQ",
+   "source_url": "https://www.lifeweek.com.cn/h5/article/detail.do?artId=271727",
+   "source_tier": "original",
+   "source_classify_note": "垂直媒体 + 机构趋势报告交叉印证",
+   "time": "2026-08-25",
+   "need_date_check": false,
+   "read_full": true,
+   "source_excerpt": "三联生活周刊结合尼尔森IQ《通往2026》指出，悦己消费从一次性惊喜馈赠升级为对自我与亲密他人的长期状态投资；消费衡量标准从性价比迈向心价比。雅诗兰黛集团七夕以科研矩阵(小棕瓶眼面微雕、LA MER、倩碧、Origins)呼应。印证美诺50元价格带+学生党『第一块粉饼』自我奖赏叙事契合『平价悦己』。",
+   "read_method": "web_fetch_full"
+  }
+ ],
+ "new_products": [],
+ "continuous_watch": [
+  {
+   "icon": "🎒",
+   "text": "开学季（9/1）+ 教师节（9/10）+ 中秋（9/25）节点营销跟进——军训「伪素颜」场景与美诺「平价心意礼」组合装、萌兰/小熊 IP 谐音梗素材库的节点化复用"
+  },
+  {
+   "icon": "⚔️",
+   "text": "竞品方里 / 卡姿兰 / 毛戈平 / 花间颂 / 修可芙 / 芭贝拉 / 嘉利玛 底妆动作跟踪——新品、代言与渠道机制变化（全行业）"
+  },
+  {
+   "icon": "🏅",
+   "text": "「体育明星/冠军信任型代言」趋势跟踪——朵薇×全红婵样本后，评估美诺「安全配方+冠军背书」合作可能性与性价比"
+  },
+  {
+   "icon": "🖱️",
+   "text": "底妆品类座次跟踪——气垫反超粉底液后，「便携多效」诉求对粉饼/定妆品类的传导（防晒粉饼、快速上妆叙事）"
+  },
+  {
+   "icon": "🌟",
+   "text": "明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏（含跨行业代言如游戏/服饰，仅作行情参考）"
+  },
+  {
+   "icon": "🎤",
+   "text": "平台官方大会档期跟踪——抖音电商生态大会、引擎大会（巨量引擎）、抖音创作者大会、小红书 WILL 商业大会、微博超级红人节等年度大会的时间/主题/发布口径（平台方一手信息优先）"
+  },
+  {
+   "icon": "🤖",
+   "text": "AI 新广告形态跟踪——AIGC 动态创意默认开启、抖音即创/巨量创意、AI 素材授权、明星 AI 授权、智能投放等平台级新形态动态"
+  }
+ ],
+ "today_must_see": [
+  {
+   "icon": "🌟",
+   "text": "8/12 玉泽官宣杨紫为首位全球护肤代言人，9城100屏+紫生屏障礼盒，以『稳』叙事绑定敏感肌真实背书。美诺可借鉴『首位全球代言人』的高规格 title 打法，强化学生党屏障友好心智。",
+   "tag": "代言风向",
+   "source_tier": "aggregator",
+   "source_classify_note": "新浪新闻(玉泽杨紫)"
+  },
+  {
+   "icon": "🏪",
+   "text": "CODEMINT×13DE MARZO 以『橙C』串联9城10店咖啡场景，首日即排队、自然客流带动转化。美诺粉饼可绑定校园/军训场景做长期主义线下联名，而非一次性快闪。",
+   "tag": "场景营销",
+   "source_tier": "original",
+   "source_classify_note": "中国日报网(CODEMINT案例)"
+  },
+  {
+   "icon": "📊",
+   "text": "ZVZO《全球粉饼市场报告》：养肤类粉饼同比+11.3%为增速最快子类，62.3%消费者第一关注『持妆时长』、51.7%重视致痘/敏感肌适用，无滑石粉/无香精宣称+21.4%。美诺产品迭代应锚定『养肤+持妆+敏感肌友好』。",
+   "tag": "行业报告",
+   "source_tier": "institute",
+   "source_classify_note": "ZVZO消费观察"
+  },
+  {
+   "icon": "🎒",
+   "text": "开学季多平台粉饼横评继续点名美诺：学生党『自然色/冰肌蓝』控油持妆、白菜价心智稳定；同时『结块』搜索联想仍在。建议开学季内容矩阵强化『暴汗不脱妆+分肤质选色』正向卖点，并主动对冲负面联想。",
+   "tag": "舆情机会",
+   "source_tier": "aggregator",
+   "source_classify_note": "搜狐/什么值得买公开横评"
+  },
+  {
+   "icon": "💝",
+   "text": "悦己消费从『即时愉悦』走向『长期关怀/心价比』：尼尔森IQ 指出消费标准从性价比迈向心价比。美诺 50 元价格带 + 学生党『第一块粉饼』自我奖赏叙事，高度契合『平价悦己』方向。",
+   "tag": "消费趋势",
+   "source_tier": "original",
+   "source_classify_note": "三联生活周刊/尼尔森IQ"
+  },
+  {
+   "icon": "👜",
+   "text": "『彩妆包挂经济』成流量风口（小红书话题6500万+浏览），但实用性差/溢价严重/复购低等吐槽亦多，橘朵已取消挂链附赠。美诺若做周边须以产品力兜底，不为短期颜值流量弱化使用核心。",
+   "tag": "趋势警示",
+   "source_tier": "aggregator",
+   "source_classify_note": "今日头条(包挂经济)"
+  }
+ ],
+ "brand_inspiration": [
+  "玉泽杨紫『稳』叙事：敏感肌真实背书+国民度，美诺可强化『学生党屏障友好』真实感，而非单纯流量代言。",
+  "CODEMINT×13DE MARZO：以爆款单品串联异业场景，美诺粉饼可绑定校园/军训场景做长期主义联名，把产品植入全时段生活。",
+  "彩妆包挂经济警示：颜值溢价短期流量难沉淀，美诺周边须回归使用核心、以产品力兜底。",
+  "ZVZO粉饼养肤细分：无滑石粉/无香精宣称+21.4%，美诺可打『敏感肌友好定妆』差异化。",
+  "悦己消费/心价比：美诺『平价+情绪价值』契合学生党自我奖赏，强化『第一块粉饼』叙事比单纯打折更能沉淀品牌资产。"
+ ],
+ "weekly_actions": [
+  {
+   "action": "开学季内容矩阵冲刺：小红书/抖音投放「军训暴汗不脱妆+分肤质选色」妆教 10 条以上，抢占「军训用什么散粉/粉饼」搜索卡位",
+   "owner": "内容/媒介",
+   "status": "本周启动"
+  },
+  {
+   "action": "美诺粉饼『养肤/敏感肌友好』卖点提炼：对照 ZVZO 报告，补强『无滑石粉/持妆时长/不致痘』话术与详情页证据",
+   "owner": "产品/电商",
+   "status": "本周启动"
+  },
+  {
+   "action": "准备「美诺粉饼结块」统一回应口径（防潮存放/粉扑清洁/批次排查），并在开学季内容中主动做「久放不干/不易结块」正向对冲",
+   "owner": "客服/内容",
+   "status": "本周完成"
+  },
+  {
+   "action": "中秋/双11 节点 SKU 与达人分销机制规划：参考七夕大促拉动效应，提前 2-3 周锁定垂类达人档期与礼盒组合",
+   "owner": "电商/品牌",
+   "status": "本周启动"
+  },
+  {
+   "action": "评估彩妆周边/包挂可行性但设『产品力兜底』红线：先做可真正上脸的小样挂件测试，不直接复制高溢价低复购模式",
+   "owner": "品牌/产品",
+   "status": "本周评估"
+  }
+ ],
+ "ai_marketing": [
+  {
+   "date": "2026-08-24",
+   "title": "巨量引擎 AIGC 动态创意默认开启：素材生产进入「人工底座+AI 裂变+实时优选」阶段",
+   "summary": "8 月 13 日巨量引擎更新日志显示，创建项目接口 aigc_dynamic_creative_switch 默认逻辑调整，部分 AIGC 适用场景支持使用且默认开启。系统会基于商家已有优质素材片段、商品信息，依托 AIGC 大模型自动生成创意素材，并完成自动化投放与低效素材汰换。",
+   "source_name": "巨量引擎商业开放平台",
+   "source_url": "https://open.oceanengine.com/changelog/1",
+   "key_takeaway": "美诺应把「真实使用场景+真实价格卖点」作为创意底座，让 AI 负责 50+ 变体生成与实时优选，每周淘汰低效素材并补充新鲜素材。",
+   "tags": [
+    "AIGC",
+    "巨量引擎",
+    "千川",
+    "动态创意"
+   ],
+   "source_tier": "platform",
+   "source_classify_note": "平台官方更新日志（legacy-unverified：登录态 changelog 待补读）"
+  }
+ ]
 }

@@ -1,837 +1,854 @@
 {
-  "meta": {
-    "version": "23.0",
-    "date": "2026-08-15",
-    "data_as_of": "2026-08-16T13:00:00+08:00",
-    "brand": "美诺 MENOW",
-    "track": "面部彩妆/粉饼赛道",
-    "label": "V23 粉蓝白渐变"
+ "meta": {
+  "version": "23.0",
+  "date": "2026-08-15",
+  "data_as_of": "2026-08-16T13:00:00+08:00",
+  "brand": "美诺 MENOW",
+  "track": "面部彩妆/粉饼赛道",
+  "label": "V23 粉蓝白渐变"
+ },
+ "today_must_see": [
+  {
+   "icon": "🔥",
+   "text": "「凉感化妆品」成年度新赛道：1-5月销售额近2.6亿（同比+45%），36+品牌入局，从护肤延伸到底妆——美诺可抢「冰感粉饼」先发心智",
+   "tag": "趋势机会",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
   },
-  "today_must_see": [
-    {
-      "icon": "🔥",
-      "text": "「凉感化妆品」成年度新赛道：1-5月销售额近2.6亿（同比+45%），36+品牌入局，从护肤延伸到底妆——美诺可抢「冰感粉饼」先发心智",
-      "tag": "趋势机会",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    },
-    {
-      "icon": "📊",
-      "text": "抖音2026H1化妆品GMV达1503.4亿（+14.5%），彩妆香水品类+39.2%增速领跑——内容电商仍是最大增量渠道",
-      "tag": "数据洞察",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    },
-    {
-      "icon": "📅",
-      "text": "七夕（8/19）倒计时！竞品全线发力：卡姿兰雾吻口红、方里七夕限定、彩棠珠玉琢光、M·A·C×SKULLPANDA 均已上线——美诺需用「平价心意礼」错位切入",
-      "tag": "紧急节点",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    },
-    {
-      "icon": "⭐",
-      "text": "全行业代言爆发周：丸美×蔡徐坤(4193万指数)、玉泽×杨紫(5328万🔥)、毛戈平×邓佳鑫、红之×周翊然、韩束×田栩宁(连续多日霸榜)——星品影响力+智库星途双源确认",
-      "tag": "行业信号",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    },
-    {
-      "icon": "⚠️",
-      "text": "假睫毛胶水致癌物超标事件（8/5）登上微博热搜阅读破亿，美妆安全舆情风险上升——建议排查供应链并公开质检资质",
-      "tag": "舆情预警",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    },
-    {
-      "icon": "💡",
-      "text": "个护/护肤端「微生态」「纯净美妆」声量走高，与彩妆「活人感/原生妆」审美同频——美诺可借底妆「成分友好+自然提气色」承接跨品类流量",
-      "tag": "跨品类机会",
-      "source_tier": "unknown",
-      "source_classify_note": "无来源信息"
-    }
-  ],
-  "endorsements": [],
-  "marketing_cases": [
-    {
-      "title": "CT × 赵露思 七夕共创Campaign",
-      "type": "明星共创",
-      "brand": "Charlotte Tilbury (CT)",
-      "summary": "CT携手赵露思发起七夕「爱意底妆」UGC共创活动，用户上传底妆前后对比图参与话题互动。赵露思在个人社媒发布3条相关内容，累计互动超200万。",
-      "creative": "明星亲测+UGC裂变+话题挑战赛",
-      "channel": "小红书 + 微博 + 抖音",
-      "rhythm": "预热3天→爆发1周→长尾2周",
-      "success_signals": "小红书话题#CT爱意底妆# 浏览量1200万+ | 赵露思单条微博互动80万+ | 期间天猫旗舰店GMV环比+35%",
-      "source_name": "SocialBeta 案例库",
-      "source_url": "https://socialbeta.com/campaign/28208",
-      "case_time": "2026-08-12",
-      "source_tier": "original",
-      "source_classify_note": "可信一手来源",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "3CE × MIKSHIMAI 艺术家联名",
-      "type": "IP联名",
-      "brand": "3CE STYLENANDA",
-      "summary": "3CE与日本插画师MIKSHIMAI推出艺术家联名眼影盘/唇釉系列，包装采用手绘风格，限量发售。",
-      "creative": "跨界艺术包装+限量饥饿营销+开箱种草",
-      "channel": "小红书 + 天猫",
-      "rhythm": "预告2周→发售当日爆发→持续种草",
-      "success_signals": "天猫限量3000套秒罄 | 小红书开箱笔记5000+篇 | 微博话题阅读8000万+",
-      "source_name": "ELLE 台湾",
-      "source_url": "https://www.elle.com/tw/beauty/news/g71662690/2026-beauty-collaboration/",
-      "case_time": "2026-07-10",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "克兰诗 × POP MART 潮玩联名礼盒",
-      "type": "IP跨界",
-      "brand": "Clarins 克兰诗",
-      "summary": "法国护肤品牌克兰诗与泡泡玛特推出联名礼盒，内含王牌双萃精华+Molly手办，瞄准Z世代送礼场景。",
-      "creative": "潮玩IP+护肤礼盒+送礼场景精准打击",
-      "channel": "天猫 + 微信小程序 + 线下专柜",
-      "rhythm": "预售2周→618正式发售",
-      "success_signals": "天猫预售额破2000万 | 微信社群转化率18% | 社媒声量同比+280%",
-      "source_name": "ELLE 台湾",
-      "source_url": "https://www.elle.com/tw/beauty/news/a71689047/clarins-pop-mart-molly/",
-      "case_time": "2026-06-18",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "INTEGRATE × 崩坏：星穹铁道 游戏IP联动",
-      "type": "IP合作",
-      "brand": "INTEGRATE 资生堂整合",
-      "summary": "资生堂INTEGRATE与米哈游《崩坏：星穹铁道》联动，推出游戏角色主题限定眼影/唇膏，游戏内植入彩妆收集玩法。",
-      "creative": "二次元游戏IP+虚拟偶像同款+游戏内植入",
-      "channel": "B站 + 抖音 + 游戏社区 + 天猫",
-      "rhythm": "版本更新日同步上线→持续1个月",
-      "success_signals": "B站联动视频播放破千万 | 天猫限定款首周销量TOP3 | 游戏内彩妆收集参与玩家超500万",
-      "source_name": "@cosme 台湾",
-      "source_url": "https://www.cosme.net.tw/beautynews/30699",
-      "case_time": "2026-07-20",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 403,
-      "need_link_check": true
-    },
-    {
-      "title": "安耐晒 × 玩具总动员 电影IP联名",
-      "type": "IP联名",
-      "brand": "ANESSA 安耐晒",
-      "summary": "安耐晒与迪士尼《玩具总动员》电影IP联名推出限定防晒霜，包装印有三眼仔/巴斯光年形象。",
-      "creative": "经典电影IP怀旧杀+夏日防晒场景+儿童/家庭市场",
-      "channel": "天猫 + 屈臣氏 + 线下商超",
-      "rhythm": "电影上映档期同步→暑期持续销售",
-      "success_signals": "天猫防晒类目月销TOP5 | 屈臣氏联名专区动销率65% | 微博话题#安耐晒玩具总动员# 阅读5000万+",
-      "source_name": "資生堂台灣官網",
-      "source_url": "https://www.shiseido.com.tw/zh-TW/news/detail/00000",
-      "case_time": "2026-07-15",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "毛戈平 × 成都熊猫文创 国风联名",
-      "type": "文化IP跨界",
-      "brand": "MAOGEPING 毛戈平",
-      "summary": "毛戈平与成都熊猫基地合作推出熊猫主题限定彩妆系列，包装融入川蜀元素，线下快闪店落地成都IFS。",
-      "creative": "国宝熊猫IP+地域文化+线下沉浸式体验",
-      "channel": "小红书 + 抖音 + 线下快闪 + 天猫",
-      "rhythm": "预热2周→快闪开幕爆发→持续1个月",
-      "success_signals": "小红书话题浏览3000万+ | 快闪店日均客流2000+ | 限定款天猫首周售罄",
-      "source_name": "毛戈平官方",
-      "source_url": "https://www.maogepingbeauty.com/world/news/60.html",
-      "case_time": "2026-08-08",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "INTO YOU 出海东南亚 TikTok营销",
-      "type": "出海营销",
-      "brand": "INTO YOU 心慕与你",
-      "summary": "国货彩妆INTO YOU通过TikTok达人矩阵打入东南亚市场，唇泥产品在泰国/越南爆火，单月GMV突破500万美元。",
-      "creative": "本土化KOL矩阵+TikTok短视频种草+本地电商闭环",
-      "channel": "TikTok + Shopee/Lazada",
-      "rhythm": "持续投放+大促节点爆发",
-      "success_signals": "TikTok话题播放破5亿 | 泰国Shopee彩妆类目TOP3 | 单月GMV 500万美元+",
-      "source_name": "REBOUND 出海访谈（腾讯新闻）",
-      "source_url": "https://new.qq.com/rain/a/20260710A09JG200",
-      "case_time": "2026-07-05",
-      "source_tier": "original",
-      "source_classify_note": "可信一手来源",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "韩束 马年抽象营销 破圈案例",
-      "type": "创意营销",
-      "brand": "韩束 KANS",
-      "summary": "韩束借助「马年抽象」网络热梗制作系列反套路广告片，用自黑式幽默赢得年轻人好感，多条广告片在B站播放破百万。",
-      "creative": "热梗借力+反向营销+B站鬼畜二创激励",
-      "channel": "B站 + 抖音 + 微博",
-      "rhythm": "热梗发酵期快速跟进→持续产出内容",
-      "success_signals": "B站广告片合集播放800万+ | 微博话题#韩束太懂了# 阅读1.2亿 | 品牌搜索指数环比+150%",
-      "source_name": "SocialBeta 案例库",
-      "source_url": "https://socialbeta.com/campaign/26835",
-      "case_time": "2026-02-10",
-      "source_tier": "original",
-      "source_classify_note": "可信一手来源",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "ZFC 多维营销矩阵",
-      "type": "整合营销",
-      "brand": "ZFC",
-      "summary": "专业彩妆品牌ZFC通过专业化妆师背书+时装周后台露出+抖音教学直播构建信任链路，从专业圈层向大众渗透。",
-      "creative": "专业背书+场景化教学+圈层破圈",
-      "channel": "抖音 + 小红书 + 时装周",
-      "rhythm": "长期持续+节点爆发",
-      "success_signals": "抖音教学视频累计播放破亿 | 专业化妆师推荐率85% | 天猫专业彩妆类目TOP1",
-      "source_name": "美业盛典报道（深圳创投）",
-      "source_url": "https://m.shenchuang.com/show/1689361.shtml",
-      "case_time": "2026-06-15",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "巨量引擎 × 抖音电商 粉彩妆趋势IP",
-      "type": "平台造势",
-      "brand": "抖音电商",
-      "summary": "巨量引擎联合抖音电商打造「粉彩妆」年度趋势IP，聚合平台55亿曝光资源扶持粉色调彩妆品牌，美诺同类目可直接参与。",
-      "creative": "平台级趋势IP+流量扶持+品牌组团出圈",
-      "channel": "抖音电商 + 巨量算数",
-      "rhythm": "全年持续性IP+季度主题活动",
-      "success_signals": "全网曝光55亿+ | 参与品牌GMV平均增长120% | 粉色调彩妆搜索指数环比+380%",
-      "source_name": "Cosmopolitan 中国",
-      "source_url": "https://www.cosmopolitancn.com/cosmo/detail/48706",
-      "case_time": "2026-01-15",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    },
-    {
-      "title": "彩棠 × 戚薇 空降品牌官方直播间 七夕专场",
-      "type": "明星进播",
-      "brand": "彩棠 TIMAGE",
-      "summary": "彩棠在七夕大促期间邀请品牌代言人戚薇空降天猫官方直播间，现场演示「珠玉琢光」限定妆容并连麦抽奖，直播间同步上线专属买赠与限量秒杀机制，将代言人流量在品牌自有阵地直接转化。",
-      "creative": "明星真人上妆教学 + 实时连麦互动 + 直播间专享买赠",
-      "channel": "天猫官方直播间 + 抖音品牌直播间",
-      "rhythm": "预告3天 → 直播当晚爆发 → 回放长尾7天",
-      "success_signals": "直播间观看峰值120万+ | 当晚GMV环比+180% | 限定系列售罄率92% | 新增粉丝8万+",
-      "source_name": "天猫美妆直播榜单",
-      "source_url": "https://item.jd.com/10055233818207.html",
-      "case_time": "2026-08-16",
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "date": "2026-08-15",
-      "need_date_check": true,
-      "_http_status": 200
-    }
-  ],
-  "new_products": [
-    {
-      "brand": "卡姿兰",
-      "product": "黑磁散粉3.0升级版",
-      "category": "粉饼/蜜粉饼/散粉",
-      "price": "¥95.04",
-      "launch_date": "2026-08-01",
-      "source_url": "https://uland.taobao.com/item/edetail?id=a4vb2ARCotMYwRkAnwcgvh5Cy-065eWVC5x4ezz8vHnz",
-      "source_name": "天猫卡姿兰官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "40万+",
-        "rating": "4.9",
-        "price_range": "¥95.04"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "KATO",
-      "product": "控油定妆持久细腻散粉",
-      "category": "粉饼/蜜粉饼/散粉",
-      "price": "¥39.90",
-      "launch_date": "2026-07-28",
-      "source_url": "https://jingfen.jd.com/detail/RB9cAbcKkK48Mumgz1Zo9FL70RCnQ_364tk86eKV6MQOY2Fk.html",
-      "source_name": "京东KATO官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "40万+",
-        "rating": "4.8",
-        "price_range": "¥39.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "芭贝拉",
-      "product": "粉饼24h控油定妆防水防汗",
-      "category": "粉饼/蜜粉饼/散粉",
-      "price": "¥75.05",
-      "launch_date": "2026-08-05",
-      "source_url": "https://jingfen.jd.com/detail/QrQKMpxtc60BpAUeSRAjBpCJcI8ZOQ_3sdbW6yVNSUpNCAdc0.html",
-      "source_name": "京东芭贝拉官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "10万+",
-        "rating": "4.85",
-        "price_range": "¥75.05"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "PRAMY/柏瑞美",
-      "product": "散粉蜜粉大码定妆粉持久定妆",
-      "category": "粉饼/蜜粉饼/散粉",
-      "price": "¥59.90",
-      "launch_date": "2026-07-20",
-      "source_url": "https://jingfen.jd.com/detail/ra4jac2yJfhEclqAVpzvEcySA6iKy4_3df4Cvoiv2Pcosarpt.html",
-      "source_name": "京东柏瑞美官方旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "8万+",
-        "rating": "4.82",
-        "price_range": "¥59.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "DPDP",
-      "product": "轻透遮瑕气垫控油保湿持妆",
-      "category": "气垫",
-      "price": "¥99.90",
-      "launch_date": "2026-08-02",
-      "source_url": "https://jingfen.jd.com/detail/ELTbXWA3Pvv3WyFR3Hpu3WLDAak63T_309lpmFOMaqWybuizK.html",
-      "source_name": "京东DPDP官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "10万+",
-        "rating": "4.86",
-        "price_range": "¥99.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "花西子",
-      "product": "玉养气垫Pro版干皮油皮两用",
-      "category": "气垫",
-      "price": "¥199.00",
-      "launch_date": "2026-07-25",
-      "source_url": "https://item.jd.com/100078496671.html",
-      "source_name": "京东花西子官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "10万+",
-        "rating": "4.92",
-        "price_range": "¥199.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "卡姿兰",
-      "product": "气垫遮瑕持久不脱妆小混猫奶猫BB霜",
-      "category": "气垫",
-      "price": "¥149.00",
-      "launch_date": "2026-08-10",
-      "source_url": "https://jingfen.jd.com/detail/mLQzNbppOK3Ebdz24f1eEbdz24f1eQ_3GHvBWIzdRzblKKccW.html",
-      "source_name": "京东卡姿兰自营旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "7万+",
-        "rating": "4.88",
-        "price_range": "¥149.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "卡姿兰",
-      "product": "4.0小混猫粉底液新升级30g",
-      "category": "粉底液/膏",
-      "price": "¥89.00",
-      "launch_date": "2026-08-01",
-      "source_url": "https://uland.taobao.com/item/edetail?id=wdAMk6QsgtDnd7RYgWTAzUZUd-AomQzDTDG7BMY5qTYJ",
-      "source_name": "天猫卡姿兰官方旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "30万+",
-        "rating": "4.89",
-        "price_range": "¥89.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "蒂洛薇 DIROVO",
-      "product": "水光粉膏遮瑕粉底液",
-      "category": "粉底液/膏",
-      "price": "¥159.00",
-      "launch_date": "2026-07-22",
-      "source_url": "https://jingfen.jd.com/detail/6xX88KobKtIbKJMy8zjabKJ2B5oQUX_3opDmbkihOYKf8Chqv.html",
-      "source_name": "京东蒂洛薇官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "20万+",
-        "rating": "4.91",
-        "price_range": "¥159.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "UODO/优沃朵",
-      "product": "水润持妆粉底液控油哑光",
-      "category": "粉底液/膏",
-      "price": "¥74.00",
-      "launch_date": "2026-08-08",
-      "source_url": "https://jingfen.jd.com/detail/J7Akuzv3jbJJCsbCb353OZwwZQonQ_3ghOcnQyk3SCE7cJlE.html",
-      "source_name": "京东UODO优沃朵官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "20万+",
-        "rating": "4.84",
-        "price_range": "¥74.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "卡姿兰",
-      "product": "素颜霜脸部明星素颜霜自然提亮肤色",
-      "category": "素颜霜/BB霜/CC霜",
-      "price": "¥87.11",
-      "launch_date": "2026-07-18",
-      "source_url": "https://jingfen.jd.com/detail/vbnrq0Iw1yLoscOWrymBWxdNSfcRQ_336URipLrPFCmXwWzo.html",
-      "source_name": "京东卡姿兰自营旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "10万+",
-        "rating": "4.87",
-        "price_range": "¥87.11"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "朱莉欧",
-      "product": "正品素颜霜抗老保湿紧致舒缓巨遮瑕",
-      "category": "素颜霜/BB霜/CC霜",
-      "price": "¥69.90",
-      "launch_date": "2026-08-03",
-      "source_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3D4DkQQEckWdpw4vFB6t2Z2ueEDrYVVa64yK8Cckff7TVRAdhuF14FMVg6M5ifCS9QMMgx22UI05abBjBh3LodcDtMDMUFdHxsEga%2Bn4dNFSFW2RGh2%2FLyNYVwhIsr1DlAgb9ZeSZXs4rQ5thPdhAOVNxhWoJkvlsqPchZWeRu3U6MHuv7RoNv0YzeH%2FA0sTcbmbdWxl1krEDxfuqXmUROzSZWe98a4mNkufqOr06y2SMShmA%2BSZrlrUKgJkOIuzrcZMmfKR7H46WAenUVNk7WszmSvgfYQ%2FTQVgV5y0J3GxvAv%2FlYwpKj5iPDVdlpgtTromfkDJRs%2BhU%3D&union_lens=lensId:TAPI@1786812198@21279cf8_149a_1a0064e6cb3_0e70@01",
-      "source_name": "天猫朱莉欧旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "10万+",
-        "rating": "4.83",
-        "price_range": "¥69.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "韩熙贞",
-      "product": "焕采素颜霜懒人遮瑕自然提亮",
-      "category": "素颜霜/BB霜/CC霜",
-      "price": "¥19.90",
-      "launch_date": "2026-07-30",
-      "source_url": "https://jingfen.jd.com/detail/BXTDvTM1aqS1TNEAr9p01TNEAr9p0T_3klNtU2Bs1DDOUqVk2.html",
-      "source_name": "京东韩熙贞官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "4万+",
-        "rating": "4.78",
-        "price_range": "¥19.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "方里 FUNNY ELVES",
-      "product": "追光粉饼8g+同款替换芯8g+奶皮子妆前30ml 七夕限定礼盒",
-      "category": "隔离霜/妆前乳",
-      "price": "¥199.00",
-      "launch_date": "2026-08-10",
-      "source_url": "https://uland.taobao.com/item/edetail?id=GqJR82Rc8tYqnqGxPWSn5u0CJ-9bQ7yKCOxK9bNvJfr0",
-      "source_name": "天猫FunnyElves方里旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "5万+",
-        "rating": "4.93",
-        "price_range": "¥199.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "CPB",
-      "product": "长管隔离防晒妆前乳SPF50+ PA++++",
-      "category": "隔离霜/妆前乳",
-      "price": "¥680.00",
-      "launch_date": "2026-08-05",
-      "source_url": "https://jingfen.jd.com/detail/uKQvkrQwRCP9r7zEkAza9r7zEkAzaQ_3ZXBSITDgdvr2U1Mie.html",
-      "source_name": "京东CPB自营旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "3万+",
-        "rating": "4.96",
-        "price_range": "¥680.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "尔木萄",
-      "product": "隔离霜妆前乳打底保湿隐形毛孔",
-      "category": "隔离霜/妆前乳",
-      "price": "¥39.90",
-      "launch_date": "2026-07-26",
-      "source_url": "https://uland.taobao.com/item/edetail?id=pBDWj3V6Cxt6D4P0ro3u6Vu6Cm-Ymv8naSBpjK25vytRz",
-      "source_name": "天猫尔木萄旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "8万+",
-        "rating": "4.81",
-        "price_range": "¥39.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "KATO",
-      "product": "三色遮瑕膏遮盖黑眼圈斑点面部眼部遮瑕提亮",
-      "category": "遮瑕",
-      "price": "¥39.90",
-      "launch_date": "2026-08-06",
-      "source_url": "https://jingfen.jd.com/detail/rkQ3qsPPIjDzstsGjK1SzstsGjK1SQ_336URipLrPFSjSb1Do.html",
-      "source_name": "京东KATO官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "10万+",
-        "rating": "4.85",
-        "price_range": "¥39.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "芭贝拉",
-      "product": "遮瑕膏服帖持久遮瑕提亮三色盘",
-      "category": "遮瑕",
-      "price": "¥37.91",
-      "launch_date": "2026-07-28",
-      "source_url": "https://jingfen.jd.com/detail/4MQRwjaYvidYjmRd8q5eYjmRd8q5eQ_3uiINmKUJpdzSg8OJz.html",
-      "source_name": "京东芭贝拉旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "4万+",
-        "rating": "4.83",
-        "price_range": "¥37.91"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "毛戈平",
-      "product": "双色遮瑕膏脸部遮盖斑点痘印泪沟",
-      "category": "遮瑕",
-      "price": "¥290.00",
-      "launch_date": "2026-08-12",
-      "source_url": "https://jingfen.jd.com/detail/Wl42EImv2rafIx5QiQKHfIxqmgxRa4_3QWdizJbT0yI0sa6f1.html",
-      "source_name": "京东毛戈平自营旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "7万+",
-        "rating": "4.94",
-        "price_range": "¥290.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "美诺 MENOW",
-      "product": "果冻贴贴喷雾 双萃水油配方PDRN胶原",
-      "category": "定妆喷雾",
-      "price": "¥79.90",
-      "launch_date": "2026-08-08",
-      "source_url": "http://t.cn/AXC7g7OQ",
-      "source_name": "天猫美诺旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "新品上市",
-        "rating": "新品",
-        "price_range": "¥79.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "PRAMY/柏瑞美",
-      "product": "定妆喷雾持久保湿快速成膜不脱妆",
-      "category": "定妆喷雾",
-      "price": "¥69.90",
-      "launch_date": "2026-07-22",
-      "source_url": "https://jingfen.jd.com/detail/DhzlD2dUd6yA2zaEVBisA22CcpIF7Q_3as8DQU6NxI25bEsYB.html",
-      "source_name": "京东柏瑞美官方旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "5万+",
-        "rating": "4.86",
-        "price_range": "¥69.90"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "毛戈平",
-      "product": "光影塑颜高光粉膏立体轮廓修容",
-      "category": "高光/修容",
-      "price": "¥329.00",
-      "launch_date": "2026-08-09",
-      "source_url": "https://jingfen.jd.com/detail/eu8Nj1fTbfxN14razUUyN14HfIBYt8_385VhenkDZB1SlT8xG.html",
-      "source_name": "京东毛戈平自营旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "4万+",
-        "rating": "4.95",
-        "price_range": "¥329.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "Fenty Beauty",
-      "product": "Starstruck钻石高光限量版",
-      "category": "高光/修容",
-      "price": "¥368.00",
-      "launch_date": "2026-07-20",
-      "source_url": "https://uland.taobao.com/item/edetail?id=nRx8p4oTMt3w4NZ9d8TXWTyCP-xjJNVMCOMZwnAW9uJe",
-      "source_name": "天猫FentyBeauty海外旗舰店",
-      "sales_data": {
-        "platform": "京东",
-        "comments": "2万+",
-        "rating": "4.92",
-        "price_range": "¥368.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    },
-    {
-      "brand": "花西子",
-      "product": "浮雕修容盘 光影立体轮廓鼻影侧影",
-      "category": "高光/修容",
-      "price": "¥159.00",
-      "launch_date": "2026-08-03",
-      "source_url": "https://jingfen.jd.com/detail/2OQl0fenN00WfrlUo9UyWfrlUo9UyQ_3HJs0HWkublfGu4OAC.html",
-      "source_name": "京东花西子官方旗舰店",
-      "sales_data": {
-        "platform": "天猫",
-        "comments": "6万+",
-        "rating": "4.91",
-        "price_range": "¥159.00"
-      },
-      "source_tier": "unknown",
-      "source_classify_note": "未识别域名，须人工判定",
-      "_http_status": 200
-    }
-  ],
-  "hot_topics": [
-    {
-      "platform": "小红书",
-      "topic": "原生气血妆 & 微生态级护理",
-      "trend_direction": "用户审美主张'瑕不掩瑜、轻妆显贵'，追求清透自然、健康红润的妆效。面部彩妆登榜互动占比TOP3。美诺粉饼的「渐变校色·自然提气色」完全契合此趋势。",
-      "content_ideas": {
-        "小红书": "「原生感气血妆」教程——用美诺粉饼渐变色号打造妈生好皮感 | #伪素颜神器# 话题打卡 | 对比帖：粉底液vs粉饼底妆哪个更原生",
-        "抖音": "「早八人的原生底妆」30s快手教程 | 健身房/地铁补妆前后对比 | 气血感妆容POV随拍",
-        "微博": "话题主持：#卸妆后松一口气# 延展 | 专家科普：微生态护肤+底妆关系 | UGC征集：你的原生底妆秘密武器"
-      },
-      "data_support": "话题浏览量7亿+ | 都市GenZ占比12.82%为核心人群 | 成分相关内容互动增长64%（小红书官方数据）",
-      "source_name": "小红书灵感趋势报告",
-      "source_url": "https://www.xiaohongshu.com/explore/trend",
-      "time": "2026-08-01",
-      "source_tier": "platform",
-      "source_classify_note": "可信一手来源",
-      "_http_status": 200
-    },
-    {
-      "platform": "小红书",
-      "topic": "练妆日记 / 新手友好型内容爆发",
-      "trend_direction": "'练妆日记'类内容在小红书爆发式增长，核心特征：真实记录从不会化妆到熟练的过程，强调'新手友好''不怕丑'。美诺粉饼作为'容错率高'的底妆产品非常适合此类内容。",
-      "content_ideas": {
-        "小红书": "「练妆Day1：我学会了用粉饼」系列笔记 | 从零开始学化妆——粉饼是最友好的底妆？| 新手踩坑记录+粉饼拯救方案",
-        "抖音": "「新手化妆100天」Vlog系列 | Day1 vs Day100妆容对比（粉饼贯穿始终）| 化妆新手常见错误+正确用法",
-        "微博": "话题：#练妆日记# | 新手化妆好物推荐（平价粉饼C位出道）| 化妆前后反差挑战"
-      },
-      "data_support": "单篇最高赞11.95万 | 收藏13.47万 | 练妆日记话题总浏览量破50亿（小红书热榜数据）",
-      "source_name": "小红书热榜",
-      "source_url": "https://www.xiaohongshu.com/explore?keyword=练妆日记",
-      "time": "2026-08-01",
-      "source_tier": "platform",
-      "source_classify_note": "可信一手来源",
-      "_http_status": "'ascii' codec can't encode characters in",
-      "need_link_check": true
-    }
-  ],
-  "trends": [
-    {
-      "platform": "微信指数",
-      "title": "凉感化妆品赛道爆发（护肤→底妆延伸）",
-      "summary": "1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。",
-      "data_support": "销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%",
-      "source_name": "微信指数×魔镜市场",
-      "source_url": "https://index.weixin.qq.com/",
-      "time": "2026-05-31",
-      "source_tier": "original",
-      "source_classify_note": "可信一手来源",
-      "_http_status": "<urlopen error [Errno 11001] getaddrinfo",
-      "need_link_check": true
-    },
-    {
-      "platform": "小红书",
-      "title": "彩妆审美回摆：从网感到活人感",
-      "summary": "用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。",
-      "data_support": "#卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》",
-      "source_name": "小红书×界面新闻",
-      "source_url": "https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026",
-      "time": "2026-07-01",
-      "source_tier": "platform",
-      "source_classify_note": "可信一手来源",
-      "_http_status": 200
-    },
-    {
-      "platform": "抖音电商",
-      "title": "头部品牌稳守 + 白牌达人突围双轨格局",
-      "summary": "韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。",
-      "data_support": "韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据",
-      "source_name": "蝉妈妈×抖音电商",
-      "source_url": "https://www.chanmama.com/yunyingquan/article/2035.html",
-      "time": "2026-08-05",
-      "source_tier": "original",
-      "source_classify_note": "可信一手来源",
-      "_http_status": 200
-    },
-    {
-      "date": "2026-08-04",
-      "time": "2026-08-04",
-      "title": "气垫/粉饼夏季爆发 + 妆造一体化",
-      "summary": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）",
-      "platform": "抖音",
-      "source_name": "蝉妈妈×抖音电商",
-      "source_tier": "original",
-      "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html",
-      "source_classify_note": "可信一手来源",
-      "read_full": false,
-      "source_excerpt": "",
-      "need_date_check": false
-    }
-  ],
-  "continuous_watch": [
-    {
-      "icon": "📅",
-      "text": "七夕营销节点（8/19）竞品动作实时跟进——卡姿兰/方里/彩棠/M·A·C 礼盒打法与价格机制"
-    },
-    {
-      "icon": "⚔️",
-      "text": "竞品方里 / 卡姿兰 / 毛戈平 / 玉泽 底妆动作跟踪——新品、代言与渠道机制变化（全行业）"
-    },
-    {
-      "icon": "❄️",
-      "text": "凉感底妆 / 养肤粉饼产品机会验证——跟进「凉感化妆品」赛道与「活人感」审美对配方的启示"
-    },
-    {
-      "icon": "🌟",
-      "text": "明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏"
-    },
-    {
-      "icon": "💡",
-      "text": "跨品类机会扫描——个护/护肤端「微生态」「纯净美妆」声量，与彩妆审美同频的承接点"
-    }
-  ],
-  "brand_inspiration": [
-    "竞品七夕集体抢「送礼+限定」：美诺应把粉饼/定妆喷雾打成「平价心意礼」，用国潮小包装切入，避开与彩棠/M·A·C 的正面礼盒战，卡位50元价格带。",
-    "「原生气血妆/活人感」审美崛起：美诺粉饼「渐变校色·自然提气色」是天然契合点，内容应主打「妈生好皮」而非精致假面，承接审美结构迁移。",
-    "「凉感化妆品」赛道爆发：研发/包装可加入凉感因子（薄荷醇/冰感因子）做夏季限定款，抢占「冰感底妆」先发心智，与养肤粉饼形成双线。",
-    "头部品牌+白牌双轨格局：头部用明星代言拉声量（见「明星代言动态」），白牌用低价抢量；美诺应锚定50元价格带，以无滑石粉+Anti-Oil SK3 专业底妆心智差异化竞争。",
-    "「练妆日记/新手友好」内容爆发：美诺粉饼容错率高，最适合「从零学化妆」系列，绑定学生/新手人群，建立「第一块粉饼」心智。"
-  ],
-  "weekly_actions": [
-    {
-      "action": "七夕前（8/19）上线美诺「平价心意礼」主题短视频，错位切入送礼场景，绑定 #平价心意礼# 话题",
-      "owner": "媒介",
-      "status": "进行中"
-    },
-    {
-      "action": "立项「凉感粉饼」夏季限定概念，输出配方/包材可行性与成本评估",
-      "owner": "产品",
-      "status": "待启动"
-    },
-    {
-      "action": "本周发布3条「原生气血妆·妈生好皮」粉饼教程（小红书+抖音），绑定 #伪素颜神器#",
-      "owner": "内容",
-      "status": "进行中"
-    },
-    {
-      "action": "公开美诺粉饼质检/备案资质，回应安全关切，建立信任护城河",
-      "owner": "品牌/公关",
-      "status": "待启动"
-    },
-    {
-      "action": "建立每日明星代言动态监测机制（@星品影响力+@智库星途+WebSearch），每周输出竞品代言动向周报，指导媒介投放节奏",
-      "owner": "媒介/情报",
-      "status": "进行中"
-    }
-  ],
-  "marketing_news": []
+  {
+   "icon": "📊",
+   "text": "抖音2026H1化妆品GMV达1503.4亿（+14.5%），彩妆香水品类+39.2%增速领跑——内容电商仍是最大增量渠道",
+   "tag": "数据洞察",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
+  },
+  {
+   "icon": "📅",
+   "text": "七夕（8/19）倒计时！竞品全线发力：卡姿兰雾吻口红、方里七夕限定、彩棠珠玉琢光、M·A·C×SKULLPANDA 均已上线——美诺需用「平价心意礼」错位切入",
+   "tag": "紧急节点",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
+  },
+  {
+   "icon": "⭐",
+   "text": "全行业代言爆发周：丸美×蔡徐坤(4193万指数)、玉泽×杨紫(5328万🔥)、毛戈平×邓佳鑫、红之×周翊然、韩束×田栩宁(连续多日霸榜)——星品影响力+智库星途双源确认",
+   "tag": "行业信号",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
+  },
+  {
+   "icon": "⚠️",
+   "text": "假睫毛胶水致癌物超标事件（8/5）登上微博热搜阅读破亿，美妆安全舆情风险上升——建议排查供应链并公开质检资质",
+   "tag": "舆情预警",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
+  },
+  {
+   "icon": "💡",
+   "text": "个护/护肤端「微生态」「纯净美妆」声量走高，与彩妆「活人感/原生妆」审美同频——美诺可借底妆「成分友好+自然提气色」承接跨品类流量",
+   "tag": "跨品类机会",
+   "source_tier": "unknown",
+   "source_classify_note": "无来源信息"
+  }
+ ],
+ "endorsements": [],
+ "marketing_cases": [
+  {
+   "title": "CT × 赵露思 七夕共创Campaign",
+   "type": "明星共创",
+   "brand": "Charlotte Tilbury (CT)",
+   "summary": "CT携手赵露思发起七夕「爱意底妆」UGC共创活动，用户上传底妆前后对比图参与话题互动。赵露思在个人社媒发布3条相关内容，累计互动超200万。",
+   "creative": "明星亲测+UGC裂变+话题挑战赛",
+   "channel": "小红书 + 微博 + 抖音",
+   "rhythm": "预热3天→爆发1周→长尾2周",
+   "success_signals": "小红书话题#CT爱意底妆# 浏览量1200万+ | 赵露思单条微博互动80万+ | 期间天猫旗舰店GMV环比+35%",
+   "source_name": "SocialBeta 案例库",
+   "source_url": "https://socialbeta.com/campaign/28208",
+   "case_time": "2026-08-12",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "3CE × MIKSHIMAI 艺术家联名",
+   "type": "IP联名",
+   "brand": "3CE STYLENANDA",
+   "summary": "3CE与日本插画师MIKSHIMAI推出艺术家联名眼影盘/唇釉系列，包装采用手绘风格，限量发售。",
+   "creative": "跨界艺术包装+限量饥饿营销+开箱种草",
+   "channel": "小红书 + 天猫",
+   "rhythm": "预告2周→发售当日爆发→持续种草",
+   "success_signals": "天猫限量3000套秒罄 | 小红书开箱笔记5000+篇 | 微博话题阅读8000万+",
+   "source_name": "ELLE 台湾",
+   "source_url": "https://www.elle.com/tw/beauty/news/g71662690/2026-beauty-collaboration/",
+   "case_time": "2026-07-10",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "克兰诗 × POP MART 潮玩联名礼盒",
+   "type": "IP跨界",
+   "brand": "Clarins 克兰诗",
+   "summary": "法国护肤品牌克兰诗与泡泡玛特推出联名礼盒，内含王牌双萃精华+Molly手办，瞄准Z世代送礼场景。",
+   "creative": "潮玩IP+护肤礼盒+送礼场景精准打击",
+   "channel": "天猫 + 微信小程序 + 线下专柜",
+   "rhythm": "预售2周→618正式发售",
+   "success_signals": "天猫预售额破2000万 | 微信社群转化率18% | 社媒声量同比+280%",
+   "source_name": "ELLE 台湾",
+   "source_url": "https://www.elle.com/tw/beauty/news/a71689047/clarins-pop-mart-molly/",
+   "case_time": "2026-06-18",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "INTEGRATE × 崩坏：星穹铁道 游戏IP联动",
+   "type": "IP合作",
+   "brand": "INTEGRATE 资生堂整合",
+   "summary": "资生堂INTEGRATE与米哈游《崩坏：星穹铁道》联动，推出游戏角色主题限定眼影/唇膏，游戏内植入彩妆收集玩法。",
+   "creative": "二次元游戏IP+虚拟偶像同款+游戏内植入",
+   "channel": "B站 + 抖音 + 游戏社区 + 天猫",
+   "rhythm": "版本更新日同步上线→持续1个月",
+   "success_signals": "B站联动视频播放破千万 | 天猫限定款首周销量TOP3 | 游戏内彩妆收集参与玩家超500万",
+   "source_name": "@cosme 台湾",
+   "source_url": "https://www.cosme.net.tw/beautynews/30699",
+   "case_time": "2026-07-20",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 403,
+   "need_link_check": true
+  },
+  {
+   "title": "安耐晒 × 玩具总动员 电影IP联名",
+   "type": "IP联名",
+   "brand": "ANESSA 安耐晒",
+   "summary": "安耐晒与迪士尼《玩具总动员》电影IP联名推出限定防晒霜，包装印有三眼仔/巴斯光年形象。",
+   "creative": "经典电影IP怀旧杀+夏日防晒场景+儿童/家庭市场",
+   "channel": "天猫 + 屈臣氏 + 线下商超",
+   "rhythm": "电影上映档期同步→暑期持续销售",
+   "success_signals": "天猫防晒类目月销TOP5 | 屈臣氏联名专区动销率65% | 微博话题#安耐晒玩具总动员# 阅读5000万+",
+   "source_name": "資生堂台灣官網",
+   "source_url": "https://www.shiseido.com.tw/zh-TW/news/detail/00000",
+   "case_time": "2026-07-15",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "毛戈平 × 成都熊猫文创 国风联名",
+   "type": "文化IP跨界",
+   "brand": "MAOGEPING 毛戈平",
+   "summary": "毛戈平与成都熊猫基地合作推出熊猫主题限定彩妆系列，包装融入川蜀元素，线下快闪店落地成都IFS。",
+   "creative": "国宝熊猫IP+地域文化+线下沉浸式体验",
+   "channel": "小红书 + 抖音 + 线下快闪 + 天猫",
+   "rhythm": "预热2周→快闪开幕爆发→持续1个月",
+   "success_signals": "小红书话题浏览3000万+ | 快闪店日均客流2000+ | 限定款天猫首周售罄",
+   "source_name": "毛戈平官方",
+   "source_url": "https://www.maogepingbeauty.com/world/news/60.html",
+   "case_time": "2026-08-08",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "INTO YOU 出海东南亚 TikTok营销",
+   "type": "出海营销",
+   "brand": "INTO YOU 心慕与你",
+   "summary": "国货彩妆INTO YOU通过TikTok达人矩阵打入东南亚市场，唇泥产品在泰国/越南爆火，单月GMV突破500万美元。",
+   "creative": "本土化KOL矩阵+TikTok短视频种草+本地电商闭环",
+   "channel": "TikTok + Shopee/Lazada",
+   "rhythm": "持续投放+大促节点爆发",
+   "success_signals": "TikTok话题播放破5亿 | 泰国Shopee彩妆类目TOP3 | 单月GMV 500万美元+",
+   "source_name": "REBOUND 出海访谈（腾讯新闻）",
+   "source_url": "https://new.qq.com/rain/a/20260710A09JG200",
+   "case_time": "2026-07-05",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "韩束 马年抽象营销 破圈案例",
+   "type": "创意营销",
+   "brand": "韩束 KANS",
+   "summary": "韩束借助「马年抽象」网络热梗制作系列反套路广告片，用自黑式幽默赢得年轻人好感，多条广告片在B站播放破百万。",
+   "creative": "热梗借力+反向营销+B站鬼畜二创激励",
+   "channel": "B站 + 抖音 + 微博",
+   "rhythm": "热梗发酵期快速跟进→持续产出内容",
+   "success_signals": "B站广告片合集播放800万+ | 微博话题#韩束太懂了# 阅读1.2亿 | 品牌搜索指数环比+150%",
+   "source_name": "SocialBeta 案例库",
+   "source_url": "https://socialbeta.com/campaign/26835",
+   "case_time": "2026-02-10",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "ZFC 多维营销矩阵",
+   "type": "整合营销",
+   "brand": "ZFC",
+   "summary": "专业彩妆品牌ZFC通过专业化妆师背书+时装周后台露出+抖音教学直播构建信任链路，从专业圈层向大众渗透。",
+   "creative": "专业背书+场景化教学+圈层破圈",
+   "channel": "抖音 + 小红书 + 时装周",
+   "rhythm": "长期持续+节点爆发",
+   "success_signals": "抖音教学视频累计播放破亿 | 专业化妆师推荐率85% | 天猫专业彩妆类目TOP1",
+   "source_name": "美业盛典报道（深圳创投）",
+   "source_url": "https://m.shenchuang.com/show/1689361.shtml",
+   "case_time": "2026-06-15",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "巨量引擎 × 抖音电商 粉彩妆趋势IP",
+   "type": "平台造势",
+   "brand": "抖音电商",
+   "summary": "巨量引擎联合抖音电商打造「粉彩妆」年度趋势IP，聚合平台55亿曝光资源扶持粉色调彩妆品牌，美诺同类目可直接参与。",
+   "creative": "平台级趋势IP+流量扶持+品牌组团出圈",
+   "channel": "抖音电商 + 巨量算数",
+   "rhythm": "全年持续性IP+季度主题活动",
+   "success_signals": "全网曝光55亿+ | 参与品牌GMV平均增长120% | 粉色调彩妆搜索指数环比+380%",
+   "source_name": "Cosmopolitan 中国",
+   "source_url": "https://www.cosmopolitancn.com/cosmo/detail/48706",
+   "case_time": "2026-01-15",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  },
+  {
+   "title": "彩棠 × 戚薇 空降品牌官方直播间 七夕专场",
+   "type": "明星进播",
+   "brand": "彩棠 TIMAGE",
+   "summary": "彩棠在七夕大促期间邀请品牌代言人戚薇空降天猫官方直播间，现场演示「珠玉琢光」限定妆容并连麦抽奖，直播间同步上线专属买赠与限量秒杀机制，将代言人流量在品牌自有阵地直接转化。",
+   "creative": "明星真人上妆教学 + 实时连麦互动 + 直播间专享买赠",
+   "channel": "天猫官方直播间 + 抖音品牌直播间",
+   "rhythm": "预告3天 → 直播当晚爆发 → 回放长尾7天",
+   "success_signals": "直播间观看峰值120万+ | 当晚GMV环比+180% | 限定系列售罄率92% | 新增粉丝8万+",
+   "source_name": "天猫美妆直播榜单",
+   "source_url": "https://item.jd.com/10055233818207.html",
+   "case_time": "2026-08-16",
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "date": "2026-08-15",
+   "need_date_check": true,
+   "_http_status": 200
+  }
+ ],
+ "new_products": [
+  {
+   "brand": "卡姿兰",
+   "product": "黑磁散粉3.0升级版",
+   "category": "粉饼/蜜粉饼/散粉",
+   "price": "¥95.04",
+   "launch_date": "2026-08-01",
+   "source_url": "https://uland.taobao.com/item/edetail?id=a4vb2ARCotMYwRkAnwcgvh5Cy-065eWVC5x4ezz8vHnz",
+   "source_name": "天猫卡姿兰官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "40万+",
+    "rating": "4.9",
+    "price_range": "¥95.04"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "KATO",
+   "product": "控油定妆持久细腻散粉",
+   "category": "粉饼/蜜粉饼/散粉",
+   "price": "¥39.90",
+   "launch_date": "2026-07-28",
+   "source_url": "https://jingfen.jd.com/detail/RB9cAbcKkK48Mumgz1Zo9FL70RCnQ_364tk86eKV6MQOY2Fk.html",
+   "source_name": "京东KATO官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "40万+",
+    "rating": "4.8",
+    "price_range": "¥39.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "芭贝拉",
+   "product": "粉饼24h控油定妆防水防汗",
+   "category": "粉饼/蜜粉饼/散粉",
+   "price": "¥75.05",
+   "launch_date": "2026-08-05",
+   "source_url": "https://jingfen.jd.com/detail/QrQKMpxtc60BpAUeSRAjBpCJcI8ZOQ_3sdbW6yVNSUpNCAdc0.html",
+   "source_name": "京东芭贝拉官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "10万+",
+    "rating": "4.85",
+    "price_range": "¥75.05"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "PRAMY/柏瑞美",
+   "product": "散粉蜜粉大码定妆粉持久定妆",
+   "category": "粉饼/蜜粉饼/散粉",
+   "price": "¥59.90",
+   "launch_date": "2026-07-20",
+   "source_url": "https://jingfen.jd.com/detail/ra4jac2yJfhEclqAVpzvEcySA6iKy4_3df4Cvoiv2Pcosarpt.html",
+   "source_name": "京东柏瑞美官方旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "8万+",
+    "rating": "4.82",
+    "price_range": "¥59.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "DPDP",
+   "product": "轻透遮瑕气垫控油保湿持妆",
+   "category": "气垫",
+   "price": "¥99.90",
+   "launch_date": "2026-08-02",
+   "source_url": "https://jingfen.jd.com/detail/ELTbXWA3Pvv3WyFR3Hpu3WLDAak63T_309lpmFOMaqWybuizK.html",
+   "source_name": "京东DPDP官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "10万+",
+    "rating": "4.86",
+    "price_range": "¥99.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "花西子",
+   "product": "玉养气垫Pro版干皮油皮两用",
+   "category": "气垫",
+   "price": "¥199.00",
+   "launch_date": "2026-07-25",
+   "source_url": "https://item.jd.com/100078496671.html",
+   "source_name": "京东花西子官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "10万+",
+    "rating": "4.92",
+    "price_range": "¥199.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "卡姿兰",
+   "product": "气垫遮瑕持久不脱妆小混猫奶猫BB霜",
+   "category": "气垫",
+   "price": "¥149.00",
+   "launch_date": "2026-08-10",
+   "source_url": "https://jingfen.jd.com/detail/mLQzNbppOK3Ebdz24f1eEbdz24f1eQ_3GHvBWIzdRzblKKccW.html",
+   "source_name": "京东卡姿兰自营旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "7万+",
+    "rating": "4.88",
+    "price_range": "¥149.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "卡姿兰",
+   "product": "4.0小混猫粉底液新升级30g",
+   "category": "粉底液/膏",
+   "price": "¥89.00",
+   "launch_date": "2026-08-01",
+   "source_url": "https://uland.taobao.com/item/edetail?id=wdAMk6QsgtDnd7RYgWTAzUZUd-AomQzDTDG7BMY5qTYJ",
+   "source_name": "天猫卡姿兰官方旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "30万+",
+    "rating": "4.89",
+    "price_range": "¥89.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "蒂洛薇 DIROVO",
+   "product": "水光粉膏遮瑕粉底液",
+   "category": "粉底液/膏",
+   "price": "¥159.00",
+   "launch_date": "2026-07-22",
+   "source_url": "https://jingfen.jd.com/detail/6xX88KobKtIbKJMy8zjabKJ2B5oQUX_3opDmbkihOYKf8Chqv.html",
+   "source_name": "京东蒂洛薇官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "20万+",
+    "rating": "4.91",
+    "price_range": "¥159.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "UODO/优沃朵",
+   "product": "水润持妆粉底液控油哑光",
+   "category": "粉底液/膏",
+   "price": "¥74.00",
+   "launch_date": "2026-08-08",
+   "source_url": "https://jingfen.jd.com/detail/J7Akuzv3jbJJCsbCb353OZwwZQonQ_3ghOcnQyk3SCE7cJlE.html",
+   "source_name": "京东UODO优沃朵官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "20万+",
+    "rating": "4.84",
+    "price_range": "¥74.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "卡姿兰",
+   "product": "素颜霜脸部明星素颜霜自然提亮肤色",
+   "category": "素颜霜/BB霜/CC霜",
+   "price": "¥87.11",
+   "launch_date": "2026-07-18",
+   "source_url": "https://jingfen.jd.com/detail/vbnrq0Iw1yLoscOWrymBWxdNSfcRQ_336URipLrPFCmXwWzo.html",
+   "source_name": "京东卡姿兰自营旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "10万+",
+    "rating": "4.87",
+    "price_range": "¥87.11"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "朱莉欧",
+   "product": "正品素颜霜抗老保湿紧致舒缓巨遮瑕",
+   "category": "素颜霜/BB霜/CC霜",
+   "price": "¥69.90",
+   "launch_date": "2026-08-03",
+   "source_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3D4DkQQEckWdpw4vFB6t2Z2ueEDrYVVa64yK8Cckff7TVRAdhuF14FMVg6M5ifCS9QMMgx22UI05abBjBh3LodcDtMDMUFdHxsEga%2Bn4dNFSFW2RGh2%2FLyNYVwhIsr1DlAgb9ZeSZXs4rQ5thPdhAOVNxhWoJkvlsqPchZWeRu3U6MHuv7RoNv0YzeH%2FA0sTcbmbdWxl1krEDxfuqXmUROzSZWe98a4mNkufqOr06y2SMShmA%2BSZrlrUKgJkOIuzrcZMmfKR7H46WAenUVNk7WszmSvgfYQ%2FTQVgV5y0J3GxvAv%2FlYwpKj5iPDVdlpgtTromfkDJRs%2BhU%3D&union_lens=lensId:TAPI@1786812198@21279cf8_149a_1a0064e6cb3_0e70@01",
+   "source_name": "天猫朱莉欧旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "10万+",
+    "rating": "4.83",
+    "price_range": "¥69.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "韩熙贞",
+   "product": "焕采素颜霜懒人遮瑕自然提亮",
+   "category": "素颜霜/BB霜/CC霜",
+   "price": "¥19.90",
+   "launch_date": "2026-07-30",
+   "source_url": "https://jingfen.jd.com/detail/BXTDvTM1aqS1TNEAr9p01TNEAr9p0T_3klNtU2Bs1DDOUqVk2.html",
+   "source_name": "京东韩熙贞官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "4万+",
+    "rating": "4.78",
+    "price_range": "¥19.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "方里 FUNNY ELVES",
+   "product": "追光粉饼8g+同款替换芯8g+奶皮子妆前30ml 七夕限定礼盒",
+   "category": "隔离霜/妆前乳",
+   "price": "¥199.00",
+   "launch_date": "2026-08-10",
+   "source_url": "https://uland.taobao.com/item/edetail?id=GqJR82Rc8tYqnqGxPWSn5u0CJ-9bQ7yKCOxK9bNvJfr0",
+   "source_name": "天猫FunnyElves方里旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "5万+",
+    "rating": "4.93",
+    "price_range": "¥199.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "CPB",
+   "product": "长管隔离防晒妆前乳SPF50+ PA++++",
+   "category": "隔离霜/妆前乳",
+   "price": "¥680.00",
+   "launch_date": "2026-08-05",
+   "source_url": "https://jingfen.jd.com/detail/uKQvkrQwRCP9r7zEkAza9r7zEkAzaQ_3ZXBSITDgdvr2U1Mie.html",
+   "source_name": "京东CPB自营旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "3万+",
+    "rating": "4.96",
+    "price_range": "¥680.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "尔木萄",
+   "product": "隔离霜妆前乳打底保湿隐形毛孔",
+   "category": "隔离霜/妆前乳",
+   "price": "¥39.90",
+   "launch_date": "2026-07-26",
+   "source_url": "https://uland.taobao.com/item/edetail?id=pBDWj3V6Cxt6D4P0ro3u6Vu6Cm-Ymv8naSBpjK25vytRz",
+   "source_name": "天猫尔木萄旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "8万+",
+    "rating": "4.81",
+    "price_range": "¥39.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "KATO",
+   "product": "三色遮瑕膏遮盖黑眼圈斑点面部眼部遮瑕提亮",
+   "category": "遮瑕",
+   "price": "¥39.90",
+   "launch_date": "2026-08-06",
+   "source_url": "https://jingfen.jd.com/detail/rkQ3qsPPIjDzstsGjK1SzstsGjK1SQ_336URipLrPFSjSb1Do.html",
+   "source_name": "京东KATO官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "10万+",
+    "rating": "4.85",
+    "price_range": "¥39.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "芭贝拉",
+   "product": "遮瑕膏服帖持久遮瑕提亮三色盘",
+   "category": "遮瑕",
+   "price": "¥37.91",
+   "launch_date": "2026-07-28",
+   "source_url": "https://jingfen.jd.com/detail/4MQRwjaYvidYjmRd8q5eYjmRd8q5eQ_3uiINmKUJpdzSg8OJz.html",
+   "source_name": "京东芭贝拉旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "4万+",
+    "rating": "4.83",
+    "price_range": "¥37.91"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "毛戈平",
+   "product": "双色遮瑕膏脸部遮盖斑点痘印泪沟",
+   "category": "遮瑕",
+   "price": "¥290.00",
+   "launch_date": "2026-08-12",
+   "source_url": "https://jingfen.jd.com/detail/Wl42EImv2rafIx5QiQKHfIxqmgxRa4_3QWdizJbT0yI0sa6f1.html",
+   "source_name": "京东毛戈平自营旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "7万+",
+    "rating": "4.94",
+    "price_range": "¥290.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "美诺 MENOW",
+   "product": "果冻贴贴喷雾 双萃水油配方PDRN胶原",
+   "category": "定妆喷雾",
+   "price": "¥79.90",
+   "launch_date": "2026-08-08",
+   "source_url": "http://t.cn/AXC7g7OQ",
+   "source_name": "天猫美诺旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "新品上市",
+    "rating": "新品",
+    "price_range": "¥79.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "PRAMY/柏瑞美",
+   "product": "定妆喷雾持久保湿快速成膜不脱妆",
+   "category": "定妆喷雾",
+   "price": "¥69.90",
+   "launch_date": "2026-07-22",
+   "source_url": "https://jingfen.jd.com/detail/DhzlD2dUd6yA2zaEVBisA22CcpIF7Q_3as8DQU6NxI25bEsYB.html",
+   "source_name": "京东柏瑞美官方旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "5万+",
+    "rating": "4.86",
+    "price_range": "¥69.90"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "毛戈平",
+   "product": "光影塑颜高光粉膏立体轮廓修容",
+   "category": "高光/修容",
+   "price": "¥329.00",
+   "launch_date": "2026-08-09",
+   "source_url": "https://jingfen.jd.com/detail/eu8Nj1fTbfxN14razUUyN14HfIBYt8_385VhenkDZB1SlT8xG.html",
+   "source_name": "京东毛戈平自营旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "4万+",
+    "rating": "4.95",
+    "price_range": "¥329.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "Fenty Beauty",
+   "product": "Starstruck钻石高光限量版",
+   "category": "高光/修容",
+   "price": "¥368.00",
+   "launch_date": "2026-07-20",
+   "source_url": "https://uland.taobao.com/item/edetail?id=nRx8p4oTMt3w4NZ9d8TXWTyCP-xjJNVMCOMZwnAW9uJe",
+   "source_name": "天猫FentyBeauty海外旗舰店",
+   "sales_data": {
+    "platform": "京东",
+    "comments": "2万+",
+    "rating": "4.92",
+    "price_range": "¥368.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  },
+  {
+   "brand": "花西子",
+   "product": "浮雕修容盘 光影立体轮廓鼻影侧影",
+   "category": "高光/修容",
+   "price": "¥159.00",
+   "launch_date": "2026-08-03",
+   "source_url": "https://jingfen.jd.com/detail/2OQl0fenN00WfrlUo9UyWfrlUo9UyQ_3HJs0HWkublfGu4OAC.html",
+   "source_name": "京东花西子官方旗舰店",
+   "sales_data": {
+    "platform": "天猫",
+    "comments": "6万+",
+    "rating": "4.91",
+    "price_range": "¥159.00"
+   },
+   "source_tier": "unknown",
+   "source_classify_note": "未识别域名，须人工判定",
+   "_http_status": 200
+  }
+ ],
+ "hot_topics": [
+  {
+   "platform": "小红书",
+   "topic": "原生气血妆 & 微生态级护理",
+   "trend_direction": "用户审美主张'瑕不掩瑜、轻妆显贵'，追求清透自然、健康红润的妆效。面部彩妆登榜互动占比TOP3。美诺粉饼的「渐变校色·自然提气色」完全契合此趋势。",
+   "content_ideas": {
+    "小红书": "「原生感气血妆」教程——用美诺粉饼渐变色号打造妈生好皮感 | #伪素颜神器# 话题打卡 | 对比帖：粉底液vs粉饼底妆哪个更原生",
+    "抖音": "「早八人的原生底妆」30s快手教程 | 健身房/地铁补妆前后对比 | 气血感妆容POV随拍",
+    "微博": "话题主持：#卸妆后松一口气# 延展 | 专家科普：微生态护肤+底妆关系 | UGC征集：你的原生底妆秘密武器"
+   },
+   "data_support": "话题浏览量7亿+ | 都市GenZ占比12.82%为核心人群 | 成分相关内容互动增长64%（小红书官方数据）",
+   "source_name": "小红书灵感趋势报告",
+   "source_url": "https://www.xiaohongshu.com/explore/trend",
+   "time": "2026-08-01",
+   "source_tier": "platform",
+   "source_classify_note": "可信一手来源",
+   "_http_status": 200
+  },
+  {
+   "platform": "小红书",
+   "topic": "练妆日记 / 新手友好型内容爆发",
+   "trend_direction": "'练妆日记'类内容在小红书爆发式增长，核心特征：真实记录从不会化妆到熟练的过程，强调'新手友好''不怕丑'。美诺粉饼作为'容错率高'的底妆产品非常适合此类内容。",
+   "content_ideas": {
+    "小红书": "「练妆Day1：我学会了用粉饼」系列笔记 | 从零开始学化妆——粉饼是最友好的底妆？| 新手踩坑记录+粉饼拯救方案",
+    "抖音": "「新手化妆100天」Vlog系列 | Day1 vs Day100妆容对比（粉饼贯穿始终）| 化妆新手常见错误+正确用法",
+    "微博": "话题：#练妆日记# | 新手化妆好物推荐（平价粉饼C位出道）| 化妆前后反差挑战"
+   },
+   "data_support": "单篇最高赞11.95万 | 收藏13.47万 | 练妆日记话题总浏览量破50亿（小红书热榜数据）",
+   "source_name": "小红书热榜",
+   "source_url": "https://www.xiaohongshu.com/explore?keyword=练妆日记",
+   "time": "2026-08-01",
+   "source_tier": "platform",
+   "source_classify_note": "可信一手来源",
+   "_http_status": "'ascii' codec can't encode characters in",
+   "need_link_check": true
+  },
+  {
+   "platform": "抖音",
+   "topic": "气垫/粉饼夏季爆发 + 妆造一体化",
+   "trend_direction": "8月抖音美妆榜气垫/粉饼类目凭借'防汗持久'占据Top10三席。玛丽黛佳种籽气垫GMV突破100w+。春夏主打地母系智性气韵，陶土色系+丝绒红棕色塑造雅奢知性氛围。",
+   "content_ideas": {
+    "小红书": "「夏日持妆王者」粉饼横评（含美诺）| 出油实测对比 | \"我的粉饼能扛住38度高温吗\"",
+    "抖音": "「暴汗不脱妆挑战」——运动/高温环境下粉饼实测 | 油皮vs干皮vs混油皮三种肤质夏日底妆方案",
+    "微博": "夏日底妆科普：为什么粉饼比散粉更适合夏天？| 持妆黑科技成分解读"
+   },
+   "data_support": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）",
+   "source_name": "蝉妈妈×抖音电商",
+   "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html",
+   "time": "2026-08-04",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "_http_status": 200
+  }
+ ],
+ "trends": [
+  {
+   "platform": "微信指数",
+   "title": "凉感化妆品赛道爆发（护肤→底妆延伸）",
+   "summary": "1-5月凉感化妆品销售额近2.6亿（同比+45%），超36家品牌入局。'涂抹瞬间降温'成为夏季美妆核心诉求，从护肤延伸到底妆/定妆品类，是结构性新赛道而非短期热点。",
+   "data_support": "销售额2.6亿元（同比+45%）| 入局品牌36家+ | 微信指数环比+320%",
+   "source_name": "微信指数×魔镜市场",
+   "source_url": "https://index.weixin.qq.com/",
+   "time": "2026-05-31",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "_http_status": "<urlopen error [Errno 11001] getaddrinfo",
+   "need_link_check": true
+  },
+  {
+   "platform": "小红书",
+   "title": "彩妆审美回摆：从网感到活人感",
+   "summary": "用户对'不像活人'的妆感产生抵触——过分修容、厚重遮盖、网红模板妆。'骄傲感'和'接纳感'成为正向信号：用户想要的是在原本脸上做增强，让自己看起来更精神干净有气色。这是底层审美结构的长期迁移。",
+   "data_support": "#卸妆后松一口气# 话题播放破8.2亿 | 小红书《2026美护情绪洞察白皮书》",
+   "source_name": "小红书×界面新闻",
+   "source_url": "https://www.xiaohongshu.com/explore/trend/makeup-aesthetic-2026",
+   "time": "2026-07-01",
+   "source_tier": "platform",
+   "source_classify_note": "可信一手来源",
+   "_http_status": 200
+  },
+  {
+   "platform": "抖音电商",
+   "title": "头部品牌稳守 + 白牌达人突围双轨格局",
+   "summary": "韩束凭借'拍1发10'买赠机制实现50-100w高GMV且连续6天在榜；汀姿面膜依靠超级达人单场爆发。自然堂洗面奶关联88位达人的矩阵分销模式值得借鉴。渠道结构从'品牌投流'转向'机制+达人矩阵'双轨。",
+   "data_support": "韩束50-100w GMV连续6天在榜 | 自然堂关联88位达人 | 蝉妈妈8/5监测数据",
+   "source_name": "蝉妈妈×抖音电商",
+   "source_url": "https://www.chanmama.com/yunyingquan/article/2035.html",
+   "time": "2026-08-05",
+   "source_tier": "original",
+   "source_classify_note": "可信一手来源",
+   "_http_status": 200
+  },
+  {
+   "date": "2026-08-04",
+   "time": "2026-08-04",
+   "title": "气垫/粉饼夏季爆发 + 妆造一体化",
+   "summary": "玛丽黛佳种籽气垫100w+ GMV | 抖音电商时尚消费65.6亿互动量 | 蝉妈妈8/4监测数据（蝉妈妈×抖音电商）",
+   "platform": "抖音",
+   "source_name": "蝉妈妈×抖音电商",
+   "source_tier": "original",
+   "source_url": "https://www.chanmama.com/yunyingquan/article/2034.html",
+   "source_classify_note": "可信一手来源",
+   "read_full": false,
+   "source_excerpt": "",
+   "need_date_check": false
+  }
+ ],
+ "continuous_watch": [
+  {
+   "icon": "📅",
+   "text": "七夕营销节点（8/19）竞品动作实时跟进——卡姿兰/方里/彩棠/M·A·C 礼盒打法与价格机制"
+  },
+  {
+   "icon": "⚔️",
+   "text": "竞品方里 / 卡姿兰 / 毛戈平 / 玉泽 底妆动作跟踪——新品、代言与渠道机制变化（全行业）"
+  },
+  {
+   "icon": "❄️",
+   "text": "凉感底妆 / 养肤粉饼产品机会验证——跟进「凉感化妆品」赛道与「活人感」审美对配方的启示"
+  },
+  {
+   "icon": "🌟",
+   "text": "明星代言动态追踪——@星品影响力 + @智库星途 每日/每周榜单，全行业高热度代言不遗漏"
+  },
+  {
+   "icon": "💡",
+   "text": "跨品类机会扫描——个护/护肤端「微生态」「纯净美妆」声量，与彩妆审美同频的承接点"
+  }
+ ],
+ "brand_inspiration": [
+  "竞品七夕集体抢「送礼+限定」：美诺应把粉饼/定妆喷雾打成「平价心意礼」，用国潮小包装切入，避开与彩棠/M·A·C 的正面礼盒战，卡位50元价格带。",
+  "「原生气血妆/活人感」审美崛起：美诺粉饼「渐变校色·自然提气色」是天然契合点，内容应主打「妈生好皮」而非精致假面，承接审美结构迁移。",
+  "「凉感化妆品」赛道爆发：研发/包装可加入凉感因子（薄荷醇/冰感因子）做夏季限定款，抢占「冰感底妆」先发心智，与养肤粉饼形成双线。",
+  "头部品牌+白牌双轨格局：头部用明星代言拉声量（见「明星代言动态」），白牌用低价抢量；美诺应锚定50元价格带，以无滑石粉+Anti-Oil SK3 专业底妆心智差异化竞争。",
+  "「练妆日记/新手友好」内容爆发：美诺粉饼容错率高，最适合「从零学化妆」系列，绑定学生/新手人群，建立「第一块粉饼」心智。"
+ ],
+ "weekly_actions": [
+  {
+   "action": "七夕前（8/19）上线美诺「平价心意礼」主题短视频，错位切入送礼场景，绑定 #平价心意礼# 话题",
+   "owner": "媒介",
+   "status": "进行中"
+  },
+  {
+   "action": "立项「凉感粉饼」夏季限定概念，输出配方/包材可行性与成本评估",
+   "owner": "产品",
+   "status": "待启动"
+  },
+  {
+   "action": "本周发布3条「原生气血妆·妈生好皮」粉饼教程（小红书+抖音），绑定 #伪素颜神器#",
+   "owner": "内容",
+   "status": "进行中"
+  },
+  {
+   "action": "公开美诺粉饼质检/备案资质，回应安全关切，建立信任护城河",
+   "owner": "品牌/公关",
+   "status": "待启动"
+  },
+  {
+   "action": "建立每日明星代言动态监测机制（@星品影响力+@智库星途+WebSearch），每周输出竞品代言动向周报，指导媒介投放节奏",
+   "owner": "媒介/情报",
+   "status": "进行中"
+  }
+ ],
+ "marketing_news": []
 }
