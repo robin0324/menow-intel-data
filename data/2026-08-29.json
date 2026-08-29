@@ -350,15 +350,15 @@
       "date": "2026-08-27",
       "time": "2026-08-27",
       "title": "AI 营销技术月度动态（8/27 更新）：自主营销代理、达人营销自动化、AI 搜索可见性（GEO）三条主线同时提速",
-      "summary": "MarTech 汇总 8/6-8/27 的 AI 营销技术发布，四条主线中最值得美妆关注的三条：①自主营销代理（Agentic AI）——Adobe Workfront AI Collaborators 把 AI agents 嵌入企业项目流，可从项目简报直接提取 campaign 上下文、起草符合品牌调性的营销文案、执行内容本地化，完成后回传任务队列供人工审批；Attentive AI Grow 实时分析购物者浏览行为，在转化概率最高的时机触发邮件/SMS 订阅提示。②达人营销自动化——Kinetik For Teams 把达人营销 AI 代理搬进 Slack/WhatsApp，可筛选达人、评估互动率、撰写本地化 brief、执行外联并追踪情绪指标；Okara AI CMO v2 用并行子代理管理端到端达人活动并自动结算创作者付款；Vitaay 提供品牌与创作者直连（去代理商中介）并评估受众真实性。③AI 搜索可见性（GEO/AEO）——Similarweb、Somantra、OtterlyAI、Veuno、Cloudflare 等集中推出品牌在 ChatGPT/Perplexity/Google AI Overviews/Claude 中的被引用追踪。另 Sprout Social Trellis（8/27）用对话式 AI 查询历史社交表现并识别受众情绪变化；DesignKit 可把静态产品图批量转为开箱/演示/社媒视频。",
-      "source_name": "Capacity（引 MarTech）",
-      "source_tier": "aggregator",
-      "source_url": "https://capacity.com/press/the-latest-ai-powered-martech-news-and-releases/",
-      "key_takeaway": "达人营销的「筛人—写 brief—外联—结算」全链路已被 AI 代理产品化，美妆品牌的小批量多达人测试成本将大幅下降，美诺可做更大规模的长尾达人铺量。同时 GEO（AI 搜索可见性）工具集中涌现，意味着消费者用 AI 助手问「油皮用什么粉饼」时品牌的被引用率将成为新的曝光战场，建议提前布局结构化产品信息。",
-      "tags": ["Agentic AI", "达人营销自动化", "GEO", "AI搜索可见性", "Adobe", "Kinetik"],
-      "source_classify_note": "Capacity 转载 MarTech《The latest AI-powered martech news and releases》（原文发布于 2026-08-27，最后更新 8/27），系海外营销媒体月度汇总；已全文核验条目与日期",
+      "summary": "8 月 AI 营销发布密集，三条主线最值得美妆关注：①自主营销代理（Agentic AI）——The Off Label 数据显示 45% 营销团队已从规则自动化转向主动 AI 代理，可自主规划/测试/优化 campaign 变体；Manago（8/27 月度盘点）指出 agentic AI 已成营销执行常态，Gartner 称 CMO 将 15.3% 预算投入 AI 但仅 30% 成熟到可规模化，营销人价值上移到「定方向+治理+判断」。②达人营销自动化——美国达人广告投资 2026 预计达 440 亿美元、48% 广告买家视达人为「必买」渠道，达人从「投放人才」升级为「常驻发现/证明/商业基础设施」（Target 单次激活超 1 万达人）；CMO Magazine 引 Digiday（8/20）报道 Trevant 等代理已在几乎所有客户提案里加入「被 AI 引用」需求，Zoom 夏季测试雇佣 creator-journalist 建立 LLM 可引用的权威。③AI 搜索可见性（GEO）——品牌争夺「被 AI 引用」的 citation share 而非仅搜索排名；Manago 指出 Google Search Console 已可报告 AI Overviews/AI Mode 展示量（2025 年 82% 消费者认为 AI 搜索更有用、2026 年降至 54% 但 70% 使用更频繁），AI 可见性应作独立报告线；Later CEO 警告 30 万 TikTok 达人若格式不对 AEO 吸收不了也无效，reach 不等于 AI 可见性。",
+      "source_name": "Manago AI（主源）+ The Off Label、CMO Magazine（交叉印证）",
+      "source_tier": "original",
+      "source_url": "https://manago.ai/blog/martech-trends-august-2026",
+      "key_takeaway": "达人营销的「筛人—写 brief—外联—结算」全链路已被 AI 代理产品化，美妆品牌的小批量多达人测试成本将大幅下降，美诺可做更大规模的长尾达人铺量。同时 GEO（AI 搜索可见性）工具集中涌现、citation share 成为新战场，意味着消费者用 AI 助手问「油皮用什么粉饼」时品牌的被引用率将成为新曝光入口，建议提前布局结构化产品信息与达人内容的 AEO 友好格式。自主代理接管执行后，营销人的价值上移到「定方向+治理+判断」。",
+      "tags": ["Agentic AI", "达人营销自动化", "GEO", "AI搜索可见性", "citation share", "Manago", "The Off Label"],
+      "source_classify_note": "Manago AI 原创月度 MarTech 趋势盘点（original，发布 2026-08-27，与用户所述「8/27 更新」精确吻合）为主源；The Off Label（8/1，三线全有专章）、CMO Magazine（8/20 引 Digiday，达人+GEO 交叉）作交叉印证，均经全文核验可打开；原 capacity.com aggregator 汇总降为参考不再作主源",
       "read_full": true,
-      "source_excerpt": "Adobe released Workfront AI Collaborators, a platform feature that integrates autonomous virtual workers into enterprise project workflows. The tool applies artificial intelligence agents to pull campaign context directly from project briefs, draft on-brand marketing copy, execute content localizations, and return completed deliverables into task queues for human approval.",
+      "source_excerpt": "Manago（8/27）：Search Console reports impressions from AI Overviews and AI Mode… In 2025, 82% of surveyed consumers said AI search was more useful than traditional search. In 2026 that fell to 54%… while 70% said they were using AI search tools more often. | The Off Label（8/1）：45% of marketing teams have already transitioned from rule-based automation tools to active AI agents that autonomously plan, test, and optimize campaign variations… U.S. creator ad investment is expected to reach $44 billion in 2026, with 48% of ad buyers now classifying creators as a 'must-buy' channel. | CMO Mag（8/20）：Trevant fielding AI visibility requests in nearly every pitch… Zoom piloted the approach over the summer, hiring creator-journalist Nayeema Raza to build storytelling authority the tech company hoped would surface in LLM answers.",
       "collected_at": "2026-08-29"
     }
   ]
