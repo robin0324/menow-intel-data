@@ -1,0 +1,94 @@
+{
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30 17:50",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "一天内（搜索页服务端筛选 + 本地近24h硬过滤，零详情页跳转）",
+      "list_total": 43,
+      "candidates": 21,
+      "excluded": 22,
+      "excluded_by_reason": {
+        "睫毛": 1,
+        "无美诺品牌信号(标题+正文)": 14,
+        "账号黑名单:美诺Meno": 2,
+        "竞品关联推荐:无妨": 1,
+        "竞品关联推荐:spenny": 1,
+        "竞品关联推荐:彩棠": 1,
+        "竞品关联推荐:柏瑞美": 2
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": 0,
+      "dedup_dup": 0,
+      "collected": 21,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 21,
+      "fetched_at": "2026-08-30 17:41"
+    },
+    {
+      "platform": "抖音",
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内（视频 tab）",
+      "list_total": 48,
+      "candidates": 23,
+      "excluded": null,
+      "excluded_by_reason": {
+        "豪宅": 1,
+        "无品牌信号": 1,
+        "洗烘": 1,
+        "官方账号": 20,
+        "Miele": 1,
+        "账号黑名单:美诺 Meno": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 23,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 23,
+      "fetched_at": null
+    },
+    {
+      "platform": "微博",
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺冰肌粉蓝",
+        "美诺定妆"
+      ],
+      "time_window": "近1天",
+      "list_total": 1,
+      "candidates": 0,
+      "excluded": null,
+      "excluded_by_reason": {
+        "竞品:红地球": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 0,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0,
+      "fetched_at": null
+    }
+  ]
+}

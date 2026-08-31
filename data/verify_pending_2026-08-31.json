@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-31",
+  "created_at": "2026-08-31T10:12:00.248774",
+  "session": "blfn",
+  "blocked_platforms": [
+    {
+      "platform": "小红书",
+      "script": "sentiment_login_crawl_xhs.py",
+      "reason": "verify_blocked",
+      "limit": 20,
+      "full_mode": true
+    }
+  ],
+  "completed_platforms": [
+    "抖音",
+    "小红书"
+  ],
+  "status": "pending"
+}
