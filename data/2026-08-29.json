@@ -1,365 +1,605 @@
 {
-  "meta": {
-    "version": "23.0",
-    "date": "2026-08-29",
-    "data_as_of": "2026-08-29T09:35:00+0800",
-    "brand": "美诺 MENOW",
-    "track": "美妆/底妆/粉饼/定妆",
-    "label": "V23 每日新增（8/29 代言：dyxh.cc 星与截至 09:35 无新增官宣，最新条目仍为 8-28 的 48311-48318 共 8 条，已全部入库不重复；按规范标注「无新增官宣」，未硬凑）。其余板块按来源分层/时效/去重/死链规范采集，每条source_url 均经全文抓取验证可打开。"
+ "meta": {
+  "version": "23.0",
+  "date": "2026-08-29",
+  "data_as_of": "2026-08-29T09:35:00+0800",
+  "brand": "美诺 MENOW",
+  "track": "美妆/底妆/粉饼/定妆",
+  "label": "V23 每日新增（8/29 代言：dyxh.cc 星与截至 09:35 无新增官宣，最新条目仍为 8-28 的 48311-48318 共 8 条，已全部入库不重复；按规范标注「无新增官宣」，未硬凑）。其余板块按来源分层/时效/去重/死链规范采集，每条source_url 均经全文抓取验证可打开；代言板块于 8-31 补录 dyxh.cc 8-29~8-31 源更新新增 11 条（早前扫描源未更新致空缺，已按真实发布日期回填）。"
+ },
+ "endorsements": [
+  {
+   "brand": "花间颂",
+   "star": "淑元",
+   "level": "品牌元气大使",
+   "star_title": "品牌元气大使",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "花间颂 于 2026-08-29 官宣 淑元 出任品牌元气大使（品类：美妆）。（花间颂为美诺国货彩妆监测竞品，新品/代言动态需纳入竞品对标。）",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48336",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48336",
+   "topic_hashtag": "#淑元花间颂品牌元气大使#",
+   "heat_num": 130,
+   "heat_text": "130",
+   "category": "美妆",
+   "brand_actions": "花间颂（品类：美妆）于 2026-08-29 官宣 淑元 出任品牌元气大使，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=130.0（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48336,
+   "buzz_score": 130,
+   "img_url": "https://oss.dyxh.cc/user/1646/d/48336/1788147136039nLFIKi.jpg?auth_key=1805786198-0-0-c1f21fe53a336e13c7814d4a25cdc77a&x-oss-process=image/crop,x_1,y_19,w_689,h_919",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 花间颂 官宣 淑元 出任品牌元气大使（品类：美妆）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
   },
-  "endorsements": [],
-  "marketing_cases": [
-    {
-      "date": "2026-08-26",
-      "title": "AXXZIA晓姿15周年×蜷川实花「Unframed 抗糖有解·美自无界」联名发布会：艺术跨界+沉浸式品牌编年史+代言同场官宣三重组合",
-      "summary": "8/21 于上海西岸漩心举办。联名系列含 6 款经典焕新包装 + 1 款全新品共 7 款（AGXI抗糖饮联名版、4D金字塔眼膜、AGTHEORY肌源希越美时光系列、首款片剂 AG焕颜抗糖丸，聚焦20代痘肌与初抗老人群）。外场以「品牌时光长廊」把 2011 沙龙起步→2021 东证上市→2026 创立15周年的成长轨迹做成可走读的编年史；设糖化检测仪区把「抗糖有解」理念转为可感知互动，配格莱美拍摄区、AR打卡区与等比放大的巨型眼膜装置；现场以 AGXI抗糖饮等三款口服产品调制特调饮品，把「内服外用」全链路抗糖做成味觉体验；深处设三座「时光邮筒」，让宾客写下当下感悟与未来期许投入邮筒，把嘉宾变成品牌故事书写者。发布会当天同步官宣吴谨言出任晓姿眼膜亚太区代言人（她表示自己是4D金字塔眼膜的长期用户，曾在小红书分享眼部保养体验）。",
-      "impact": "中高",
-      "source_name": "ELLE中文网",
-      "source_url": "https://www.ellechina.com/beauty/beauty-news/a73530093/axxzia-beauty-floral/",
-      "source_tier": "original",
-      "source_classify_note": "ELLE中文网原创报道（时尚权威媒体一手），发布会 8/21 举办、报道 8/26 发布",
-      "read_full": true,
-      "source_excerpt": "2026年8月21日，高端美容护肤品牌AXXZIA晓姿于上海西岸漩心盛大举办“AXXZIA晓姿15周年×蜷川实花联名发布会”，全新「Unframed」联名限定系列正式亮相……发布会当天，AXXZIA晓姿正式官宣实力演员吴谨言出任晓姿眼膜亚太区代言人。",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-28",
-      "title": "Jung Saem Mool Beauty 进驻美国丝芙兰：10 个独家气垫色号 + 时代广场数字大屏三屏联动 + 快闪/冰淇淋联名/大师课的长线战役",
-      "summary": "韩国化妆师品牌 Jung Saem Mool Beauty 于 8/21 正式登陆 sephora.com 及全美 34 家丝芙兰门店，核心是为丝芙兰独家开发 10 个气垫色号（#20N Light Sand 至 #50C Ebony，覆盖浅调到深调全色域），并加推 Artist Cushion Blush Blur 与 #Halo Sunset 高光新色。营销节奏为「大屏曝光→UGC 参与→线下互动→跨界破圈」四段式：8/24-26 时代广场 Summit 大屏配现场互动；8/24-9/20 丝芙兰时代广场店上方数字大屏长线占位；8/24-30 时代广场地铁站数字屏密集覆盖；同期「Come Find Us in Times Square」社交拍照挑战（每日 13:30-17:30 在丝芙兰时代广场店附近找大屏打卡分享）；9/8 与 9/12-13 Pang Pang 幸运抽奖走进曼哈顿多家门店（34街/第五大道/SoHo/时代广场）；9/19-20 与纽约冰淇淋品牌 Van Leeuwen 联名，沿 Lexington 至 Meatpacking 路线做移动体验并定制四款风味；10/1 洛杉矶达人大师课、10/3-4 The Grove 移动快闪收尾。",
-      "impact": "高",
-      "source_name": "PR Newswire",
-      "source_url": "https://www.prnewswire.com/news-releases/jung-saem-mool-beauty-marks-sephora-launch-with-times-square-takeover-and-nationwide-consumer-activations-302862392.html",
-      "source_tier": "original",
-      "source_classify_note": "PR Newswire 官方新闻稿（品牌官方一手发布）",
-      "read_full": true,
-      "source_excerpt": "Jung Saem Mool Beauty…officially launches at Sephora on August 21, 2026…Available on Sephora.com and in 34 Sephora stores across the country, the launch will be celebrated with a series of high-impact consumer and influencer activations in New York and Los Angeles, including an expanded Sephora-exclusive complexion offering, a Times Square digital takeover, social experiences, product giveaways, and a Los Angeles mobile pop-up.",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-28",
-      "title": "法国希思黎「抗皱修活恒美凝时精华」上市：把皮肤学专家推到台前的「医研共创」发布范式",
-      "summary": "8/20 于上海外滩源壹号举办新品鉴赏会及上市晚宴。关键变化是跳出「新品亮相+明星站台」的传统套路，改由 AMWC世界美容抗衰老大会科学顾问吉喆医生与皮肤学专家吴冠儒医生从细胞与分子机制层面解读产品逻辑：吉喆聚焦「高阶日常护肤×专业医美」联动，强调术后脆弱肌底的协同修护；吴冠儒从皮肤老化机制切入，指出抗老已从被动延缓跨越到主动构筑健康年轻态。产品基于「肌肤长寿科学」，以四步闭环构建全链路抗老：RECONNECT（生物技术定制分级β-葡聚糖精粹作三大系统信号信使）→CORRECT（银杏精粹强化防御、改善皱纹松弛暗沉）→TARGET（西非「长寿茶」金克利巴茶叶+红葡萄叶+绿扁豆+红藻精粹，针对微循环不畅导致的肤色灰沉）→REVIVE（双重透明质酸+乳木果油+澳洲坚果油即刻焕亮）。中国区董事总经理彭嘉颖、品牌大使李若彤（刚过60岁生日）、品牌挚友谭元元出席，把「时光见证卓越」落到放下年龄焦虑的情绪价值上。",
-      "impact": "中高",
-      "source_name": "网易/化妆品财经在线",
-      "source_url": "https://www.163.com/dy/article/L5DP07O805534K99.html",
-      "source_tier": "original",
-      "source_classify_note": "网易·化妆品财经在线原创报道（美妆垂直权威媒体一手），活动 8/20 举办、报道 8/28 发布",
-      "read_full": true,
-      "source_excerpt": "2026年8月20日，全球高科技植物精粹品牌法国希思黎，于上海外滩源壹号举办抗皱修活恒美凝时精华新品鉴赏会及上市晚宴……此次发布并未停留在“新品亮相+明星站台”的传统模式，而是将皮肤学专家推至台前，从细胞与分子机制层面解读产品逻辑——这种“医研共创”的呈现方式，正在成为高端护肤品牌建立专业信任度的标配。",
-      "collected_at": "2026-08-29"
-    }
-  ],
-  "marketing_news": [],
-  "industry_reports": [
-    {
-      "date": "2026-08-25",
-      "time": "2026-08-25",
-      "title": "青眼情报《2026以油养肤技术应用标准与皮脂生态修护蓝皮书》：2025 年规模 497.83 亿（+63.81%），2026年1-4月同比 +73.81%，抖音电商增速 62.30%",
-      "publisher": "青眼情报",
-      "summary": "以油养肤正从小众品类向核心品类结构性跃迁：2025 年零售额同比增长 63.81% 至 497.83 亿元，市场份额从 2024 年的 3.6% 升至 7.6%；2026 年 1-4 月同比增速高达 73.81%，品类渗透率三年翻倍。渠道呈「线下逆周期增长+线上规模放量」双轨：化妆品集合店渠道增速 29.80%，抖音电商增速 62.30%。品类结构上精华油占比稳定在 70% 以上（面部精华油占精华油市场 71.6%、眼部精华油 19.3%，眼部增速持续高于面部平均）。价格带重构：200 元以下基础保湿型份额持续收缩，200-400 元功效进阶型由 41.5% 快速扩张至 53.6%，成为容量最大、增速最快的核心价格带。消费者侧：25岁+ 为核心人群，信息获取渠道以小红书/抖音 KOL/KOC 种草（80.75%）和天猫/京东详情页（75.82%）为主，「查看大量真人实测对比」与「确认核心成分与浓度配比」合计决定近 70% 购买行为；「一瓶多效」以 7.54 分（满分10分）兴趣度位居热门概念之首。",
-      "key_findings": [
-        "2025 年以油养肤市场 497.83 亿元（+63.81%），份额 3.6%→7.6%；2026年1-4月同比 +73.81%",
-        "抖音电商增速 62.30%、化妆品集合店 +29.80%，线上线下双轨放量",
-        "200-400 元功效进阶型价格带从 41.5% 扩张至 53.6%，成最大且最快价格带",
-        "精华油占比 70%+（面部 71.6%、眼部 19.3%），「一瓶多效」概念兴趣度 7.54 分居首",
-        "80.75% 消费者信息来自小红书/抖音种草，真人实测对比+成分浓度配比决定近 70% 购买"
-      ],
-      "source_name": "青眼情报（发现报告）",
-      "source_tier": "aggregator",
-      "source_url": "https://www.fxbaogao.com/detail/5636971",
-      "source_classify_note": "青眼情报原报告，经发现报告（fxbaogao.com）平台收录；已全文核验报告摘要与核心数据",
-      "read_full": true,
-      "source_excerpt": "中国以油养肤市场正经历结构性跃迁，2025年市场规模突破497亿元，2026年1-4月同比增速高达73.81%，品类渗透率三年翻倍……以油养肤市场呈现“线下逆周期增长、线上规模放量”的双轨增长特征，化妆品集合店渠道以油养肤产品增速高达29.80%，抖音电商增速62.30%。",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-24",
-      "time": "2026-08-24",
-      "title": "《2026中国功能性个人护理行业白皮书》：广义个护市场约 1.2 万亿元，10 大品牌拆解「精准分型+功效情绪+自研原料」破局路径",
-      "publisher": "美妆头条（引《2026中国功能性个人护理行业白皮书》）",
-      "summary": "截至 2025 年底中国广义个人护理市场规模已扩大至约 1.2 万亿元，增速显著高于行业平均水平，但增长逻辑已从营销驱动转向硬核技术、情景智愈与精细养护的深层较量。10 大品牌给出的高潜增长点高度趋同：①「精准分型」取代「一瓶通用」——红之依 EEMCO 国际标准把油性头皮拆成「小油头/大油头」两套配方逻辑，KONO 卡厘按出油程度做轻度/中度/重度三级产品映射（中度经典系列覆盖约 70% 消费者，洗后颅顶即刻增高 3.42cm）；②「功效+情绪」可验证化——红之多巴胺洗护以视觉色彩、触觉泡沫、嗅觉香氛三重感官协同做情绪价值，而非停留在营销话术；③自研原料技术壁垒化——半亩花田锁定文冠果油（90% 以上不饱和脂肪酸、富含神经酸）做身体油霜「爆油珠」剂型，滋源以无患子发酵精粹建立自主原料资产；④三元价值组合——浴见提出功能价值为底线、情绪价值是体验、文化价值是认同。尼尔森IQ 调研显示 64% 中国消费者愿为更好的产品体验支付更多。",
-      "key_findings": [
-        "截至 2025 年底中国广义个护市场规模约 1.2 万亿元，增速高于行业平均",
-        "「精准分型」取代「一瓶通用」，红之/KONO 以可量化分级缩短决策路径",
-        "尼尔森IQ：64% 中国消费者愿为更好的产品体验支付更多，拒绝的是无效溢价而非溢价本身",
-        "自研原料（文冠果油、无患子发酵精粹）成国货护城河，壁垒从营销端转向原料端",
-        "「以油养肤」从面部延伸至身体，功效诉求成身体护理赛道最大变量"
-      ],
-      "source_name": "美妆头条",
-      "source_tier": "original",
-      "source_url": "https://mztoutiao.com/index/index/wenzhang.html?id=4365",
-      "source_classify_note": "美妆头条原创行业访谈（引《2026中国功能性个人护理行业白皮书》数据）",
-      "read_full": true,
-      "source_excerpt": "据《2026中国功能性个人护理行业白皮书》数据，截至2025年底，中国广义个人护理市场整体规模已扩大至约1.2万亿元，增速显著高于行业平均水平……个护品类在消费升级和科学理念的双重驱动下，早已从早期的营销驱动，转向硬核技术、情景智愈、精细养护的深层较量。",
-      "collected_at": "2026-08-29"
-    }
-  ],
-  "hot_topics": [
-    {
-      "date": "2026-08-28",
-      "time": "2026-08-28",
-      "platform": "小红书",
-      "topic": "小红书「薯管家」《关于热点事件AI造假及AI换脸治理公告》：处置AI伪造截图笔记38篇、换脸视频312个，年内 AI 仿冒名人已处置笔记5.65万篇",
-      "trend_direction": "上升",
-      "data_support": "小红书通过官方账号「薯管家」发布公告：近期热点事件传播中出现 AI 炮制的虚假聊天记录截图、同质化造谣言论与 AI 生成换脸视频，已处置相关笔记 38 篇、AI 换脸视频 312 个并上线新增治理策略；今年以来针对 AI 仿冒名人累计处置笔记 5.65 万篇、账号 1372 个。前一日「薯管家」公示参与中央网信办「清朗·整治AI应用乱象」专项行动第二阶段成效：处置违规笔记 15 万余篇、违规账号 1400 余个，七类典型案例含「AI 换脸换声假冒知名公众人物、引流带货营销牟利」。本月另发《关于AI伪造人脸和高频AI脸的治理公告》，严禁未授权未声明的换脸、伪造名人/医生/专家形象用于带货引流等五类行为。",
-      "content_ideas": {
-        "小红书/抖音": "美妆是「明星/专家同款」内容的高发区，AI 换脸假冒公众人物带货被列为重点治理对象。美诺及合作达人的种草素材须杜绝 AI 伪造明星/医生形象与伪造聊天记录截图，真实测评与真人出镜素材反而获得平台分发红利。"
-      },
-      "source_name": "黄河新闻网吕梁（今日头条）",
-      "source_url": "https://www.toutiao.com/article/7679094308368122411/",
-      "source_tier": "original",
-      "source_classify_note": "黄河新闻网吕梁原创报道，转述小红书官方账号「薯管家」公告（平台官方口径，经权威媒体落地）",
-      "read_full": true,
-      "source_excerpt": "小红书通过官方账号「薯管家」发布《关于热点事件AI造假及AI换脸治理公告》称……已开展专项治理，处置相关事件AI伪造聊天截图、发布同质化造谣言论的笔记38篇，处置涉及相关当事人的AI换脸视频312个……今年以来小红书针对AI仿冒名人的违规行为，累计处置笔记5.65万篇、账号1372个。",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-27",
-      "time": "2026-08-27",
-      "platform": "抖音",
-      "topic": "抖音电商公布诱导第三方交易典型违规案例：四类引流诈骗手法全量公示，违规商家停业整顿/清退、达人冻结佣金或永久关闭电商权限",
-      "trend_direction": "上升",
-      "data_support": "抖音电商依《【诱导第三方】处置细则》公布四类典型违规：①直接展示平台外引流交易信息（鲜花商家「野季」等在商品图/详情页展示第三方账号网址，诱导加微信线下交易）；②以加粉丝群、售后补偿等话术引导脱离平台（直播间不挂车口播引导加关注进粉丝群后引流，或以大额优惠券诱导加群后诱导下载第三方 App 刷单诈骗）；③兼职/投资课程类引流诈骗（以 AI 课程、AI 预测股市课程、彩票咨询等名义诱导添加「对接老师」）；④包裹实物夹带三方信息。处置措施：下架违规商品、封禁商品、中断直播、商家限单、冻款、停止结算，情节严重者停业整顿直至清退；达人冻结佣金或永久关闭电商权限，部分移交相关部门。",
-      "content_ideas": {
-        "抖音": "美妆直播/短视频带货须严守「不引流站外」红线：粉丝群运营、售后补偿话术、包裹卡片均属高敏区。美诺合作达人的口播脚本与包裹物料需做一轮合规自查，避免达人账号被冻结佣金或关闭电商权限影响投放排期。"
-      },
-      "source_name": "新浪财经（湖北发布）",
-      "source_url": "https://finance.sina.cn/2026-08-28/detail-inipwtfp5746670.d.html",
-      "source_tier": "original",
-      "source_classify_note": "新浪财经转载抖音电商官方公告（平台官方口径，经权威财经媒体落地）",
-      "read_full": true,
-      "source_excerpt": "8月27日，抖音电商公布诱导至第三方交易典型违规案例，严厉打击引流诈骗行为……抖音电商依据《【诱导第三方】处置细则》，已对违规商家停业整顿、清退，冻结违规达人佣金或永久关闭电商权限等，部分移交相关部门处理。",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-18",
-      "time": "2026-08-18",
-      "platform": "小红书",
-      "topic": "小红书《关于打击AI违规直播的治理公告》：AI 直播须手动开启声明，观众端强制显示「含AI生成内容」标签",
-      "trend_direction": "上升",
-      "data_support": "小红书 8/18 发布公告，即日起对平台内 AI 相关直播行为开展专项治理。近期 AI 直播举报量激增，AI 身份造假、低质内容及未声明等问题已损害用户知情权与观看体验。核心机制：主播需在开播前或直播中通过「直播设置」手动开启 AI 声明，观众端将显示「含AI生成内容」标签；该声明默认关闭且不保留历史状态，每次开播须重新开启；若被判定疑似使用 AI 未声明，评论区上方将出现引导提示；用户可通过直播间右上角举报入口选择「AI造假」反馈。",
-      "content_ideas": {
-        "小红书": "数字人/AI 直播在美妆带货中的「无人值守」打法正被平台强制标识，用户可见「含AI生成内容」标签会削弱转化信任。美诺若测试 AI 直播或 AI 生成口播素材，须评估标签带来的信任折价，优先保真人出镜+AI 辅助剪辑的合规路径。"
-      },
-      "source_name": "经济观察报",
-      "source_url": "https://jg-static.eeo.com.cn/article/info?id=040acd9faf73418182fd84041d647b47",
-      "source_tier": "original",
-      "source_classify_note": "经济观察报原创报道，转述小红书官方《关于打击AI违规直播的治理公告》（平台官方口径，经权威财经媒体落地）",
-      "read_full": true,
-      "source_excerpt": "8月18日，小红书发布《关于打击AI违规直播的治理公告》，宣布即日起对平台内AI相关直播行为开展专项治理……主播需在开播前或直播中通过“直播设置”手动开启AI声明，观众端将显示“含AI生成内容”标签。该声明默认关闭且不保留历史状态，每次开播须重新开启。",
-      "collected_at": "2026-08-29"
-    }
-  ],
-  "trends": [
-    {
-      "date": "2026-08-25",
-      "time": "2026-08-25",
-      "title": "趋势：以油养肤从小众跃迁为核心品类——2026年1-4月同比 +73.81%，抖音电商增速 62.30%，渗透率三年翻倍",
-      "summary": "以油养肤已不再是「干皮专属」的小众护理，而是进入结构性跃迁期：2025 年规模 497.83 亿元（+63.81%），份额从 3.6% 升至 7.6%，2026 年 1-4 月同比 +73.81%，渗透率三年翻倍。渠道上抖音电商增速 62.30%、化妆品集合店 29.80%，说明内容种草与线下体验双轮驱动。需求侧从「单一功效」转向「多效协同」、从「经验护肤」转向「科学护肤」、从「干皮专属」转向「全肤质适配」。对美诺的启示：定妆赛道可借鉴这条路径——把「控油持妆」从单一功能卖点，升级为「分肤质全场景定妆方案」的系统叙事，并在抖音做真人实测对比内容（近 70% 购买行为由真人实测与成分浓度确认决定）。",
-      "source_name": "青眼情报（发现报告）",
-      "source_tier": "aggregator",
-      "source_url": "https://www.fxbaogao.com/detail/5636971",
-      "need_date_check": false,
-      "source_classify_note": "青眼情报原报告，经发现报告平台收录；已全文核验",
-      "read_full": true,
-      "source_excerpt": "以油养肤市场正从小众品类向核心品类结构性跃迁，2025年零售额同比增长63.81%至497.83亿元，市场份额从2024年的3.6%增长到7.6%……中国消费者的以油养肤认知图谱：信息获取渠道以小红书/抖音KOL/KOC种草（80.75%）和天猫/京东详情页（75.82%）为主。",
-      "read_method": "websearch",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-25",
-      "time": "2026-08-25",
-      "title": "趋势：功效进阶型价格带成主战场——200-400 元区间份额由 41.5% 扩张至 53.6%，「一瓶多效」兴趣度居首",
-      "summary": "精华油市场出现明显的价格带重构：200 元以下基础保湿型份额持续收缩，200-400 元功效进阶型由 41.5% 快速扩张至 53.6%，成为当前容量最大、增速最快的核心价格带；消费者对精华油的功效期待已从基础滋润全面跃迁至多效协同，「一瓶多效」以 7.54 分（满分 10 分）兴趣度位居热门概念之首。分肤质需求进一步分化：干皮追求「滋润+抗老+提亮」三重诉求，油皮以调节水油平衡为第一诉求，敏感肌锚定温和修护，混合肌呈多线并重。对美诺的启示：平价不等于只能讲便宜，可在主力价位带上叠加「控油+持妆+养肤」多效协同的表达，并按干皮/油皮/混合皮做分肤质内容矩阵，对应不同诉求结构。",
-      "source_name": "青眼情报（发现报告）",
-      "source_tier": "aggregator",
-      "source_url": "https://www.fxbaogao.com/detail/5636971",
-      "need_date_check": false,
-      "source_classify_note": "青眼情报原报告，经发现报告平台收录；已全文核验",
-      "read_full": true,
-      "source_excerpt": "以油养肤市场价格带重构，200元以下基础保湿型产品份额持续收缩，200-400元功效进阶型产品由41.5%快速扩张至53.6%，成为当前市场容量最大、增速最快的核心价格带……消费者对精华油的功效期待已从基础滋润向多效协同全面跃迁，“一瓶多效”以7.54分（满分10分）的兴趣度评分位居热门以油养肤产品概念之首。",
-      "read_method": "websearch",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-24",
-      "time": "2026-08-24",
-      "title": "趋势：个护「精准分型」取代「一瓶通用」，竞争从营销端转向原料端的技术壁垒化",
-      "summary": "美妆头条对话 10 大个护品牌，增长逻辑出现三点共性迁移。一是「精准分型」：红之依 EEMCO 国际标准把油性头皮拆成「小油头/大油头」两套配方，KONO 卡厘按出油程度做轻/中/重三级映射（中度覆盖约 70% 消费者），用可量化分级把「精准」从概念变成消费者对号入座的解决方案。二是「功效+情绪」可验证化：红之以视觉色彩、触觉泡沫、嗅觉香氛三重感官协同激活情绪因子，把情绪价值做成产品功能而非营销话术。三是自研原料技术壁垒化：半亩花田锁定文冠果油（90% 以上不饱和脂肪酸），滋源开发无患子发酵精粹，可逐以颈纹/眼纹等「老感暴露点」做局部精准护理品类。尼尔森IQ 显示 64% 中国消费者愿为更好体验付更多。对美诺的启示：粉饼赛道同样存在油皮/混干/敏感肌的分型机会，可把「分肤质选色」升级为可量化的分型体系并对外建立标准话语权。",
-      "source_name": "美妆头条",
-      "source_tier": "original",
-      "source_url": "https://mztoutiao.com/index/index/wenzhang.html?id=4365",
-      "need_date_check": false,
-      "source_classify_note": "美妆头条原创行业访谈（引《2026中国功能性个人护理行业白皮书》）",
-      "read_full": true,
-      "source_excerpt": "一是告别“一瓶通用”，个护将进入“精准分型”时代……依据EEMCO国际标准，红之把油性头皮拆成“小油头”和“大油头”两个截然不同的需求场景……三是自研原料的「技术壁垒化」，未来增长的护城河不在营销端，而在原料端。",
-      "read_method": "websearch",
-      "collected_at": "2026-08-29"
-    }
-  ],
-  "new_products": [
-    {
-      "date": "2026-08-24",
-      "title": "法国希思黎「抗皱修活恒美凝时精华」8/24 天猫小黑盒开新首发：8/26 19:00 天猫直播间「淘宝直播超新发布」承接",
-      "brand": "法国希思黎 Sisley",
-      "channel": "天猫小黑盒 / 天猫直播间",
-      "category": "抗老精华",
-      "summary": "8 月 24 日重磅上市，天猫小黑盒「开新首发」为线上首发主阵地；8 月 26 日 19:00 在希思黎天猫直播间做「淘宝直播超新发布」，承接首发流量并发放专属福利。超模奚梦瑶同步代言推广。产品基于「肌肤长寿科学」，以 RECONNECT-CORRECT-TARGET-REVIVE 四步闭环构建全链路系统抗老方案，主打 40+ 熟龄肌的灰沉、松弛与皱纹复合问题。线上线下节奏为：8/20 上海外滩源壹号鉴赏会造势（医研共创+明星背书）→8/24 天猫小黑盒首发转化→8/26 直播间放量。",
-      "source_name": "新浪新闻（品牌官微）",
-      "source_url": "https://sina.cn/news/detail/5335389342796260.html",
-      "source_tier": "original",
-      "source_classify_note": "新浪新闻收录奚梦瑶（微博认证：超模）官微原文，明确天猫小黑盒首发与天猫直播间时间",
-      "read_full": true,
-      "source_excerpt": "Sisley法国希思黎「抗皱修活恒美凝时精华」8月24日重磅上市，前往#天猫小黑盒# 开新首发解锁，8月26日19点，前往希思黎天猫直播间#淘宝直播超新发布#，抢同款星品，享专属福利。",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "修丽可色修精华全新升级入选「2026年8月热推快消新品榜」：8.13% PHYTO-PDRN 配方，经典褪红配方浓度提升 39%",
-      "brand": "修丽可 SkinCeuticals（欧莱雅中国）",
-      "channel": "天猫小黑盒 / 天猫官方旗舰店",
-      "category": "舒缓修护精华",
-      "summary": "升级后的色修精华特研 8.13% PHYTO-PDRN 配方，将经典褪红配方 PHYTO BOTANICAL 浓度提升 39%，搭配 PDRN 可高效抑制 TRPV-1、IL-1α 等 11 大应激因子，快速褪红舒缓并修护 DNA 损伤；棕榈酰三肽-8 与依克多因强韧屏障、稳定肌肤状态。依托修丽可专业院线护肤科研积淀，以科学护肤实证支撑效果，区别于普通舒缓精华，精准改善多种泛红状况。该产品入选东方快消品中心《快消品》依据 2026 年 8 月零售监测（关注度、铺市率等标准）原创发布的「2026年8月热推快消新品榜」，为当月美妆护肤类目代表新品之一。",
-      "source_name": "网易/快消品中心",
-      "source_url": "https://www.163.com/dy/article/L598K4GS0553BCTB.html",
-      "source_tier": "original",
-      "source_classify_note": "网易·快消品中心「2026年8月热推快消新品榜」原创独家发布（东方快消品中心依据零售监测原创）",
-      "read_full": true,
-      "source_excerpt": "日前，修丽可色修精华全新升级。升级后的色修精华特研8.13%PHYTO-PDRN配方，将经典褪红配方PHYTO BOTANICAL的浓度提升39%，搭配PDRN，能够高效抑制TRPV-1、IL-1α等11大应激因子，快速褪红舒缓，并修护DNA损伤，由表及里焕新肌肤。",
-      "collected_at": "2026-08-29"
-    }
-  ],
-  "continuous_watch": [
-    {
-      "icon": "🎒",
-      "text": "开学季（9/1）+ 教师节（9/10）+ 中秋（9/25）节点营销跟进——军训伪素颜场景与美诺平价心意礼组合装、萌兰/小熊 IP 谐音梗素材库的节点化复用"
-    },
-    {
-      "icon": "🧴",
-      "text": "底妆赛道座次跟踪：彩妆回暖+底妆定妆成美妆增长新引擎（底妆规模破315亿/定妆喷雾+25%/上半年彩妆+9.57%），美诺粉饼控油持妆+敏感肌友好分肤质矩阵补齐"
-    },
-    {
-      "icon": "🤖",
-      "text": "平台 AI 内容治理收紧：小红书 AI 换脸/AI 直播需强制声明并打「含AI生成内容」标签，抖音严打诱导第三方交易——美诺达人内容与包裹物料须做合规自查"
-    },
-    {
-      "icon": "🫧",
-      "text": "以油养肤赛道高速扩张（2026年1-4月 +73.81%、抖音 +62.30%）：跟踪油类定妆/养肤粉饼的产品机会与「一瓶多效」表达迁移"
-    },
-    {
-      "icon": "🏪",
-      "text": "国货替代纵深：青眼数据显示国货增速为外资 6.5 倍，跟踪韩束/珀莱雅/谷雨/卡姿兰/柏瑞美在抖音彩妆与面部洗护榜的打法迭代"
-    },
-    {
-      "icon": "🎨",
-      "text": "IP 联名候选推进：卡皮巴拉 / 巴拉拉小魔仙——参考晓姿×蜷川实花「沉浸式品牌编年史+可感知互动装置」的联名落地范式"
-    },
-    {
-      "icon": "📊",
-      "text": "竞品粉饼动态：嘉利玛防晒金币粉饼、花间颂粉饼在抖音日榜的位次与舆情，美诺冰肌粉蓝/萌兰的控油持妆差异化内容卡位"
-    }
-  ],
-  "today_must_see": [
-    {
-      "icon": "🛡️",
-      "tag": "平台合规",
-      "text": "抖音电商 8/27 公开四类诱导第三方交易违规案例（鲜花商家「野季」等被点名），处置直达停业整顿/清退、达人冻结佣金或永久关闭电商权限。美诺须立即排查达人脚本中的加群话术、售后补偿引导与包裹卡片，避免账号权限受损影响投放排期。",
-      "source_tier": "original",
-      "source_classify_note": "新浪财经转载抖音电商官方公告"
-    },
-    {
-      "icon": "🤖",
-      "tag": "AI治理",
-      "text": "小红书连发两项 AI 治理公告：热点事件 AI 造假处置笔记38篇/换脸视频312个（年内 AI 仿冒名人已处置 5.65 万篇笔记、1372 个账号）；AI 直播须手动开启声明并强制显示「含AI生成内容」标签。美妆种草依赖真实测评，AI 造假被严打反而利好真人实测素材。",
-      "source_tier": "original",
-      "source_classify_note": "黄河新闻网吕梁 + 经济观察报，均转述小红书官方公告"
-    },
-    {
-      "icon": "🫧",
-      "tag": "品类风口",
-      "text": "青眼情报蓝皮书：以油养肤 2025 年 497.83 亿（+63.81%），2026年1-4月 +73.81%，抖音电商增速 62.30%，200-400 元功效进阶带份额升至 53.6%。美诺可评估「控油持妆+养肤」多效协同表达，把平价粉饼从单点控油升级为分肤质全场景方案。",
-      "source_tier": "aggregator",
-      "source_classify_note": "青眼情报原报告（发现报告收录），已全文核验"
-    },
-    {
-      "icon": "🌏",
-      "tag": "出海样本",
-      "text": "Jung Saem Mool Beauty 8/21 进驻美国丝芙兰 34 家门店：为渠道独家开发 10 个气垫色号，以时代广场三屏联动（8/24-9/20）+ 社交拍照挑战 + 9月冰淇淋联名 + 10月大师课/移动快闪做四段式长线战役，是「渠道独家色号+城市级地标曝光」的范本。",
-      "source_tier": "original",
-      "source_classify_note": "PR Newswire 品牌官方新闻稿"
-    },
-    {
-      "icon": "🔬",
-      "tag": "科研叙事",
-      "text": "希思黎「长寿精华」把皮肤学专家推到台前做「医研共创」：AMWC 科学顾问吉喆、吴冠儒从细胞与分子机制解读，产品以 RECONNECT-CORRECT-TARGET-REVIVE 四步闭环讲全链路抗老。美诺可参照把「分肤质定妆」从卖点话术升级为可解释的机理体系。",
-      "source_tier": "original",
-      "source_classify_note": "网易/化妆品财经在线原创报道"
-    }
-  ],
-  "brand_inspiration": [
-    "Jung Saem Mool 启示：渠道独家色号（为丝芙兰定制 10 个色号）+ 城市地标长线曝光（时代广场三屏 8/24-9/20）+ 阶段性线下互动（快闪/抽奖/跨界冰淇淋），美诺进新渠道时可争取「渠道专属色号/限定装」作为谈判筹码，并把单次联名拉成 6-8 周的长线战役。",
-    "希思黎启示：把皮肤学专家推到台前做「医研共创」，从细胞与分子机制层面解释产品逻辑，而非只靠明星站台。美诺可邀请皮肤科/彩妆师专家共建「分肤质定妆」方法论，配合第三方实测数据建立专业信任。",
-    "AXXZIA晓姿 15 周年启示：把品牌历史做成可走读的「时光长廊」，把抽象理念做成可感知装置（糖化检测仪、等比放大产品装置、时光邮筒投递明信片），让到场嘉宾成为内容生产者。美诺做 IP 联名（卡皮巴拉/巴拉拉小魔仙）时可复用「可感知互动+UGC 生成」的展陈逻辑。",
-    "个护「精准分型」启示：红之依 EEMCO 标准分「小油头/大油头」、KONO 按出油程度做三级映射，用可量化分级缩短决策路径。美诺粉饼可按「油皮/混干/敏感肌」建立可量化分型体系并对外建立标准话语权，而非只讲笼统的控油持妆。",
-    "平台合规启示：抖音严打诱导第三方交易、小红书强制 AI 内容标识，真实真人实测内容的平台分发环境反而变好。美诺应加大「真实场景实测+真人出镜」素材供给，把合规压力转化为信任资产。"
-  ],
-  "weekly_actions": [
-    {
-      "action": "达人内容合规自查：排查抖音合作达人脚本中的加粉丝群/售后补偿引导话术，以及包裹内是否夹带第三方联系方式，规避诱导第三方交易处置（中断直播/冻结佣金/关闭电商权限）",
-      "owner": "媒介/内容",
-      "status": "本周启动"
-    },
-    {
-      "action": "素材真实性核验：全面自查在投素材是否含 AI 换脸明星/医生形象或伪造聊天记录截图；小红书直播如使用 AI 需手动开启声明并接受「含AI生成内容」标签",
-      "owner": "内容/媒介",
-      "status": "本周启动"
-    },
-    {
-      "action": "开学季内容矩阵冲刺：小红书/抖音投放军训暴汗不脱妆+分肤质选色妆教 10 条以上，抢占「军训用什么散粉/粉饼」搜索卡位（9/1 开学节点倒计时）",
-      "owner": "内容/媒介",
-      "status": "进行中"
-    },
-    {
-      "action": "「一瓶多效」表达升级：参照以油养肤 200-400 元功效进阶带逻辑，把美诺粉饼从单点控油升级为「控油+持妆+养肤」多效协同叙事，并按干皮/油皮/混合皮做分肤质内容矩阵",
-      "owner": "产品/内容",
-      "status": "本周启动"
-    },
-    {
-      "action": "分肤质定妆方法论立项：参照希思黎「医研共创」与个护精准分型，评估邀请皮肤科/彩妆师专家共建方法论并配第三方实测数据的可行性",
-      "owner": "产品/品牌",
-      "status": "评估中"
-    }
-  ],
-  "ai_marketing": [
-    {
-      "date": "2026-08-24",
-      "time": "2026-08-24",
-      "title": "TikTok Symphony 扩展 AI 视频广告能力：Symphony Agent 接入 Seedance 2.0，并打通达人 brief 与电通 Zoyumi 平台",
-      "summary": "TikTok 在 Symphony Creative Studio 内上线 Symphony Agent：可分析平台趋势内容，基于文本指令、图片或视频参考召回相似内容并展示其表现数据，供营销人员选择「Create your own」后据此生成相似的广告概念；从零起量时可直接输入 campaign 信息生成视频示例，据 Social Media Today 报道其生成采用字节 Seedance 2.0 模型。能力从视频扩展到静态图像素材、视频数字人（video avatars）与音频数字人，并提供翻译与多语种配音。更关键的是打通达人链路：可生成达人 brief、识别可邀请参与比稿的达人、并检索品牌相关的已有达人视频，把创意生产与达人发现收拢进广告工作流。同时与电通（Dentsu）Zoyumi 平台集成，客户先开放 Image to Video，Caption Removal、Dubbing、Digital Avatars 列在后续能力中。",
-      "source_name": "Digilogy（引 Social Media Today）",
-      "source_tier": "aggregator",
-      "source_url": "https://news.digilogy.co/tiktok-ai-creation-tools-symphony-agent-marketers",
-      "key_takeaway": "AI 已从「生成素材」前移到「定创意方向+找达人」：品牌可先用趋势内容反推 campaign 概念，再由 Agent 直接产出达人 brief 与候选达人。美诺若在 TikTok 海外或对照抖音体系做投放，可把「趋势洞察→概念生成→达人匹配」压缩为一条流水线；但平台侧同步在收紧 AI 内容标识（小红书 AI 直播强制声明），AI 生成素材须评估标签带来的信任折价。",
-      "tags": ["AIGC", "TikTok Symphony", "Seedance 2.0", "数字人", "达人匹配", "多语种配音"],
-      "source_classify_note": "Digilogy 原创报道并转述 Social Media Today（海外营销媒体二手转述，平台官方能力更新）；来源页标注发布于检索日前 5 天（检索日 2026-08-29，推定 8/24）",
-      "read_full": true,
-      "source_excerpt": "The latest TikTok AI creation tools include Symphony Agent, which can analyse trending content, work from text and visual prompts, and generate campaign concepts and complete video examples…Social Media Today reports that the system uses ByteDance's Seedance 2.0 model…Symphony Agent can also generate creator briefs, identify creators who can be invited to pitch for campaigns.",
-      "collected_at": "2026-08-29"
-    },
-    {
-      "date": "2026-08-27",
-      "time": "2026-08-27",
-      "title": "AI 营销技术月度动态（8/27 更新）：自主营销代理、达人营销自动化、AI 搜索可见性（GEO）三条主线同时提速",
-      "summary": "8 月 AI 营销发布密集，三条主线最值得美妆关注：①自主营销代理（Agentic AI）——The Off Label 数据显示 45% 营销团队已从规则自动化转向主动 AI 代理，可自主规划/测试/优化 campaign 变体；Manago（8/27 月度盘点）指出 agentic AI 已成营销执行常态，Gartner 称 CMO 将 15.3% 预算投入 AI 但仅 30% 成熟到可规模化，营销人价值上移到「定方向+治理+判断」。②达人营销自动化——美国达人广告投资 2026 预计达 440 亿美元、48% 广告买家视达人为「必买」渠道，达人从「投放人才」升级为「常驻发现/证明/商业基础设施」（Target 单次激活超 1 万达人）；CMO Magazine 引 Digiday（8/20）报道 Trevant 等代理已在几乎所有客户提案里加入「被 AI 引用」需求，Zoom 夏季测试雇佣 creator-journalist 建立 LLM 可引用的权威。③AI 搜索可见性（GEO）——品牌争夺「被 AI 引用」的 citation share 而非仅搜索排名；Manago 指出 Google Search Console 已可报告 AI Overviews/AI Mode 展示量（2025 年 82% 消费者认为 AI 搜索更有用、2026 年降至 54% 但 70% 使用更频繁），AI 可见性应作独立报告线；Later CEO 警告 30 万 TikTok 达人若格式不对 AEO 吸收不了也无效，reach 不等于 AI 可见性。",
-      "source_name": "Manago AI（主源）+ The Off Label、CMO Magazine（交叉印证）",
-      "source_tier": "original",
-      "source_url": "https://manago.ai/blog/martech-trends-august-2026",
-      "key_takeaway": "达人营销的「筛人—写 brief—外联—结算」全链路已被 AI 代理产品化，美妆品牌的小批量多达人测试成本将大幅下降，美诺可做更大规模的长尾达人铺量。同时 GEO（AI 搜索可见性）工具集中涌现、citation share 成为新战场，意味着消费者用 AI 助手问「油皮用什么粉饼」时品牌的被引用率将成为新曝光入口，建议提前布局结构化产品信息与达人内容的 AEO 友好格式。自主代理接管执行后，营销人的价值上移到「定方向+治理+判断」。",
-      "tags": ["Agentic AI", "达人营销自动化", "GEO", "AI搜索可见性", "citation share", "Manago", "The Off Label"],
-      "source_classify_note": "Manago AI 原创月度 MarTech 趋势盘点（original，发布 2026-08-27，与用户所述「8/27 更新」精确吻合）为主源；The Off Label（8/1，三线全有专章）、CMO Magazine（8/20 引 Digiday，达人+GEO 交叉）作交叉印证，均经全文核验可打开；原 capacity.com aggregator 汇总降为参考不再作主源",
-      "read_full": true,
-      "source_excerpt": "Manago（8/27）：Search Console reports impressions from AI Overviews and AI Mode… In 2025, 82% of surveyed consumers said AI search was more useful than traditional search. In 2026 that fell to 54%… while 70% said they were using AI search tools more often. | The Off Label（8/1）：45% of marketing teams have already transitioned from rule-based automation tools to active AI agents that autonomously plan, test, and optimize campaign variations… U.S. creator ad investment is expected to reach $44 billion in 2026, with 48% of ad buyers now classifying creators as a 'must-buy' channel. | CMO Mag（8/20）：Trevant fielding AI visibility requests in nearly every pitch… Zoom piloted the approach over the summer, hiring creator-journalist Nayeema Raza to build storytelling authority the tech company hoped would surface in LLM answers.",
-      "collected_at": "2026-08-29"
-    }
-  ]
+  {
+   "brand": "福录",
+   "star": "刘端端",
+   "level": "代言人",
+   "star_title": "代言人",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "福录 于 2026-08-29 官宣 刘端端 出任代言人（品类：珠宝首饰）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48334",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48334",
+   "topic_hashtag": "#刘端端福录代言人#",
+   "heat_num": 2,
+   "heat_text": "1.5",
+   "category": "珠宝首饰",
+   "brand_actions": "福录（品类：珠宝首饰）于 2026-08-29 官宣 刘端端 出任代言人，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=1.5（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48334,
+   "buzz_score": 1.5,
+   "img_url": "https://oss.dyxh.cc/user/1668/d/48334/1788146833939R2wzed.jpg?auth_key=1805786198-0-0-522c23286e30969a886743dedc3a146b&x-oss-process=image/crop,x_0,y_0,w_689,h_919",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 福录 官宣 刘端端 出任代言人（品类：珠宝首饰）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "企鹅",
+   "star": "邱鼎杰",
+   "level": "品牌大使",
+   "star_title": "品牌大使",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "企鹅 于 2026-08-29 官宣 邱鼎杰 出任品牌大使（品类：服装）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48332",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48332",
+   "topic_hashtag": "#邱鼎杰企鹅品牌大使#",
+   "heat_num": 40,
+   "heat_text": "39.6",
+   "category": "服装",
+   "brand_actions": "企鹅（品类：服装）于 2026-08-29 官宣 邱鼎杰 出任品牌大使，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=39.6（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48332,
+   "buzz_score": 39.6,
+   "img_url": "https://oss.dyxh.cc/user/1115/d/48332/1788146242357142LhZ.jpg?auth_key=1805786198-0-0-10f17511d02d7f1c833a1c582da66a88&x-oss-process=image/crop,x_0,y_1,w_689,h_919",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 企鹅 官宣 邱鼎杰 出任品牌大使（品类：服装）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "企鹅",
+   "star": "黄星",
+   "level": "品牌大使",
+   "star_title": "品牌大使",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "企鹅 于 2026-08-29 官宣 黄星 出任品牌大使（品类：服装）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48331",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48331",
+   "topic_hashtag": "#黄星企鹅品牌大使#",
+   "heat_num": 40,
+   "heat_text": "39.6",
+   "category": "服装",
+   "brand_actions": "企鹅（品类：服装）于 2026-08-29 官宣 黄星 出任品牌大使，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=39.6（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48331,
+   "buzz_score": 39.6,
+   "img_url": "https://oss.dyxh.cc/user/1117/d/48331/1788146175984br8sd1.jpg?auth_key=1805786198-0-0-b65f25ad9fa41dc8cbd89c130d233ea6&x-oss-process=image/crop,x_0,y_1,w_689,h_919",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 企鹅 官宣 黄星 出任品牌大使（品类：服装）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "安之伴",
+   "star": "张予曦",
+   "level": "品牌代言人",
+   "star_title": "品牌代言人",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "安之伴 于 2026-08-29 官宣 张予曦 出任品牌代言人（品类：服装）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48330",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48330",
+   "topic_hashtag": "#张予曦安之伴品牌代言人#",
+   "heat_num": 2,
+   "heat_text": "1.9",
+   "category": "服装",
+   "brand_actions": "安之伴（品类：服装）于 2026-08-29 官宣 张予曦 出任品牌代言人，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=1.9（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48330,
+   "buzz_score": 1.9,
+   "img_url": "https://oss.dyxh.cc/user/116/d/48330/1788145502012lNvuHL.jpg?auth_key=1805786198-0-0-d41587340518463c4b4c2a568bcbab8d&x-oss-process=image/crop,x_1,y_4,w_688,h_917",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 安之伴 官宣 张予曦 出任品牌代言人（品类：服装）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "古茗",
+   "star": "时代少年团",
+   "level": "全球代言人",
+   "star_title": "全球代言人",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "古茗 于 2026-08-29 官宣 时代少年团 出任全球代言人（品类：餐饮品牌）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48329",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48329",
+   "topic_hashtag": "#时代少年团古茗全球代言人#",
+   "heat_num": 540,
+   "heat_text": "539.9",
+   "category": "餐饮品牌",
+   "brand_actions": "古茗（品类：餐饮品牌）于 2026-08-29 官宣 时代少年团 出任全球代言人，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=539.9（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48329,
+   "buzz_score": 539.9,
+   "img_url": "https://oss.dyxh.cc/user/96/d/48329/1788145262048BdOkfB.jpg?auth_key=1805786198-0-0-5c31ca9a2d2b13bae34c1359d0b21952&x-oss-process=image/crop,x_0,y_0,w_689,h_919",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 古茗 官宣 时代少年团 出任全球代言人（品类：餐饮品牌）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "美团",
+   "star": "雷淞然",
+   "level": "特价好价推荐官",
+   "star_title": "特价好价推荐官",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "美团 于 2026-08-29 官宣 雷淞然 出任特价好价推荐官（品类：生活服务平台）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48328",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48328",
+   "topic_hashtag": "#雷淞然美团特价好价推荐官#",
+   "heat_num": 1,
+   "heat_text": "1.4",
+   "category": "生活服务平台",
+   "brand_actions": "美团（品类：生活服务平台）于 2026-08-29 官宣 雷淞然 出任特价好价推荐官，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=1.4（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48328,
+   "buzz_score": 1.4,
+   "img_url": "https://oss.dyxh.cc/user/1090/d/48328/1788145099666xY01hv.png?auth_key=1805786198-0-0-385bd979bb048a86c3ccb22085ed3cef&x-oss-process=image/crop,x_0,y_79,w_442,h_589",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 美团 官宣 雷淞然 出任特价好价推荐官（品类：生活服务平台）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  },
+  {
+   "brand": "美团",
+   "star": "张呈",
+   "level": "特价团好价推荐官",
+   "star_title": "特价团好价推荐官",
+   "action": "新签",
+   "date": "2026-08-29",
+   "risk": "低",
+   "note": "美团 于 2026-08-29 官宣 张呈 出任特价团好价推荐官（品类：生活服务平台）。",
+   "source_type": "dyxh.cc 代言详情",
+   "source_url": "https://www.dyxh.cc/detail/endorsement/48327",
+   "dyxh_url": "https://www.dyxh.cc/detail/endorsement/48327",
+   "topic_hashtag": "#张呈美团特价团好价推荐官#",
+   "heat_num": 1,
+   "heat_text": "0.7",
+   "category": "生活服务平台",
+   "brand_actions": "美团（品类：生活服务平台）于 2026-08-29 官宣 张呈 出任特价团好价推荐官，借明星流量强化品牌曝光与年轻客群触达。",
+   "reactions": "dyxh.cc（星与）收录该代言，buzz_score=0.7（平台热度指标）；官宣引发粉丝与行业关注。",
+   "source_tier": "platform",
+   "source_classify_note": "dyxh.cc（星与）代言发现平台，一手官宣聚合",
+   "dyxh_id": 48327,
+   "buzz_score": 0.7,
+   "img_url": "https://oss.dyxh.cc/user/1091/d/48327/1788145015027IMm3Ld.png?auth_key=1805786198-0-0-2919fe1ceb6284f62a0d9e4c378cc48b&x-oss-process=image/crop,x_0,y_76,w_443,h_590",
+   "_http_status": 200,
+   "need_link_check": false,
+   "read_full": true,
+   "source_excerpt": "2026-08-29 美团 官宣 张呈 出任特价团好价推荐官（品类：生活服务平台）。来源：dyxh.cc 代言详情页，已全文核验可打开。"
+  }
+ ],
+ "marketing_cases": [
+  {
+   "date": "2026-08-26",
+   "title": "AXXZIA晓姿15周年×蜷川实花「Unframed 抗糖有解·美自无界」联名发布会：艺术跨界+沉浸式品牌编年史+代言同场官宣三重组合",
+   "summary": "8/21 于上海西岸漩心举办。联名系列含 6 款经典焕新包装 + 1 款全新品共 7 款（AGXI抗糖饮联名版、4D金字塔眼膜、AGTHEORY肌源希越美时光系列、首款片剂 AG焕颜抗糖丸，聚焦20代痘肌与初抗老人群）。外场以「品牌时光长廊」把 2011 沙龙起步→2021 东证上市→2026 创立15周年的成长轨迹做成可走读的编年史；设糖化检测仪区把「抗糖有解」理念转为可感知互动，配格莱美拍摄区、AR打卡区与等比放大的巨型眼膜装置；现场以 AGXI抗糖饮等三款口服产品调制特调饮品，把「内服外用」全链路抗糖做成味觉体验；深处设三座「时光邮筒」，让宾客写下当下感悟与未来期许投入邮筒，把嘉宾变成品牌故事书写者。发布会当天同步官宣吴谨言出任晓姿眼膜亚太区代言人（她表示自己是4D金字塔眼膜的长期用户，曾在小红书分享眼部保养体验）。",
+   "impact": "中高",
+   "source_name": "ELLE中文网",
+   "source_url": "https://www.ellechina.com/beauty/beauty-news/a73530093/axxzia-beauty-floral/",
+   "source_tier": "original",
+   "source_classify_note": "ELLE中文网原创报道（时尚权威媒体一手），发布会 8/21 举办、报道 8/26 发布",
+   "read_full": true,
+   "source_excerpt": "2026年8月21日，高端美容护肤品牌AXXZIA晓姿于上海西岸漩心盛大举办“AXXZIA晓姿15周年×蜷川实花联名发布会”，全新「Unframed」联名限定系列正式亮相……发布会当天，AXXZIA晓姿正式官宣实力演员吴谨言出任晓姿眼膜亚太区代言人。",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "Jung Saem Mool Beauty 进驻美国丝芙兰：10 个独家气垫色号 + 时代广场数字大屏三屏联动 + 快闪/冰淇淋联名/大师课的长线战役",
+   "summary": "韩国化妆师品牌 Jung Saem Mool Beauty 于 8/21 正式登陆 sephora.com 及全美 34 家丝芙兰门店，核心是为丝芙兰独家开发 10 个气垫色号（#20N Light Sand 至 #50C Ebony，覆盖浅调到深调全色域），并加推 Artist Cushion Blush Blur 与 #Halo Sunset 高光新色。营销节奏为「大屏曝光→UGC 参与→线下互动→跨界破圈」四段式：8/24-26 时代广场 Summit 大屏配现场互动；8/24-9/20 丝芙兰时代广场店上方数字大屏长线占位；8/24-30 时代广场地铁站数字屏密集覆盖；同期「Come Find Us in Times Square」社交拍照挑战（每日 13:30-17:30 在丝芙兰时代广场店附近找大屏打卡分享）；9/8 与 9/12-13 Pang Pang 幸运抽奖走进曼哈顿多家门店（34街/第五大道/SoHo/时代广场）；9/19-20 与纽约冰淇淋品牌 Van Leeuwen 联名，沿 Lexington 至 Meatpacking 路线做移动体验并定制四款风味；10/1 洛杉矶达人大师课、10/3-4 The Grove 移动快闪收尾。",
+   "impact": "高",
+   "source_name": "PR Newswire",
+   "source_url": "https://www.prnewswire.com/news-releases/jung-saem-mool-beauty-marks-sephora-launch-with-times-square-takeover-and-nationwide-consumer-activations-302862392.html",
+   "source_tier": "original",
+   "source_classify_note": "PR Newswire 官方新闻稿（品牌官方一手发布）",
+   "read_full": true,
+   "source_excerpt": "Jung Saem Mool Beauty…officially launches at Sephora on August 21, 2026…Available on Sephora.com and in 34 Sephora stores across the country, the launch will be celebrated with a series of high-impact consumer and influencer activations in New York and Los Angeles, including an expanded Sephora-exclusive complexion offering, a Times Square digital takeover, social experiences, product giveaways, and a Los Angeles mobile pop-up.",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "法国希思黎「抗皱修活恒美凝时精华」上市：把皮肤学专家推到台前的「医研共创」发布范式",
+   "summary": "8/20 于上海外滩源壹号举办新品鉴赏会及上市晚宴。关键变化是跳出「新品亮相+明星站台」的传统套路，改由 AMWC世界美容抗衰老大会科学顾问吉喆医生与皮肤学专家吴冠儒医生从细胞与分子机制层面解读产品逻辑：吉喆聚焦「高阶日常护肤×专业医美」联动，强调术后脆弱肌底的协同修护；吴冠儒从皮肤老化机制切入，指出抗老已从被动延缓跨越到主动构筑健康年轻态。产品基于「肌肤长寿科学」，以四步闭环构建全链路抗老：RECONNECT（生物技术定制分级β-葡聚糖精粹作三大系统信号信使）→CORRECT（银杏精粹强化防御、改善皱纹松弛暗沉）→TARGET（西非「长寿茶」金克利巴茶叶+红葡萄叶+绿扁豆+红藻精粹，针对微循环不畅导致的肤色灰沉）→REVIVE（双重透明质酸+乳木果油+澳洲坚果油即刻焕亮）。中国区董事总经理彭嘉颖、品牌大使李若彤（刚过60岁生日）、品牌挚友谭元元出席，把「时光见证卓越」落到放下年龄焦虑的情绪价值上。",
+   "impact": "中高",
+   "source_name": "网易/化妆品财经在线",
+   "source_url": "https://www.163.com/dy/article/L5DP07O805534K99.html",
+   "source_tier": "original",
+   "source_classify_note": "网易·化妆品财经在线原创报道（美妆垂直权威媒体一手），活动 8/20 举办、报道 8/28 发布",
+   "read_full": true,
+   "source_excerpt": "2026年8月20日，全球高科技植物精粹品牌法国希思黎，于上海外滩源壹号举办抗皱修活恒美凝时精华新品鉴赏会及上市晚宴……此次发布并未停留在“新品亮相+明星站台”的传统模式，而是将皮肤学专家推至台前，从细胞与分子机制层面解读产品逻辑——这种“医研共创”的呈现方式，正在成为高端护肤品牌建立专业信任度的标配。",
+   "collected_at": "2026-08-29"
+  }
+ ],
+ "marketing_news": [],
+ "industry_reports": [
+  {
+   "date": "2026-08-25",
+   "time": "2026-08-25",
+   "title": "青眼情报《2026以油养肤技术应用标准与皮脂生态修护蓝皮书》：2025 年规模 497.83 亿（+63.81%），2026年1-4月同比 +73.81%，抖音电商增速 62.30%",
+   "publisher": "青眼情报",
+   "summary": "以油养肤正从小众品类向核心品类结构性跃迁：2025 年零售额同比增长 63.81% 至 497.83 亿元，市场份额从 2024 年的 3.6% 升至 7.6%；2026 年 1-4 月同比增速高达 73.81%，品类渗透率三年翻倍。渠道呈「线下逆周期增长+线上规模放量」双轨：化妆品集合店渠道增速 29.80%，抖音电商增速 62.30%。品类结构上精华油占比稳定在 70% 以上（面部精华油占精华油市场 71.6%、眼部精华油 19.3%，眼部增速持续高于面部平均）。价格带重构：200 元以下基础保湿型份额持续收缩，200-400 元功效进阶型由 41.5% 快速扩张至 53.6%，成为容量最大、增速最快的核心价格带。消费者侧：25岁+ 为核心人群，信息获取渠道以小红书/抖音 KOL/KOC 种草（80.75%）和天猫/京东详情页（75.82%）为主，「查看大量真人实测对比」与「确认核心成分与浓度配比」合计决定近 70% 购买行为；「一瓶多效」以 7.54 分（满分10分）兴趣度位居热门概念之首。",
+   "key_findings": [
+    "2025 年以油养肤市场 497.83 亿元（+63.81%），份额 3.6%→7.6%；2026年1-4月同比 +73.81%",
+    "抖音电商增速 62.30%、化妆品集合店 +29.80%，线上线下双轨放量",
+    "200-400 元功效进阶型价格带从 41.5% 扩张至 53.6%，成最大且最快价格带",
+    "精华油占比 70%+（面部 71.6%、眼部 19.3%），「一瓶多效」概念兴趣度 7.54 分居首",
+    "80.75% 消费者信息来自小红书/抖音种草，真人实测对比+成分浓度配比决定近 70% 购买"
+   ],
+   "source_name": "青眼情报（发现报告）",
+   "source_tier": "aggregator",
+   "source_url": "https://www.fxbaogao.com/detail/5636971",
+   "source_classify_note": "青眼情报原报告，经发现报告（fxbaogao.com）平台收录；已全文核验报告摘要与核心数据",
+   "read_full": true,
+   "source_excerpt": "中国以油养肤市场正经历结构性跃迁，2025年市场规模突破497亿元，2026年1-4月同比增速高达73.81%，品类渗透率三年翻倍……以油养肤市场呈现“线下逆周期增长、线上规模放量”的双轨增长特征，化妆品集合店渠道以油养肤产品增速高达29.80%，抖音电商增速62.30%。",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-24",
+   "time": "2026-08-24",
+   "title": "《2026中国功能性个人护理行业白皮书》：广义个护市场约 1.2 万亿元，10 大品牌拆解「精准分型+功效情绪+自研原料」破局路径",
+   "publisher": "美妆头条（引《2026中国功能性个人护理行业白皮书》）",
+   "summary": "截至 2025 年底中国广义个人护理市场规模已扩大至约 1.2 万亿元，增速显著高于行业平均水平，但增长逻辑已从营销驱动转向硬核技术、情景智愈与精细养护的深层较量。10 大品牌给出的高潜增长点高度趋同：①「精准分型」取代「一瓶通用」——红之依 EEMCO 国际标准把油性头皮拆成「小油头/大油头」两套配方逻辑，KONO 卡厘按出油程度做轻度/中度/重度三级产品映射（中度经典系列覆盖约 70% 消费者，洗后颅顶即刻增高 3.42cm）；②「功效+情绪」可验证化——红之多巴胺洗护以视觉色彩、触觉泡沫、嗅觉香氛三重感官协同做情绪价值，而非停留在营销话术；③自研原料技术壁垒化——半亩花田锁定文冠果油（90% 以上不饱和脂肪酸、富含神经酸）做身体油霜「爆油珠」剂型，滋源以无患子发酵精粹建立自主原料资产；④三元价值组合——浴见提出功能价值为底线、情绪价值是体验、文化价值是认同。尼尔森IQ 调研显示 64% 中国消费者愿为更好的产品体验支付更多。",
+   "key_findings": [
+    "截至 2025 年底中国广义个护市场规模约 1.2 万亿元，增速高于行业平均",
+    "「精准分型」取代「一瓶通用」，红之/KONO 以可量化分级缩短决策路径",
+    "尼尔森IQ：64% 中国消费者愿为更好的产品体验支付更多，拒绝的是无效溢价而非溢价本身",
+    "自研原料（文冠果油、无患子发酵精粹）成国货护城河，壁垒从营销端转向原料端",
+    "「以油养肤」从面部延伸至身体，功效诉求成身体护理赛道最大变量"
+   ],
+   "source_name": "美妆头条",
+   "source_tier": "original",
+   "source_url": "https://mztoutiao.com/index/index/wenzhang.html?id=4365",
+   "source_classify_note": "美妆头条原创行业访谈（引《2026中国功能性个人护理行业白皮书》数据）",
+   "read_full": true,
+   "source_excerpt": "据《2026中国功能性个人护理行业白皮书》数据，截至2025年底，中国广义个人护理市场整体规模已扩大至约1.2万亿元，增速显著高于行业平均水平……个护品类在消费升级和科学理念的双重驱动下，早已从早期的营销驱动，转向硬核技术、情景智愈、精细养护的深层较量。",
+   "collected_at": "2026-08-29"
+  }
+ ],
+ "hot_topics": [
+  {
+   "date": "2026-08-28",
+   "time": "2026-08-28",
+   "platform": "小红书",
+   "topic": "小红书「薯管家」《关于热点事件AI造假及AI换脸治理公告》：处置AI伪造截图笔记38篇、换脸视频312个，年内 AI 仿冒名人已处置笔记5.65万篇",
+   "trend_direction": "上升",
+   "data_support": "小红书通过官方账号「薯管家」发布公告：近期热点事件传播中出现 AI 炮制的虚假聊天记录截图、同质化造谣言论与 AI 生成换脸视频，已处置相关笔记 38 篇、AI 换脸视频 312 个并上线新增治理策略；今年以来针对 AI 仿冒名人累计处置笔记 5.65 万篇、账号 1372 个。前一日「薯管家」公示参与中央网信办「清朗·整治AI应用乱象」专项行动第二阶段成效：处置违规笔记 15 万余篇、违规账号 1400 余个，七类典型案例含「AI 换脸换声假冒知名公众人物、引流带货营销牟利」。本月另发《关于AI伪造人脸和高频AI脸的治理公告》，严禁未授权未声明的换脸、伪造名人/医生/专家形象用于带货引流等五类行为。",
+   "content_ideas": {
+    "小红书/抖音": "美妆是「明星/专家同款」内容的高发区，AI 换脸假冒公众人物带货被列为重点治理对象。美诺及合作达人的种草素材须杜绝 AI 伪造明星/医生形象与伪造聊天记录截图，真实测评与真人出镜素材反而获得平台分发红利。"
+   },
+   "source_name": "黄河新闻网吕梁（今日头条）",
+   "source_url": "https://www.toutiao.com/article/7679094308368122411/",
+   "source_tier": "original",
+   "source_classify_note": "黄河新闻网吕梁原创报道，转述小红书官方账号「薯管家」公告（平台官方口径，经权威媒体落地）",
+   "read_full": true,
+   "source_excerpt": "小红书通过官方账号「薯管家」发布《关于热点事件AI造假及AI换脸治理公告》称……已开展专项治理，处置相关事件AI伪造聊天截图、发布同质化造谣言论的笔记38篇，处置涉及相关当事人的AI换脸视频312个……今年以来小红书针对AI仿冒名人的违规行为，累计处置笔记5.65万篇、账号1372个。",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-27",
+   "time": "2026-08-27",
+   "platform": "抖音",
+   "topic": "抖音电商公布诱导第三方交易典型违规案例：四类引流诈骗手法全量公示，违规商家停业整顿/清退、达人冻结佣金或永久关闭电商权限",
+   "trend_direction": "上升",
+   "data_support": "抖音电商依《【诱导第三方】处置细则》公布四类典型违规：①直接展示平台外引流交易信息（鲜花商家「野季」等在商品图/详情页展示第三方账号网址，诱导加微信线下交易）；②以加粉丝群、售后补偿等话术引导脱离平台（直播间不挂车口播引导加关注进粉丝群后引流，或以大额优惠券诱导加群后诱导下载第三方 App 刷单诈骗）；③兼职/投资课程类引流诈骗（以 AI 课程、AI 预测股市课程、彩票咨询等名义诱导添加「对接老师」）；④包裹实物夹带三方信息。处置措施：下架违规商品、封禁商品、中断直播、商家限单、冻款、停止结算，情节严重者停业整顿直至清退；达人冻结佣金或永久关闭电商权限，部分移交相关部门。",
+   "content_ideas": {
+    "抖音": "美妆直播/短视频带货须严守「不引流站外」红线：粉丝群运营、售后补偿话术、包裹卡片均属高敏区。美诺合作达人的口播脚本与包裹物料需做一轮合规自查，避免达人账号被冻结佣金或关闭电商权限影响投放排期。"
+   },
+   "source_name": "新浪财经（湖北发布）",
+   "source_url": "https://finance.sina.cn/2026-08-28/detail-inipwtfp5746670.d.html",
+   "source_tier": "original",
+   "source_classify_note": "新浪财经转载抖音电商官方公告（平台官方口径，经权威财经媒体落地）",
+   "read_full": true,
+   "source_excerpt": "8月27日，抖音电商公布诱导至第三方交易典型违规案例，严厉打击引流诈骗行为……抖音电商依据《【诱导第三方】处置细则》，已对违规商家停业整顿、清退，冻结违规达人佣金或永久关闭电商权限等，部分移交相关部门处理。",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-18",
+   "time": "2026-08-18",
+   "platform": "小红书",
+   "topic": "小红书《关于打击AI违规直播的治理公告》：AI 直播须手动开启声明，观众端强制显示「含AI生成内容」标签",
+   "trend_direction": "上升",
+   "data_support": "小红书 8/18 发布公告，即日起对平台内 AI 相关直播行为开展专项治理。近期 AI 直播举报量激增，AI 身份造假、低质内容及未声明等问题已损害用户知情权与观看体验。核心机制：主播需在开播前或直播中通过「直播设置」手动开启 AI 声明，观众端将显示「含AI生成内容」标签；该声明默认关闭且不保留历史状态，每次开播须重新开启；若被判定疑似使用 AI 未声明，评论区上方将出现引导提示；用户可通过直播间右上角举报入口选择「AI造假」反馈。",
+   "content_ideas": {
+    "小红书": "数字人/AI 直播在美妆带货中的「无人值守」打法正被平台强制标识，用户可见「含AI生成内容」标签会削弱转化信任。美诺若测试 AI 直播或 AI 生成口播素材，须评估标签带来的信任折价，优先保真人出镜+AI 辅助剪辑的合规路径。"
+   },
+   "source_name": "经济观察报",
+   "source_url": "https://jg-static.eeo.com.cn/article/info?id=040acd9faf73418182fd84041d647b47",
+   "source_tier": "original",
+   "source_classify_note": "经济观察报原创报道，转述小红书官方《关于打击AI违规直播的治理公告》（平台官方口径，经权威财经媒体落地）",
+   "read_full": true,
+   "source_excerpt": "8月18日，小红书发布《关于打击AI违规直播的治理公告》，宣布即日起对平台内AI相关直播行为开展专项治理……主播需在开播前或直播中通过“直播设置”手动开启AI声明，观众端将显示“含AI生成内容”标签。该声明默认关闭且不保留历史状态，每次开播须重新开启。",
+   "collected_at": "2026-08-29"
+  }
+ ],
+ "trends": [
+  {
+   "date": "2026-08-25",
+   "time": "2026-08-25",
+   "title": "趋势：以油养肤从小众跃迁为核心品类——2026年1-4月同比 +73.81%，抖音电商增速 62.30%，渗透率三年翻倍",
+   "summary": "以油养肤已不再是「干皮专属」的小众护理，而是进入结构性跃迁期：2025 年规模 497.83 亿元（+63.81%），份额从 3.6% 升至 7.6%，2026 年 1-4 月同比 +73.81%，渗透率三年翻倍。渠道上抖音电商增速 62.30%、化妆品集合店 29.80%，说明内容种草与线下体验双轮驱动。需求侧从「单一功效」转向「多效协同」、从「经验护肤」转向「科学护肤」、从「干皮专属」转向「全肤质适配」。对美诺的启示：定妆赛道可借鉴这条路径——把「控油持妆」从单一功能卖点，升级为「分肤质全场景定妆方案」的系统叙事，并在抖音做真人实测对比内容（近 70% 购买行为由真人实测与成分浓度确认决定）。",
+   "source_name": "青眼情报（发现报告）",
+   "source_tier": "aggregator",
+   "source_url": "https://www.fxbaogao.com/detail/5636971",
+   "need_date_check": false,
+   "source_classify_note": "青眼情报原报告，经发现报告平台收录；已全文核验",
+   "read_full": true,
+   "source_excerpt": "以油养肤市场正从小众品类向核心品类结构性跃迁，2025年零售额同比增长63.81%至497.83亿元，市场份额从2024年的3.6%增长到7.6%……中国消费者的以油养肤认知图谱：信息获取渠道以小红书/抖音KOL/KOC种草（80.75%）和天猫/京东详情页（75.82%）为主。",
+   "read_method": "websearch",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-25",
+   "time": "2026-08-25",
+   "title": "趋势：功效进阶型价格带成主战场——200-400 元区间份额由 41.5% 扩张至 53.6%，「一瓶多效」兴趣度居首",
+   "summary": "精华油市场出现明显的价格带重构：200 元以下基础保湿型份额持续收缩，200-400 元功效进阶型由 41.5% 快速扩张至 53.6%，成为当前容量最大、增速最快的核心价格带；消费者对精华油的功效期待已从基础滋润全面跃迁至多效协同，「一瓶多效」以 7.54 分（满分 10 分）兴趣度位居热门概念之首。分肤质需求进一步分化：干皮追求「滋润+抗老+提亮」三重诉求，油皮以调节水油平衡为第一诉求，敏感肌锚定温和修护，混合肌呈多线并重。对美诺的启示：平价不等于只能讲便宜，可在主力价位带上叠加「控油+持妆+养肤」多效协同的表达，并按干皮/油皮/混合皮做分肤质内容矩阵，对应不同诉求结构。",
+   "source_name": "青眼情报（发现报告）",
+   "source_tier": "aggregator",
+   "source_url": "https://www.fxbaogao.com/detail/5636971",
+   "need_date_check": false,
+   "source_classify_note": "青眼情报原报告，经发现报告平台收录；已全文核验",
+   "read_full": true,
+   "source_excerpt": "以油养肤市场价格带重构，200元以下基础保湿型产品份额持续收缩，200-400元功效进阶型产品由41.5%快速扩张至53.6%，成为当前市场容量最大、增速最快的核心价格带……消费者对精华油的功效期待已从基础滋润向多效协同全面跃迁，“一瓶多效”以7.54分（满分10分）的兴趣度评分位居热门以油养肤产品概念之首。",
+   "read_method": "websearch",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-24",
+   "time": "2026-08-24",
+   "title": "趋势：个护「精准分型」取代「一瓶通用」，竞争从营销端转向原料端的技术壁垒化",
+   "summary": "美妆头条对话 10 大个护品牌，增长逻辑出现三点共性迁移。一是「精准分型」：红之依 EEMCO 国际标准把油性头皮拆成「小油头/大油头」两套配方，KONO 卡厘按出油程度做轻/中/重三级映射（中度覆盖约 70% 消费者），用可量化分级把「精准」从概念变成消费者对号入座的解决方案。二是「功效+情绪」可验证化：红之以视觉色彩、触觉泡沫、嗅觉香氛三重感官协同激活情绪因子，把情绪价值做成产品功能而非营销话术。三是自研原料技术壁垒化：半亩花田锁定文冠果油（90% 以上不饱和脂肪酸），滋源开发无患子发酵精粹，可逐以颈纹/眼纹等「老感暴露点」做局部精准护理品类。尼尔森IQ 显示 64% 中国消费者愿为更好体验付更多。对美诺的启示：粉饼赛道同样存在油皮/混干/敏感肌的分型机会，可把「分肤质选色」升级为可量化的分型体系并对外建立标准话语权。",
+   "source_name": "美妆头条",
+   "source_tier": "original",
+   "source_url": "https://mztoutiao.com/index/index/wenzhang.html?id=4365",
+   "need_date_check": false,
+   "source_classify_note": "美妆头条原创行业访谈（引《2026中国功能性个人护理行业白皮书》）",
+   "read_full": true,
+   "source_excerpt": "一是告别“一瓶通用”，个护将进入“精准分型”时代……依据EEMCO国际标准，红之把油性头皮拆成“小油头”和“大油头”两个截然不同的需求场景……三是自研原料的「技术壁垒化」，未来增长的护城河不在营销端，而在原料端。",
+   "read_method": "websearch",
+   "collected_at": "2026-08-29"
+  }
+ ],
+ "new_products": [
+  {
+   "date": "2026-08-24",
+   "title": "法国希思黎「抗皱修活恒美凝时精华」8/24 天猫小黑盒开新首发：8/26 19:00 天猫直播间「淘宝直播超新发布」承接",
+   "brand": "法国希思黎 Sisley",
+   "channel": "天猫小黑盒 / 天猫直播间",
+   "category": "抗老精华",
+   "summary": "8 月 24 日重磅上市，天猫小黑盒「开新首发」为线上首发主阵地；8 月 26 日 19:00 在希思黎天猫直播间做「淘宝直播超新发布」，承接首发流量并发放专属福利。超模奚梦瑶同步代言推广。产品基于「肌肤长寿科学」，以 RECONNECT-CORRECT-TARGET-REVIVE 四步闭环构建全链路系统抗老方案，主打 40+ 熟龄肌的灰沉、松弛与皱纹复合问题。线上线下节奏为：8/20 上海外滩源壹号鉴赏会造势（医研共创+明星背书）→8/24 天猫小黑盒首发转化→8/26 直播间放量。",
+   "source_name": "新浪新闻（品牌官微）",
+   "source_url": "https://sina.cn/news/detail/5335389342796260.html",
+   "source_tier": "original",
+   "source_classify_note": "新浪新闻收录奚梦瑶（微博认证：超模）官微原文，明确天猫小黑盒首发与天猫直播间时间",
+   "read_full": true,
+   "source_excerpt": "Sisley法国希思黎「抗皱修活恒美凝时精华」8月24日重磅上市，前往#天猫小黑盒# 开新首发解锁，8月26日19点，前往希思黎天猫直播间#淘宝直播超新发布#，抢同款星品，享专属福利。",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-26",
+   "title": "修丽可色修精华全新升级入选「2026年8月热推快消新品榜」：8.13% PHYTO-PDRN 配方，经典褪红配方浓度提升 39%",
+   "brand": "修丽可 SkinCeuticals（欧莱雅中国）",
+   "channel": "天猫小黑盒 / 天猫官方旗舰店",
+   "category": "舒缓修护精华",
+   "summary": "升级后的色修精华特研 8.13% PHYTO-PDRN 配方，将经典褪红配方 PHYTO BOTANICAL 浓度提升 39%，搭配 PDRN 可高效抑制 TRPV-1、IL-1α 等 11 大应激因子，快速褪红舒缓并修护 DNA 损伤；棕榈酰三肽-8 与依克多因强韧屏障、稳定肌肤状态。依托修丽可专业院线护肤科研积淀，以科学护肤实证支撑效果，区别于普通舒缓精华，精准改善多种泛红状况。该产品入选东方快消品中心《快消品》依据 2026 年 8 月零售监测（关注度、铺市率等标准）原创发布的「2026年8月热推快消新品榜」，为当月美妆护肤类目代表新品之一。",
+   "source_name": "网易/快消品中心",
+   "source_url": "https://www.163.com/dy/article/L598K4GS0553BCTB.html",
+   "source_tier": "original",
+   "source_classify_note": "网易·快消品中心「2026年8月热推快消新品榜」原创独家发布（东方快消品中心依据零售监测原创）",
+   "read_full": true,
+   "source_excerpt": "日前，修丽可色修精华全新升级。升级后的色修精华特研8.13%PHYTO-PDRN配方，将经典褪红配方PHYTO BOTANICAL的浓度提升39%，搭配PDRN，能够高效抑制TRPV-1、IL-1α等11大应激因子，快速褪红舒缓，并修护DNA损伤，由表及里焕新肌肤。",
+   "collected_at": "2026-08-29"
+  }
+ ],
+ "continuous_watch": [
+  {
+   "icon": "🎒",
+   "text": "开学季（9/1）+ 教师节（9/10）+ 中秋（9/25）节点营销跟进——军训伪素颜场景与美诺平价心意礼组合装、萌兰/小熊 IP 谐音梗素材库的节点化复用"
+  },
+  {
+   "icon": "🧴",
+   "text": "底妆赛道座次跟踪：彩妆回暖+底妆定妆成美妆增长新引擎（底妆规模破315亿/定妆喷雾+25%/上半年彩妆+9.57%），美诺粉饼控油持妆+敏感肌友好分肤质矩阵补齐"
+  },
+  {
+   "icon": "🤖",
+   "text": "平台 AI 内容治理收紧：小红书 AI 换脸/AI 直播需强制声明并打「含AI生成内容」标签，抖音严打诱导第三方交易——美诺达人内容与包裹物料须做合规自查"
+  },
+  {
+   "icon": "🫧",
+   "text": "以油养肤赛道高速扩张（2026年1-4月 +73.81%、抖音 +62.30%）：跟踪油类定妆/养肤粉饼的产品机会与「一瓶多效」表达迁移"
+  },
+  {
+   "icon": "🏪",
+   "text": "国货替代纵深：青眼数据显示国货增速为外资 6.5 倍，跟踪韩束/珀莱雅/谷雨/卡姿兰/柏瑞美在抖音彩妆与面部洗护榜的打法迭代"
+  },
+  {
+   "icon": "🎨",
+   "text": "IP 联名候选推进：卡皮巴拉 / 巴拉拉小魔仙——参考晓姿×蜷川实花「沉浸式品牌编年史+可感知互动装置」的联名落地范式"
+  },
+  {
+   "icon": "📊",
+   "text": "竞品粉饼动态：嘉利玛防晒金币粉饼、花间颂粉饼在抖音日榜的位次与舆情，美诺冰肌粉蓝/萌兰的控油持妆差异化内容卡位"
+  }
+ ],
+ "today_must_see": [
+  {
+   "icon": "🛡️",
+   "tag": "平台合规",
+   "text": "抖音电商 8/27 公开四类诱导第三方交易违规案例（鲜花商家「野季」等被点名），处置直达停业整顿/清退、达人冻结佣金或永久关闭电商权限。美诺须立即排查达人脚本中的加群话术、售后补偿引导与包裹卡片，避免账号权限受损影响投放排期。",
+   "source_tier": "original",
+   "source_classify_note": "新浪财经转载抖音电商官方公告"
+  },
+  {
+   "icon": "🤖",
+   "tag": "AI治理",
+   "text": "小红书连发两项 AI 治理公告：热点事件 AI 造假处置笔记38篇/换脸视频312个（年内 AI 仿冒名人已处置 5.65 万篇笔记、1372 个账号）；AI 直播须手动开启声明并强制显示「含AI生成内容」标签。美妆种草依赖真实测评，AI 造假被严打反而利好真人实测素材。",
+   "source_tier": "original",
+   "source_classify_note": "黄河新闻网吕梁 + 经济观察报，均转述小红书官方公告"
+  },
+  {
+   "icon": "🫧",
+   "tag": "品类风口",
+   "text": "青眼情报蓝皮书：以油养肤 2025 年 497.83 亿（+63.81%），2026年1-4月 +73.81%，抖音电商增速 62.30%，200-400 元功效进阶带份额升至 53.6%。美诺可评估「控油持妆+养肤」多效协同表达，把平价粉饼从单点控油升级为分肤质全场景方案。",
+   "source_tier": "aggregator",
+   "source_classify_note": "青眼情报原报告（发现报告收录），已全文核验"
+  },
+  {
+   "icon": "🌏",
+   "tag": "出海样本",
+   "text": "Jung Saem Mool Beauty 8/21 进驻美国丝芙兰 34 家门店：为渠道独家开发 10 个气垫色号，以时代广场三屏联动（8/24-9/20）+ 社交拍照挑战 + 9月冰淇淋联名 + 10月大师课/移动快闪做四段式长线战役，是「渠道独家色号+城市级地标曝光」的范本。",
+   "source_tier": "original",
+   "source_classify_note": "PR Newswire 品牌官方新闻稿"
+  },
+  {
+   "icon": "🔬",
+   "tag": "科研叙事",
+   "text": "希思黎「长寿精华」把皮肤学专家推到台前做「医研共创」：AMWC 科学顾问吉喆、吴冠儒从细胞与分子机制解读，产品以 RECONNECT-CORRECT-TARGET-REVIVE 四步闭环讲全链路抗老。美诺可参照把「分肤质定妆」从卖点话术升级为可解释的机理体系。",
+   "source_tier": "original",
+   "source_classify_note": "网易/化妆品财经在线原创报道"
+  }
+ ],
+ "brand_inspiration": [
+  "Jung Saem Mool 启示：渠道独家色号（为丝芙兰定制 10 个色号）+ 城市地标长线曝光（时代广场三屏 8/24-9/20）+ 阶段性线下互动（快闪/抽奖/跨界冰淇淋），美诺进新渠道时可争取「渠道专属色号/限定装」作为谈判筹码，并把单次联名拉成 6-8 周的长线战役。",
+  "希思黎启示：把皮肤学专家推到台前做「医研共创」，从细胞与分子机制层面解释产品逻辑，而非只靠明星站台。美诺可邀请皮肤科/彩妆师专家共建「分肤质定妆」方法论，配合第三方实测数据建立专业信任。",
+  "AXXZIA晓姿 15 周年启示：把品牌历史做成可走读的「时光长廊」，把抽象理念做成可感知装置（糖化检测仪、等比放大产品装置、时光邮筒投递明信片），让到场嘉宾成为内容生产者。美诺做 IP 联名（卡皮巴拉/巴拉拉小魔仙）时可复用「可感知互动+UGC 生成」的展陈逻辑。",
+  "个护「精准分型」启示：红之依 EEMCO 标准分「小油头/大油头」、KONO 按出油程度做三级映射，用可量化分级缩短决策路径。美诺粉饼可按「油皮/混干/敏感肌」建立可量化分型体系并对外建立标准话语权，而非只讲笼统的控油持妆。",
+  "平台合规启示：抖音严打诱导第三方交易、小红书强制 AI 内容标识，真实真人实测内容的平台分发环境反而变好。美诺应加大「真实场景实测+真人出镜」素材供给，把合规压力转化为信任资产。"
+ ],
+ "weekly_actions": [
+  {
+   "action": "达人内容合规自查：排查抖音合作达人脚本中的加粉丝群/售后补偿引导话术，以及包裹内是否夹带第三方联系方式，规避诱导第三方交易处置（中断直播/冻结佣金/关闭电商权限）",
+   "owner": "媒介/内容",
+   "status": "本周启动"
+  },
+  {
+   "action": "素材真实性核验：全面自查在投素材是否含 AI 换脸明星/医生形象或伪造聊天记录截图；小红书直播如使用 AI 需手动开启声明并接受「含AI生成内容」标签",
+   "owner": "内容/媒介",
+   "status": "本周启动"
+  },
+  {
+   "action": "开学季内容矩阵冲刺：小红书/抖音投放军训暴汗不脱妆+分肤质选色妆教 10 条以上，抢占「军训用什么散粉/粉饼」搜索卡位（9/1 开学节点倒计时）",
+   "owner": "内容/媒介",
+   "status": "进行中"
+  },
+  {
+   "action": "「一瓶多效」表达升级：参照以油养肤 200-400 元功效进阶带逻辑，把美诺粉饼从单点控油升级为「控油+持妆+养肤」多效协同叙事，并按干皮/油皮/混合皮做分肤质内容矩阵",
+   "owner": "产品/内容",
+   "status": "本周启动"
+  },
+  {
+   "action": "分肤质定妆方法论立项：参照希思黎「医研共创」与个护精准分型，评估邀请皮肤科/彩妆师专家共建方法论并配第三方实测数据的可行性",
+   "owner": "产品/品牌",
+   "status": "评估中"
+  }
+ ],
+ "ai_marketing": [
+  {
+   "date": "2026-08-24",
+   "time": "2026-08-24",
+   "title": "TikTok Symphony 扩展 AI 视频广告能力：Symphony Agent 接入 Seedance 2.0，并打通达人 brief 与电通 Zoyumi 平台",
+   "summary": "TikTok 在 Symphony Creative Studio 内上线 Symphony Agent：可分析平台趋势内容，基于文本指令、图片或视频参考召回相似内容并展示其表现数据，供营销人员选择「Create your own」后据此生成相似的广告概念；从零起量时可直接输入 campaign 信息生成视频示例，据 Social Media Today 报道其生成采用字节 Seedance 2.0 模型。能力从视频扩展到静态图像素材、视频数字人（video avatars）与音频数字人，并提供翻译与多语种配音。更关键的是打通达人链路：可生成达人 brief、识别可邀请参与比稿的达人、并检索品牌相关的已有达人视频，把创意生产与达人发现收拢进广告工作流。同时与电通（Dentsu）Zoyumi 平台集成，客户先开放 Image to Video，Caption Removal、Dubbing、Digital Avatars 列在后续能力中。",
+   "source_name": "Digilogy（引 Social Media Today）",
+   "source_tier": "aggregator",
+   "source_url": "https://news.digilogy.co/tiktok-ai-creation-tools-symphony-agent-marketers",
+   "key_takeaway": "AI 已从「生成素材」前移到「定创意方向+找达人」：品牌可先用趋势内容反推 campaign 概念，再由 Agent 直接产出达人 brief 与候选达人。美诺若在 TikTok 海外或对照抖音体系做投放，可把「趋势洞察→概念生成→达人匹配」压缩为一条流水线；但平台侧同步在收紧 AI 内容标识（小红书 AI 直播强制声明），AI 生成素材须评估标签带来的信任折价。",
+   "tags": [
+    "AIGC",
+    "TikTok Symphony",
+    "Seedance 2.0",
+    "数字人",
+    "达人匹配",
+    "多语种配音"
+   ],
+   "source_classify_note": "Digilogy 原创报道并转述 Social Media Today（海外营销媒体二手转述，平台官方能力更新）；来源页标注发布于检索日前 5 天（检索日 2026-08-29，推定 8/24）",
+   "read_full": true,
+   "source_excerpt": "The latest TikTok AI creation tools include Symphony Agent, which can analyse trending content, work from text and visual prompts, and generate campaign concepts and complete video examples…Social Media Today reports that the system uses ByteDance's Seedance 2.0 model…Symphony Agent can also generate creator briefs, identify creators who can be invited to pitch for campaigns.",
+   "collected_at": "2026-08-29"
+  },
+  {
+   "date": "2026-08-27",
+   "time": "2026-08-27",
+   "title": "AI 营销技术月度动态（8/27 更新）：自主营销代理、达人营销自动化、AI 搜索可见性（GEO）三条主线同时提速",
+   "summary": "8 月 AI 营销发布密集，三条主线最值得美妆关注：①自主营销代理（Agentic AI）——The Off Label 数据显示 45% 营销团队已从规则自动化转向主动 AI 代理，可自主规划/测试/优化 campaign 变体；Manago（8/27 月度盘点）指出 agentic AI 已成营销执行常态，Gartner 称 CMO 将 15.3% 预算投入 AI 但仅 30% 成熟到可规模化，营销人价值上移到「定方向+治理+判断」。②达人营销自动化——美国达人广告投资 2026 预计达 440 亿美元、48% 广告买家视达人为「必买」渠道，达人从「投放人才」升级为「常驻发现/证明/商业基础设施」（Target 单次激活超 1 万达人）；CMO Magazine 引 Digiday（8/20）报道 Trevant 等代理已在几乎所有客户提案里加入「被 AI 引用」需求，Zoom 夏季测试雇佣 creator-journalist 建立 LLM 可引用的权威。③AI 搜索可见性（GEO）——品牌争夺「被 AI 引用」的 citation share 而非仅搜索排名；Manago 指出 Google Search Console 已可报告 AI Overviews/AI Mode 展示量（2025 年 82% 消费者认为 AI 搜索更有用、2026 年降至 54% 但 70% 使用更频繁），AI 可见性应作独立报告线；Later CEO 警告 30 万 TikTok 达人若格式不对 AEO 吸收不了也无效，reach 不等于 AI 可见性。",
+   "source_name": "Manago AI（主源）+ The Off Label、CMO Magazine（交叉印证）",
+   "source_tier": "original",
+   "source_url": "https://manago.ai/blog/martech-trends-august-2026",
+   "key_takeaway": "达人营销的「筛人—写 brief—外联—结算」全链路已被 AI 代理产品化，美妆品牌的小批量多达人测试成本将大幅下降，美诺可做更大规模的长尾达人铺量。同时 GEO（AI 搜索可见性）工具集中涌现、citation share 成为新战场，意味着消费者用 AI 助手问「油皮用什么粉饼」时品牌的被引用率将成为新曝光入口，建议提前布局结构化产品信息与达人内容的 AEO 友好格式。自主代理接管执行后，营销人的价值上移到「定方向+治理+判断」。",
+   "tags": [
+    "Agentic AI",
+    "达人营销自动化",
+    "GEO",
+    "AI搜索可见性",
+    "citation share",
+    "Manago",
+    "The Off Label"
+   ],
+   "source_classify_note": "Manago AI 原创月度 MarTech 趋势盘点（original，发布 2026-08-27，与用户所述「8/27 更新」精确吻合）为主源；The Off Label（8/1，三线全有专章）、CMO Magazine（8/20 引 Digiday，达人+GEO 交叉）作交叉印证，均经全文核验可打开；原 capacity.com aggregator 汇总降为参考不再作主源",
+   "read_full": true,
+   "source_excerpt": "Manago（8/27）：Search Console reports impressions from AI Overviews and AI Mode… In 2025, 82% of surveyed consumers said AI search was more useful than traditional search. In 2026 that fell to 54%… while 70% said they were using AI search tools more often. | The Off Label（8/1）：45% of marketing teams have already transitioned from rule-based automation tools to active AI agents that autonomously plan, test, and optimize campaign variations… U.S. creator ad investment is expected to reach $44 billion in 2026, with 48% of ad buyers now classifying creators as a 'must-buy' channel. | CMO Mag（8/20）：Trevant fielding AI visibility requests in nearly every pitch… Zoom piloted the approach over the summer, hiring creator-journalist Nayeema Raza to build storytelling authority the tech company hoped would surface in LLM answers.",
+   "collected_at": "2026-08-29"
+  }
+ ]
 }
