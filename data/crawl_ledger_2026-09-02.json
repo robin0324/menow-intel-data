@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-02",
+  "generated_at": "2026-09-02 10:18",
+  "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
+  "platforms": [
+    {
+      "platform": "小红书",
+      "status": "missing",
+      "keywords": [],
+      "time_window": "(未知)",
+      "list_total": null,
+      "candidates": null,
+      "excluded": null,
+      "excluded_by_reason": {},
+      "dedup_dup": null,
+      "collected": null,
+      "positive": null,
+      "negative": null,
+      "neutral": null,
+      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+    },
+    {
+      "platform": "抖音",
+      "status": "missing",
+      "keywords": [],
+      "time_window": "(未知)",
+      "list_total": null,
+      "candidates": null,
+      "excluded": null,
+      "excluded_by_reason": {},
+      "dedup_dup": null,
+      "collected": null,
+      "positive": null,
+      "negative": null,
+      "neutral": null,
+      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+    },
+    {
+      "platform": "微博",
+      "status": "missing",
+      "keywords": [],
+      "time_window": "(未知)",
+      "list_total": null,
+      "candidates": null,
+      "excluded": null,
+      "excluded_by_reason": {},
+      "dedup_dup": null,
+      "collected": null,
+      "positive": null,
+      "negative": null,
+      "neutral": null,
+      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+    }
+  ]
+}
