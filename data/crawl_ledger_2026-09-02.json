@@ -1,55 +1,90 @@
 {
   "date": "2026-09-02",
-  "generated_at": "2026-09-02 10:18",
+  "generated_at": "2026-09-02 11:32",
   "note": "本文件为采集过程对账数据，不进入看板。用于人工核对执行完整性与数据全量/准确性。",
   "platforms": [
     {
       "platform": "小红书",
-      "status": "missing",
-      "keywords": [],
-      "time_window": "(未知)",
-      "list_total": null,
-      "candidates": null,
-      "excluded": null,
-      "excluded_by_reason": {},
-      "dedup_dup": null,
-      "collected": null,
-      "positive": null,
-      "negative": null,
-      "neutral": null,
-      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺有色面霜",
+        "美诺喷雾"
+      ],
+      "time_window": "一天内（搜索页服务端筛选 + 本地近24h硬过滤，零详情页跳转）",
+      "list_total": 58,
+      "candidates": 10,
+      "excluded": 48,
+      "excluded_by_reason": {
+        "账号黑名单:美诺Meno": 3,
+        "睫毛": 3,
+        "竞品关联推荐:pl": 1,
+        "无美诺品牌信号(标题+正文)": 31,
+        "竞品关联推荐:诗佩妮": 4,
+        "竞品关联推荐:郁美净": 1,
+        "竞品关联推荐:柏瑞美": 2,
+        "居家": 1,
+        "洗碗机": 1,
+        "吸尘器": 1
+      },
+      "need_detail": 0,
+      "detail_ok": 0,
+      "detail_blocked": 0,
+      "detail_excluded": 0,
+      "dedup_dup": 0,
+      "collected": 10,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 10,
+      "fetched_at": "2026-09-02 11:14"
     },
     {
       "platform": "抖音",
-      "status": "missing",
-      "keywords": [],
-      "time_window": "(未知)",
-      "list_total": null,
-      "candidates": null,
+      "status": "ok",
+      "keywords": [
+        "美诺"
+      ],
+      "time_window": "一周内（视频 tab）",
+      "list_total": 0,
+      "candidates": 0,
       "excluded": null,
       "excluded_by_reason": {},
-      "dedup_dup": null,
-      "collected": null,
-      "positive": null,
-      "negative": null,
-      "neutral": null,
-      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 0,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0,
+      "fetched_at": null
     },
     {
       "platform": "微博",
-      "status": "missing",
-      "keywords": [],
-      "time_window": "(未知)",
-      "list_total": null,
-      "candidates": null,
+      "status": "ok",
+      "keywords": [
+        "美诺粉饼",
+        "美诺冰肌粉蓝",
+        "美诺定妆"
+      ],
+      "time_window": "近1天",
+      "list_total": 2,
+      "candidates": 1,
       "excluded": null,
-      "excluded_by_reason": {},
-      "dedup_dup": null,
-      "collected": null,
-      "positive": null,
-      "negative": null,
-      "neutral": null,
-      "note": "当日该平台 json 未生成（可能超时/墙/后台回收未落盘）"
+      "excluded_by_reason": {
+        "官方账号": 1
+      },
+      "need_detail": null,
+      "detail_ok": null,
+      "detail_blocked": null,
+      "detail_excluded": null,
+      "dedup_dup": 0,
+      "collected": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "fetched_at": null
     }
   ]
 }
