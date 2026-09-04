@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-03",
+  "created_at": "2026-09-03T10:21:13.644380",
+  "session": "qoog",
+  "blocked_platforms": [
+    {
+      "platform": "小红书",
+      "script": "sentiment_login_crawl_xhs.py",
+      "reason": "timeout_suspect_wall",
+      "limit": 20,
+      "full_mode": false
+    }
+  ],
+  "completed_platforms": [
+    "微博"
+  ],
+  "status": "pending"
+}
