@@ -144,7 +144,548 @@
       "source_excerpt": "2026年度核心趋势'感官协奏'让彩妆从功能转向情绪价值竞争：糖果果冻Q弹质地、果蔬甜点清新色泽、烘焙甜品治愈香气渗透全品类。Rhode巧克力唇釉、3CE烘焙限定、橘朵迷你系列、Pinkbear日光果园系列、番茄红（K-Beauty最火热搜词）走热。食物自带治愈与享受击中年轻人'奖励/悦己'心理，天然适配视觉美学更易分享种草。"
     }
   ],
-  "new_products": [],
+  "new_products": [
+    {
+      "brand": "嘉利玛",
+      "product": "【小井专属】嘉利玛金币粉饼9g替换装版柔焦定妆控油遮瑕补妆不卡",
+      "category": "粉饼",
+      "spec": "9g",
+      "launch_date": "2026-09-03",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "2,956",
+        "销量": "0~250",
+        "转化率": "5%~10%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "持妆在线",
+      "effects": "控油 / 柔焦定妆 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840612571405221937&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【小井专属】嘉利玛轻透柔雾粉底乳遮瑕保湿持久持妆不卡粉美妆好物",
+      "category": "膏",
+      "spec": "",
+      "launch_date": "2026-09-05",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "0~250",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "不假面 / 伪素颜 / 原生肌",
+      "effects": "保湿 / 不卡粉 / 不暗沉",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840790176943178131&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【夫夫专属】嘉利玛金币粉饼9g替换装版柔焦定妆控油遮瑕补妆不卡",
+      "category": "粉饼",
+      "spec": "9g",
+      "launch_date": "2026-09-06",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "412",
+        "销量": "0~250",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "哑光 / 原盒换新 / 按压卡扣",
+      "effects": "控油 / 不卡粉 / 定妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840619830042558944&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "嘉利玛小千金妆前精华喷雾妆前打底保湿补水持久贴妆",
+      "category": "爽肤水",
+      "spec": "70ml",
+      "launch_date": "2026-09-05",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "持久 / 水润",
+      "effects": "补水保湿 / 贴妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840793400374854101&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【夫夫专属】嘉利玛金币粉饼9g替换装版柔焦定妆控油遮瑕补妆不卡",
+      "category": "粉饼",
+      "spec": "9g",
+      "launch_date": "2026-09-03",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "不卡粉 / 柔焦 / 补妆",
+      "effects": "控油 / 定妆 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840620901636899074&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【小井专属】嘉利玛便携式吸油纸替换装100张面部清爽不吸水不脱妆",
+      "category": "吸油纸",
+      "spec": "",
+      "launch_date": "2026-09-05",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840619926637379903&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "适配于嘉利玛5g金币粉饼粉扑定妆粉扑学生党平价替换装植绒粉扑",
+      "category": "粉扑",
+      "spec": "",
+      "launch_date": "2026-09-08",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3838341081330745430&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【双盒装花间颂桂兔限定】花间颂新品粉饼限定粉饼定妆补妆mg",
+      "category": "粉饼",
+      "spec": "72g",
+      "launch_date": "2026-08-31",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "1w",
+        "销量": "1000~2500",
+        "转化率": "10%~15%",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "桂兔限定 / 雾面",
+      "effects": "定妆 / 补妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3839088676315464157&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "花间颂粉底液30g+经典粉饼7.2g+贴贴乳100ml遮瑕持妆修饰cyy",
+      "category": "膏",
+      "spec": "",
+      "launch_date": "2026-09-05",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "0~250",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3835404775558611107&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【两盒装】花间颂晨雾高清粉饼控油定妆散粉干皮油皮混油学生7.2g女",
+      "category": "粉饼",
+      "spec": "2g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": "83%"
+      },
+      "selling_points": "假一罚十 / 吸油不吸... / 次日达",
+      "effects": "控油 / 定妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3830035827866599874&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "花间颂水光晶透唇釉01冻柠茶",
+      "category": "唇釉",
+      "spec": "3g",
+      "launch_date": "2026-09-05",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "显色均匀 / 水光透亮 / 贴肤细腻",
+      "effects": "保湿 / 提亮",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3795704683335647431&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【戴大梨专属】花间颂套组贴贴白盖粉底液粉饼控油持妆不脱妆清透",
+      "category": "彩妆套装",
+      "spec": "20g",
+      "launch_date": "2026-09-04",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "控油 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840368179411026380&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "花间颂",
+      "product": "达人专属【明星同款】花间颂粉饼控油定妆补妆持久干油皮散粉粉饼花间颂学生",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-09-03",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "352",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "吸油不吸... / 底妆补三... / 无缝融肤",
+      "effects": "控油 / 定妆 / 补妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3832842060805832826&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "方里",
+      "product": "【店播福利】4.5g方里气垫粉底液（迷你版）",
+      "category": "气垫",
+      "spec": "5g",
+      "launch_date": "2026-09-02",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "店播福利",
+      "effects": "修饰肤色",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840246045590290485&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "方里",
+      "product": "FunnyElves方里元气精华唇釉GP01 1g",
+      "category": "唇釉",
+      "spec": "",
+      "launch_date": "2026-09-07",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840992983277240693&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【Oni熊专属】美诺萌兰大熊饼21g遮瑕控油提亮定妆粉饼",
+      "category": "粉饼",
+      "spec": "21g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "6,077",
+        "销量": "250~500",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": "91%"
+      },
+      "selling_points": "",
+      "effects": "控油 / 提亮 / 定妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840045541367087279&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "MENOW/美诺大熊柔雾粉饼21g控油提亮女持久细腻定妆控油遮瑕养肤",
+      "category": "粉饼",
+      "spec": "21g",
+      "launch_date": "2026-09-02",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "22",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "双效调肤 / 夏日限定 / 新色上线",
+      "effects": "控油 / 提亮 / 养肤",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3834485869318897763&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "美诺丝绒液体眼影*1",
+      "category": "眼影",
+      "spec": "2g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "不脱妆 / 易上色",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3839272866004730081&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【新品上市】美诺轻雾柔瑕气垫粉底霜乐乐熊持久防汗18H控油持妆",
+      "category": "气垫",
+      "spec": "13g",
+      "launch_date": "2026-09-06",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "持久持妆 / 防汗",
+      "effects": "控油 / 修饰肤色 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3814863585419591874&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【新品】美诺丝绒液体眼影细闪哑光单色细腻轻盈顺滑持久日常通勤DB",
+      "category": "眼影",
+      "spec": "2g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "哑光 / 持久 / 细腻",
+      "effects": "不脱妆 / 易上色",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837965454303953000&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "美诺萌兰植绒粉扑*2",
+      "category": "粉扑",
+      "spec": "",
+      "launch_date": "2026-09-02",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3840412634428080500&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【k总专属】美诺粉饼萌兰提气色21g大熊饼细腻粉饼定妆控油遮瑕DB",
+      "category": "粉饼",
+      "spec": "21g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "无滑石粉 / 柔雾渐变 / 磨皮0粉感",
+      "effects": "控油 / 定妆 / 提气色",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837458729868067651&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【正装试用】美诺乐乐熊限定21g定妆粉饼遮瑕持久控油防水散粉-达播",
+      "category": "粉饼",
+      "spec": "21g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "乐乐熊限定",
+      "effects": "控油 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3836333188490330543&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【发财靖专属】美诺果冻喷雾妆前隔离补水保湿护肤防卡粉起皮学生DB",
+      "category": "妆前",
+      "spec": "120g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "防卡粉 / 防起皮",
+      "effects": "保湿 / 补水",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837431510420553939&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "限定正品美诺萌兰粉饼定妆控油持久散粉遮瑕养肤大白饼女MENOW",
+      "category": "定妆",
+      "spec": "",
+      "launch_date": "2026-09-04",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "渐变双色 / 熊猫家族",
+      "effects": "控油 / 养肤 / 定妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3839682992406659413&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "【立体妆效】美诺光影双头修容笔丝滑不晕染提亮自然学生燕麦格雷DB",
+      "category": "阴影",
+      "spec": "25g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "一笔多用 / 不假白 / 丝滑不晕染",
+      "effects": "提亮 / 修饰轮廓",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3837966008354734558&origin_type=604",
+      "batch_date": "2026-09-08"
+    },
+    {
+      "brand": "美诺",
+      "product": "美诺防晒粉饼9g干湿两用定妆防护二合一隔离轻薄燕麦格雷开学DB",
+      "category": "粉饼",
+      "spec": "9g",
+      "launch_date": "2026-09-01",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "干湿两用 / 燕麦格雷 / 防护二合一",
+      "effects": "定妆 / 防晒",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3839687132771909994&origin_type=604",
+      "batch_date": "2026-09-08"
+    }
+  ],
   "ai_marketing": [
     {
       "date": "2026-09-07",
