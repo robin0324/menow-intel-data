@@ -1,0 +1,47 @@
+[
+  {
+    "section": "ai_marketing",
+    "title": "Pinterest推AI美妆指南Beauty Guides：灵感图变沙龙话术",
+    "date": "2026-10-06",
+    "time": "2026-10-06 09:00",
+    "source": "PYMNTS",
+    "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/pinterest-intros-new-guides-to-provide-how-to-beauty-guidance/",
+    "source_tier": "original",
+    "summary": "Pinterest 于 10月6日推出 AI 功能 Beauty Guides，用视觉理解技术+大语言模型把用户收藏的美发/美甲 Pin 图转成可执行的线下沙龙沟通方案（含造型要求、耗时、维护建议、相关产品、分步说明），并同步发布首份 Beauty Trend Report。这是 AI 从「灵感展示」走向「消费指令生成」的典型案例。对美诺：可借鉴其「看图→理解→给可执行清单」逻辑，在小红书/抖音用 AI 把妆容灵感图转成「上妆步骤+到手清单」，承接「看图种草→按图购买」决策链；同时其「视觉理解+LLM」对 GEO/AI 搜索推荐（豆包、千问、元宝）的商品结构化呈现有直接启示。",
+    "key_data": "覆盖发型/发色/甲形/甲面四类；10月8日向美国iOS用户开放；首份 Beauty Trend Report 同步发布；由 Pinterest Intelligence 视觉智能+生成式AI驱动",
+    "source_excerpt": "The social media platform on Tuesday (Oct. 6) launched “Beauty Guides,” described as an artificial intelligence (AI)-powered experience that “turns hair and nail Pins into personalized, actionable guides” to help users recreate the looks they find on Pinterest. Beauty Guides use Pinterest’s visual understanding technology to analyze a look in a Pin, identifying details such as hairstyle, color, nail shape and finish. That visual understanding is combined with a large language model to turn what you see on Pinterest into a useful guide for real life, including what to ask for at the salon, what to expect during an appointment, similar looks to explore, relevant products and set by step instructions.",
+    "read_full": true,
+    "tags": ["AI美妆", "视觉搜索", "种草转化", "海外平台", "GEO"],
+    "source_classify_note": "来源 PYMNTS（原创行业媒体），2026-10-06 发布，页面仅显示日期、时间按早间发文惯例推断为09:00；source_tier=original。非 A 类国内平台清单（小红书/抖音/微信/微博/快手/B站），归入 ai_marketing 而非 hot_topics。中文 IT时代网/微博于10-07转述同日上线。"
+  },
+  {
+    "section": "ai_marketing",
+    "title": "TikTok推Agentic Commerce：AI购物助手+一键Buy Direct",
+    "date": "2026-10-05",
+    "time": "2026-10-05 09:00",
+    "source": "PYMNTS",
+    "source_url": "https://www.pymnts.com/commerce/social-commerce/2026/tiktok-kicks-off-agentic-commerce-push-with-ai-shopping-assistant/",
+    "source_tier": "original",
+    "summary": "TikTok 在广告周（10月5日）发布 Agentic Commerce：Buy Direct 支持 For You 信息流一键应用内结算，Shopping Assistant 是对话式 AI 导购，实时解答尺寸/物流/库存/购买并引导成交，合作方含 Salesforce/Shopify/Shoplazza/Stripe，基于 Universal Commerce Protocol。这是短视频→购买最短路径被 AI 进一步压缩的标志。对美诺：国内对应抖音豆包/千问/元宝的 AI 导购入口已在成型（见基线 GEO 系列与豆包运营专区），美诺须提前把商品结构化信息（功效/肤质/场景/价格）喂给 AI 导购，抢占「对话即购买」入口，避免被竞品在 AI 答案位截流。",
+    "key_data": "10-05 发布、首发美国；Buy Direct 基于 Universal Commerce Protocol；TikTok Shop 2028 零售份额预估 10%（WSJ/Circana）；WSJ称5400万美国人曾在TikTok视频后下单",
+    "source_excerpt": "The in-app checkout solution, Buy Direct, allows users to buy from a brand without leaving TikTok, according to the release. “The solution simplifies the purchase journey, allowing users to make purchases directly from the For You feed with just one click,” TikTok said in the release. The conversational AI agent, Shopping Assistant, guides users through the shopping journey while understanding context, remembering their needs and helping them find the right products, per the release. “Built into several TikTok touchpoints, Shopping Assistant provides real-time AI-powered shopping guidance like product details, shipping, sizing, availability and purchasing all within one conversation,” TikTok said.",
+    "read_full": true,
+    "tags": ["AI导购", "社交电商", "一键结算", "TikTok", "对话式购买"],
+    "source_classify_note": "来源 PYMNTS（原创行业媒体），2026-10-05 发布，页面仅显示日期、时间按早间发文惯例推断为09:00；source_tier=original。属 AI 营销前沿（AI导购/对话式成交），非 A 类国内平台官方热点，归 ai_marketing。基线未收录，无去重冲突。"
+  },
+  {
+    "section": "ai_marketing",
+    "title": "Meta推AI广告套件：生成式视频广告+对话内结算",
+    "date": "2026-10-07",
+    "time": "2026-10-07 09:00",
+    "source": "Inside AI",
+    "source_url": "https://insideai.news/news/ai-in-business/meta-ai-advertising-tools/13743",
+    "source_tier": "original",
+    "summary": "Meta 在广告周（10月6日发布、10月7日报道）推出 AI 广告套件：Advantage+ Creative 把静态图转视频广告、Ads Creative Studio 含品牌记忆（Brand Memory）保持一致化、Messenger/Meta AI 内对话式结算（与 Shopify/Adyen/PayPal/Stripe 打通，聊天内完成购买）、Ads MCP 开放第三方接入。Facebook+Instagram 视频已占用户时长 60%。对美诺：AI 生成视频素材+对话内闭环成交是社媒电商趋势；国内微信小店/抖音已在做类似闭环（基线10-06 微信小店100%平台补贴、豆包内嵌直播间卡片），美诺应将「AI 生成短视频素材+私域/直播间承接」作为双11标准动作，并关注品牌资产一致性（避免 AI 生成素材货不对板推高退货）。",
+    "key_data": "10-06 发布/10-07 报道；Facebook+Instagram 视频占用户时长 60%；Meta AI Business Assistant 接入历史投放数据与品牌声量指南；对话内结算合作 Shopify/Adyen/PayPal/Stripe",
+    "source_excerpt": "Meta unveiled a sweeping set of AI advertising tools at Advertising Week 2026 in New York on October 6, including in-chat checkout via Messenger and Meta AI, an expanded Ads MCP server, and new creative generation features. The announcements signal Meta’s push to embed AI across the entire advertising lifecycle, from creative production to direct commerce. Meta revealed direct checkout capabilities through its Business Agent on Messenger. The company partnered with Shopify to enable in-stream purchasing without leaving the conversation.",
+    "read_full": true,
+    "tags": ["AI广告", "生成式视频", "对话内成交", "Meta", "社媒电商"],
+    "source_classify_note": "来源 Inside AI（原创行业媒体），2026-10-07 发布，页面仅显示日期、时间按早间发文惯例推断为09:00；source_tier=original。属 AI 营销前沿（AI广告生成+社媒闭环成交），非 A 类国内平台官方热点，归 ai_marketing。基线未收录，无去重冲突。"
+  }
+]
