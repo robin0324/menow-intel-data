@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "version": "23.0",
+    "date": "2026-10-11",
+    "data_as_of": "2026-10-11",
+    "brand": "美诺 MENOW",
+    "track": "美妆/底妆/粉饼/定妆",
+    "label": "V23 每日新增",
+    "note": "当日新建空壳（无蝉妈妈污染）；九板块待当日研究写回，brand_inspiration / weekly_actions 先沿用上一版占位。",
+    "_fill_1011_applied": true
+  },
+  "endorsements": [],
+  "marketing_cases": [
+    {
+      "title": "Tower 28 开出品牌首个快闪「Sensitive Club」：完全不卖货，只做试用、灌装与社群",
+      "source_name": "Beauty News Daily",
+      "source_url": "https://beautynewsdaily.com/beauty-notes-snif-obart-elf-innerskin-tower-28",
+      "source_tier": "original",
+      "date": "2026-10-05",
+      "time": "2026-10-05 09:00",
+      "key_points": [
+        "敏感肌彩妆品牌 Tower 28 于 10 月 8 日至 11 日在加州威尼斯（Venice）开出品牌史上第一个快闪空间，取名「Sensitive Club」",
+        "最反常识的一点：现场**不销售任何品牌产品**——访客只能试用全系列、为新上市的 Swipe Serum Foundation 做色号匹配（shade match）、给用完的 SOS Rescue Spray 空瓶补装（refill），以及购买限定量周边",
+        "空间设计参照「怀旧的加州海滩小店」，被媒体定义为「更像社群空间而非传统美妆店」；选址刻意回到品牌名字的灵感街区（Venice=品牌名中 Beach 的来源）",
+        "与同期多数快闪的差别在于目标：不为单次 GMV，而为「让敏感肌人群先在无购买压力下完成产品适配」，把色号错配这一敏感肌品类最大退货诱因前置解决"
+      ],
+      "summary": "Tower 28 把「快闪」做成了反向操作：四天、不卖货、只让访客试、匹配色号、灌装空瓶、买周边。对一个主打敏感肌的品牌，这个设计有明确的功能性理由——敏感肌的购买阻力主要来自「不敢试」，色号错配又是退货主因；把试用与适配放在无购买压力的空间里完成，等于用四天线下成本买「零错配」。对底妆/定妆品类同样成立：粉饼与粉底的色号与肤感适配成本，恰恰是最需要线下解决的一环。",
+      "source_excerpt": "Tower 28 is opening its first-ever pop-up in Venice, California, from 8-11 October, bringing the sensitive-skin beauty brand back to the neighbourhood that inspired its name. The space, called Sensitive Club, won't sell any of its beauty products. Instead, visitors can try the range, get shade matched for the new Swipe Serum Foundation, refill their SOS Rescue Spray, learn more about the brand, and shop limited-edition merch. Designed like a nostalgic California beach shop, it's more community space than traditional beauty store.",
+      "source_classify_note": "Beauty News Daily 为美业垂直原创媒体（Beauty Notes 栏目），来源层级 original；页面标注发布时间 2026-10-05，在 14 天时效窗口内。内容为彩妆品牌线下活动案例，属美妆/女性主市场强相关。已核库：库内无 Tower 28 相关条目，不构成重复。",
+      "tags": [
+        "快闪",
+        "敏感肌",
+        "线下体验",
+        "社群"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "Beauty News Daily",
+      "key_data": "10/8-10/11 加州威尼斯 ｜ 不销售任何产品 ｜ 只做试用 + 色号匹配 + 空瓶灌装 + 限定量周边"
+    },
+    {
+      "title": "Milk Makeup 十周年把「纽约起源」搬到巴黎：两天快闪 + 到场必得 + Sephora.fr 专属 20% 码",
+      "source_name": "FashionNetwork",
+      "source_url": "https://ww.fashionnetwork.com/news/The-beauty-pop-ups-lighting-up-Paris-this-autumn,1873560.html",
+      "source_tier": "original",
+      "date": "2026-10-06",
+      "time": "2026-10-06 12:00",
+      "key_points": [
+        "纽约彩妆品牌 Milk Makeup 为庆祝品牌成立十周年，于 10 月 10 日至 11 日在巴黎第三区 Galerie Saint-Joseph 开设快闪，每天 10:00-19:00 开放",
+        "叙事锚点不是「十周年庆」而是品牌起源：故事从 30 年前纽约 downtown 的 Milk Studios 讲起，2016 年才由此诞生 Milk Makeup；同步主推 2026 秋冬战役「New York Found Me」及其由英国乐队 Wet Leg 主唱 Rhian Teasdale 出演的影片",
+        "现场体验由专业彩妆师介绍品牌新一代棒状产品，氛围围绕美妆、音乐与舞蹈搭建，每天 16:00-19:00 安排 DJ set",
+        "离场机制做足三层：①**到场必得**——每位参与者都能拿到托特包、Balmade 电解质润唇膏与若干试用装中的一份，且保证是迷你装或正装规格；②**刮刮卡抽奖**——有机会赢取装满正装的福袋；③**专属折扣码**——现场发放 20% 优惠码，可在 Sephora.fr 用于 Milk Makeup 棒状产品线，把线下人流直接导回线上成交"
+      ],
+      "summary": "同一篇文章里并列的巴黎秋季美妆快闪中，Milk Makeup 的十周年场次最值得拆解：它把「周年」翻译成品牌起源故事（Milk Studios → Milk Makeup 十年），再用三层机制锁住到场价值——人人有份的离场礼、刮刮卡抽正装、以及只在线下发放的 Sephora.fr 20% 码。关键差别在最后一条：折扣码不印在物料上、只给到场者，等于给线下流量打上可追踪的标记。对预算有限的品牌，这套「故事锚点 + 到场必得 + 专属码回收」的结构，比堆展陈更划算。",
+      "source_excerpt": "To mark its 10th anniversary, Milk Makeup is crossing the Atlantic. On October 10 and 11, the New York brand will open a pop-up at Galerie Saint-Joseph in the 3rd arrondissement, showcasing its latest launches and refreshed brand universe. ... Visitors will leave with, among other things, a Milk Makeup tote bag, a Balmade Electrolyte Lip Balm, and several discovery sizes. A scratch-card game will also offer the chance to win a pouch filled with full-size products. Every participant will leave with either a miniature or deluxe-size product. A 20% promotional code will also be available on site and can be used on Sephora.fr for the Milk Makeup stick range.",
+      "source_classify_note": "FashionNetwork 为时尚美妆行业垂直媒体（自有记者署名 Léa MINERVE），来源层级 original；文章页明确标注 Published October 6, 2026，在 14 天窗口内。内容为彩妆品牌周年快闪案例，属美妆/女性主市场强相关。已核库：库内无 Milk Makeup 条目，不构成重复。",
+      "tags": [
+        "快闪",
+        "十周年",
+        "线下体验",
+        "导流机制"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "FashionNetwork",
+      "key_data": "10/10-10/11 巴黎 Galerie Saint-Joseph ｜ 到场必得迷你/正装 ｜ 刮刮卡抽正装福袋 ｜ 现场专属 Sephora.fr 20% 码"
+    },
+    {
+      "title": "SEPHORA × OLIVE YOUNG 新加坡合开 K-Beauty 快闪：5 秒限时铲小样 + 免费 AI 测肤 + 满额礼",
+      "source_name": "SG EverydayOnSales",
+      "source_url": "https://sg.everydayonsales.com/8-14-october-2026-sephora-x-olive-young-free-k-beauty-samples-s7-voucher-ai-skin-analysis-exclusive-gifts-promotion-at-ion-orchard",
+      "source_tier": "aggregator",
+      "date": "2026-10-08",
+      "time": "2026-10-08 10:00",
+      "need_date_check": true,
+      "key_points": [
+        "丝芙兰与韩国最大美妆集合店 Olive Young 在新加坡 ION Orchard（B4 ION Station）合办「K-Beauty Edit」快闪，10 月 8 日至 14 日、免门票入场",
+        "小样机制被设计成游戏：访客先领一张 K-Beauty Edit 卡片、完成现场任务，然后获得**5 秒限时铲小样**的机会——用「限时成就」替换「排队领赠品」的等待感；完成即得两铲 K-Beauty 小样",
+        "同步提供**免费 AI 皮肤分析**：由设备给出席肤况判断，再据此逛 Olive Young K-Beauty Edit 选品，形成「先测肤、再选品」的路径（页面明确提示其结果应视为购物参考而非医学诊断）",
+        "转化层叠了两级：①参与后可得 S$7 抵扣券（限指定 Olive Young K-Beauty Edit 商品）；②单笔消费满 S$50 送 Olive Young 键帽与环保袋等独家礼，把「试」直接推向「买」",
+        "货盘覆盖 REJURAN、BEPLAIN、haruharu wonder、Dr.Althea、BIOHEAL BOH、Celimax 等 K-Beauty 品牌，且全部集中在同一空间完成发现—试用—购买"
+      ],
+      "summary": "这场快闪的价值不在「卖了多少」，而在把三个机制叠成了闭环：用「5 秒铲小样」把领赠品变成可拍摄、可分享的互动；用免费 AI 测肤把「不知道选什么」变成「先看数据再选品」；再用 S$7 券与满 S$50 礼把体验当场转成客单。对底妆/定妆品类尤其可抄——试用装天然适合做「限时铲/盲盒抽」的玩法，而色号与肤质适配恰好是 AI 测肤最能帮上忙的环节。",
+      "source_excerpt": "The SEPHORA x OLIVE YOUNG K-Beauty Edit Pop-Up is bringing together a selection of popular Korean beauty products, free samples, shopping vouchers, skin analysis and exclusive gifts in one convenient pop-up experience. Running from 8 to 14 October 2026, the pop-up is located at B4 ION Station, ION Orchard. ... participants will get five seconds to scoop as many free samples as possible. ... Another interesting feature of the event is the free AI skin analysis. ... Spend S$50 on OLIVE YOUNG K-Beauty Edit products and shoppers can receive exclusive gifts, including an OLIVE YOUNG keycap and reusable OLIVE YOUNG bag.",
+      "source_classify_note": "SG EverydayOnSales 为新加坡本地促销信息聚合站（非品牌官方发布页），按规则判定为 aggregator，原创方为 SEPHORA 新加坡与 Olive Young 的联合活动通告。⚠️ 来源页未标注文章发布日，内容明确活动期为 2026-10-08 至 10-14，本条按活动首日归档并标 need_date_check=true，未杜撰精确发布时刻。内容为美妆零售平台联名快闪，属美妆/女性主市场强相关；已核库：库内无 Olive Young 快闪条目，不构成重复。",
+      "tags": [
+        "快闪",
+        "小样机制",
+        "AI 测肤",
+        "K-Beauty"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "SG EverydayOnSales",
+      "key_data": "10/8-10/14 ION Orchard 免票 ｜ 5 秒限时铲小样 ｜ 免费 AI 皮肤分析 ｜ S$7 抵扣券 + 满 S$50 送独家礼"
+    }
+  ],
+  "marketing_news": [
+    {
+      "title": "G-Dragon 主理品牌 PEACEMINUSONE 与 Goodai Global 合资成立美妆品牌「PEACEMINUSONE BEAUTY」",
+      "source_name": "香港01",
+      "source_url": "https://www.hk01.com/%E7%BE%8E%E5%AE%B9%E6%89%8B%E5%B8%B3/60396581/",
+      "source_tier": "original",
+      "date": "2026-10-07",
+      "time": "2026-10-07 12:00",
+      "key_points": [
+        "韩国美妆企业 Goodai Global 宣布与 G-Dragon（权志龙）主理的时尚品牌 PEACEMINUSONE 达成合作协议，共同创立全新美妆品牌「PEACEMINUSONE BEAUTY」",
+        "目标时间表为 2027 年上半年正式面世；新品牌被定位为 PEACEMINUSONE 品牌世界观在美妆领域的延伸，把品牌在时尚与艺术领域积累的创作精神用美妆语言重新演绎",
+        "合作模式为「明星/设计师主理品牌 × 专业美妆企业」的合资结构：明星方提供品牌资产与美学话语权，美妆企业提供研发、供应链与渠道能力",
+        "同篇快讯还记录 10 月上旬其他美妆动态：Clé de Peau Beauté 节日限定「焕曜星愿系列」圣诞倒数月历在香港率先发售（10/1）；香港生活美学品牌 SANTA MONICA 发布全新品牌形象并于尖沙咀 K11 Art Mall 开出首间期间限定店（10/1-10/31，同步铺开香水、家居香氛与光学眼镜三条线）；SUQQU 为轻熟龄肌升级 AQUFONS 水妍亮采系列（10/2）"
+      ],
+      "summary": "这条的价值不在「又一位明星做美妆」，而在合作结构：不是品牌找代言，而是明星主理品牌与美妆企业合资成立新品牌，目标 2027 上半年落地。这类「美学话语权归明星方、研发供应链归专业企业」的分工，正在成为明星美妆的主流形态——它回避了纯明星美妆最容易被诟病的研发空心化问题。对做联名/共创的品牌，这提示谈判桌上的核心不是授权费，而是「谁掌握美学解释权、谁承担产品责任」的划分。",
+      "source_excerpt": "G-Dragon權志龍主理的時尚品牌PEACEMINUSONE，將正式踩入美妝界。韓國美妝企業Goodai Global宣布，雙方已達成合作協議，共同創立全新美妝品牌「PEACEMINUSONE BEAUTY」，並以2027年上半年正式面世為目標。新品牌被定位為PEACEMINUSONE品牌世界觀在美妝領域的延伸，將時尚與藝術領域累積的創作精神，透過美妝語言重新演繹。",
+      "source_classify_note": "香港01 为香港原创新闻媒体（美妆手账栏目的 10 月美妆快讯），来源层级 original；该快讯按日期逐条罗列 10 月 1 日至 7 日动态，本条主项对应 10 月 7 日条目，故按 2026-10-07 归档。在 14 天窗口内；内容为美妆品牌与美妆企业合资，属女性主市场强相关。已核库：库内无 PEACEMINUSONE 相关条目，不构成重复。",
+      "tags": [
+        "明星主理品牌",
+        "合资",
+        "新品牌",
+        "K-Beauty"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "香港01",
+      "key_data": "PEACEMINUSONE × Goodai Global ｜ 新品牌 2027 上半年面世 ｜ 同篇含 CPB 圣诞月历/SANTA MONICA K11 限定店/SUQQU 升级"
+    },
+    {
+      "title": "e.l.f. 独立推出香氛与身体护理线 e.l.f. Pop：首发「特罗姆瑟」灵感假日限定，2027 年 1 月扩线",
+      "source_name": "e.l.f. Beauty（官方新闻稿）",
+      "source_url": "https://www.elfbeauty.com/articles/e-l-f-expands-into-fragrance-and-body-care-categories-with-launch-of-e-l-f-pop-debuting-limited-edition-holiday-spicy-bundt-nice-collection-inspired-by-tromso-norway",
+      "source_tier": "platform",
+      "date": "2026-10-05",
+      "time": "2026-10-05 09:00",
+      "key_points": [
+        "e.l.f. Brands（含 e.l.f. Cosmetics / e.l.f. SKIN / e.l.f. Hair）首次进入香氛与身体护理品类，推出以「目的地」为主题的香氛身体线 e.l.f. POP；首发为假日限定「e.l.f. POP: Tromsø（特罗姆瑟）」",
+        "主香「Spicy Bundt Nice」为美食调，香调构成：假日香料蛋糕、橙皮、小豆蔻、奶油糖霜、雪松与暖麝香；e.l.f. 将其定位为「可叠加、可分层」的香氛（与同系列丝滑身体乳叠加使用）",
+        "首发仅三个 SKU，全部维持品牌一贯的可负担定价：香氛喷雾 13 美元、丝滑身体乳 13 美元、旅行装套装 12 美元；产品延续 vegan、cruelty-free（Leaping Bunny 与 PETA 认证）定位",
+        "上架节奏按渠道分批推进：10 月 4 日 TikTok Shop 美国首发（借「Fall Deals for You Days」档期）→ 10 月 5 日 elfcosmetics.com、elfcosmetics.co.uk 与 TikTok Shop 英国/德国 → 10 月 6 日 Amazon 美国/英国/德国/加拿大",
+        "联名创作由两位挪威艺术家担纲：插画家 Esra Røise 负责全系列视觉与包装，流行歌手 SKAAR 创作发布素材的音乐",
+        "命名逻辑有出处：e.l.f. POP 之名致敬 e.l.f. Cosmetics 的 Jelly Pop——品牌早期最受社群欢迎的香氛之一；此前 2026 年 1 月 e.l.f. 曾与 H&M 合作推出限定香氛，本次为品牌独立推出",
+        "品牌引用数据支撑品类扩张：Mintel 2025 消费者研究显示香氛是全球增长最快的美妆品类；NIQ 美国 2026 美容个护回顾显示 42% 的香氛使用者购买时会寻找能唤起情绪或心情的气味；完整 e.l.f. POP 产品矩阵（含更多目的地主香）计划 2027 年 1 月上市"
+      ],
+      "summary": "e.l.f. 首次做香氛与身体护理，选的不是「一支香水」，而是一套可扩展的命名结构：e.l.f. POP 以「目的地」为主题，首发站是挪威特罗姆瑟，主香做成假日香料蛋糕的美食调，三件套定价 12-13 美元，维持品牌一贯的可负担+纯素定位；上架按 TikTok Shop→自营站→Amazon 三批推进，视觉与音乐都交给挪威本地艺术家。真正值得抄的是两件事：①品类扩张先做「最小可验证组合」（一个目的地、一支主香、三个基础形态），验证后再于 2027 年 1 月铺开完整矩阵；②命名不做无根之水——e.l.f. POP 直接致敬品牌早期受社群欢迎的 Jelly Pop，把「社群记忆」当成新品类的地基。对以彩妆为主业的品牌，这是低成本试水第二品类的清晰路径。",
+      "source_excerpt": "New category expansion: e.l.f. Brands (e.l.f. Beauty, NYSE: ELF) is entering fragrance and body care for the first time with the launch of e.l.f. POP, a destination-inspired collection. First drop — Tromsø, Norway: The debut limited-edition holiday collection features the \"Spicy Bundt Nice\" gourmand fragrance with notes of holiday spice cake, orange zest, cardamom, butter cream frosting, cedarwood, and warm musk. Accessible pricing & SKUs: Three products — fragrance mist ($13), silky body cream ($13), and a travel-size kit ($12) — continuing e.l.f.'s affordable, vegan, cruelty-free (Leaping Bunny & PETA certified) positioning. Availability & rollout: Launched on TikTok Shop US (Oct 4, 2026), then elfcosmetics.com, elfcosmetics.co.uk, TikTok Shop UK/Germany (Oct 5), and Amazon US/UK/DE/CA (Oct 6). The campaign features Norwegian illustrator Esra Røise and pop artist SKAAR.",
+      "source_classify_note": "来源为 e.l.f. Beauty 官方新闻稿（elfbeauty.com 品牌自有站点 article 页），按规则归入 platform（品牌官方一手发布）；新闻稿标注首发日 2026-10-04（TikTok Shop 美国）与 10-05（自营站与欧洲 TikTok Shop），本条按品牌稿发布日 2026-10-05 归档，在 14 天窗口内。文中引用的第三方数据均标注原始出处（Mintel 2025 消费者研究、NIQ 美国 2026 美容个护回顾），未做二次推算。⚠️ 本条已从初版使用的 beautynewsdaily 行业汇总页改为一手官方页，以消除与 marketing_cases 中 Tower 28 条的「同 URL 跨板块引用」告警。已核库：库内 e.l.f. 相关仅「e.l.f. × Bubble 护肤彩妆融合限定系列」，本条为不同事件，不构成重复。",
+      "tags": [
+        "香氛",
+        "品类扩张",
+        "限定",
+        "e.l.f."
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "e.l.f. Beauty（官方新闻稿）",
+      "key_data": "首发 Tromsø 限定（10/4 TikTok Shop 美 → 10/5 自营站+英国/德国 → 10/6 Amazon 四国） ｜ 三 SKU：喷雾 $13 / 身体乳 $13 / 旅行装 $12 ｜ 主香 Spicy Bundt Nice（香料蛋糕+橙皮+小豆蔻+奶油糖霜+雪松+暖麝香） ｜ 挪威插画家 Esra Røise 视觉 + 歌手 SKAAR 音乐 ｜ 完整矩阵 2027 年 1 月"
+    },
+    {
+      "title": "Fenty Beauty × 蕾哈娜 TikTok Shop 12 小时「megalive」：超 100 万观看、5300 万曝光",
+      "source_name": "The Lead（引 BoF）",
+      "source_url": "https://the-lead.co/the-indicator-october-9-2026",
+      "source_tier": "aggregator",
+      "date": "2026-10-09",
+      "time": "2026-10-09 20:00",
+      "key_points": [
+        "Fenty Beauty 在 TikTok Shop 首次尝试 12 小时超长直播「megalive」，蕾哈娜本人与嘉宾一同出镜讲解产品",
+        "数据：直播观看人数超过 100 万，累计产生的曝光量达 5300 万次",
+        "行业背景判断：TikTok Shop 正在让直播购物在年轻消费者中重新流行，而美妆是领跑品类；MAC Cosmetics、Fenty Beauty 等传统品牌与名人品牌都在用直播拉动销售，同时 TikTok 本身持续加码相关功能",
+        "同期的平台侧变化：TikTok 上线 For You 信息流内一键结算（direct checkout），并叠加应用内 AI 助手，目标是让用户在平台内完成「发现—立即购买」的全过程，把消费链路尽量留在站内"
+      ],
+      "summary": "Fenty 这场 12 小时直播给出的关键数字是「100 万观看 / 5300 万曝光」——用一个名人品牌的极端长时段直播，把平台直播购物的天花板重新标定了一次。更值得留意的是平台侧同步动作：TikTok 上线信息流内一键结算并叠加 AI 助手，说明直播不再是独立会场，而是被并进「刷到即可买」的主链路。对做达人合作与内容投放的品牌，这意味着直播素材与短视频素材的边界会进一步模糊，值得重排内容资产的复用顺序。",
+      "source_excerpt": "TikTok Shop is re-popularizing live shopping for younger consumers, with beauty leading the trend. Legacy and celebrity brands like MAC Cosmetics and Fenty Beauty are using live streams as sales boom and TikTok adds new features. During Fenty Beauty's 12-hour \"megalive\" debut, Rihanna and guests showcased products to over one million viewers, generating 53 million impressions. (BoF) ... TikTok's new direct checkout enables one-click purchases from brands within the For You feed.",
+      "source_classify_note": "The Lead 为零售/美妆行业情报简讯（The Indicator 周报，本期标注 October 9, 2026），其数据转述自 BoF（Business of Fashion），按规则判定为 aggregator 并在本条注明原创方。⚠️ 5200 万级曝光与百万观看两组数字均来自转述，未取到 BoF 原文页独立核对，如实标注。页面标注日期 2026-10-09，在 14 天窗口内；内容为美妆品牌直播电商动作，属女性主市场强相关。已核库：库内无 Fenty/蕾哈娜条目，不构成重复。",
+      "tags": [
+        "直播电商",
+        "TikTok Shop",
+        "名人品牌",
+        "渠道"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "The Lead（引 BoF）",
+      "key_data": "12 小时 megalive ｜ 观看 100 万+ ｜ 曝光 5300 万 ｜ 美妆领跑 TikTok Shop 直播 ｜ 平台上线信息流内一键结算"
+    }
+  ],
+  "industry_reports": [
+    {
+      "title": "Simporter《定妆粉饼品类月报 · 2026年10月》：10 月销售额 1.58 亿美元环比 +2.6%，「水润柔雾云朵肌」成第一趋势",
+      "source_name": "Simporter",
+      "source_url": "https://simporter.com/trends/setting-powder-makeup",
+      "source_tier": "institute",
+      "date": "2026-10-01",
+      "time": "2026-10-01 10:00",
+      "need_date_check": true,
+      "key_points": [
+        "定妆粉饼（Setting Powder）品类 2026 年 10 月销售额 1.58 亿美元，环比 9 月的 1.54 亿美元增长 2.6%；Q4 预期继续走强，11 月预计 1.65 亿美元、12 月预计 1.70 亿美元",
+        "年初至今累计 15.18 亿美元，高于去年同期的 14.35 亿美元；品牌毛利 52%-57%、零售商毛利 38%-43%",
+        "消费趋势评分第一为 **Hydrating Soft-Matte & Cloud Skin（水润柔雾 & 云朵肌）92 分**，第二为 **Clean & Talc-Free Innovation（洁净无滑石创新）90 分**——即「自然妆感 + 对肌肤友好配方」是当前定妆品类的两条主诉求",
+        "份额结构：Laura Mercier 以 22.5% 领跑，Huda Beauty 18.1%；新兴品牌 Kosas 以 7.2% 份额、94 的趋势分快速上位（趋势分高于所有头部品牌）",
+        "渠道结构：Sephora 28.7%、Ulta Beauty 24.1%，而 Target 18.5%、Amazon 15.3%、Walmart 13.4% 合计仍占近半，说明定妆品类必须做全渠道而非只押专柜/精品店",
+        "细分机会：Skincare-Infused Setting Powder（精华入粉）占子类 15.8%，Color-Correcting Setting Powder（校色定妆粉）占 9.1%——「定妆 + 护肤/校色」二合一是明确的产品空隙",
+        "风险：trade-down（消费降级/低价替代）风险评级为 F（最高级），自有品牌势头评级 A-，意味着价值沟通与差异化是保住份额的关键"
+      ],
+      "summary": "这是目前能找到的最贴合美诺主品类（粉饼/定妆）的月度品类数据。三条可直接用于决策：①品类仍在温和增长（环比 +2.6%、YTD 同比 +5.8%），不是萎缩赛道；②消费者诉求的第一名由「控油」换成「水润柔雾 & 云朵肌」，第二名是「无滑石洁净配方」——意味着「不拔干」「成分干净」已经与「持妆」同等重要；③机会在精华入粉（15.8%）与校色定妆（9.1%）两个细分子类。风险侧要正视：本品类被判定为最容易被低价替代（F 级），单靠功能参数难以守住价格带。",
+      "source_excerpt": "The setting powder market is demonstrating robust growth, reaching $158 million in October 2026, a 2.6% increase month-over-month. The category is projected for a strong Q4 finish, with an anticipated $165 million in November and $170 million in December. Consumer demand is decisively shifting towards 'Hydrating Soft-Matte & Cloud Skin' (score 92) and 'Clean & Talc-Free Innovation' (score 90) ... While Laura Mercier maintains market leadership with a 22.5% share, emerging brands like Kosas (7.2% share, trend score 94) are rapidly gaining ground ... Significant opportunity exists in 'Skincare-Infused Setting Powder' (15.8% subcategory share) and 'Color-Correcting Setting Powder' (9.1% subcategory share).",
+      "source_classify_note": "Simporter 为市场情报（market intelligence）平台，发布自有 AI 趋势评分的品类月报，按规则归入 institute（机构自有数据源）；报告页明确标注 Published October 2026 与逐项数据口径（unadjusted / seasonally adjusted）。⚠️ 月报仅标「2026 年 10 月」，无具体发布日，本条按当月 1 日归档并标 need_date_check=true，未杜撰精确发布日期。数据为美国市场口径（美元、美国零售渠道），引用时不得直接推及中国市场，已在 key_data 中保留「美国」限定。已核库：库内无定妆粉饼品类月报，不构成重复。",
+      "tags": [
+        "行业报告",
+        "定妆粉饼",
+        "品类数据",
+        "美国市场"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "Simporter",
+      "key_data": "美国定妆粉 10 月 1.58 亿美元/环比 +2.6% ｜ YTD 15.18 亿（去年 14.35 亿） ｜ 趋势：水润柔雾云朵肌 92、无滑石洁净 90 ｜ Laura Mercier 22.5%/Kosas 趋势分 94 ｜ 渠道 Sephora 28.7%+Ulta 24.1%"
+    },
+    {
+      "title": "Simporter《彩妆品类月报 · 2026年10月》：大盘 41.5 亿美元，消费者第一诉求已变成「自然贴肤妆感」",
+      "source_name": "Simporter",
+      "source_url": "https://simporter.com/trends/makeup",
+      "source_tier": "institute",
+      "date": "2026-10-01",
+      "time": "2026-10-01 10:00",
+      "need_date_check": true,
+      "key_points": [
+        "美国彩妆大盘 2026 年 10 月规模 41.5 亿美元，高于 9 月的 40.8 亿美元（环比 +1.7%）；11 月预计达到全年峰值 43.0 亿美元，12 月预计 40.0 亿美元",
+        "年初至今累计 401.8 亿美元，对比去年同期 392.0 亿美元，同比 +2.5%（增量约 9.8 亿美元）；全年规模预计 484.8 亿美元",
+        "消费者诉求排序（jobs-to-be-done）：第一位是 **Achieve a natural, skin-like complexion（实现自然、像皮肤一样的妆感）**，第二位是 **Incorporate skincare benefits into makeup routine（在彩妆流程里叠加护肤功效）**，第三位是 Enhance features with subtle, diffused color（用柔和的晕染色彩修饰五官）",
+        "驱动品类创新的两条趋势为 Skincare-Makeup Hybrids（护肤彩妆混合，92 分）与 Satin & Soft Matte Finishes（缎光与柔雾妆效，88 分）；采用最快的是新兴品牌 Medicube（95 分）与 Makeup by Mario（91 分）",
+        "份额与渠道：Maybelline 22.5%、Clinique 15.8%、CoverGirl 12.3%，头部品牌合计约占品类 80%；线下主渠道为 Ulta Beauty 22.5% 与 Sephora 18.0%，线上零售仅占 10.0%",
+        "风险与政策：通胀敏感度 D、消费降级风险 E，叠加消费者情绪偏负面；政策监管风险被评为 High，要求品牌主动合规与透明沟通"
+      ],
+      "summary": "彩妆大盘层面，最值得记的一条是消费者诉求排序变了：第一位不是「遮瑕力」也不是「价格」，而是「自然、像皮肤一样的妆感」，第二位才是护肤功效叠加——这与库内 10-08 收录的青眼「爆品靠专利与自研成分」形成互补：前者讲消费者想要什么（像皮肤），后者讲品牌靠什么达成（技术差异化）。数据侧的另一个提醒是渠道结构：美国彩妆线下仍占 90%（Ulta 22.5% + Sephora 18.0%），线上仅 10%，这一结构与国内抖音主导的格局完全相反，引用时不能混用。",
+      "source_excerpt": "The makeup market demonstrated robust performance in October 2026, reaching $4.15 billion, a healthy increase from September's $4.08 billion. ... Consumer demand for 'Achieve a natural, skin-like complexion' (A) and 'Incorporate skincare benefits into makeup routine' (A) underscores the imperative for brands to develop multifunctional products that blend performance with skin health. ... Top trends like Skincare-Makeup Hybrids (92) and Satin & Soft Matte Finishes (88) are driving innovation ... The category faces significant headwinds from high inflation sensitivity (D) and trade-down risk (E).",
+      "source_classify_note": "Simporter 为市场情报平台，发布自有 AI 趋势评分的品类月报，按规则归入 institute（机构自有数据源）；报告页标注 Published October 2026，数据区分 unadjusted 与 seasonally adjusted 两套口径。⚠️ 无具体发布日，按当月 1 日归档并标 need_date_check=true，未杜撰。⚠️ 口径提示：该报告为美国市场（美元、美国零售渠道），线下占比 90% 的结构与国内渠道格局不可比，引用须注明地域。已核库：库内无彩妆品类月报，不构成重复。",
+      "tags": [
+        "行业报告",
+        "彩妆大盘",
+        "妆效趋势",
+        "美国市场"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "Simporter",
+      "key_data": "美国彩妆 10 月 41.5 亿美元/环比 +1.7% ｜ YTD 401.8 亿/+2.5% ｜ 11 月峰值 43.0 亿 ｜ 诉求第一：自然像皮肤 ｜ 趋势：护肤彩妆混合 92、缎光柔雾 88 ｜ 线下占 90%"
+    }
+  ],
+  "hot_topics": [
+    {
+      "title": "中央网信办把「内容标注」变成发布必经步骤：6 类必选标签落地，含「营销信息」与「AI 生成内容」",
+      "source_name": "陕西省网络举报中心（转中央网信办口径）",
+      "source_url": "https://shaanxijubao.cn/20261008/120641074d1ad20bd5eaddfe7013fa86.html",
+      "source_tier": "original",
+      "date": "2026-10-08",
+      "time": "2026-10-08 18:00",
+      "platform": "全平台（抖音/快手/微信/小红书/微博/B站/淘宝/京东等 12 家）",
+      "key_points": [
+        "中央网信办今年以来全面部署推进规范短视频内容标注工作，3 月起先指导抖音、快手、腾讯、小红书、哔哩哔哩、微博、淘宝、京东、拼多多、支付宝、美团、百度等 12 家平台先行先试",
+        "核心三项任务：①规范标签种类——平台必须提供 6 类「必选标签」，即「含有虚构演绎内容」「含有AI生成内容」「含有营销信息」「内容为转载」「内容为个人观点」「无需标注」（真实生活记录可选「无需标注」，且该标签不在页面呈现）；②优化发布流程——**内容标注设为发布必经环节，不选标签无法发布**；③加强标注审核——新增内容巡检、存量内容分批回溯补标",
+        "存量补标规则：平台按「由近及远、先高热度后普通」分批回溯，优先处理 3 个月内高传播视频，再覆盖半年与 1 年以上内容，结合技术识别与人工核验补标（腾讯方面表述为结合发布时间、传播热度等维度对画面与特征做多维度回溯，并结合用户反馈打标）",
+        "同期的中央网信办专项行动明确要求：对未按要求标注的虚假人设类短视频依法从严处置；督促平台不得借已标注「虚构演绎/AI生成/营销/转载/个人观点」等标签**规避**网络生态治理要求；并严禁在榜单、推荐等位置推送虚假人设类短视频"
+      ],
+      "summary": "对做内容投放与达人合作的美妆品牌，这是一条必读的合规变化：平台侧的「要不要标」已经变成「不标发不出去」，而 6 个必选项里与品牌最相关的是两个——「含有营销信息」与「含有AI生成内容」。含义有两层：①所有带货、种草、商单内容在发布时都要显性勾选营销属性，品牌与达人必须把这一步纳入交付清单；②用 AI 生成素材（含数字人、AI 换脸、AI 口播）须单独勾选 AI 标签。同时要注意监管的口径已经堵上「形式合规」的口子——文件明确平台不得借标注来规避生态治理责任，即「标了」不等于「免责」，虚假人设类内容即便标注仍会被从严处置。",
+      "source_excerpt": "二是强化短视频发布环节规范标注。对于未按要求进行内容标注的虚假人设类短视频，依法从严处置；督促网站平台切实履行内容审核义务，不得借已标注虚构演绎、AI生成、营销、转载、个人观点等内容标签及无不良导向声明规避网络生态治理相关要求，从源头阻遏虚假人设类短视频的上传发布。三是加强重点板块呈现管理。严禁在榜单、推荐等位置推送虚假人设类短视频。",
+      "source_classify_note": "陕西省网络举报中心为省级网信系统官方举报平台（转载中央网信办专项行动口径），属政府官方渠道而非商业聚合站，故来源层级记为 original 并在 source_name 明确标注为「转中央网信办口径」；页面标注 2026-10-08，在 14 天时效窗口内。本条按〇一·8 定位归入 hot_topics A 类（平台官方口径：内容标注规范/生态治理新规），并因「含有营销信息」「含有AI生成内容」两个必选标签直接决定美妆品牌内容与达人商单的发布动作，符合「美妆/女性主市场强相关」筛选要求。⚠️ 标签原文（6 类名称）另经总台央视记者报道与虎嗅 2026-10-10 文章交叉印证一致。",
+      "tags": [
+        "平台新规",
+        "内容标注",
+        "AI 标注",
+        "达人合规"
+      ],
+      "content_ideas": {
+        "抖音": "与达人签商单时把「发布时必须勾选『含有营销信息』」写入brief交付清单，并同步要求 AI 生成素材勾选『含有AI生成内容』；内容侧可做一期「你刷到的美妆测评，哪些是商单」的科普向内容，顺势建立品牌透明感",
+        "小红书": "笔记侧同步执行标注动作（平台已在 12 家先行先试名单内）；把「主动标注营销属性」变成品牌人设的一部分，用「我们就是来推荐自家粉饼的」的坦白式内容替代模糊种草，降低被判定虚假人设的风险"
+      },
+      "read_full": true,
+      "section": "",
+      "source": "陕西省网络举报中心（转中央网信办口径）",
+      "key_data": "6 类必选标签：虚构演绎/AI生成/营销信息/转载/个人观点/无需标注 ｜ 不选标签无法发布 ｜ 12 家平台 3 月起先行先试 ｜ 存量按「由近及远、先高热度」分批回溯 ｜ 标注不免责"
+    }
+  ],
+  "trends": [
+    {
+      "title": "2026 底妆趋势「雾光平衡」：粉雾与光泽按区域分工，DIOR 总监口中的「千层上妆法」",
+      "source_name": "ELLE Taiwan",
+      "source_url": "https://www.elle.com/tw/beauty/news/g64156888/foundation-cushion",
+      "source_tier": "original",
+      "date": "2026-10-08",
+      "time": "2026-10-08 18:00",
+      "key_points": [
+        "DIOR 彩妆总监 Peter Philips 对 2026 底妆趋势的判断是「讲求雾光平衡的适度光泽感」：2025 年的底妆主线是「光泽」，但 2026 年的关键是**在正确的位置展现适度光感，同时搭配一点粉雾元素**，用粉雾去衬托光泽而不是把光压平",
+        "他给 Jisoo 上妆时使用的「千层上妆法」：妆前保养完成后，用气垫粉饼自带粉扑轻拍按压，先上薄薄一层，**毛孔明显处（如鼻翼两侧）多拍几下、一层层慢慢叠加**，用层叠而不是一次性厚涂来修饰毛孔，兼顾服贴与持久",
+        "质地的分工用法（最可落地的一条）：粉雾质地的粉底/气垫用于修饰侧脸、额头中央、鼻翼两侧的毛孔与凹陷，因为粉雾反射光的方式较平、能遮瑕；打亮位置（鼻梁、颧骨、下巴）改用光泽质地",
+        "最后用干净海绵把不同质地的交界处调和融合，确保柔雾与柔光之间没有明显边界线——这一步被明确指为「五官看起来更自然立体」的关键"
+      ],
+      "summary": "这条趋势对定妆/粉饼品类的用法含义比「跟什么色号」重要得多：底妆正在从「全脸一种质地」走向「按区域分配质地」——粉雾用在需要遮毛孔与凹陷的位置，光泽只留在高光区，再用干净海绵把交界处揉匀。与库内 10-10 收录的 Suede Skin（忌全脸压粉、只局部柔焦）方向一致，但落到更具体的操作层面：上妆手法从「一次铺满」改为「薄层叠加、局部加压」。粉饼/蜜粉饼的内容脚本可以直接跟练这套分区逻辑。",
+      "source_excerpt": "2025年的底妝趨勢就是「光澤」！根據DIOR彩妝總監Peter Philips的觀察，他發現越來越多人愛上妝容中的光澤……不過Peter也特別提到「漂亮的光澤要兼顧優雅和平衡」，在對的地方展現適度閃耀光感，但還是要搭配一點粉霧元素，更襯託光澤妝容的美。…… 他則表示自己粉霧、光澤質地會同時使用！像是粉霧妝感的氣墊粉餅常用來修飾如側臉、額頭中央，或是鼻翼兩側的毛孔與凹陷，粉霧質地反射光的方式較平、能幫助遮蓋肌膚瑕疵；在平常打亮的位置，如鼻樑、顴骨、下巴，則會選用光澤粉底。最後再用乾淨海綿來調和這些不同質地的粉底。",
+      "source_classify_note": "ELLE Taiwan 为时尚美妆原创媒体，文章署名三位编辑、页面标注 Published: 2026/10/08，来源层级 original，在 14 天时效窗口内。本条只取其中的趋势判断与上妆手法部分（趋势主张出自 DIOR 彩妆总监具名受访），**未收录该文后半段的专柜气垫产品推荐清单**，以避免媒体产品横评混入趋势板块。已核库：库内 2026 秋冬趋势条目以色彩与妆效（低饱和柔焦雾面、原生感）为主，本条为「底妆质地分区 + 层叠上妆手法」角度，不构成重复。",
+      "tags": [
+        "趋势",
+        "底妆",
+        "雾光平衡",
+        "上妆手法"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "ELLE Taiwan",
+      "key_data": "2026 底妆=雾光平衡（粉雾衬托光泽而非压平） ｜ 千层上妆法：薄层叠加、毛孔处多拍 ｜ 粉雾用于侧脸/额头/鼻翼，光泽留给鼻梁颧骨下巴 ｜ 干净海绵揉匀交界"
+    }
+  ],
+  "new_products": [],
+  "ai_marketing": [
+    {
+      "title": "L'Oréal 重构营销引擎：约 20% 营销预算已由 AI 驱动，并让 20 位最高层每人亲手用 AI 做一条广告",
+      "source_name": "Fortune（经 AI Marketers 摘要）",
+      "source_url": "https://www.theaimarketers.ai/newsedition-100826",
+      "source_tier": "aggregator",
+      "date": "2026-10-06",
+      "time": "2026-10-06 15:29",
+      "key_points": [
+        "L'Oréal 首席数字与营销官 Asmita Dubey 向 Fortune 披露，集团正在围绕 AI 重建营销架构，**目前约 20% 的营销投入已由 AI 主导（AI-led）**",
+        "集团已在测试 Google AI Overviews 内的广告，并与 OpenAI、Amazon、Alibaba 合作，目标是让旗下美妆产品能出现在 AI 驱动的搜索结果里",
+        "三家支柱式战略：①员工技能升级；②把 AI 嵌入各职能以提效；③梳理 AI 对消费者旅程的影响。同时建设内部情报平台，让员工可以用对话方式查询集团庞大的美妆研究数据库，使产品研发更数据驱动",
+        "Dubey 强调真正的功夫在「管道与水暖」（pipes and plumbing）：标准化 Google 与 Meta 的广告账户与产品数据、把品牌与科学内容改写成 AI 系统**读得懂**的结构，并建立生成式引擎优化（GEO）框架",
+        "她举了一个直接说明问题的例子：某商品搜索原本只需几分钟，现在要 11 分钟，因为购物者改成了「和 AI 聊着找」；而把一个 commerce 协议接到 10 万个 SKU 上，AI 能学到的只有「SPF 50」——产品真正的使用场景、品牌因什么出名，仍然只能由品牌自己提供",
+        "为了让管理层理解自己在要求什么，Dubey 让集团 20 位最高层管理者**每人用 AI 从头到尾做出一条广告**"
+      ],
+      "summary": "这是继库内 09-14 收录的雅诗兰黛 × Profound（GEO 战略合作）之后，第二家把「AI 可读性」提到集团战略层的国际美妆巨头——区别在于 L'Oréal 的做法更偏底层：标准化产品数据、重写内容结构、建 GEO 框架，而不是只买监测工具。最值得转述给团队的是那个「10 万 SKU 只学到 SPF 50」的例子：AI 能从结构化字段里读到的只有参数，产品的使用场景与品牌记忆点必须由品牌自己用可读的方式写出来。这与库内持续关注项（AI 答案引擎成为新战场）指向同一件事：把成分、克重、适用肤质、使用场景写成结构化字段，是零边际成本的先手动作。",
+      "source_excerpt": "Almost 20% of L'Oréal's marketing investment is now AI-led, and the group is already testing ads inside Google's AI Overviews. But Dubey's real focus is the unglamorous layer underneath, what she calls the \"pipes and plumbing.\" That means standardizing ad accounts and product data across Google and Meta, and structuring brand and scientific content so an AI system can actually read it. To make sure her leadership understood what they were asking for, she had L'Oréal's 20 most senior executives each create an ad with AI, start to finish. ... Her example is a sunscreen. A commerce protocol can hand an AI 100,000 SKUs, and all it learns is SPF 50. The context someone actually uses it in, the thing a brand is famous for, still has to come from you.",
+      "source_classify_note": "一手来源为 Fortune 对 L'Oréal 首席数字与营销官 Asmita Dubey 的专访（Fortune 页面标注日期 2026-10-06）；本条 source_url 取 AI Marketers 行业周报的摘要页（含完整要点转述，按规则判定为 aggregator）。⚠️ 20% 预算、11 分钟搜索等数字均来自该摘要转述，未取到 Fortune 原文页逐字核对，如实标注。日期为原专访发布日 2026-10-06，在 14 天窗口内。已核库：库内 L'Oréal 相关为巴黎欧莱雅代言（ Kristen Bell）、青眼全球十强、进博主题等，均非本条内容，不构成重复；与库内雅诗兰黛×Profound 条为不同主体、不同动作（本条为集团营销架构与数据标准化的实操披露）。",
+      "tags": [
+        "AI 营销",
+        "GEO",
+        "组织变革",
+        "L'Oréal"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "Fortune（经 AI Marketers 摘要）",
+      "key_data": "约 20% 营销投入 AI-led ｜ 测试 Google AI Overviews 广告 ｜ 合作 OpenAI/Amazon/阿里 ｜ 建 GEO 框架 ｜ 20 位最高层各做一条 AI 广告 ｜ 「10 万 SKU 只学到 SPF 50」"
+    },
+    {
+      "title": "AI 冒充刘欢妻子带货：仿冒一条明星视频 70 元起，标注制度被指「有标注不等于被看见」",
+      "source_name": "虎嗅网（作者：眸娱）",
+      "source_url": "https://www.huxiu.com/article/4896410.html",
+      "source_tier": "original",
+      "date": "2026-10-10",
+      "time": "2026-10-10 14:51",
+      "key_points": [
+        "音乐家刘欢于 2026-09-25 病逝，数日后出现以「刘老师老婆」为名的 AI 视频：前半段引用其生前片段、以遗孀口吻讲述，后半段转向推荐一款「黄精五黑粉」并引导点开小黄车，视频获数万点赞、上万次转发",
+        "该人设并不存在——刘欢妻子卢璐曾公开表示「除了朋友圈，老刘和我都没有社交媒体」；同一产品还有自称「刘欢儿子」的账号在推，说明背后是**账号矩阵批量运营**，封一个还有下一个顶上",
+        "灰产价目表（引中国新闻网《民生调查局》调查）：电商平台花 70-100 元可定制一条明星 AI 仿冒推广视频，花 1.98 元可永久克隆一个明星声音；提供几张照片与百字文案，商家 10 分钟内返回首版形象、1 小时交付完整视频；更成熟的模式直接抓取明星原视频复刻，两天完成，样貌神态与眼部细节精准还原",
+        "标注制度的形式化问题：视频播放页确实有小字标注「内容由AI生成」，但小到几乎不会被注意；文章追问「标注在合规意义上完成了告知义务，但在传播效果上更像免责工具而非保护消费者的手段」",
+        "商业化另一面正在加速（两组数据）：艾媒咨询——2026 年中国 AI 数字人市场规模已突破 480 亿元；中国财富网与弗若斯特沙利文《中国AI数字人产业发展报告(2025年)》——AI 数字人直播在电商直播带货领域整体渗透率已超 60%，3C、日用百货等标准化品类甚至超 70%",
+        "合规样本与平台治理：戚薇把姓名、肖像与声音授权给 AI 漫剧《末日盛夏》，成为内娱首位规范化开放 AI 形象授权的现役艺人（其口径为「与其被别人拿走自己的脸，我更愿意主动出击」）；王祖贤授权 20-30 岁肖像给网易《天下》并署名「王祖贤（AI）」，吴启华、游本昌亦有类似授权，共同特征是**限定 IP、限定用途、期限清晰**。平台侧，抖音电商已依据《仿冒名人宣传》细则对违规达人与商家采取下架商品、冻结货款、无限期回收电商权限等处置，另有平台上线肖像保护功能以 AI 模型识别拦截未授权仿冒带货"
+      ],
+      "summary": "这篇文章把「AI 明星带货」的两条线并置，对做代言与达人内容的美妆品牌是必读风险提示：合规世界里明星是交易的发起方（授权范围、使用场景、收益分配都有约定），盗用世界里明星是原材料（被采集、被合成、被变现，全程缺席）——分界线不在技术能力，而在商业关系。两个可落地结论：①品牌方任何涉及明星形象的内容，都必须能溯源到本人或官方账号，内容审核清单里应加入这一条；②正因为仿冒成本只有几十元、追责成本高百倍，合规授权的价值正在被重新定价（戚薇/王祖贤模式的共同点是限定 IP、限定用途、期限清晰），这与我们做代言/联名时的授权条款设计直接相关。",
+      "source_excerpt": "在电商平台，花70到100元就能定制一条明星AI仿冒推广视频，花1.98元就能永久克隆一个明星的声音，仿真度足以以假乱真。…… 合规世界里，明星是交易的发起方，授权范围、使用场景、收益分配都有明确约定；盗用世界里，明星是交易的原材料，被采集、被合成、被变现，全程缺席。…… 中央网信办已在2026年5月要求平台提供6类必选标签，所有短视频发布必须选择「含有AI生成内容」等标签之一才能发布。但刘欢事件表明，有标注不等于被看见，标注的存在在合规意义上完成了告知义务，但在实际传播效果上，它更像是一种免责工具，而非保护消费者的手段。",
+      "source_classify_note": "虎嗅网为原创商业科技媒体，文章署名「眸娱」（转自其微信公众号），页面标注发布时间 2026-10-10 14:51，来源层级 original，在 14 天时效窗口内。文中引用的第三方数据均已注明原始出处（中国新闻网《民生调查局》、艾媒咨询、中国财富网×弗若斯特沙利文报告），未做二次推算。已核库：库内无「AI 明星带货仿冒」相关条目（既有条目为 AI 造衰老画面翻车、AI 数字人直播实效等），本条为不同事件与不同分析角度，不构成重复。",
+      "tags": [
+        "AI 营销",
+        "明星授权",
+        "合规风险",
+        "数字人"
+      ],
+      "read_full": true,
+      "section": "",
+      "source": "虎嗅网（作者：眸娱）",
+      "key_data": "仿冒视频 70-100 元/条、声音克隆 1.98 元 ｜ AI 数字人市场 480 亿元 ｜ 数字人直播渗透率 >60%（3C/日用百货 >70%） ｜ 戚薇/王祖贤：限定 IP+限定用途+期限清晰 ｜ 抖音依《仿冒名人宣传》下架冻结回收权限"
+    }
+  ],
+  "continuous_watch": [
+    {
+      "text": "**小红书美妆个护品牌资质新规**（自 2026-09 起执行，10/10 为历史资质清理节点）：平台不再认可采销凭证，品牌授权链路须材料化备齐（商标 R 标、授权层级≤2 级、地域/类目/有效期/盖章齐全），逾期未整改将下架商品或冻结店铺。**10-11 复核**：清理节点已过，本轮检索仍未发现平台发布口径放宽或延期公告；小红书市集双11 今日（10/11）开跑，资质不合规的链接在大促期被处置的代价更高，美诺须在今日内确认在售链接资质材料已提交、千帆站内信无未处理整改项。",
+      "status": "持续中"
+    },
+    {
+      "text": "**双11 各平台机制定档、补贴逻辑从「普惠」转向「分层精准」**：京东 **10/12 20:00 现货首发**（主推官方直降、服饰美妆爆款佣金补贴最高提升 100%）；天猫/淘宝 10/15 20:00 开启预售定金（10/15-10/20 17:59）、10/20 20:00 尾款+现货开门红，今年全面推行「单品官方立减」；微信小店首次正式参战（10/12-11/15、35 天、符合条件单品最高可享平台全额补贴）；小红书市集 10/11-11/11、亿级补贴、买手橱窗千粉可申请。**10-11 复核**：京东现货首发就在明日，美诺粉饼的赠品与到手价机制若走京东现货路线，今日必须定稿。",
+      "status": "持续中"
+    },
+    {
+      "text": "**AI 答案引擎（GEO）成为美妆集团的共同战场**：除 9 月中雅诗兰黛集团与 AI 营销平台 Profound 达成全球战略合作、成为首个在全品牌组合规模化落地「生成式引擎优化（GEO）」的高端美妆集团外，**10-11 新增证据**：L'Oréal 首席数字与营销官 10/06 披露集团约 20% 营销投入已由 AI 主导，并明确把「标准化产品数据、把品牌与科学内容改写成 AI 读得懂的结构」列为重点，同时建设 GEO 框架。**两家国际集团先后把同一件事写进战略，说明这不是单点试验而是行业共识。** 对美诺＝把成分、克重、替换芯、适用肤质、实测口径写成结构化字段，是零边际成本的前置动作；L'Oréal 的例子更直白：10 万 SKU 交给 AI，它能读到的只有「SPF 50」，使用场景与品牌记忆点必须由品牌自己写出来。",
+      "status": "持续中"
+    }
+  ],
+  "today_must_see": [
+    {
+      "text": "**双11 进入倒计时：京东明日（10/12）20:00 现货首发**。京东现货直降为主、服饰美妆爆款佣金补贴最高提升 100%；天猫/淘宝 10/15 20:00 开启预售定金、10/20 20:00 尾款与现货开门红，全面推行「单品官方立减」；微信小店 10/12-11/15 首次参战；小红书市集 10/11 已开跑。**今日必须定稿粉饼的赠品与到手价机制**——走京东现货路线只剩一天，走天猫预售路线则需在 10/15 前锁定专属赠品。"
+    },
+    {
+      "text": "**中央网信办把内容标注变成发布必经步骤**：平台须提供 6 类必选标签（含「含有营销信息」「含有AI生成内容」），不选标签无法发布；存量按「由近及远、先高热度」分批回溯补标；文件同时明确平台不得借标注规避生态治理责任（**标注不等于免责**）。对美诺＝与达人签商单时，把「发布时勾选『含有营销信息』」写进 brief 交付清单；任何 AI 生成素材（数字人、AI 口播、AI 换脸）须单独勾选 AI 标签。"
+    },
+    {
+      "text": "**美国定妆粉饼品类月报（10 月）给出两条硬信号**：①品类仍温和增长——10 月销售额 1.58 亿美元、环比 +2.6%，YTD 15.18 亿美元高于去年同期 14.35 亿美元；②消费诉求排序换了位——第一名是「水润柔雾 & 云朵肌」（92 分），第二名是「洁净无滑石创新」（90 分），**「不拔干」与「成分干净」已经与「持妆」并列**。机会子类：精华入粉 15.8%、校色定妆粉 9.1%。风险：本品类被判定为最容易被低价替代（F 级），单靠参数守不住价格带。"
+    },
+    {
+      "text": "**AI 明星带货的信任成本正在被重新定价（刘欢事件 + 两组数据）**：仿冒一条明星推广视频只要 70-100 元、克隆声音 1.98 元，而中国 AI 数字人市场已突破 480 亿元、数字人直播在电商带货渗透率超 60%。**对美诺的直接动作**：任何涉及明星形象的内容必须可溯源到本人或官方账号；代言/联名授权条款要写清「限定 IP、限定用途、期限清晰」（戚薇、王祖贤授权模式的共同点）。"
+    },
+    {
+      "text": "**2026 底妆用法从「全脸一种质地」转向「按区域分工」**（ELLE 10/08，引 DIOR 彩妆总监 Peter Philips）：「千层上妆法」＝薄层叠加、毛孔处多拍；粉雾质地用于侧脸、额头中央、鼻翼两侧修毛孔与凹陷，**光泽只留在鼻梁、颧骨、下巴**，最后用干净海绵揉匀两质地交界。这与 10-10 收录的 Suede Skin（忌全脸压粉、只局部柔焦）同向但更可执行——粉饼内容脚本可直接跟练这套分区逻辑。"
+    }
+  ],
+  "brand_inspiration": [
+    "Tower 28 的首个快闪做了一件大多数品牌不敢做的事：**四天，不卖任何产品**——只让访客试、给新粉底匹配色号、用空瓶补装 SOS Rescue Spray、买限定量周边，空间按「怀旧加州海滩小店」设计，媒体直接把它定义为「更像社群空间而非美妆店」。它敢这么做的理由是品类特性：敏感肌的购买阻力不是价格，而是「不敢试」，而色号错配是退货主因。对美诺粉饼的启示很具体：**底妆的色号与肤感适配成本只能在线下解决**——与其把快闪做成限时销售点，不如把「试到对为止」做成明确的服务目标，把退货与差评的成本前置到线下消化。",
+    "Milk Makeup 十周年的巴黎快闪值得抄的是它的「三层离场机制」：①**到场必得**——每个参与者一定能拿到托特包 + 电解质润唇膏 + 试用装，且保证是迷你装或正装规格；②**刮刮卡抽正装福袋**；③**现场专属 20% 码，只能在 Sephora.fr 用于指定产品线**。第三条是关键：折扣码不印在物料上、只发给到场者，等于给线下流量打上可追踪标记。美诺做联名或周年活动时最常见的浪费是「只做展陈不做回收」——加上「专属码」这一层，线下花费才能对应到线上可核对的成交。",
+    "SEPHORA × Olive Young 的 K-Beauty 快闪把「领小样」改造成了游戏：访客先领卡片、完成任务，然后拿到**5 秒限时铲小样**的资格，用「限时成就」替换「排队领赠品」的疲惫感；旁边再免费提供 **AI 皮肤分析**，让选品从「凭感觉」变成「先看数据」；最后用 S$7 抵扣券与满 S$50 送礼把体验当场转成客单。对美诺的可复制点：**试用装天然适合做成限时/盲盒类互动**（成本极低但天然出内容），而色号与肤质适配恰好是 AI 测肤最能帮上忙的环节——粉饼试用装的派发不应只是「发」，而应设计成一个可拍摄、可分享的动作。",
+    "中央网信办把「含有营销信息」设成发布必选项，表面是合规负担，实际给了一条**主动建立品牌诚实度的通道**：当所有商单内容都必须显性勾选营销属性时，用户对「坦白」的品牌反而更容易建立信任。而且文件明确堵死了形式合规的口子——平台不得借标注规避生态治理责任，标注的不等于免责的。对美诺的启示：与其被动等平台抽查，不如把「营销属性标注 + 产品备案与实测口径同步公开」做成内容的固定组成部分，把合规动作转成信任资产；任何 AI 生成素材（数字人、AI 口播）单独标注 AI 属性，同样是诚实度的一部分。",
+    "虎嗅那篇 AI 仿冒带货的文章给所有做代言/授权的品牌划了一条清晰的线：**合规世界里明星是交易的发起方，盗用世界里明星是原材料**——分界线不在技术能力，而在商业关系。可参照的两个正向样本是戚薇与王祖贤，它们授权的共同特征是「限定 IP、限定用途、期限清晰」，且授权的是「记忆中最具商业价值的那个形象」而不是当下的脸。对美诺的启示：代言与联名合同里必须写清授权范围（哪些形象、哪些渠道、哪些用途、多久），并在内容审核清单中加入一条硬标准——**任何涉及明星形象的内容，能否溯源到本人或官方账号**。",
+    "L'Oréal 的 CDMO 讲了一句对美诺最有用的实话：把一个 commerce 协议接到 10 万个 SKU 上，AI 能学到的只有「SPF 50」——**产品真正的使用场景、品牌因什么出名，仍然只能由品牌自己提供**。她因此把功夫花在「管道与水暖」上：标准化产品数据、把品牌与科学内容改写成 AI 读得懂的结构、建 GEO 框架，并让 20 位最高层每人都亲手用 AI 做完一条广告。对美诺的落地含义：粉饼的「用在什么场景（通勤/换季/补妆）、配什么肤质、定妆在哪些部位、对比同价位产品的差异」这些上下文，才是 AI 时代不可替代的资产——而且它今天写给人看的成本，和明天写给 AI 读的成本，是同一笔。"
+  ],
+  "weekly_actions": [
+    {
+      "action": "**双11 冲刺（最高优先级，京东现货首发就在明日 10/12 20:00）**：①今日内定稿粉饼的赠品组合与到手价机制；②走京东现货路线＝官方直降 + 争取服饰美妆爆款佣金补贴（最高提升 100%）；③走天猫预售路线＝锁定 10/15-10/20 定金期的专属赠品，10/20 20:00 尾款与现货开门红；④按 10-11 小红书市集（10/11-11/11）同步申报重点单品扶持，按「买手橱窗千粉可申请」对接中小买手做种草矩阵；⑤微信小店 10/12-11/15 作为复购承接渠道。",
+      "owner": "电商+运营",
+      "status": "本周紧急"
+    },
+    {
+      "action": "**内容合规立即执行（新规，本周内完成流程改造）**：①与达人签商单时，把「发布时必须勾选『含有营销信息』」写进 brief 的交付清单，并在验收环节检查截图；②所有 AI 生成素材（数字人、AI 口播、AI 换脸、AI 生成画面）单独勾选「含有AI生成内容」；③注意监管口径——平台不得借标注规避治理责任，**标注不等于免责**，虚假人设类内容即便标注仍会被从严处置；④排查历史合作内容中是否存在无法溯源到本人或官方账号的明星形象素材。",
+      "owner": "媒介+法务/内容",
+      "status": "本周紧急"
+    },
+    {
+      "action": "**小红书资质收尾（今日完成）**：10/10 历史资质清理节点已过且无放宽公告，而小红书市集双11 今日开跑——资质不合规链接在大促期被处置的代价显著更高。确认美妆个护在售链接的授权链路材料已提交（商标 R 标、授权层级≤2 级、地域/类目/有效期/盖章齐全），千帆后台站内信无未处理整改项。",
+      "owner": "电商+法务/运营",
+      "status": "本周紧急"
+    },
+    {
+      "action": "**粉饼内容脚本按「妆效 + 手法」双线重写**：①妆效线——对齐美国定妆粉饼品类的第一诉求「水润柔雾 & 云朵肌」（92 分）与第二诉求「无滑石洁净配方」（90 分），把卖点从「控油持妆」扩到「不拔干 + 成分干净」；②手法线——按 10-08 收录的「底妆质地分区」（粉雾用于侧脸/额头中央/鼻翼，光泽只留鼻梁颧骨下巴，干净海绵揉匀交界）+「千层上妆法」（薄层叠加、毛孔处多拍）拍可直接跟练的短视频；③产品线可评估两个细分子类机会——精华入粉（子类占比 15.8%）与校色定妆粉（9.1%）。功效与成分表述一律以备案信息与检测报告为据。",
+      "owner": "内容+产品",
+      "status": "本周启动"
+    },
+    {
+      "action": "**代言/联名授权条款与 AI 可读信息双线加固**：①授权侧——参照戚薇/王祖贤模式，把「限定 IP、限定用途、期限清晰」写入条款，明确哪些形象/渠道/用途可用，并在内容审核清单中加入「明星形象素材须可溯源到本人或官方账号」这一硬标准（AI 仿冒视频定制成本仅 70-100 元，事后追责成本高百倍，只能靠前端设防）；②信息侧——把粉饼的成分、克重、替换芯规格、适用肤质、定妆手法与场景（通勤/换季/补妆）整理成结构化字段，同步到详情页与自有内容（参照 L'Oréal 的判断：AI 只能读到参数，使用场景必须由品牌自己写出来）。",
+      "owner": "媒介+内容+电商",
+      "status": "规划中"
+    }
+  ]
+}
