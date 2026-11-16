@@ -1,0 +1,1097 @@
+{
+  "meta": {
+    "version": "23.0",
+    "date": "2026-11-16",
+    "data_as_of": "2026-11-16",
+    "brand": "美诺 MENOW",
+    "track": "美妆/底妆/粉饼/定妆",
+    "label": "V23 每日新增",
+    "note": "当日九板块 + 固定四板块由 11-16 研究写回。舆情文件不归本自动化。",
+    "collected_at": "2026-11-16"
+  },
+  "endorsements": [
+    {
+      "brand": "花间颂",
+      "star": "饶子豪 & 诸侯",
+      "level": "品牌挚友",
+      "star_title": "品牌挚友",
+      "action": "新签",
+      "date": "2026-11-14",
+      "risk": "低",
+      "note": "dyxh 记为饶子豪、诸侯两条，二人同品牌同头衔同日官宣，按同场合并为 1 条。花间颂同时是本周追踪的国货彩妆竞品（当日新品 8 款）。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "http://www.sina.cn/news/detail/5364762063144119.html",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49177",
+      "topic_hashtag": "#花间颂品牌挚友#",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "美妆",
+      "brand_actions": "把「两个人」做成一个可售卖的组合：官宣日（11 月 14 日）天猫/京东【FLOWERLURE 花间颂官方旗舰店】首发「诸禧豪花时」限定套组现货 3000 套，11 月 10 日 11:00 先开预约，预约下单即可转盘抽亲签与隐藏卡；单品也不空手，每款附不同小卡。分发节奏被精确到分钟：11-13 10:00 放倒计时 1 天海报、12:00 官宣日机制全攻略、13:00 预热视频；11-14 07:30 官宣海报并同步官方旗舰店直播间开播、07:35 单品机制、09:05 套组宣发、10:00 艺人与品牌微博共创口播、10:05 周边一览、10:10 亲签时刻表、10:30 品牌分发口播、11:00 开箱套组赢亲签、12:00 种草视频、12:30「底妆 7 天打卡赢亲签」、14:00 周边开箱、15:00 花絮，微博/抖音/小红书/快手/视频号五端同步。周边配置为小卡、拍立得、明信片、钥匙扣、贴纸 + 隐藏卡；直播间全天抽签名照与隐藏卡。",
+      "reactions": "这是把 CP 粉运营直接写进商品结构的一次操作：套组名「诸禧豪花时」取自两人姓名与粉丝话题「诸多温柔豪运花间」，周边与亲签被拆成两层钩子——现货套组负责当天转化，7 天打卡负责把一次官宣拉成一周的内容与复购窗口。对美诺的参照意义在于：同档期竞品用「限定套组 + 卡册化周边 + 打卡周期」把一次代言做成一个 7 天的流量包，而我们目前的代言合作大多只有一条官宣博。",
+      "source_tier": "aggregator",
+      "source_classify_note": "新浪网转载花间颂官方发布内容（一手为品牌微博/公众号，该页为媒体转载页）",
+      "dyxh_id": "e_a63b1f66",
+      "dyxh_raw_id": 49177,
+      "img_url": "https://oss.dyxh.cc/user/1785/d/49177/1794796869010O276SP.jpg?auth_key=1794816900-0-0-c0c9ef13277fa1ee998ae6907dd89d3d&x-oss-process=image/crop,x_0,y_87,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": false,
+      "read_full": true,
+      "source_excerpt": "「诸禧豪花时」套组，11月14日10:00首发现货3000套，天猫&京东【FLOWERLURE花间颂官方旗舰店】；11月10日11:00开启预约，下单即可转盘抽奖，有机会抽到亲签和隐藏卡；单品也附赠小卡，11月14日07:30 花间颂官方旗舰店直播间准时开播，全天还抽签名照和隐藏卡。#花间颂# #花间颂品牌挚友# #花间颂诸禧豪花时# #诸多温柔豪运花间#"
+    },
+    {
+      "brand": "零食很忙 & 赵一鸣零食",
+      "star": "吴克群",
+      "level": "世界名产真相官",
+      "star_title": "世界名产真相官",
+      "action": "新签",
+      "date": "2026-11-14",
+      "risk": "低",
+      "note": "dyxh 记为「零食很忙×吴克群」「赵一鸣零食×吴克群」两条，同一活动、同一头衔、同日，两品牌同属鸣鸣很忙集团，合并为 1 条。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "http://mp.weixin.qq.com/s?__biz=Mzg5NjY0MzIwNA==&mid=2247496456&idx=1&sn=b9004756ffeccd57bc7bca7a95b651da&chksm=c1b56e02159e908a8c420c1117b9209b825c2835241234aeec31b879ead76b01453d49d12294#rd",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49175",
+      "topic_hashtag": "#世界名产老乡产#",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "休闲食品",
+      "brand_actions": "把「溯源」做成一场可到店核销的内容：吴克群以「世界名产真相官」身份进云南临沧，跟老乡上山敲果、24 小时内送厂脱皮清洗，再进赵一鸣零食的「六审六检」十二道关（产地初筛、厂商资质审查、视频审厂、实地审厂、产品合规审核、日常远程监厂 + 上新前第三方送检、批次质检、入仓品控、在库抽检、上架前门店全民质检、督导巡店与食安公示），最终落成 500g 奶香味云南夏威夷果 19.8 元/包，配 280 环形大开口 + 专属开壳器。转化设计在门店端：会员买一包结账后打开小程序可解锁三项——吴克群亲笔手写信、专属「世界名产真相官」头像框、门店电视「在线为你颁奖」；另放 2000 份零食免单券，公众号文末抽 20 人零食大礼包（11 月 21 日 15:00 截止）。鸣鸣很忙集团同步捐出一批夏果树苗做助农闭环。",
+      "reactions": "「世界名产老乡产」把产地故事变成了可验证的信任货币——不解释「好吃」，而是让人看见采摘、工厂与十二道质检，最后用 19.8 元的价格落槌。线下 3 万家门店 + 小程序 + 门店电视的三段式联动，把明星内容直接变成到店动作与二次传播素材，是零食量贩业态少见的「内容即货架」打法。对美诺可借鉴的一条：把「粉饼为什么控油」做成一次可被看见的工厂/实验室溯源，比再拍一条纯妆效视频更抗比价。",
+      "source_tier": "original",
+      "source_classify_note": "赵一鸣零食品牌官方微信公众号一手图文（活动机制、门店权益、抽奖规则均出自该文）",
+      "dyxh_id": "e_778b3945",
+      "dyxh_raw_id": 49175,
+      "img_url": "https://oss.dyxh.cc/user/82/d/49175/1794795734286bnwx1Y.jpg?auth_key=1794816900-0-0-b61231b064c05cca52e42217f7f8cd61&x-oss-process=image/crop,x_0,y_0,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": false,
+      "read_full": true,
+      "source_excerpt": "最近！我被吴克群给盯上了！他自称「世界名产真相官」，要深入大山调查我的底细……现在我已经在赵一鸣零食门店出道啦，会员到店买一包「云南夏威夷果奶香味500g」，完成结账后打开小程序，即可解锁三大惊喜：查收吴克群亲笔手写信、点亮「世界名产真相官」头像框、门店电视霸屏在线为你颁奖。2000份「零食免单券」已备好；评论区晒话题截至11月21日15:00抽20位送零食大礼包。"
+    },
+    {
+      "brand": "巴黎世家",
+      "star": "宋妍霏",
+      "level": "品牌挚友",
+      "star_title": "品牌挚友",
+      "action": "新签",
+      "date": "2026-11-14",
+      "risk": "低",
+      "note": "非美妆品类（奢侈品箱包），头衔为品牌挚友，非代言人。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "https://socialbeta.com/campaign/28968",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49173",
+      "topic_hashtag": "#宋妍霏巴黎世家品牌挚友#",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "奢侈品",
+      "brand_actions": "把 25 周年做成一次全球同框：Le City 手袋 25 周年庆典请来 Isabelle Huppert、Nicole Richie、Rachel Sennott、Hugo Ekitike 与宋妍霏多位「品牌挚友」共同出镜全球广告，跨巴黎、纽约、上海多城拍摄；宋妍霏在上海黄浦江畔演绎与艺术家 Damien Hirst 联名系列中饰有「Icons」图案的 Le City 手袋。配套动作是限量联名款包袋（含迷你到大号及钱包、卡包、吊饰）+ 全球多地 Le City House 体验空间展陈 + 品牌档案展 + 精品店特别展示与个性化定制；11 月她另出席 BALENCIAGA 2026 年 Le City 巴黎庆祝晚宴。",
+      "reactions": "奢侈品牌把「品牌挚友」用成了区域市场的曝光位：不新签代言人，而是把中国面孔塞进一支有 Isabelle Huppert 这类国际阵容的全球广告里，既省下代言层级的成本，又拿到「与艺术家联名」的叙事。对美诺的参照是：如果预算买不到品牌代言人，用「联名 + 多面孔群像」同样能撑起一次高质感传播。",
+      "source_tier": "original",
+      "source_classify_note": "SocialBeta 营销案例库原创整理（活动机制与国际阵容描述出于该页）",
+      "dyxh_id": "e_b6f3320e",
+      "dyxh_raw_id": 49173,
+      "img_url": "https://oss.dyxh.cc/user/288/d/49173/1794793420947hC3DH9.jpg?auth_key=1794816900-0-0-c266e6b1fd0637ac7d0729ff898a6d70&x-oss-process=image/crop,x_86,y_0,w_518,h_690",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": false,
+      "read_full": true,
+      "source_excerpt": "Balenciaga 开启 Le City 手袋 25 周年全球庆典，带来精品店特别展示、个性化定制体验和周年广告大片；品牌携手当代艺术家 Damien Hirst 推出限量合作系列，并邀请来自不同城市的 Le City 爱好者参与广告拍摄。中国演员宋妍霏也加入此次拍摄，在上海黄浦江畔演绎 Damien Hirst 联名系列中饰有「Icons」图案的 Le City 手袋。"
+    },
+    {
+      "brand": "肯德基",
+      "star": "艾米",
+      "level": "早安星推官",
+      "star_title": "早安星推官",
+      "action": "新签",
+      "date": "2026-11-13",
+      "risk": "低",
+      "note": "未取得官宣正式话题标签，按「宁缺不拼」留空。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxMjI0NQ==&mid=2659320300&idx=2&sn=ce9b3a47d84c73ffd7b377354de16e9b&chksm=bcba7e747679171b444213b740d218519c22e4293916f175c5416befa25af76be5307f971c60#rd",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49176",
+      "topic_hashtag": "",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "餐饮品牌",
+      "brand_actions": "用一位「星推官」给新品做首发背书：11 月 13 日官宣演员艾米为「肯德基早安星推官」，配套的是肯德基首个贝果「烤鸡多蔬黑麦贝果」11 月 16 日上海首发、全天供应（不限早餐时段）——黑麦与全麦粉使用量约 2.4%、黑白芝麻/奇亚籽/葵花籽/亚麻籽五种籽实、整块去皮鸡腿肉 + 生菜番茄 + 酸奶风味酱；早餐时段（6:00–10:00）套餐 22 元、大神卡 15.4 元，10:00 后工作日套餐 15.9 元起。同日还上 6.0 高蛋白牛奶（限 5 万杯）与 6.0 高蛋白奶榛果风味拿铁（限 4 万杯），并把 11 月 16 日至 12 月 31 日的下午茶做成到店专享 11 元起，用一张官宣图串起三个时段。",
+      "reactions": "官微特意强调「全天有售」，属于用产品机制回答质疑——评论区外地用户已经在催「苏州也上好不好」，上海限定反而制造了异地期待；第三方试吃笔记把一只贝果拆成约 330 大卡、蛋白质约 28 克，把「KFC 也能吃到高蛋白低负担早餐」讲成了新的品类认知。",
+      "source_tier": "original",
+      "source_classify_note": "肯德基官方微信公众号一手图文（官宣图、产品规格、价格与限量数均出自该文）",
+      "dyxh_id": "e_930ac6fc",
+      "dyxh_raw_id": 49176,
+      "img_url": "https://oss.dyxh.cc/user/182/d/49176/1794795825193ayxcuF.jpg?auth_key=1794816900-0-0-e2a24b867c393d9c8a3630445a309212&x-oss-process=image/crop,x_0,y_0,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": false,
+      "read_full": true,
+      "source_excerpt": "「一早赴约元气登场，鲜活热烈自在发光」——欢迎艾米成为肯德基早安星推官。烤鸡多蔬黑麦贝果自2026年11月16日起上市，共限量35万份，售完即止；6.0高蛋白牛奶限量5万杯，6.0高蛋白奶榛果风味拿铁限量4万杯。活动地区：上海。活动时段6:00-23:00。11月16日起上海惊喜首发，来肯德基get艾米同款贝果。"
+    },
+    {
+      "brand": "蒂芙尼",
+      "star": "邓为",
+      "level": "品牌大使",
+      "star_title": "品牌大使",
+      "action": "新签",
+      "date": "2026-11-13",
+      "risk": "低",
+      "note": "非美妆品类（珠宝），头衔为品牌大使。未取得官宣正式话题标签，留空。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "https://news.qq.com/rain/a/20261116A04BOI00",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49172",
+      "topic_hashtag": "",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "珠宝首饰",
+      "brand_actions": "把官宣搬进门店现场：11 月 13 日蒂芙尼宣布演员邓为出任品牌大使（无考察期直接空降），11 月 15 日他出现在上海恒隆广场蒂芙尼精品店，佩戴 Knot 系列中国首发红宝石吊坠并叠戴十六石系列与珠宝胸针；品牌把「中国首发」放在最前面，主角是 Knot 与红宝石，而非入门款。同期门店结构在换客：关闭天津海信广场、上海香港广场、香港广东道等走量小店，新开米兰旗舰店，深圳万象城旗舰店预计 12 月落地；价格端 2026 年全线累计涨幅上限约 20%，T 系列主力款这一轮实际涨 6%–8%。",
+      "reactions": "「活动当天在店里被官宣」比一条微博官宣更有传播效率——现场媒体与路人同时产出内容，且天然绑定新品（Knot 红宝石）而非空头衔；外界评价集中在「同龄小生中时尚待遇最好之一」。",
+      "source_tier": "original",
+      "source_classify_note": "腾讯新闻（权威门户）行业动态稿，官宣文案与门店/价格动作出自该文与同期报道交叉核对",
+      "dyxh_id": "e_8f474c3f",
+      "dyxh_raw_id": 49172,
+      "img_url": "https://oss.dyxh.cc/user/236/d/49172/1794793246048dvzGIV.jpg?auth_key=1794816900-0-0-2b7fc91d7dd4a6cdba7b136f1f7f9f92&x-oss-process=image/crop,x_0,y_0,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": false,
+      "read_full": true,
+      "source_excerpt": "11月13日，Tiffany & Co.蒂芙尼正式宣布演员邓为出任品牌大使。沉静自持，方见心之所向。荧幕内外，邓为始终笃定前行……这份专注打磨的韧性，恰与蒂芙尼自1837年以来对极致匠艺与先锋创想的追求不谋而合。未来，蒂芙尼将携手品牌大使邓为，秉持纯粹初心，以真我织就璀璨，步入崭新篇章。"
+    },
+    {
+      "brand": "敷尔佳",
+      "star": "孙千",
+      "level": "面膜品牌代言人",
+      "star_title": "面膜品牌代言人",
+      "action": "新签",
+      "date": "2026-11-16",
+      "risk": "低",
+      "note": "疑头衔/日期错标（dyxh 定性错误计数 +1）：公开可查为 2026-05-20 官宣「面膜品牌代言人」，未见「亚太区…11-16 官宣」的独立来源。已按真实头衔呈现，日期沿用 dyxh 记录日并标注待核。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49183",
+      "topic_hashtag": "",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "护肤",
+      "brand_actions": "已核实到的公开事实：孙千自 2026 年 5 月 20 日起担任「敷尔佳面膜品牌代言人」，9 月 5 日敦煌月牙泉新品发布会以面膜代言人身份到场分享使用体感；品牌 Q3 起密集上新（保湿身体素颜霜、油养家族、人参三因面霜、海葡萄湿敷膜），券商研报把孙千与梁思伟、王曼昱、邓佳鑫并列为营销端合作艺人。今日（11 月 16 日）dyxh 记录的头衔为「亚太区面膜品牌代言人」，但三轮公开检索均未取得「亚太区」这一新头衔的官宣博文或通稿。",
+      "reactions": "本轮不做臆测：若「亚太区」确为头衔升级，属于把国内面膜代言人往区域代言升级的常见路径，对应的是出海/跨境叙事；但也可能是聚合站对旧头衔的误记。已标 need_link_check，待补官宣直链后再定性。",
+      "source_tier": "unknown",
+      "source_classify_note": "dyxh 记录为「亚太区面膜品牌代言人」，公开检索未取得对应官宣直链",
+      "dyxh_id": "e_a7c814ed",
+      "dyxh_raw_id": 49183,
+      "img_url": "https://oss.dyxh.cc/user/387/d/49183/17948059885573yp9dY.jpg?auth_key=1794816900-0-0-f8244a99cab58bc70dc61ee3921d95fd&x-oss-process=image/crop,x_0,y_0,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": true,
+      "read_full": false,
+      "source_excerpt": ""
+    },
+    {
+      "brand": "莉肯",
+      "star": "周涛",
+      "level": "品牌推荐官",
+      "star_title": "品牌推荐官",
+      "action": "新签",
+      "date": "2026-11-15",
+      "risk": "低",
+      "note": "疑配对有误（dyxh 定性错误计数 +1）：三轮检索（①莉肯+周涛 ②LEECN莉肯+周涛+推荐官 ③周涛+莉肯+彩妆）零交叉；同期该品牌官宣为闫睿豪&管栎「馥彩大使」。已标 need_link_check，未编造来源。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49187",
+      "topic_hashtag": "",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "美妆护肤",
+      "brand_actions": "莉肯（LEECN，杭州莉肯品牌管理有限公司，2025 年 5 月成立的新锐国货彩妆）11 月的主线动作是「馥彩大使」双商代言：11 月 8 日 10:00 官宣闫睿豪、管栎两位馥彩大使（话题 #合闫栎色立冬营业# #LEECN莉肯馥彩大使#），并在杭州旗舰店、北京银泰店、长沙万达店开三城主题痛店，同时推唇部妆养套组（修护淡纹唇膏 + 轻雾多用膏 + 尘色秘境玫瑰金口红 + 水润紧致唇膜）。未见任何与周涛相关的头衔或官宣。",
+      "reactions": "按「宁可信其无」处理：dyxh 记的「品牌推荐官」在该品牌公开体系中查无对应，而同一窗口内该品牌的官宣资源全部落在两位馥彩大使身上，本条疑为聚合站错配（第 34 例）。已保留条目、不编造链接，待官宣直链出现再定性。",
+      "source_tier": "unknown",
+      "source_classify_note": "dyxh 记录，三轮公开检索零交叉，未取得任何官方直链",
+      "dyxh_id": "e_8f0223f1",
+      "dyxh_raw_id": 49187,
+      "img_url": "https://oss.dyxh.cc/user/1473/d/49187/1794810254599DDSZhe.jpg?auth_key=1794816900-0-0-3741b75995f8f9de1a701fd3f1746d06&x-oss-process=image/crop,x_0,y_1,w_690,h_920",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": true,
+      "read_full": false,
+      "source_excerpt": ""
+    },
+    {
+      "brand": "格力高",
+      "star": "张呈 & 雷淞然",
+      "level": "扁桃仁系列新品推荐官",
+      "star_title": "扁桃仁系列新品推荐官",
+      "action": "新签",
+      "date": "2026-11-16",
+      "risk": "低",
+      "note": "dyxh 记为张呈、雷淞然两条，同品牌同头衔同日，按同场合并为 1 条。三轮检索（①格力高+张呈+雷淞然+扁桃仁+推荐官 ②格力高+张呈+推荐官 ③格力高+雷淞然+扁桃仁）未取得官宣直链，已标待核。",
+      "source_type": "dyxh发现+WebSearch研究",
+      "source_url": "",
+      "dyxh_url": "https://www.dyxh.cc/detail/endorsement/49185",
+      "topic_hashtag": "",
+      "heat_num": 0,
+      "heat_text": "",
+      "category": "食品饮料",
+      "brand_actions": "背景侧证（真实可查）：格力高 2026 年 10 月面向中国市场推出三款含扁桃仁的巧克力新品——芯冻挚巧（棒状冻干内芯外裹巧克力，40%/60% 可可两版，单支约 29 千卡）、巧克力百醇（扁桃仁浓醇巧克力、扁桃仁抹茶巧克力两口味，0 反式脂肪酸）、巧想嚼（黑巧部分可可含量不低于 60%，裹扁桃仁、碱水脆、香米脆与海盐）。扁桃仁是格力高从 1955 年起就在做的核心原料，并被做成了「扁桃仁效果」植物基饮品线。今日 dyxh 记「扁桃仁系列新品推荐官」由张呈、雷淞然出任，两人同日同事，疑为同一波新品推广。",
+      "reactions": "不臆造合作细节：三轮检索只找到格力高的扁桃仁新品与品牌叙事，没有「张呈/雷淞然 推荐官」的官宣博文，已标 need_link_check。若成立，这是把喜剧演员用在「坚果/巧克力」品类上的典型性价比选择。",
+      "source_tier": "unknown",
+      "source_classify_note": "dyxh 记录，三轮检索未取得「推荐官」官宣直链",
+      "dyxh_id": "e_665a3fd4",
+      "dyxh_raw_id": 49185,
+      "img_url": "https://oss.dyxh.cc/user/1091/d/49185/1794807611011fxvAJC.jpg?auth_key=1794816900-0-0-b9bbd54229de58319819375b601efcef&x-oss-process=image/crop,x_0,y_166,w_1072,h_1429",
+      "buzz_score": null,
+      "_http_status": 200,
+      "need_link_check": true,
+      "read_full": false,
+      "source_excerpt": ""
+    }
+  ],
+  "marketing_cases": [],
+  "marketing_news": [
+    {
+      "title": "双11 只涨 3.7%，平台第一次主动把大促缩短：天猫 -1 天、京东 -4 天、抖音 -6 天，增量全跑向「能被说清的妆容需求」——粉饼 +89%、定妆 +727%",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "大促结构/平台策略",
+      "tags": [
+        "双11",
+        "大促周期缩短",
+        "182个新品牌",
+        "定妆+727%",
+        "粉饼+89%",
+        "拒绝赔钱增长"
+      ],
+      "summary": "界面新闻 11 月 16 日复盘把今年双 11 读成「三个反常」，恰好是低增长阶段最值得抄的三件事。第一，平台开始给大促减时、减负：主流电商双 11 周期平均 31 天，仍远长于五年前，却是大促连续两年拉长后的首次收缩；规则同步简化——官方直降、单品到手价、现货销售成主流，预售、跨店凑单、多层优惠券的重要性下降，竞争重点转向单位时间产出与履约体验。第二，大盘触顶但结构性机会在扩大：天猫双 11 有 182 个入驻不满五年的新品牌进入各行业成交前十；美妆个护的增量流向头皮护理、婴童分龄护理、次抛精华、胶原护发、东方香氛这类「需求边界清晰」的赛道，而抖音的增量更具体地集中在妆容需求上——气垫日均成交额增长 28%、腮红 +54%、粉饼 +89%、遮瑕 +96%，定妆品类增幅达到 727%。第三，品牌开始主动拒绝「赔钱的增长」：有品牌负责人明确表示「赔钱的买卖坚决不干」，即使能换更大销量也不接受破坏价格体系的条件。",
+      "key_points": [
+        "**定妆 +727%、粉饼 +89% 是今年双 11 给美诺最硬的一组第三方数据。** 它不是「彩妆大盘涨了」，而是「定妆这个动作本身在放量」——大盘只增 3.7%、抖音彩妆香水甚至同比 -13.29% 的背景下，定妆/粉饼/遮瑕三个「完成度品类」同时跑出三位数或接近翻倍的增长，说明消费者减少的是「买新品试色」，增加的是「把现有妆容做完整」。对冰肌粉蓝的含义：主推话术应从「控油持久」切到「让妆面完整、不返工」，把粉饼放进「上妆最后一步」而不是「下午补妆」。",
+        "**平台缩短周期对我们最直接的影响是排期与备货，而不是流量。** 周期缩 1–6 天意味着同样的 GMV 要在更短窗口里打完，达人排期、内容蓄水、直播间节奏都必须前压；反过来说，提前 2 周开始种草的价值比过去更高。",
+        "**「182 个新品牌进前十」和「拒绝赔钱增长」是同一件事的两面。** 平台把资源给了「能说清需求边界」的新品，而不是单纯打折的老品；品牌侧也不再接受以破价换量。两条叠加，中腰部品牌的正解是「窄需求 + 正价」，不是「全品类 + 大促冲量」。"
+      ],
+      "source_name": "界面新闻",
+      "source_url": "https://www.jiemian.com/article/15337341.html",
+      "source_tier": "original",
+      "source_classify_note": "界面新闻原创分析稿；文中数据引《FBeauty未来迹》与平台公开口径",
+      "source_excerpt": "双十一仅增长3.7%，美妆行业怎么「自救」？总量放缓通常意味着企业收缩，但今年双十一呈现出另一面：平台、品牌和消费者都在主动修正过去几年形成的低效竞争方式。第一个变化是平台开始为大促「减时、减负」，31天仍远长于五年前，却是大促连续两年拉长后首次收缩。第二个变化是大盘触顶但品牌在挖掘结构性机会：今年天猫双十一有182个入驻不满五年的新品牌进入各行业成交前十；抖音的增量集中在更具体的妆容需求，气垫日均成交额增长28%，腮红增长54%，粉饼和遮瑕分别增长89%和96%，定妆品类增幅达到727%。第三个变化是品牌开始主动拒绝「赔钱的增长」。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    },
+    {
+      "title": "抖音双 11 彩妆靠「套组」接管大促：毛戈平无痕粉膏 12.5g+7.5g、纪梵希散粉双支、YSL 小金条+粉气垫、NARS 大白饼套组；彩妆 TOP20 多数品牌自营 GMV 占比超 40%",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "大促打法/货品结构",
+      "tags": [
+        "抖音双11",
+        "套组化",
+        "毛戈平",
+        "纪梵希散粉",
+        "NARS大白饼",
+        "品牌自营",
+        "佣金"
+      ],
+      "summary": "青眼口径的抖音双 11 美妆榜单复盘把重点放在「怎么卖」而不是「谁第一」（排名部分本自动化 11-13 已收录，本条只看打法）。彩妆香水一侧，TOP20 几乎被「核心大单品双倍打包」占满：毛戈平无痕粉膏 12.5g+7.5g 套装、纪梵希散粉双支套组、圣罗兰小金条+粉气垫套组、娜斯大白饼套组——与护肤的「大单品延伸」不同，彩妆套组更偏高频消耗品的「量大管饱」，用组合销售拉低单克均价，契合囤货逻辑；直播间标题统一换成「双11 限时买正送正」「限定套装券后低至」抓注意力。另一组关键数据是自营：彩妆 TOP20 品牌里多数品牌 GMV 来自品牌自营、占比均在 40% 以上，而非依赖达人；外资一侧则把个别套装链接的佣金率提到 8% 甚至 20%，用高佣金换头部流量，在更短周期内一次性满足囤货需求。",
+      "key_points": [
+        "**「双支/双芯套组」是今年彩妆唯一被验证的提客单方式，而粉类产品天然适合套组。** 纪梵希散粉双支、NARS 大白饼套组、毛戈平粉膏「正装+补充装」——共同点都是「同一个单品买两倍」，不是「不同品类打包」。美诺可以直接复用：冰肌粉蓝做「正装 + 替换芯」或「双色/双规格」套组，比硬凑彩妆礼盒更贴近大促心理。",
+        "**自营占比 >40% 意味着彩妆的钱正在从达人手里回到品牌手里。** 对媒介的启示不是「不做达人」，而是「达人负责拉新、自播负责承接与复购」，考核要能分开看。"
+      ],
+      "source_name": "东方财富·财富号（引青眼情报）",
+      "source_url": "https://caifuhao.eastmoney.com/news/20261116140122084676760",
+      "source_tier": "aggregator",
+      "source_classify_note": "财富号自媒体转载，原创数据方为青眼情报；榜单排名部分 11-13 已收录，本条仅取「套组化/自营占比」打法",
+      "source_excerpt": "2026年抖音双11彩妆香水TOP20榜单中，毛戈平以2.72亿元的GMV位居第一，圣罗兰以2.47亿元位列第二。彩妆香水类目同样呈现出套组化趋势：毛戈平无痕粉膏12.5g+7.5g套装、纪梵希散粉双支套组、圣罗兰小金条+粉气垫套组、娜斯大白饼套组等，均是围绕品牌核心大单品推出的「双倍打包」套组。青眼情报数据显示，彩妆TOP20品牌中，多数品牌的GMV来自品牌自营，占比均在40%以上，而非依赖达人推广。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    }
+  ],
+  "industry_reports": [
+    {
+      "title": "券商研报首次把双11 拆到平台周期：天猫/京东/抖音分别缩 1/4/6 天，拼多多、快手、小红书、微信小店反而延长；即时零售 891 亿 +33%、社区团购 83 亿 -7.4%",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "行业数据/渠道结构",
+      "tags": [
+        "双11",
+        "平台周期",
+        "即时零售",
+        "天猫美妆前20",
+        "抖音个人护理榜",
+        "国货退步",
+        "肌肤之钥"
+      ],
+      "summary": "美容护理行业双 11 研报给出三组此前没有拆细的数据。①平台周期分化：天猫 10.13–11.13 同比缩减 1 天、京东 10.12–11.13 缩减 4 天、抖音 10.15–11.11 缩减 6 天，而拼多多、快手、小红书、微信小店周期则有延长，各大平台从比拼价格和时长转向比拼服务与商品质量。②大盘结构：全网电商 17764 亿元 +4.8%，综合电商 16790 亿元 +3.7%，即时零售 891 亿元 +33%，社区团购 83 亿元 -7.4%；10 月单月可比口径下天猫美容护肤 201 亿元 +2.7%、京东美妆护肤 64 亿元 +1.2%。③品牌位次：天猫美妆前 20 国货占 5 席（珀莱雅蝉联第一、薇诺娜第 12/-4、毛戈平第 18/+2、自然堂第 19、可复美第 20/-2）；抖音个人护理榜前 20 国货只占 8 席、较去年减少 1 席，且前 5 只剩珀莱雅一个国货，肌肤之钥从第 25 升至第 11（+14 位）、修丽可 23→11、达尔肤 22→12、海蓝之谜 12→4，而谷雨 6→17、后 9→20。",
+      "key_points": [
+        "**「周期缩 6 天」这件事比任何 GMV 数字都更能解释今年双 11 的手感。** 抖音把大促窗口砍掉 6 天，意味着同样的爆发要在更短的直播场次里完成——排期、备货、内容蓄水的容错空间同步变小。对美诺的具体动作：明年大促排期表要按「窗口天数」倒排，而不是按「活动开始日」正排。",
+        "**天猫稳、抖音变，是这份研报最值得记住的一句话。** 天猫品牌位次波动大多在 1–2 名、渠道心智固化；抖音个人护理榜一年之内出现 +14 位（肌肤之钥）和 -11 位（谷雨）的位移，说明抖音仍是可以靠投放与内容改写排位的战场——这既是机会（我们还能挤上去），也是风险（守不住）。",
+        "**即时零售 +33% 与社区团购 -7.4% 是一组被忽略的反向曲线。** 「30 分钟送到」在吃掉「明天自提」，补妆/定妆这类「临时需要、立刻要用」的品类，理论上最适配即时零售场景，值得单独评估是否进美团闪购/京东秒送。"
+      ],
+      "source_name": "新浪财经·研报中心（美容护理行业研报）",
+      "source_url": "https://stockfinance.sina.cn/stock/go.php/paper/reportid/848143124837/index.phtml",
+      "source_tier": "institute",
+      "source_classify_note": "券商行业研报（经新浪财经研报中心转载），数据源为星图、魔镜、青眼情报与天猫大美妆；页面未标注精确发布时刻，按抓取日 2026-11-16 记",
+      "source_excerpt": "2026年双十一大促各平台周期分化明显，其中天猫从10.13-11.13，同比缩减1天，京东从10.12-11.13，同比缩减4天，抖音从10.15-11.11，同比缩减6天，拼多多、快手、小红书、微信小店等周期则有延长，各大平台从比拼价格和时长转向比拼服务和商品质量。根据星图数据，2026年双十一全网电商销售总额17764亿元/+4.8%，其中综合电商销售总额16790亿元/+3.7%；即时零售销售额891亿元/+33%，社区团购销售额83亿元/-7.4%。国货品牌在2026年双十一天猫美妆榜前20中占据5席，数量较去年持平。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    }
+  ],
+  "hot_topics": [
+    {
+      "title": "平台把 AIGC 规则收到「丽人」类目：抖音禁止用 AI 生成虚假门店环境、严禁 AI 虚构服务效果，一季度已处置超 80 万条 AIGC 违规带货内容；小红书 2026 规则改为「只要 AI 参与配图或润色就要打标」",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "平台规则/AIGC治理",
+      "tags": [
+        "抖音生活服务",
+        "AIGC创作规范",
+        "丽人类目",
+        "AI标识办法",
+        "小红书AI标注",
+        "80万条处置"
+      ],
+      "summary": "抖音生活服务在 AIGC 创作规范中给丽人（美容、美发、美甲等）单列条款：不得使用 AI 生成的虚假环境替代实际服务环境与店内设施，严禁用 AI 过分美化或虚构服务效果；宣传推广的商品须与商品详情页及线下实际履约保持一致，严禁通过 AIGC 虚构商品、门店、服务等核心营销信息。处置手段包括警告、限流、内容自见、限制商品推广，2026 年一季度已处置超 80 万条 AIGC 违规带货内容。标识层面是另一条独立动作：按 2025 年 9 月 1 日施行的《人工智能生成合成内容标识办法》，只要最终视频含 AI 生成或 AI 辅助生成元素，发布时就要完成显式（文字/声音/图形可见）与隐式（元数据）标识，不得恶意删除、篡改、伪造、隐匿；小红书 2026 年规则进一步明确：只要 AI 参与了配图、改写或润色，都属于「AI 生成内容」需打标签，不是「全篇由 AI 撰写」才需要标注，未主动标注可能被下架或限制分发。",
+      "key_points": [
+        "**这是「平台规则」而不是「行业倡议」，处置量已经上到 80 万条量级。** 美妆内容最常见的两个动作——AI 生成「使用前后对比」、AI 生成「实验室/工厂场景」——正好落在被点名禁止的两类里。凡是 AI 生成的场景图、肌肤纹理、妆效对比，都不要作为「真实使用证据」发布。",
+        "**小红书的标注口径比行业普遍理解更严：不是全篇 AI 才要标，参与配图或润色就要标。** 我们的达人合作笔记如果用了 AI 修图/AI 文案，按新规都要打 AI 标签；与其事后被限流，不如在 brief 里直接写清「可用 AI 辅助、但须按平台要求标注、不得用 AI 生成妆效对比」。",
+        "**这条与 11-15 的中检院原料新规是一套东西的两端：一端管「产品里有什么」，一端管「内容怎么讲」。** 2027 年前，美妆的合规成本会同时压在配方与素材上，素材端最省钱的做法是「建自己的真实素材库」（实拍工厂、实拍上妆、实拍持妆时长），而不是每次临时用 AI 补。"
+      ],
+      "source_name": "网易号·数字增长官（引抖音生活服务 AIGC 创作规范）",
+      "source_url": "https://dy.163.com/article/LBS4URGD0556KFVG.html",
+      "source_tier": "aggregator",
+      "source_classify_note": "自媒体行业解读稿，原创规范出处为「抖音生活服务 AIGC 创作规范」、《人工智能生成合成内容标识办法》与小红书 2026 社区规则；平台官方发布页未取得直链",
+      "source_excerpt": "丽人（美容、美发、美甲等）在抖音生活服务的AIGC创作规范中有单独条款：不得使用AI生成的虚假环境来替代实际服务环境和店内设施，严禁使用AI技术过分美化或虚构服务效果。规范同时要求，宣传推广的商品须与商品详情页及线下实际履约保持一致，严禁通过AIGC虚构商品、门店、服务等核心营销信息。平台对违规AIGC营销内容的处置措施包括警告、限流、内容自见、限制商品推广等，2026年一季度已处置超80万条AIGC违规带货内容。小红书在2026年的规则中进一步明确，只要AI参与了配图、改写或润色，都属于「AI生成内容」，需要打标签。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    }
+  ],
+  "trends": [
+    {
+      "title": "定妆蜜粉饼从「校色」走到「珠光折射 + 双色拼盘」：SUQQU 用 8 种珠光做丁香紫到蓝的随光变色，1028 用月光粉/幻光紫双色拼一盘",
+      "date": "2026-11-09",
+      "time": "2026-11-09",
+      "category": "底妆趋势/产品形态",
+      "tags": [
+        "蜜粉饼",
+        "珠光折射",
+        "双色拼盘",
+        "SUQQU",
+        "1028",
+        "补妆场景",
+        "透明感"
+      ],
+      "summary": "这一季的定妆蜜粉饼在「蓝紫校色」之后又分出了两条新支线。第一条是珠光折射：SUQQU 2026 节日限定「FROZEN LIGHT 霜凝流光」里的晶采光透定妆蜜粉饼 e（7g，限定色 101），加入 8 种不同色调与大小的珠光，从丁香紫到蓝色随光折射，在追求透明感与高辉度的同时融入一丝暖意；产品把光滑球状粉体、半透明板状粉体与珠光三种成分和光泽精油混合，形成贴合肌肤的润泽光泽薄膜，并配纤薄毛量密实的专用化妆扫与薄型粉盒，明确定位「随身携带、优雅补妆」。第二条是双色拼盘：台湾开架 1028 的「18 Light 聚光雙色蜜粉餅」用超微米冻干粉体做无粉感修饰毛孔，特调大理石双色，直接给「苍白肌」配月光粉、给「蜡黄肌」配幻光紫，让一块饼同时承担提亮与校色两件事。",
+      "key_points": [
+        "**定妆品正在从「压掉油光」变成「补一层光」。** SUQQU 这条线索和 11-14 中研普华那句「只压油光不压光泽、柔焦不哑光」完全同向：用珠光替代高光，用「随光折射」替代「一层哑光粉」，本质是把定妆从「减法」做成「加法」。冰肌粉蓝的用法建议同步调整：全脸薄压 + 面中提亮部位多带一次，而不是全脸压到哑。",
+        "**「一块饼两种色」解决的是补妆时的决策成本。** 幻光紫管蜡黄、月光粉管苍白——消费者不用判断「我该用哪个色号的散粉」，一块饼拍两下就完成校色 + 定妆。这是产品形态层面的创新，比多出一个色号更有说服力。",
+        "**配套物料也被重新设计了：薄型粉盒 + 短柄密实刷。** SUQQU 把「随身携带」写在产品定义里，说明品牌已经把蜜粉饼的使用场景从「家里梳妆台」挪到「包里」。对美诺的启示：如果要做补妆场景，包装厚度与刷具/粉扑形态是必须一起改的，只改配方不改形态，用户不会带出门。"
+      ],
+      "source_name": "東周網（香港经济日报）",
+      "source_url": "https://eastweek.stheadline.com/fashion/22715/SUQQU-2026%E8%81%96%E8%AA%95%E9%99%90%E5%AE%9A%E5%BD%A9%E5%A6%9DFROZEN-LIGHT%E4%BB%A5%E5%A4%A9%E7%84%B6%E7%9F%B3%E7%82%BA%E9%9D%88%E6%84%9F%E7%9A%84%E5%A4%A2%E5%B9%BB%E5%86%AC%E6%97%A5%E5%A6%9D%E5%AE%B9",
+      "source_tier": "original",
+      "source_classify_note": "東周網美妆栏目原创稿；SUQQU 限定系列发售日为 2026-11-09，1028 新品出自同期 11 月开架新品速报",
+      "source_excerpt": "SUQQU 晶采光透定妝蜜粉餅 e（7g，限定色 101）：添加了8種不同色調與大小的珠光，從丁香紫色到藍色隨光折射，在追求透明感與高輝度的同時融入一絲暖意。產品特色：結合光滑球狀粉體、半透明板狀粉體與珠光等3種成分，與光澤精油混合形成緊密貼合肌膚的潤澤光澤薄膜。隨附纖薄且毛量密實的專用化妝掃與時尚薄型粉盒，方便隨身攜帶與優雅補妝。1028「18 Light聚光雙色蜜粉餅」採用超微米凍乾粉體輕盈貼膚，修飾毛孔完全無粉感；特調大理石雙色，有蒼白肌必備的「月光粉」與校正蠟黃的「幻光紫」兩款選擇。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    }
+  ],
+  "new_products": [
+    {
+      "brand": "美诺",
+      "product": "【小美专属】美诺有色面霜保湿提亮液体眼影单色新手必备彩妆DB",
+      "category": "素颜霜",
+      "spec": "40g",
+      "launch_date": "2026-11-11",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "4w",
+        "销量": "1000~2500",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": "50%"
+      },
+      "selling_points": "新手友好 / 易携带",
+      "effects": "保湿 / 提亮 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853050968560238646&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "美诺",
+      "product": "【底妆更服帖】美诺贴贴双萃果冻喷雾妆前贴妆喷雾保湿爽肤水达播",
+      "category": "爽肤水",
+      "spec": "30ml",
+      "launch_date": "2026-11-11",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "181",
+        "销量": "0~250",
+        "转化率": "30%+",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "妆前贴妆",
+      "effects": "保湿 / 补水",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853372193652212412&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "美诺",
+      "product": "【徐洁儿专属】买一送一 到手两正装美诺龙年限定大白饼定妆控油",
+      "category": "粉饼",
+      "spec": "9g",
+      "launch_date": "2026-11-10",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "哑光",
+      "effects": "控油",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3687488603786707365&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "美诺",
+      "product": "【韩栋专属】美诺三文鱼果冻精华喷雾隔离妆前补水防卡粉起皮保湿",
+      "category": "妆前",
+      "spec": "120g",
+      "launch_date": "2026-11-14",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "24H / 卡粉救星 / 即刻补水",
+      "effects": "保湿 / 不斑驳 / 服帖",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853169505438138807&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "美诺",
+      "product": "【果果专属】美诺慕斯腮红液低饱和收缩色氛围感持久自然燕麦格雷DB",
+      "category": "胭脂",
+      "spec": "7g",
+      "launch_date": "2026-11-12",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "氛围感",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853227334941409371&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "Funny Elves方里淡香水2022",
+      "category": "香水",
+      "spec": "",
+      "launch_date": "2026-11-12",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "6,921",
+        "销量": "1000~2500",
+        "转化率": "20%~25%",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853617021820469348&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "FunnyElves方里柔雾持妆粉底液25ml正装SPF35",
+      "category": "膏",
+      "spec": "25ml",
+      "launch_date": "2026-11-12",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "1.1w",
+        "销量": "1000~2500",
+        "转化率": "10%~15%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "柔雾",
+      "effects": "遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853614758095880605&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "【柔焦2.0】FunnyElves方里柔焦粉饼持久控油遮瑕持妆定妆防水8g DB",
+      "category": "粉饼",
+      "spec": "8g",
+      "launch_date": "2026-11-09",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "1.2w",
+        "销量": "250~500",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": "94%"
+      },
+      "selling_points": "柔焦2.0",
+      "effects": "控油 / 持妆 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3850803627115544877&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "方里柔焦防晒蜜粉饼防晒定妆补妆清透柔焦粉饼持妆锁色",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "0~250",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853979293445128327&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "【专属】新版方里柔焦清透蜜粉饼NU00【8g】",
+      "category": "粉饼",
+      "spec": "方里柔焦清透蜜粉饼M00【4.5g】",
+      "launch_date": "2026-11-12",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "0~250",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "柔焦清透",
+      "effects": "保湿 / 控油 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853599714981314597&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "Funny Elves 方里柔焦蜜粉饼 8g控油定妆提亮粉饼店播",
+      "category": "粉饼",
+      "spec": "8g",
+      "launch_date": "2026-11-09",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "195",
+        "销量": "0~250",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "16H持妆 / 柔焦",
+      "effects": "控油 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3849330631305724858&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "【规格可选】方里柔焦蜜粉饼7g",
+      "category": "粉饼",
+      "spec": "【规格可选】方里柔焦蜜粉饼7g",
+      "launch_date": "2026-11-10",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "哑光 / 干粉压制 / 液态粉工艺",
+      "effects": "控油 / 提亮 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3847270084229857693&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "FunnyElves/方里柔焦蜜粉饼 持久定妆不脱妆",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-14",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "丝滑 / 柔焦哑光 / 粉质细腻",
+      "effects": "提亮 / 修饰暗黄 / 定妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3852099128645517366&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "【方里粉饼】方里柔焦蜜粉饼7g控油定妆混油皮持久防水防汗不脱妆女",
+      "category": "粉饼",
+      "spec": "7g",
+      "launch_date": "2026-11-09",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "不脱妆 / 柔焦 / 雾面",
+      "effects": "控油 / 定妆 / 防水",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3821921421400080668&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "方里",
+      "product": "【微瑕福利品】方里柔焦蜜粉饼持久定妆防水控油遮瑕隐匿毛孔粉饼女",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3846605680991666865&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【油油专属】嘉利玛金币粉饼柔焦定妆控油持久服帖遮瑕补妆不卡dbzt",
+      "category": "粉饼",
+      "spec": "18g",
+      "launch_date": "2026-11-10",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "7.5w",
+        "销量": "1000~2500",
+        "转化率": "0%~5%",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "服帖 / 柔焦 / 遮瑕",
+      "effects": "控油 / 定妆 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3852290076641985237&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【甜心专属】嘉利玛真嘟水光唇乳滋润保湿素颜显白持色不易粘唇釉",
+      "category": "唇釉",
+      "spec": "",
+      "launch_date": "2026-11-11",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "1,099",
+        "销量": "0~250",
+        "转化率": "5%~10%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "不易粘唇 / 水光玻璃唇",
+      "effects": "保湿 / 持色 / 滋润",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853238808954929174&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "【薇薇专属】嘉利玛金币粉饼柔焦定妆控油持久服帖遮瑕补妆不卡zt",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-11",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "228",
+        "销量": "0~250",
+        "转化率": "10%~15%",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "不卡 / 持久服帖 / 柔焦定妆",
+      "effects": "控油 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3852285682814944523&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "嘉利玛透润凝光唇釉G01【3.5ml】",
+      "category": "唇釉",
+      "spec": "嘉利玛透润凝光唇釉G01【3.5ml】",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853226252618039863&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "嘉利玛透润凝光唇釉G02【3.5ml】",
+      "category": "唇釉",
+      "spec": "嘉利玛透润凝光唇釉G02【3.5ml】",
+      "launch_date": "2026-11-13",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853226293613166761&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "嘉利玛",
+      "product": "嘉利玛透润凝光唇釉G05【3.5ml】",
+      "category": "唇釉",
+      "spec": "嘉利玛透润凝光唇釉G05【3.5ml】",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853225408656965991&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "花间颂玫瑰金晨雾高清粉饼",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-12",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "4,328",
+        "销量": "1000~2500",
+        "转化率": "25%~30%",
+        "评价数": "",
+        "rating": "50%"
+      },
+      "selling_points": "巨磨皮",
+      "effects": "磨皮 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853594133746811062&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【小鱼专属】花间颂贴贴乳粉饼粉底液遮瑕清透控油定妆持妆不脱妆",
+      "category": "彩妆套装",
+      "spec": "100ml",
+      "launch_date": "2026-11-10",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "1.2w",
+        "销量": "1000~2500",
+        "转化率": "5%~10%",
+        "评价数": "",
+        "rating": "100%"
+      },
+      "selling_points": "底妆CP / 裸肌",
+      "effects": "控油 / 持妆 / 遮瑕",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3853023109246484499&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "花间颂晨雾粉饼包装随机发货（退件破损）",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-10",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "2,320",
+        "销量": "250~500",
+        "转化率": "20%~25%",
+        "评价数": "",
+        "rating": "80%"
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3852841906723750359&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【闫桉推荐】花间颂金标粉饼控油定妆柔焦持妆雾面哑光显白学生正品",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-13",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "0~250",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "哑光 / 显白 / 柔焦",
+      "effects": "控油 / 定妆 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3851753194724131143&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【老许专属】花间颂套组贴贴乳粉盖粉底液金标粉饼控油持妆不脱妆",
+      "category": "彩妆套装",
+      "spec": "20g",
+      "launch_date": "2026-11-09",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "控油 / 不脱妆 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3852435456788660726&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "花间颂黄油水光贴贴妆前乳打底膏保湿滋润持妆提亮贴贴面霜正品",
+      "category": "妆前",
+      "spec": "30g",
+      "launch_date": "2026-11-14",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "滋润 / 贴贴 / 黄油水光",
+      "effects": "保湿 / 提亮 / 持妆",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3838935397447106960&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【明星同款】花间颂金标粉饼7.5g柔焦粉饼控油定妆雾面轻薄哑光正品",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3851755434591519775&origin_type=604",
+      "batch_date": "2026-11-16"
+    },
+    {
+      "brand": "花间颂",
+      "product": "【柔焦金标】花间颂7.5g金标柔焦粉饼控油定补妆干油皮雾面哑光-dsp",
+      "category": "粉饼",
+      "spec": "",
+      "launch_date": "2026-11-15",
+      "sales_data": {
+        "platform": "蝉妈妈(抖音)",
+        "浏览量": "",
+        "销量": "",
+        "转化率": "",
+        "评价数": "",
+        "rating": ""
+      },
+      "selling_points": "",
+      "effects": "",
+      "source_name": "蝉妈妈(抖音)",
+      "source_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3851753289280520504&origin_type=604",
+      "batch_date": "2026-11-16"
+    }
+  ],
+  "ai_marketing": [
+    {
+      "title": "美妆服务商把 AI 摊到 10 余个品牌的 8 个运营环节：双11 短视频产量 +80%、文案效率 +150%、素材超 13800 条，直播复盘 AI 全覆盖后人效 +40%",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "AI 提效/服务商实操",
+      "tags": [
+        "悠可集团",
+        "AI提效",
+        "短视频产量",
+        "直播复盘",
+        "AI客服",
+        "东南亚出海",
+        "TikTok"
+      ],
+      "summary": "悠可集团的双 11 战报罕见地给了 AI 的「过程指标」而不是口号。覆盖 150 多个品牌、300 余家店铺、20 余个平台，17 个合作品牌进入「亿元俱乐部」；抖音直播 GMV 同比涨 65% 以上、京东 +79%、微信渠道 +38%，非美妆品类成交 +26%。AI 侧的具体落点：已把 AI 落到 10 余个品牌的 8 个运营环节，大促周期内短视频产量提升 80%、文案效率提升 150%，累计产出图片视频素材超 13800 条；直播复盘实现 AI 全覆盖、人效提升 40%；AI 客服 7×24 小时在线，首次响应时长缩短超 68%。海外一侧，东南亚整体 GMV +45%，86 个品牌、116 家店铺落地，TikTok 渠道 GMV +117%、Shopee +37%。",
+      "key_points": [
+        "**注意它把 AI 用在哪里：素材产量、文案、直播复盘、客服首响——全是「不直接对外的效率环节」。**唯独没有说「用 AI 生成妆效」或「用 AI 生成模特」，这与昨天抖音/小红书的 AIGC 规范正好互补：后台提效可以做满，前台呈现仍要用真实素材。这是目前最稳的一条 AI 落地路线。",
+        "**「直播复盘 AI 全覆盖、人效 +40%」是美诺最容易照抄的一步。** 不需要买大模型，先把每场直播的切片、话术、成交曲线、弹幕高频问题跑一遍结构化复盘，就能把「复盘靠人回忆」变成「复盘靠数据」。",
+        "**抖音直播 +65%、京东 +79%、微信 +38% 的组合说明多平台不是摊薄而是加总。** 对预算有限的美诺，增量更可能来自「京东/微信小店这类低竞争渠道的正价成交」，而不是继续在抖音加投放。"
+      ],
+      "source_name": "网易号·港股研究社（悠可集团双11战报）",
+      "source_url": "https://www.163.com/dy/article/LBRPPSJA05317SYF.html",
+      "source_tier": "aggregator",
+      "source_classify_note": "自媒体转载的品牌战报稿，数据由悠可集团披露；非独立第三方审计",
+      "source_excerpt": "悠可已将AI落地至10余个品牌的8个运营环节，大促周期短视频产量提升80%、文案效率提升150%，累计产出图片视频素材超13800条；直播复盘实现AI全覆盖，人效提升40%。AI客服7×24小时不间断服务，首次响应时长缩短超68%。集团多渠道同步发力，抖音直播GMV同比大涨65%以上，京东、微信渠道分别同比增长79%、38%，非美妆品类成交同比提升26%。海外业务方面，东南亚市场整体GMV同比增长45%，TikTok渠道GMV同比大增117%。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    },
+    {
+      "title": "欧莱雅把 AI 摆进进博会：造型魔镜做虚拟试妆、长寿 AI 云分析 260 个皮肤生物标志物、3D 头发数字孪生分辨率比传统实验室高 100 倍",
+      "date": "2026-11-16",
+      "time": "2026-11-16",
+      "category": "AI 落地/研发与服务",
+      "tags": [
+        "欧莱雅",
+        "进博会",
+        "虚拟试妆",
+        "皮肤长寿",
+        "数字孪生",
+        "AI质检",
+        "员工培训"
+      ],
+      "summary": "欧莱雅在第九届进博会以「美之奥德赛」双线亮相，把 AI 切成四个面：消费者服务、研发创新、生产运营、员工发展。服务端 PPD 专业美发造型魔镜用图像融合技术，让消费者在实际造型前虚拟体验不同发型与妆容组合；研发端的长寿 AI 云（Longevity AI Cloud™）分析超过 260 个皮肤长寿生物标志物，3D 头发数字孪生模型以比传统实验室高 100 倍的分辨率做计算机模拟筛选；生产端苏州尚美工厂用 AI 质检与自动化提升品控，并新设智能包装创意中心、智能运营中心支持供应链快速响应。组织侧：过去两年面向超过一万名员工做提示词工程与 AI 基础知识培训，2026 年 92% 的员工至少参加过一次 AI 培训，累计超 57000 小时；另有第二届美妆科技黑客松，吸引 500 余所高校、6 万余名青年、1800 余支团队。",
+      "key_points": [
+        "**「260 个皮肤生物标志物 + 100 倍分辨率」这类数字的意义不在炫技，而在于它把「肤质」变成了可计算的字段。**这正是 11-13 那条「产品信息要写成可解析字段（肤质/色号/场景）」的上游：如果品牌端不把产品结构化成数据，AI 时代的推荐链路里就没有你的位置。",
+        "**92% 员工、57000 小时培训，是这条新闻里最该抄的一句。** 美诺现在的 AI 使用基本集中在个别人身上，一旦有人离职就断档；把「提示词 + 基础认知」做成全员 2 小时课，比买任何工具都便宜且抗风险。"
+      ],
+      "source_name": "网易号·知消（欧莱雅进博会）",
+      "source_url": "https://www.163.com/dy/article/LBNMF29O05509OJY.html",
+      "source_tier": "aggregator",
+      "source_classify_note": "自媒体转载的进博会现场稿，原创方为知消；欧莱雅官方发布页未取得直链",
+      "source_excerpt": "欧莱雅以「美之奥德赛」为主题，在消费品展区与法国馆双线亮相。PPD专业美发造型魔镜采用图像融合技术，让消费者在实际造型前虚拟体验不同发型与妆容组合；整合长寿AI云分析超过260个皮肤长寿生物标志物；3D头发数字孪生模型以较传统实验室高出100倍的分辨率开展计算机模拟筛选；苏州尚美工厂通过AI质检和自动化技术提升品控。过去两年，欧莱雅中国面向超过一万名员工开展提示词工程与AI基础知识培训，2026年92%的员工至少参加过一次AI相关培训，累计培训时长超过57,000小时。",
+      "read_full": true,
+      "collected_at": "2026-11-16"
+    }
+  ],
+  "continuous_watch": [
+    {
+      "text": "**粉饼的竞争维度走到第六步：从「校色」进入「珠光折射 + 双色拼盘」，而大促数据第一次给了这条路线的市场背书。** 线索链：10-28「T 区只压透明散粉」的局部定妆 → 11-07 秋冬话题蜜粉 4 款主打紫/薰衣草修黄 → 11-08 M·A·C 三色一盘（紫修黄/白柔焦/粉提气）→ 11-10 赫妍把粉饼与气垫合成「黑金气垫网纱粉饼」→ 11-11 M·A·C 把紫调修色搬进高光 → 11-12 节日限定集体落在蜜粉饼 → 11-13 中研网把定妆写成底妆「第三层」→ 11-14 定妆轻量化「只压油光不压光泽」→ 11-15 蜜粉饼装护肤成分并做日夜分时 → **11-16 两条新支线同日出现：SUQQU 用 8 种珠光做丁香紫到蓝的随光折射（把珠光当高光用），1028 用月光粉/幻光紫双色拼一盘（把校色变成「拍两下」）；同日抖音双11 数据给出量级验证——定妆品类增幅 727%、粉饼 +89%、遮瑕 +96%，而彩妆香水大盘反而 -13.29%。** 判断：定妆正在从「化妆的最后一步」变成「妆容完成度的决定项」，而且是整个彩妆里唯一逆势放量的动作。跟进成本最低的动作有三件：①话术从「控油几小时」换成「补完看不出补过」；②做「正装+替换芯」双支套组承接大促逻辑；③把粉盒做薄、配短柄刷，让它能被带出门。",
+      "status": "持续跟踪"
+    },
+    {
+      "text": "**合规压力已从「产品里有什么」扩到「内容怎么讲」，两端在 48 小时内同时收紧。** 产品端：11-15 中检院拟把硅酸铝锌银铵限用于散粉与除臭产品（成品 1.0%、原料银 ≤2.5%），铂/银（纳米，含胶态银）/甲苯拟禁用，熊果苷改限用，12-11 前可提意见。内容端：11-16 抖音生活服务在 AIGC 创作规范里给丽人类目单列条款——不得用 AI 生成虚假门店环境、严禁 AI 过分美化或虚构服务效果，宣传须与详情页及线下履约一致，2026 年一季度已处置超 80 万条 AIGC 违规带货内容；小红书 2026 规则把口径改成「只要 AI 参与配图、改写或润色就要打标」，不再要求「全篇 AI 才标」；《人工智能生成合成内容标识办法》要求显式 + 隐式双标识。判断：美妆最容易被点名的两类内容——AI 生成「使用前后对比」与 AI 生成「实验室/工厂场景」——正好都在禁令里。最省钱的对冲不是研究怎么合规地生成，而是**建自己的真实素材库**（实拍工厂、实拍上妆、实拍持妆时长），并在达人 brief 里直接把「可用 AI 辅助但须标注、不得 AI 生成妆效对比」写进去。",
+      "status": "持续跟踪"
+    },
+    {
+      "text": "**大促价值的重估进入「按天算账」阶段：周期在缩短，增量在变窄，钱在从达人回到品牌手里。** 11-16 三组新数据补齐了这条线：①平台周期首次分化收缩——天猫 -1 天（10.13–11.13）、京东 -4 天、抖音 -6 天（10.15–11.11），而拼多多/快手/小红书/微信小店反而延长；②大盘结构——全网 17764 亿 +4.8%，综合电商 16790 亿 +3.7%，**即时零售 891 亿 +33%、社区团购 83 亿 -7.4%**；③彩妆 TOP20 多数品牌自营 GMV 占比超 40%，外资把个别套装佣金抬到 8%–20% 换头部流量。串起来看：大促不再靠「拉长时间 + 破价」增长，而是靠「更短窗口里的单位时间产出」；品牌侧的应对是套组提客单（毛戈平粉膏 12.5g+7.5g、纪梵希散粉双支、NARS 大白饼套组）+ 自播承接。判断：明年 KPI 应改成「净成交 GMV × (1-退货率) ÷ 大促天数」，并且把即时零售当成一条独立渠道评估——补妆类产品天生适配「30 分钟送到」。",
+      "status": "持续跟踪"
+    }
+  ],
+  "today_must_see": [
+    {
+      "text": "**今天最该记的一组数字：定妆品类增幅 727%、粉饼 +89%、遮瑕 +96%——在彩妆香水大盘 -13.29% 的背景下。** 这是界面新闻 11-16 复盘给出的抖音双11 结构性数据，同组还有气垫 +28%、腮红 +54%。含义很清楚：消费者减的是「买新品试色」，增的是「把现有妆容做完整」。**对冰肌粉蓝的直接可用结论有三条：**①主推话术从「控油持久」切到「补完看不出补过、妆面不返工」；②投放场景从「下午补妆」前移到「上妆最后一步」，与底妆内容捆绑而不是与散粉对比；③大促货品做「正装+替换芯」双支套组（今年抖音彩妆唯一被验证的提客单方式）。定妆是整个彩妆里唯一逆势放量的动作，这条赛道我们本来就在，别把它讲成「补妆小工具」。"
+    },
+    {
+      "text": "**彩妆大促的胜负手已经从「谁上榜」变成「怎么打包」：套组 + 自营。** 抖音彩妆 TOP20 几乎被「核心大单品双倍打包」占满——毛戈平无痕粉膏 12.5g+7.5g、纪梵希散粉双支、圣罗兰小金条+粉气垫、NARS 大白饼套组；同时多数品牌自营 GMV 占比超 40%，外资则把个别套装链接佣金抬到 8%–20% 抢头部流量。**两条动作可立即落地：**①把粉饼做成「一支正装 + 一支替换芯」或「控油版 + 提亮版」双规格套组，比硬凑彩妆礼盒更贴大促心理；②达人负责拉新、自播负责承接，考核分开看，别再用同一个 ROI 指标衡量两种角色。"
+    },
+    {
+      "text": "**国货在抖音的攻守正在反转，而这恰好是我们判断「抖音还能不能挤上去」的依据。** 抖音个人护理榜前 20 国货只占 8 席（较去年 -1），前 5 只剩珀莱雅一个国货；一年之内肌肤之钥从第 25 升到第 11（+14 位）、修丽可 23→11、海蓝之谜 12→4，而谷雨 6→17、后 9→20。天猫侧反而稳定：美妆前 20 国货 5 席，位次波动多在 1–2 名。**判断：抖音仍是能靠投放与内容改写排位的战场，但改写窗口只对「有明确功效叙事 + 高端化能力」的品牌开放。**美诺若继续用「低价 + 达人铺量」打法，很容易成为下一个谷雨；若把粉饼做成「定妆专业度」的心智单品，反而能吃国际高端抗衰品牌溢出的「专业信任」需求。"
+    },
+    {
+      "text": "**平台把 AIGC 规则收到了美业头上，处置量已到 80 万条量级。** 抖音生活服务在 AIGC 创作规范里给丽人类目单列条款：不得用 AI 生成虚假门店环境、严禁 AI 过分美化或虚构服务效果，宣传须与详情页及线下履约一致，处置手段包括警告、限流、内容自见、限制商品推广；小红书 2026 规则改成「只要 AI 参与配图、改写或润色就要打标」，未标注可被下架或限流。**同一时间窗内还有一条内容侧红线：美妆 AI 广告因「AI 特效渲染七天生发」超出备案功效、AI 虚拟人代言美瞳（三类医疗器械禁代言人）接连翻车，且标注「AI 生成」并不是免责金牌。**对我们的落点很具体：AI 可以用来提产量、写文案、做复盘，但不能用来生成「使用前后对比」和「实验室场景」当真实证据。"
+    },
+    {
+      "text": "**竞品花间颂今天给了一个「一次代言做成 7 天流量包」的完整模板，成本结构值得抄。** 官宣日 11-14 首发「诸禧豪花时」限定套组现货 3000 套（11-10 开预约即抽亲签/隐藏卡），并把分发节奏精确到分钟：前两天倒计时 + 机制攻略 + 预热视频，当天 7:30 海报、7:35 单品机制、9:05 套组、10:00 艺人与品牌微博共创口播、10:05 周边一览、10:10 亲签时刻表、11:00 开箱赢亲签、12:30「底妆 7 天打卡赢亲签」。**关键不是请了谁，而是把一次官宣拆成「预约—首发—打卡—返场」四段，用周边与亲签制造复访。** 对照我们现有的代言合作：多数只有一条官宣博 + 一张海报。下一次代言至少补齐「预约机制、打卡任务、周边卡册」三件套，否则同预算的产出会低一个量级。"
+    }
+  ],
+  "brand_inspiration": [
+    "**「只压油光，不压光泽」这八个字，比任何功效数字都更适合当冰肌粉蓝的产品语言校准器。** 我们过去的表达习惯是「控油/哑光」，但这一轮消费者的偏好已经明确写成「压掉油光、留住光泽，柔焦但不哑光」。同一支产品，说法一改，定位就从「遮」变成「调」——前者比便宜，后者比审美。",
+    "**大促不再是增长引擎，日常内容资产才是复利。** 双11 美妆增速从 2025 年近 39% 掉到 3.8%，六年里还有 2023 年那次 -4.4% 的双降。押注两场大促的打法，边际回报在快速衰减；把同样的钱拆成日常种草 + 小步快测，反而更抗周期。",
+    "**把考核从 GMV 改成「净成交」，是今年媒介最该动的一个动作。** 退货率已到 24.5%，达人直播「卖一场退四成」。用 GMV 记功，等于奖励制造退货的主播；用 GMV×(1-退货率) 记功，才会有人去筛真正带得动复购的达人。",
+    "**国货的第二个席位始终不稳，说明「争前八」是错的目标。** 天猫美妆前八只剩珀莱雅 1 席国货、抖音 TOP5 国货从 3 席退回 1 席；但彩妆侧毛戈平升到天猫第 3、蒂洛薇进抖音前三。赢法不是成为第一，是在一个细分里成为唯一——粉饼就是美诺可以做到「唯一」的那个细分。",
+    "**产能变便宜之后，稀缺的就不再是「拍得出来」，而是「值得被信」。** 视频生成已经到 0.2 元/秒、数字人凌晨能扛 360 万单；同一天监管还在加码（AI 假冒公众人物整治、抖音要求真人驱动、视频号禁数字人代播）。素材越多，能被验证、能说清主体的那一条越值钱。",
+    "**平台补贴的钱只奖励「上新」，不奖励「降价」。** 小红书这轮混资券里，新品开卖即爆贡献了报名商品 GMV 的 75%，2000 元以上商品 GMV 是日常 3.5 倍；而美妆商家的 3.1 倍是各行业最高。给美诺的启示：大促窗口的正确动作是上限定色号、把礼盒抬到 200 元以上，而不是把正装价打穿。"
+  ],
+  "weekly_actions": [
+    {
+      "action": "双11 后做一次「新品/限定 vs 直接降价」的投放复盘：把今年大促期间两类动作的 ROI 分开算，明确明年大促只放限定色号与限定壳、不打穿正装价盘。依据：天猫开卖 4 小时 102 款新品破千万，美妆热卖榜第一全是新品。",
+      "owner": "媒介组",
+      "status": "待启动"
+    },
+    {
+      "action": "出「补完不掉妆」实测素材：同光线、同机位，补妆前后各拍 15 秒特写，不做前后对比拼接（规避造假测评口径），主打「看不出补过」而非「控油几小时」。依据：艾媒 32.86% 消费者要「更隐形不花妆的补涂产品」。",
+      "owner": "内容组",
+      "status": "待启动"
+    },
+    {
+      "action": "全渠道话术与详情页合规自查（11-21 前完成）：删绝对化用语与效果保证、删未备案功效宣称（美白/祛斑/防晒）、AI 生成素材加显著标识、儿童相关产品核「小金盾」与成人监护提示。依据：浙江「三有三不」11-10 发布 + 拼多多化妆品新规 11-21 生效。",
+      "owner": "合规 + 内容",
+      "status": "待启动"
+    },
+    {
+      "action": "把抖音与天猫素材拆成两版并行产出：抖音版突出到手价/克重/赠品/当场对比，天猫版突出色号体系/场景/复购理由。依据：国货彩妆「天猫卖品牌、抖音卖这一单」的渠道分工已固化。",
+      "owner": "电商 + 内容",
+      "status": "待启动"
+    },
+    {
+      "action": "试用 AI 投放/素材工具时按「能干、能信、能打」三问做小范围验证，先跑一个单品一个渠道再决定是否放量。依据：宝洁对瓴羊 AI 员工的考核标准，以及「AI 生图只替代一部分流程、价值来自前期消费者洞察整合」的边界。",
+      "owner": "投放组",
+      "status": "待启动"
+    }
+  ]
+}
